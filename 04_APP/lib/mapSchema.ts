@@ -23,14 +23,32 @@ export const QuizQuestionSchema = z.object({
   answer_index: z.number().int().describe("Índice (0-3) da alternativa correta"),
 });
 
+export const ExerciseSchema = z.object({
+  sentence: z
+    .string()
+    .describe("Frase em inglês com uma lacuna marcada como ___ (três underlines)"),
+  hint_pt: z.string().describe("Dica curta em português entre parênteses, ex.: (professor)"),
+  answer: z.string().describe("Palavra que completa a lacuna"),
+});
+
 export const GeneratedMapSchema = z.object({
-  title_en: z.string(),
-  title_pt: z.string(),
+  title_en: z.string().describe("Título curto em inglês, 1 a 3 palavras"),
+  title_pt: z.string().describe("Título curto em português, 1 a 3 palavras"),
+  summary_pt: z
+    .string()
+    .describe("Explicação central do tema em português, 1 frase de até 15 palavras"),
+  tip_pt: z.string().describe("Dica rápida de gramática ou uso, em português, até 25 palavras"),
+  common_mistake: z.object({
+    wrong: z.string().describe("Frase em inglês com o erro típico de brasileiros"),
+    right: z.string().describe("A mesma frase corrigida"),
+    why_pt: z.string().describe("Por que está errado, em português, até 12 palavras"),
+  }),
+  exercises: z.array(ExerciseSchema).describe("4 frases para completar"),
   level: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]),
   cover_prompt: z
     .string()
     .describe("Descrição em inglês de uma ilustração central sem texto para o tema"),
-  branches: z.array(MapBranchSchema).describe("4 a 6 ramos"),
+  branches: z.array(MapBranchSchema).describe("exatamente 4 ramos"),
   quiz: z.array(QuizQuestionSchema).describe("3 perguntas de revisão sobre o mapa"),
 });
 

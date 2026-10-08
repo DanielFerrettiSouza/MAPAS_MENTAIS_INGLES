@@ -9,8 +9,10 @@ const SYSTEM_PROMPT = `Você cria mapas mentais de inglês para brasileiros.
 Regras:
 - Conteúdo adequado ao nível CEFR pedido; frases curtas, naturais e úteis no dia a dia.
 - Inglês correto e consistente (inglês britânico). Traduções naturais em português do Brasil.
-- 4 a 6 ramos, cada um com 3 a 5 itens. Cada item é algo que vale a pena ouvir e repetir.
-- Os prompts de ilustração descrevem ícones simples, coloridos, estilo flat, SEM nenhum texto ou letra.
+- Exatamente 4 ramos, cada um com 3 a 5 itens curtos (até 6 palavras). Cada item é algo que vale a pena ouvir e repetir.
+- Os nomes dos ramos (label_pt) são curtos e claros, como títulos de seção de apostila.
+- O erro comum deve ser um erro real de brasileiros; os exercícios usam itens do mapa.
+- Os prompts de ilustração descrevem ícones simples e fofos, estilo desenho à mão, SEM nenhum texto ou letra.
 - O quiz testa itens do próprio mapa.`;
 
 export async function generateMapContent(input: {
@@ -44,7 +46,7 @@ export async function generateMapContent(input: {
 
 const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL ?? "gemini-2.5-flash-image";
 const IMAGE_STYLE =
-  "Flat vector illustration, soft pastel colors, white background, centered, friendly, no text, no letters, no words.";
+  "Cute hand-drawn doodle sticker, colored pencil and marker style, soft pastel colors, thin dark outline, plain white background, centered, no text, no letters, no words.";
 
 let gemini: GoogleGenAI | null = null;
 

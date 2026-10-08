@@ -24,7 +24,7 @@ Modelos de imagem erram texto (trocam letras, inventam palavras). Num produto de
 | Camada | Quem faz | Ferramenta |
 |---|---|---|
 | Conteúdo do mapa (ramos, frases, traduções, quiz) | IA de texto, em formato estruturado | Claude |
-| Desenho do mapa (layout, cores, texto) | O próprio app (SVG) — texto sempre correto | código |
+| Desenho do mapa (layout "página de caderno": seções numeradas, dica, erro comum, mini exercício) | O próprio app (HTML/CSS) — texto sempre correto | código |
 | Ilustrações (capa + 1 ícone por ramo, sem texto) | IA de imagem | Gemini (Nano Banana) |
 | Áudio de cada frase | TTS | ElevenLabs |
 | Vídeos de anúncio / demonstração | IA de vídeo | Google Flow |
