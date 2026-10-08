@@ -17,10 +17,12 @@ export default function Generator({
   credits,
   defaultLevel = "A1",
   defaultGoal,
+  autoFocus = false,
 }: {
   credits: number;
   defaultLevel?: string;
   defaultGoal?: string;
+  autoFocus?: boolean;
 }) {
   const router = useRouter();
   const params = useSearchParams();
@@ -56,7 +58,7 @@ export default function Generator({
     if (params.get("topic") && !autoStarted.current && credits > 0) {
       autoStarted.current = true;
       // Limpa a URL para não gerar outro mapa ao voltar ou recarregar a página.
-      window.history.replaceState(null, "", "/app");
+      window.history.replaceState(null, "", "/app/criar");
       void generate(params.get("topic")!);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -84,7 +86,7 @@ export default function Generator({
       >
         <input
           id="topic-input"
-          autoFocus={params.get("criar") === "1"}
+          autoFocus={autoFocus}
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           placeholder="Sobre o que você quer aprender? Ex.: pedir comida no restaurante"

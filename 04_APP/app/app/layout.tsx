@@ -20,7 +20,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
           <span className="only-open"><Logo size={28} /></span>
         </Link>
         <Link href="/app" className="side-link"><IconDashboard /><span>Início</span></Link>
-        <Link href="/app?criar=1" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
+        <Link href="/app/criar" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
         <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
         <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>Suporte</span></a>

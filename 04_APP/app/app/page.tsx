@@ -1,6 +1,5 @@
-import { Suspense } from "react";
 import Link from "next/link";
-import Generator from "@/components/Generator";
+import { redirect } from "next/navigation";
 import { IconCrown, IconRepeat } from "@/components/Icons";
 import QuickCreate from "@/components/QuickCreate";
 import MapGrid, { type MapRow } from "@/components/MapGrid";
@@ -9,7 +8,9 @@ import { planName } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
-export default async function Dashboard() {
+export default async function Dashboard({ searchParams }: { searchParams: Record<string, string> }) {
+  // Links antigos (/app?topic=... ou ?criar=1) vão para a página de criar.
+  if (searchParams.topic || searchParams.criar) redirect(`/app/criar?${new URLSearchParams(searchParams)}`);
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   const { data: maps } = await createSupabaseServer()
@@ -31,7 +32,7 @@ export default async function Dashboard() {
       <h1 className="app-hello">
         Olá, <span className="grad-text">{name}</span>! O que vamos aprender hoje?
       </h1>
-      <p className="app-sub">Digite qualquer assunto e receba um mapa mental ilustrado com áudio nativo.</p>
+      <p className="app-sub">Crie um mapa novo, revise os que já fez ou veja seu plano.</p>
 
       <div className="quick-actions">
         <QuickCreate credits={credits} />
@@ -39,9 +40,6 @@ export default async function Dashboard() {
         <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
       </div>
 
-      <Suspense>
-        <Generator credits={credits} defaultLevel={(user.user_metadata?.level as string) ?? "A1"} defaultGoal={(user.user_metadata?.goal as string) ?? undefined} />
-      </Suspense>
 
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginTop: 40 }}>
         <h2 style={{ margin: 0 }}>Mapas recentes</h2>
