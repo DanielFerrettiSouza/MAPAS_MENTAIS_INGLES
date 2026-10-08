@@ -1,0 +1,16 @@
+level,topic,order_index,map_image_filename,phrase_position,phrase_text
+A1,To Be,1,to_be.png,1,I am
+A1,To Be,1,to_be.png,2,You are
+A1,To Be,1,to_be.png,3,He is
+A1,To Be,1,to_be.png,4,She is
+A1,To Be,1,to_be.png,5,It is
+A1,To Be,1,to_be.png,6,We are
+A1,To Be,1,to_be.png,7,They are
+A1,To Be,1,to_be.png,8,I am not
+A1,To Be,1,to_be.png,9,You aren't
+A1,To Be,1,to_be.png,10,Is he?
+A1,Simple Present,2,simple_present.png,1,I like
+A1,Simple Present,2,simple_present.png,2,She likes
+A1,Simple Present,2,simple_present.png,3,They like
+A1,Simple Present,2,simple_present.png,4,Do you like?
+A1,Simple Present,2,simple_present.png,5,I don't like
