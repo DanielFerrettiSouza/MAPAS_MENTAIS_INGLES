@@ -13,7 +13,8 @@ export default function Termos() {
       <ul>
         <li>A conta gratuita inclui 3 mapas. Os planos pagos são assinaturas mensais com uma quantidade de mapas por mês.</li>
         <li>Os pagamentos são processados pela Kiwify. A assinatura renova automaticamente até ser cancelada.</li>
-        <li>Você pode cancelar a qualquer momento; o acesso continua até o fim do período pago. Garantia de 7 dias conforme o Código de Defesa do Consumidor.</li>
+        <li>Você pode cancelar a qualquer momento; o acesso continua até o fim do período pago. </li>
+        <li>Garantia de 7 dias: se não gostar, peça o reembolso em até 7 dias após a compra (pela Kiwify ou pelo nosso suporte) e devolvemos 100% do valor. Com o reembolso, a conta volta ao plano grátis.</li>
       </ul>
       <h2>4. Uso permitido</h2>
       <p>Não é permitido usar o serviço para gerar conteúdo ilegal, ofensivo ou para tentar burlar os limites do plano. Os mapas podem ser usados nos seus estudos; no plano Professor, também com seus alunos.</p>
