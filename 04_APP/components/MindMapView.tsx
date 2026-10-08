@@ -24,7 +24,6 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
   const [audioError, setAudioError] = useState<string | null>(null);
-  const [showAnswers, setShowAnswers] = useState(false);
   const [typed, setTyped] = useState<string[]>([]);
   const [checked, setChecked] = useState(false);
 
@@ -179,10 +178,8 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                 {ex.sentence.split("___").map((part, k, arr) => (
                   <span key={k}>
                     {part}
-                    {k < arr.length - 1 &&
-                      (showAnswers ? (
-                        <span className="nb-blank">{ex.answer}</span>
-                      ) : (
+                    {k < arr.length - 1 && (
+                      <>
                         <input
                           className={`nb-blank nb-input ${checked ? (isRight(i) ? "ok" : "bad") : ""}`}
                           value={typed[i] ?? ""}
@@ -199,7 +196,14 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                           autoCorrect="off"
                           spellCheck={false}
                         />
-                      ))}
+                        {checked &&
+                          (isRight(i) ? (
+                            <span className="nb-mark ok">✓</span>
+                          ) : (
+                            <span className="nb-mark bad">✗ {ex.answer}</span>
+                          ))}
+                      </>
+                    )}
                   </span>
                 ))}{" "}
                 <small>{ex.hint_pt}</small>
@@ -207,19 +211,25 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
             ))}
           </ol>
           <div className="nb-ex-actions" data-no-export="true">
-            {!showAnswers && (
-              <button className="nb-answers-btn nb-check-btn" onClick={() => setChecked(true)}>
-                Corrigir
-              </button>
-            )}
-            <button className="nb-answers-btn" onClick={() => setShowAnswers((v) => !v)}>
-              {showAnswers ? "Esconder respostas" : "Ver respostas"}
+            <button className="nb-answers-btn nb-check-btn" onClick={() => setChecked(true)}>
+              Verificar respostas
             </button>
-            {checked && !showAnswers && (
-              <span className="nb-score">
-                {score === map.exercises.length ? "🎉 " : ""}
-                {score}/{map.exercises.length} certas
-              </span>
+            {checked && (
+              <>
+                <span className="nb-score">
+                  {score === map.exercises.length ? "🎉 " : ""}
+                  {score}/{map.exercises.length} certas
+                </span>
+                <button
+                  className="nb-answers-btn"
+                  onClick={() => {
+                    setTyped([]);
+                    setChecked(false);
+                  }}
+                >
+                  Tentar de novo
+                </button>
+              </>
             )}
           </div>
         </footer>

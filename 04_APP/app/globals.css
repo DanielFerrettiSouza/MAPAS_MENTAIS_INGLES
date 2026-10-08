@@ -576,3 +576,7 @@ a { color: inherit; }
 .nb-ex-actions .nb-answers-btn { position: static; margin: 0; }
 .nb-check-btn { background: #7c3aed; color: #fff; }
 .nb-score { font-weight: 700; color: #4c1d95; }
+.nb-mark { font-weight: 700; margin-left: 6px; }
+.nb-mark.ok { color: #16a34a; }
+.nb-mark.bad { color: #16a34a; background: #f0fdf4; border-radius: 6px; padding: 0 6px; }
+.nb-mark.bad::first-letter { color: #dc2626; }
