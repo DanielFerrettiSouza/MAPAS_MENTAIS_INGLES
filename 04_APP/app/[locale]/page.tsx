@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getLevelCounts } from "@/lib/supabase";
+import { notFound } from "next/navigation";
+import { SUPPORTED_LOCALES } from "@/lib/supabase";
 
 const LEVELS = [
   { code: "A1", name: "Fondazione" },
@@ -17,6 +19,7 @@ export default async function HomePage({
 }: {
   params: { locale: string };
 }) {
+  if (!(SUPPORTED_LOCALES as readonly string[]).includes(params.locale)) notFound();
   const counts = await getLevelCounts(params.locale);
 
   return (

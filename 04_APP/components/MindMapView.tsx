@@ -31,9 +31,8 @@ const EN_LINE = 25;
 const PT_LINE = 18;
 const ITEM_GAP = 12;
 
-export function playPhrase(text: string, audio: HTMLAudioElement) {
-  audio.src = `/api/tts?text=${encodeURIComponent(text)}`;
-  void audio.play();
+function ttsUrl(text: string) {
+  return `/api/tts?text=${encodeURIComponent(text)}`;
 }
 
 // Desenha o mapa em SVG: texto renderizado pelo app (sempre correto),
@@ -42,11 +41,23 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
+  const [audioError, setAudioError] = useState<string | null>(null);
 
-  function play(text: string) {
-    if (!audioRef.current) return;
+  async function play(text: string) {
+    const audio = audioRef.current;
+    if (!audio) return;
+    setAudioError(null);
     setPlaying(text);
-    playPhrase(text, audioRef.current);
+    audio.src = ttsUrl(text);
+    try {
+      await audio.play();
+    } catch {
+      setPlaying(null);
+      // Busca a mensagem do servidor para mostrar o motivo real.
+      const res = await fetch(ttsUrl(text)).catch(() => null);
+      const detail = res && !res.ok ? await res.text() : "o navegador bloqueou o som";
+      setAudioError(`Não foi possível tocar o áudio: ${detail}`);
+    }
   }
 
   function downloadPng() {
@@ -227,9 +238,36 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
         </svg>
       </div>
 
+      {audioError && <p className="error">{audioError}</p>}
+
       <button className="secondary-btn" onClick={downloadPng}>
         ⬇ Baixar mapa (PNG)
       </button>
+
+      <section className="phrase-list">
+        <h3>🔊 Ouça e repita</h3>
+        {map.branches.map((branch, i) => (
+          <div key={i}>
+            <h4 style={{ color: COLORS[i % COLORS.length] }}>{branch.label_en}</h4>
+            {branch.items.map((item, j) => (
+              <div key={j} className="audio-row">
+                <span>
+                  <strong>{item.en}</strong>
+                  <br />
+                  <small style={{ color: "var(--muted)" }}>{item.pt}</small>
+                </span>
+                <button
+                  className="play-btn"
+                  onClick={() => play(item.en)}
+                  aria-label={`Ouvir: ${item.en}`}
+                >
+                  {playing === item.en ? "🔊" : "▶"}
+                </button>
+              </div>
+            ))}
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

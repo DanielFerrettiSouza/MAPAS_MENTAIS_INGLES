@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getMapById, getAudioForMap } from "@/lib/supabase";
+import { SUPPORTED_LOCALES } from "@/lib/supabase";
 import AudioRow from "./AudioRow";
 
 export const revalidate = 0;
@@ -10,6 +11,7 @@ export default async function MapPage({
 }: {
   params: { locale: string; id: string };
 }) {
+  if (!(SUPPORTED_LOCALES as readonly string[]).includes(params.locale)) notFound();
   const map = await getMapById(params.id);
   if (!map) notFound();
 

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getMapsByLevel, type Level } from "@/lib/supabase";
+import { notFound } from "next/navigation";
+import { SUPPORTED_LOCALES } from "@/lib/supabase";
 
 export const revalidate = 0;
 
@@ -8,6 +10,7 @@ export default async function LevelPage({
 }: {
   params: { locale: string; level: string };
 }) {
+  if (!(SUPPORTED_LOCALES as readonly string[]).includes(params.locale)) notFound();
   const level = params.level.toUpperCase() as Level;
   const maps = await getMapsByLevel(params.locale, level);
 

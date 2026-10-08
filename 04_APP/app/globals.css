@@ -145,3 +145,6 @@ body {
 
 .progress { height: 6px; background: var(--border); border-radius: 999px; margin-bottom: 16px; }
 .progress div { height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s; }
+
+.phrase-list { margin-top: 28px; }
+.phrase-list h4 { margin: 18px 0 8px; }
