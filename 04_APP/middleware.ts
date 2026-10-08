@@ -1,26 +1,36 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
 
-// Protege o app inteiro com usuário/senha simples (HTTP Basic Auth) quando
-// APP_PASSWORD está definido — evita que estranhos gastem os créditos de IA.
-// Usuário: qualquer um; senha: APP_PASSWORD. Sem a variável, o app fica aberto.
-export function middleware(req: NextRequest) {
-  const password = process.env.APP_PASSWORD;
-  if (!password) return NextResponse.next();
+type CookieToSet = { name: string; value: string; options?: CookieOptions };
 
-  const header = req.headers.get("authorization") ?? "";
-  if (header.startsWith("Basic ")) {
-    const decoded = atob(header.slice(6));
-    if (decoded.slice(decoded.indexOf(":") + 1) === password) {
-      return NextResponse.next();
-    }
-  }
+// Renova a sessão do Supabase a cada requisição e protege a área logada (/app).
+export async function middleware(req: NextRequest) {
+  let res = NextResponse.next({ request: req });
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !key) return res;
 
-  return new NextResponse("Acesso restrito", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="Mapas Falantes"' },
+  const supabase = createServerClient(url, key, {
+    cookies: {
+      getAll: () => req.cookies.getAll(),
+      setAll: (toSet: CookieToSet[]) => {
+        toSet.forEach(({ name, value }) => req.cookies.set(name, value));
+        res = NextResponse.next({ request: req });
+        toSet.forEach(({ name, value, options }) => res.cookies.set(name, value, options));
+      },
+    },
   });
+
+  const { data } = await supabase.auth.getUser();
+  if (!data.user && req.nextUrl.pathname.startsWith("/app")) {
+    const login = req.nextUrl.clone();
+    login.pathname = "/entrar";
+    login.search = `?next=${encodeURIComponent(req.nextUrl.pathname + req.nextUrl.search)}`;
+    return NextResponse.redirect(login);
+  }
+  return res;
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:png|jpg|svg|webp)$).*)"],
 };

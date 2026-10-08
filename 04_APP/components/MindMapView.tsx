@@ -19,7 +19,7 @@ function ttsUrl(text: string) {
 // Desenha o mapa como uma página de caderno: título, seções numeradas em
 // grade ao redor de um círculo central, dica, erro comum e mini exercício.
 // Todo texto é renderizado pelo app (sempre correto); as ilustrações vêm da IA.
-export default function MindMapView({ map }: { map: MapWithImages }) {
+export default function MindMapView({ map, preview = false }: { map: MapWithImages; preview?: boolean }) {
   const pageRef = useRef<HTMLDivElement | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
@@ -194,9 +194,9 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
 
       {audioError && <p className="error">{audioError}</p>}
 
-      <button className="secondary-btn" onClick={downloadPng}>
+      {!preview && <button className="secondary-btn" onClick={downloadPng}>
         ⬇ Baixar mapa (PNG)
-      </button>
+      </button>}
     </div>
   );
 }
