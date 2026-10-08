@@ -13,12 +13,20 @@ const SUGGESTIONS = [
   "Phrasal verbs do dia a dia",
 ];
 
-export default function Generator({ credits }: { credits: number }) {
+export default function Generator({
+  credits,
+  defaultLevel = "A1",
+  defaultGoal,
+}: {
+  credits: number;
+  defaultLevel?: string;
+  defaultGoal?: string;
+}) {
   const router = useRouter();
   const params = useSearchParams();
   const [topic, setTopic] = useState(params.get("topic") ?? "");
-  const [level, setLevel] = useState(params.get("level") ?? "A1");
-  const goal = params.get("goal") ?? undefined;
+  const [level, setLevel] = useState(params.get("level") ?? defaultLevel);
+  const goal = params.get("goal") ?? defaultGoal;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const autoStarted = useRef(false);
@@ -73,6 +81,8 @@ export default function Generator({ credits }: { credits: number }) {
         }}
       >
         <input
+          id="topic-input"
+          autoFocus={params.get("criar") === "1"}
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           placeholder="Sobre o que você quer aprender? Ex.: pedir comida no restaurante"

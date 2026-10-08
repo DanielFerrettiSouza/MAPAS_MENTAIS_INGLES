@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import Logo, { LogoMark } from "@/components/Logo";
 import { getCurrentUser } from "@/lib/supa/server";
-import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSparkles } from "@/components/Icons";
+import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSettings, IconSparkles } from "@/components/Icons";
 
 export const dynamic = "force-dynamic";
 
@@ -20,8 +20,9 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
           <span className="only-open"><Logo size={28} /></span>
         </Link>
         <Link href="/app" className="side-link"><IconDashboard /><span>Início</span></Link>
-        <Link href="/app#criar" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
-        <Link href="/app#meus-mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
+        <Link href="/app?criar=1" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
+        <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
+        <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
         <a href="mailto:contato@danielferretti.com" className="side-link"><IconHelp /><span>Suporte</span></a>
         <div className="spacer" />
         <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>
