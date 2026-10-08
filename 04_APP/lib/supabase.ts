@@ -1,11 +1,16 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 // Cliente público (anon key) — usado nas telas de leitura de mapas/áudio.
 // A escrita de progresso do usuário passa pela auth do Supabase (link mágico), não por essa chave.
-export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+// Criado só quando usado, para o build (e o gerador por IA) funcionar sem Supabase configurado.
+let client: SupabaseClient | null = null;
+function db(): SupabaseClient {
+  client ??= createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+  return client;
+}
 
 // Idiomas de vitrine suportados. Cada um vira um caminho: /it, /fr, /pt...
 // (não subdomínio — assim funciona hoje no domínio grátis da Vercel, sem precisar comprar domínio)
@@ -32,7 +37,7 @@ export type MindMapAudio = {
 };
 
 export async function getLevelCounts(locale: string): Promise<Record<Level, number>> {
-  const { data, error } = await supabase
+  const { data, error } = await db()
     .from("mind_maps")
     .select("level")
     .eq("locale", locale);
@@ -46,7 +51,7 @@ export async function getLevelCounts(locale: string): Promise<Record<Level, numb
 }
 
 export async function getMapsByLevel(locale: string, level: Level): Promise<MindMap[]> {
-  const { data, error } = await supabase
+  const { data, error } = await db()
     .from("mind_maps")
     .select("*")
     .eq("locale", locale)
@@ -57,7 +62,7 @@ export async function getMapsByLevel(locale: string, level: Level): Promise<Mind
 }
 
 export async function getMapById(id: string): Promise<MindMap | null> {
-  const { data, error } = await supabase
+  const { data, error } = await db()
     .from("mind_maps")
     .select("*")
     .eq("id", id)
@@ -67,7 +72,7 @@ export async function getMapById(id: string): Promise<MindMap | null> {
 }
 
 export async function getAudioForMap(mindMapId: string): Promise<MindMapAudio[]> {
-  const { data, error } = await supabase
+  const { data, error } = await db()
     .from("mind_map_audio")
     .select("*")
     .eq("mind_map_id", mindMapId)
