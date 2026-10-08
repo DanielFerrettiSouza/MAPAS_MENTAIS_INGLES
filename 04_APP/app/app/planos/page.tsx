@@ -1,4 +1,5 @@
 import PlansGrid from "@/components/PlansGrid";
+import Guarantee from "@/components/Guarantee";
 import { getCurrentUser, getProfile } from "@/lib/supa/server";
 import { checkoutUrl } from "@/lib/plans";
 import { redirect } from "next/navigation";
@@ -12,13 +13,9 @@ export default async function PlansPage({ searchParams }: { searchParams: { plan
   return (
     <>
       <h1 className="app-hello">Escolha seu plano</h1>
-      <p className="app-sub">Mais mapas, mais áudio, mais revisão. Cancele quando quiser.</p>
-      {searchParams.plano && (
-        <div className="gen-box" style={{ marginBottom: 20 }}>
-          💳 O pagamento online está chegando. Enquanto isso, fale com a gente para ativar o plano escolhido.
-        </div>
-      )}
+      <p className="app-sub">Mais mapas, mais áudio, mais revisão. Cancele quando quiser. 7 dias de garantia.</p>
       <PlansGrid ctaHref="/app/planos" currentPlan={profile?.plan ?? "free"} email={user.email} />
+      <Guarantee />
     </>
   );
 }

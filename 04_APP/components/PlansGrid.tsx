@@ -46,6 +46,7 @@ export default function PlansGrid({
               Assinar {p.name}
             </a>
           )}
+          {p.id !== "free" && <p className="guarantee-note">🛡️ 7 dias de garantia</p>}
         </div>
       ))}
     </div>

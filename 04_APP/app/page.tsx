@@ -1,9 +1,8 @@
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import PlansGrid from "@/components/PlansGrid";
-import MindMapView from "@/components/MindMapView";
-import { SAMPLE_MAP } from "@/lib/sampleMap";
 import MapWall from "@/components/MapWall";
+import Guarantee from "@/components/Guarantee";
 
 const STEPS = [
   { ico: "🎯", title: "Responda o quiz de 1 minuto", text: "Seu nível, seu objetivo (viagem, trabalho, séries, prova) e quanto tempo você tem. A partir disso, o Mapas Falantes monta seu plano." },
@@ -34,12 +33,8 @@ export default function Landing() {
               <span className="fine">3 mapas grátis. Sem cartão. Sem enrolação.</span>
             </div>
           </div>
-          <div className="hero-visual" aria-hidden>
-            <div className="card-float" style={{ pointerEvents: "none" }}>
-              <div style={{ transform: "scale(0.62)", transformOrigin: "top left", width: "161.3%", marginBottom: "-61%" }}>
-                <MindMapView map={SAMPLE_MAP} preview />
-              </div>
-            </div>
+          <div className="hero-visual">
+            <MapWall variant="hero" />
           </div>
         </section>
 
@@ -128,6 +123,7 @@ export default function Landing() {
             <h2 className="big-title" style={{ textAlign: "center" }}>Escolha seu plano</h2>
             <p style={{ textAlign: "center", color: "var(--muted)", fontSize: 18 }}>Comece grátis. Assine quando quiser mais mapas.</p>
             <PlansGrid />
+            <Guarantee />
           </div>
         </section>
 
@@ -138,6 +134,7 @@ export default function Landing() {
             <details><summary>Preciso saber inglês para usar?</summary><p>Não. Você escolhe o nível (do A1, iniciante, ao C2) e todo mapa vem com tradução em português.</p></details>
             <details><summary>Posso imprimir os mapas?</summary><p>Sim. Cada mapa pode ser baixado em imagem de alta resolução.</p></details>
             <details><summary>Como funciona o teste grátis?</summary><p>Você cria sua conta e ganha 3 mapas para usar como quiser. Sem cartão de crédito.</p></details>
+            <details><summary>E se eu não gostar depois de assinar?</summary><p>Você tem 7 dias de garantia. Se não gostar, peça o reembolso em até 7 dias após a compra e devolvemos 100% do valor.</p></details>
             <details><summary>Posso cancelar quando quiser?</summary><p>Sim. A assinatura é mensal e pode ser cancelada a qualquer momento.</p></details>
           </div>
         </section>
