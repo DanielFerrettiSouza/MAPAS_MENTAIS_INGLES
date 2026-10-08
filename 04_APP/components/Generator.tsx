@@ -55,6 +55,8 @@ export default function Generator({
   useEffect(() => {
     if (params.get("topic") && !autoStarted.current && credits > 0) {
       autoStarted.current = true;
+      // Limpa a URL para não gerar outro mapa ao voltar ou recarregar a página.
+      window.history.replaceState(null, "", "/app");
       void generate(params.get("topic")!);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
