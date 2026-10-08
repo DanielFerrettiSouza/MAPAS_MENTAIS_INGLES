@@ -370,7 +370,7 @@ a { color: inherit; }
 .auth-ok { font-size: 14px; color: #86efac; }
 
 /* ===== Área logada ===== */
-.app-shell { display: grid; grid-template-columns: 76px 1fr; min-height: 100vh; }
+.app-shell { min-height: 100vh; padding-left: 76px; }
 .sidebar {
   position: fixed; top: 0; left: 0; z-index: 20; height: 100vh; width: 76px; overflow: hidden;
   border-right: 1px solid #18181b; background: #0d0d0f; padding: 20px 14px; display: flex; flex-direction: column; gap: 4px;
@@ -449,12 +449,17 @@ a { color: inherit; }
   .step { gap: 8px; }
   .step-num { font-size: 36px; }
   .site-nav nav a:not(.primary-btn) { display: none; }
-  .app-shell { grid-template-columns: 1fr; }
+  .app-shell { padding-left: 0; }
   .sidebar { position: sticky; width: 100% !important; height: auto; flex-direction: row; align-items: center; padding: 10px; gap: 2px; box-shadow: none !important; }
   .side-brand { margin: 0 6px 0 0; }
   .sidebar .spacer, .sidebar .user { display: none; }
   .side-link { width: auto; padding: 10px; }
   .side-link span { display: none; }
+  .sidebar { overflow-x: auto; }
+  .sidebar .only-open, .sidebar:hover .only-open { display: none; }
+  .sidebar .only-collapsed, .sidebar:hover .only-collapsed { display: inline; }
+  .side-link.upgrade { flex: none; }
+  .create-form input { min-width: 0; flex-basis: 100%; }
   .app-main { padding: 20px 16px 60px; }
 }
 
