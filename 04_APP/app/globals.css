@@ -566,3 +566,13 @@ a { color: inherit; }
   .stats strong { font-size: 28px; }
   .stats span { font-size: 14px; }
 }
+
+/* Mini exercício preenchível */
+.nb-input { font: inherit; background: transparent; border: none; border-bottom: 2px solid #7c3aed; outline: none; padding: 0 4px; min-width: 70px; width: auto; color: #4c1d95; border-radius: 0; }
+.nb-input:focus { background: #f5f3ff; }
+.nb-input.ok { border-color: #16a34a; color: #15803d; background: #f0fdf4; }
+.nb-input.bad { border-color: #dc2626; color: #b91c1c; background: #fef2f2; }
+.nb-ex-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.nb-ex-actions .nb-answers-btn { position: static; margin: 0; }
+.nb-check-btn { background: #7c3aed; color: #fff; }
+.nb-score { font-weight: 700; color: #4c1d95; }
