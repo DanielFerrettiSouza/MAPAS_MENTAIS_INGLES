@@ -44,8 +44,9 @@ Sugestão de planos (validar com teste A/B):
 
 | Plano | Preço | Inclui |
 |---|---|---|
-| Mensal | R$24,90/mês | 30 mapas novos/mês, biblioteca, revisão diária |
-| Anual | R$179/ano (~R$14,90/mês) | igual, ilimitado "uso justo" |
+| Essencial | R$29,90/mês | 30 mapas/mês |
+| Fluente | R$49,90/mês | 60 mapas/mês |
+| Professor | R$99,90/mês | 200 mapas/mês, uso com alunos |
 | Entrada (pagamento único) | R$37,90 | só a biblioteca pronta, sem gerador |
 
 ## 4. Custo por mapa gerado (estimativa — confirmar com as faturas reais)
