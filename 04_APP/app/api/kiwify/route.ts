@@ -33,7 +33,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "assinatura inválida" }, { status: 401 });
   }
 
-  const event = JSON.parse(raw);
+  // A Kiwify pode mandar os dados na raiz ou dentro de "order".
+  const body = JSON.parse(raw);
+  const event = body.order ?? body;
   const status: string = event.webhook_event_type ?? event.order_status ?? "";
   const email: string | undefined = event.Customer?.email?.trim().toLowerCase();
   // O plano pode estar no nome do produto, da oferta ou do plano de assinatura.

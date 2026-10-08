@@ -63,7 +63,8 @@ export function checkoutUrl(planId: string, email?: string | null) {
 
 // Descobre o plano pelo nome do produto na Kiwify (ex.: "Mapas Falantes - Fluente").
 export function planFromProductName(name: string) {
-  const n = name.toLowerCase();
+  // Aceita também as grafias em inglês (ex.: "Mapas Falantes Essential").
+  const n = name.toLowerCase().replace("essential", "essencial").replace("fluent ", "fluente ").replace("teacher", "professor");
   return PLANS.find((p) => p.id !== "free" && n.includes(p.name.toLowerCase())) ?? null;
 }
 
