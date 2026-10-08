@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import Generator from "@/components/Generator";
+import { IconCrown, IconRepeat, IconSparkles } from "@/components/Icons";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { planName } from "@/lib/plans";
 
@@ -32,6 +33,13 @@ export default async function Dashboard() {
       </h1>
       <p className="app-sub">Digite qualquer assunto e receba um mapa mental ilustrado com áudio nativo.</p>
 
+      <div className="quick-actions">
+        <a href="#criar" className="qa pink"><IconSparkles /> Criar mapa</a>
+        <Link href="/app#meus-mapas" className="qa purple"><IconRepeat /> Revisar meus mapas</Link>
+        <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
+      </div>
+
+      <div id="criar" />
       <Suspense>
         <Generator credits={credits} />
       </Suspense>

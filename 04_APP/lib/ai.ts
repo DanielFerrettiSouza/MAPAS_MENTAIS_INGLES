@@ -8,7 +8,7 @@ const anthropic = new Anthropic(); // lê ANTHROPIC_API_KEY
 const SYSTEM_PROMPT = `Você cria mapas mentais de inglês para brasileiros.
 Regras:
 - Conteúdo adequado ao nível CEFR pedido; frases curtas, naturais e úteis no dia a dia.
-- Inglês correto e consistente (inglês britânico). Traduções naturais em português do Brasil.
+- Inglês correto e consistente (inglês americano: ortografia, vocabulário e expressões dos EUA). Traduções naturais em português do Brasil.
 - Exatamente 4 ramos, cada um com 3 a 5 itens curtos (até 6 palavras). Cada item é algo que vale a pena ouvir e repetir.
 - Os nomes dos ramos (label_pt) são curtos e claros, como títulos de seção de apostila.
 - O erro comum deve ser um erro real de brasileiros; os exercícios usam itens do mapa.

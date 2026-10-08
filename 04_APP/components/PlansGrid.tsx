@@ -1,7 +1,17 @@
 import Link from "next/link";
-import { PLANS } from "@/lib/plans";
+import { PLANS, checkoutUrl } from "@/lib/plans";
 
-export default function PlansGrid({ ctaHref = "/criar-conta", currentPlan }: { ctaHref?: string; currentPlan?: string }) {
+// Fora do app (landing), assinar leva para criar a conta primeiro.
+// Dentro do app (com e-mail), leva direto para o checkout da Kiwify.
+export default function PlansGrid({
+  ctaHref = "/criar-conta",
+  currentPlan,
+  email,
+}: {
+  ctaHref?: string;
+  currentPlan?: string;
+  email?: string | null;
+}) {
   return (
     <div className="plans">
       {PLANS.map((p) => (
@@ -24,9 +34,17 @@ export default function PlansGrid({ ctaHref = "/criar-conta", currentPlan }: { c
           ) : p.id === "free" ? (
             <Link href={ctaHref} className="ghost-btn">Começar grátis</Link>
           ) : (
-            <Link href={`${ctaHref}${ctaHref.includes("?") ? "&" : "?"}plano=${p.id}`} className={`primary-btn ${p.highlight ? "grad-btn" : ""}`}>
+            <a
+              href={
+                (email && checkoutUrl(p.id, email)) ||
+                (ctaHref === "/criar-conta"
+                  ? `/criar-conta?next=${encodeURIComponent(`/app/planos?plano=${p.id}`)}`
+                  : `${ctaHref}${ctaHref.includes("?") ? "&" : "?"}plano=${p.id}`)
+              }
+              className={`primary-btn ${p.highlight ? "grad-btn" : ""}`}
+            >
               Assinar {p.name}
-            </Link>
+            </a>
           )}
         </div>
       ))}

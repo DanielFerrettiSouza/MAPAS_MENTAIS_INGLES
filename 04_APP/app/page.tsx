@@ -3,12 +3,13 @@ import SiteNav from "@/components/SiteNav";
 import PlansGrid from "@/components/PlansGrid";
 import MindMapView from "@/components/MindMapView";
 import { SAMPLE_MAP } from "@/lib/sampleMap";
+import MapWall from "@/components/MapWall";
 
 const STEPS = [
   { ico: "🎯", title: "Responda o quiz de 1 minuto", text: "Seu nível, seu objetivo (viagem, trabalho, séries, prova) e quanto tempo você tem. A partir disso, o Mapas Falantes monta seu plano." },
   { ico: "✍️", title: "Digite qualquer assunto", text: "\"Pedir comida no restaurante\", \"entrevista de emprego\", \"phrasal verbs\", a letra de uma música... Se você quer aprender, vira mapa." },
   { ico: "🗺️", title: "A IA monta o mapa ilustrado", text: "Em segundos: seções organizadas, ilustrações, dica de gramática e o erro que todo brasileiro comete — com a correção." },
-  { ico: "🔊", title: "Toque e ouça cada frase", text: "Todo item do mapa tem pronúncia nativa britânica. Você vê, escuta e repete sem trocar de aba nem procurar no Google." },
+  { ico: "🔊", title: "Toque e ouça cada frase", text: "Todo item do mapa tem pronúncia nativa americana. Você vê, escuta e repete sem trocar de aba nem procurar no Google." },
   { ico: "✏️", title: "Revise e fixe", text: "Mini exercício de completar e quiz de revisão em cada mapa. É o que transforma \"eu li\" em \"eu sei falar\"." },
 ];
 
@@ -49,6 +50,13 @@ export default function Landing() {
             <div><strong>100%</strong><span>das frases com áudio</span></div>
             <div><strong>∞</strong><span>assuntos possíveis</span></div>
           </div>
+        </section>
+
+        <section className="section" style={{ paddingBottom: 40 }}>
+          <div className="wrap" style={{ textAlign: "center" }}>
+            <p style={{ letterSpacing: 3, color: "var(--muted)", fontWeight: 600, margin: 0 }}>QUALQUER ASSUNTO VIRA MAPA</p>
+          </div>
+          <MapWall />
         </section>
 
         <section className="section problem">
@@ -126,7 +134,7 @@ export default function Landing() {
         <section className="section faq">
           <div className="wrap" style={{ maxWidth: 820 }}>
             <h2 className="big-title">Perguntas frequentes</h2>
-            <details><summary>O áudio é de verdade?</summary><p>Sim. Cada palavra e frase do mapa tem um botão que toca a pronúncia nativa (sotaque britânico), gerada na hora.</p></details>
+            <details><summary>O áudio é de verdade?</summary><p>Sim. Cada palavra e frase do mapa tem um botão que toca a pronúncia nativa (sotaque americano), gerada na hora.</p></details>
             <details><summary>Preciso saber inglês para usar?</summary><p>Não. Você escolhe o nível (do A1, iniciante, ao C2) e todo mapa vem com tradução em português.</p></details>
             <details><summary>Posso imprimir os mapas?</summary><p>Sim. Cada mapa pode ser baixado em imagem de alta resolução.</p></details>
             <details><summary>Como funciona o teste grátis?</summary><p>Você cria sua conta e ganha 3 mapas para usar como quiser. Sem cartão de crédito.</p></details>

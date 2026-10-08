@@ -1,9 +1,14 @@
 import PlansGrid from "@/components/PlansGrid";
 import { getCurrentUser, getProfile } from "@/lib/supa/server";
+import { checkoutUrl } from "@/lib/plans";
+import { redirect } from "next/navigation";
 
 export default async function PlansPage({ searchParams }: { searchParams: { plano?: string } }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
+  // Veio da landing já com um plano escolhido: vai direto ao checkout.
+  const direct = searchParams.plano && checkoutUrl(searchParams.plano, user.email);
+  if (direct) redirect(direct);
   return (
     <>
       <h1 className="app-hello">Escolha seu plano</h1>
@@ -13,7 +18,7 @@ export default async function PlansPage({ searchParams }: { searchParams: { plan
           💳 O pagamento online está chegando. Enquanto isso, fale com a gente para ativar o plano escolhido.
         </div>
       )}
-      <PlansGrid ctaHref="/app/planos" currentPlan={profile?.plan ?? "free"} />
+      <PlansGrid ctaHref="/app/planos" currentPlan={profile?.plan ?? "free"} email={user.email} />
     </>
   );
 }
