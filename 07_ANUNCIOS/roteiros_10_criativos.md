@@ -1,6 +1,6 @@
 # Mapas Falantes — 10 roteiros de criativos (vídeo)
 
-Base: 35 anúncios do Fluente com Legenda. Padrões que eles usam:
+Base: 35 anúncios (AD 1–35) do Fluente com Legenda. Padrões que eles usam:
 - **Um vídeo, vários ganchos** (AD 1, 2 e 3 têm o mesmo corpo e só mudam os 3 primeiros segundos).
 - **Tour mostrando o material com a mão / tela** ("olha aqui, ó…") = sensação de coisa real.
 - **Conteúdo primeiro, produto depois** (AD 5: "show off" na música).
@@ -164,6 +164,10 @@ Grave o corpo do **#1** uma vez e troque só os 3 primeiros segundos:
 - "Tem entrevista de emprego em inglês? Faz isso antes." (mapa "Entrevista de emprego")
 - "Vocês me perguntaram como organizar o inglês na cabeça. Respondendo aqui." (AD 12)
 - "Teacher, eu já aprendi isso, mas não lembro como era." (AD 31)
+- "Aprenda WAS e WERE em menos de um minuto." (AD 28 — use no roteiro #7)
+- "Você ainda trava no HAVE e HAS? Presta atenção por 30 segundos." (AD 30 — roteiro #7)
+- "A pior coisa é estudar hoje e amanhã parecer que não sabe nada." (AD 27 — use no corpo do #4)
+- "Ainda tô aprendendo inglês, mas tô aprendendo muito com isso aqui." (AD 26 — tom de aluno, ótimo pra quem não é professor)
 - "Eu não acredito que isso é de graça pra testar."
 
 ## Imagens estáticas (2–3 para rodar junto)
