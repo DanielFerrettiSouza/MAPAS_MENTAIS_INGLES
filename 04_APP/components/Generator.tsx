@@ -1,10 +1,8 @@
 "use client";
 
-import { Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
-import MindMapView from "@/components/MindMapView";
-import ReviewQuiz from "@/components/ReviewQuiz";
-import type { MapWithImages } from "@/lib/mapSchema";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const SUGGESTIONS = [
@@ -15,29 +13,20 @@ const SUGGESTIONS = [
   "Phrasal verbs do dia a dia",
 ];
 
-export default function CreateMapPage() {
-  return (
-    <Suspense>
-      <CreateMap />
-    </Suspense>
-  );
-}
-
-function CreateMap() {
+export default function Generator({ credits }: { credits: number }) {
+  const router = useRouter();
   const params = useSearchParams();
   const [topic, setTopic] = useState(params.get("topic") ?? "");
   const [level, setLevel] = useState(params.get("level") ?? "A1");
   const goal = params.get("goal") ?? undefined;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [map, setMap] = useState<MapWithImages | null>(null);
   const autoStarted = useRef(false);
 
   async function generate(t = topic) {
-    if (!t.trim()) return;
+    if (!t.trim() || loading) return;
     setLoading(true);
     setError(null);
-    setMap(null);
     try {
       const res = await fetch("/api/generate-map", {
         method: "POST",
@@ -46,33 +35,38 @@ function CreateMap() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Erro ao gerar o mapa.");
-      setMap(data);
+      router.push(`/app/mapa/${data.id}`);
+      router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erro ao gerar o mapa.");
-    } finally {
       setLoading(false);
     }
   }
 
-  // Vindo do quiz do funil: já gera o primeiro mapa automaticamente.
+  // Vindo do quiz: gera o primeiro mapa automaticamente.
   useEffect(() => {
-    if (params.get("topic") && !autoStarted.current) {
+    if (params.get("topic") && !autoStarted.current && credits > 0) {
       autoStarted.current = true;
       void generate(params.get("topic")!);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <main className="container wide">
-      <h1>Mapas Falantes</h1>
-      <p style={{ color: "var(--muted)" }}>
-        Digite qualquer assunto. A IA monta o mapa mental ilustrado e você toca em
-        cada frase para ouvir a pronúncia nativa.
-      </p>
+  if (credits <= 0) {
+    return (
+      <div className="gen-box" style={{ textAlign: "center" }}>
+        <h3 style={{ marginTop: 0 }}>Seus mapas grátis acabaram 🎉</h3>
+        <p style={{ color: "var(--muted)" }}>Assine um plano para continuar criando mapas com áudio.</p>
+        <Link href="/app/planos" className="primary-btn grad-btn">Ver planos</Link>
+      </div>
+    );
+  }
 
+  return (
+    <div className="gen-box">
       <form
         className="create-form"
+        style={{ margin: 0 }}
         onSubmit={(e) => {
           e.preventDefault();
           void generate();
@@ -81,20 +75,19 @@ function CreateMap() {
         <input
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-          placeholder="Ex.: inglês para viagem"
+          placeholder="Sobre o que você quer aprender? Ex.: pedir comida no restaurante"
           maxLength={200}
         />
-        <select value={level} onChange={(e) => setLevel(e.target.value)}>
+        <select value={level} onChange={(e) => setLevel(e.target.value)} aria-label="Nível">
           {LEVELS.map((l) => (
             <option key={l}>{l}</option>
           ))}
         </select>
-        <button className="primary-btn" disabled={loading || !topic.trim()}>
-          {loading ? "Gerando…" : "Gerar mapa"}
+        <button className="primary-btn grad-btn" disabled={loading || !topic.trim()}>
+          {loading ? "Gerando…" : "✨ Criar mapa"}
         </button>
       </form>
-
-      <div className="chips">
+      <div className="chips" style={{ margin: "14px 0 0" }}>
         {SUGGESTIONS.map((s) => (
           <button
             key={s}
@@ -109,20 +102,8 @@ function CreateMap() {
           </button>
         ))}
       </div>
-
-      {loading && (
-        <p className="loading">
-          ✨ Criando seu mapa, ilustrações e áudios… (leva uns 20–40 segundos)
-        </p>
-      )}
+      {loading && <p className="loading">✨ Criando seu mapa, ilustrações e áudios… (uns 20–40 segundos)</p>}
       {error && <p className="error">{error}</p>}
-
-      {map && (
-        <>
-          <MindMapView map={map} />
-          <ReviewQuiz quiz={map.quiz} />
-        </>
-      )}
-    </main>
+    </div>
   );
 }

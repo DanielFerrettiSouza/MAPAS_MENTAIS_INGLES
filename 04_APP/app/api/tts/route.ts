@@ -2,11 +2,14 @@
 // GET /api/tts?text=I%20am  →  audio/mpeg
 // No protótipo o áudio é gerado sob demanda e fica em cache no navegador/CDN;
 // em produção, salvar no Supabase Storage para não pagar a mesma frase duas vezes.
+import { getCurrentUser } from "@/lib/supa/server";
+
 export const runtime = "nodejs";
 
 export async function GET(req: Request) {
   const text = new URL(req.url).searchParams.get("text")?.trim().slice(0, 300);
   if (!text) return new Response("Parâmetro text obrigatório", { status: 400 });
+  if (!(await getCurrentUser())) return new Response("Faça login para ouvir o áudio.", { status: 401 });
 
   const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY?.trim();
   const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID?.trim();
@@ -40,7 +43,7 @@ export async function GET(req: Request) {
   return new Response(res.body, {
     headers: {
       "Content-Type": "audio/mpeg",
-      "Cache-Control": "public, max-age=31536000, immutable",
+      "Cache-Control": "private, max-age=31536000, immutable",
     },
   });
 }
