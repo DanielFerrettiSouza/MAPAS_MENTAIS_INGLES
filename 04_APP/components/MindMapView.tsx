@@ -25,6 +25,12 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
   const [playing, setPlaying] = useState<string | null>(null);
   const [audioError, setAudioError] = useState<string | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
+  const [typed, setTyped] = useState<string[]>([]);
+  const [checked, setChecked] = useState(false);
+
+  const norm = (t: string) => t.toLowerCase().replace(/[’']/g, "'").replace(/[.!?,]/g, "").replace(/\s+/g, " ").trim();
+  const isRight = (i: number) => norm(typed[i] ?? "") === norm(map.exercises[i].answer);
+  const score = map.exercises.filter((_, i) => isRight(i)).length;
 
   async function play(text: string) {
     const audio = audioRef.current;
@@ -173,22 +179,49 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                 {ex.sentence.split("___").map((part, k, arr) => (
                   <span key={k}>
                     {part}
-                    {k < arr.length - 1 && (
-                      <span className="nb-blank">{showAnswers ? ex.answer : " "}</span>
-                    )}
+                    {k < arr.length - 1 &&
+                      (showAnswers ? (
+                        <span className="nb-blank">{ex.answer}</span>
+                      ) : (
+                        <input
+                          className={`nb-blank nb-input ${checked ? (isRight(i) ? "ok" : "bad") : ""}`}
+                          value={typed[i] ?? ""}
+                          size={Math.max(6, ex.answer.length + 2)}
+                          onChange={(e) => {
+                            const next = [...typed];
+                            next[i] = e.target.value;
+                            setTyped(next);
+                            setChecked(false);
+                          }}
+                          onKeyDown={(e) => e.key === "Enter" && setChecked(true)}
+                          aria-label={`Resposta ${i + 1}`}
+                          autoCapitalize="off"
+                          autoCorrect="off"
+                          spellCheck={false}
+                        />
+                      ))}
                   </span>
                 ))}{" "}
                 <small>{ex.hint_pt}</small>
               </li>
             ))}
           </ol>
-          <button
-            className="nb-answers-btn"
-            onClick={() => setShowAnswers((v) => !v)}
-            data-no-export="true"
-          >
-            {showAnswers ? "Esconder respostas" : "Ver respostas"}
-          </button>
+          <div className="nb-ex-actions" data-no-export="true">
+            {!showAnswers && (
+              <button className="nb-answers-btn nb-check-btn" onClick={() => setChecked(true)}>
+                Corrigir
+              </button>
+            )}
+            <button className="nb-answers-btn" onClick={() => setShowAnswers((v) => !v)}>
+              {showAnswers ? "Esconder respostas" : "Ver respostas"}
+            </button>
+            {checked && !showAnswers && (
+              <span className="nb-score">
+                {score === map.exercises.length ? "🎉 " : ""}
+                {score}/{map.exercises.length} certas
+              </span>
+            )}
+          </div>
         </footer>
       </div>
 
