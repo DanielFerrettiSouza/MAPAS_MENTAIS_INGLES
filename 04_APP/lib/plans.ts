@@ -49,6 +49,24 @@ export const PLANS: Plan[] = [
   },
 ];
 
+// Link do checkout da Kiwify de cada plano (configurado na Vercel).
+export function checkoutUrl(planId: string, email?: string | null) {
+  const urls: Record<string, string | undefined> = {
+    essencial: process.env.NEXT_PUBLIC_KIWIFY_ESSENCIAL,
+    fluente: process.env.NEXT_PUBLIC_KIWIFY_FLUENTE,
+    professor: process.env.NEXT_PUBLIC_KIWIFY_PROFESSOR,
+  };
+  const url = urls[planId];
+  if (!url) return null;
+  return email ? `${url}${url.includes("?") ? "&" : "?"}email=${encodeURIComponent(email)}` : url;
+}
+
+// Descobre o plano pelo nome do produto na Kiwify (ex.: "Mapas Falantes - Fluente").
+export function planFromProductName(name: string) {
+  const n = name.toLowerCase();
+  return PLANS.find((p) => p.id !== "free" && n.includes(p.name.toLowerCase())) ?? null;
+}
+
 export function planName(id: string) {
   return PLANS.find((p) => p.id === id)?.name ?? "Grátis";
 }
