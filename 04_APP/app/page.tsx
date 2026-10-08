@@ -151,7 +151,7 @@ export default function Landing() {
           </div>
         </section>
       </main>
-      <footer className="site-footer">© {new Date().getFullYear()} Mapas Falantes</footer>
+      <footer className="site-footer">© {new Date().getFullYear()} Mapas Falantes · <Link href="/privacidade">Privacidade</Link> · <Link href="/termos">Termos de Uso</Link></footer>
     </>
   );
 }
