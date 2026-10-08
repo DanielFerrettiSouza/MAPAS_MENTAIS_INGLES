@@ -1,11 +1,14 @@
 # Mapas Falantes — 10 roteiros de criativos (vídeo)
 
-Base: 10 anúncios do Fluente com Legenda. Padrões que eles usam:
+Base: 35 anúncios do Fluente com Legenda. Padrões que eles usam:
 - **Um vídeo, vários ganchos** (AD 1, 2 e 3 têm o mesmo corpo e só mudam os 3 primeiros segundos).
 - **Tour mostrando o material com a mão / tela** ("olha aqui, ó…") = sensação de coisa real.
 - **Conteúdo primeiro, produto depois** (AD 5: "show off" na música).
 - **"Se eu fosse começar hoje…"** (AD 7, AD 10).
-- CTA sempre: "clica em Saiba Mais".
+- **Micro-aula de gramática** como gancho (IN/ON/AT, MANY/MUCH, WAS/WERE, Past Continuous) — o formato que mais se repete nos 35.
+- **Persona professor(a)** e **depoimento/review** ("já estou usando e digo o que achei").
+- **"Olha como é por dentro"** (tour do material).
+- CTA sempre: "clica em Saiba Mais" (às vezes "ou no link da bio").
 
 Nossa diferença (o que eles NÃO têm e precisa aparecer em todo vídeo):
 1. **Digitar o tema ao vivo** e o mapa aparecer.
@@ -99,18 +102,18 @@ Texto: **ISSO DEVIA SER PROIBIDO 😳**
 
 ---
 
-## 7. Viagem (situação real)
-**Gancho** — passaporte/mala na mesa ou print de passagem.
-> "Vou viajar pros Estados Unidos e preparei meu inglês da viagem em 30 segundos."
-Texto: **INGLÊS DA VIAGEM EM 30s ✈️**
+## 7. Micro-aula de gramática (formato mais repetido do concorrente: AD 16, 18, 21, 33)
+**Gancho**
+> "Você ainda se confunde com IN, ON e AT? Olha como fica fácil assim."
+Texto: **IN • ON • AT 🤯**
 
 **Corpo**
-> "Digitei 'no aeroporto'…" *(mapa aparece)* "check-in, segurança, embarque, problemas. 'My flight is delayed'…" *(áudio)* "Depois fiz um de hotel, um de restaurante. Baixei e salvei no celular pra ver na hora."
+> *(digita "preposições in, on, at" — mapa aparece)* "IN pra meses e lugares fechados: in July, in the car." *(toca)* "ON pra dias e em cima de algo: on Monday, on the table." *(toca)* "AT pra hora exata: at 8 o'clock." *(toca)* "E aqui o erro que todo mundo comete, e o exercício pra fixar."
 
 **CTA**
-> "Vai viajar? Clica em Saiba Mais e cria os seus grátis."
+> "Qualquer dúvida de gramática vira mapa com áudio. Clica em Saiba Mais e testa grátis."
 
----
+> 💡 Mesmo formato, outras versões: MANY × MUCH, WAS × WERE, HAVE × HAS, Past Continuous, DO × DOES.
 
 ## 8. Erro comum (curiosidade)
 **Gancho** — texto grande com a frase errada.
@@ -138,16 +141,16 @@ Texto: **COMPLETA: SHE IS A ___ 👩‍⚕️**
 
 ---
 
-## 10. Trabalho / entrevista (público profissional)
+## 10. Persona professor(a) (AD 31, 33, 34)
 **Gancho**
-> "Tem entrevista de emprego em inglês? Faz isso antes."
-Texto: **ENTREVISTA EM INGLÊS? 💼**
+> "Meus alunos perderam o medo do Past Continuous depois desse mapa aqui."
+Texto: **PROFESSOR(A), OLHA ISSO 👩‍🏫**
 
 **Corpo**
-> "Eu digitei 'entrevista de emprego' e ele montou as frases que mais caem: 'Tell me about yourself', 'I'm a team player', 'What's the next step?'" *(toca cada uma)* "Você ouve, repete e treina no exercício. Dá pra fazer de reunião online, e-mail, apresentação…"
+> "Eu digito o tema da aula…" *(mapa aparece)* "…e ele monta: formação, quando usar, exemplos, erro comum e exercício. Os alunos tocam na frase e ouvem a pronúncia de nativo." *(toca)* "Eu baixo, imprimo e uso em sala. Do A1 ao C2."
 
 **CTA**
-> "Clica em Saiba Mais. Os 3 primeiros mapas são grátis."
+> "Professor, clica em Saiba Mais e cria os 3 primeiros grátis."
 
 ---
 
@@ -157,6 +160,10 @@ Grave o corpo do **#1** uma vez e troque só os 3 primeiros segundos:
 - "Esse app faz em 30 segundos o que eu levava 1 hora pra montar."
 - "Professor de inglês, você precisa ver isso."
 - "Isso aqui é o Duolingo que eu queria."
+- "Vou viajar e preparei meu inglês da viagem em 30 segundos." (mostrar mapa "No aeroporto")
+- "Tem entrevista de emprego em inglês? Faz isso antes." (mapa "Entrevista de emprego")
+- "Vocês me perguntaram como organizar o inglês na cabeça. Respondendo aqui." (AD 12)
+- "Teacher, eu já aprendi isso, mas não lembro como era." (AD 31)
 - "Eu não acredito que isso é de graça pra testar."
 
 ## Imagens estáticas (2–3 para rodar junto)
