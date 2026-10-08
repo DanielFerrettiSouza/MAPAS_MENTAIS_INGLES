@@ -102,7 +102,7 @@ export default function QuizPage() {
     try {
       localStorage.setItem("mf-quiz", JSON.stringify(answers));
     } catch {}
-    const app = `/app?${new URLSearchParams({ topic, level: answers.level, goal })}`;
+    const app = `/app/criar?${new URLSearchParams({ topic, level: answers.level, goal })}`;
     router.push(`/criar-conta?next=${encodeURIComponent(app)}`);
   }
 
