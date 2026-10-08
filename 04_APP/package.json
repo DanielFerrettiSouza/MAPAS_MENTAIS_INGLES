@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env -u ELEVENLABS_API_KEY -u ELEVENLABS_VOICE_ID -u ANTHROPIC_API_KEY -u GEMINI_API_KEY next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "env -u ELEVENLABS_API_KEY -u ELEVENLABS_VOICE_ID -u ANTHROPIC_API_KEY -u GEMINI_API_KEY next start"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.1",
