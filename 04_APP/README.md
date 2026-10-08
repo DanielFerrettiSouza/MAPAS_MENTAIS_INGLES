@@ -33,3 +33,7 @@ Rodar o `../02_SPEC_PRODUTO/schema.sql` no Supabase e gerar pelo menos os mapas 
 - Checkout/paywall — hoje qualquer um acessa `/it/level/A1` livremente; a versão de venda precisa bloquear atrás do Stripe
 - Detecção automática de idioma do navegador pra decidir o redirect da raiz (`/` → `/it` está fixo por enquanto)
 - Design de verdade — isso aqui é esqueleto funcional, não a arte final da marca Mappe Parlanti
+
+## Chaves: sempre do `.env.local`
+
+Os scripts `npm run dev` e `npm start` removem `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, `ELEVENLABS_API_KEY` e `ELEVENLABS_VOICE_ID` do ambiente do Terminal antes de iniciar. Assim o app usa sempre as chaves do `.env.local`, mesmo que o `~/.zshrc` tenha chaves de outro projeto com o mesmo nome. Em produção (Vercel), use `next start` direto ou configure as variáveis no painel.
