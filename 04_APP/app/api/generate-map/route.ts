@@ -3,7 +3,7 @@ import { generateIllustration, generateMapContent } from "@/lib/ai";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 export const runtime = "nodejs";
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
