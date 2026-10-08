@@ -2,6 +2,7 @@ import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import PlansGrid from "@/components/PlansGrid";
 import MapWall from "@/components/MapWall";
+import HeroMaps from "@/components/HeroMaps";
 import Guarantee from "@/components/Guarantee";
 
 const STEPS = [
@@ -34,7 +35,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="hero-visual">
-            <MapWall variant="hero" />
+            <HeroMaps />
           </div>
         </section>
 

@@ -485,7 +485,7 @@ a { color: inherit; }
 .wall-col.down { animation: wall-down 46s linear infinite; }
 @keyframes wall-up { from { transform: translateY(0); } to { transform: translateY(-50%); } }
 @keyframes wall-down { from { transform: translateY(-50%); } to { transform: translateY(0); } }
-@media (prefers-reduced-motion: reduce) { .wall-col.up, .wall-col.down { animation: none; } }
+/* Rolagem lenta e decorativa: continua mesmo com "reduzir movimento" ativo no sistema. */
 
 .mini-page {
   background: #fffdf7; color: #1f2937; border-radius: 14px; padding: 12px;
@@ -505,10 +505,18 @@ a { color: inherit; }
 .mini-sec p { margin: 2px 0; font-size: 10.5px; line-height: 1.3; overflow-wrap: anywhere; }
 .mini-sec small { color: #6b7280; }
 
+.wall-card {
+  background: linear-gradient(160deg, #1c1c1f, #121214); border: 1px solid; border-radius: 20px; padding: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.wall-head { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+.wall-head strong { display: block; font-size: 17px; }
+.wall-head small { color: var(--muted); }
+.wall-emoji { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 22px; flex: none; }
+.wall-card ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; color: #d4d4d8; font-size: 15px; }
 @media (max-width: 900px) {
-  .wall { height: 460px; }
-  .wall-plane { grid-template-columns: repeat(2, 1fr); inset: -15% -8%; transform: rotateX(30deg) rotateZ(-8deg); }
-  .wall-plane .wall-col:nth-child(n+3) { display: none; }
+  .wall { height: 440px; }
+  .wall-plane { grid-template-columns: repeat(2, 1fr); inset: -20% -40%; }
   .stack { height: 440px; }
 }
 @media (max-width: 520px) {
@@ -548,7 +556,13 @@ a { color: inherit; }
   .final-cta { padding: 56px 0; }
   .wall { margin-top: 20px; }
 }
-@media (max-width: 420px) {
-  .site-nav .primary-btn { padding: 8px 12px; font-size: 14px; }
-  .site-nav .logo-text, .site-nav .logo span { font-size: 20px; }
+@media (max-width: 600px) {
+  .site-nav { padding: 12px 14px; gap: 10px; }
+  .site-nav .logo { gap: 7px; min-width: 0; }
+  .site-nav .logo svg { width: 26px; height: 26px; }
+  .site-nav .logo-text { font-size: 17px !important; }
+  .site-nav nav { gap: 0; flex: none; }
+  .site-nav .primary-btn { padding: 8px 12px !important; font-size: 14px !important; }
+  .stats strong { font-size: 28px; }
+  .stats span { font-size: 14px; }
 }

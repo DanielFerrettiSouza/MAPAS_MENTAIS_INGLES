@@ -23,7 +23,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <Link href="/app?criar=1" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
         <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
-        <a href="mailto:contato@danielferretti.com" className="side-link"><IconHelp /><span>Suporte</span></a>
+        <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>Suporte</span></a>
         <div className="spacer" />
         <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>
         <form action="/auth/sair" method="post">
