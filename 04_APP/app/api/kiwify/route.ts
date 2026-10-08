@@ -18,18 +18,33 @@ function validSignature(body: string, signature: string | null) {
 }
 
 const ACTIVATE = new Set(["order_approved", "paid", "subscription_renewed", "approved"]);
-const DEACTIVATE = new Set(["subscription_canceled", "refunded", "chargeback", "subscription_late"]);
+const DEACTIVATE = new Set([
+  "subscription_canceled",
+  "refunded",
+  "order_refunded",
+  "chargeback",
+  "subscription_late",
+]);
 
 export async function POST(req: Request) {
   const raw = await req.text();
   if (!validSignature(raw, new URL(req.url).searchParams.get("signature"))) {
+    console.error("Kiwify: assinatura inválida (confira KIWIFY_WEBHOOK_TOKEN e faça Redeploy)");
     return NextResponse.json({ error: "assinatura inválida" }, { status: 401 });
   }
 
   const event = JSON.parse(raw);
   const status: string = event.webhook_event_type ?? event.order_status ?? "";
-  const email: string | undefined = event.Customer?.email?.toLowerCase();
-  const productName: string = event.Product?.product_name ?? "";
+  const email: string | undefined = event.Customer?.email?.trim().toLowerCase();
+  // O plano pode estar no nome do produto, da oferta ou do plano de assinatura.
+  const productName: string = [
+    event.Product?.product_name,
+    event.Product?.product_offer_name,
+    event.Subscription?.plan?.name,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  console.log("Kiwify:", { status, email, productName });
   if (!email) return NextResponse.json({ ok: true, ignored: "sem e-mail" });
 
   const admin = createSupabaseAdmin();
@@ -41,9 +56,17 @@ export async function POST(req: Request) {
 
   if (ACTIVATE.has(status)) {
     const plan = planFromProductName(productName);
+    if (!plan) console.error("Kiwify: produto sem nome de plano:", productName);
     if (!plan) return NextResponse.json({ ok: true, ignored: `produto desconhecido: ${productName}` });
     if (profile) {
-      await admin.from("profiles").update({ plan: plan.id, credits: plan.credits }).eq("id", profile.id);
+      const { error } = await admin
+        .from("profiles")
+        .update({ plan: plan.id, credits: plan.credits })
+        .eq("id", profile.id);
+      if (error) {
+        console.error("Kiwify: falha ao atualizar perfil:", error.message);
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
     } else {
       // Pagou antes de criar a conta: o plano é aplicado no cadastro.
       await admin.from("pending_upgrades").upsert({ email, plan: plan.id, credits: plan.credits });
