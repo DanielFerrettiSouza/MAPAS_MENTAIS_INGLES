@@ -485,7 +485,7 @@ a { color: inherit; }
 .wall-col.down { animation: wall-down 46s linear infinite; }
 @keyframes wall-up { from { transform: translateY(0); } to { transform: translateY(-50%); } }
 @keyframes wall-down { from { transform: translateY(-50%); } to { transform: translateY(0); } }
-@media (prefers-reduced-motion: reduce) { .wall-col.up, .wall-col.down { animation: none; } }
+/* Rolagem lenta e decorativa: continua mesmo com "reduzir movimento" ativo no sistema. */
 
 .mini-page {
   background: #fffdf7; color: #1f2937; border-radius: 14px; padding: 12px;
