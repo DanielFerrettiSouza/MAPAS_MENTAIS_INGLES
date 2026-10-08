@@ -4,10 +4,32 @@ import { useRef, useState } from "react";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 const COLORS = ["#ef4444", "#f59e0b", "#10b981", "#3b82f6", "#8b5cf6", "#ec4899"];
-const W = 1400;
+const W = 1500;
 const H = 1000;
 const CX = W / 2;
 const CY = H / 2;
+
+// Quebra o texto em linhas de até maxChars caracteres (por palavra).
+function wrap(text: string, maxChars: number): string[] {
+  const lines: string[] = [];
+  let line = "";
+  for (const word of text.split(/\s+/)) {
+    if (line && (line + " " + word).length > maxChars) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = line ? `${line} ${word}` : word;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+const EN_CHARS = 24;
+const PT_CHARS = 34;
+const EN_LINE = 25;
+const PT_LINE = 18;
+const ITEM_GAP = 12;
 
 export function playPhrase(text: string, audio: HTMLAudioElement) {
   audio.src = `/api/tts?text=${encodeURIComponent(text)}`;
@@ -70,7 +92,16 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
             const right = Math.cos(angle) >= -0.01;
             const tx = bx + (right ? 70 : -70);
             const anchor = right ? "start" : "end";
-            const itemsTop = by - ((branch.items.length - 1) * 50) / 2 + 6;
+            const blocks = branch.items.map((item) => ({
+              item,
+              en: wrap(item.en, EN_CHARS),
+              pt: wrap(item.pt, PT_CHARS),
+            }));
+            const heights = blocks.map(
+              (b) => b.en.length * EN_LINE + b.pt.length * PT_LINE + ITEM_GAP
+            );
+            const total = heights.reduce((a, h) => a + h, 0);
+            let cursor = by - total / 2 + EN_LINE - 6;
             const img = map.branch_images[i];
 
             return (
@@ -110,33 +141,42 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
                   {branch.label_en}
                 </text>
 
-                {branch.items.map((item, j) => (
-                  <g
-                    key={j}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => play(item.en)}
-                  >
-                    <text
-                      x={tx}
-                      y={itemsTop + j * 50}
-                      textAnchor={anchor}
-                      fontSize={21}
-                      fontWeight={700}
-                      fill={playing === item.en ? color : "#1c1917"}
+                {blocks.map((block, j) => {
+                  const top = cursor;
+                  cursor += heights[j];
+                  const active = playing === block.item.en;
+                  return (
+                    <g
+                      key={j}
+                      style={{ cursor: "pointer" }}
+                      onClick={() => play(block.item.en)}
                     >
-                      {right ? `🔊 ${item.en}` : `${item.en} 🔊`}
-                    </text>
-                    <text
-                      x={tx}
-                      y={itemsTop + j * 50 + 20}
-                      textAnchor={anchor}
-                      fontSize={14}
-                      fill="#78716c"
-                    >
-                      {item.pt}
-                    </text>
-                  </g>
-                ))}
+                      <text
+                        textAnchor={anchor}
+                        fontSize={21}
+                        fontWeight={700}
+                        fill={active ? color : "#1c1917"}
+                      >
+                        {block.en.map((line, k) => (
+                          <tspan key={k} x={tx} y={top + k * EN_LINE}>
+                            {k === 0 ? (right ? `🔊 ${line}` : `${line} 🔊`) : line}
+                          </tspan>
+                        ))}
+                      </text>
+                      <text textAnchor={anchor} fontSize={14} fill="#78716c">
+                        {block.pt.map((line, k) => (
+                          <tspan
+                            key={k}
+                            x={tx}
+                            y={top + (block.en.length - 1) * EN_LINE + 20 + k * PT_LINE}
+                          >
+                            {line}
+                          </tspan>
+                        ))}
+                      </text>
+                    </g>
+                  );
+                })}
               </g>
             );
           })}
@@ -155,23 +195,35 @@ export default function MindMapView({ map }: { map: MapWithImages }) {
                 height={204}
                 clipPath="url(#clip-center)"
                 preserveAspectRatio="xMidYMid slice"
-                opacity={0.35}
+                opacity={0.3}
               />
             </>
           )}
-          <text
-            x={CX}
-            y={CY - 4}
-            textAnchor="middle"
-            fontSize={30}
-            fontWeight={900}
-            fill="#ffffff"
-          >
-            {map.title_en}
-          </text>
-          <text x={CX} y={CY + 30} textAnchor="middle" fontSize={18} fill="#e7e5e4">
-            {map.title_pt} · {map.level}
-          </text>
+          {(() => {
+            const title = wrap(map.title_en, 13).slice(0, 3);
+            const sub = `${map.title_pt} · ${map.level}`;
+            const subLines = wrap(sub, 22).slice(0, 2);
+            const titleH = title.length * 30;
+            const startY = CY - (titleH + subLines.length * 20) / 2 + 22;
+            return (
+              <>
+                <text textAnchor="middle" fontSize={26} fontWeight={900} fill="#ffffff">
+                  {title.map((line, k) => (
+                    <tspan key={k} x={CX} y={startY + k * 30}>
+                      {line}
+                    </tspan>
+                  ))}
+                </text>
+                <text textAnchor="middle" fontSize={15} fill="#e7e5e4">
+                  {subLines.map((line, k) => (
+                    <tspan key={k} x={CX} y={startY + titleH + 4 + k * 20}>
+                      {line}
+                    </tspan>
+                  ))}
+                </text>
+              </>
+            );
+          })()}
         </svg>
       </div>
 

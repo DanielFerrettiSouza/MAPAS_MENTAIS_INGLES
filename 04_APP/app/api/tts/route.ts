@@ -8,7 +8,8 @@ export async function GET(req: Request) {
   const text = new URL(req.url).searchParams.get("text")?.trim().slice(0, 300);
   if (!text) return new Response("Parâmetro text obrigatório", { status: 400 });
 
-  const { ELEVENLABS_API_KEY, ELEVENLABS_VOICE_ID } = process.env;
+  const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY?.trim();
+  const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID?.trim();
   if (!ELEVENLABS_API_KEY || !ELEVENLABS_VOICE_ID) {
     return new Response("ElevenLabs não configurado", { status: 500 });
   }
@@ -30,7 +31,10 @@ export async function GET(req: Request) {
     }
   );
   if (!res.ok) {
-    return new Response(`ElevenLabs falhou (${res.status})`, { status: 502 });
+    // Mostra o motivo que a ElevenLabs devolveu (voz inválida, plano, créditos...).
+    const detail = await res.text();
+    console.error(`ElevenLabs falhou (${res.status}):`, detail);
+    return new Response(`ElevenLabs falhou (${res.status}): ${detail}`, { status: 502 });
   }
 
   return new Response(res.body, {
