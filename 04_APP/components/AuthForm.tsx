@@ -80,7 +80,7 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
         </p>
       </div>
       <p style={{ color: "#71717a", fontSize: 13, marginTop: 24 }}>
-        Ao criar sua conta, você concorda com os Termos de Uso.
+        Ao criar sua conta, você concorda com os <Link href="/termos" style={{ color: "#a1a1aa" }}>Termos de Uso</Link> e a <Link href="/privacidade" style={{ color: "#a1a1aa" }}>Política de Privacidade</Link>.
       </p>
     </main>
   );
