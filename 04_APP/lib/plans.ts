@@ -44,8 +44,8 @@ export const PLANS: Plan[] = [
     tagline: "Para quem ensina inglês.",
     price: "R$99,90",
     oldPrice: "R$199,90",
-    credits: 200,
-    features: ["200 mapas por mês", "Tudo do Fluente", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
+    credits: 100,
+    features: ["100 mapas por mês", "Tudo do Fluente", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
   },
 ];
 
