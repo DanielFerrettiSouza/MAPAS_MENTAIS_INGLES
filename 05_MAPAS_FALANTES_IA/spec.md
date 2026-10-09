@@ -46,7 +46,7 @@ Sugestão de planos (validar com teste A/B):
 |---|---|---|
 | Essencial | R$29,90/mês | 30 mapas/mês |
 | Fluente | R$49,90/mês | 60 mapas/mês |
-| Professor | R$99,90/mês | 200 mapas/mês, uso com alunos |
+| Professor | R$99,90/mês | 100 mapas/mês, uso com alunos |
 | Entrada (pagamento único) | R$37,90 | só a biblioteca pronta, sem gerador |
 
 ## 4. Custo por mapa gerado (estimativa — confirmar com as faturas reais)
