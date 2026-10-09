@@ -59,7 +59,7 @@ export default async function StudyPlanPage({ searchParams }: { searchParams: { 
               {w.map((t) => (
                 <li key={t.slug}>
                   {have.has(t.slug) ? (
-                    <Link href={`/app/biblioteca/${t.slug}`}>{done.has(t.slug) ? "✅" : "⬜"} {t.topic}</Link>
+                    <Link href={`/app/biblioteca/${t.slug}?de=plano&objetivo=${goal}`}>{done.has(t.slug) ? "✅" : "⬜"} {t.topic}</Link>
                   ) : (
                     <span style={{ opacity: 0.5 }}>⏳ {t.topic}</span>
                   )}
