@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import "./globals.css";
+import MetaPixel from "@/components/MetaPixel";
 
 export const metadata = {
   title: "Mapas Falantes",
@@ -17,7 +18,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@600&family=Patrick+Hand&family=Poppins:wght@400;500;600;700;800&display=swap"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   );
 }

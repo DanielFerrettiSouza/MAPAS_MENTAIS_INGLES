@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import Logo, { LogoMark } from "@/components/Logo";
 import { getCurrentUser } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
+import RegistrationPixel from "@/components/RegistrationPixel";
 import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSettings, IconSparkles, IconBook, IconCalendar } from "@/components/Icons";
 
 export const dynamic = "force-dynamic";
@@ -39,6 +40,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         </div>
       </aside>
       <main className="app-main">{children}</main>
+      <RegistrationPixel userId={user.id} isNew={Date.now() - new Date(user.created_at).getTime() < 30 * 60 * 1000} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { trackCustom } from "@/lib/pixel";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -45,6 +46,7 @@ export default function Generator({
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Erro ao gerar o mapa.");
+      trackCustom("MapCreated", { level });
       router.push(`/app/mapa/${data.id}`);
       router.refresh();
     } catch (err) {
