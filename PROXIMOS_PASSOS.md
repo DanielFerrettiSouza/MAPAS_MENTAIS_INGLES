@@ -57,9 +57,7 @@ O painel `/app/admin` já mostra contas, mapas por dia/período e lista de pesso
 
 ## Outras pendências
 - Trocar `ELEVENLABS_VOICE_ID` por uma voz americana (Vercel + Redeploy).
-- **Próxima fase (melhorias do plano Fluente):** removidos do texto em out/2026 porque ainda não existem — criar e depois voltar a anunciar:
-  - **Biblioteca pronta A1–C2:** mapas já gerados por nível, acessíveis sem gastar crédito.
-  - **Plano de estudos pelo objetivo:** sequência de temas a partir das respostas do quiz (nível, objetivo, tempo/dia).
+- **Biblioteca + Plano de estudos (Fluente/Professor):** implementados (`/app/biblioteca`, `/app/plano`, temas em `04_APP/lib/curriculum.ts`). Para ativar: rodar `05_MAPAS_FALANTES_IA/schema_app_v3.sql` no Supabase e clicar em **Gerar biblioteca** no `/app/admin` (120 mapas, ~R$35 uma vez).
 - Testar reembolso na Kiwify (conta deve voltar ao grátis).
 - Domínio próprio → depois: Resend no lugar do Gmail, logo na tela de login do Google.
 - Ilustrações 3D na landing (aguardando exemplos).

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { generateIllustration, generateMapContent } from "@/lib/ai";
+import { buildMap } from "@/lib/buildMap";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
 import type { MapWithImages } from "@/lib/mapSchema";
 
@@ -7,25 +7,6 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-
-// Sobe a ilustração (data URL) para o Storage e devolve a URL pública.
-async function storeImage(
-  admin: ReturnType<typeof createSupabaseAdmin>,
-  path: string,
-  dataUrl: string | null
-) {
-  if (!dataUrl) return null;
-  const match = dataUrl.match(/^data:(.+?);base64,(.*)$/);
-  if (!match) return null;
-  const { error } = await admin.storage
-    .from("map-images")
-    .upload(path, Buffer.from(match[2], "base64"), { contentType: match[1], upsert: true });
-  if (error) {
-    console.error("Falha ao salvar imagem:", error.message);
-    return null;
-  }
-  return admin.storage.from("map-images").getPublicUrl(path).data.publicUrl;
-}
 
 export async function POST(req: Request) {
   const user = await getCurrentUser();
@@ -56,27 +37,21 @@ export async function POST(req: Request) {
   }
 
   try {
-    const map = await generateMapContent({ topic, level, goal });
-    // Custo: ilustração é a parte cara. Plano pago ganha só a capa ilustrada;
-    // grátis usa emojis. Os ramos sempre usam o emoji gerado pelo Claude.
-    const paid = profile?.plan && profile.plan !== "free";
-    const cover = paid ? await generateIllustration(map.cover_prompt) : null;
-    const branches: (string | null)[] = map.branches.map(() => null);
-
+    // Custo: plano pago ganha a capa ilustrada; grátis usa só emojis.
     const id = crypto.randomUUID();
-    const base = `${user.id}/${id}`;
-    const [cover_image, ...branch_images] = await Promise.all([
-      storeImage(admin, `${base}/cover.png`, cover),
-      ...branches.map((img, i) => storeImage(admin, `${base}/${i}.png`, img)),
-    ]);
-
-    const result: MapWithImages = { ...map, cover_image, branch_images };
+    const result: MapWithImages = await buildMap(admin, {
+      topic,
+      level,
+      goal,
+      illustrate: !!profile?.plan && profile.plan !== "free",
+      imagePath: `${user.id}/${id}`,
+    });
     const { error } = await admin.from("generated_maps").insert({
       id,
       user_id: user.id,
       topic,
       level,
-      title_pt: map.title_pt,
+      title_pt: result.title_pt,
       data: result,
     });
     if (error) throw new Error(`Falha ao salvar o mapa: ${error.message}`);

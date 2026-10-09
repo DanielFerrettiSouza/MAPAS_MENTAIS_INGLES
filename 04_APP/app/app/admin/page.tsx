@@ -2,6 +2,8 @@ import { redirect } from "next/navigation";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
 import { planName } from "@/lib/plans";
+import { CURRICULUM } from "@/lib/curriculum";
+import LibraryGenerator from "@/components/LibraryGenerator";
 
 export const dynamic = "force-dynamic";
 
@@ -22,6 +24,7 @@ export default async function AdminPage() {
     admin.from("generated_maps").select("user_id, created_at").order("created_at", { ascending: false }).limit(10000),
     admin.auth.admin.listUsers({ perPage: 1000 }),
   ]);
+  const { count: libCount } = await admin.from("library_maps").select("slug", { count: "exact", head: true });
 
   const created = new Map((authData?.users ?? []).map((u) => [u.id, u.created_at]));
   const people: Profile[] = (profiles ?? []).map((p) => ({ ...p, created_at: created.get(p.id) }));
@@ -72,6 +75,9 @@ export default async function AdminPage() {
         <div><strong>{freeOut.length}</strong><span>usaram os grátis (sem plano)</span></div>
         <div><strong>{paying.length}</strong><span>pagantes · {pct(paying.length, people.length)}</span></div>
       </div>
+
+      <h2 className="admin-h">Biblioteca pronta (planos Fluente e Professor)</h2>
+      <LibraryGenerator ready={libCount ?? 0} total={CURRICULUM.length} />
 
       <h2 className="admin-h">Por período</h2>
       <table className="admin-table">
