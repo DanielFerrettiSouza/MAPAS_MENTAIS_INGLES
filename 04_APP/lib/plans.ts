@@ -36,7 +36,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$99,90",
     credits: 60,
     highlight: true,
-    features: ["60 mapas por mês", "Tudo do Essencial", "Biblioteca A1–C2 pronta", "Plano de estudos pelo seu objetivo", "Suporte prioritário"],
+    features: ["60 mapas por mês", "Tudo do Essencial", "Capa ilustrada em cada mapa", "Qualquer assunto, do A1 ao C2", "Suporte prioritário"],
   },
   {
     id: "professor",
