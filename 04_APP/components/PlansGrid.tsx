@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { PLANS, checkoutUrl } from "@/lib/plans";
+import { track } from "@/lib/pixel";
 
 // Fora do app (landing), assinar leva para criar a conta primeiro.
 // Dentro do app (com e-mail), leva direto para o checkout da Kiwify.
@@ -42,6 +45,13 @@ export default function PlansGrid({
                   : `${ctaHref}${ctaHref.includes("?") ? "&" : "?"}plano=${p.id}`)
               }
               className={`primary-btn ${p.highlight ? "grad-btn" : ""}`}
+              onClick={() =>
+                track("InitiateCheckout", {
+                  content_name: p.name,
+                  value: Number(p.price.replace(/[^\d,]/g, "").replace(",", ".")),
+                  currency: "BRL",
+                })
+              }
             >
               Assinar {p.name}
             </a>

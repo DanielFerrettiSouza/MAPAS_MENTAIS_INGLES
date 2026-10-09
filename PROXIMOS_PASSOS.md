@@ -35,7 +35,7 @@
    - checkout: `components/PlansGrid.tsx` (clique) → rota `/api/track`.
    - compra/cancelamento: `app/api/kiwify/route.ts`.
 2. **Painel `/app/admin`** (só para o e-mail do dono, via env `ADMIN_EMAIL`): contagem por etapa (hoje/7d/30d), taxas de conversão, lista de pessoas com estágio atual.
-3. **Pixel da Meta**: env `NEXT_PUBLIC_META_PIXEL_ID`; eventos PageView, Lead (quiz), CompleteRegistration, InitiateCheckout; Purchase pelo lado do servidor (Conversions API) no webhook — opcional depois.
+3. **Pixel da Meta** — FEITO (ID 1720499595717555, `components/MetaPixel.tsx`): PageView em todas as páginas, QuizStart, Lead (fim do quiz), CompleteRegistration, MapCreated, InitiateCheckout; Purchase pelo pixel nativo da Kiwify. Pendente: Conversions API. Texto antigo: env `NEXT_PUBLIC_META_PIXEL_ID`; eventos PageView, Lead (quiz), CompleteRegistration, InitiateCheckout; Purchase pelo lado do servidor (Conversions API) no webhook — opcional depois.
 4. **E-mails (Brevo)**: env `BREVO_API_KEY` (colocar só na Vercel/.env.local). App envia contato + atributo/lista por etapa; sequências montadas no painel do Brevo:
    - criou conta e não gerou mapa (24h) → "Seu primeiro mapa está te esperando";
    - usou os 3 grátis e não assinou → 3 e-mails (oferta + garantia);

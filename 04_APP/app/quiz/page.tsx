@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { track, trackCustom } from "@/lib/pixel";
 import { useRouter } from "next/navigation";
 import Logo from "@/components/Logo";
 
@@ -91,12 +92,14 @@ export default function QuizPage() {
   }, [analyzing]);
 
   function choose(value: string) {
+    if (step === 0) trackCustom("QuizStart");
     const next = { ...answers, [STEPS[step].key]: value };
     setAnswers(next);
     setStep(step + 1);
   }
 
   function finish() {
+    track("Lead", { content_name: answers.goal, content_category: answers.level });
     const topic = FIRST_TOPIC[answers.goal] ?? "Inglês do dia a dia";
     const goal = `${answers.goal}; dificuldade: ${answers.pain}; ${answers.time} min por dia`;
     try {
