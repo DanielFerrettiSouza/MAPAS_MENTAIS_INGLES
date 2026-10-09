@@ -47,6 +47,14 @@
 - Conta grátis no brevo.com (com mapasmentaisfalantes@gmail.com) → chave de API (SMTP & API → API Keys).
 - Pixel da Meta → ID do Pixel (Gerenciador de Eventos).
 
+## Custos no painel admin (pedido do dono)
+O painel `/app/admin` já mostra contas, mapas por dia/período e lista de pessoas.
+**Próximo:** mostrar o **gasto real** ali dentro:
+- Opção simples: tabela `costs` (dia, fornecedor, valor) + formulário no admin para lançar o gasto diário (Claude, Google/Gemini, ElevenLabs) → painel calcula **custo por mapa** e **custo por cliente**, e margem por plano.
+- Opção automática (depois): puxar uso via API (Anthropic Usage/Cost API; Google Cloud Billing export) e/ou registrar tokens/imagens gerados em cada mapa (`generated_maps` com colunas de custo estimado) para calcular sem lançamento manual.
+- Fazer depois da 1ª semana de anúncios, com os gastos reais em mãos.
+- Custo atual estimado: ~R$0,30 por mapa pago (1 ilustração) e ~R$0,05 por mapa grátis (só emojis).
+
 ## Outras pendências
 - Trocar `ELEVENLABS_VOICE_ID` por uma voz americana (Vercel + Redeploy).
 - Plano Fluente promete "Biblioteca A1–C2" e "Plano de estudos" (landing + imagens de checkout) — **ainda não existem no app**: implementar ou trocar o texto.
