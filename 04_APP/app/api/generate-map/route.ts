@@ -40,7 +40,7 @@ export async function POST(req: Request) {
   const admin = createSupabaseAdmin();
 
   // Reserva 1 crédito antes de gastar com IA (devolve se a geração falhar).
-  const { data: profile } = await admin.from("profiles").select("credits").eq("id", user.id).maybeSingle();
+  const { data: profile } = await admin.from("profiles").select("credits, plan").eq("id", user.id).maybeSingle();
   const credits = profile?.credits ?? 0;
   if (credits <= 0) {
     return NextResponse.json({ error: "Seus mapas acabaram. Assine um plano para continuar." }, { status: 402 });
@@ -57,10 +57,11 @@ export async function POST(req: Request) {
 
   try {
     const map = await generateMapContent({ topic, level, goal });
-    const [cover, ...branches] = await Promise.all([
-      generateIllustration(map.cover_prompt),
-      ...map.branches.map((b) => generateIllustration(b.illustration_prompt)),
-    ]);
+    // Custo: ilustração é a parte cara. Plano pago ganha só a capa ilustrada;
+    // grátis usa emojis. Os ramos sempre usam o emoji gerado pelo Claude.
+    const paid = profile?.plan && profile.plan !== "free";
+    const cover = paid ? await generateIllustration(map.cover_prompt) : null;
+    const branches: (string | null)[] = map.branches.map(() => null);
 
     const id = crypto.randomUUID();
     const base = `${user.id}/${id}`;

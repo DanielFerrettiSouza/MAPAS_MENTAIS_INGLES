@@ -13,6 +13,7 @@ Regras:
 - Os nomes dos ramos (label_pt) são curtos e claros, como títulos de seção de apostila.
 - O erro comum deve ser um erro real de brasileiros; os exercícios usam itens do mapa.
 - Os prompts de ilustração descrevem ícones simples e fofos, estilo desenho à mão, SEM nenhum texto ou letra.
+- Cada ramo e o tema têm um único emoji que represente bem o conteúdo.
 - O quiz testa itens do próprio mapa.`;
 
 export async function generateMapContent(input: {
