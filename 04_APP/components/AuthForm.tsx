@@ -15,6 +15,27 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
+  const [sentTo, setSentTo] = useState<string | null>(null);
+  const [wait, setWait] = useState(0);
+
+  function startCooldown() {
+    setWait(60);
+    const t = setInterval(() => setWait((w) => { if (w <= 1) clearInterval(t); return w - 1; }), 1000);
+  }
+
+  // Reenvia o e-mail de confirmação (aguarda 60s entre envios).
+  async function resend() {
+    if (!sentTo || wait > 0) return;
+    setError(null);
+    const { error } = await createSupabaseBrowser().auth.resend({
+      type: "signup",
+      email: sentTo,
+      options: { emailRedirectTo: callback() },
+    });
+    if (error) setError(traduz(error.message));
+    else setInfo(`Enviamos de novo para ${sentTo}. Confira também a caixa de spam e "Promoções".`);
+    startCooldown();
+  }
 
   const callback = () =>
     `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`;
@@ -32,10 +53,15 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
         options: { emailRedirectTo: callback() },
       });
       if (error) setError(traduz(error.message));
-      else if (!data.session) setInfo("Quase lá! Enviamos um link para o seu e-mail. Clique nele para ativar a conta.");
+      else if (!data.session) {
+        setInfo(`Quase lá! Enviamos um link para ${email}. Clique nele para ativar a conta (confira também o spam).`);
+        setSentTo(email);
+        startCooldown();
+      }
       else router.push(next);
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error && /email not confirmed/i.test(error.message)) setSentTo(email);
       if (error) setError(traduz(error.message));
       else router.push(next);
     }
@@ -63,6 +89,11 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
           <input className="field" type="password" placeholder="Senha (mínimo 6 caracteres)" value={password} onChange={(e) => setPassword(e.target.value)} minLength={6} required autoComplete={mode === "signup" ? "new-password" : "current-password"} />
           {error && <p className="auth-msg">{error}</p>}
           {info && <p className="auth-ok">{info}</p>}
+          {sentTo && (
+            <button type="button" className="link-btn" onClick={resend} disabled={wait > 0}>
+              {wait > 0 ? `Não recebeu? Reenviar em ${wait}s` : "Não recebeu? Reenviar e-mail de confirmação"}
+            </button>
+          )}
           <button className="white-btn" disabled={loading}>
             {loading ? "Aguarde…" : mode === "signup" ? "Criar conta" : "Entrar"}
           </button>
@@ -90,6 +121,8 @@ function traduz(msg: string) {
   if (/already registered/i.test(msg)) return "Esse e-mail já tem conta. Clique em Entrar.";
   if (/invalid login/i.test(msg)) return "E-mail ou senha incorretos.";
   if (/email not confirmed/i.test(msg)) return "Confirme seu e-mail pelo link que enviamos antes de entrar.";
+  if (/sending.*email|confirmation email/i.test(msg)) return "Não conseguimos enviar o e-mail agora. Tente de novo em alguns minutos ou entre com o Google.";
+  if (/rate limit|only request this after|security purposes/i.test(msg)) return "Muitos envios seguidos. Aguarde um minuto e tente de novo.";
   if (/password/i.test(msg)) return "A senha precisa ter pelo menos 6 caracteres.";
   return msg;
 }
