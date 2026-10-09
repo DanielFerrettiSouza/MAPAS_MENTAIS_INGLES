@@ -11,6 +11,7 @@ export const MapItemSchema = z.object({
 export const MapBranchSchema = z.object({
   label_en: z.string().describe("Nome do ramo em inglês, 1 a 3 palavras"),
   label_pt: z.string().describe("Nome do ramo em português"),
+  emoji: z.string().describe("Um único emoji que represente o ramo"),
   illustration_prompt: z
     .string()
     .describe("Descrição em inglês de um ícone simples e sem texto que represente o ramo"),
@@ -45,6 +46,7 @@ export const GeneratedMapSchema = z.object({
   }),
   exercises: z.array(ExerciseSchema).describe("4 frases para completar"),
   level: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]),
+  emoji: z.string().describe("Um único emoji que represente o tema do mapa"),
   cover_prompt: z
     .string()
     .describe("Descrição em inglês de uma ilustração central sem texto para o tema"),
@@ -53,6 +55,7 @@ export const GeneratedMapSchema = z.object({
 });
 
 export type GeneratedMap = z.infer<typeof GeneratedMapSchema>;
+// Mapas antigos foram salvos antes de existir o campo emoji.
 
 // Resposta da API: o mapa + ilustrações (data URL ou null se a geração de imagem falhar).
 export type MapWithImages = GeneratedMap & {

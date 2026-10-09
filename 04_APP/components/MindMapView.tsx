@@ -82,9 +82,11 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
           <span>{s.branch.label_pt}</span>
           <span className="nb-section-en">{s.branch.label_en}</span>
         </div>
-        {s.image && (
+        {s.image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img className="nb-icon" src={s.image} alt="" />
+        ) : (
+          s.branch.emoji && <span className="nb-icon nb-emoji">{s.branch.emoji}</span>
         )}
         <ul>
           {s.branch.items.map((item, j) => (
@@ -132,9 +134,11 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
 
           <div className="nb-col nb-center">
             <div className="nb-circle">
-              {map.cover_image && (
+              {map.cover_image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={map.cover_image} alt="" />
+              ) : (
+                map.emoji && <span className="nb-cover-emoji">{map.emoji}</span>
               )}
               <strong>{map.title_en}</strong>
               <span>{map.summary_pt}</span>

@@ -580,3 +580,7 @@ a { color: inherit; }
 .nb-mark.ok { color: #16a34a; }
 .nb-mark.bad { color: #16a34a; background: #f0fdf4; border-radius: 6px; padding: 0 6px; }
 .nb-mark.bad::first-letter { color: #dc2626; }
+
+/* Ícones em emoji (sem custo de ilustração) */
+.nb-emoji { display: grid; place-items: center; font-size: 34px; line-height: 1; }
+.nb-circle .nb-cover-emoji { font-size: 72px; line-height: 1.1; color: inherit; }
