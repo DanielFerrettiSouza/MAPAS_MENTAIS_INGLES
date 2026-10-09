@@ -596,3 +596,10 @@ a { color: inherit; }
 .admin-table th { color: var(--muted); font-weight: 600; }
 .admin-scroll { overflow-x: auto; }
 .admin-note { color: var(--muted); font-size: 13px; margin-top: 8px; }
+
+/* Plano de estudos */
+.plan-weeks { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 12px; }
+.plan-week { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; }
+.plan-week ul { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
+.plan-week a { color: var(--text); text-decoration: none; }
+.plan-week small { color: var(--muted); }
