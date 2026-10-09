@@ -584,3 +584,15 @@ a { color: inherit; }
 /* Ícones em emoji (sem custo de ilustração) */
 .nb-emoji { display: grid; place-items: center; font-size: 34px; line-height: 1; }
 .nb-circle .nb-cover-emoji { font-size: 72px; line-height: 1.1; color: inherit; }
+
+/* Painel admin */
+.admin-funnel { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 20px; }
+.admin-funnel div { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
+.admin-funnel strong { display: block; font-size: 32px; font-weight: 800; }
+.admin-funnel span { color: var(--muted); font-size: 14px; }
+.admin-h { margin: 32px 0 10px; font-size: 20px; }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.admin-table th, .admin-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.admin-table th { color: var(--muted); font-weight: 600; }
+.admin-scroll { overflow-x: auto; }
+.admin-note { color: var(--muted); font-size: 13px; margin-top: 8px; }

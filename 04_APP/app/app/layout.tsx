@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import Logo, { LogoMark } from "@/components/Logo";
 import { getCurrentUser } from "@/lib/supa/server";
+import { isAdmin } from "@/lib/admin";
 import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSettings, IconSparkles } from "@/components/Icons";
 
 export const dynamic = "force-dynamic";
@@ -23,6 +24,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <Link href="/app/criar" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
         <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
+        {isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
         <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>Suporte</span></a>
         <div className="spacer" />
         <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>
