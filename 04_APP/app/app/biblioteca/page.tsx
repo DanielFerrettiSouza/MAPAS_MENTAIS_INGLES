@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/server";
-import { canUseLibrary } from "@/lib/library";
+import { canUseLibrary, FREE_LIBRARY_SLUGS } from "@/lib/library";
 import { CURRICULUM } from "@/lib/curriculum";
 import LibraryLocked from "@/components/LibraryLocked";
 
@@ -16,9 +16,10 @@ export default async function LibraryPage({ searchParams }: { searchParams: { ni
       <p className="app-sub">Mapas prontos por nível. Estudar aqui não gasta seus créditos.</p>
     </>
   );
-  if (!canUseLibrary(profile?.plan, user.email)) return <>{header}<LibraryLocked what="A Biblioteca" /></>;
+  const unlocked = canUseLibrary(profile?.plan, user);
 
-  const level = LEVELS.includes(searchParams.nivel ?? "") ? searchParams.nivel! : ((user.user_metadata?.level as string) ?? "A1");
+  // Sem acesso: mostra a amostra grátis (A1) e a oferta.
+  const level = !unlocked ? "A1" : LEVELS.includes(searchParams.nivel ?? "") ? searchParams.nivel! : ((user.user_metadata?.level as string) ?? "A1");
   const admin = createSupabaseAdmin();
   const [{ data: maps }, { data: progress }] = await Promise.all([
     admin.from("library_maps").select("slug, title_pt, data->cover_image, data->emoji").eq("level", level),
@@ -31,11 +32,12 @@ export default async function LibraryPage({ searchParams }: { searchParams: { ni
   return (
     <>
       {header}
-      <div className="chips" style={{ marginTop: 16 }}>
+      {!unlocked && <LibraryLocked what="A Biblioteca completa" email={user.email} sample />}
+      {unlocked && <div className="chips" style={{ marginTop: 16 }}>
         {LEVELS.map((l) => (
           <Link key={l} href={`/app/biblioteca?nivel=${l}`} className={`chip ${l === level ? "chip-on" : ""}`}>{l}</Link>
         ))}
-      </div>
+      </div>}
       <div className="map-grid">
         {topics.map((t) => {
           const m = ready.get(t.slug);
@@ -51,6 +53,8 @@ export default async function LibraryPage({ searchParams }: { searchParams: { ni
               <small>{m ? t.topic : "Em breve"}</small>
             </>
           );
+          const open = unlocked || FREE_LIBRARY_SLUGS.includes(t.slug);
+          if (m && !open) return <div key={t.slug} className="map-card" style={{ opacity: 0.5 }}>{body}<small>🔒</small></div>;
           return m ? (
             <Link key={t.slug} href={`/app/biblioteca/${t.slug}`} className="map-card">{body}</Link>
           ) : (

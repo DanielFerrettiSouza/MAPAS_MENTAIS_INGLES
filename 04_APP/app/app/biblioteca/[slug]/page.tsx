@@ -5,7 +5,7 @@ import ReviewQuiz from "@/components/ReviewQuiz";
 import StudyToggle from "@/components/StudyToggle";
 import LibraryLocked from "@/components/LibraryLocked";
 import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/server";
-import { canUseLibrary } from "@/lib/library";
+import { canUseLibrary, FREE_LIBRARY_SLUGS } from "@/lib/library";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 export const dynamic = "force-dynamic";
@@ -19,7 +19,7 @@ export default async function LibraryMapPage({
 }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
-  if (!canUseLibrary(profile?.plan, user.email)) return <LibraryLocked what="A Biblioteca" />;
+  if (!canUseLibrary(profile?.plan, user) && !FREE_LIBRARY_SLUGS.includes(params.slug)) return <LibraryLocked what="A Biblioteca" email={user.email} />;
 
   const admin = createSupabaseAdmin();
   const [{ data }, { data: prog }] = await Promise.all([

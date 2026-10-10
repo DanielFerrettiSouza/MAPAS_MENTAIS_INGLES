@@ -2,6 +2,7 @@ import Link from "next/link";
 import PlansGrid from "@/components/PlansGrid";
 import MapWall from "@/components/MapWall";
 import Guarantee from "@/components/Guarantee";
+import Downsell from "@/components/Downsell";
 
 // Corpo da página de vendas: usado na landing e, dentro do app, na oferta
 // que aparece quando os mapas grátis acabam (inApp).
@@ -112,6 +113,7 @@ export default function SalesSections({
         </p>
         <PlansGrid ctaHref={inApp ? "/app/planos" : undefined} email={email} currentPlan={currentPlan} />
         <Guarantee />
+            {inApp && <Downsell email={email} />}
       </div>
     </section>
 

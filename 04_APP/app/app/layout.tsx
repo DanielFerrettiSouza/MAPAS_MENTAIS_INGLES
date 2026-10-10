@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import Logo, { LogoMark } from "@/components/Logo";
-import { getCurrentUser } from "@/lib/supa/server";
+import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
 import RegistrationPixel from "@/components/RegistrationPixel";
 import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSettings, IconSparkles, IconBook, IconCalendar } from "@/components/Icons";
@@ -13,6 +13,14 @@ export const dynamic = "force-dynamic";
 export default async function AppLayout({ children }: { children: ReactNode }) {
   const user = await getCurrentUser();
   if (!user) redirect("/entrar");
+  // Comprou a biblioteca antes de criar a conta: vira acesso vitalício e plano grátis.
+  const profile = await getProfile(user.id);
+  if (profile?.plan === "biblioteca") {
+    const admin = createSupabaseAdmin();
+    await admin.auth.admin.updateUserById(user.id, { app_metadata: { library: true } });
+    await admin.from("profiles").update({ plan: "free" }).eq("id", user.id);
+    redirect("/app/biblioteca");
+  }
 
   return (
     <div className="app-shell">

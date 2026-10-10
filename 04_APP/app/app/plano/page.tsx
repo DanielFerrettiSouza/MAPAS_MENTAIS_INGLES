@@ -19,7 +19,7 @@ export default async function StudyPlanPage({ searchParams }: { searchParams: { 
       <p className="app-sub">3 mapas por semana, do seu nível em diante, priorizando o seu objetivo.</p>
     </>
   );
-  if (!canUseLibrary(profile?.plan, user.email)) return <>{header}<LibraryLocked what="O plano de estudos" /></>;
+  if (!canUseLibrary(profile?.plan, user)) return <>{header}<LibraryLocked what="O plano de estudos" email={user.email} /></>;
 
   const meta = (user.user_metadata ?? {}) as { level?: string; goal?: string };
   const level = LEVELS.includes(meta.level ?? "") ? meta.level! : "A1";

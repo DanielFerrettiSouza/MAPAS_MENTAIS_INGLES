@@ -1,7 +1,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { createSupabaseAdmin } from "@/lib/supa/server";
-import { planFromProductName } from "@/lib/plans";
+import { EXTRAS, extraFromProductName, planFromProductName } from "@/lib/plans";
 
 export const runtime = "nodejs";
 
@@ -52,9 +52,30 @@ export async function POST(req: Request) {
   const admin = createSupabaseAdmin();
   const { data: profile } = await admin
     .from("profiles")
-    .select("id")
+    .select("id, credits")
     .ilike("email", email)
     .maybeSingle();
+
+  // Produtos avulsos (pagamento único): biblioteca vitalícia e pacote de mapas.
+  const extra = extraFromProductName(productName);
+  if (extra && (ACTIVATE.has(status) || DEACTIVATE.has(status))) {
+    const on = ACTIVATE.has(status);
+    if (extra === "biblioteca") {
+      if (profile) {
+        const { error } = await admin.auth.admin.updateUserById(profile.id, { app_metadata: { library: on } });
+        if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+      } else if (on) {
+        // Comprou antes de criar a conta: o app converte ao entrar (ver app/app/layout.tsx).
+        await admin.from("pending_upgrades").upsert({ email, plan: "biblioteca", credits: 3 });
+      }
+    } else if (profile) {
+      const credits = Math.max(0, (profile.credits ?? 0) + (on ? EXTRAS.credits : -EXTRAS.credits));
+      await admin.from("profiles").update({ credits }).eq("id", profile.id);
+    } else if (on) {
+      await admin.from("pending_upgrades").upsert({ email, plan: "free", credits: 3 + EXTRAS.credits });
+    }
+    return NextResponse.json({ ok: true, extra, on });
+  }
 
   if (ACTIVATE.has(status)) {
     const plan = planFromProductName(productName);

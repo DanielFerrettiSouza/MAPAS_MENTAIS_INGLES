@@ -55,6 +55,8 @@ export function checkoutUrl(planId: string, email?: string | null) {
     essencial: process.env.NEXT_PUBLIC_KIWIFY_ESSENCIAL,
     fluente: process.env.NEXT_PUBLIC_KIWIFY_FLUENTE,
     professor: process.env.NEXT_PUBLIC_KIWIFY_PROFESSOR,
+    biblioteca: process.env.NEXT_PUBLIC_KIWIFY_BIBLIOTECA,
+    pacote: process.env.NEXT_PUBLIC_KIWIFY_PACOTE,
   };
   const url = urls[planId];
   if (!url) return null;
@@ -70,4 +72,19 @@ export function planFromProductName(name: string) {
 
 export function planName(id: string) {
   return PLANS.find((p) => p.id === id)?.name ?? "Grátis";
+}
+
+// Produtos avulsos (pagamento único), vendidos como downsell.
+export const EXTRAS = {
+  biblioteca: { name: "Biblioteca vitalícia", price: "R$37", text: "Os 120 mapas prontos do A1 ao C2, com áudio e exercícios. Pague uma vez, acesse para sempre." },
+  pacote: { name: "Pacote de 10 mapas", price: "R$9,90", text: "10 mapas novos com IA, sobre o assunto que você quiser. Sem assinatura." },
+  credits: 10,
+};
+
+// Produto avulso pelo nome na Kiwify ("Mapas Falantes - Biblioteca", "Pacote 10 mapas").
+export function extraFromProductName(name: string): "biblioteca" | "pacote" | null {
+  const n = name.toLowerCase();
+  if (n.includes("biblioteca") || n.includes("library")) return "biblioteca";
+  if (n.includes("pacote") || n.includes("avulso") || n.includes("pack")) return "pacote";
+  return null;
 }
