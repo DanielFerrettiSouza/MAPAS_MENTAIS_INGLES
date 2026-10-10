@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MindMapView from "@/components/MindMapView";
+import InkMapView from "@/components/InkMapView";
 import ReviewQuiz from "@/components/ReviewQuiz";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
 import type { MapWithImages } from "@/lib/mapSchema";
@@ -29,7 +30,7 @@ export default async function MapPage({ params }: { params: { id: string } }) {
           <Link href="/app/planos" className="primary-btn grad-btn">Ver oferta →</Link>
         </div>
       )}
-      <MindMapView map={map} />
+      {map.style === "ink" ? <InkMapView map={map} /> : <MindMapView map={map} />}
       {map.quiz?.length > 0 && <ReviewQuiz quiz={map.quiz} />}
     </>
   );

@@ -12,7 +12,7 @@ Regras:
 - Exatamente 4 ramos, cada um com 3 a 5 itens curtos (até 6 palavras). Cada item é algo que vale a pena ouvir e repetir.
 - Os nomes dos ramos (label_pt) são curtos e claros, como títulos de seção de apostila.
 - O erro comum deve ser um erro real de brasileiros; os exercícios usam itens do mapa.
-- Os prompts de ilustração descrevem ícones simples e fofos, estilo desenho à mão, SEM nenhum texto ou letra.
+- Os prompts de ilustração descrevem UM objeto ou cena concreta (pessoa, objeto, lugar), SEM nenhum texto, letra, número, placa ou tela escrita. As chaves de ilustração (illustration_key/cover_key) são conceitos genéricos e reutilizáveis.
 - Cada ramo e o tema têm um único emoji que represente bem o conteúdo.
 - O quiz testa itens do próprio mapa.`;
 
@@ -49,17 +49,21 @@ const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL ?? "gemini-2.5-flash-image";
 const IMAGE_STYLE =
   "Cute hand-drawn doodle sticker, colored pencil and marker style, soft pastel colors, thin dark outline, plain white background, centered, no text, no letters, no words.";
 
+// Estilo dos mapas novos: gravura a nanquim sobre papel creme (o app escreve todo o texto).
+export const INK_STYLE =
+  "Vintage pen-and-ink engraving illustration, black ink crosshatching and stippling, 19th-century etching style, monochrome black ink only, on a plain warm cream paper background (#f3ead8), isolated single subject, centered, generous empty margins, no frame, no text, no letters, no words, no numbers, no signs, no writing.";
+
 let gemini: GoogleGenAI | null = null;
 
 // Gera uma ilustração via Gemini e devolve como data URL. Retorna null em
 // caso de falha para que o mapa continue funcionando sem a imagem.
-export async function generateIllustration(prompt: string): Promise<string | null> {
+export async function generateIllustration(prompt: string, style = IMAGE_STYLE): Promise<string | null> {
   if (!process.env.GEMINI_API_KEY) return null;
   gemini ??= new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   try {
     const res = await gemini.models.generateContent({
       model: IMAGE_MODEL,
-      contents: `${prompt}. ${IMAGE_STYLE}`,
+      contents: `${prompt}. ${style}`,
     });
     for (const part of res.candidates?.[0]?.content?.parts ?? []) {
       if (part.inlineData?.data) {

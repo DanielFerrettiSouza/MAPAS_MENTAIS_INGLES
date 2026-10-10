@@ -14,7 +14,10 @@ export const MapBranchSchema = z.object({
   emoji: z.string().describe("Um único emoji que represente o ramo"),
   illustration_prompt: z
     .string()
-    .describe("Descrição em inglês de um ícone simples e sem texto que represente o ramo"),
+    .describe("Descrição em inglês de uma ilustração concreta e sem texto que represente o ramo"),
+  illustration_key: z
+    .string()
+    .describe("Conceito concreto e genérico da ilustração, 1 a 3 palavras em inglês minúsculas (ex.: 'birthday cake', 'suitcase'), para reaproveitar o desenho"),
   items: z.array(MapItemSchema).describe("3 a 5 itens"),
 });
 
@@ -50,6 +53,9 @@ export const GeneratedMapSchema = z.object({
   cover_prompt: z
     .string()
     .describe("Descrição em inglês de uma ilustração central sem texto para o tema"),
+  cover_key: z
+    .string()
+    .describe("Conceito concreto e genérico da ilustração central, 1 a 3 palavras em inglês minúsculas (ex.: 'vintage television')"),
   branches: z.array(MapBranchSchema).describe("exatamente 4 ramos"),
   quiz: z.array(QuizQuestionSchema).describe("3 perguntas de revisão sobre o mapa"),
 });
@@ -61,4 +67,6 @@ export type GeneratedMap = z.infer<typeof GeneratedMapSchema>;
 export type MapWithImages = GeneratedMap & {
   cover_image: string | null;
   branch_images: (string | null)[];
+  // "ink": estilo gravura (mapas novos). Ausente = estilo caderno (mapas antigos e biblioteca).
+  style?: "ink";
 };
