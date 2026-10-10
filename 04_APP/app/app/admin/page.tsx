@@ -8,6 +8,7 @@ import LibraryGenerator from "@/components/LibraryGenerator";
 export const dynamic = "force-dynamic";
 
 type Profile = { id: string; email: string | null; name: string | null; plan: string; credits: number; created_at?: string };
+type AuthInfo = { provider: string; confirmed: boolean; lastSeen?: string; origem?: string; quiz: boolean };
 type MapRow = { user_id: string; created_at: string };
 
 const DAY = 86400000;
@@ -27,6 +28,20 @@ export default async function AdminPage() {
   const { count: libCount } = await admin.from("library_maps").select("slug", { count: "exact", head: true });
 
   const created = new Map((authData?.users ?? []).map((u) => [u.id, u.created_at]));
+  const auth = new Map<string, AuthInfo>((authData?.users ?? []).map((u) => [u.id, {
+    provider: (u.app_metadata?.provider as string) ?? "email",
+    confirmed: !!u.email_confirmed_at,
+    lastSeen: u.last_sign_in_at ?? undefined,
+    origem: u.user_metadata?.origem as string | undefined,
+    quiz: !!u.user_metadata?.quiz,
+  }]));
+  const unconfirmed = (p: Profile) => auth.get(p.id)?.confirmed === false;
+  const entrada = (p: Profile) => {
+    const a = auth.get(p.id);
+    if (!a) return "—";
+    return a.provider === "google" ? "Google" : a.confirmed ? "E-mail ✓" : "E-mail ✗ (não confirmou)";
+  };
+  const when = (iso?: string) => (iso ? new Date(iso).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" }) : "nunca");
   const people: Profile[] = (profiles ?? []).map((p) => ({ ...p, created_at: created.get(p.id) }));
   const allMaps: MapRow[] = maps ?? [];
   const planOf = new Map(people.map((p) => [p.id, p.plan]));
@@ -61,7 +76,7 @@ export default async function AdminPage() {
   });
 
   const stage = (p: Profile) =>
-    p.plan !== "free" ? `💳 ${planName(p.plan)}` : p.credits <= 0 ? "🔥 Usou os grátis" : (mapsBy.get(p.id) ?? 0) > 0 ? "🗺️ Gerou mapa" : "👤 Só criou conta";
+    p.plan !== "free" ? `💳 ${planName(p.plan)}` : p.credits <= 0 ? "🔥 Usou os grátis" : (mapsBy.get(p.id) ?? 0) > 0 ? "🗺️ Gerou mapa" : unconfirmed(p) ? "⏳ Não confirmou e-mail" : "👤 Só criou conta";
   const list = [...people].sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? "")).slice(0, 200);
 
   return (
@@ -100,11 +115,13 @@ export default async function AdminPage() {
       <h2 className="admin-h">Pessoas (mais recentes)</h2>
       <div className="admin-scroll">
         <table className="admin-table">
-          <thead><tr><th>E-mail</th><th>Nome</th><th>Criou em</th><th>Estágio</th><th>Mapas</th><th>Créditos</th></tr></thead>
+          <thead><tr><th>E-mail</th><th>Nome</th><th>Criou em</th><th>Entrada</th><th>Último acesso</th><th>Origem</th><th>Quiz</th><th>Estágio</th><th>Mapas</th><th>Créditos</th></tr></thead>
           <tbody>{list.map((p) => (
             <tr key={p.id}>
               <td>{p.email}</td><td>{p.name}</td>
               <td>{p.created_at ? new Date(p.created_at).toLocaleDateString("pt-BR") : "—"}</td>
+              <td>{entrada(p)}</td><td>{when(auth.get(p.id)?.lastSeen)}</td>
+              <td>{auth.get(p.id)?.origem ?? "—"}</td><td>{auth.get(p.id)?.quiz ? "✓" : "—"}</td>
               <td>{stage(p)}</td><td>{mapsBy.get(p.id) ?? 0}</td><td>{p.credits}</td>
             </tr>
           ))}</tbody>

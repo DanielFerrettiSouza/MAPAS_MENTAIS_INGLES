@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import "./globals.css";
 import MetaPixel from "@/components/MetaPixel";
+import SourceTracker from "@/components/SourceTracker";
 
 export const metadata = {
   title: "Mapas Falantes",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <MetaPixel />
+        <SourceTracker />
         {children}
       </body>
     </html>
