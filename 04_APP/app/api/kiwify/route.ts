@@ -2,7 +2,6 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { createSupabaseAdmin } from "@/lib/supa/server";
 import { trackKlaviyo } from "@/lib/klaviyo";
-import { sendCapi } from "@/lib/capi";
 import { EXTRAS, extraFromProductName, planFromProductName } from "@/lib/plans";
 
 export const runtime = "nodejs";
@@ -51,19 +50,6 @@ export async function POST(req: Request) {
   console.log("Kiwify:", { status, email, productName });
   if (!email) return NextResponse.json({ ok: true, ignored: "sem e-mail" });
 
-  // Compra confirmada → evento Purchase na Meta pela API de Conversões (o checkout é na Kiwify,
-  // então o pixel do app não vê a compra). event_id = id do pedido, para não contar duas vezes.
-  const purchase = (content: string) => {
-    const cents = Number(event.Commissions?.charge_amount ?? event.Commissions?.product_base_price ?? 0);
-    return sendCapi({
-      event_name: "Purchase",
-      event_id: `kiwify-${event.order_id ?? event.id ?? Date.now()}`,
-      email,
-      external_id: profile?.id,
-      custom_data: { currency: "BRL", value: cents / 100, content_name: content },
-    });
-  };
-
   const admin = createSupabaseAdmin();
   const { data: profile } = await admin
     .from("profiles")
@@ -89,7 +75,6 @@ export async function POST(req: Request) {
     } else if (on) {
       await admin.from("pending_upgrades").upsert({ email, plan: "free", credits: 3 + EXTRAS.credits });
     }
-    if (on) await purchase(extra);
     await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: extra, status }, on && extra === "biblioteca" ? { mf_biblioteca: true } : {});
     return NextResponse.json({ ok: true, extra, on });
   }
@@ -111,7 +96,6 @@ export async function POST(req: Request) {
       // Pagou antes de criar a conta: o plano é aplicado no cadastro.
       await admin.from("pending_upgrades").upsert({ email, plan: plan.id, credits: plan.credits });
     }
-    await purchase(plan.id);
     await trackKlaviyo(email, "MF Comprou", { produto: plan.id, status }, { mf_plano: plan.id });
     return NextResponse.json({ ok: true, plan: plan.id });
   }
