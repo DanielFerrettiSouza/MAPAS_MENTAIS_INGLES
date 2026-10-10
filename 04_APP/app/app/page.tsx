@@ -15,6 +15,8 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
   if (searchParams.topic || searchParams.criar) redirect(`/app/criar?${new URLSearchParams(searchParams)}`);
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
+  // Acabaram os mapas grátis: vai direto para a oferta.
+  if ((profile?.plan ?? "free") === "free" && (profile?.credits ?? 0) <= 0) redirect("/app/planos");
   const { data: maps } = await createSupabaseServer()
     .from("generated_maps")
     .select("id, title_pt, topic, level, created_at, data")

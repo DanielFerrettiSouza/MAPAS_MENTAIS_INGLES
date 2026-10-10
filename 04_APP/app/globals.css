@@ -608,3 +608,9 @@ a { color: inherit; }
 .link-btn:disabled { color: var(--muted); text-decoration: none; cursor: default; }
 .quiz-plan { margin-top: 28px; }
 .quiz-plan-kicker { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+/* Página de vendas dentro do app (oferta quando os mapas grátis acabam). */
+.in-app-sales { margin: -36px -40px -80px; }
+.in-app-sales .hero { padding-top: 48px; }
+.out-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 16px 20px; margin-bottom: 18px; }
+.out-banner p { margin: 0; }
+@media (max-width: 760px) { .in-app-sales { margin: -20px -16px -60px; } }

@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { redirect } from "next/navigation";
 import Generator from "@/components/Generator";
 import { getCurrentUser, getProfile } from "@/lib/supa/server";
 
@@ -9,6 +10,7 @@ export default async function CreatePage() {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   const credits = profile?.credits ?? 0;
+  if ((profile?.plan ?? "free") === "free" && credits <= 0) redirect("/app/planos");
   return (
     <>
       <div className="app-top">
