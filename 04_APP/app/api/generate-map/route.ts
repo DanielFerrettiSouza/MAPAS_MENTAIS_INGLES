@@ -1,3 +1,4 @@
+import { trackKlaviyo } from "@/lib/klaviyo";
 import { NextResponse } from "next/server";
 import { buildMap } from "@/lib/buildMap";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
@@ -55,6 +56,12 @@ export async function POST(req: Request) {
       data: result,
     });
     if (error) throw new Error(`Falha ao salvar o mapa: ${error.message}`);
+
+    const left = credits - 1;
+    await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://mapas-falantes.vercel.app/app/mapa/${id}` }, { mf_creditos: left });
+    if (left <= 0 && (profile?.plan ?? "free") === "free") {
+      await trackKlaviyo(user.email, "MF Acabaram os mapas gratis", { topic, level });
+    }
 
     return NextResponse.json({ id });
   } catch (err) {

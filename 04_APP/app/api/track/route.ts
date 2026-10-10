@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies, headers } from "next/headers";
 import { sendCapi } from "@/lib/capi";
+import { trackKlaviyo } from "@/lib/klaviyo";
 import { getCurrentUser } from "@/lib/supa/server";
 
 export const runtime = "nodejs";
@@ -28,5 +29,18 @@ export async function POST(req: Request) {
     fbc: c.get("_fbc")?.value,
     custom_data: params && typeof params === "object" ? params : undefined,
   });
+  // E-mails: cadastro e clique em assinar vão também para o Klaviyo.
+  if (user && event === "CompleteRegistration") {
+    const quiz = user.user_metadata?.quiz as Record<string, string> | undefined;
+    await trackKlaviyo(user.email, "MF Criou conta", { ...quiz }, {
+      first_name: user.user_metadata?.full_name ?? user.user_metadata?.name,
+      mf_plano: "free",
+      mf_nivel: quiz?.level,
+      mf_objetivo: quiz?.goal,
+    });
+  }
+  if (user && event === "InitiateCheckout") {
+    await trackKlaviyo(user.email, "MF Clicou em assinar", { ...(params ?? {}) });
+  }
   return NextResponse.json({ ok: true });
 }

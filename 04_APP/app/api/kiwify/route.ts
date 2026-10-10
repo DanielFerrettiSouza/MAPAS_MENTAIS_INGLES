@@ -1,6 +1,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { createSupabaseAdmin } from "@/lib/supa/server";
+import { trackKlaviyo } from "@/lib/klaviyo";
 import { EXTRAS, extraFromProductName, planFromProductName } from "@/lib/plans";
 
 export const runtime = "nodejs";
@@ -74,6 +75,7 @@ export async function POST(req: Request) {
     } else if (on) {
       await admin.from("pending_upgrades").upsert({ email, plan: "free", credits: 3 + EXTRAS.credits });
     }
+    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: extra, status }, on && extra === "biblioteca" ? { mf_biblioteca: true } : {});
     return NextResponse.json({ ok: true, extra, on });
   }
 
@@ -94,11 +96,13 @@ export async function POST(req: Request) {
       // Pagou antes de criar a conta: o plano é aplicado no cadastro.
       await admin.from("pending_upgrades").upsert({ email, plan: plan.id, credits: plan.credits });
     }
+    await trackKlaviyo(email, "MF Comprou", { produto: plan.id, status }, { mf_plano: plan.id });
     return NextResponse.json({ ok: true, plan: plan.id });
   }
 
   if (DEACTIVATE.has(status) && profile) {
     await admin.from("profiles").update({ plan: "free", credits: 0 }).eq("id", profile.id);
+    await trackKlaviyo(email, "MF Cancelou", { produto: productName, status }, { mf_plano: "free" });
     return NextResponse.json({ ok: true, plan: "free" });
   }
 
