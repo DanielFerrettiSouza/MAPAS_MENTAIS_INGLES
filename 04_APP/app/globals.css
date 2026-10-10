@@ -677,3 +677,16 @@ a { color: inherit; }
  .ink-boxes,.ink-exercise ol{grid-template-columns:1fr}
 }
 @media (max-width:760px){.ink-page{padding:28px 20px 28px}.ink-title{margin-top:14px}.ink-level{width:52px;height:52px;font-size:19px}}
+.offer-card{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;margin-top:28px;padding:24px 28px;border-radius:22px;
+ background:linear-gradient(135deg,rgba(255,45,111,.14),rgba(255,138,61,.10));border:1.5px solid rgba(255,90,90,.45)}
+.offer-main{flex:1 1 380px;min-width:0}
+.offer-kicker{margin:0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#ff8a8a}
+.offer-title{margin:6px 0 10px;font-size:26px;line-height:1.2}
+.offer-list{list-style:none;padding:0;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--text)}
+.offer-note{margin:0;color:var(--muted);font-size:14px}
+.offer-side{flex:0 1 260px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.offer-old{color:var(--muted);text-decoration:line-through;font-size:15px}
+.offer-price{font-size:40px;font-weight:800;line-height:1}.offer-price small{font-size:16px;font-weight:600;color:var(--muted)}
+.offer-side .primary-btn{width:100%;justify-content:center;margin-top:6px}
+.offer-guarantee{font-size:13px;color:var(--muted)}
+.offer-more{font-size:14px;color:var(--text);opacity:.8}

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { IconCrown, IconRepeat } from "@/components/Icons";
 import QuickCreate from "@/components/QuickCreate";
 import QuizPlan from "@/components/QuizPlan";
+import OfferCard from "@/components/OfferCard";
 import type { QuizAnswers } from "@/lib/quizPlan";
 import MapGrid, { type MapRow } from "@/components/MapGrid";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
@@ -43,6 +44,8 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
         <Link href="/app/mapas" className="qa purple"><IconRepeat /> Revisar meus mapas</Link>
         <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
       </div>
+
+      {(profile?.plan ?? "free") === "free" && <OfferCard email={user.email} credits={credits} />}
 
       <QuizPlan saved={user.user_metadata?.quiz as QuizAnswers | undefined} credits={credits} />
 
