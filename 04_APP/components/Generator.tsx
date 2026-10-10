@@ -1,7 +1,7 @@
 "use client";
 
 import { trackCustom } from "@/lib/pixel";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -32,7 +32,6 @@ export default function Generator({
   const goal = params.get("goal") ?? defaultGoal;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const autoStarted = useRef(false);
 
   async function generate(t = topic) {
     if (!t.trim() || loading) return;
@@ -54,17 +53,6 @@ export default function Generator({
       setLoading(false);
     }
   }
-
-  // Vindo do quiz: gera o primeiro mapa automaticamente.
-  useEffect(() => {
-    if (params.get("topic") && !autoStarted.current && credits > 0) {
-      autoStarted.current = true;
-      // Limpa a URL para não gerar outro mapa ao voltar ou recarregar a página.
-      window.history.replaceState(null, "", "/app/criar");
-      void generate(params.get("topic")!);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   if (credits <= 0) {
     return (

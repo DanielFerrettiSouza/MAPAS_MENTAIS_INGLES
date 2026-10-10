@@ -4,7 +4,7 @@ import { getCurrentUser, getProfile } from "@/lib/supa/server";
 
 export const dynamic = "force-dynamic";
 
-// Página só para criar mapas (o quiz também cai aqui para gerar o 1º mapa).
+// Página só para criar mapas (as sugestões do diagnóstico chegam aqui com o tema preenchido).
 export default async function CreatePage() {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
@@ -23,7 +23,7 @@ export default async function CreatePage() {
         <Generator
           credits={credits}
           autoFocus
-          defaultLevel={(user.user_metadata?.level as string) ?? "A1"}
+          defaultLevel={(user.user_metadata?.level as string) ?? (user.user_metadata?.quiz?.level as string) ?? "A1"}
           defaultGoal={(user.user_metadata?.goal as string) ?? undefined}
         />
       </Suspense>

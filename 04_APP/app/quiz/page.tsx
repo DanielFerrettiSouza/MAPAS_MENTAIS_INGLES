@@ -5,8 +5,8 @@ import { track, trackCustom } from "@/lib/pixel";
 import { useRouter } from "next/navigation";
 import Logo from "@/components/Logo";
 
-// Quiz do funil: segmenta o aluno, mostra a "análise" e leva à criação de conta
-// já com o primeiro mapa personalizado definido.
+// Quiz do funil: segmenta o aluno, mostra a "análise" e leva à criação de conta.
+// O diagnóstico (nível + mapas sugeridos) aparece no painel; o aluno escolhe o que criar.
 type Option = { label: string; value: string; emoji: string };
 type Step = { key: string; question: string; options: Option[] };
 
@@ -63,18 +63,10 @@ const STEPS: Step[] = [
   },
 ];
 
-const FIRST_TOPIC: Record<string, string> = {
-  viagem: "Inglês no aeroporto e no hotel",
-  trabalho: "Inglês para reuniões de trabalho",
-  series: "Expressões comuns em séries americanas",
-  prova: "Conectivos para redação em inglês",
-};
-
 const ANALYSIS = [
   "Analisando seu nível…",
   "Escolhendo os temas para o seu objetivo…",
-  "Montando seu primeiro mapa…",
-  "Preparando os áudios…",
+  "Separando os mapas ideais para você…",
 ];
 
 export default function QuizPage() {
@@ -100,13 +92,10 @@ export default function QuizPage() {
 
   function finish() {
     track("Lead", { content_name: answers.goal, content_category: answers.level });
-    const topic = FIRST_TOPIC[answers.goal] ?? "Inglês do dia a dia";
-    const goal = `${answers.goal}; dificuldade: ${answers.pain}; ${answers.time} min por dia`;
     try {
       localStorage.setItem("mf-quiz", JSON.stringify(answers));
     } catch {}
-    const app = `/app/criar?${new URLSearchParams({ topic, level: answers.level, goal })}`;
-    router.push(`/criar-conta?next=${encodeURIComponent(app)}`);
+    router.push(`/criar-conta?next=${encodeURIComponent("/app")}`);
   }
 
   return (
@@ -118,8 +107,8 @@ export default function QuizPage() {
           <div style={{ textAlign: "center" }}>
             <h1>Descubra o jeito mais rápido de <span className="grad-text">destravar seu inglês</span></h1>
             <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.6 }}>
-              Responda 5 perguntas rápidas e receba seu primeiro mapa mental com áudio,
-              montado para o seu objetivo.
+              Responda 5 perguntas rápidas, descubra seu nível e crie 3 mapas mentais
+              com áudio grátis, para o seu objetivo.
             </p>
             <button className="primary-btn grad-btn" style={{ fontSize: 18, padding: "18px 30px", marginTop: 12 }} onClick={() => setStep(0)}>
               Começar (1 minuto) →
@@ -158,11 +147,11 @@ export default function QuizPage() {
             {progress >= ANALYSIS.length && (
               <>
                 <p style={{ color: "var(--muted)", lineHeight: 1.6 }}>
-                  Seu primeiro mapa será: <b style={{ color: "var(--text)" }}>{FIRST_TOPIC[answers.goal]}</b> (nível {answers.level}).
-                  Crie sua conta grátis para receber o mapa e mais 2 de presente.
+                  Seu nível estimado: <b style={{ color: "var(--text)" }}>{answers.level}</b>.
+                  Crie sua conta grátis para ver seu diagnóstico completo e criar 3 mapas com áudio de presente.
                 </p>
                 <button className="primary-btn grad-btn" style={{ fontSize: 18, padding: "18px 30px" }} onClick={finish}>
-                  Ver meu mapa grátis →
+                  Ver meu diagnóstico →
                 </button>
               </>
             )}

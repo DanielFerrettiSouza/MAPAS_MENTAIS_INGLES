@@ -2,6 +2,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { IconCrown, IconRepeat } from "@/components/Icons";
 import QuickCreate from "@/components/QuickCreate";
+import QuizPlan from "@/components/QuizPlan";
+import type { QuizAnswers } from "@/lib/quizPlan";
 import MapGrid, { type MapRow } from "@/components/MapGrid";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { planName } from "@/lib/plans";
@@ -40,6 +42,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
         <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
       </div>
 
+      <QuizPlan saved={user.user_metadata?.quiz as QuizAnswers | undefined} credits={credits} />
 
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginTop: 40 }}>
         <h2 style={{ margin: 0 }}>Mapas recentes</h2>
