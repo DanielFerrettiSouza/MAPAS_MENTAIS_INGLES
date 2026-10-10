@@ -57,7 +57,7 @@ export default async function AdminPage() {
     { label: "Total", test: () => true },
   ];
 
-  const paying = people.filter((p) => p.plan !== "free");
+  const paying = people.filter((p) => p.plan !== "free" && !isAdmin(p.email));
   const freeOut = people.filter((p) => p.plan === "free" && p.credits <= 0);
   const withMap = people.filter((p) => (mapsBy.get(p.id) ?? 0) > 0);
   const pct = (a: number, b: number) => (b ? `${Math.round((a / b) * 100)}%` : "—");

@@ -21,6 +21,10 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
     await admin.from("profiles").update({ plan: "free" }).eq("id", user.id);
     redirect("/app/biblioteca");
   }
+  // Dono do app: plano completo e créditos sempre cheios, para testar sem criar contas novas.
+  if (isAdmin(user.email) && profile && (profile.plan !== "professor" || profile.credits < 100)) {
+    await createSupabaseAdmin().from("profiles").update({ plan: "professor", credits: 999 }).eq("id", user.id);
+  }
 
   return (
     <div className="app-shell">
