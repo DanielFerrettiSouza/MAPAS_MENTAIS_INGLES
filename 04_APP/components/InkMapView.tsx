@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { toPng } from "html-to-image";
+import { savePng } from "@/lib/savePng";
 import { Anton, Permanent_Marker, Roboto_Condensed } from "next/font/google";
 import type { MapWithImages } from "@/lib/mapSchema";
 
@@ -55,16 +55,10 @@ export default function InkMapView({ map, preview = false }: { map: MapWithImage
     setExporting(true);
     try {
       await document.fonts.ready;
-      const dataUrl = await toPng(pageRef.current, {
-        pixelRatio: 2,
+      await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, {
         width: EXPORT_WIDTH,
         style: { width: `${EXPORT_WIDTH}px`, maxWidth: "none", margin: "0" },
-        filter: (node) => !(node instanceof HTMLElement && node.dataset.noExport === "true"),
       });
-      const a = document.createElement("a");
-      a.download = `${map.title_en.replace(/\s+/g, "_")}.png`;
-      a.href = dataUrl;
-      a.click();
     } finally {
       setExporting(false);
     }

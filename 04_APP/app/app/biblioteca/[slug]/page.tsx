@@ -27,8 +27,6 @@ export default async function LibraryMapPage({
     admin.from("study_progress").select("slug").eq("user_id", user.id).eq("slug", params.slug).maybeSingle(),
   ]);
   if (!data) notFound();
-  // Abrir o mapa já conta como estudado (dá para desmarcar no botão).
-  if (!prog) await admin.from("study_progress").upsert({ user_id: user.id, slug: params.slug });
   const fromPlan = searchParams.de === "plano";
   const back = fromPlan
     ? { href: `/app/plano${searchParams.objetivo ? `?objetivo=${encodeURIComponent(searchParams.objetivo)}` : ""}`, label: "← Voltar ao meu plano" }
@@ -40,7 +38,7 @@ export default async function LibraryMapPage({
       <Link href={back.href} className="back-link">{back.label}</Link>
       <div style={{ height: 16 }} />
       <MindMapView map={map} />
-      <div style={{ marginTop: 12 }}><StudyToggle slug={params.slug} done /></div>
+      <div style={{ marginTop: 12 }}><StudyToggle slug={params.slug} done={!!prog} /></div>
       {map.quiz?.length > 0 && <ReviewQuiz quiz={map.quiz} />}
     </>
   );

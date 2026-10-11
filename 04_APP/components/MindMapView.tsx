@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { toPng } from "html-to-image";
+import { savePng } from "@/lib/savePng";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 // Cores das seções no estilo "página de caderno" (borda + fundo suave).
@@ -50,15 +50,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
 
   async function downloadPng() {
     if (!pageRef.current) return;
-    const dataUrl = await toPng(pageRef.current, {
-      pixelRatio: 2,
-      backgroundColor: "#fffdf7",
-      filter: (node) => !(node instanceof HTMLElement && node.dataset.noExport === "true"),
-    });
-    const a = document.createElement("a");
-    a.download = `${map.title_en.replace(/\s+/g, "_")}.png`;
-    a.href = dataUrl;
-    a.click();
+    await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, { backgroundColor: "#fffdf7" });
   }
 
   const sections = map.branches.slice(0, 4).map((branch, i) => ({
