@@ -1,6 +1,7 @@
 import { trackKlaviyo } from "@/lib/klaviyo";
 import { NextResponse } from "next/server";
-import { buildMap } from "@/lib/buildMap";
+import { buildMap, finishImages } from "@/lib/buildMap";
+import { waitUntil } from "@vercel/functions";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
 import type { MapWithImages } from "@/lib/mapSchema";
 
@@ -46,6 +47,7 @@ export async function POST(req: Request) {
       goal,
       illustrate: !!profile?.plan && profile.plan !== "free",
       imagePath: `${user.id}/${id}`,
+      defer: true,
     });
     const { error } = await admin.from("generated_maps").insert({
       id,
@@ -56,6 +58,15 @@ export async function POST(req: Request) {
       data: result,
     });
     if (error) throw new Error(`Falha ao salvar o mapa: ${error.message}`);
+
+    // O mapa já abre; as ilustrações que faltam são desenhadas depois da resposta.
+    if (result.pending?.length) {
+      waitUntil(
+        finishImages(admin, result)
+          .then((full) => admin.from("generated_maps").update({ data: full }).eq("id", id))
+          .catch((e) => console.error("Ilustrações pendentes:", e))
+      );
+    }
 
     const left = credits - 1;
     await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://mapas-falantes.vercel.app/app/mapa/${id}` }, { mf_creditos: left });

@@ -69,4 +69,6 @@ export type MapWithImages = GeneratedMap & {
   branch_images: (string | null)[];
   // "ink": estilo gravura (mapas novos). Ausente = estilo caderno (mapas antigos e biblioteca).
   style?: "ink";
+  // Ilustrações ainda sendo desenhadas (0 = capa, 1-4 = ramos): o mapa abre antes e elas chegam depois.
+  pending?: number[];
 };

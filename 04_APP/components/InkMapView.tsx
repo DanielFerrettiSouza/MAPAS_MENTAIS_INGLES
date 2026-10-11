@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { savePng } from "@/lib/savePng";
 import { Anton, Permanent_Marker, Roboto_Condensed } from "next/font/google";
 import type { MapWithImages } from "@/lib/mapSchema";
@@ -20,7 +20,24 @@ function ttsUrl(text: string) {
 
 // Mapa no estilo gravura (papel envelhecido, nanquim, pincel). Todo o texto é
 // escrito pelo app — a IA só fornece as ilustrações, sem letras.
-export default function InkMapView({ map, preview = false }: { map: MapWithImages; preview?: boolean }) {
+export default function InkMapView({ map: initial, preview = false, mapId }: { map: MapWithImages; preview?: boolean; mapId?: string }) {
+  const [map, setMap] = useState(initial);
+  // Mapa recém-criado: as ilustrações chegam alguns segundos depois do texto.
+  useEffect(() => {
+    if (!mapId || !initial.pending?.length) return;
+    let tries = 0;
+    const timer = setInterval(async () => {
+      tries += 1;
+      const r = await fetch(`/api/maps/${mapId}`, { cache: "no-store" }).then((x) => x.json()).catch(() => null);
+      if (r && !r.pending?.length) {
+        setMap((m) => ({ ...m, cover_image: r.cover_image, branch_images: r.branch_images, pending: [] }));
+        clearInterval(timer);
+      }
+      if (tries > 30) clearInterval(timer);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [mapId, initial.pending]);
+  const drawing = (i: number) => !!map.pending?.includes(i);
   const pageRef = useRef<HTMLDivElement | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
@@ -76,6 +93,8 @@ export default function InkMapView({ map, preview = false }: { map: MapWithImage
       <section key={s.index} className={`ink-sec ink-sec-${s.index}`}>
         {s.image ? (
           <div className="ink-ill" style={{ backgroundImage: `url(${s.image})` }} aria-hidden />
+        ) : drawing(s.index + 1) ? (
+          <span className="ink-ill ink-ill-emoji ink-drawing" aria-hidden>✒️</span>
         ) : (
           s.branch.emoji && <span className="ink-ill ink-ill-emoji" aria-hidden>{s.branch.emoji}</span>
         )}
@@ -123,6 +142,8 @@ export default function InkMapView({ map, preview = false }: { map: MapWithImage
           <div className="ink-center">
             {map.cover_image ? (
               <div className="ink-emblem" style={{ backgroundImage: `url(${map.cover_image})` }} aria-hidden />
+            ) : drawing(0) ? (
+              <div className="ink-emblem ink-emblem-emoji ink-drawing" aria-hidden>✒️</div>
             ) : (
               <div className="ink-emblem ink-emblem-emoji" aria-hidden>{map.emoji}</div>
             )}
