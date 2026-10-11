@@ -14,6 +14,7 @@ export async function savePng(node: HTMLElement, fileName: string, opts: Opts = 
     Object.assign(node.style, { width: `${opts.width}px`, maxWidth: "none" }, opts.style ?? {});
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
   }
+  const restoreImages = await inlineBackgrounds(node);
   let blob: Blob | null;
   try {
     const w = node.offsetWidth;
@@ -27,9 +28,11 @@ export async function savePng(node: HTMLElement, fileName: string, opts: Opts = 
     };
     // O Safari (iPhone) costuma deixar as ilustrações de fora na primeira captura:
     // uma passada pequena antes carrega tudo, e a segunda sai completa.
-    await toBlob(node, { ...base, pixelRatio: 0.2 }).catch(() => null);
+    const safari = /^((?!chrome|android|crios|fxios).)*safari/i.test(navigator.userAgent);
+    for (let i = 0; i < (safari ? 3 : 1); i++) await toBlob(node, { ...base, pixelRatio: 0.3 }).catch(() => null);
     blob = await toBlob(node, { ...base, pixelRatio });
   } finally {
+    restoreImages();
     if (prev === null) node.removeAttribute("style");
     else node.setAttribute("style", prev);
   }
@@ -70,4 +73,31 @@ function showImage(url: string) {
     URL.revokeObjectURL(url);
   };
   document.body.appendChild(wrap);
+}
+
+// Troca as ilustrações (background-image com URL externa) por versões embutidas em data URL
+// durante a captura: o Safari do iPhone não desenha imagens externas dentro do PNG.
+async function inlineBackgrounds(node: HTMLElement) {
+  const els = [node, ...Array.from(node.querySelectorAll<HTMLElement>("*"))].filter((el) =>
+    /url\(["']?https?:/.test(getComputedStyle(el).backgroundImage)
+  );
+  const saved = els.map((el) => el.style.backgroundImage);
+  await Promise.all(
+    els.map(async (el) => {
+      const url = getComputedStyle(el).backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];
+      if (!url) return;
+      try {
+        const blob = await (await fetch(url, { mode: "cors", cache: "force-cache" })).blob();
+        const data = await new Promise<string>((ok, fail) => {
+          const r = new FileReader();
+          r.onload = () => ok(r.result as string);
+          r.onerror = fail;
+          r.readAsDataURL(blob);
+        });
+        await new Promise((ok) => { const img = new Image(); img.onload = img.onerror = ok; img.src = data; });
+        el.style.backgroundImage = `url("${data}")`;
+      } catch {}
+    })
+  );
+  return () => els.forEach((el, i) => (el.style.backgroundImage = saved[i]));
 }
