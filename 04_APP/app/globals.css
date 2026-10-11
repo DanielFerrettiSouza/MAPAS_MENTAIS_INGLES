@@ -11,7 +11,8 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; } /* evita o iPhone aumentar as letras na captura do PNG */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.ink-page *, .nb-page * { max-height: 1000000px; } /* desliga o "text autosizing" do iPhone dentro dos mapas */ /* evita o iPhone aumentar as letras na captura do PNG */
 
 body {
   margin: 0;

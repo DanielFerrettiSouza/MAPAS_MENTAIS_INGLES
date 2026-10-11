@@ -94,11 +94,14 @@ async function inlineBackgrounds(node: HTMLElement) {
         const img = await createImageBitmap(blob);
         const masked = (cs.webkitMaskImage || cs.maskImage || "none") !== "none";
         const multiply = cs.mixBlendMode === "multiply";
+        // Reduz para no máximo 480px: as ilustrações originais têm ~2 MB e o Safari
+        // não desenha imagens embutidas muito pesadas.
+        const k = Math.min(1, 480 / Math.max(img.width, img.height));
         const c = document.createElement("canvas");
-        c.width = img.width;
-        c.height = img.height;
+        c.width = Math.round(img.width * k);
+        c.height = Math.round(img.height * k);
         const ctx = c.getContext("2d")!;
-        ctx.drawImage(img, 0, 0);
+        ctx.drawImage(img, 0, 0, c.width, c.height);
         if (multiply || masked) {
           const d = ctx.getImageData(0, 0, c.width, c.height);
           const [pr, pg, pb] = [243, 234, 216]; // cor do papel
@@ -118,7 +121,7 @@ async function inlineBackgrounds(node: HTMLElement) {
             }
           ctx.putImageData(d, 0, 0);
         }
-        el.style.backgroundImage = `url("${c.toDataURL("image/png")}")`;
+        el.style.backgroundImage = `url("${c.toDataURL(masked ? "image/png" : "image/jpeg", 0.85)}")`;
         el.style.mixBlendMode = "normal";
         el.style.setProperty("-webkit-mask-image", "none");
         el.style.maskImage = "none";
