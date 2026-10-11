@@ -108,6 +108,25 @@ export const TIME_MSG: Record<string, { title: string; text: string }> = {
   "30": { title: "Com 30 minutos você voa", text: "Um mapa novo, a revisão e ainda os exercícios da biblioteca. Em 30 dias, dá para cobrir um nível inteiro." },
 };
 
+// Os 3 cartões embaixo da tela "Seu ritmo", conforme o tempo escolhido.
+export const TIME_STEPS: Record<string, { icon: string; text: string }[]> = {
+  "5": [
+    { icon: "⏱️", text: "5 minutos: 1 mapa novo por dia" },
+    { icon: "🔊", text: "Ouve e repete cada frase" },
+    { icon: "🗺️", text: "30 assuntos em 1 mês" },
+  ],
+  "15": [
+    { icon: "🗺️", text: "1 mapa novo por dia" },
+    { icon: "🔁", text: "+ revisão do mapa de ontem" },
+    { icon: "🧠", text: "30 assuntos aprendidos e revisados em 1 mês" },
+  ],
+  "30": [
+    { icon: "🗺️", text: "1 mapa novo + revisão por dia" },
+    { icon: "✏️", text: "+ exercícios da biblioteca do seu nível" },
+    { icon: "🎓", text: "Um nível inteiro coberto em cerca de 1 mês" },
+  ],
+};
+
 export const FIRST_OPTIONS: Record<string, string[]> = {
   viagem: ["Inglês no aeroporto", "Check-in no hotel", "Pedindo comida no restaurante", "Pedindo informação na rua"],
   trabalho: ["Inglês para reuniões de trabalho", "Entrevista de emprego em inglês", "E-mails profissionais em inglês", "Me apresentando no trabalho"],

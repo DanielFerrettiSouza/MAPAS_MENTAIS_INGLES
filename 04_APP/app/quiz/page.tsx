@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { track, trackCustom } from "@/lib/pixel";
 import { useRouter } from "next/navigation";
 import Logo from "@/components/Logo";
-import { FIRST_OPTIONS, GOAL_PREVIEW, LEVEL_MSG, PAIN_MSG, TIME_MSG, TRIED_MSG } from "@/lib/quizFunnel";
+import { FIRST_OPTIONS, GOAL_PREVIEW, LEVEL_MSG, PAIN_MSG, TIME_MSG, TIME_STEPS, TRIED_MSG } from "@/lib/quizFunnel";
 import { LEVEL_INFO } from "@/lib/quizPlan";
 
 // Quiz = funil de conversão: cada resposta é seguida de uma tela que reforça a decisão
@@ -220,9 +220,9 @@ export default function QuizPage() {
         )}
         {key === "time" && (
           <div className="quiz-steps">
-            <div><span>📅</span>1 mapa por dia</div>
-            <div><span>🗺️</span>30 assuntos em 1 mês</div>
-            <div><span>🔊</span>Centenas de frases ouvidas e repetidas</div>
+            {(TIME_STEPS[answers.time ?? "5"] ?? TIME_STEPS["5"]).map((t) => (
+              <div key={t.text}><span>{t.icon}</span>{t.text}</div>
+            ))}
           </div>
         )}
         {next}
