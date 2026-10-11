@@ -3,6 +3,7 @@ import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/serv
 import { canUseLibrary, FREE_LIBRARY_SLUGS } from "@/lib/library";
 import { CURRICULUM } from "@/lib/curriculum";
 import LibraryLocked from "@/components/LibraryLocked";
+import { BONUS } from "@/lib/bonus";
 
 export const dynamic = "force-dynamic";
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -38,6 +39,17 @@ export default async function LibraryPage({ searchParams }: { searchParams: { ni
           <Link key={l} href={`/app/biblioteca?nivel=${l}`} className={`chip ${l === level ? "chip-on" : ""}`}>{l}</Link>
         ))}
       </div>}
+      <h2 style={{ margin: "28px 0 4px" }}>🎁 Bônus do método</h2>
+      <div className="map-grid">
+        {Object.entries(BONUS).map(([k, b]) => (
+          <Link key={k} href={`/app/biblioteca/bonus/${k}`} className="map-card">
+            <span style={{ fontSize: 40 }}>{b.emoji}</span>
+            <strong>{b.title}</strong>
+            <small>{b.text}</small>
+          </Link>
+        ))}
+      </div>
+      <h2 style={{ margin: "28px 0 4px" }}>Mapas do nível {level}</h2>
       <div className="map-grid">
         {topics.map((t) => {
           const m = ready.get(t.slug);

@@ -728,3 +728,17 @@ a { color: inherit; }
 .quiz-email { display: grid; gap: 12px; margin-top: 18px; text-align: left; }
 .quiz-email p { font-weight: 700; font-size: 20px; margin: 0; }
 .quiz-email small { color: var(--muted); text-align: center; }
+.bonus-sec { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; margin-top: 18px; }
+.bonus-sec h2 { margin: 0 0 8px; font-size: 20px; }
+.bonus-sec ul { list-style: none; padding: 0; margin: 0; }
+.bonus-sec li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--border); line-height: 1.45; }
+.bonus-pt { color: var(--muted); }
+.bonus-ex { font-size: 14px; color: var(--muted); margin-top: 4px; }
+.bonus-ex .link-btn { padding: 0 4px; }
+.method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+.bonus-grid { grid-template-columns: repeat(3, 1fr); }
+.method-card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; }
+.method-card h3 { margin: 10px 0 6px; font-size: 18px; }
+.method-card p { margin: 0; color: var(--muted); line-height: 1.55; }
+.method-ico { font-size: 30px; }
+@media (max-width: 860px) { .method-grid, .bonus-grid { grid-template-columns: 1fr; } }

@@ -10,7 +10,7 @@ export default function Landing() {
       <main>
         <section className="wrap hero">
           <div>
-            <span className="eyebrow">Mapa mental + áudio nativo + IA</span>
+            <span className="eyebrow">Método Mapas Falantes · mapa mental + áudio nativo + IA</span>
             <h1>
               Aprenda inglês com mapas que <span className="grad-text">falam.</span>
             </h1>

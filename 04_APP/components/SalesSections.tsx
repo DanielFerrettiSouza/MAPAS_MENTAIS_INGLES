@@ -14,6 +14,19 @@ const STEPS = [
   { ico: "✏️", title: "Revise e fixe", text: "Mini exercício de completar e quiz de revisão em cada mapa. É o que transforma \"eu li\" em \"eu sei falar\"." },
 ];
 
+const METHOD = [
+  { ico: "🧭", title: "1. Descubra seu nível", text: "Um teste rápido mostra de onde você parte e qual é o seu objetivo." },
+  { ico: "📅", title: "2. Siga seu plano", text: "O que estudar hoje, semana a semana — e você marca o que já fez." },
+  { ico: "📚", title: "3. Estude com os mapas", text: "120 mapas prontos do A1 ao C2, com áudio nativo e exercício que corrige na hora." },
+  { ico: "✨", title: "4. Crie os seus", text: "Viagem, entrevista, série favorita: digite qualquer assunto e a IA cria o mapa em segundos." },
+];
+
+const BONUS_CARDS = [
+  { ico: "💬", title: "500 frases mais usadas", text: "Organizadas por situação, cada uma com áudio de nativo." },
+  { ico: "⚡", title: "100 verbos essenciais", text: "Os verbos do dia a dia, com frase de exemplo e áudio." },
+  { ico: "😎", title: "150 expressões e gírias", text: "O que os americanos falam de verdade — e que nenhuma apostila ensina." },
+];
+
 export default function SalesSections({
   inApp = false,
   email,
@@ -101,6 +114,35 @@ export default function SalesSections({
               <li>✓ Seus mapas salvos para revisar quando quiser</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="section method">
+      <div className="wrap">
+        <p style={{ letterSpacing: 3, color: "var(--muted)", fontWeight: 600, margin: 0, textAlign: "center" }}>MÉTODO MAPAS FALANTES</p>
+        <h2 className="big-title" style={{ textAlign: "center" }}>
+          Um caminho para estudar inglês <span className="grad-text">sem se perder.</span>
+        </h2>
+        <p style={{ textAlign: "center", color: "var(--muted)", fontSize: 18 }}>5 minutos por dia: você vê, ouve, repete — e sabe exatamente o que estudar amanhã.</p>
+        <div className="method-grid">
+          {METHOD.map((m) => (
+            <div key={m.title} className="method-card">
+              <span className="method-ico">{m.ico}</span>
+              <h3>{m.title}</h3>
+              <p>{m.text}</p>
+            </div>
+          ))}
+        </div>
+        <h3 style={{ textAlign: "center", marginTop: 36 }}>🎁 Bônus do método (no Plano Fluente)</h3>
+        <div className="method-grid bonus-grid">
+          {BONUS_CARDS.map((b) => (
+            <div key={b.title} className="method-card">
+              <span className="method-ico">{b.ico}</span>
+              <h3>{b.title}</h3>
+              <p>{b.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

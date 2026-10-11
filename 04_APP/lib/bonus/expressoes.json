@@ -1,0 +1,955 @@
+{
+ "title": "150 expressões e gírias de nativos",
+ "sections": [
+  {
+   "theme": "Concordar e discordar",
+   "items": [
+    {
+     "en": "Same here",
+     "pt": "Eu também; comigo é igual",
+     "ex_en": "I'm so tired today. — Same here.",
+     "ex_pt": "Estou muito cansado hoje. — Eu também."
+    },
+    {
+     "en": "Totally",
+     "pt": "Com certeza; concordo totalmente",
+     "ex_en": "This place is amazing! — Totally!",
+     "ex_pt": "Esse lugar é incrível! — Com certeza!"
+    },
+    {
+     "en": "Fair enough",
+     "pt": "Justo; faz sentido (aceitando o argumento)",
+     "ex_en": "I can't go because I have to work. — Fair enough.",
+     "ex_pt": "Não posso ir porque tenho que trabalhar. — Justo."
+    },
+    {
+     "en": "I hear you",
+     "pt": "Entendo seu ponto (às vezes antes de discordar)",
+     "ex_en": "I hear you, but I still think it's too expensive.",
+     "ex_pt": "Entendo seu ponto, mas ainda acho caro demais."
+    },
+    {
+     "en": "Tell me about it",
+     "pt": "Nem me fale; pois é",
+     "ex_en": "Traffic was terrible this morning. — Tell me about it.",
+     "ex_pt": "O trânsito estava horrível hoje cedo. — Nem me fale."
+    },
+    {
+     "en": "You can say that again",
+     "pt": "Pode crer; falou tudo",
+     "ex_en": "That exam was brutal. — You can say that again!",
+     "ex_pt": "Aquela prova foi pesada. — Pode crer!"
+    },
+    {
+     "en": "No way",
+     "pt": "De jeito nenhum; nem pensar",
+     "ex_en": "You think he's right? No way.",
+     "ex_pt": "Você acha que ele tem razão? De jeito nenhum."
+    },
+    {
+     "en": "I'm with you on that",
+     "pt": "Concordo com você nisso; tô contigo",
+     "ex_en": "We should leave early. — I'm with you on that.",
+     "ex_pt": "A gente devia sair cedo. — Tô contigo nessa."
+    },
+    {
+     "en": "We're on the same page",
+     "pt": "Estamos de acordo; estamos na mesma sintonia",
+     "ex_en": "Good, so we're on the same page about the budget.",
+     "ex_pt": "Ótimo, então estamos de acordo sobre o orçamento."
+    },
+    {
+     "en": "Let's agree to disagree",
+     "pt": "Vamos concordar em discordar; cada um fica com sua opinião",
+     "ex_en": "We're never going to settle this, so let's agree to disagree.",
+     "ex_pt": "A gente nunca vai resolver isso, então vamos concordar em discordar."
+    },
+    {
+     "en": "I don't buy it",
+     "pt": "Não engulo essa; não acredito nisso",
+     "ex_en": "He said he was sick, but I don't buy it.",
+     "ex_pt": "Ele disse que estava doente, mas eu não engulo essa."
+    },
+    {
+     "en": "Facts",
+     "pt": "Verdade pura; é isso mesmo (gíria)",
+     "ex_en": "Pizza is better the next day. — Facts.",
+     "ex_pt": "Pizza fica melhor no dia seguinte. — Verdade pura."
+    },
+    {
+     "en": "Hit the nail on the head",
+     "pt": "Acertar em cheio; dizer exatamente o certo",
+     "ex_en": "You hit the nail on the head with that comment.",
+     "ex_pt": "Você acertou em cheio com esse comentário."
+    },
+    {
+     "en": "That's a stretch",
+     "pt": "Aí já é forçar a barra; é exagero",
+     "ex_en": "Calling it the best movie ever? That's a stretch.",
+     "ex_pt": "Chamar de melhor filme de todos os tempos? Aí já é forçar a barra."
+    },
+    {
+     "en": "Bet",
+     "pt": "Fechou; beleza; combinado (gíria)",
+     "ex_en": "Meet me at seven? — Bet.",
+     "ex_pt": "Me encontra às sete? — Fechou."
+    }
+   ]
+  },
+  {
+   "theme": "Surpresa e reação",
+   "items": [
+    {
+     "en": "That's wild!",
+     "pt": "Que loucura! / Que doideira! (reação a algo surpreendente)",
+     "ex_en": "You ran into your old teacher in Paris? That's wild!",
+     "ex_pt": "Você encontrou seu antigo professor em Paris? Que loucura!"
+    },
+    {
+     "en": "Oh my God! (OMG)",
+     "pt": "Meu Deus! (reação de choque, alegria ou espanto)",
+     "ex_en": "Oh my God, look at this view!",
+     "ex_pt": "Meu Deus, olha essa vista!"
+    },
+    {
+     "en": "Are you kidding me?",
+     "pt": "Tá de brincadeira comigo? / Só pode ser piada",
+     "ex_en": "The flight got canceled again? Are you kidding me?",
+     "ex_pt": "O voo foi cancelado de novo? Tá de brincadeira comigo?"
+    },
+    {
+     "en": "For real?",
+     "pt": "Sério? / É sério isso?",
+     "ex_en": "She's moving to Japan? For real?",
+     "ex_pt": "Ela vai se mudar pro Japão? Sério?"
+    },
+    {
+     "en": "Wait, what?",
+     "pt": "Peraí, como assim? (quando algo pega a pessoa de surpresa)",
+     "ex_en": "Wait, what? They broke up?",
+     "ex_pt": "Peraí, como assim? Eles terminaram?"
+    },
+    {
+     "en": "I can't believe it",
+     "pt": "Não consigo acreditar / Nem acredito",
+     "ex_en": "We actually won. I can't believe it!",
+     "ex_pt": "A gente ganhou mesmo. Nem acredito!"
+    },
+    {
+     "en": "Out of nowhere",
+     "pt": "Do nada / De repente, sem aviso",
+     "ex_en": "He called me out of nowhere after five years.",
+     "ex_pt": "Ele me ligou do nada depois de cinco anos."
+    },
+    {
+     "en": "I didn't see that coming",
+     "pt": "Não esperava por essa / Essa eu não esperava",
+     "ex_en": "The ending of that movie? I didn't see that coming.",
+     "ex_pt": "O final daquele filme? Não esperava por essa."
+    },
+    {
+     "en": "Caught off guard",
+     "pt": "Pego de surpresa / Desprevenido",
+     "ex_en": "Her question totally caught me off guard.",
+     "ex_pt": "A pergunta dela me pegou totalmente de surpresa."
+    },
+    {
+     "en": "Holy crap!",
+     "pt": "Caramba! / Puta merda! (informal, um pouco vulgar)",
+     "ex_en": "Holy crap, that car is fast!",
+     "ex_pt": "Caramba, esse carro é rápido!"
+    },
+    {
+     "en": "Mind blown / That blew my mind",
+     "pt": "Fiquei de cara / Isso me deixou chocado (impressionado)",
+     "ex_en": "That magic trick blew my mind.",
+     "ex_pt": "Aquele truque de mágica me deixou de cara."
+    },
+    {
+     "en": "Shut up!",
+     "pt": "Mentira! / Para! (surpresa positiva, em tom animado)",
+     "ex_en": "You're getting married? Shut up!",
+     "ex_pt": "Você vai casar? Mentira!"
+    },
+    {
+     "en": "My jaw dropped",
+     "pt": "Fiquei de queixo caído",
+     "ex_en": "When I saw the price, my jaw dropped.",
+     "ex_pt": "Quando vi o preço, fiquei de queixo caído."
+    },
+    {
+     "en": "Plot twist",
+     "pt": "Reviravolta (usado com humor para algo inesperado na vida real)",
+     "ex_en": "Plot twist: the new boss is my ex.",
+     "ex_pt": "Reviravolta: o chefe novo é meu ex."
+    },
+    {
+     "en": "Get out of here!",
+     "pt": "Fala sério! / Não brinca! (incredulidade em tom brincalhão)",
+     "ex_en": "You met Taylor Swift? Get out of here!",
+     "ex_pt": "Você conheceu a Taylor Swift? Fala sério!"
+    }
+   ]
+  },
+  {
+   "theme": "Elogios",
+   "items": [
+    {
+     "en": "You nailed it",
+     "pt": "Você mandou muito bem / acertou em cheio",
+     "ex_en": "Your presentation was perfect. You nailed it!",
+     "ex_pt": "Sua apresentação foi perfeita. Você mandou muito bem!"
+    },
+    {
+     "en": "You're killing it",
+     "pt": "Você está arrasando",
+     "ex_en": "Three promotions in two years? You're killing it!",
+     "ex_pt": "Três promoções em dois anos? Você está arrasando!"
+    },
+    {
+     "en": "You're the best",
+     "pt": "Você é demais / Você é o melhor",
+     "ex_en": "Thanks for picking me up. You're the best!",
+     "ex_pt": "Valeu por me buscar. Você é demais!"
+    },
+    {
+     "en": "That's fire",
+     "pt": "Isso está incrível / sensacional",
+     "ex_en": "Did you write this song? That's fire!",
+     "ex_pt": "Você escreveu essa música? Está sensacional!"
+    },
+    {
+     "en": "Looking sharp",
+     "pt": "Você está elegante / nos trinques",
+     "ex_en": "Nice suit! You're looking sharp today.",
+     "ex_pt": "Terno bonito! Você está elegante hoje."
+    },
+    {
+     "en": "On point",
+     "pt": "Impecável / perfeito",
+     "ex_en": "Your makeup is on point tonight.",
+     "ex_pt": "Sua maquiagem está impecável hoje."
+    },
+    {
+     "en": "Hats off to you",
+     "pt": "Tiro o chapéu para você",
+     "ex_en": "You finished the marathon? Hats off to you!",
+     "ex_pt": "Você terminou a maratona? Tiro o chapéu para você!"
+    },
+    {
+     "en": "You outdid yourself",
+     "pt": "Você se superou",
+     "ex_en": "This dinner is amazing. You outdid yourself!",
+     "ex_pt": "Este jantar está incrível. Você se superou!"
+    },
+    {
+     "en": "Heart of gold",
+     "pt": "Coração de ouro",
+     "ex_en": "She always helps everyone. She has a heart of gold.",
+     "ex_pt": "Ela sempre ajuda todo mundo. Ela tem um coração de ouro."
+    },
+    {
+     "en": "One of a kind",
+     "pt": "Único / sem igual",
+     "ex_en": "There's nobody like my grandma. She's one of a kind.",
+     "ex_pt": "Não existe ninguém como minha avó. Ela é única."
+    },
+    {
+     "en": "Look like a million bucks",
+     "pt": "Estar lindo / deslumbrante",
+     "ex_en": "Wow, you look like a million bucks in that dress!",
+     "ex_pt": "Nossa, você está deslumbrante nesse vestido!"
+    },
+    {
+     "en": "Knock it out of the park",
+     "pt": "Arrebentar / fazer um trabalho excelente",
+     "ex_en": "The team knocked it out of the park with this campaign.",
+     "ex_pt": "A equipe arrebentou com essa campanha."
+    },
+    {
+     "en": "Slay",
+     "pt": "Arrasar (gíria jovem)",
+     "ex_en": "She totally slayed that performance.",
+     "ex_pt": "Ela arrasou total naquela apresentação."
+    },
+    {
+     "en": "Goals",
+     "pt": "Sonho de consumo / meta (algo que você admira e quer para si)",
+     "ex_en": "Look at their kitchen. That's goals!",
+     "ex_pt": "Olha a cozinha deles. Sonho de consumo!"
+    },
+    {
+     "en": "You ate (that)",
+     "pt": "Você arrasou (gíria jovem)",
+     "ex_en": "Your outfit at the party? You ate that.",
+     "ex_pt": "Seu look na festa? Você arrasou."
+    }
+   ]
+  },
+  {
+   "theme": "Irritação e reclamação",
+   "items": [
+    {
+     "en": "get on someone's nerves",
+     "pt": "dar nos nervos, irritar alguém",
+     "ex_en": "His loud chewing really gets on my nerves.",
+     "ex_pt": "O jeito barulhento dele de mastigar me dá nos nervos."
+    },
+    {
+     "en": "drive someone crazy",
+     "pt": "deixar alguém louco, tirar alguém do sério",
+     "ex_en": "This traffic is driving me crazy.",
+     "ex_pt": "Esse trânsito está me deixando louco."
+    },
+    {
+     "en": "be fed up with",
+     "pt": "estar de saco cheio de",
+     "ex_en": "I'm fed up with all these meetings.",
+     "ex_pt": "Estou de saco cheio dessas reuniões todas."
+    },
+    {
+     "en": "be sick and tired of",
+     "pt": "estar farto de, não aguentar mais",
+     "ex_en": "I'm sick and tired of your excuses.",
+     "ex_pt": "Não aguento mais as suas desculpas."
+    },
+    {
+     "en": "bug",
+     "pt": "incomodar, encher o saco",
+     "ex_en": "Stop bugging me, I'm trying to work.",
+     "ex_pt": "Para de me encher, estou tentando trabalhar."
+    },
+    {
+     "en": "pet peeve",
+     "pt": "implicância, coisa que irrita muito",
+     "ex_en": "My biggest pet peeve is people who are always late.",
+     "ex_pt": "O que mais me irrita é gente que sempre se atrasa."
+    },
+    {
+     "en": "pain in the neck",
+     "pt": "um saco, uma chatice (pessoa ou coisa)",
+     "ex_en": "Doing taxes is such a pain in the neck.",
+     "ex_pt": "Declarar imposto é um saco."
+    },
+    {
+     "en": "the last straw",
+     "pt": "a gota d'água",
+     "ex_en": "When he lied to me again, that was the last straw.",
+     "ex_pt": "Quando ele mentiu de novo, foi a gota d'água."
+    },
+    {
+     "en": "vent",
+     "pt": "desabafar",
+     "ex_en": "Sorry, I just need to vent for a minute.",
+     "ex_pt": "Desculpa, só preciso desabafar um pouco."
+    },
+    {
+     "en": "push someone's buttons",
+     "pt": "provocar alguém, cutucar onde dói",
+     "ex_en": "My brother knows exactly how to push my buttons.",
+     "ex_pt": "Meu irmão sabe exatamente como me provocar."
+    },
+    {
+     "en": "ticked off",
+     "pt": "irritado, bravo",
+     "ex_en": "She was ticked off that nobody called her back.",
+     "ex_pt": "Ela ficou brava porque ninguém retornou a ligação."
+    },
+    {
+     "en": "rub someone the wrong way",
+     "pt": "não ir com a cara de alguém, irritar (sem motivo claro)",
+     "ex_en": "I don't know why, but the new manager rubs me the wrong way.",
+     "ex_pt": "Não sei por quê, mas não vou com a cara do novo gerente."
+    },
+    {
+     "en": "salty",
+     "pt": "ressentido, chateado (gíria)",
+     "ex_en": "He's still salty about losing the game.",
+     "ex_pt": "Ele ainda está chateado por ter perdido o jogo."
+    },
+    {
+     "en": "get under someone's skin",
+     "pt": "irritar profundamente, mexer com alguém",
+     "ex_en": "Don't let his comments get under your skin.",
+     "ex_pt": "Não deixa os comentários dele te afetarem."
+    },
+    {
+     "en": "gripe about",
+     "pt": "reclamar de, resmungar sobre",
+     "ex_en": "Everyone gripes about the office coffee.",
+     "ex_pt": "Todo mundo reclama do café do escritório."
+    }
+   ]
+  },
+  {
+   "theme": "Desculpas e gentileza",
+   "items": [
+    {
+     "en": "My bad",
+     "pt": "Foi mal / Erro meu",
+     "ex_en": "My bad, I didn't see you were waiting.",
+     "ex_pt": "Foi mal, não vi que você estava esperando."
+    },
+    {
+     "en": "No worries",
+     "pt": "Sem problemas / Tranquilo",
+     "ex_en": "\"Sorry I'm late!\" \"No worries.\"",
+     "ex_pt": "\"Desculpa o atraso!\" \"Tranquilo.\""
+    },
+    {
+     "en": "It's all good",
+     "pt": "Tá tudo certo / Relaxa",
+     "ex_en": "Don't stress about it, it's all good.",
+     "ex_pt": "Não esquenta com isso, tá tudo certo."
+    },
+    {
+     "en": "You're a lifesaver",
+     "pt": "Você salvou minha vida (agradecimento por uma grande ajuda)",
+     "ex_en": "Thanks for the ride, you're a lifesaver!",
+     "ex_pt": "Valeu pela carona, você salvou minha vida!"
+    },
+    {
+     "en": "I owe you one",
+     "pt": "Te devo uma",
+     "ex_en": "Thanks for covering my shift. I owe you one.",
+     "ex_pt": "Valeu por cobrir meu turno. Te devo uma."
+    },
+    {
+     "en": "Don't mention it",
+     "pt": "Imagina / Não há de quê",
+     "ex_en": "\"Thanks for helping me move.\" \"Don't mention it.\"",
+     "ex_pt": "\"Obrigado por me ajudar na mudança.\" \"Imagina.\""
+    },
+    {
+     "en": "Sorry to bother you",
+     "pt": "Desculpa incomodar",
+     "ex_en": "Sorry to bother you, but do you have a minute?",
+     "ex_pt": "Desculpa incomodar, mas você tem um minutinho?"
+    },
+    {
+     "en": "No hard feelings",
+     "pt": "Sem ressentimentos / Sem mágoas",
+     "ex_en": "I had to pick someone else, but no hard feelings, OK?",
+     "ex_pt": "Tive que escolher outra pessoa, mas sem mágoas, tá?"
+    },
+    {
+     "en": "Make it up to you",
+     "pt": "Te compensar",
+     "ex_en": "I missed your birthday, but I'll make it up to you.",
+     "ex_pt": "Perdi seu aniversário, mas vou te compensar."
+    },
+    {
+     "en": "Cut someone some slack",
+     "pt": "Pegar leve com alguém / Dar um desconto",
+     "ex_en": "Cut him some slack, it's his first week.",
+     "ex_pt": "Pega leve com ele, é a primeira semana dele."
+    },
+    {
+     "en": "Water under the bridge",
+     "pt": "Águas passadas",
+     "ex_en": "Don't worry about that fight. It's water under the bridge.",
+     "ex_pt": "Não se preocupa com aquela briga. São águas passadas."
+    },
+    {
+     "en": "Go out of your way",
+     "pt": "Se esforçar além do necessário / Fazer de tudo para ajudar",
+     "ex_en": "She always goes out of her way to help new hires.",
+     "ex_pt": "Ela sempre faz de tudo para ajudar os novatos."
+    },
+    {
+     "en": "Pay it forward",
+     "pt": "Passar a gentileza adiante",
+     "ex_en": "Someone helped me once, so now I pay it forward.",
+     "ex_pt": "Alguém me ajudou uma vez, então agora passo isso adiante."
+    },
+    {
+     "en": "Bury the hatchet",
+     "pt": "Fazer as pazes",
+     "ex_en": "After years of fighting, they finally buried the hatchet.",
+     "ex_pt": "Depois de anos brigando, eles finalmente fizeram as pazes."
+    },
+    {
+     "en": "Eat crow",
+     "pt": "Dar o braço a torcer / Admitir que estava errado",
+     "ex_en": "I said he'd fail, so now I have to eat crow.",
+     "ex_pt": "Eu disse que ele ia fracassar, então agora tenho que dar o braço a torcer."
+    }
+   ]
+  },
+  {
+   "theme": "Amizade e convites",
+   "items": [
+    {
+     "en": "hang out",
+     "pt": "sair junto, passar um tempo junto, ficar de boa com alguém",
+     "ex_en": "Do you want to hang out this weekend?",
+     "ex_pt": "Quer sair junto neste fim de semana?"
+    },
+    {
+     "en": "be down (for something)",
+     "pt": "estar a fim, topar",
+     "ex_en": "We're getting pizza tonight. Are you down?",
+     "ex_pt": "Vamos comer pizza hoje à noite. Topa?"
+    },
+    {
+     "en": "catch up",
+     "pt": "colocar o papo em dia",
+     "ex_en": "Let's get coffee and catch up soon.",
+     "ex_pt": "Vamos tomar um café e colocar o papo em dia logo."
+    },
+    {
+     "en": "grab a bite",
+     "pt": "comer alguma coisa rapidinho, fazer um lanche",
+     "ex_en": "Want to grab a bite after work?",
+     "ex_pt": "Quer comer alguma coisa depois do trabalho?"
+    },
+    {
+     "en": "hit me up",
+     "pt": "me chama, me manda mensagem",
+     "ex_en": "Hit me up if you're free on Friday.",
+     "ex_pt": "Me chama se você estiver livre na sexta."
+    },
+    {
+     "en": "take a rain check",
+     "pt": "deixar para a próxima (recusar um convite com a intenção de aceitar depois)",
+     "ex_en": "I'm exhausted tonight. Can I take a rain check?",
+     "ex_pt": "Estou morto hoje. Pode ficar para a próxima?"
+    },
+    {
+     "en": "swing by",
+     "pt": "dar uma passada (rápida)",
+     "ex_en": "I'll swing by your place around eight.",
+     "ex_pt": "Vou dar uma passada na sua casa lá pelas oito."
+    },
+    {
+     "en": "bail (on someone)",
+     "pt": "furar com alguém, desistir em cima da hora",
+     "ex_en": "Sorry to bail on you, but something came up.",
+     "ex_pt": "Foi mal furar com você, mas surgiu um imprevisto."
+    },
+    {
+     "en": "it's on me",
+     "pt": "eu pago, é por minha conta",
+     "ex_en": "Put your wallet away. It's on me.",
+     "ex_pt": "Guarda a carteira. É por minha conta."
+    },
+    {
+     "en": "tag along",
+     "pt": "ir junto, acompanhar (sem ser o foco do programa)",
+     "ex_en": "Mind if my roommate tags along?",
+     "ex_pt": "Tem problema se meu colega de apê for junto?"
+    },
+    {
+     "en": "bestie",
+     "pt": "melhor amigo ou amiga",
+     "ex_en": "This is Jess, my bestie since high school.",
+     "ex_pt": "Essa é a Jess, minha melhor amiga desde o ensino médio."
+    },
+    {
+     "en": "plus-one",
+     "pt": "acompanhante (convidado extra que você pode levar)",
+     "ex_en": "Can I bring a plus-one to the wedding?",
+     "ex_pt": "Posso levar um acompanhante no casamento?"
+    },
+    {
+     "en": "hit it off",
+     "pt": "se dar bem logo de cara",
+     "ex_en": "We met at a party and totally hit it off.",
+     "ex_pt": "A gente se conheceu numa festa e se deu superbem logo de cara."
+    },
+    {
+     "en": "third wheel",
+     "pt": "vela (a pessoa sobrando junto de um casal)",
+     "ex_en": "I don't want to be the third wheel on your date.",
+     "ex_pt": "Não quero ficar de vela no seu encontro."
+    },
+    {
+     "en": "go way back",
+     "pt": "se conhecer há muito tempo",
+     "ex_en": "Mike and I go way back. We met in third grade.",
+     "ex_pt": "Eu e o Mike nos conhecemos há muito tempo. Somos amigos desde a terceira série."
+    }
+   ]
+  },
+  {
+   "theme": "Trabalho (expressões de escritório)",
+   "items": [
+    {
+     "en": "circle back",
+     "pt": "retomar o assunto depois",
+     "ex_en": "Let's circle back on this after lunch.",
+     "ex_pt": "Vamos retomar isso depois do almoço."
+    },
+    {
+     "en": "touch base",
+     "pt": "conversar rapidinho, alinhar",
+     "ex_en": "I'll touch base with you tomorrow morning.",
+     "ex_pt": "Eu falo com você amanhã de manhã para alinharmos."
+    },
+    {
+     "en": "ping someone",
+     "pt": "mandar uma mensagem rápida para alguém",
+     "ex_en": "Ping me when you're done with the draft.",
+     "ex_pt": "Me manda uma mensagem quando terminar o rascunho."
+    },
+    {
+     "en": "heads-up",
+     "pt": "aviso prévio, um toque",
+     "ex_en": "Thanks for the heads-up about the meeting.",
+     "ex_pt": "Valeu pelo toque sobre a reunião."
+    },
+    {
+     "en": "loop someone in",
+     "pt": "incluir alguém na conversa, deixar alguém por dentro",
+     "ex_en": "Can you loop Sarah in on that email?",
+     "ex_pt": "Você pode incluir a Sarah naquele e-mail?"
+    },
+    {
+     "en": "bandwidth",
+     "pt": "disponibilidade, tempo livre para algo",
+     "ex_en": "I don't have the bandwidth for another project right now.",
+     "ex_pt": "Não tenho disponibilidade para outro projeto agora."
+    },
+    {
+     "en": "on my plate",
+     "pt": "na minha lista de tarefas, sob minha responsabilidade",
+     "ex_en": "I've got a lot on my plate this week.",
+     "ex_pt": "Estou com muita coisa para fazer esta semana."
+    },
+    {
+     "en": "take it offline",
+     "pt": "discutir em particular, fora da reunião",
+     "ex_en": "Let's take it offline so we don't hold everyone up.",
+     "ex_pt": "Vamos conversar sobre isso à parte, para não atrasar todo mundo."
+    },
+    {
+     "en": "drop the ball",
+     "pt": "pisar na bola, deixar algo passar",
+     "ex_en": "Sorry, I dropped the ball on that report.",
+     "ex_pt": "Desculpa, pisei na bola com aquele relatório."
+    },
+    {
+     "en": "ballpark figure",
+     "pt": "estimativa aproximada",
+     "ex_en": "Can you give me a ballpark figure for the budget?",
+     "ex_pt": "Você pode me dar uma estimativa aproximada do orçamento?"
+    },
+    {
+     "en": "pick someone's brain",
+     "pt": "pedir a opinião ou o conhecimento de alguém",
+     "ex_en": "Can I pick your brain about the new software?",
+     "ex_pt": "Posso te fazer umas perguntas sobre o novo software?"
+    },
+    {
+     "en": "deep dive",
+     "pt": "análise aprofundada",
+     "ex_en": "We need to do a deep dive into the sales numbers.",
+     "ex_pt": "Precisamos analisar a fundo os números de vendas."
+    },
+    {
+     "en": "low-hanging fruit",
+     "pt": "o que é mais fácil de resolver, ganhos rápidos",
+     "ex_en": "Let's start with the low-hanging fruit.",
+     "ex_pt": "Vamos começar pelo que é mais fácil."
+    },
+    {
+     "en": "move the needle",
+     "pt": "fazer uma diferença real, gerar impacto",
+     "ex_en": "This campaign didn't really move the needle.",
+     "ex_pt": "Essa campanha não fez muita diferença."
+    },
+    {
+     "en": "hit the ground running",
+     "pt": "começar com tudo, já chegar produzindo",
+     "ex_en": "The new hire hit the ground running.",
+     "ex_pt": "O novo funcionário já chegou mandando bem."
+    }
+   ]
+  },
+  {
+   "theme": "Dinheiro",
+   "items": [
+    {
+     "en": "broke",
+     "pt": "sem dinheiro, duro, liso",
+     "ex_en": "I can't go out tonight, I'm broke.",
+     "ex_pt": "Não posso sair hoje, tô duro."
+    },
+    {
+     "en": "bucks",
+     "pt": "dólares, pratas (gíria para dinheiro)",
+     "ex_en": "This shirt was only twenty bucks.",
+     "ex_pt": "Essa camisa custou só vinte pratas."
+    },
+    {
+     "en": "cost an arm and a leg",
+     "pt": "custar os olhos da cara",
+     "ex_en": "Rent in this city costs an arm and a leg.",
+     "ex_pt": "O aluguel nessa cidade custa os olhos da cara."
+    },
+    {
+     "en": "rip-off",
+     "pt": "roubo, preço abusivo",
+     "ex_en": "Fifteen dollars for a coffee? What a rip-off!",
+     "ex_pt": "Quinze dólares por um café? Que roubo!"
+    },
+    {
+     "en": "make ends meet",
+     "pt": "conseguir pagar as contas, fechar o mês",
+     "ex_en": "She works two jobs to make ends meet.",
+     "ex_pt": "Ela tem dois empregos pra conseguir pagar as contas."
+    },
+    {
+     "en": "strapped for cash",
+     "pt": "apertado de grana",
+     "ex_en": "I'm a little strapped for cash until payday.",
+     "ex_pt": "Tô meio apertado de grana até o dia do pagamento."
+    },
+    {
+     "en": "splurge",
+     "pt": "gastar à vontade, se dar um luxo",
+     "ex_en": "We splurged on a nice dinner for our anniversary.",
+     "ex_pt": "A gente se deu ao luxo de um jantar caro no nosso aniversário de casamento."
+    },
+    {
+     "en": "side hustle",
+     "pt": "bico, renda extra",
+     "ex_en": "Driving for Uber is my side hustle.",
+     "ex_pt": "Dirigir pro Uber é meu bico."
+    },
+    {
+     "en": "loaded",
+     "pt": "cheio da grana, rico",
+     "ex_en": "His parents are loaded.",
+     "ex_pt": "Os pais dele são cheios da grana."
+    },
+    {
+     "en": "cheapskate",
+     "pt": "pão-duro, mão de vaca",
+     "ex_en": "Don't be a cheapskate, leave a tip.",
+     "ex_pt": "Não seja pão-duro, deixa uma gorjeta."
+    },
+    {
+     "en": "break the bank",
+     "pt": "custar uma fortuna, pesar no bolso (geralmente na negativa)",
+     "ex_en": "A weekend trip won't break the bank.",
+     "ex_pt": "Uma viagem de fim de semana não vai pesar tanto no bolso."
+    },
+    {
+     "en": "live paycheck to paycheck",
+     "pt": "viver com o salário contado, sem sobrar nada",
+     "ex_en": "Many families live paycheck to paycheck.",
+     "ex_pt": "Muitas famílias vivem com o salário contado."
+    },
+    {
+     "en": "grand",
+     "pt": "mil dólares (gíria)",
+     "ex_en": "He paid five grand for that used car.",
+     "ex_pt": "Ele pagou cinco mil dólares naquele carro usado."
+    },
+    {
+     "en": "nest egg",
+     "pt": "pé de meia, reserva financeira",
+     "ex_en": "They've built a nice nest egg for retirement.",
+     "ex_pt": "Eles juntaram um bom pé de meia pra aposentadoria."
+    },
+    {
+     "en": "money doesn't grow on trees",
+     "pt": "dinheiro não dá em árvore",
+     "ex_en": "No new phone this year—money doesn't grow on trees!",
+     "ex_pt": "Nada de celular novo esse ano, dinheiro não dá em árvore!"
+    }
+   ]
+  },
+  {
+   "theme": "Internet e mensagens",
+   "items": [
+    {
+     "en": "to ghost someone",
+     "pt": "sumir do nada e parar de responder a alguém",
+     "ex_en": "We went on two dates, and then he ghosted me.",
+     "ex_pt": "A gente saiu duas vezes, e depois ele sumiu do nada."
+    },
+    {
+     "en": "to leave someone on read",
+     "pt": "visualizar a mensagem e não responder",
+     "ex_en": "She left me on read for two days.",
+     "ex_pt": "Ela me deixou no vácuo por dois dias."
+    },
+    {
+     "en": "to go viral",
+     "pt": "viralizar, se espalhar rapidamente na internet",
+     "ex_en": "His dance video went viral overnight.",
+     "ex_pt": "O vídeo dele dançando viralizou da noite pro dia."
+    },
+    {
+     "en": "to slide into someone's DMs",
+     "pt": "mandar mensagem privada para alguém, geralmente para flertar",
+     "ex_en": "He slid into her DMs after seeing her post.",
+     "ex_pt": "Ele chamou ela no direct depois de ver o post dela."
+    },
+    {
+     "en": "to lurk",
+     "pt": "ficar só olhando (grupo, fórum, perfil) sem interagir",
+     "ex_en": "I've been lurking in this group for months, but I've never posted.",
+     "ex_pt": "Faz meses que eu fico só olhando esse grupo, mas nunca postei nada."
+    },
+    {
+     "en": "to double text",
+     "pt": "mandar outra mensagem antes de a pessoa responder a primeira",
+     "ex_en": "I don't want to double text him and look desperate.",
+     "ex_pt": "Não quero mandar outra mensagem e parecer desesperada."
+    },
+    {
+     "en": "clickbait",
+     "pt": "título ou conteúdo apelativo feito só para gerar cliques",
+     "ex_en": "That headline is total clickbait.",
+     "ex_pt": "Essa manchete é puro caça-clique."
+    },
+    {
+     "en": "TL;DR",
+     "pt": "resumindo; para quem não quer ler tudo",
+     "ex_en": "TL;DR: the meeting is canceled.",
+     "ex_pt": "Resumindo: a reunião foi cancelada."
+    },
+    {
+     "en": "IRL",
+     "pt": "na vida real, pessoalmente (fora da internet)",
+     "ex_en": "We've been chatting for months, but we've never met IRL.",
+     "ex_pt": "A gente conversa há meses, mas nunca se viu pessoalmente."
+    },
+    {
+     "en": "doomscrolling",
+     "pt": "ficar rolando a tela vendo notícias ruins sem parar",
+     "ex_en": "I spent an hour doomscrolling before bed.",
+     "ex_pt": "Passei uma hora rolando notícia ruim antes de dormir."
+    },
+    {
+     "en": "FOMO",
+     "pt": "medo de ficar de fora, de perder alguma coisa",
+     "ex_en": "Seeing their vacation pics gave me serious FOMO.",
+     "ex_pt": "Ver as fotos da viagem deles me deu a maior sensação de estar perdendo algo."
+    },
+    {
+     "en": "receipts",
+     "pt": "provas, prints que comprovam algo",
+     "ex_en": "She says I never said that, but I have the receipts.",
+     "ex_pt": "Ela diz que eu nunca falei isso, mas eu tenho os prints."
+    },
+    {
+     "en": "go touch grass",
+     "pt": "sai da internet e vai viver a vida real",
+     "ex_en": "You've been arguing online all day. Go touch grass.",
+     "ex_pt": "Você passou o dia brigando na internet. Vai pegar um ar."
+    },
+    {
+     "en": "chronically online",
+     "pt": "viciado em internet, desconectado da vida real",
+     "ex_en": "Only chronically online people care about this drama.",
+     "ex_pt": "Só quem vive na internet liga pra essa treta."
+    },
+    {
+     "en": "to soft launch",
+     "pt": "mostrar algo aos poucos nas redes, como um novo namoro, sem revelar tudo",
+     "ex_en": "She soft launched her new boyfriend with a photo of his hand.",
+     "ex_pt": "Ela deu uma pista do novo namorado com uma foto da mão dele."
+    }
+   ]
+  },
+  {
+   "theme": "Séries e filmes",
+   "items": [
+    {
+     "en": "binge-watch",
+     "pt": "maratonar (assistir vários episódios seguidos)",
+     "ex_en": "I binge-watched the whole season last weekend.",
+     "ex_pt": "Maratonei a temporada inteira no fim de semana passado."
+    },
+    {
+     "en": "spoiler alert",
+     "pt": "alerta de spoiler (aviso antes de contar algo da história)",
+     "ex_en": "Spoiler alert: the dad is the killer.",
+     "ex_pt": "Alerta de spoiler: o pai é o assassino."
+    },
+    {
+     "en": "tearjerker",
+     "pt": "filme ou série de chorar, que faz a gente se emocionar",
+     "ex_en": "That movie is a real tearjerker. I cried through the whole ending.",
+     "ex_pt": "Esse filme é de chorar. Chorei o final inteiro."
+    },
+    {
+     "en": "cliffhanger",
+     "pt": "final em suspense, que deixa a gente curioso",
+     "ex_en": "The episode ended on a huge cliffhanger.",
+     "ex_pt": "O episódio terminou com um baita suspense."
+    },
+    {
+     "en": "guilty pleasure",
+     "pt": "prazer culposo, algo que você curte mas tem vergonha de admitir",
+     "ex_en": "Reality shows are my guilty pleasure.",
+     "ex_pt": "Reality shows são meu prazer culposo."
+    },
+    {
+     "en": "Netflix and chill",
+     "pt": "convite pra ver algo em casa (muitas vezes com segundas intenções)",
+     "ex_en": "He asked if I wanted to Netflix and chill.",
+     "ex_pt": "Ele me chamou pra ver Netflix em casa, se é que você me entende."
+    },
+    {
+     "en": "ship",
+     "pt": "torcer por um casal (shippar)",
+     "ex_en": "I totally ship those two.",
+     "ex_pt": "Eu shippo muito esses dois."
+    },
+    {
+     "en": "comfort show",
+     "pt": "série que você revê pra relaxar e se sentir bem",
+     "ex_en": "Friends is my comfort show when I'm stressed.",
+     "ex_pt": "Friends é minha série de conforto quando estou estressado."
+    },
+    {
+     "en": "hate-watch",
+     "pt": "assistir algo só pra criticar ou zoar",
+     "ex_en": "I only hate-watch that show at this point.",
+     "ex_pt": "A essa altura, só assisto essa série pra falar mal."
+    },
+    {
+     "en": "slow burn",
+     "pt": "história que se desenvolve devagar, sem pressa",
+     "ex_en": "It's a slow burn, but the ending is worth it.",
+     "ex_pt": "Demora pra engrenar, mas o final vale a pena."
+    },
+    {
+     "en": "redemption arc",
+     "pt": "arco de redenção (quando o personagem se redime)",
+     "ex_en": "His redemption arc was so well written.",
+     "ex_pt": "O arco de redenção dele foi muito bem escrito."
+    },
+    {
+     "en": "plot armor",
+     "pt": "quando o personagem nunca morre porque é importante pra trama",
+     "ex_en": "He survived that? That's pure plot armor.",
+     "ex_pt": "Ele sobreviveu àquilo? Isso é proteção de roteiro."
+    },
+    {
+     "en": "jump the shark",
+     "pt": "quando a série perde a qualidade e fica absurda",
+     "ex_en": "The show jumped the shark in season five.",
+     "ex_pt": "A série desandou na quinta temporada."
+    },
+    {
+     "en": "main character energy",
+     "pt": "jeito de quem se sente protagonista da própria vida",
+     "ex_en": "Walking in the rain with headphones on? Main character energy.",
+     "ex_pt": "Andando na chuva de fone? Vibe de protagonista."
+    },
+    {
+     "en": "fan service",
+     "pt": "cena feita só pra agradar os fãs",
+     "ex_en": "That cameo was pure fan service.",
+     "ex_pt": "Aquela participação foi só pra agradar os fãs."
+    }
+   ]
+  }
+ ]
+}
