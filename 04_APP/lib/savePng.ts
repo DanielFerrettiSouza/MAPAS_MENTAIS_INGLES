@@ -7,17 +7,27 @@ type Opts = { width?: number; backgroundColor?: string; style?: Partial<CSSStyle
 // - No celular abre o menu de compartilhar ("Salvar imagem"); se não der,
 //   mostra a imagem na tela para a pessoa tocar e segurar para salvar.
 export async function savePng(node: HTMLElement, fileName: string, opts: Opts = {}) {
-  const w = opts.width ?? node.offsetWidth;
-  const h = opts.width ? node.scrollHeight * (opts.width / node.offsetWidth) : node.scrollHeight;
-  const pixelRatio = Math.max(1, Math.min(2, Math.sqrt(14_000_000 / (w * h))));
-
-  const blob = await toBlob(node, {
-    pixelRatio,
-    width: opts.width,
-    backgroundColor: opts.backgroundColor,
-    style: opts.style,
-    filter: (n) => !(n instanceof HTMLElement && n.dataset.noExport === "true"),
-  });
+  // O html-to-image copia os estilos já calculados; por isso, para exportar no layout de
+  // computador, o próprio mapa fica com a largura fixa durante a captura e depois volta.
+  const prev = node.getAttribute("style");
+  if (opts.width) {
+    Object.assign(node.style, { width: `${opts.width}px`, maxWidth: "none" }, opts.style ?? {});
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
+  let blob: Blob | null;
+  try {
+    const w = node.offsetWidth;
+    const h = node.scrollHeight;
+    const pixelRatio = Math.max(1, Math.min(2, Math.sqrt(14_000_000 / (w * h))));
+    blob = await toBlob(node, {
+      pixelRatio,
+      backgroundColor: opts.backgroundColor,
+      filter: (n) => !(n instanceof HTMLElement && n.dataset.noExport === "true"),
+    });
+  } finally {
+    if (prev === null) node.removeAttribute("style");
+    else node.setAttribute("style", prev);
+  }
   if (!blob) throw new Error("Não foi possível gerar a imagem.");
 
   const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.maxTouchPoints > 1;

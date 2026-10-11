@@ -2,6 +2,12 @@
 
 import { useRef, useState } from "react";
 import { savePng } from "@/lib/savePng";
+import { Amatic_SC, Caveat, Patrick_Hand } from "next/font/google";
+
+// Fontes hospedadas no próprio site para o PNG sair com as mesmas letras da tela.
+const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], variable: "--nb-amatic" });
+const caveat = Caveat({ weight: "600", subsets: ["latin"], variable: "--nb-caveat" });
+const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], variable: "--nb-hand" });
 import type { MapWithImages } from "@/lib/mapSchema";
 
 // Cores das seções no estilo "página de caderno" (borda + fundo suave).
@@ -50,7 +56,11 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
 
   async function downloadPng() {
     if (!pageRef.current) return;
-    await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, { backgroundColor: "#fffdf7" });
+    await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, {
+      backgroundColor: "#fffdf7",
+      width: 1080,
+      style: { margin: "0", padding: "24px 24px 24px 56px" },
+    });
   }
 
   const sections = map.branches.slice(0, 4).map((branch, i) => ({
@@ -105,7 +115,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
     <div>
       <audio ref={audioRef} onEnded={() => setPlaying(null)} />
 
-      <div className="nb-page" ref={pageRef}>
+      <div className={`nb-page ${amatic.variable} ${caveat.variable} ${hand.variable}`} ref={pageRef}>
         <div className="nb-spiral" aria-hidden />
 
         <header className="nb-header">
