@@ -10,6 +10,8 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/app";
+  // Vindo da página de obrigado da Kiwify (?comprou=1): a pessoa já pagou.
+  const bought = params.get("comprou") === "1";
   const [email, setEmail] = useState("");
   // E-mail que a pessoa digitou no fim do quiz já vem preenchido no cadastro.
   useEffect(() => {
@@ -104,7 +106,11 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
       <div className="auth-card">
         <Logo size={34} />
         <p className="sub">
-          {mode === "signup" ? "Crie sua conta grátis e ganhe 3 mapas" : "Que bom te ver de novo"}
+          {bought
+            ? mode === "signup"
+              ? "🎉 Pagamento confirmado! Crie sua conta com o mesmo e-mail da compra para liberar o seu Método."
+              : "🎉 Pagamento confirmado! Entre com o mesmo e-mail da compra para acessar o seu Método."
+            : mode === "signup" ? "Crie sua conta grátis e ganhe 3 mapas" : "Que bom te ver de novo"}
         </p>
         <form onSubmit={submit}>
           <input className="field" type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" />
@@ -132,7 +138,7 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
         </>)}
         <p className="switch">
           {mode === "signup" ? "Já tem uma conta? " : "Ainda não tem conta? "}
-          <Link href={`${other}?next=${encodeURIComponent(next)}`}>{mode === "signup" ? "Entrar" : "Criar conta grátis"}</Link>
+          <Link href={`${other}?next=${encodeURIComponent(next)}${bought ? "&comprou=1" : ""}`}>{mode === "signup" ? "Entrar" : "Criar conta grátis"}</Link>
         </p>
       </div>
       <p style={{ color: "#71717a", fontSize: 13, marginTop: 24 }}>
