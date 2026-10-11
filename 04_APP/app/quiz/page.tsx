@@ -108,6 +108,21 @@ export default function QuizPage() {
     window.scrollTo({ top: 0 });
   }, [step]);
 
+  // Os áudios da amostra já ficam guardados no servidor; aqui são pré-carregados
+  // assim que a pessoa escolhe o objetivo, para tocar na hora do clique.
+  const preloaded = useRef<Record<string, HTMLAudioElement>>({});
+  useEffect(() => {
+    const g = GOAL_PREVIEW[answers.goal ?? ""];
+    if (!g) return;
+    for (const it of g.items) {
+      if (preloaded.current[it.en]) continue;
+      const a = new Audio(`/api/tts?text=${encodeURIComponent(it.en)}`);
+      a.preload = "auto";
+      a.onended = () => setPlaying(null);
+      preloaded.current[it.en] = a;
+    }
+  }, [answers.goal]);
+
   function choose(key: string, value: string) {
     if (step === 0) trackCustom("QuizStart");
     setAnswers({ ...answers, [key]: value });
@@ -115,10 +130,12 @@ export default function QuizPage() {
   }
 
   function play(text: string) {
-    const a = audioRef.current;
+    Object.values(preloaded.current).forEach((x) => x.pause());
+    const a = preloaded.current[text] ?? audioRef.current;
     if (!a) return;
     setPlaying(text);
-    a.src = `/api/tts?text=${encodeURIComponent(text)}`;
+    if (!preloaded.current[text]) a.src = `/api/tts?text=${encodeURIComponent(text)}`;
+    a.currentTime = 0;
     a.play().catch(() => setPlaying(null));
   }
 
@@ -149,6 +166,7 @@ export default function QuizPage() {
       const m = LEVEL_MSG[answers.level ?? "A1"];
       return (
         <div className="quiz-info">
+          <Ill name={(answers.level ?? "A1").toLowerCase()} />
           <p className="quiz-kicker">Seu ponto de partida: {answers.level} · {LEVEL_INFO[answers.level ?? "A1"]?.name}</p>
           <h1>{m.title}</h1>
           <p>{m.text}</p>
@@ -163,6 +181,7 @@ export default function QuizPage() {
           <p className="quiz-kicker">Olha um pedaço de um mapa para você</p>
           <h1>Toque e ouça 🔊</h1>
           <div className="quiz-mini-map">
+            <img className="qmm-ill" src={`/quiz/${answers.goal ?? "viagem"}.webp`} alt="" aria-hidden />
             <div className="qmm-title">{g.title}</div>
             <div className="qmm-en">{g.en}</div>
             <ul>
@@ -186,6 +205,7 @@ export default function QuizPage() {
     if (!m) return next;
     return (
       <div className="quiz-info">
+        <Ill name={key === "pain" ? answers.pain ?? "" : key === "tried" ? (answers.tried === "nunca" ? "a1" : answers.tried ?? "") : "time"} />
         {key === "pain" && <p className="quiz-kicker">O método: ver + ouvir + repetir</p>}
         {key === "tried" && <p className="quiz-kicker">Por que agora vai ser diferente</p>}
         {key === "time" && <p className="quiz-kicker">Seu ritmo</p>}
@@ -284,5 +304,15 @@ export default function QuizPage() {
         )}
       </div>
     </main>
+  );
+}
+
+// Ilustração em gravura (mesmo estilo dos mapas novos), sobre um "papel" claro.
+function Ill({ name }: { name: string }) {
+  if (!name) return null;
+  return (
+    <div className="quiz-ill">
+      <img src={`/quiz/${name}.webp`} alt="" aria-hidden />
+    </div>
   );
 }

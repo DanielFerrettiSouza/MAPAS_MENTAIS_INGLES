@@ -718,3 +718,8 @@ a { color: inherit; }
 .quiz-result-row b { text-align: right; }
 .quiz-result-note { line-height: 1.6; margin: 18px 0 14px; }
 .quiz-result-small { color: var(--muted); font-size: 13px; text-align: center; margin-top: 12px; }
+.quiz-ill { width: 168px; height: 168px; margin: 0 auto 14px; border-radius: 50%; background: #f3ead8; display: grid; place-items: center; overflow: hidden; box-shadow: 0 0 0 4px #1c1917, 0 0 0 6px #f3ead8, inset 0 0 30px rgba(60, 40, 10, .3); }
+.quiz-ill img { width: 118%; height: 118%; object-fit: cover; mix-blend-mode: multiply; }
+.quiz-mini-map { position: relative; }
+.qmm-ill { position: absolute; top: 8px; right: 8px; width: 96px; height: 96px; object-fit: cover; mix-blend-mode: multiply; -webkit-mask-image: radial-gradient(circle, #000 52%, transparent 70%); mask-image: radial-gradient(circle, #000 52%, transparent 70%); }
+.qmm-title, .qmm-en { padding-right: 96px; }
