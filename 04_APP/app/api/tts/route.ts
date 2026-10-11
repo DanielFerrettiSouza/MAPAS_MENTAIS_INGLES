@@ -4,13 +4,15 @@
 // vezes (de qualquer pessoa) saem do Storage, sem custo.
 import { createHash } from "node:crypto";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
+import { QUIZ_PHRASES } from "@/lib/quizFunnel";
 
 export const runtime = "nodejs";
 
 export async function GET(req: Request) {
   const text = new URL(req.url).searchParams.get("text")?.trim().slice(0, 300);
   if (!text) return new Response("Parâmetro text obrigatório", { status: 400 });
-  if (!(await getCurrentUser())) return new Response("Faça login para ouvir o áudio.", { status: 401 });
+  // As frases de amostra do quiz tocam sem login.
+  if (!QUIZ_PHRASES.has(text) && !(await getCurrentUser())) return new Response("Faça login para ouvir o áudio.", { status: 401 });
 
   const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY?.trim();
   const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID?.trim();

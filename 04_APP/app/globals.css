@@ -696,3 +696,25 @@ a { color: inherit; }
 .offer-side .primary-btn{width:100%;justify-content:center;margin-top:6px}
 .offer-guarantee{font-size:13px;color:var(--muted)}
 .offer-more{font-size:14px;color:var(--text);opacity:.8}
+
+/* ===== Quiz-funil: telas intercaladas ===== */
+.quiz-info p { color: var(--muted); font-size: 17px; line-height: 1.65; }
+.quiz-info h1 { margin-top: 4px; }
+.quiz-kicker { color: var(--accent-2) !important; font-weight: 700; font-size: 13px !important; letter-spacing: 1px; text-transform: uppercase; margin: 0; }
+.quiz-next { width: 100%; font-size: 18px; padding: 16px 24px; margin-top: 18px; }
+.quiz-mini-map { background: #f3ead8; color: #1b1b1b; border-radius: 14px; padding: 18px 18px 10px; margin: 14px 0; box-shadow: inset 0 0 40px rgba(60, 40, 10, .25); }
+.qmm-title { font-weight: 800; font-size: 24px; text-transform: uppercase; letter-spacing: .5px; }
+.qmm-en { color: #b5241c; font-weight: 700; font-size: 17px; margin-bottom: 8px; }
+.quiz-mini-map ul { list-style: none; padding: 0; margin: 0; }
+.quiz-mini-map li { display: flex; gap: 10px; align-items: center; padding: 10px 0; border-top: 1.5px dashed rgba(0, 0, 0, .2); font-size: 16px; line-height: 1.35; }
+.qmm-play { flex: none; width: 40px; height: 40px; border-radius: 10px; border: 0; background: #2f6b2f; color: #fff; font-size: 15px; cursor: pointer; }
+.qmm-play.on { background: #b5241c; }
+.quiz-steps { display: grid; gap: 10px; margin-top: 14px; }
+.quiz-steps div { display: flex; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-weight: 600; }
+.quiz-steps span { font-size: 22px; }
+.quiz-result { text-align: left; margin-top: 18px; }
+.quiz-result-row { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.quiz-result-row span { color: var(--muted); }
+.quiz-result-row b { text-align: right; }
+.quiz-result-note { line-height: 1.6; margin: 18px 0 14px; }
+.quiz-result-small { color: var(--muted); font-size: 13px; text-align: center; margin-top: 12px; }

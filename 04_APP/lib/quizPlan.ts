@@ -1,5 +1,5 @@
 // Diagnóstico do quiz: o que mostrar no painel e quais mapas sugerir.
-export type QuizAnswers = { level?: string; goal?: string; pain?: string; tried?: string; time?: string };
+export type QuizAnswers = { level?: string; goal?: string; pain?: string; tried?: string; time?: string; first?: string };
 
 export const LEVEL_INFO: Record<string, { name: string; text: string }> = {
   A1: { name: "Iniciante", text: "Comece pelo essencial: frases prontas e vocabulário do dia a dia." },
@@ -37,7 +37,9 @@ export function quizPlan(a: QuizAnswers) {
   const level = a.level && LEVEL_INFO[a.level] ? a.level : "A1";
   const goalTopics = GOAL_TOPICS[a.goal ?? ""] ?? ["Inglês do dia a dia", "Phrasal verbs do dia a dia", "Pedindo comida no restaurante"];
   // Iniciante: 1 tema de base + 2 do objetivo.
-  const topics = level === "A1" ? [BASIC_TOPICS[0], ...goalTopics.slice(0, 2)] : goalTopics;
+  let topics = level === "A1" ? [BASIC_TOPICS[0], ...goalTopics.slice(0, 2)] : goalTopics;
+  // O tema escolhido no fim do quiz vem primeiro.
+  if (a.first) topics = [a.first, ...topics.filter((t) => t !== a.first)].slice(0, 3);
   return {
     level,
     levelName: LEVEL_INFO[level].name,
