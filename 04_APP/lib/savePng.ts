@@ -1,4 +1,4 @@
-import { toBlob } from "html-to-image";
+import { toCanvas } from "html-to-image";
 
 type Opts = { width?: number; backgroundColor?: string; style?: Partial<CSSStyleDeclaration> };
 
@@ -14,25 +14,44 @@ export async function savePng(node: HTMLElement, fileName: string, opts: Opts = 
     Object.assign(node.style, { width: `${opts.width}px`, maxWidth: "none" }, opts.style ?? {});
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
   }
-  const restoreImages = await inlineBackgrounds(node);
+  // As ilustrações saem da captura do html-to-image (no iPhone, Safari e Chrome, elas
+  // somem) e são desenhadas depois, direto no canvas final, nas mesmas posições.
+  const ills = await takeIllustrations(node);
   let blob: Blob | null;
   try {
     const w = node.offsetWidth;
     const h = node.scrollHeight;
     const pixelRatio = Math.max(1, Math.min(2, Math.sqrt(14_000_000 / (w * h))));
-    const base = {
+    const canvas = await toCanvas(node, {
       width: w,
       height: h,
+      pixelRatio,
+      canvasWidth: w,
+      canvasHeight: h,
       backgroundColor: opts.backgroundColor,
       filter: (n: Node) => !(n instanceof HTMLElement && n.dataset.noExport === "true"),
-    };
-    // O Safari (iPhone) costuma deixar as ilustrações de fora na primeira captura:
-    // uma passada pequena antes carrega tudo, e a segunda sai completa.
-    const safari = /^((?!chrome|android|crios|fxios).)*safari/i.test(navigator.userAgent);
-    for (let i = 0; i < (safari ? 3 : 1); i++) await toBlob(node, { ...base, pixelRatio: 0.3 }).catch(() => null);
-    blob = await toBlob(node, { ...base, pixelRatio });
+    });
+    const ctx = canvas.getContext("2d")!;
+    const box = node.getBoundingClientRect();
+    const sx = canvas.width / w, sy = canvas.height / h;
+    for (const it of ills) {
+      const r = it.rect;
+      const x = (r.left - box.left) * sx, y = (r.top - box.top) * sy, rw = r.width * sx, rh = r.height * sy;
+      ctx.save();
+      if (it.round) {
+        ctx.beginPath();
+        ctx.arc(x + rw / 2, y + rh / 2, rw / 2 - it.border * sx, 0, Math.PI * 2);
+        ctx.clip();
+      }
+      // background-size: contain (ilustrações das seções) ou 130% (emblema central)
+      const scale = it.cover ? (rw * it.cover) / it.img.width : Math.min(rw / it.img.width, rh / it.img.height);
+      const dw = it.img.width * scale, dh = it.img.height * scale;
+      ctx.drawImage(it.img, x + (rw - dw) / 2, y + (rh - dh) / 2, dw, dh);
+      ctx.restore();
+    }
+    blob = await new Promise<Blob | null>((ok) => canvas.toBlob(ok, "image/png"));
   } finally {
-    restoreImages();
+    ills.forEach((it) => (it.el.style.backgroundImage = it.saved));
     if (prev === null) node.removeAttribute("style");
     else node.setAttribute("style", prev);
   }
@@ -75,33 +94,28 @@ function showImage(url: string) {
   document.body.appendChild(wrap);
 }
 
-// Troca as ilustrações (background-image com URL externa) por versões embutidas durante a captura.
-// O Safari do iPhone não desenha, dentro do PNG, imagens externas nem os efeitos
-// mix-blend-mode/mask-image. Então a imagem já sai "pronta": tinta multiplicada sobre o
-// papel e com a borda esfumada, e os efeitos ficam desligados só durante a captura.
-async function inlineBackgrounds(node: HTMLElement) {
-  const els = [node, ...Array.from(node.querySelectorAll<HTMLElement>("*"))].filter((el) =>
+// Pega as ilustrações (background-image com URL externa), prepara cada uma num canvas já com
+// o visual da tela (tinta multiplicada sobre o papel e borda esfumada) e as esconde da captura.
+async function takeIllustrations(node: HTMLElement) {
+  const els = Array.from(node.querySelectorAll<HTMLElement>("*")).filter((el) =>
     /url\(["']?https?:/.test(getComputedStyle(el).backgroundImage)
   );
-  const saved = els.map((el) => el.getAttribute("style"));
-  await Promise.all(
+  const out = await Promise.all(
     els.map(async (el) => {
       const cs = getComputedStyle(el);
       const url = cs.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];
-      if (!url) return;
+      if (!url) return null;
       try {
         const blob = await (await fetch(url, { mode: "cors", cache: "force-cache" })).blob();
-        const img = await createImageBitmap(blob);
-        const masked = (cs.webkitMaskImage || cs.maskImage || "none") !== "none";
-        const multiply = cs.mixBlendMode === "multiply";
-        // Reduz para no máximo 480px: as ilustrações originais têm ~2 MB e o Safari
-        // não desenha imagens embutidas muito pesadas.
-        const k = Math.min(1, 480 / Math.max(img.width, img.height));
+        const bmp = await loadImage(blob);
+        const k = Math.min(1, 600 / Math.max(bmp.width, bmp.height));
         const c = document.createElement("canvas");
-        c.width = Math.round(img.width * k);
-        c.height = Math.round(img.height * k);
+        c.width = Math.round(bmp.width * k);
+        c.height = Math.round(bmp.height * k);
         const ctx = c.getContext("2d")!;
-        ctx.drawImage(img, 0, 0, c.width, c.height);
+        ctx.drawImage(bmp, 0, 0, c.width, c.height);
+        const masked = ((cs as any).webkitMaskImage || cs.maskImage || "none") !== "none";
+        const multiply = cs.mixBlendMode === "multiply";
         if (multiply || masked) {
           const d = ctx.getImageData(0, 0, c.width, c.height);
           const [pr, pg, pb] = [243, 234, 216]; // cor do papel
@@ -121,13 +135,31 @@ async function inlineBackgrounds(node: HTMLElement) {
             }
           ctx.putImageData(d, 0, 0);
         }
-        el.style.backgroundImage = `url("${c.toDataURL(masked ? "image/png" : "image/jpeg", 0.85)}")`;
-        el.style.mixBlendMode = "normal";
-        el.style.setProperty("-webkit-mask-image", "none");
-        el.style.maskImage = "none";
-      } catch {}
+        const size = parseFloat(cs.backgroundSize);
+        const it = {
+          el,
+          saved: el.style.backgroundImage,
+          img: c,
+          rect: el.getBoundingClientRect(),
+          round: cs.borderTopLeftRadius.endsWith("%") ? parseFloat(cs.borderTopLeftRadius) >= 50 : parseFloat(cs.borderTopLeftRadius) >= el.offsetWidth / 2 - 1,
+          border: parseFloat(cs.borderTopWidth) || 0,
+          cover: cs.backgroundSize.endsWith("%") ? size / 100 : 0,
+        };
+        el.style.backgroundImage = "none";
+        return it;
+      } catch {
+        return null;
+      }
     })
   );
-  return () =>
-    els.forEach((el, i) => (saved[i] === null ? el.removeAttribute("style") : el.setAttribute("style", saved[i]!)));
+  return out.filter((x): x is NonNullable<typeof x> => !!x);
+}
+
+function loadImage(blob: Blob) {
+  return new Promise<HTMLImageElement>((ok, fail) => {
+    const img = new Image();
+    img.onload = () => ok(img);
+    img.onerror = fail;
+    img.src = URL.createObjectURL(blob);
+  });
 }
