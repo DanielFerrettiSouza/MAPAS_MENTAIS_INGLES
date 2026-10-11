@@ -19,11 +19,16 @@ export async function savePng(node: HTMLElement, fileName: string, opts: Opts = 
     const w = node.offsetWidth;
     const h = node.scrollHeight;
     const pixelRatio = Math.max(1, Math.min(2, Math.sqrt(14_000_000 / (w * h))));
-    blob = await toBlob(node, {
-      pixelRatio,
+    const base = {
+      width: w,
+      height: h,
       backgroundColor: opts.backgroundColor,
-      filter: (n) => !(n instanceof HTMLElement && n.dataset.noExport === "true"),
-    });
+      filter: (n: Node) => !(n instanceof HTMLElement && n.dataset.noExport === "true"),
+    };
+    // O Safari (iPhone) costuma deixar as ilustrações de fora na primeira captura:
+    // uma passada pequena antes carrega tudo, e a segunda sai completa.
+    await toBlob(node, { ...base, pixelRatio: 0.2 }).catch(() => null);
+    blob = await toBlob(node, { ...base, pixelRatio });
   } finally {
     if (prev === null) node.removeAttribute("style");
     else node.setAttribute("style", prev);

@@ -11,6 +11,7 @@
 }
 
 * { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; } /* evita o iPhone aumentar as letras na captura do PNG */
 
 body {
   margin: 0;
