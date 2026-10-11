@@ -136,3 +136,23 @@ export const FIRST_OPTIONS: Record<string, string[]> = {
 
 // Frases que podem tocar no quiz sem login (o áudio é gerado uma vez e fica guardado).
 export const QUIZ_PHRASES = new Set(Object.values(GOAL_PREVIEW).flatMap((g) => g.items.map((i) => i.en)));
+
+// Ícone de cada situação da pergunta "Qual situação você quer resolver primeiro?".
+export const FIRST_EMOJI: Record<string, string> = {
+  "Inglês no aeroporto": "🛫",
+  "Check-in no hotel": "🏨",
+  "Pedindo comida no restaurante": "🍽️",
+  "Pedindo informação na rua": "🗺️",
+  "Inglês para reuniões de trabalho": "👥",
+  "Entrevista de emprego em inglês": "🤝",
+  "E-mails profissionais em inglês": "📧",
+  "Me apresentando no trabalho": "👋",
+  "Expressões comuns em séries americanas": "📺",
+  "Gírias do inglês americano": "😎",
+  "Phrasal verbs do dia a dia": "🔤",
+  "Frases de filmes famosos": "🎬",
+  "Conectivos para redação em inglês": "✍️",
+  "Tempos verbais mais cobrados": "⏳",
+  "Vocabulário acadêmico": "🎓",
+  "Falsos cognatos": "🎭",
+};

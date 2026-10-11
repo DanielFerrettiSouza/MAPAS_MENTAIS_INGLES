@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { track, trackCustom } from "@/lib/pixel";
 import { useRouter } from "next/navigation";
 import Logo from "@/components/Logo";
-import { FIRST_OPTIONS, GOAL_PREVIEW, LEVEL_MSG, PAIN_MSG, TIME_MSG, TIME_STEPS, TRIED_MSG } from "@/lib/quizFunnel";
+import { FIRST_EMOJI, FIRST_OPTIONS, GOAL_PREVIEW, LEVEL_MSG, PAIN_MSG, TIME_MSG, TIME_STEPS, TRIED_MSG } from "@/lib/quizFunnel";
 import { LEVEL_INFO } from "@/lib/quizPlan";
 
 // Quiz = funil de conversão: cada resposta é seguida de uma tela que reforça a decisão
@@ -152,7 +152,7 @@ export default function QuizPage() {
 
   const options = (s: Question): Option[] =>
     s.key === "first"
-      ? (FIRST_OPTIONS[answers.goal ?? ""] ?? FIRST_OPTIONS.viagem).map((t) => ({ emoji: "🗺️", label: t, value: t }))
+      ? (FIRST_OPTIONS[answers.goal ?? ""] ?? FIRST_OPTIONS.viagem).map((t) => ({ emoji: FIRST_EMOJI[t] ?? "🗺️", label: t, value: t }))
       : s.options;
 
   const next = (
