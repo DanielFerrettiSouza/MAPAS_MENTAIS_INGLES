@@ -75,29 +75,56 @@ function showImage(url: string) {
   document.body.appendChild(wrap);
 }
 
-// Troca as ilustrações (background-image com URL externa) por versões embutidas em data URL
-// durante a captura: o Safari do iPhone não desenha imagens externas dentro do PNG.
+// Troca as ilustrações (background-image com URL externa) por versões embutidas durante a captura.
+// O Safari do iPhone não desenha, dentro do PNG, imagens externas nem os efeitos
+// mix-blend-mode/mask-image. Então a imagem já sai "pronta": tinta multiplicada sobre o
+// papel e com a borda esfumada, e os efeitos ficam desligados só durante a captura.
 async function inlineBackgrounds(node: HTMLElement) {
   const els = [node, ...Array.from(node.querySelectorAll<HTMLElement>("*"))].filter((el) =>
     /url\(["']?https?:/.test(getComputedStyle(el).backgroundImage)
   );
-  const saved = els.map((el) => el.style.backgroundImage);
+  const saved = els.map((el) => el.getAttribute("style"));
   await Promise.all(
     els.map(async (el) => {
-      const url = getComputedStyle(el).backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];
+      const cs = getComputedStyle(el);
+      const url = cs.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];
       if (!url) return;
       try {
         const blob = await (await fetch(url, { mode: "cors", cache: "force-cache" })).blob();
-        const data = await new Promise<string>((ok, fail) => {
-          const r = new FileReader();
-          r.onload = () => ok(r.result as string);
-          r.onerror = fail;
-          r.readAsDataURL(blob);
-        });
-        await new Promise((ok) => { const img = new Image(); img.onload = img.onerror = ok; img.src = data; });
-        el.style.backgroundImage = `url("${data}")`;
+        const img = await createImageBitmap(blob);
+        const masked = (cs.webkitMaskImage || cs.maskImage || "none") !== "none";
+        const multiply = cs.mixBlendMode === "multiply";
+        const c = document.createElement("canvas");
+        c.width = img.width;
+        c.height = img.height;
+        const ctx = c.getContext("2d")!;
+        ctx.drawImage(img, 0, 0);
+        if (multiply || masked) {
+          const d = ctx.getImageData(0, 0, c.width, c.height);
+          const [pr, pg, pb] = [243, 234, 216]; // cor do papel
+          const cx = c.width / 2, cy = c.height / 2, R = Math.hypot(cx, cy);
+          for (let y = 0; y < c.height; y++)
+            for (let x = 0; x < c.width; x++) {
+              const i = (y * c.width + x) * 4;
+              if (multiply) {
+                d.data[i] = (d.data[i] * pr) / 255;
+                d.data[i + 1] = (d.data[i + 1] * pg) / 255;
+                d.data[i + 2] = (d.data[i + 2] * pb) / 255;
+              }
+              if (masked) {
+                const r = Math.hypot(x - cx, y - cy) / R;
+                d.data[i + 3] *= r <= 0.5 ? 1 : r >= 0.7 ? 0 : (0.7 - r) / 0.2;
+              }
+            }
+          ctx.putImageData(d, 0, 0);
+        }
+        el.style.backgroundImage = `url("${c.toDataURL("image/png")}")`;
+        el.style.mixBlendMode = "normal";
+        el.style.setProperty("-webkit-mask-image", "none");
+        el.style.maskImage = "none";
       } catch {}
     })
   );
-  return () => els.forEach((el, i) => (el.style.backgroundImage = saved[i]));
+  return () =>
+    els.forEach((el, i) => (saved[i] === null ? el.removeAttribute("style") : el.setAttribute("style", saved[i]!)));
 }
