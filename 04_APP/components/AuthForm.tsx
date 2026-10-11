@@ -37,6 +37,21 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
     startCooldown();
   }
 
+  // Esqueci a senha: manda um link que entra na conta e abre Configurações para criar senha nova.
+  async function forgot() {
+    setError(null);
+    setInfo(null);
+    if (!email) {
+      setError("Digite seu e-mail acima e clique de novo em \"Esqueci minha senha\".");
+      return;
+    }
+    const { error } = await createSupabaseBrowser().auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent("/app/configuracoes?nova-senha=1")}`,
+    });
+    if (error) setError(traduz(error.message));
+    else setInfo(`Enviamos um link para ${email}. Abra o e-mail, clique no link e crie uma senha nova (confira também o spam). Se você costuma entrar pelo Google, use o botão "Continuar com Google".`);
+  }
+
   const callback = () =>
     `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`;
 
@@ -93,6 +108,9 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
             <button type="button" className="link-btn" onClick={resend} disabled={wait > 0}>
               {wait > 0 ? `Não recebeu? Reenviar em ${wait}s` : "Não recebeu? Reenviar e-mail de confirmação"}
             </button>
+          )}
+          {mode === "login" && (
+            <button type="button" className="link-btn" onClick={forgot}>Esqueci minha senha</button>
           )}
           <button className="white-btn" disabled={loading}>
             {loading ? "Aguarde…" : mode === "signup" ? "Criar conta" : "Entrar"}

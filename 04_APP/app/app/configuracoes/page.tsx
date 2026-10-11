@@ -5,7 +5,7 @@ import { planName } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
-export default async function Settings() {
+export default async function Settings({ searchParams }: { searchParams: { "nova-senha"?: string } }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   const meta = (user.user_metadata ?? {}) as { level?: string; goal?: string };
@@ -27,7 +27,12 @@ export default async function Settings() {
           </p>
         </div>
         {usesPassword ? (
-          <PasswordForm />
+          <>
+            {searchParams["nova-senha"] && (
+              <p className="auth-ok" style={{ margin: 0 }}>Pronto, você entrou pelo link do e-mail. Crie sua nova senha abaixo. 👇</p>
+            )}
+            <PasswordForm />
+          </>
         ) : (
           <div className="settings-card">
             <h3>Acesso</h3>
