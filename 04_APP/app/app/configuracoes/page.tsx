@@ -26,19 +26,13 @@ export default async function Settings({ searchParams }: { searchParams: { "nova
             Para cancelar a assinatura, use o link do e-mail de compra da Kiwify.
           </p>
         </div>
-        {usesPassword ? (
-          <>
-            {searchParams["nova-senha"] && (
-              <p className="auth-ok" style={{ margin: 0 }}>Pronto, você entrou pelo link do e-mail. Crie sua nova senha abaixo. 👇</p>
-            )}
-            <PasswordForm />
-          </>
-        ) : (
-          <div className="settings-card">
-            <h3>Acesso</h3>
-            <p style={{ color: "var(--muted)", margin: 0 }}>Você entra com a sua conta Google. Não há senha para trocar aqui.</p>
-          </div>
+        {searchParams["nova-senha"] && (
+          <p className="auth-ok" style={{ margin: 0 }}>Pronto, você entrou pelo link do e-mail. Crie sua nova senha abaixo. 👇</p>
         )}
+        {!usesPassword && (
+          <p style={{ color: "var(--muted)", margin: 0 }}>Você entra com a sua conta Google. Se quiser, pode criar uma senha também para entrar com e-mail.</p>
+        )}
+        <PasswordForm />
         <div className="settings-card">
           <h3>Sua conta</h3>
           <p style={{ color: "var(--muted)", margin: 0 }}>Você está conectado como <b style={{ color: "var(--text)" }}>{user.email}</b>.</p>

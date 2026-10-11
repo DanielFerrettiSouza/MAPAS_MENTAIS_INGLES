@@ -28,6 +28,10 @@ export default function SourceTracker() {
       }
     } catch {}
     const supabase = createSupabaseBrowser();
+    // Link de "Esqueci minha senha": onde quer que a pessoa caia, leva para criar a senha nova.
+    const { data: sub } = supabase.auth.onAuthStateChange((event) => {
+      if (event === "PASSWORD_RECOVERY") window.location.href = "/app/configuracoes?nova-senha=1";
+    });
     supabase.auth.getUser().then(({ data }) => {
       const u = data.user;
       // Só marca "direto" em contas recém-criadas, para não rotular errado quem entrou antes disso existir.
@@ -36,6 +40,7 @@ export default function SourceTracker() {
         supabase.auth.updateUser({ data: { origem: saved || "direto" } });
       }
     });
+    return () => sub.subscription.unsubscribe();
   }, []);
   return null;
 }
