@@ -1,6 +1,7 @@
 // Envia eventos do funil para o Klaviyo (fluxos de e-mail). Sem KLAVIYO_API_KEY não faz nada.
 // Métricas com prefixo "MF" (Mapas Falantes).
 export type MfEvent =
+  | "MF Fez o quiz"
   | "MF Criou conta"
   | "MF Gerou mapa"
   | "MF Acabaram os mapas gratis"

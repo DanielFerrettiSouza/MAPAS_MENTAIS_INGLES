@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Logo from "./Logo";
@@ -11,6 +11,13 @@ export default function AuthForm({ mode }: { mode: "signup" | "login" }) {
   const params = useSearchParams();
   const next = params.get("next") || "/app";
   const [email, setEmail] = useState("");
+  // E-mail que a pessoa digitou no fim do quiz já vem preenchido no cadastro.
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("mf-email");
+      if (saved) setEmail((cur) => cur || saved);
+    } catch {}
+  }, []);
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

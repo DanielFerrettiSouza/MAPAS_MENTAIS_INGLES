@@ -92,6 +92,8 @@ export default function QuizPage() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [progress, setProgress] = useState(0);
   const [playing, setPlaying] = useState<string | null>(null);
+  const [email, setEmail] = useState("");
+  const [emailDone, setEmailDone] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const analyzing = step === SCREENS.length;
@@ -139,8 +141,20 @@ export default function QuizPage() {
     a.play().catch(() => setPlaying(null));
   }
 
+  // E-mail no fim do quiz: o Lead vai com e-mail (Meta encontra a pessoa) e o Klaviyo
+  // consegue lembrar quem viu o plano e não criou conta.
+  function submitEmail(e: React.FormEvent) {
+    e.preventDefault();
+    const clean = email.trim().toLowerCase();
+    track("Lead", { content_name: answers.goal, content_category: answers.level, ...answers }, clean);
+    try {
+      localStorage.setItem("mf-quiz", JSON.stringify(answers));
+      localStorage.setItem("mf-email", clean);
+    } catch {}
+    setEmailDone(true);
+  }
+
   function finish() {
-    track("Lead", { content_name: answers.goal, content_category: answers.level });
     try {
       localStorage.setItem("mf-quiz", JSON.stringify(answers));
     } catch {}
@@ -283,7 +297,26 @@ export default function QuizPage() {
                 <li key={a} className={i < progress ? "done" : ""}>{i < progress ? "✓" : "○"} {a}</li>
               ))}
             </ul>
-            {progress >= ANALYSIS.length && (
+            {progress >= ANALYSIS.length && !emailDone && (
+              <form className="quiz-email" onSubmit={submitEmail}>
+                <p>Para onde enviamos o seu plano?</p>
+                <input
+                  className="field"
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  placeholder="Seu melhor e-mail"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button className="primary-btn grad-btn" style={{ fontSize: 18, padding: "16px 24px", width: "100%" }}>
+                  Ver meu plano →
+                </button>
+                <small>🔒 Sem spam. Só o seu plano e dicas de estudo.</small>
+              </form>
+            )}
+            {progress >= ANALYSIS.length && emailDone && (
               <div className="quiz-result">
                 <div className="quiz-result-row"><span>Seu nível</span><b>{answers.level} · {LEVEL_INFO[answers.level ?? "A1"]?.name}</b></div>
                 <div className="quiz-result-row"><span>Seu primeiro mapa</span><b>{answers.first}</b></div>
