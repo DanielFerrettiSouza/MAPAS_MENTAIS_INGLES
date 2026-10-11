@@ -39,6 +39,13 @@ export default async function Settings({ searchParams }: { searchParams: { "nova
             <p style={{ color: "var(--muted)", margin: 0 }}>Você entra com a sua conta Google. Não há senha para trocar aqui.</p>
           </div>
         )}
+        <div className="settings-card">
+          <h3>Sua conta</h3>
+          <p style={{ color: "var(--muted)", margin: 0 }}>Você está conectado como <b style={{ color: "var(--text)" }}>{user.email}</b>.</p>
+          <form action="/auth/sair" method="post">
+            <button className="secondary-btn">Sair da conta</button>
+          </form>
+        </div>
       </div>
     </>
   );
