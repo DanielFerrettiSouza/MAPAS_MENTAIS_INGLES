@@ -10,8 +10,10 @@ export default function PlansGrid({
   ctaHref = "/criar-conta",
   currentPlan,
   email,
+  direct = false,
 }: {
   ctaHref?: string;
+  direct?: boolean;
   currentPlan?: string;
   email?: string | null;
 }) {
@@ -40,6 +42,7 @@ export default function PlansGrid({
             <a
               href={
                 (email && checkoutUrl(p.id, email)) ||
+                (direct && checkoutUrl(p.id)) ||
                 (ctaHref === "/criar-conta"
                   ? `/criar-conta?next=${encodeURIComponent(`/app/planos?plano=${p.id}`)}`
                   : `${ctaHref}${ctaHref.includes("?") ? "&" : "?"}plano=${p.id}`)

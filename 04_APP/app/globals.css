@@ -742,3 +742,4 @@ a { color: inherit; }
 .method-card p { margin: 0; color: var(--muted); line-height: 1.55; }
 .method-ico { font-size: 30px; }
 @media (max-width: 860px) { .method-grid, .bonus-grid { grid-template-columns: 1fr; } }
+.metodo-list { list-style: none; padding: 0; margin: 4px 0 22px; display: grid; gap: 8px; font-size: 17px; }

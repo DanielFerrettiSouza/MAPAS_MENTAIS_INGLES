@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BuyButton from "./BuyButton";
 import PlansGrid from "@/components/PlansGrid";
 import MapWall from "@/components/MapWall";
 import Guarantee from "@/components/Guarantee";
@@ -31,8 +32,11 @@ export default function SalesSections({
   inApp = false,
   email,
   currentPlan,
+  buy = false,
 }: {
   inApp?: boolean;
+  // Página do método: botões levam direto ao checkout (testar grátis fica secundário).
+  buy?: boolean;
   email?: string | null;
   currentPlan?: string;
 }) {
@@ -153,7 +157,7 @@ export default function SalesSections({
         <p style={{ textAlign: "center", color: "var(--muted)", fontSize: 18 }}>
           {inApp ? "Continue de onde parou. Cancele quando quiser." : "Comece grátis. Assine quando quiser mais mapas."}
         </p>
-        <PlansGrid ctaHref={inApp ? "/app/planos" : undefined} email={email} currentPlan={currentPlan} />
+        <PlansGrid ctaHref={inApp ? "/app/planos" : buy ? "/quiz" : undefined} email={email} currentPlan={currentPlan} direct={buy} />
         <Guarantee />
             {inApp && <Downsell email={email} />}
       </div>
@@ -179,6 +183,12 @@ export default function SalesSections({
             <a href="#planos" className="primary-btn grad-btn" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18 }}>
               Escolher meu plano →
             </a>
+          </>
+        ) : buy ? (
+          <>
+            <h2 className="big-title">Comece hoje. <span className="grad-text">5 minutos por dia.</span></h2>
+            <BuyButton label="Quero o Método →" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18, display: "inline-block" }} />
+            <p style={{ marginTop: 14 }}><Link href="/quiz" style={{ color: "var(--muted)" }}>ou teste grátis com 3 mapas</Link></p>
           </>
         ) : (
           <>
