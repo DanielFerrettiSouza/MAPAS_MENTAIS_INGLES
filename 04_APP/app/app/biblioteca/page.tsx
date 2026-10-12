@@ -33,6 +33,13 @@ export default async function LibraryPage({ searchParams }: { searchParams: { ni
   return (
     <>
       {header}
+      {unlocked && !user.user_metadata?.level_test && (
+        <Link href="/app/nivel" className="lt-banner">
+          <span>🧭</span>
+          <div><b>Comece pelo teste de nível</b><small>3 minutos para o seu plano começar no ponto certo.</small></div>
+          <em>Fazer agora →</em>
+        </Link>
+      )}
       {!unlocked && <LibraryLocked what="A Biblioteca completa" email={user.email} sample />}
       {unlocked && <div className="chips" style={{ marginTop: 16 }}>
         {LEVELS.map((l) => (

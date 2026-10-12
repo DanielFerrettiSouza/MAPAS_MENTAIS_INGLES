@@ -45,12 +45,19 @@ export default async function StudyPlanPage({ searchParams }: { searchParams: { 
   return (
     <>
       {header}
+      {!user.user_metadata?.level_test && (
+        <Link href="/app/nivel" className="lt-banner">
+          <span>🧭</span>
+          <div><b>Comece pelo teste de nível</b><small>3 minutos para o seu plano começar no ponto certo.</small></div>
+          <em>Fazer agora →</em>
+        </Link>
+      )}
       <div className="chips" style={{ marginTop: 16 }}>
         {GOALS.map((g) => (
           <Link key={g.tag} href={`/app/plano?objetivo=${g.tag}`} className={`chip ${g.tag === goal ? "chip-on" : ""}`}>{g.emoji} {g.label}</Link>
         ))}
       </div>
-      <p className="admin-note">Nível de partida: <b>{level}</b> (mude em Configurações). Progresso: {doneCount}/{total} mapas.</p>
+      <p className="admin-note">Nível de partida: <b>{level}</b> · <Link href="/app/nivel">refazer teste de nível</Link>. Progresso: {doneCount}/{total} mapas.</p>
       <div className="plan-weeks">
         {weeks.map((w, i) => (
           <div key={i} className="plan-week">

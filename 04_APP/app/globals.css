@@ -800,3 +800,19 @@ a { color: inherit; }
 .mt-inst { font-style: normal; font-size: 52px; font-weight: 800; line-height: 1.15; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .mt-or { color: var(--text) !important; font-size: 18px !important; font-weight: 600; }
 @media (max-width: 860px) { .mt-inst { font-size: 40px; } }
+
+/* Teste de nível (/app/nivel) */
+.lt-card { max-width: 640px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 26px; }
+.lt-card h2 { margin: 6px 0 16px; font-size: 24px; }
+.lt-kicker { margin: 0; color: var(--accent-2); font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+.lt-options { display: grid; gap: 10px; }
+.lt-options .quiz-option { text-align: left; }
+.lt-skip { background: none; border: 0; color: var(--muted); font-family: inherit; font-size: 14px; cursor: pointer; padding: 8px; }
+.lt-audio { background: var(--card-2); border: 1px solid var(--accent); color: var(--text); border-radius: 999px; padding: 10px 18px; font-family: inherit; font-size: 15px; cursor: pointer; margin-bottom: 16px; }
+.lt-progress { height: 6px; background: var(--card-2); border-radius: 99px; overflow: hidden; margin-bottom: 16px; }
+.lt-progress span { display: block; height: 100%; background: var(--grad); transition: width .3s; }
+.lt-banner { display: flex; align-items: center; gap: 14px; margin-top: 16px; padding: 16px 18px; border-radius: 16px; background: linear-gradient(90deg, rgba(255,45,111,.16), rgba(255,138,61,.10)); border: 1px solid var(--accent); text-decoration: none; }
+.lt-banner > span { font-size: 30px; }
+.lt-banner div { flex: 1; display: flex; flex-direction: column; }
+.lt-banner small { color: var(--muted); }
+.lt-banner em { font-style: normal; font-weight: 700; color: var(--accent-2); white-space: nowrap; }
