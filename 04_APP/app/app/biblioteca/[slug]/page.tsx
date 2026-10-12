@@ -17,6 +17,8 @@ export default async function LibraryMapPage({
   params: { slug: string };
   searchParams: { de?: string; objetivo?: string };
 }) {
+  // Mapas dos kits têm página própria (/app/kits), com acesso separado.
+  if (params.slug.startsWith("kit-")) notFound();
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   if (!canUseLibrary(profile?.plan, user) && !FREE_LIBRARY_SLUGS.includes(params.slug)) return <LibraryLocked what="A Biblioteca" email={user.email} />;

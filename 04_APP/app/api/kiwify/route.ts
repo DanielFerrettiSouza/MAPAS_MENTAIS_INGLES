@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { createSupabaseAdmin } from "@/lib/supa/server";
 import { trackKlaviyo } from "@/lib/klaviyo";
 import { EXTRAS, PLANS, extraFromProductName, planFromProductName } from "@/lib/plans";
+import { kitFromProductName } from "@/lib/kits";
 
 export const runtime = "nodejs";
 
@@ -60,10 +61,10 @@ export async function POST(req: Request) {
   // Compra sem conta: soma ao que já estava pendente (Método + bump + upsell podem chegar
   // em webhooks separados). Plano com "|biblioteca" = também tem o Método vitalício
   // (convertido em app/app/layout.tsx no primeiro acesso).
-  async function addPending(change: { library?: boolean; plan?: string; planCredits?: number; extraCredits?: number }) {
+  async function addPending(change: { library?: boolean; kit?: string; plan?: string; planCredits?: number; extraCredits?: number }) {
     const { data: cur } = await admin.from("pending_upgrades").select("plan, credits").ilike("email", email!).maybeSingle();
     const parts = (cur?.plan ?? "free").split("|");
-    let base = parts[0] === "biblioteca" ? "free" : parts[0];
+    let base = parts[0] === "biblioteca" || parts[0].startsWith("kit-") ? "free" : parts[0];
     let library = parts.includes("biblioteca") || parts[0] === "biblioteca";
     const baseCredits = base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3;
     let extra = Math.max(0, (cur?.credits ?? 3) - baseCredits);
@@ -71,8 +72,27 @@ export async function POST(req: Request) {
     if (change.plan) base = change.plan;
     if (change.extraCredits) extra += change.extraCredits;
     const credits = (change.planCredits ?? (base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3)) + extra;
-    const plan = library ? (base === "free" ? "biblioteca" : `${base}|biblioteca`) : base;
+    const kits = [...new Set([...parts.filter((p: string) => p.startsWith("kit-")), ...(change.kit ? [`kit-${change.kit}`] : [])])];
+    const flags = [...(library ? ["biblioteca"] : []), ...kits];
+    const plan = base === "free" && flags.length ? flags.join("|") : [base, ...flags].join("|");
     await admin.from("pending_upgrades").upsert({ email, plan, credits });
+  }
+
+  // Kits temáticos (order bumps do Método): liberam um conjunto de mapas prontos.
+  const kit = kitFromProductName(productName);
+  if (kit && (ACTIVATE.has(status) || DEACTIVATE.has(status))) {
+    const on = ACTIVATE.has(status);
+    if (profile) {
+      const { data: u } = await admin.auth.admin.getUserById(profile.id);
+      const cur = Array.isArray(u.user?.app_metadata?.kits) ? (u.user!.app_metadata.kits as string[]) : [];
+      const kits = on ? [...new Set([...cur, kit])] : cur.filter((k) => k !== kit);
+      const { error } = await admin.auth.admin.updateUserById(profile.id, { app_metadata: { kits } });
+      if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    } else if (on) {
+      await addPending({ kit });
+    }
+    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: `kit-${kit}`, status });
+    return NextResponse.json({ ok: true, kit, on });
   }
 
   // Produtos avulsos (pagamento único): biblioteca vitalícia e pacote de mapas.

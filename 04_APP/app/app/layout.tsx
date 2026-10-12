@@ -15,11 +15,17 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
   if (!user) redirect("/entrar");
   // Comprou a biblioteca antes de criar a conta: vira acesso vitalício e plano grátis.
   const profile = await getProfile(user.id);
-  if (profile?.plan?.split("|").includes("biblioteca")) {
+  // Kits comprados junto aparecem como "|kit-viagem" etc.
+  const parts = profile?.plan?.split("|") ?? [];
+  if (parts.includes("biblioteca") || parts.some((p) => p.startsWith("kit-"))) {
     const admin = createSupabaseAdmin();
-    await admin.auth.admin.updateUserById(user.id, { app_metadata: { library: true } });
-    const base = profile.plan.split("|")[0];
-    await admin.from("profiles").update({ plan: base === "biblioteca" ? "free" : base }).eq("id", user.id);
+    const kits = parts.filter((p) => p.startsWith("kit-")).map((p) => p.slice(4));
+    const had = Array.isArray(user.app_metadata?.kits) ? (user.app_metadata.kits as string[]) : [];
+    await admin.auth.admin.updateUserById(user.id, {
+      app_metadata: { ...(parts.includes("biblioteca") ? { library: true } : {}), ...(kits.length ? { kits: [...new Set([...had, ...kits])] } : {}) },
+    });
+    const base = parts[0] === "biblioteca" || parts[0].startsWith("kit-") ? "free" : parts[0];
+    await admin.from("profiles").update({ plan: base }).eq("id", user.id);
     redirect("/app/biblioteca");
   }
   // Dono do app: plano completo e créditos sempre cheios, para testar sem criar contas novas.
@@ -39,6 +45,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
         <Link href="/app/biblioteca" className="side-link"><IconBook /><span>Biblioteca</span></Link>
         <Link href="/app/plano" className="side-link"><IconCalendar /><span>Meu plano</span></Link>
+        <Link href="/app/kits" className="side-link"><IconMaps /><span>Kits</span></Link>
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
         {isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
         <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>Suporte</span></a>
