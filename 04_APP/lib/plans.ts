@@ -57,8 +57,8 @@ export function checkoutUrl(planId: string, email?: string | null) {
     professor: process.env.NEXT_PUBLIC_KIWIFY_PROFESSOR,
     biblioteca: process.env.NEXT_PUBLIC_KIWIFY_BIBLIOTECA,
     pacote: process.env.NEXT_PUBLIC_KIWIFY_PACOTE,
-    "kit-viagem": process.env.NEXT_PUBLIC_KIWIFY_KIT_VIAGEM,
-    "kit-trabalho": process.env.NEXT_PUBLIC_KIWIFY_KIT_TRABALHO,
+    "kit-viagem": process.env.NEXT_PUBLIC_KIWIFY_KIT_VIAGEM ?? "https://pay.kiwify.com.br/FmUMtH7",
+    "kit-trabalho": process.env.NEXT_PUBLIC_KIWIFY_KIT_TRABALHO ?? "https://pay.kiwify.com.br/3BH0kko",
   };
   const url = urls[planId];
   if (!url) return null;
