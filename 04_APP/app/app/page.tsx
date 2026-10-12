@@ -8,6 +8,7 @@ import type { QuizAnswers } from "@/lib/quizPlan";
 import MapGrid, { type MapRow } from "@/components/MapGrid";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { planName } from "@/lib/plans";
+import { canUseLibrary } from "@/lib/library";
 
 export const dynamic = "force-dynamic";
 
@@ -16,8 +17,10 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
   if (searchParams.topic || searchParams.criar) redirect(`/app/criar?${new URLSearchParams(searchParams)}`);
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
+  // Quem tem o Método (biblioteca) não é tratado como plano grátis.
+  const metodo = canUseLibrary(profile?.plan, user);
   // Acabaram os mapas grátis: vai direto para a oferta.
-  if ((profile?.plan ?? "free") === "free" && (profile?.credits ?? 0) <= 0) redirect("/app/planos");
+  if ((profile?.plan ?? "free") === "free" && !metodo && (profile?.credits ?? 0) <= 0) redirect("/app/planos");
   const { data: maps } = await createSupabaseServer()
     .from("generated_maps")
     .select("id, title_pt, topic, level, created_at, data")
@@ -39,13 +42,21 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
       </h1>
       <p className="app-sub">Crie um mapa novo, revise os que já fez ou veja seu plano.</p>
 
+      {metodo && !user.user_metadata?.level_test && (
+        <Link href="/app/nivel" className="lt-banner lt-hero">
+          <span>🧭</span>
+          <div><b>Primeiro passo: descubra seu nível</b><small>12 perguntas, 3 minutos. Seu plano de estudos começa no ponto certo.</small></div>
+          <em>Fazer o teste →</em>
+        </Link>
+      )}
+
       <div className="quick-actions">
         <QuickCreate credits={credits} />
         <Link href="/app/mapas" className="qa purple"><IconRepeat /> Revisar meus mapas</Link>
         <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
       </div>
 
-      {(profile?.plan ?? "free") === "free" && <OfferCard email={user.email} credits={credits} />}
+      {(profile?.plan ?? "free") === "free" && !metodo && <OfferCard email={user.email} credits={credits} />}
 
       <QuizPlan saved={user.user_metadata?.quiz as QuizAnswers | undefined} credits={credits} />
 

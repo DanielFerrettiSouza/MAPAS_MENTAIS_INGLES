@@ -26,7 +26,8 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
     });
     const base = parts[0] === "biblioteca" || parts[0].startsWith("kit-") ? "free" : parts[0];
     await admin.from("profiles").update({ plan: base }).eq("id", user.id);
-    redirect("/app/biblioteca");
+    // Comprou o Método: o primeiro passo é o teste de nível.
+    redirect(parts.includes("biblioteca") ? "/app/nivel" : "/app/kits");
   }
   // Dono do app: plano completo e créditos sempre cheios, para testar sem criar contas novas.
   if (isAdmin(user.email) && profile && (profile.plan !== "professor" || profile.credits < 100)) {
