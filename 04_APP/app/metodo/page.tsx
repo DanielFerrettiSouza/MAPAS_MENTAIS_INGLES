@@ -13,7 +13,7 @@ export const metadata = { title: "Método Mapas Falantes — inglês sem se perd
 export default function MetodoPage() {
   return (
     <>
-      <SiteNav />
+      <SiteNav buy />
       <main>
         <section className="wrap hero">
           <div>
@@ -34,9 +34,6 @@ export default function MetodoPage() {
               <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
               <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
             </div>
-            <p style={{ marginTop: 10 }}>
-              <Link href="/quiz" style={{ color: "var(--muted)" }}>Prefere testar antes? Crie 3 mapas grátis →</Link>
-            </p>
           </div>
           <div className="hero-visual">
             <HeroMaps />
