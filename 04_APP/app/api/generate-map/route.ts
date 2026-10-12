@@ -73,7 +73,9 @@ export async function POST(req: Request) {
     const left = credits - 1;
     await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://www.mapasfalantes.com.br/app/mapa/${id}` }, { mf_creditos: left });
     if (left <= 0 && (profile?.plan ?? "free") === "free") {
-      await trackKlaviyo(user.email, "MF Acabaram os mapas gratis", { topic, level });
+      // Quem comprou o Método recebe a oferta do Essencial (fluxo MF 6), não a sequência de quem não comprou.
+      const metodo = !!user.app_metadata?.library;
+      await trackKlaviyo(user.email, metodo ? "MF Acabaram os mapas do Metodo" : "MF Acabaram os mapas gratis", { topic, level });
     }
 
     return NextResponse.json({ id });

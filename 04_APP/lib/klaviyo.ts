@@ -5,6 +5,7 @@ export type MfEvent =
   | "MF Criou conta"
   | "MF Gerou mapa"
   | "MF Acabaram os mapas gratis"
+  | "MF Acabaram os mapas do Metodo"
   | "MF Clicou em assinar"
   | "MF Comprou"
   | "MF Cancelou";
