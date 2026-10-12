@@ -797,3 +797,6 @@ a { color: inherit; }
   .mt-offer { padding: 24px 18px; }
 }
 .mt-sample::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: linear-gradient(transparent, var(--bg)); pointer-events: none; }
+.mt-inst { font-style: normal; font-size: 52px; font-weight: 800; line-height: 1.15; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mt-or { color: var(--text) !important; font-size: 18px !important; font-weight: 600; }
+@media (max-width: 860px) { .mt-inst { font-size: 40px; } }

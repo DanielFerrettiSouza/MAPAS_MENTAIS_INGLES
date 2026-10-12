@@ -9,6 +9,8 @@ import { createSupabaseAdmin } from "@/lib/supa/server";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 const PRICE = EXTRAS.biblioteca.price;
+// Parcela que a Kiwify mostra no checkout (12x com juros do cartão).
+const INSTALLMENTS = EXTRAS.biblioteca.installments;
 const CTA = `Quero o Método por ${PRICE} →`;
 
 
@@ -33,7 +35,7 @@ function Cta({ big }: { big?: boolean }) {
   return (
     <div className="mt-cta">
       <BuyButton label={CTA} style={big ? { fontSize: 19, padding: "18px 34px" } : undefined} />
-      <span className="fine">🔒 Pagamento único · acesso vitalício · 7 dias de garantia</span>
+      <span className="fine">🔒 {INSTALLMENTS} ou {PRICE} à vista · acesso vitalício · 7 dias de garantia</span>
     </div>
   );
 }
@@ -121,9 +123,10 @@ export default async function MetodoSections() {
             <span className="eyebrow">Tudo o que você recebe</span>
             <ul>{STACK.map((s) => <li key={s}>{s}</li>)}</ul>
             <div className="mt-price">
-              <small>Pagamento único</small>
-              <strong>{PRICE}</strong>
-              <span>sem mensalidade · acesso vitalício</span>
+              <small>Sem mensalidade</small>
+              <em className="mt-inst">{INSTALLMENTS}</em>
+              <span className="mt-or">ou {PRICE} à vista</span>
+              <span>pague uma vez · acesso vitalício</span>
             </div>
             <BuyButton label={CTA} style={{ width: "100%", textAlign: "center", display: "block", fontSize: 19, padding: "18px 20px" }} />
             <p className="guarantee-note">🔒 Compra segura pela Kiwify · PIX ou cartão</p>

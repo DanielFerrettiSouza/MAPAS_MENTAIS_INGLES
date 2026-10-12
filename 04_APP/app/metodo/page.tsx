@@ -32,7 +32,7 @@ export default function MetodoPage() {
             </ul>
             <div className="cta-row">
               <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
-              <span className="fine">Pagamento único · acesso vitalício · 7 dias de garantia</span>
+              <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
             </div>
             <p style={{ marginTop: 10 }}>
               <Link href="/quiz" style={{ color: "var(--muted)" }}>Prefere testar antes? Crie 3 mapas grátis →</Link>
