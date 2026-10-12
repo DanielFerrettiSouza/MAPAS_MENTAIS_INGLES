@@ -2,7 +2,7 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { createSupabaseAdmin } from "@/lib/supa/server";
 import { trackKlaviyo } from "@/lib/klaviyo";
-import { EXTRAS, extraFromProductName, planFromProductName } from "@/lib/plans";
+import { EXTRAS, PLANS, extraFromProductName, planFromProductName } from "@/lib/plans";
 
 export const runtime = "nodejs";
 
@@ -57,6 +57,24 @@ export async function POST(req: Request) {
     .ilike("email", email)
     .maybeSingle();
 
+  // Compra sem conta: soma ao que já estava pendente (Método + bump + upsell podem chegar
+  // em webhooks separados). Plano com "|biblioteca" = também tem o Método vitalício
+  // (convertido em app/app/layout.tsx no primeiro acesso).
+  async function addPending(change: { library?: boolean; plan?: string; planCredits?: number; extraCredits?: number }) {
+    const { data: cur } = await admin.from("pending_upgrades").select("plan, credits").ilike("email", email!).maybeSingle();
+    const parts = (cur?.plan ?? "free").split("|");
+    let base = parts[0] === "biblioteca" ? "free" : parts[0];
+    let library = parts.includes("biblioteca") || parts[0] === "biblioteca";
+    const baseCredits = base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3;
+    let extra = Math.max(0, (cur?.credits ?? 3) - baseCredits);
+    if (change.library) library = true;
+    if (change.plan) base = change.plan;
+    if (change.extraCredits) extra += change.extraCredits;
+    const credits = (change.planCredits ?? (base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3)) + extra;
+    const plan = library ? (base === "free" ? "biblioteca" : `${base}|biblioteca`) : base;
+    await admin.from("pending_upgrades").upsert({ email, plan, credits });
+  }
+
   // Produtos avulsos (pagamento único): biblioteca vitalícia e pacote de mapas.
   const extra = extraFromProductName(productName);
   if (extra && (ACTIVATE.has(status) || DEACTIVATE.has(status))) {
@@ -67,13 +85,13 @@ export async function POST(req: Request) {
         if (error) return NextResponse.json({ error: error.message }, { status: 500 });
       } else if (on) {
         // Comprou antes de criar a conta: o app converte ao entrar (ver app/app/layout.tsx).
-        await admin.from("pending_upgrades").upsert({ email, plan: "biblioteca", credits: 3 });
+        await addPending({ library: true });
       }
     } else if (profile) {
       const credits = Math.max(0, (profile.credits ?? 0) + (on ? EXTRAS.credits : -EXTRAS.credits));
       await admin.from("profiles").update({ credits }).eq("id", profile.id);
     } else if (on) {
-      await admin.from("pending_upgrades").upsert({ email, plan: "free", credits: 3 + EXTRAS.credits });
+      await addPending({ extraCredits: EXTRAS.credits });
     }
     await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: extra, status }, on && extra === "biblioteca" ? { mf_biblioteca: true } : {});
     return NextResponse.json({ ok: true, extra, on });
@@ -94,7 +112,7 @@ export async function POST(req: Request) {
       }
     } else {
       // Pagou antes de criar a conta: o plano é aplicado no cadastro.
-      await admin.from("pending_upgrades").upsert({ email, plan: plan.id, credits: plan.credits });
+      await addPending({ plan: plan.id, planCredits: plan.credits });
     }
     await trackKlaviyo(email, "MF Comprou", { produto: plan.id, status }, { mf_plano: plan.id });
     return NextResponse.json({ ok: true, plan: plan.id });

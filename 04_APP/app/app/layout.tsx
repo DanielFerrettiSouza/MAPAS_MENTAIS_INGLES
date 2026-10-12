@@ -15,10 +15,11 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
   if (!user) redirect("/entrar");
   // Comprou a biblioteca antes de criar a conta: vira acesso vitalício e plano grátis.
   const profile = await getProfile(user.id);
-  if (profile?.plan === "biblioteca") {
+  if (profile?.plan?.split("|").includes("biblioteca")) {
     const admin = createSupabaseAdmin();
     await admin.auth.admin.updateUserById(user.id, { app_metadata: { library: true } });
-    await admin.from("profiles").update({ plan: "free" }).eq("id", user.id);
+    const base = profile.plan.split("|")[0];
+    await admin.from("profiles").update({ plan: base === "biblioteca" ? "free" : base }).eq("id", user.id);
     redirect("/app/biblioteca");
   }
   // Dono do app: plano completo e créditos sempre cheios, para testar sem criar contas novas.
