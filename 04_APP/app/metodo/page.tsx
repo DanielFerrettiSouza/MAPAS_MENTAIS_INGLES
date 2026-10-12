@@ -1,12 +1,15 @@
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import HeroMaps from "@/components/HeroMaps";
-import SalesSections from "@/components/SalesSections";
+import MetodoSections from "@/components/MetodoSections";
+import { EXTRAS } from "@/lib/plans";
 import BuyButton from "@/components/BuyButton";
+
+export const revalidate = 3600;
 
 export const metadata = { title: "Método Mapas Falantes — inglês sem se perder" };
 
-// Página dos anúncios do método: vende o Plano Fluente direto (checkout), com "testar grátis" secundário.
+// Página dos anúncios do método: vende o Método vitalício direto no checkout, com "testar grátis" secundário.
 export default function MetodoPage() {
   return (
     <>
@@ -25,11 +28,10 @@ export default function MetodoPage() {
             <ul className="metodo-list">
               <li>🧭 Teste de nível + plano de estudos</li>
               <li>📚 120 mapas prontos do A1 ao C2, com áudio e exercício</li>
-              <li>🎁 Bônus: 500 frases, 100 verbos e 150 gírias com áudio</li>
-              <li>✨ + 3 mapas sob medida com IA, de presente</li>
+              <li>🎁 4 bônus: 500 frases, 100 verbos, 150 gírias e 3 mapas com IA</li>
             </ul>
             <div className="cta-row">
-              <BuyButton label="Quero o Método por R$47 →" />
+              <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
               <span className="fine">Pagamento único · acesso vitalício · 7 dias de garantia</span>
             </div>
             <p style={{ marginTop: 10 }}>
@@ -41,7 +43,7 @@ export default function MetodoPage() {
           </div>
         </section>
 
-        <SalesSections buy />
+        <MetodoSections />
       </main>
       <footer className="site-footer">© {new Date().getFullYear()} Mapas Falantes · <Link href="/privacidade">Privacidade</Link> · <Link href="/termos">Termos de Uso</Link></footer>
     </>

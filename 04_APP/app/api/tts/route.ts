@@ -5,14 +5,19 @@
 import { createHash } from "node:crypto";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
 import { QUIZ_PHRASES } from "@/lib/quizFunnel";
+import { SAMPLE_MAP_SLUG } from "@/lib/library";
 
 export const runtime = "nodejs";
+
+// Frases do mapa de amostra da página /metodo também tocam sem login.
+async function inSampleMap(admin: ReturnType<typeof createSupabaseAdmin>, text: string) {
+  const { data } = await admin.from("library_maps").select("data").eq("slug", SAMPLE_MAP_SLUG).maybeSingle();
+  return !!data && JSON.stringify(data.data).includes(JSON.stringify(text).slice(1, -1));
+}
 
 export async function GET(req: Request) {
   const text = new URL(req.url).searchParams.get("text")?.trim().slice(0, 300);
   if (!text) return new Response("Parâmetro text obrigatório", { status: 400 });
-  // As frases de amostra do quiz tocam sem login.
-  if (!QUIZ_PHRASES.has(text) && !(await getCurrentUser())) return new Response("Faça login para ouvir o áudio.", { status: 401 });
 
   const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY?.trim();
   const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID?.trim();
@@ -26,6 +31,11 @@ export async function GET(req: Request) {
   const publicUrl = admin.storage.from("map-images").getPublicUrl(path).data.publicUrl;
   const cached = await fetch(publicUrl, { method: "HEAD" }).catch(() => null);
   if (cached?.ok) return Response.redirect(publicUrl, 302);
+  // Áudio já guardado toca para qualquer um (mapa de amostra da página de vendas).
+  // Gerar áudio novo exige login, exceto as frases do quiz.
+  if (!QUIZ_PHRASES.has(text) && !(await getCurrentUser()) && !(await inSampleMap(admin, text))) {
+    return new Response("Faça login para ouvir o áudio.", { status: 401 });
+  }
 
   const res = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`,

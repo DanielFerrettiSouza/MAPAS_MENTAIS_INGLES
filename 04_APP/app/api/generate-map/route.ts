@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     }
 
     const left = credits - 1;
-    await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://mapas-falantes.vercel.app/app/mapa/${id}` }, { mf_creditos: left });
+    await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://www.mapasfalantes.com.br/app/mapa/${id}` }, { mf_creditos: left });
     if (left <= 0 && (profile?.plan ?? "free") === "free") {
       await trackKlaviyo(user.email, "MF Acabaram os mapas gratis", { topic, level });
     }

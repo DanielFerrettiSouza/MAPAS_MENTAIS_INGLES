@@ -748,3 +748,52 @@ a { color: inherit; }
 .method-offer .price { font-size: 44px; font-weight: 800; margin: 6px 0 14px; }
 .method-offer .price small { font-size: 16px; color: var(--muted); font-weight: 500; }
 .method-offer ul { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 10px; }
+
+/* Página do método (/metodo) */
+.mt-sub { color: var(--muted); font-size: 18px; max-width: 640px; margin: 0 auto 8px; }
+.mt-cta { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 32px; }
+.mt-cta .fine { color: var(--muted); font-size: 13px; }
+.mt-sample { position: relative; max-width: 760px; margin: 28px auto 0; max-height: 820px; overflow: hidden; border-radius: 18px; border: 1px solid var(--border); text-align: left; box-shadow: 0 30px 80px rgba(255,45,111,.12); }
+.lv-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 28px auto 0; max-width: 900px; }
+.lv-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 8px; color: var(--text); cursor: pointer; display: flex; flex-direction: column; gap: 4px; font-family: inherit; }
+.lv-card strong { font-size: 28px; }
+.lv-card span { font-size: 13px; color: var(--muted); }
+.lv-card small { font-weight: 700; color: var(--accent-2); }
+.lv-card.on { border-color: var(--accent); background: linear-gradient(180deg, rgba(255,45,111,.16), var(--card)); }
+.lv-hint { color: var(--muted); font-size: 14px; margin: 14px 0 0; }
+.lv-topics { list-style: none; padding: 0; margin: 18px auto 0; max-width: 900px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 24px; text-align: left; }
+.lv-topics li { background: var(--card); border-radius: 10px; padding: 10px 14px; font-size: 15px; }
+.mt-bonus { background: radial-gradient(ellipse at top, rgba(255,138,61,.10), transparent 60%); }
+.mt-bonus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 32px; text-align: left; }
+.mt-bonus-card { position: relative; background: var(--card); border: 2px solid rgba(255,138,61,.45); border-radius: 22px; padding: 30px 26px 26px; }
+.mt-bonus-tag { position: absolute; top: -13px; left: 22px; background: var(--grad); color: #fff; font-weight: 800; font-size: 12px; letter-spacing: 1.5px; padding: 5px 12px; border-radius: 999px; }
+.mt-bonus-ico { font-size: 54px; line-height: 1; }
+.mt-bonus-card h3 { font-size: 26px; margin: 12px 0 6px; }
+.mt-bonus-card p { color: var(--muted); margin: 0 0 14px; line-height: 1.55; }
+.mt-bonus-card ul { list-style: none; padding: 14px; margin: 0 0 16px; background: var(--card-2); border-radius: 12px; display: grid; gap: 8px; }
+.mt-bonus-card li span { color: var(--muted); }
+.mt-incl { display: inline-block; font-weight: 800; color: #4ade80; letter-spacing: 1px; }
+.mt-who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; text-align: left; }
+.mt-who > div { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 24px; }
+.mt-who span { font-size: 34px; font-weight: 800; }
+.mt-who h3 { margin: 10px 0 6px; }
+.mt-who p { margin: 0; color: var(--muted); line-height: 1.55; }
+.mt-offer { max-width: 560px; margin: 0 auto; background: var(--card); border: 2px solid var(--accent); border-radius: 24px; padding: 32px; box-shadow: 0 30px 80px rgba(255,45,111,.18); }
+.mt-offer ul { list-style: none; padding: 0; margin: 14px 0 22px; display: grid; gap: 10px; font-size: 16px; }
+.mt-offer li { padding-bottom: 10px; border-bottom: 1px dashed var(--border); }
+.mt-price { text-align: center; margin-bottom: 18px; display: flex; flex-direction: column; }
+.mt-price small { color: var(--muted); text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
+.mt-price strong { font-size: 64px; font-weight: 800; line-height: 1.1; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mt-price span { color: var(--muted); font-size: 14px; }
+.mt-guarantee { max-width: 560px; margin: 24px auto 0; display: flex; gap: 16px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 20px; }
+.mt-guarantee > span { font-size: 48px; }
+.mt-guarantee h3 { margin: 0 0 4px; }
+.mt-guarantee p { margin: 0; color: var(--muted); line-height: 1.5; }
+.mt-final-list { list-style: none; padding: 0; margin: 18px auto 0; max-width: 560px; text-align: left; display: grid; gap: 8px; }
+@media (max-width: 860px) {
+  .lv-grid { grid-template-columns: repeat(3, 1fr); }
+  .lv-topics, .mt-bonus-grid, .mt-who { grid-template-columns: 1fr; }
+  .mt-price strong { font-size: 52px; }
+  .mt-offer { padding: 24px 18px; }
+}
+.mt-sample::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: linear-gradient(transparent, var(--bg)); pointer-events: none; }

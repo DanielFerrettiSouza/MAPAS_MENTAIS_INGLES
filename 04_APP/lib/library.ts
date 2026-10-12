@@ -11,3 +11,6 @@ export function canUseLibrary(plan?: string | null, user?: UserLike) {
 
 // Amostra grátis: os 3 primeiros mapas do A1 ficam abertos para todos.
 export const FREE_LIBRARY_SLUGS = CURRICULUM.filter((t) => t.level === "A1").slice(0, 3).map((t) => t.slug);
+
+// Mapa da biblioteca mostrado aberto na página /metodo (áudio toca sem login).
+export const SAMPLE_MAP_SLUG = "a2-10";

@@ -161,7 +161,7 @@ export default function SalesSections({
           <div className="method-offer">
             <span className="badge-pop">Acesso vitalício</span>
             <h3>Método Mapas Falantes</h3>
-            <div className="price">R$47 <small>pagamento único</small></div>
+            <div className="price">R$57 <small>pagamento único</small></div>
             <ul>
               <li>🧭 Teste de nível + plano de estudos</li>
               <li>📚 120 mapas prontos do A1 ao C2, com áudio e exercício</li>
@@ -170,7 +170,7 @@ export default function SalesSections({
               <li>😎 150 expressões e gírias com áudio</li>
               <li>✨ 3 mapas sob medida com IA, de presente</li>
             </ul>
-            <BuyButton label="Quero o Método por R$47 →" style={{ width: "100%", textAlign: "center", display: "block" }} />
+            <BuyButton label="Quero o Método por R$57 →" style={{ width: "100%", textAlign: "center", display: "block" }} />
             <p className="guarantee-note">🛡️ 7 dias de garantia · sem mensalidade</p>
           </div>
         ) : (
@@ -215,7 +215,7 @@ export default function SalesSections({
         ) : buy ? (
           <>
             <h2 className="big-title">Comece hoje. <span className="grad-text">5 minutos por dia.</span></h2>
-            <BuyButton label="Quero o Método por R$47 →" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18, display: "inline-block" }} />
+            <BuyButton label="Quero o Método por R$57 →" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18, display: "inline-block" }} />
             <p style={{ marginTop: 14 }}><Link href="/quiz" style={{ color: "var(--muted)" }}>ou teste grátis com 3 mapas</Link></p>
           </>
         ) : (
