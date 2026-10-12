@@ -13,6 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <head>
         <meta name="facebook-domain-verification" content="x38zcqzks4bc0ihm080vtnliogsl6e" />
+        <meta name="facebook-domain-verification" content="60uu2ite08md6ufie2o548tr95jpnd" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
