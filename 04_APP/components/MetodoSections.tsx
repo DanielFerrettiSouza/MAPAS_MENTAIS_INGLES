@@ -2,6 +2,7 @@ import Link from "next/link";
 import BuyButton from "./BuyButton";
 import MindMapView from "./MindMapView";
 import LevelExplorer from "./LevelExplorer";
+import ListenButton from "./ListenButton";
 import { BONUS } from "@/lib/bonus";
 import { EXTRAS } from "@/lib/plans";
 import { SAMPLE_MAP_SLUG } from "@/lib/library";
@@ -49,9 +50,10 @@ export default async function MetodoSections() {
       {sample && (
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
-            <span className="eyebrow">O material por dentro</span>
-            <h2 className="big-title">Veja um mapa <span className="grad-text">de verdade.</span></h2>
-            <p className="mt-sub">Este é o mapa “No aeroporto”, do nível A2. Toque em qualquer frase para ouvir o áudio.</p>
+            <span className="eyebrow">🔊 Aperte o play</span>
+            <h2 className="big-title">Um mapa que <span className="grad-text">fala com você.</span></h2>
+            <p className="mt-sub">Este é o mapa “No aeroporto”, do nível A2, exatamente como está no app. Toque no botão ou em qualquer frase do mapa e ouça a pronúncia de nativo.</p>
+            <ListenButton phrases={sample.branches.flatMap((b) => b.items.map((it) => it.en)).slice(0, 8)} />
             <div className="mt-sample"><MindMapView map={sample} /></div>
             <Cta />
           </div>
