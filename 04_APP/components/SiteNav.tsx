@@ -16,7 +16,7 @@ export default function SiteNav({ buy = false }: { buy?: boolean }) {
         </nav>
       ) : (
         <nav>
-          <Link href="/#planos">Preços</Link>
+          <Link href="/#oferta">Preço</Link>
           <Link href="/entrar">Entrar</Link>
           <Link href="/quiz" className="primary-btn">Testar grátis</Link>
         </nav>
