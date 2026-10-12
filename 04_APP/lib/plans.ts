@@ -77,8 +77,8 @@ export function planName(id: string) {
 // Produtos avulsos (pagamento único), vendidos como downsell.
 export const EXTRAS = {
   biblioteca: { name: "Método Mapas Falantes (vitalício)", price: "R$57", installments: "12x de R$5,90", text: "120 mapas prontos do A1 ao C2, plano de estudos e os bônus (500 frases, 100 verbos, 150 gírias), tudo com áudio. Pague uma vez, acesse para sempre." },
-  pacote: { name: "Pacote de 10 mapas", price: "R$9,90", text: "10 mapas novos com IA, sobre o assunto que você quiser. Sem assinatura." },
-  credits: 10,
+  pacote: { name: "Pacote de 5 mapas", price: "R$19,90", text: "5 mapas novos com IA, sobre o assunto que você quiser. Sem assinatura." },
+  credits: 5,
 };
 
 // Produto avulso pelo nome na Kiwify ("Mapas Falantes - Biblioteca", "Pacote 10 mapas").

@@ -39,13 +39,15 @@ export async function POST(req: Request) {
   }
 
   try {
-    // Custo: plano pago ganha a capa ilustrada; grátis usa só emojis.
+    // Layout de caderno (o da biblioteca): ícones e ilustrações já existentes, sem
+    // gerar imagens novas, o que mantém o custo por mapa baixo.
     const id = crypto.randomUUID();
     const result: MapWithImages = await buildMap(admin, {
       topic,
       level,
       goal,
-      illustrate: !!profile?.plan && profile.plan !== "free",
+      illustrate: false,
+      notebook: true,
       imagePath: `${user.id}/${id}`,
       defer: true,
     });
