@@ -76,7 +76,7 @@ export function planName(id: string) {
 
 // Produtos avulsos (pagamento único), vendidos como downsell.
 export const EXTRAS = {
-  biblioteca: { name: "Biblioteca vitalícia", price: "R$37", text: "Os 120 mapas prontos do A1 ao C2, com áudio e exercícios. Pague uma vez, acesse para sempre." },
+  biblioteca: { name: "Método Mapas Falantes (vitalício)", price: "R$47", text: "120 mapas prontos do A1 ao C2, plano de estudos e os bônus (500 frases, 100 verbos, 150 gírias), tudo com áudio. Pague uma vez, acesse para sempre." },
   pacote: { name: "Pacote de 10 mapas", price: "R$9,90", text: "10 mapas novos com IA, sobre o assunto que você quiser. Sem assinatura." },
   credits: 10,
 };
@@ -84,7 +84,7 @@ export const EXTRAS = {
 // Produto avulso pelo nome na Kiwify ("Mapas Falantes - Biblioteca", "Pacote 10 mapas").
 export function extraFromProductName(name: string): "biblioteca" | "pacote" | null {
   const n = name.toLowerCase();
-  if (n.includes("biblioteca") || n.includes("library")) return "biblioteca";
+  if (n.includes("biblioteca") || n.includes("library") || n.includes("método") || n.includes("metodo")) return "biblioteca";
   if (n.includes("pacote") || n.includes("avulso") || n.includes("pack")) return "pacote";
   return null;
 }

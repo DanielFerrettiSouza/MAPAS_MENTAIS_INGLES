@@ -138,7 +138,7 @@ export default function SalesSections({
             </div>
           ))}
         </div>
-        <h3 style={{ textAlign: "center", marginTop: 36 }}>🎁 Bônus do método (no Plano Fluente)</h3>
+        <h3 style={{ textAlign: "center", marginTop: 36 }}>🎁 Bônus do método {buy ? "(inclusos)" : "(no Plano Fluente)"}</h3>
         <div className="method-grid bonus-grid">
           {BONUS_CARDS.map((b) => (
             <div key={b.title} className="method-card">
@@ -153,11 +153,29 @@ export default function SalesSections({
 
     <section className="section" id="planos">
       <div className="wrap">
-        <h2 className="big-title" style={{ textAlign: "center" }}>Escolha seu plano</h2>
+        <h2 className="big-title" style={{ textAlign: "center" }}>{buy ? "Garanta o seu Método" : "Escolha seu plano"}</h2>
         <p style={{ textAlign: "center", color: "var(--muted)", fontSize: 18 }}>
-          {inApp ? "Continue de onde parou. Cancele quando quiser." : "Comece grátis. Assine quando quiser mais mapas."}
+          {inApp ? "Continue de onde parou. Cancele quando quiser." : buy ? "Pague uma vez, estude para sempre." : "Comece grátis. Assine quando quiser mais mapas."}
         </p>
-        <PlansGrid ctaHref={inApp ? "/app/planos" : buy ? "/quiz" : undefined} email={email} currentPlan={currentPlan} direct={buy} />
+        {buy ? (
+          <div className="method-offer">
+            <span className="badge-pop">Acesso vitalício</span>
+            <h3>Método Mapas Falantes</h3>
+            <div className="price">R$47 <small>pagamento único</small></div>
+            <ul>
+              <li>🧭 Teste de nível + plano de estudos</li>
+              <li>📚 120 mapas prontos do A1 ao C2, com áudio e exercício</li>
+              <li>💬 500 frases mais usadas com áudio</li>
+              <li>⚡ 100 verbos essenciais com áudio</li>
+              <li>😎 150 expressões e gírias com áudio</li>
+              <li>✨ 3 mapas sob medida com IA, de presente</li>
+            </ul>
+            <BuyButton label="Quero o Método por R$47 →" style={{ width: "100%", textAlign: "center", display: "block" }} />
+            <p className="guarantee-note">🛡️ 7 dias de garantia · sem mensalidade</p>
+          </div>
+        ) : (
+          <PlansGrid ctaHref={inApp ? "/app/planos" : undefined} email={email} currentPlan={currentPlan} />
+        )}
         <Guarantee />
             {inApp && <Downsell email={email} />}
       </div>
@@ -169,9 +187,19 @@ export default function SalesSections({
         <details><summary>O áudio é de verdade?</summary><p>Sim. Cada palavra e frase do mapa tem um botão que toca a pronúncia nativa (sotaque americano), gerada na hora.</p></details>
         <details><summary>Preciso saber inglês para usar?</summary><p>Não. Você escolhe o nível (do A1, iniciante, ao C2) e todo mapa vem com tradução em português.</p></details>
         <details><summary>Posso imprimir os mapas?</summary><p>Sim. Cada mapa pode ser baixado em imagem de alta resolução.</p></details>
-        <details><summary>Como funciona o teste grátis?</summary><p>Você cria sua conta e ganha 3 mapas para usar como quiser. Sem cartão de crédito.</p></details>
-        <details><summary>E se eu não gostar depois de assinar?</summary><p>Você tem 7 dias de garantia. Se não gostar, peça o reembolso em até 7 dias após a compra e devolvemos 100% do valor.</p></details>
-        <details><summary>Posso cancelar quando quiser?</summary><p>Sim. A assinatura é mensal e pode ser cancelada a qualquer momento.</p></details>
+        {buy ? (
+          <>
+            <details><summary>É assinatura?</summary><p>Não. O Método é pagamento único: você paga uma vez e tem acesso para sempre aos mapas, ao plano de estudos e aos bônus.</p></details>
+            <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não gostar, peça o reembolso em até 7 dias após a compra e devolvemos 100% do valor.</p></details>
+            <details><summary>Como acesso depois de comprar?</summary><p>Logo após o pagamento você cria sua conta com o mesmo e-mail da compra e tudo já aparece liberado.</p></details>
+          </>
+        ) : (
+          <>
+            <details><summary>Como funciona o teste grátis?</summary><p>Você cria sua conta e ganha 3 mapas para usar como quiser. Sem cartão de crédito.</p></details>
+            <details><summary>E se eu não gostar depois de assinar?</summary><p>Você tem 7 dias de garantia. Se não gostar, peça o reembolso em até 7 dias após a compra e devolvemos 100% do valor.</p></details>
+            <details><summary>Posso cancelar quando quiser?</summary><p>Sim. A assinatura é mensal e pode ser cancelada a qualquer momento.</p></details>
+          </>
+        )}
       </div>
     </section>
 
@@ -187,7 +215,7 @@ export default function SalesSections({
         ) : buy ? (
           <>
             <h2 className="big-title">Comece hoje. <span className="grad-text">5 minutos por dia.</span></h2>
-            <BuyButton label="Quero o Método →" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18, display: "inline-block" }} />
+            <BuyButton label="Quero o Método por R$47 →" style={{ fontSize: 18, padding: "18px 30px", marginTop: 18, display: "inline-block" }} />
             <p style={{ marginTop: 14 }}><Link href="/quiz" style={{ color: "var(--muted)" }}>ou teste grátis com 3 mapas</Link></p>
           </>
         ) : (

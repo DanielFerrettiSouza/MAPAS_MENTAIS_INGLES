@@ -20,16 +20,17 @@ export default function MetodoPage() {
             </h1>
             <p className="lead">
               Descubra seu nível, siga um plano de estudos pronto e aprenda com mapas mentais que falam:
-              120 mapas do A1 ao C2, áudio de nativo em cada frase e mapas novos de qualquer assunto com IA.
+              120 mapas do A1 ao C2 com áudio de nativo em cada frase. Pague uma vez, acesse para sempre.
             </p>
             <ul className="metodo-list">
               <li>🧭 Teste de nível + plano de estudos</li>
-              <li>📚 120 mapas prontos + 60 novos por mês com IA</li>
+              <li>📚 120 mapas prontos do A1 ao C2, com áudio e exercício</li>
               <li>🎁 Bônus: 500 frases, 100 verbos e 150 gírias com áudio</li>
+              <li>✨ + 3 mapas sob medida com IA, de presente</li>
             </ul>
             <div className="cta-row">
-              <BuyButton label="Quero o Método →" />
-              <span className="fine">R$49,90/mês · 7 dias de garantia · cancele quando quiser</span>
+              <BuyButton label="Quero o Método por R$47 →" />
+              <span className="fine">Pagamento único · acesso vitalício · 7 dias de garantia</span>
             </div>
             <p style={{ marginTop: 10 }}>
               <Link href="/quiz" style={{ color: "var(--muted)" }}>Prefere testar antes? Crie 3 mapas grátis →</Link>
