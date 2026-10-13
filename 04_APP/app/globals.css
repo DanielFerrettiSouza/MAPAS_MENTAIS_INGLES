@@ -826,16 +826,13 @@ a { color: inherit; }
 .mt-listen small { opacity: .9; font-size: 14px; }
 @keyframes mt-pulse { 0% { box-shadow: 0 0 0 0 rgba(255,255,255,.7); } 100% { box-shadow: 0 0 0 18px rgba(255,255,255,0); } }
 
-/* Cenas de uso (faixa girando da direita para a esquerda) */
-.us-wrap { margin: 32px auto 0; max-width: 860px; padding: 0 20px; }
-.us-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.us-card { margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
-.us-card img { display: block; width: 100%; height: 360px; object-fit: cover; }
-.us-card figcaption { padding: 14px 16px; font-weight: 600; font-size: 15px; text-align: left; }
-@keyframes us-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (max-width: 860px) { .us-track { grid-template-columns: repeat(3, 72%); overflow-x: auto; scroll-snap-type: x mandatory; } .us-card { scroll-snap-align: start; } .us-card img { height: 300px; } }
-.tf { display: grid; gap: 16px; }
-.tf label { display: grid; gap: 6px; font-weight: 600; font-size: 15px; }
-.tf input, .tf textarea { background: var(--card-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; color: var(--text); font-family: inherit; font-size: 15px; font-weight: 400; }
-.tf-stars button { background: none; border: 0; font-size: 32px; color: #fbbf24; cursor: pointer; padding: 0 2px; }
-.tf-check { display: flex !important; grid-template-columns: none; gap: 10px !important; align-items: flex-start; font-weight: 400 !important; color: var(--muted); }
+
+/* Depoimentos */
+.tm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; max-width: 860px; margin: 28px auto 0; text-align: left; }
+.tm-card { margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+.tm-stars { color: #fbbf24; font-size: 22px; letter-spacing: 2px; }
+.tm-card blockquote { margin: 0; font-size: 17px; line-height: 1.55; }
+.tm-card figcaption { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+.tm-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--grad); display: grid; place-items: center; font-weight: 800; }
+.tm-card figcaption small { display: block; color: var(--muted); }
+@media (max-width: 860px) { .tm-grid { grid-template-columns: 1fr; } }

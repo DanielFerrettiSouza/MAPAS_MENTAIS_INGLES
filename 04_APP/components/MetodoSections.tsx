@@ -3,7 +3,7 @@ import BuyButton from "./BuyButton";
 import LevelExplorer from "./LevelExplorer";
 import ListenButton from "./ListenButton";
 
-import UseScenes from "./UseScenes";
+import Testimonials from "./Testimonials";
 import { BONUS } from "@/lib/bonus";
 import { EXTRAS } from "@/lib/plans";
 
@@ -65,11 +65,10 @@ export default function MetodoSections() {
 
       <section className="section">
         <div className="wrap" style={{ textAlign: "center" }}>
-          <span className="eyebrow">No seu dia a dia</span>
-          <h2 className="big-title">Estude onde <span className="grad-text">você estiver.</span></h2>
-          <p className="mt-sub">No celular, no computador ou impresso. 5 minutos já valem.</p>
+          <span className="eyebrow">Quem testou</span>
+          <h2 className="big-title">O que estão <span className="grad-text">dizendo.</span></h2>
+          <Testimonials />
         </div>
-        <UseScenes />
       </section>
 
       <section className="section">
