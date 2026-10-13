@@ -10,7 +10,7 @@ const ALLOWED = new Set(["Lead", "CompleteRegistration", "InitiateCheckout", "Qu
 
 // Recebe do navegador os eventos do pixel e repassa à API de Conversões.
 export async function POST(req: Request) {
-  const { event, event_id, url, params, email: typed } = await req.json().catch(() => ({}));
+  const { event, event_id, url, params, email: typed, vid } = await req.json().catch(() => ({}));
   if (!ALLOWED.has(event) || typeof event_id !== "string") {
     return NextResponse.json({ error: "evento inválido" }, { status: 400 });
   }
@@ -24,7 +24,8 @@ export async function POST(req: Request) {
     event_id,
     event_source_url: typeof url === "string" ? url : undefined,
     email: user?.email ?? quizEmail,
-    external_id: user?.id,
+    // Logado: id da conta. Visitante: id anônimo guardado no navegador.
+    external_id: user?.id ?? (typeof vid === "string" && vid.length < 80 ? vid : undefined),
     ip: h.get("x-forwarded-for")?.split(",")[0]?.trim(),
     user_agent: h.get("user-agent"),
     fbp: c.get("_fbp")?.value,
