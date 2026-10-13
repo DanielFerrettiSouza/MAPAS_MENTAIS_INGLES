@@ -7,7 +7,7 @@ import BuyButton from "@/components/BuyButton";
 
 export const revalidate = 3600;
 
-export const metadata = { title: "Método Mapas Falantes — inglês sem se perder" };
+export const metadata = { title: "Mapas Falantes — 120 mapas mentais de inglês que falam" };
 
 // Página dos anúncios do método: vende o Método vitalício direto no checkout, com "testar grátis" secundário.
 export default function MetodoPage() {
@@ -17,13 +17,14 @@ export default function MetodoPage() {
       <main>
         <section className="wrap hero">
           <div>
-            <span className="eyebrow">Método Mapas Falantes</span>
+            <span className="eyebrow">Método Mapas Falantes · do A1 ao C2</span>
             <h1>
-              Aprenda inglês <span className="grad-text">sem se perder.</span> 5 minutos por dia.
+              120 mapas mentais de inglês <span className="grad-text">que falam.</span>
             </h1>
             <p className="lead">
-              Descubra seu nível, siga um plano de estudos pronto e aprenda com mapas mentais que falam:
-              120 mapas do A1 ao C2 com áudio de nativo em cada frase. Pague uma vez, acesse para sempre.
+              Cada frase do mapa tem áudio de nativo: você vê, toca, ouve e repete. Organizados do básico
+              ao avançado, com exercício que corrige na hora e um plano que diz o que estudar. Pague uma vez,
+              acesse para sempre.
             </p>
             <ul className="metodo-list">
               <li>🧭 Teste de nível + plano de estudos</li>
