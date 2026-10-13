@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { savePng } from "@/lib/savePng";
 import { Amatic_SC, Caveat, Patrick_Hand } from "next/font/google";
 import { thumb } from "@/lib/img";
 
@@ -57,6 +56,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
 
   async function downloadPng() {
     if (!pageRef.current) return;
+    const { savePng } = await import("@/lib/savePng"); // carrega o html-to-image só no clique
     await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, {
       backgroundColor: "#fffdf7",
       width: 1080,

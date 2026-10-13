@@ -1,8 +1,11 @@
 import Link from "next/link";
 import BuyButton from "./BuyButton";
-import MindMapView from "./MindMapView";
+import dynamic from "next/dynamic";
 import LevelExplorer from "./LevelExplorer";
 import ListenButton from "./ListenButton";
+
+// O mapa de amostra fica abaixo da dobra: carrega o código dele separado, sem atrasar o topo.
+const MindMapView = dynamic(() => import("./MindMapView"));
 import UseScenes from "./UseScenes";
 import { BONUS } from "@/lib/bonus";
 import { EXTRAS } from "@/lib/plans";
