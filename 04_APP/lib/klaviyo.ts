@@ -8,7 +8,8 @@ export type MfEvent =
   | "MF Acabaram os mapas do Metodo"
   | "MF Clicou em assinar"
   | "MF Comprou"
-  | "MF Cancelou";
+  | "MF Cancelou"
+  | "MF Depoimento";
 
 export async function trackKlaviyo(
   email: string | null | undefined,

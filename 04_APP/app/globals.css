@@ -834,5 +834,9 @@ a { color: inherit; }
 .us-card img { display: block; width: 100%; height: 360px; object-fit: cover; }
 .us-card figcaption { padding: 14px 16px; font-weight: 600; font-size: 15px; text-align: left; }
 @keyframes us-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .us-track { animation: none; } }
 @media (max-width: 860px) { .us-card { width: 210px; } .us-card img { height: 290px; } }
+.tf { display: grid; gap: 16px; }
+.tf label { display: grid; gap: 6px; font-weight: 600; font-size: 15px; }
+.tf input, .tf textarea { background: var(--card-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; color: var(--text); font-family: inherit; font-size: 15px; font-weight: 400; }
+.tf-stars button { background: none; border: 0; font-size: 32px; color: #fbbf24; cursor: pointer; padding: 0 2px; }
+.tf-check { display: flex !important; grid-template-columns: none; gap: 10px !important; align-items: flex-start; font-weight: 400 !important; color: var(--muted); }
