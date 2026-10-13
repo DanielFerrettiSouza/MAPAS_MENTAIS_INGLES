@@ -828,7 +828,7 @@ a { color: inherit; }
 
 
 /* Depoimentos */
-.tm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; max-width: 860px; margin: 28px auto 0; text-align: left; }
+.tm-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1080px; margin: 28px auto 0; text-align: left; }
 .tm-card { margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
 .tm-stars { color: #fbbf24; font-size: 22px; letter-spacing: 2px; }
 .tm-card blockquote { margin: 0; font-size: 17px; line-height: 1.55; }

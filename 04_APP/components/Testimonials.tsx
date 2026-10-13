@@ -1,6 +1,10 @@
 // Depoimentos reais de pessoas que testaram o método (com autorização do dono).
 const ITEMS = [
   {
+    name: "Natália",
+    text: "Tô viciada. Eu tinha muita vergonha de falar inglês, mas ficar apertando o botão pra ouvir a frase e repetir sozinha tá me ajudando a destravar.",
+  },
+  {
     name: "Lucas",
     text: "Mano, aquele bônus dos mapas com IA salvou minha vida. Pedi um mapa focado na minha entrevista de emprego pra área de TI e treinei o áudio ontem à noite...",
   },
