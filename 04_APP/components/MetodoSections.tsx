@@ -3,6 +3,7 @@ import BuyButton from "./BuyButton";
 import MindMapView from "./MindMapView";
 import LevelExplorer from "./LevelExplorer";
 import ListenButton from "./ListenButton";
+import UseScenes from "./UseScenes";
 import { BONUS } from "@/lib/bonus";
 import { EXTRAS } from "@/lib/plans";
 import { SAMPLE_MAP_SLUG } from "@/lib/library";
@@ -62,6 +63,15 @@ export default async function MetodoSections() {
 
       <section className="section">
         <div className="wrap" style={{ textAlign: "center" }}>
+          <span className="eyebrow">No seu dia a dia</span>
+          <h2 className="big-title">Estude onde <span className="grad-text">você estiver.</span></h2>
+          <p className="mt-sub">No celular, no computador ou impresso. 5 minutos já valem.</p>
+        </div>
+        <UseScenes />
+      </section>
+
+      <section className="section">
+        <div className="wrap" style={{ textAlign: "center" }}>
           <span className="eyebrow">Organização do método</span>
           <h2 className="big-title">120 mapas, do zero ao <span className="grad-text">avançado.</span></h2>
           <p className="mt-sub">Divididos pelos níveis oficiais (A1 a C2). Você começa no seu nível e sobe no seu ritmo.</p>
@@ -95,7 +105,7 @@ export default async function MetodoSections() {
               <span className="mt-bonus-tag">BÔNUS #4</span>
               <div className="mt-bonus-ico">✨</div>
               <h3>3 mapas sob medida com IA</h3>
-              <p>Sua viagem, sua entrevista, sua série favorita: digite o assunto e receba um mapa ilustrado, com áudio, em segundos.</p>
+              <p>Sua viagem, sua entrevista, sua série favorita: digite o assunto e receba um mapa organizado, com áudio, em segundos.</p>
               <ul>
                 <li><b>“Entrevista de emprego em TI”</b></li>
                 <li><b>“Viagem para Orlando com crianças”</b></li>

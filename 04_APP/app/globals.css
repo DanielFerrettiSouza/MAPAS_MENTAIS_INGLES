@@ -825,3 +825,14 @@ a { color: inherit; }
 .mt-listen b { display: block; font-size: 18px; }
 .mt-listen small { opacity: .9; font-size: 14px; }
 @keyframes mt-pulse { 0% { box-shadow: 0 0 0 0 rgba(255,255,255,.7); } 100% { box-shadow: 0 0 0 18px rgba(255,255,255,0); } }
+
+/* Cenas de uso (faixa girando da direita para a esquerda) */
+.us-wrap { overflow: hidden; margin-top: 32px; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.us-track { display: flex; gap: 20px; width: max-content; animation: us-scroll 60s linear infinite; }
+.us-wrap:hover .us-track { animation-play-state: paused; }
+.us-card { margin: 0; width: 260px; flex: none; background: var(--card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
+.us-card img { display: block; width: 100%; height: 360px; object-fit: cover; }
+.us-card figcaption { padding: 14px 16px; font-weight: 600; font-size: 15px; text-align: left; }
+@keyframes us-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .us-track { animation: none; } }
+@media (max-width: 860px) { .us-card { width: 210px; } .us-card img { height: 290px; } }
