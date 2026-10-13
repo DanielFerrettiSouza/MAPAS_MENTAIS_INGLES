@@ -30,10 +30,19 @@ const STACK = [
   "✨ Bônus #4 · 3 mapas sob medida com IA, sobre o assunto que você quiser",
 ];
 
+// Botões do meio da página: sem preço, descem até a oferta. O do final (big) mostra o preço.
 function Cta({ big }: { big?: boolean }) {
+  if (!big) {
+    return (
+      <div className="mt-cta">
+        <a href="#oferta" className="primary-btn grad-btn">Quero o Método →</a>
+        <span className="fine">🔒 Acesso vitalício · 7 dias de garantia</span>
+      </div>
+    );
+  }
   return (
     <div className="mt-cta">
-      <BuyButton label={CTA} style={big ? { fontSize: 19, padding: "18px 34px" } : undefined} />
+      <BuyButton label={CTA} style={{ fontSize: 19, padding: "18px 34px" }} />
       <span className="fine">🔒 {INSTALLMENTS} ou {PRICE} à vista · acesso vitalício · 7 dias de garantia</span>
     </div>
   );

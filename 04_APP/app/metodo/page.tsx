@@ -1,7 +1,6 @@
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import MetodoSections from "@/components/MetodoSections";
-import { EXTRAS } from "@/lib/plans";
 
 export const dynamic = "force-static";
 
@@ -31,7 +30,7 @@ export default function MetodoPage() {
             </ul>
             <div className="cta-row">
               <a href="#oferta" className="primary-btn grad-btn">Quero o Método →</a>
-              <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
+              <span className="fine">Acesso vitalício · 7 dias de garantia</span>
             </div>
           </div>
           <div className="hero-visual">
