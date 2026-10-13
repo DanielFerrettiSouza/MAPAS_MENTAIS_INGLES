@@ -61,33 +61,52 @@ export async function POST(req: Request) {
   // Compra sem conta: soma ao que já estava pendente (Método + bump + upsell podem chegar
   // em webhooks separados). Plano com "|biblioteca" = também tem o Método vitalício
   // (convertido em app/app/layout.tsx no primeiro acesso).
+  // Os avisos de compra do mesmo pedido (Método + bumps) chegam juntos: cada gravação só
+  // vale se o registro não mudou desde a leitura; se mudou, lê de novo e soma (sem apagar a outra).
   async function addPending(change: { library?: boolean; kit?: string; plan?: string; planCredits?: number; extraCredits?: number }) {
-    const { data: cur } = await admin.from("pending_upgrades").select("plan, credits").ilike("email", email!).maybeSingle();
-    const parts = (cur?.plan ?? "free").split("|");
-    let base = parts[0] === "biblioteca" || parts[0].startsWith("kit-") ? "free" : parts[0];
-    let library = parts.includes("biblioteca") || parts[0] === "biblioteca";
-    const baseCredits = base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3;
-    let extra = Math.max(0, (cur?.credits ?? 3) - baseCredits);
-    if (change.library) library = true;
-    if (change.plan) base = change.plan;
-    if (change.extraCredits) extra += change.extraCredits;
-    const credits = (change.planCredits ?? (base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3)) + extra;
-    const kits = [...new Set([...parts.filter((p: string) => p.startsWith("kit-")), ...(change.kit ? [`kit-${change.kit}`] : [])])];
-    const flags = [...(library ? ["biblioteca"] : []), ...kits];
-    const plan = base === "free" && flags.length ? flags.join("|") : [base, ...flags].join("|");
-    await admin.from("pending_upgrades").upsert({ email, plan, credits });
+    for (let attempt = 0; attempt < 8; attempt++) {
+      const { data: cur } = await admin.from("pending_upgrades").select("email, plan, credits").ilike("email", email!).maybeSingle();
+      const parts = (cur?.plan ?? "free").split("|");
+      let base = parts[0] === "biblioteca" || parts[0].startsWith("kit-") ? "free" : parts[0];
+      let library = parts.includes("biblioteca");
+      const baseCredits = base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3;
+      let extra = Math.max(0, (cur?.credits ?? 3) - baseCredits);
+      if (change.library) library = true;
+      if (change.plan) base = change.plan;
+      if (change.extraCredits) extra += change.extraCredits;
+      const credits = (change.planCredits ?? (base === "free" ? 3 : PLANS.find((p) => p.id === base)?.credits ?? 3)) + extra;
+      const kits = [...new Set([...parts.filter((p: string) => p.startsWith("kit-")), ...(change.kit ? [`kit-${change.kit}`] : [])])];
+      const flags = [...(library ? ["biblioteca"] : []), ...kits];
+      const plan = base === "free" && flags.length ? flags.join("|") : [base, ...flags].join("|");
+      if (cur) {
+        const { data: done } = await admin.from("pending_upgrades").update({ plan, credits })
+          .eq("email", cur.email).eq("plan", cur.plan).eq("credits", cur.credits).select("email");
+        if (done?.length) return;
+      } else {
+        const { error } = await admin.from("pending_upgrades").insert({ email, plan, credits });
+        if (!error) return;
+      }
+      await new Promise((r) => setTimeout(r, 80 + Math.random() * 250));
+    }
+    console.error("Kiwify: não consegui gravar a compra pendente", { email, change });
   }
+
 
   // Kits temáticos (order bumps do Método): liberam um conjunto de mapas prontos.
   const kit = kitFromProductName(productName);
   if (kit && (ACTIVATE.has(status) || DEACTIVATE.has(status))) {
     const on = ACTIVATE.has(status);
     if (profile) {
-      const { data: u } = await admin.auth.admin.getUserById(profile.id);
-      const cur = Array.isArray(u.user?.app_metadata?.kits) ? (u.user!.app_metadata.kits as string[]) : [];
-      const kits = on ? [...new Set([...cur, kit])] : cur.filter((k) => k !== kit);
-      const { error } = await admin.auth.admin.updateUserById(profile.id, { app_metadata: { kits } });
-      if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+      // Os dois kits podem chegar juntos: grava, relê e repete até o kit constar (ou sair).
+      for (let attempt = 0; attempt < 6; attempt++) {
+        const { data: u } = await admin.auth.admin.getUserById(profile.id);
+        const cur = Array.isArray(u.user?.app_metadata?.kits) ? (u.user!.app_metadata.kits as string[]) : [];
+        if (cur.includes(kit) === on) break;
+        const kits = on ? [...new Set([...cur, kit])] : cur.filter((k) => k !== kit);
+        const { error } = await admin.auth.admin.updateUserById(profile.id, { app_metadata: { kits } });
+        if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+        await new Promise((r) => setTimeout(r, 80 + Math.random() * 250));
+      }
     } else if (on) {
       await addPending({ kit });
     }
