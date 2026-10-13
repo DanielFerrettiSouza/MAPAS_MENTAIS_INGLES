@@ -2,6 +2,13 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import MetaPixel from "@/components/MetaPixel";
 import SourceTracker from "@/components/SourceTracker";
+import { Amatic_SC, Caveat, Patrick_Hand, Poppins } from "next/font/google";
+
+// Fontes servidas pelo próprio site (sem bloquear a renderização com o Google Fonts).
+const poppins = Poppins({ weight: ["400", "500", "600", "700", "800"], subsets: ["latin"], display: "swap", variable: "--font-poppins" });
+const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], display: "swap", variable: "--nb-amatic" });
+const caveat = Caveat({ weight: "600", subsets: ["latin"], display: "swap", variable: "--nb-caveat" });
+const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], display: "swap", variable: "--nb-hand" });
 
 export const metadata = {
   title: "Mapas Falantes",
@@ -10,16 +17,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={`${poppins.variable} ${amatic.variable} ${caveat.variable} ${hand.variable}`}>
       <head>
         <meta name="facebook-domain-verification" content="x38zcqzks4bc0ihm080vtnliogsl6e" />
         <meta name="facebook-domain-verification" content="60uu2ite08md6ufie2o548tr95jpnd" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@600&family=Patrick+Hand&family=Poppins:wght@400;500;600;700;800&display=swap"
-        />
       </head>
       <body>
         <MetaPixel />
