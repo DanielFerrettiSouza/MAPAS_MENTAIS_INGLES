@@ -14,7 +14,7 @@ export default function MetodoPage() {
     <>
       <SiteNav buy />
       <main>
-        <section className="wrap hero hero-solo">
+        <section className="wrap hero">
           <div>
             <span className="eyebrow">Método Mapas Falantes · do A1 ao C2</span>
             <h1>
@@ -34,6 +34,10 @@ export default function MetodoPage() {
               <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
               <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
             </div>
+          </div>
+          <div className="hero-visual">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/metodo/hero-mapas.jpg" alt="Mapas mentais de inglês: Pedindo comida, No aeroporto e Presente Perfeito" width={900} height={840} decoding="async" style={{ display: "block", width: "100%", height: "auto" }} />
           </div>
         </section>
 

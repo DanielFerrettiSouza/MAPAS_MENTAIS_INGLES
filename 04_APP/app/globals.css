@@ -839,4 +839,3 @@ a { color: inherit; }
 .tf input, .tf textarea { background: var(--card-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; color: var(--text); font-family: inherit; font-size: 15px; font-weight: 400; }
 .tf-stars button { background: none; border: 0; font-size: 32px; color: #fbbf24; cursor: pointer; padding: 0 2px; }
 .tf-check { display: flex !important; grid-template-columns: none; gap: 10px !important; align-items: flex-start; font-weight: 400 !important; color: var(--muted); }
-.hero-solo { grid-template-columns: 1fr; max-width: 860px; text-align: left; }
