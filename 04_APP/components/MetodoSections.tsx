@@ -136,7 +136,7 @@ export default function MetodoSections() {
             <span className="eyebrow">Tudo o que você recebe</span>
             <ul>{STACK.map((s) => <li key={s}>{s}</li>)}</ul>
             <div className="mt-price">
-              <small>Sem mensalidade</small>
+              <span className="mt-from">De <s>R$297</s> por apenas</span>
               <em className="mt-inst">{INSTALLMENTS}</em>
               <span className="mt-or">ou {PRICE} à vista</span>
               <span>pague uma vez · acesso vitalício</span>

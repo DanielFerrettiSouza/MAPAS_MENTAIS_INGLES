@@ -837,3 +837,4 @@ a { color: inherit; }
 .tm-card figcaption small { display: block; color: var(--muted); }
 @media (max-width: 860px) { .tm-grid { grid-template-columns: 1fr; } }
 html { scroll-behavior: smooth; }
+.mt-from { color: var(--text) !important; font-size: 20px !important; font-weight: 600; } .mt-from s { color: var(--muted); }
