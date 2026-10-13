@@ -820,23 +820,23 @@ a { color: inherit; }
 .lt-hero > span { font-size: 40px; }
 .lt-hero b { font-size: 20px; }
 .mt-listen { display: inline-flex; align-items: center; gap: 14px; margin: 22px auto 0; padding: 14px 26px 14px 14px; border-radius: 999px; border: 0; cursor: pointer; background: var(--grad); color: #fff; font-family: inherit; text-align: left; box-shadow: 0 12px 40px rgba(255,45,111,.35); }
-.mt-listen-ico { width: 52px; height: 52px; border-radius: 50%; background: #fff; color: var(--accent); display: grid; place-items: center; font-size: 22px; animation: mt-pulse 1.6s ease-out infinite; }
+.mt-listen-ico { width: 52px; height: 52px; border-radius: 50%; background: #fff; color: var(--accent); display: grid; place-items: center; font-size: 22px; }
 .mt-listen.on .mt-listen-ico { animation: none; }
 .mt-listen b { display: block; font-size: 18px; }
 .mt-listen small { opacity: .9; font-size: 14px; }
 @keyframes mt-pulse { 0% { box-shadow: 0 0 0 0 rgba(255,255,255,.7); } 100% { box-shadow: 0 0 0 18px rgba(255,255,255,0); } }
 
 /* Cenas de uso (faixa girando da direita para a esquerda) */
-.us-wrap { overflow: hidden; margin-top: 32px; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-.us-track { display: flex; gap: 20px; width: max-content; animation: us-scroll 60s linear infinite; }
-.us-wrap:hover .us-track { animation-play-state: paused; }
-.us-card { margin: 0; width: 260px; flex: none; background: var(--card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
+.us-wrap { margin: 32px auto 0; max-width: 860px; padding: 0 20px; }
+.us-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.us-card { margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
 .us-card img { display: block; width: 100%; height: 360px; object-fit: cover; }
 .us-card figcaption { padding: 14px 16px; font-weight: 600; font-size: 15px; text-align: left; }
 @keyframes us-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (max-width: 860px) { .us-card { width: 210px; } .us-card img { height: 290px; } }
+@media (max-width: 860px) { .us-track { grid-template-columns: repeat(3, 72%); overflow-x: auto; scroll-snap-type: x mandatory; } .us-card { scroll-snap-align: start; } .us-card img { height: 300px; } }
 .tf { display: grid; gap: 16px; }
 .tf label { display: grid; gap: 6px; font-weight: 600; font-size: 15px; }
 .tf input, .tf textarea { background: var(--card-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; color: var(--text); font-family: inherit; font-size: 15px; font-weight: 400; }
 .tf-stars button { background: none; border: 0; font-size: 32px; color: #fbbf24; cursor: pointer; padding: 0 2px; }
 .tf-check { display: flex !important; grid-template-columns: none; gap: 10px !important; align-items: flex-start; font-weight: 400 !important; color: var(--muted); }
+.hero-solo { grid-template-columns: 1fr; max-width: 860px; text-align: left; }

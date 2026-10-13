@@ -1,17 +1,11 @@
 import Link from "next/link";
 import BuyButton from "./BuyButton";
-import dynamic from "next/dynamic";
 import LevelExplorer from "./LevelExplorer";
 import ListenButton from "./ListenButton";
 
-// O mapa de amostra fica abaixo da dobra: carrega o código dele separado, sem atrasar o topo.
-const MindMapView = dynamic(() => import("./MindMapView"));
 import UseScenes from "./UseScenes";
 import { BONUS } from "@/lib/bonus";
 import { EXTRAS } from "@/lib/plans";
-import { SAMPLE_MAP_SLUG } from "@/lib/library";
-import { createSupabaseAdmin } from "@/lib/supa/server";
-import type { MapWithImages } from "@/lib/mapSchema";
 
 const PRICE = EXTRAS.biblioteca.price;
 // Parcela que a Kiwify mostra no checkout (12x com juros do cartão).
@@ -45,20 +39,25 @@ function Cta({ big }: { big?: boolean }) {
   );
 }
 
-export default async function MetodoSections() {
-  const { data } = await createSupabaseAdmin().from("library_maps").select("data").eq("slug", SAMPLE_MAP_SLUG).maybeSingle();
-  const sample = data?.data as MapWithImages | undefined;
+// Frases do mapa "No aeroporto" (a2-10): o áudio delas toca sem login.
+const SAMPLE_PHRASES = ["Here is my passport.", "I have one bag to check.", "I'd like a window seat.", "Is this carry-on okay?"];
+
+// Página leve: tudo estático (imagem do mapa em vez do mapa interativo, sem animações).
+export default function MetodoSections() {
 
   return (
     <>
-      {sample && (
+      {(
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
             <span className="eyebrow">🔊 Aperte o play</span>
             <h2 className="big-title">Um mapa que <span className="grad-text">fala com você.</span></h2>
-            <p className="mt-sub">Este é o mapa “No aeroporto”, do nível A2, exatamente como está no app. Toque no botão ou em qualquer frase do mapa e ouça a pronúncia de nativo.</p>
-            <ListenButton phrases={sample.branches.flatMap((b) => b.items.map((it) => it.en)).slice(0, 8)} />
-            <div className="mt-sample"><MindMapView map={sample} /></div>
+            <p className="mt-sub">Este é o mapa “No aeroporto”, do nível A2, exatamente como está no app. Toque no botão e ouça a pronúncia de nativo.</p>
+            <ListenButton phrases={SAMPLE_PHRASES} />
+            <div className="mt-sample">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/metodo/mapa-aeroporto.jpg" alt="Mapa mental No aeroporto, nível A2" width={760} height={1300} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto" }} />
+            </div>
             <Cta />
           </div>
         </section>

@@ -1,11 +1,10 @@
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
-import HeroMaps from "@/components/HeroMaps";
 import MetodoSections from "@/components/MetodoSections";
 import { EXTRAS } from "@/lib/plans";
 import BuyButton from "@/components/BuyButton";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export const metadata = { title: "Mapas Falantes — 120 mapas mentais de inglês que falam" };
 
@@ -15,7 +14,7 @@ export default function MetodoPage() {
     <>
       <SiteNav buy />
       <main>
-        <section className="wrap hero">
+        <section className="wrap hero hero-solo">
           <div>
             <span className="eyebrow">Método Mapas Falantes · do A1 ao C2</span>
             <h1>
@@ -35,9 +34,6 @@ export default function MetodoPage() {
               <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
               <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
             </div>
-          </div>
-          <div className="hero-visual">
-            <HeroMaps />
           </div>
         </section>
 
