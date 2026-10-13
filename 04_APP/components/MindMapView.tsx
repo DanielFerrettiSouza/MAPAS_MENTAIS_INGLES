@@ -6,9 +6,9 @@ import { Amatic_SC, Caveat, Patrick_Hand } from "next/font/google";
 import { thumb } from "@/lib/img";
 
 // Fontes hospedadas no próprio site para o PNG sair com as mesmas letras da tela.
-const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], variable: "--nb-amatic" });
-const caveat = Caveat({ weight: "600", subsets: ["latin"], variable: "--nb-caveat" });
-const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], variable: "--nb-hand" });
+const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], preload: false, variable: "--nb-amatic" });
+const caveat = Caveat({ weight: "600", subsets: ["latin"], preload: false, variable: "--nb-caveat" });
+const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], preload: false, variable: "--nb-hand" });
 import type { MapWithImages } from "@/lib/mapSchema";
 
 // Cores das seções no estilo "página de caderno" (borda + fundo suave).

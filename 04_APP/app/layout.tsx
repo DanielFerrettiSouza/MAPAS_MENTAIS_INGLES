@@ -5,10 +5,11 @@ import SourceTracker from "@/components/SourceTracker";
 import { Amatic_SC, Caveat, Patrick_Hand, Poppins } from "next/font/google";
 
 // Fontes servidas pelo próprio site (sem bloquear a renderização com o Google Fonts).
-const poppins = Poppins({ weight: ["400", "500", "600", "700", "800"], subsets: ["latin"], display: "swap", variable: "--font-poppins" });
-const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], display: "swap", variable: "--nb-amatic" });
-const caveat = Caveat({ weight: "600", subsets: ["latin"], display: "swap", variable: "--nb-caveat" });
-const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], display: "swap", variable: "--nb-hand" });
+// Poppins com "optional": o texto do topo aparece de primeira, sem trocar de fonte depois (isso atrasava o LCP).
+const poppins = Poppins({ weight: ["400", "600", "700", "800"], subsets: ["latin"], display: "optional", variable: "--font-poppins" });
+const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], display: "swap", preload: false, variable: "--nb-amatic" });
+const caveat = Caveat({ weight: "600", subsets: ["latin"], display: "swap", preload: false, variable: "--nb-caveat" });
+const hand = Patrick_Hand({ weight: "400", subsets: ["latin"], display: "swap", preload: false, variable: "--nb-hand" });
 
 export const metadata = {
   title: "Mapas Falantes",
