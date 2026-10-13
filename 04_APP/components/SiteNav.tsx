@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import BuyButton from "./BuyButton";
 
-// Na página do método (buy), o menu leva só à compra: sem "testar grátis" nem preços das assinaturas.
+// Na página do método (buy), o botão do menu desce até a oferta: sem "testar grátis" nem preços das assinaturas.
 export default function SiteNav({ buy = false }: { buy?: boolean }) {
   return (
     <header className="site-nav">
@@ -12,7 +11,7 @@ export default function SiteNav({ buy = false }: { buy?: boolean }) {
       {buy ? (
         <nav>
           <Link href="/entrar">Entrar</Link>
-          <BuyButton label="Quero o Método" />
+          <a href="#oferta" className="primary-btn grad-btn">Quero o Método</a>
         </nav>
       ) : (
         <nav>

@@ -2,7 +2,6 @@ import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import MetodoSections from "@/components/MetodoSections";
 import { EXTRAS } from "@/lib/plans";
-import BuyButton from "@/components/BuyButton";
 
 export const dynamic = "force-static";
 
@@ -31,7 +30,7 @@ export default function MetodoPage() {
               <li>🎁 4 bônus: 500 frases, 100 verbos, 150 gírias e 3 mapas com IA</li>
             </ul>
             <div className="cta-row">
-              <BuyButton label={`Quero o Método por ${EXTRAS.biblioteca.price} →`} />
+              <a href="#oferta" className="primary-btn grad-btn">{`Quero o Método por ${EXTRAS.biblioteca.price} →`}</a>
               <span className="fine">{EXTRAS.biblioteca.installments} ou {EXTRAS.biblioteca.price} à vista · acesso vitalício · 7 dias de garantia</span>
             </div>
           </div>
