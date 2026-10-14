@@ -143,8 +143,9 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                 map.emoji && <span className="nb-cover-emoji">{map.emoji}</span>
               )}
               <strong>{map.title_en}</strong>
-              <span>{map.summary_pt}</span>
             </div>
+            {/* A descrição fica fora do círculo: assim nunca é cortada, seja qual for o tamanho. */}
+            {map.summary_pt && <p className="nb-summary">{map.summary_pt}</p>}
 
             <div className="nb-card nb-tip">
               <div className="nb-card-head">💡 Dica rápida</div>
