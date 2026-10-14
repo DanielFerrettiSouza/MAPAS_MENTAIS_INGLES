@@ -2,7 +2,6 @@
 
 import { useRef, useState } from "react";
 import { Amatic_SC, Caveat, Patrick_Hand } from "next/font/google";
-import { thumb } from "@/lib/img";
 
 // Fontes hospedadas no próprio site para o PNG sair com as mesmas letras da tela.
 const amatic = Amatic_SC({ weight: "700", subsets: ["latin"], preload: false, variable: "--nb-amatic" });
@@ -87,7 +86,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
         </div>
         {s.image ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img className="nb-icon" src={thumb(s.image, 256)} alt="" loading="lazy" decoding="async" />
+          <img className="nb-icon" src={s.image} alt="" crossOrigin="anonymous" />
         ) : (
           s.branch.emoji && <span className="nb-icon nb-emoji">{s.branch.emoji}</span>
         )}
@@ -139,7 +138,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
             <div className="nb-circle">
               {map.cover_image ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={thumb(map.cover_image, 640)} alt="" decoding="async" />
+                <img src={map.cover_image} alt="" crossOrigin="anonymous" />
               ) : (
                 map.emoji && <span className="nb-cover-emoji">{map.emoji}</span>
               )}
