@@ -106,7 +106,7 @@ async function takeIllustrations(node: HTMLElement) {
       const url = cs.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];
       if (!url) return null;
       try {
-        const blob = await (await fetch(url, { mode: "cors", cache: "force-cache" })).blob();
+        const blob = await fetchBlob(url);
         const bmp = await loadImage(blob);
         const k = Math.min(1, 600 / Math.max(bmp.width, bmp.height));
         const c = document.createElement("canvas");
@@ -156,7 +156,7 @@ async function takeIllustrations(node: HTMLElement) {
   const imgs = await Promise.all(
     Array.from(node.querySelectorAll<HTMLImageElement>("img")).filter((im) => /^https?:/.test(im.src)).map(async (im) => {
       try {
-        const blob = await (await fetch(im.src, { mode: "cors", cache: "force-cache" })).blob();
+        const blob = await fetchBlob(im.src);
         const bmp = await loadImage(blob);
         const k = Math.min(1, 600 / Math.max(bmp.width, bmp.height));
         const c = document.createElement("canvas");
@@ -182,4 +182,15 @@ function loadImage(blob: Blob) {
     img.onerror = fail;
     img.src = URL.createObjectURL(blob);
   });
+}
+
+// Baixa a imagem com CORS. Se a cópia do cache veio de um carregamento sem CORS (o navegador
+// a recusa na primeira tentativa), busca de novo direto do servidor, sem cache.
+async function fetchBlob(url: string) {
+  try {
+    const r = await fetch(url, { mode: "cors", cache: "force-cache" });
+    if (r.ok) return await r.blob();
+  } catch {}
+  const r = await fetch(`${url}${url.includes("?") ? "&" : "?"}x=${Date.now()}`, { mode: "cors", cache: "no-store" });
+  return await r.blob();
 }
