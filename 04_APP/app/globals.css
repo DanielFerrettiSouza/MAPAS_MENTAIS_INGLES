@@ -838,3 +838,7 @@ a { color: inherit; }
 @media (max-width: 860px) { .tm-grid { grid-template-columns: 1fr; } }
 html { scroll-behavior: smooth; }
 .mt-from { color: var(--text) !important; font-size: 20px !important; font-weight: 600; } .mt-from s { color: var(--muted); }
+/* Círculo central: o texto fica sempre dentro (descrição longa encolhe e corta em 3 linhas) */
+.nb-circle { padding: 13%; overflow: hidden; }
+.nb-circle img { width: 34%; }
+.nb-circle span { font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
