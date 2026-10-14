@@ -51,7 +51,7 @@ export async function savePng(node: HTMLElement, fileName: string, opts: Opts = 
     }
     blob = await new Promise<Blob | null>((ok) => canvas.toBlob(ok, "image/png"));
   } finally {
-    ills.forEach((it) => (it.el.style.backgroundImage = it.saved));
+    ills.forEach((it) => it.restore());
     if (prev === null) node.removeAttribute("style");
     else node.setAttribute("style", prev);
   }
@@ -146,13 +146,33 @@ async function takeIllustrations(node: HTMLElement) {
           cover: cs.backgroundSize.endsWith("%") ? size / 100 : 0,
         };
         el.style.backgroundImage = "none";
+        return { ...it, restore: () => (el.style.backgroundImage = it.saved) };
+      } catch {
+        return null;
+      }
+    })
+  );
+  // Imagens <img> (mapas no layout de caderno): mesmo esquema, desenhadas por cima depois.
+  const imgs = await Promise.all(
+    Array.from(node.querySelectorAll<HTMLImageElement>("img")).filter((im) => /^https?:/.test(im.src)).map(async (im) => {
+      try {
+        const blob = await (await fetch(im.src, { mode: "cors", cache: "force-cache" })).blob();
+        const bmp = await loadImage(blob);
+        const k = Math.min(1, 600 / Math.max(bmp.width, bmp.height));
+        const c = document.createElement("canvas");
+        c.width = Math.round(bmp.width * k);
+        c.height = Math.round(bmp.height * k);
+        c.getContext("2d")!.drawImage(bmp, 0, 0, c.width, c.height);
+        const savedVis = im.style.visibility;
+        const it = { el: im as HTMLElement, saved: "", img: c, rect: im.getBoundingClientRect(), round: false, border: 0, cover: 0, restore: () => (im.style.visibility = savedVis) };
+        im.style.visibility = "hidden";
         return it;
       } catch {
         return null;
       }
     })
   );
-  return out.filter((x): x is NonNullable<typeof x> => !!x);
+  return [...out, ...imgs].filter((x): x is NonNullable<typeof x> => !!x);
 }
 
 function loadImage(blob: Blob) {
