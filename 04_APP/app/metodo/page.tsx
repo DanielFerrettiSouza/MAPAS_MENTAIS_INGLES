@@ -4,7 +4,7 @@ import MetodoSections from "@/components/MetodoSections";
 
 export const dynamic = "force-static";
 
-export const metadata = { title: "Mapas Falantes — 120 mapas mentais de inglês que falam" };
+export const metadata = { title: "Método Mapas Falantes — estude inglês do A1 ao C2" };
 
 // Página dos anúncios do método: vende o Método vitalício direto no checkout, com "testar grátis" secundário.
 export default function MetodoPage() {
@@ -14,24 +14,28 @@ export default function MetodoPage() {
       <main>
         <section className="wrap hero">
           <div>
-            <span className="eyebrow">Método Mapas Falantes · do A1 ao C2</span>
+            <span className="eyebrow">MÉTODO MAPAS FALANTES · DO A1 AO C2</span>
             <h1>
-              120 mapas mentais de inglês <span className="grad-text">que falam.</span>
+              Um método completo para aprender inglês <span className="grad-text">ouvindo e praticando.</span>
             </h1>
             <p className="lead">
-              Cada frase do mapa tem áudio de nativo: você vê, toca, ouve e repete. Organizados do básico
-              ao avançado, com exercício que corrige na hora e um plano que diz o que estudar. Pague uma vez,
-              acesse para sempre.
+              Saiba o que estudar em cada etapa, acompanhe seu progresso e pratique com mapas ilustrados,
+              áudio de pronúncia nativa e exercícios. Com o acesso vitalício, você tem um caminho organizado para estudar com direção e constância.
             </p>
             <ul className="metodo-list">
-              <li>🧭 Teste de nível + plano de estudos</li>
-              <li>📚 120 mapas prontos do A1 ao C2, com áudio e exercício</li>
-              <li>🎁 4 bônus: 500 frases, 100 verbos, 150 gírias e 3 mapas com IA</li>
+              <li>🧭 Teste de nível, plano de estudos e acompanhamento do progresso</li>
+              <li>📚 120 mapas prontos do A1 ao C2, com áudio nativo e exercícios</li>
+              <li>🎁 Bônus: 500 frases, 100 verbos e 150 expressões e gírias com áudio</li>
+              <li>✨ 3 criações de mapas por IA incluídas para personalizar seus estudos</li>
             </ul>
             <div className="cta-row">
               <a href="#oferta" className="primary-btn grad-btn">Quero o Método →</a>
-              <span className="fine">Acesso vitalício · 7 dias de garantia</span>
+              <span className="fine">Pagamento único · acesso vitalício · 7 dias de garantia</span>
             </div>
+            <p className="fine" style={{ marginTop: 14, maxWidth: 560, lineHeight: 1.5 }}>
+              As 3 criações por IA estão incluídas na compra. Para criar mapas adicionais com IA depois,
+              será necessário assinar um plano.
+            </p>
           </div>
           <div className="hero-visual">
             {/* eslint-disable-next-line @next/next/no-img-element */}
