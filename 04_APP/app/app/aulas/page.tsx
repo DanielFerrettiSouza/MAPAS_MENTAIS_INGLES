@@ -23,8 +23,8 @@ export default async function AulasPage() {
             <h2 style={{ margin: "4px 0 10px" }}>{a.titulo}</h2>
             <ol style={{ margin: 0, paddingLeft: 20, lineHeight: 1.6 }}>{a.roteiro.map((r) => <li key={r}>{r}</li>)}</ol>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 14 }}>
-              <Link href={`/app/audiobooks/${a.audiobook}`} className="primary-btn grad-btn">🎧 {book?.title_en ?? "Audiobook"}</Link>
-              <Link href={`/app/biblioteca/${a.mapa}`} className="ghost-btn">🗺️ Abrir o mapa</Link>
+              <Link href={`/app/audiobooks/${a.audiobook}?de=aula`} className="primary-btn grad-btn">🎧 {book?.title_en ?? "Audiobook"}</Link>
+              <Link href={`/app/biblioteca/${a.mapa}?de=aula`} className="ghost-btn">🗺️ Abrir o mapa</Link>
               <a href={`/imprimir/biblioteca/${a.mapa}`} target="_blank" rel="noopener" className="ghost-btn">🖨️ Atividade para imprimir</a>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 10 }}>

@@ -32,7 +32,9 @@ export default async function LibraryMapPage({
   ]);
   if (!data) notFound();
   const fromPlan = searchParams.de === "plano";
-  const back = fromPlan
+  const back = searchParams.de === "aula"
+    ? { href: "/app/aulas", label: "← Voltar à aula pronta" }
+    : fromPlan
     ? { href: `/app/plano${searchParams.objetivo ? `?objetivo=${encodeURIComponent(searchParams.objetivo)}` : ""}`, label: "← Voltar ao meu plano" }
     : { href: `/app/biblioteca?nivel=${data.level}`, label: "← Voltar à biblioteca" };
   const map = data.data as MapWithImages;
