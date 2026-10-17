@@ -6,19 +6,22 @@ import { getCurrentUser, getProfile } from "@/lib/supa/server";
 import { checkoutUrl } from "@/lib/plans";
 import { redirect } from "next/navigation";
 import { canUseLibrary } from "@/lib/library";
+import { isAdmin } from "@/lib/admin";
 
 export const dynamic = "force-dynamic";
 
-export default async function PlansPage({ searchParams }: { searchParams: { plano?: string } }) {
+export default async function PlansPage({ searchParams }: { searchParams: { plano?: string; ver?: string } }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   // Veio da landing já com um plano escolhido: vai direto ao checkout.
   const direct = searchParams.plano && checkoutUrl(searchParams.plano, user.email);
   if (direct) redirect(direct);
 
-  const plan = profile?.plan ?? "free";
+  // Dono do site: ?ver=metodo mostra a tela como um comprador do Método.
+  const preview = searchParams.ver === "metodo" && isAdmin(user.email);
+  const plan = preview ? "free" : profile?.plan ?? "free";
   // Assinante: só troca de plano.
-  if (plan !== "free") {
+  if (plan !== "free" && !preview) {
     return (
       <>
         <h1 className="app-hello">Escolha seu plano</h1>
@@ -30,7 +33,7 @@ export default async function PlansPage({ searchParams }: { searchParams: { plan
   }
 
   // Dono do Método: só o que a assinatura soma ao que ele já tem.
-  if (canUseLibrary(plan, user)) {
+  if (preview || canUseLibrary(plan, user)) {
     return (
       <>
         <h1 className="app-hello">Vá além do <span className="grad-text">Método</span></h1>
