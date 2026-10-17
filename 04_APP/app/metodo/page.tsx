@@ -39,7 +39,7 @@ export default function MetodoPage() {
           </div>
           <div className="hero-visual">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/metodo/hero-mapas.jpg" alt="Mapas mentais de inglês: Pedindo comida, No aeroporto e Presente Perfeito" width={900} height={840} decoding="async" style={{ display: "block", width: "100%", height: "auto" }} />
+            <img src="/metodo/hero-mapas.webp" fetchPriority="high" alt="Mapas mentais de inglês: Pedindo comida, No aeroporto e Presente Perfeito" width={900} height={840} style={{ display: "block", width: "100%", height: "auto" }} />
           </div>
         </section>
 

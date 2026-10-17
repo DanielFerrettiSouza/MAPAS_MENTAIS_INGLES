@@ -65,7 +65,7 @@ export default function MetodoSections() {
             <ListenButton phrases={SAMPLE_PHRASES} />
             <div className="mt-sample">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/metodo/mapa-aeroporto.jpg" alt="Mapa mental No aeroporto, nível A2" width={760} height={1300} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto" }} />
+              <img src="/metodo/mapa-aeroporto.webp" alt="Mapa mental No aeroporto, nível A2" width={760} height={1300} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto" }} />
             </div>
             <Cta />
           </div>
