@@ -4,6 +4,7 @@ import { createSupabaseAdmin } from "@/lib/supa/server";
 import { trackKlaviyo } from "@/lib/klaviyo";
 import { EXTRAS, PLANS, extraFromProductName, planFromProductName } from "@/lib/plans";
 import { kitFromProductName } from "@/lib/kits";
+import { sendCapi } from "@/lib/capi";
 
 export const runtime = "nodejs";
 
@@ -62,6 +63,24 @@ export async function POST(req: Request) {
       checkout_link: event.checkout_link ?? null,
     });
     return NextResponse.json({ ok: true, abandoned: true });
+  }
+
+  // Compra paga: avisa a Meta pelo servidor (API de Conversões), com o valor real de cada
+  // pedido (Método e cada order bump). Só no pagamento aprovado, não no Pix gerado.
+  if (ACTIVATE.has(status) && status !== "subscription_renewed") {
+    const c = event.Commissions ?? {};
+    const cents = Number(c.charge_amount ?? c.product_base_price ?? 0);
+    const t = event.TrackingParameters ?? {};
+    await sendCapi({
+      event_name: "Purchase",
+      event_id: `kiwify-${event.order_id ?? event.order_ref ?? `${email}-${productName}`}`,
+      event_source_url: "https://www.mapasfalantes.com.br/metodo",
+      email,
+      ip: event.Customer?.ip ?? null,
+      fbc: t.fbclid ? `fb.1.${Date.now()}.${t.fbclid}` : null,
+      custom_data: { value: cents / 100, currency: "BRL", content_name: productName, order_id: event.order_id },
+    });
+    console.log("Kiwify → Meta Purchase:", { value: cents / 100, productName, order: event.order_id });
   }
 
   const admin = createSupabaseAdmin();
