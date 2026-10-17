@@ -20,6 +20,7 @@ export default async function MapaDoDiaPage() {
           <h2 style={{ margin: "0 0 10px", fontSize: 20 }}>
             {p.title} <small className="app-sub" style={{ fontSize: 14, fontWeight: 400 }}>· {fmt(p.date)}</small>
           </h2>
+          <a href={`/imprimir/mapa-do-dia/${p.id}`} target="_blank" rel="noopener" className="ghost-btn print-link" style={{ display: "inline-block", marginBottom: 10 }}>🖨️ Imprimir</a>
           <div className="mdd-strip">
             {p.slides.map((src, i) => (
               // eslint-disable-next-line @next/next/no-img-element
