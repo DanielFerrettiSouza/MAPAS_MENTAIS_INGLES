@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
@@ -82,6 +83,7 @@ export default async function AdminPage() {
   return (
     <>
       <h1 className="app-hello">Painel <span className="grad-text">admin</span></h1>
+      <Link href="/app/admin/depoimentos" className="ghost-btn" style={{ display: "inline-block", marginBottom: 16 }}>💬 Ver depoimentos</Link>
       <p className="app-sub">Funil e uso do app. Contas criadas → geraram mapa → usaram os grátis → assinaram.</p>
 
       <div className="admin-funnel">
