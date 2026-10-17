@@ -60,7 +60,8 @@ export async function POST(req: Request) {
     await trackKlaviyo(email, "MF Abandonou checkout", {
       produto: extraFromProductName(name) ?? kitFromProductName(name) ?? planFromProductName(name)?.id ?? name,
       produto_nome: name,
-      checkout_link: event.checkout_link ?? null,
+      // A Kiwify manda só o código do checkout (ex.: "NDaCasU"): vira o link completo.
+      checkout_link: event.checkout_link ? (String(event.checkout_link).startsWith("http") ? event.checkout_link : `https://pay.kiwify.com.br/${event.checkout_link}`) : null,
     });
     return NextResponse.json({ ok: true, abandoned: true });
   }
