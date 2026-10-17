@@ -7,6 +7,7 @@ import { isAdmin } from "@/lib/admin";
 import { userKits } from "@/lib/kits";
 import type { MapWithImages } from "@/lib/mapSchema";
 import { canTeach } from "@/lib/teacher";
+import ClassLinkButton from "@/components/ClassLinkButton";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,7 @@ export default async function KitMapPage({ params }: { params: { slug: string } 
     <>
       <Link href="/app/kits" className="back-link">← Voltar aos kits</Link>
       {canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
       <div style={{ height: 16 }} />
       <MindMapView map={map} />
       {map.quiz?.length > 0 && <ReviewQuiz quiz={map.quiz} />}

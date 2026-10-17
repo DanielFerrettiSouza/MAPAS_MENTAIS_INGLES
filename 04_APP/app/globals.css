@@ -895,3 +895,5 @@ html { scroll-behavior: smooth; }
   .pr-break { break-before: page; }
 }
 .print-link { display: inline-block; margin: 0 0 0 12px; padding: 8px 14px; font-size: 14px; }
+.class-link { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.class-link-url { margin-left: 12px; max-width: 360px; font-size: 13px; padding: 8px 10px; }

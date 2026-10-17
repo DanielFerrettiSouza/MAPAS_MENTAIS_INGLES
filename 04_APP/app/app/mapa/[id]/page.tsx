@@ -6,6 +6,7 @@ import ReviewQuiz from "@/components/ReviewQuiz";
 import { createSupabaseServer, getCurrentUser, getProfile } from "@/lib/supa/server";
 import type { MapWithImages } from "@/lib/mapSchema";
 import { canTeach } from "@/lib/teacher";
+import ClassLinkButton from "@/components/ClassLinkButton";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,7 @@ export default async function MapPage({ params }: { params: { id: string } }) {
     <>
       <Link href="/app" className="back-link">← Voltar ao início</Link>
       {canTeach(profile?.plan, user?.email) && <a href={`/imprimir/meu/${params.id}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {canTeach(profile?.plan, user?.email) && <ClassLinkButton tipo="meu" id={params.id} />}
       <div style={{ height: 16 }} />
       {outOfFree && (
         <div className="out-banner">

@@ -8,6 +8,7 @@ import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/serv
 import { canUseLibrary, FREE_LIBRARY_SLUGS } from "@/lib/library";
 import type { MapWithImages } from "@/lib/mapSchema";
 import { canTeach } from "@/lib/teacher";
+import ClassLinkButton from "@/components/ClassLinkButton";
 
 export const dynamic = "force-dynamic";
 
@@ -40,6 +41,7 @@ export default async function LibraryMapPage({
     <>
       <Link href={back.href} className="back-link">{back.label}</Link>
       {canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
       <div style={{ height: 16 }} />
       <MindMapView map={map} />
       <div style={{ marginTop: 12 }}><StudyToggle slug={params.slug} done={!!prog} /></div>
