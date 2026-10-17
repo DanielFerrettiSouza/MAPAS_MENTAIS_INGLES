@@ -29,7 +29,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$59,90",
     credits: 30,
     features: ["30 mapas por mês", "Áudio nativo em cada frase", "Exercícios e revisão", "Histórico dos seus mapas", "Download em PNG"],
-    metodoFeatures: ["Tudo do Método: 120 mapas (A1–C2), teste de nível e plano de estudos", "Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "30 mapas com IA por mês, sobre o assunto que você quiser", "Histórico de todos os seus mapas"],
+    metodoFeatures: ["Tudo do Método: 120 mapas, plano de estudos e bônus", "30 mapas com IA por mês, sobre o assunto que você quiser", "🎧 1 audiobook novo por mês, com texto em inglês e português (em breve)"],
   },
   {
     id: "fluente",
@@ -40,7 +40,7 @@ export const PLANS: Plan[] = [
     credits: 60,
     highlight: true,
     features: ["60 mapas por mês", "Tudo do Essencial", "Biblioteca com 120 mapas prontos (A1–C2)", "Plano de estudos pelo seu objetivo", "🎁 Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "Suporte prioritário"],
-    metodoFeatures: ["Tudo do Essencial", "60 mapas com IA por mês", "🎧 Audiobook novo todo mês, com texto em inglês e português (em breve)", "🗣️ Correção de pronúncia: grave a frase e veja o que ajustar (em breve)", "Suporte prioritário"],
+    metodoFeatures: ["Tudo do Essencial", "60 mapas com IA por mês", "🎧 2 audiobooks novos por mês (em breve)", "🗣️ Correção de pronúncia: grave a frase e veja o que ajustar (em breve)", "Suporte prioritário"],
   },
   {
     id: "professor",
@@ -50,7 +50,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$199,90",
     credits: 100,
     features: ["100 mapas por mês", "Tudo do Fluente", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
-    metodoFeatures: ["100 mapas com IA por mês", "Tudo do Fluente", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
+    metodoFeatures: ["Tudo do Fluente", "100 mapas com IA por mês", "🎧 Todos os audiobooks lançados (em breve)", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
   },
 ];
 
