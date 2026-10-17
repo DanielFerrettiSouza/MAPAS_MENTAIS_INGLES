@@ -16,7 +16,7 @@ export default async function AudiobookPage({ params }: { params: { id: string }
       <p className="app-sub">🎧 Audiobook · nível {book.level}</p>
       <h1 className="app-hello">{book.title_en}</h1>
       <p className="app-sub">{book.title_pt}</p>
-      <AudiobookPlayer sentences={book.sentences} />
+      <AudiobookPlayer audio={book.audio} sentences={book.sentences} />
     </>
   );
 }

@@ -1,44 +1,39 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
-// Toca a história frase a frase (áudio do /api/tts) e destaca a frase atual.
-// Tocar numa frase começa dali.
-export default function AudiobookPlayer({ sentences }: { sentences: { en: string; pt: string }[] }) {
-  const [current, setCurrent] = useState<number | null>(null);
-  const [playing, setPlaying] = useState(false);
+// Toca a história inteira de forma contínua e destaca a frase que está sendo lida.
+// Tocar numa frase pula para ela.
+export default function AudiobookPlayer({ audio, sentences }: { audio: string; sentences: { en: string; pt: string; t: number }[] }) {
+  const [current, setCurrent] = useState(-1);
   const [showPt, setShowPt] = useState(true);
-  const audio = useRef<HTMLAudioElement | null>(null);
+  const player = useRef<HTMLAudioElement>(null);
   const rows = useRef<(HTMLDivElement | null)[]>([]);
 
-  useEffect(() => () => audio.current?.pause(), []);
-
-  function play(i: number) {
-    audio.current?.pause();
-    if (i >= sentences.length) { setPlaying(false); setCurrent(null); return; }
-    const a = new Audio(`/api/tts?text=${encodeURIComponent(sentences[i].en)}`);
-    audio.current = a;
-    setCurrent(i);
-    setPlaying(true);
-    rows.current[i]?.scrollIntoView({ block: "center", behavior: "smooth" });
-    a.onended = () => play(i + 1);
-    a.play().catch(() => setPlaying(false));
+  function onTime() {
+    const now = player.current?.currentTime ?? 0;
+    let i = -1;
+    while (i + 1 < sentences.length && sentences[i + 1].t <= now + 0.05) i++;
+    if (i !== current) {
+      setCurrent(i);
+      rows.current[i]?.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
   }
 
-  function toggle() {
-    if (playing) { audio.current?.pause(); setPlaying(false); }
-    else if (audio.current && current !== null) { audio.current.play(); setPlaying(true); }
-    else play(0);
+  function jump(i: number) {
+    if (!player.current) return;
+    player.current.currentTime = sentences[i].t;
+    void player.current.play();
   }
 
   return (
     <div className="ab-player">
       <div className="ab-controls">
-        <button className="primary-btn grad-btn" onClick={toggle}>{playing ? "⏸ Pausar" : current !== null ? "▶ Continuar" : "▶ Ouvir a história"}</button>
+        <audio ref={player} src={audio} controls preload="metadata" onTimeUpdate={onTime} />
         <button className="ghost-btn" onClick={() => setShowPt(!showPt)}>{showPt ? "Esconder tradução" : "Mostrar tradução"}</button>
       </div>
       <div className="ab-text">
         {sentences.map((s, i) => (
-          <div key={i} ref={(el) => { rows.current[i] = el; }} className={`ab-line${i === current ? " on" : ""}`} onClick={() => play(i)}>
+          <div key={i} ref={(el) => { rows.current[i] = el; }} className={`ab-line${i === current ? " on" : ""}`} onClick={() => jump(i)}>
             <p className="en">{s.en}</p>
             {showPt && <p className="pt">{s.pt}</p>}
           </div>

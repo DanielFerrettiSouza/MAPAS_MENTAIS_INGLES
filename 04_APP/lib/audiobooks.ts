@@ -1,6 +1,5 @@
 // Audiobooks dos assinantes: histórias curtas com áudio de nativo frase a frase.
-// Cada um é escrito uma vez (texto em lib/audiobooks/*.json) e o áudio de cada
-// frase sai do /api/tts, gerado uma vez e guardado para todos.
+// Cada um é escrito e narrado uma vez (lib/audiobooks/*.json + áudio no Storage).
 import nycA2 from "./audiobooks/nyc-a2.json";
 
 export type Audiobook = {
@@ -9,7 +8,8 @@ export type Audiobook = {
   title_pt: string;
   level: string;
   summary_pt: string;
-  sentences: { en: string; pt: string }[];
+  audio: string; // história inteira num áudio só
+  sentences: { en: string; pt: string; t: number }[]; // t = segundo em que a frase começa
 };
 
 export const AUDIOBOOKS: Audiobook[] = [{ id: "nyc-a2", ...nycA2 }];

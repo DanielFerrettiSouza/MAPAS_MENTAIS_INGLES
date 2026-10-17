@@ -854,10 +854,11 @@ html { scroll-behavior: smooth; }
 .ab-level { align-self: flex-start; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 99px; background: var(--card-2); }
 .ab-go { margin-top: 10px; font-weight: 700; color: var(--accent); }
 .ab-player { max-width: 760px; margin-top: 18px; }
-.ab-controls { display: flex; flex-wrap: wrap; gap: 10px; position: sticky; top: 0; padding: 10px 0; background: var(--bg); z-index: 2; }
+.ab-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; position: sticky; top: 0; padding: 10px 0; background: var(--bg); z-index: 2; }
 .ab-text { display: grid; gap: 6px; margin-top: 8px; }
 .ab-line { padding: 12px 14px; border-radius: 12px; cursor: pointer; border: 1px solid transparent; }
 .ab-line:hover { background: var(--card); }
 .ab-line.on { background: var(--card); border-color: var(--accent); }
 .ab-line .en { margin: 0; font-size: 18px; font-weight: 600; }
 .ab-line .pt { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.ab-controls audio { flex: 1 1 320px; min-width: 0; }
