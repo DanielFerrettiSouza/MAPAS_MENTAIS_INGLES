@@ -40,7 +40,7 @@ export const PLANS: Plan[] = [
     credits: 30,
     highlight: true,
     features: ["30 mapas por mês", "Tudo do Essencial", "Biblioteca com 120 mapas prontos (A1–C2)", "Plano de estudos pelo seu objetivo", "🎁 Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "Suporte prioritário"],
-    metodoFeatures: ["Tudo do Essencial", "30 mapas com IA por mês", "🎧 2 audiobooks novos por mês", "🗣️ Correção de pronúncia: grave a frase e veja o que ajustar", "Suporte prioritário"],
+    metodoFeatures: ["Tudo do Essencial", "30 mapas com IA por mês", "🎧 2 audiobooks novos por mês", "Suporte prioritário"],
   },
   {
     id: "professor",
