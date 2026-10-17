@@ -265,5 +265,6 @@
       "t": 188.47
     }
   ],
-  "audio": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/audiobooks/nyc-a2.mp3"
+  "audio": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/audiobooks/nyc-a2.mp3",
+  "duration": 192.2
 }

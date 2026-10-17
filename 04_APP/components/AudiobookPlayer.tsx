@@ -3,12 +3,12 @@ import { useRef, useState } from "react";
 
 // Toca a história inteira de forma contínua e destaca a frase que está sendo lida.
 // Tocar numa frase pula para ela.
-export default function AudiobookPlayer({ audio, sentences }: { audio: string; sentences: { en: string; pt: string; t: number }[] }) {
+export default function AudiobookPlayer({ audio, duration, sentences }: { audio: string; duration: number; sentences: { en: string; pt: string; t: number }[] }) {
   const [current, setCurrent] = useState(-1);
   const [showPt, setShowPt] = useState(true);
   const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
-  const [total, setTotal] = useState(0);
+  const total = duration;
   const player = useRef<HTMLAudioElement>(null);
   const rows = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -41,10 +41,10 @@ export default function AudiobookPlayer({ audio, sentences }: { audio: string; s
   return (
     <div className="ab-player">
       <div className="ab-controls">
-        <audio ref={player} src={audio} preload="metadata" onTimeUpdate={onTime} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onLoadedMetadata={(e) => setTotal(e.currentTarget.duration)} />
+        <audio ref={player} src={audio} preload="metadata" onTimeUpdate={onTime} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} />
         <button className="primary-btn grad-btn" onClick={toggle}>{playing ? "⏸ Pausar" : time > 0 ? "▶ Continuar" : "▶ Ouvir a história"}</button>
-        <input className="ab-seek" type="range" min={0} max={total || 1} step={0.5} value={time} aria-label="Posição do áudio"
-          onChange={(e) => { if (player.current) player.current.currentTime = Number(e.target.value); }} />
+        <input className="ab-seek" type="range" min={0} max={total} step={0.5} value={time} aria-label="Posição do áudio"
+          onChange={(e) => { const v = Number(e.target.value); setTime(v); if (player.current) player.current.currentTime = v; onTime(); }} />
         <span className="ab-time">{fmt(time)} / {fmt(total)}</span>
         <button className="ghost-btn" onClick={() => setShowPt(!showPt)}>{showPt ? "Esconder tradução" : "Mostrar tradução"}</button>
       </div>

@@ -9,6 +9,7 @@ export type Audiobook = {
   level: string;
   summary_pt: string;
   audio: string; // história inteira num áudio só
+  duration: number; // segundos
   sentences: { en: string; pt: string; t: number }[]; // t = segundo em que a frase começa
 };
 
