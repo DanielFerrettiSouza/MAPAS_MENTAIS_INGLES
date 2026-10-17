@@ -38,11 +38,11 @@ export async function POST(req: Request) {
   // A Kiwify pode mandar os dados na raiz ou dentro de "order".
   const body = JSON.parse(raw);
   const event = body.order ?? body;
-  const status: string = event.webhook_event_type ?? event.order_status ?? "";
-  const email: string | undefined = event.Customer?.email?.trim().toLowerCase();
+  const status: string = event.webhook_event_type ?? event.order_status ?? event.status ?? "";
+  const email: string | undefined = (event.Customer?.email ?? event.email)?.trim().toLowerCase();
   // O plano pode estar no nome do produto, da oferta ou do plano de assinatura.
   const productName: string = [
-    event.Product?.product_name,
+    event.Product?.product_name ?? event.product_name,
     event.Product?.product_offer_name,
     event.Subscription?.plan?.name,
   ]
@@ -50,6 +50,19 @@ export async function POST(req: Request) {
     .join(" ");
   console.log("Kiwify:", { status, email, productName });
   if (!email) return NextResponse.json({ ok: true, ignored: "sem e-mail" });
+
+  // Carrinho abandonado: a pessoa preencheu o checkout e não pagou. Vira evento no
+  // Klaviyo para o fluxo de recuperação (quem comprar depois sai do fluxo).
+  if (/abandon/i.test(status) || (!event.order_status && event.checkout_link)) {
+    console.log("Kiwify carrinho abandonado (campos):", Object.keys(event).join(","));
+    const name = productName || String(event.product_name ?? "");
+    await trackKlaviyo(email, "MF Abandonou checkout", {
+      produto: extraFromProductName(name) ?? kitFromProductName(name) ?? planFromProductName(name)?.id ?? name,
+      produto_nome: name,
+      checkout_link: event.checkout_link ?? null,
+    });
+    return NextResponse.json({ ok: true, abandoned: true });
+  }
 
   const admin = createSupabaseAdmin();
   const { data: profile } = await admin

@@ -2,6 +2,7 @@
 // Métricas com prefixo "MF" (Mapas Falantes).
 export type MfEvent =
   | "MF Fez o quiz"
+  | "MF Abandonou checkout"
   | "MF Criou conta"
   | "MF Gerou mapa"
   | "MF Acabaram os mapas gratis"
