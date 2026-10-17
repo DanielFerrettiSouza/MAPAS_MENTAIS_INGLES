@@ -861,4 +861,5 @@ html { scroll-behavior: smooth; }
 .ab-line.on { background: var(--card); border-color: var(--accent); }
 .ab-line .en { margin: 0; font-size: 18px; font-weight: 600; }
 .ab-line .pt { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
-.ab-controls audio { flex: 1 1 320px; min-width: 0; }
+.ab-seek { flex: 1 1 200px; min-width: 0; accent-color: var(--accent); }
+.ab-time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }

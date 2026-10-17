@@ -6,11 +6,15 @@ import { useRef, useState } from "react";
 export default function AudiobookPlayer({ audio, sentences }: { audio: string; sentences: { en: string; pt: string; t: number }[] }) {
   const [current, setCurrent] = useState(-1);
   const [showPt, setShowPt] = useState(true);
+  const [playing, setPlaying] = useState(false);
+  const [time, setTime] = useState(0);
+  const [total, setTotal] = useState(0);
   const player = useRef<HTMLAudioElement>(null);
   const rows = useRef<(HTMLDivElement | null)[]>([]);
 
   function onTime() {
     const now = player.current?.currentTime ?? 0;
+    setTime(now);
     let i = -1;
     while (i + 1 < sentences.length && sentences[i + 1].t <= now + 0.05) i++;
     if (i !== current) {
@@ -25,10 +29,23 @@ export default function AudiobookPlayer({ audio, sentences }: { audio: string; s
     void player.current.play();
   }
 
+  function toggle() {
+    const a = player.current;
+    if (!a) return;
+    if (a.paused) void a.play();
+    else a.pause();
+  }
+
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+
   return (
     <div className="ab-player">
       <div className="ab-controls">
-        <audio ref={player} src={audio} controls preload="metadata" onTimeUpdate={onTime} />
+        <audio ref={player} src={audio} preload="metadata" onTimeUpdate={onTime} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onLoadedMetadata={(e) => setTotal(e.currentTarget.duration)} />
+        <button className="primary-btn grad-btn" onClick={toggle}>{playing ? "⏸ Pausar" : time > 0 ? "▶ Continuar" : "▶ Ouvir a história"}</button>
+        <input className="ab-seek" type="range" min={0} max={total || 1} step={0.5} value={time} aria-label="Posição do áudio"
+          onChange={(e) => { if (player.current) player.current.currentTime = Number(e.target.value); }} />
+        <span className="ab-time">{fmt(time)} / {fmt(total)}</span>
         <button className="ghost-btn" onClick={() => setShowPt(!showPt)}>{showPt ? "Esconder tradução" : "Mostrar tradução"}</button>
       </div>
       <div className="ab-text">
