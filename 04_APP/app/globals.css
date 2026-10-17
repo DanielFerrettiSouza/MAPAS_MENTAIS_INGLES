@@ -316,6 +316,7 @@ a { color: inherit; }
 .testimonial p { color: #d4d4d8; line-height: 1.6; margin: 0 0 14px; }
 .testimonial small { color: var(--muted); }
 .plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; align-items: stretch; }
+.plans.three { grid-template-columns: repeat(3, 1fr); max-width: 1100px; }
 .plan {
   position: relative; border: 1px solid var(--border); border-radius: 22px; padding: 26px 22px; background: var(--card);
   display: flex; flex-direction: column;

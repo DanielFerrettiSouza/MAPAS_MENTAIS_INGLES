@@ -5,6 +5,7 @@ import HeroMaps from "@/components/HeroMaps";
 import { getCurrentUser, getProfile } from "@/lib/supa/server";
 import { checkoutUrl } from "@/lib/plans";
 import { redirect } from "next/navigation";
+import { canUseLibrary } from "@/lib/library";
 
 export const dynamic = "force-dynamic";
 
@@ -22,7 +23,19 @@ export default async function PlansPage({ searchParams }: { searchParams: { plan
       <>
         <h1 className="app-hello">Escolha seu plano</h1>
         <p className="app-sub">Mais mapas, mais áudio, mais revisão. Cancele quando quiser. 7 dias de garantia.</p>
-        <PlansGrid ctaHref="/app/planos" currentPlan={plan} email={user.email} />
+        <PlansGrid ctaHref="/app/planos" currentPlan={plan} email={user.email} metodo={canUseLibrary(plan, user)} />
+        <Guarantee />
+      </>
+    );
+  }
+
+  // Dono do Método: só o que a assinatura soma ao que ele já tem.
+  if (canUseLibrary(plan, user)) {
+    return (
+      <>
+        <h1 className="app-hello">Vá além do <span className="grad-text">Método</span></h1>
+        <p className="app-sub">Você já tem os 120 mapas, o plano de estudos e os bônus. A assinatura soma mapas novos com IA todo mês e, no Fluente, todos os kits temáticos. Cancele quando quiser. 7 dias de garantia.</p>
+        <PlansGrid ctaHref="/app/planos" currentPlan={plan} email={user.email} metodo />
         <Guarantee />
       </>
     );

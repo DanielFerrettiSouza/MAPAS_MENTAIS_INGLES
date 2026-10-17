@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
+import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
 import { KITS, kitSlug, userKits } from "@/lib/kits";
 import { checkoutUrl } from "@/lib/plans";
@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 // Kits temáticos: 20 mapas prontos cada, liberados para quem comprou o kit.
 export default async function KitsPage() {
   const user = (await getCurrentUser())!;
-  const mine = userKits(user);
+  const mine = userKits(user, (await getProfile(user.id))?.plan);
   const { data: maps } = await createSupabaseAdmin().from("library_maps").select("slug, title_pt, data->cover_image, data->emoji").like("slug", "kit-%");
   const ready = new Map((maps ?? []).map((m) => [m.slug as string, m as { slug: string; title_pt: string; cover_image: string | null; emoji: string | null }]));
 

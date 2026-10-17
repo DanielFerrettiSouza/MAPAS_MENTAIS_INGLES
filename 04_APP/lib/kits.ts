@@ -71,7 +71,9 @@ export function kitFromProductName(name: string): string | null {
 }
 
 type UserLike = { email?: string | null; app_metadata?: Record<string, unknown> } | null | undefined;
-export function userKits(user: UserLike): string[] {
+export function userKits(user: UserLike, plan?: string | null): string[] {
+  // Fluente e Professor: todos os kits liberados (inclusive os próximos).
+  if (plan === "fluente" || plan === "professor") return KITS.map((k) => k.id);
   const k = user?.app_metadata?.kits;
   return Array.isArray(k) ? (k as string[]) : [];
 }

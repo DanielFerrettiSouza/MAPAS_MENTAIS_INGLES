@@ -11,15 +11,17 @@ export default function PlansGrid({
   currentPlan,
   email,
   direct = false,
+  metodo = false,
 }: {
   ctaHref?: string;
   direct?: boolean;
   currentPlan?: string;
   email?: string | null;
+  metodo?: boolean;
 }) {
   return (
-    <div className="plans">
-      {PLANS.map((p) => (
+    <div className={`plans${metodo ? " three" : ""}`}>
+      {PLANS.filter((p) => !metodo || p.id !== "free").map((p) => (
         <div key={p.id} className={`plan ${p.highlight ? "highlight" : ""}`}>
           {p.highlight && <span className="badge-pop">Mais popular</span>}
           <h3>{p.name}</h3>
@@ -30,7 +32,7 @@ export default function PlansGrid({
           </div>
           {p.oldPrice && <div className="old">{p.oldPrice}/mês</div>}
           <ul>
-            {p.features.map((f) => (
+            {(metodo && p.metodoFeatures ? p.metodoFeatures : p.features).map((f) => (
               <li key={f}>{f}</li>
             ))}
           </ul>
