@@ -28,8 +28,8 @@ export default async function AulasPage() {
               <a href={`/imprimir/biblioteca/${a.mapa}`} target="_blank" rel="noopener" className="ghost-btn">🖨️ Atividade para imprimir</a>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 10 }}>
-              <ClassLinkButton tipo="audiobook" id={a.audiobook} />
-              <ClassLinkButton tipo="biblioteca" id={a.mapa} />
+              <ClassLinkButton tipo="audiobook" id={a.audiobook} label="Link do audiobook para a turma" />
+              <ClassLinkButton tipo="biblioteca" id={a.mapa} label="Link do mapa para a turma" />
             </div>
           </section>
         );
