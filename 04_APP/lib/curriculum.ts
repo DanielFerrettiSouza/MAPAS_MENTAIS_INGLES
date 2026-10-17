@@ -80,4 +80,4 @@ export function goalTag(goal?: string | null) {
   return "d";
 }
 
-export const LIBRARY_PLANS = ["fluente", "professor"];
+export const LIBRARY_PLANS = ["essencial", "fluente", "professor"];
