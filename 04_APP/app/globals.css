@@ -844,3 +844,20 @@ html { scroll-behavior: smooth; }
 .nb-circle img { width: 68%; transform: scale(1.35); mix-blend-mode: multiply; margin-bottom: 6%; }
 .nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); overflow-wrap: anywhere; }
 .nb-summary { text-align: center; font-size: 16px; line-height: 1.4; color: #44403c; margin: 12px 8px 0; }
+
+/* Audiobooks */
+.ab-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 20px; }
+.ab-card { display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid var(--border); border-radius: 18px; background: var(--card); color: var(--text); text-decoration: none; }
+.ab-card h3 { margin: 4px 0 0; font-size: 20px; }
+.ab-card p { margin: 0; color: var(--muted); }
+.ab-card small { color: var(--muted); line-height: 1.5; }
+.ab-level { align-self: flex-start; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 99px; background: var(--card-2); }
+.ab-go { margin-top: 10px; font-weight: 700; color: var(--accent); }
+.ab-player { max-width: 760px; margin-top: 18px; }
+.ab-controls { display: flex; flex-wrap: wrap; gap: 10px; position: sticky; top: 0; padding: 10px 0; background: var(--bg); z-index: 2; }
+.ab-text { display: grid; gap: 6px; margin-top: 8px; }
+.ab-line { padding: 12px 14px; border-radius: 12px; cursor: pointer; border: 1px solid transparent; }
+.ab-line:hover { background: var(--card); }
+.ab-line.on { background: var(--card); border-color: var(--accent); }
+.ab-line .en { margin: 0; font-size: 18px; font-weight: 600; }
+.ab-line .pt { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
