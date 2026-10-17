@@ -29,7 +29,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$59,90",
     credits: 30,
     features: ["30 mapas por mês", "Áudio nativo em cada frase", "Exercícios e revisão", "Histórico dos seus mapas", "Download em PNG"],
-    metodoFeatures: ["30 mapas com IA por mês, sobre o assunto que você quiser", "Áudio nativo em cada frase", "Exercício e revisão em cada mapa", "Histórico e download em PNG"],
+    metodoFeatures: ["Tudo do Método: 120 mapas (A1–C2), teste de nível e plano de estudos", "Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "30 mapas com IA por mês, sobre o assunto que você quiser", "Histórico e download em PNG"],
   },
   {
     id: "fluente",
