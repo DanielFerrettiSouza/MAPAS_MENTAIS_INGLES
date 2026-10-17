@@ -29,7 +29,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$59,90",
     credits: 30,
     features: ["30 mapas por mês", "Áudio nativo em cada frase", "Exercícios e revisão", "Histórico dos seus mapas", "Download em PNG"],
-    metodoFeatures: ["Tudo do Método: 120 mapas (A1–C2), teste de nível e plano de estudos", "Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "30 mapas com IA por mês, sobre o assunto que você quiser", "Histórico e download em PNG"],
+    metodoFeatures: ["Tudo do Método: 120 mapas (A1–C2), teste de nível e plano de estudos", "Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "30 mapas com IA por mês, sobre o assunto que você quiser", "Histórico de todos os seus mapas"],
   },
   {
     id: "fluente",
@@ -40,7 +40,7 @@ export const PLANS: Plan[] = [
     credits: 60,
     highlight: true,
     features: ["60 mapas por mês", "Tudo do Essencial", "Biblioteca com 120 mapas prontos (A1–C2)", "Plano de estudos pelo seu objetivo", "🎁 Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "Suporte prioritário"],
-    metodoFeatures: ["60 mapas com IA por mês", "Todos os kits temáticos liberados: Viagem e Trabalho (40 mapas)", "1 kit novo todo mês", "Tudo do Essencial", "Suporte prioritário"],
+    metodoFeatures: ["Tudo do Essencial", "60 mapas com IA por mês", "🎧 Audiobook novo todo mês, com texto em inglês e português (em breve)", "🗣️ Correção de pronúncia: grave a frase e veja o que ajustar (em breve)", "Suporte prioritário"],
   },
   {
     id: "professor",
