@@ -24,8 +24,8 @@ export async function POST(req: Request) {
   let photo: string | null = null;
   const file = form.get("photo");
   if (file instanceof File && file.size > 0) {
-    if (file.size > 5_000_000 || !/^image\/(jpeg|png|webp)$/.test(file.type)) {
-      return NextResponse.json({ error: "Foto em JPG, PNG ou WEBP, até 5 MB." }, { status: 400 });
+    if (file.size > 10_000_000 || !/^image\/(jpeg|png|webp|heic|heif)$/.test(file.type)) {
+      return NextResponse.json({ error: "Foto em JPG, PNG, WEBP ou HEIC, até 10 MB." }, { status: 400 });
     }
     const ext = file.type.split("/")[1].replace("jpeg", "jpg");
     const path = `depoimentos/${id}.${ext}`;
@@ -36,5 +36,18 @@ export async function POST(req: Request) {
   const { error } = await admin.storage.from("map-images").upload(`depoimentos/${id}.json`, JSON.stringify(record, null, 2), { contentType: "application/json" });
   if (error) return NextResponse.json({ error: "Não foi possível salvar. Tente de novo." }, { status: 500 });
   await trackKlaviyo(email, "MF Depoimento", { stars, text: text.slice(0, 200) });
-  return NextResponse.json({ ok: true });
+
+  // Presente: 5 mapas com IA, uma vez por conta. Sem conta ainda, fica pendente para o cadastro.
+  let gift: "ok" | "ja" | "sem-conta" = "sem-conta";
+  const { data: profile } = await admin.from("profiles").select("id, credits").ilike("email", email).maybeSingle();
+  if (profile) {
+    const { data: u } = await admin.auth.admin.getUserById(profile.id);
+    gift = "ja";
+    if (!u.user?.app_metadata?.depoimento_bonus) {
+      await admin.from("profiles").update({ credits: (profile.credits ?? 0) + 5 }).eq("id", profile.id);
+      await admin.auth.admin.updateUserById(profile.id, { app_metadata: { depoimento_bonus: true } });
+      gift = "ok";
+    }
+  }
+  return NextResponse.json({ ok: true, gift });
 }

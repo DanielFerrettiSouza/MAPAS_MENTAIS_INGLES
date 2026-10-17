@@ -897,3 +897,19 @@ html { scroll-behavior: smooth; }
 .print-link { display: inline-block; margin: 0 0 0 12px; padding: 8px 14px; font-size: 14px; }
 .class-link { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .class-link-url { margin-left: 12px; max-width: 360px; font-size: 13px; padding: 8px 10px; }
+
+/* Formulário de depoimento */
+.tf { display: flex; flex-direction: column; gap: 18px; }
+.tf label { display: flex; flex-direction: column; gap: 8px; font-weight: 600; font-size: 15px; }
+.tf label small { font-weight: 400; color: var(--muted); }
+.tf input[type="text"], .tf input[type="email"], .tf input:not([type]), .tf textarea {
+  width: 100%; padding: 14px 16px; font-size: 16px; font-family: inherit; font-weight: 400;
+  border: 1px solid var(--border); border-radius: 14px; background: var(--card-2); color: var(--text); box-sizing: border-box;
+}
+.tf textarea { resize: vertical; min-height: 120px; }
+.tf input[type="file"] { font-family: inherit; font-weight: 400; color: var(--muted); }
+.tf-stars { display: flex; gap: 6px; }
+.tf-stars button { background: none; border: none; font-size: 32px; line-height: 1; color: #ffb020; cursor: pointer; padding: 0; }
+.tf label.tf-check { flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 400; font-size: 14px; color: var(--muted); }
+.tf label.tf-check input { margin-top: 3px; flex: none; }
+.tf-gift { background: linear-gradient(90deg, rgba(255,45,111,.15), rgba(255,138,61,.12)); border: 1px dashed #ff8a3d; border-radius: 14px; padding: 12px 16px; font-size: 15px; }
