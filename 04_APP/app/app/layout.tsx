@@ -49,6 +49,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <Link href="/app/plano" className="side-link"><IconCalendar /><span>Meu plano</span></Link>
         <Link href="/app/kits" className="side-link"><IconMaps /><span>Kits</span></Link>
         <Link href="/app/audiobooks" className="side-link"><IconBook /><span>Audiobooks</span></Link>
+        <Link href="/app/mapa-do-dia" className="side-link"><IconCalendar /><span>Mapa do dia</span></Link>
         {canTeach(profile?.plan, user.email) && <Link href="/app/aulas" className="side-link"><IconCalendar /><span>Aula pronta</span></Link>}
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
         {isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
