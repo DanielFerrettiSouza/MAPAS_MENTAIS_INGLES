@@ -29,7 +29,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$59,90",
     credits: 15,
     features: ["15 mapas por mês", "Áudio nativo em cada frase", "Exercícios e revisão", "Histórico dos seus mapas", "Download em PNG"],
-    metodoFeatures: ["Tudo do Método: 120 mapas, plano de estudos e bônus", "15 mapas com IA por mês, sobre o assunto que você quiser", "🎧 1 audiobook novo por mês, com texto em inglês e português"],
+    metodoFeatures: ["Tudo do Método: 120 mapas, plano de estudos e bônus", "15 mapas com IA por mês, sobre o assunto que você quiser", "🎧 2 audiobooks novos por mês, com texto em inglês e português"],
   },
   {
     id: "fluente",
@@ -40,7 +40,7 @@ export const PLANS: Plan[] = [
     credits: 30,
     highlight: true,
     features: ["30 mapas por mês", "Tudo do Essencial", "Biblioteca com 120 mapas prontos (A1–C2)", "Plano de estudos pelo seu objetivo", "🎁 Bônus: 500 frases, 100 verbos e 150 expressões com áudio", "Suporte prioritário"],
-    metodoFeatures: ["Tudo do Essencial", "30 mapas com IA por mês", "🎧 2 audiobooks novos por mês", "Suporte prioritário"],
+    metodoFeatures: ["Tudo do Essencial", "30 mapas com IA por mês", "🎧 4 audiobooks novos por mês (1 por semana)", "Suporte prioritário"],
   },
   {
     id: "professor",
@@ -50,7 +50,7 @@ export const PLANS: Plan[] = [
     oldPrice: "R$199,90",
     credits: 50,
     features: ["50 mapas por mês", "Tudo do Fluente", "Mapas para imprimir e usar em aula", "Uso comercial com seus alunos"],
-    metodoFeatures: ["Tudo do Fluente", "50 mapas com IA por mês", "📦 Aula pronta toda semana: audiobook + mapa + atividade com gabarito", "🔗 Link para a turma: alunos ouvem no celular, sem criar conta", "📝 Atividade em PDF com 1 clique, a partir de qualquer mapa", "🏷️ Material com o seu nome para entregar aos alunos"],
+    metodoFeatures: ["Tudo do Fluente", "50 mapas com IA por mês", "🎧 8 audiobooks novos por mês (2 por semana), para usar em aula", "📦 Aula pronta toda semana: audiobook + mapa + atividade com gabarito", "🔗 Link para a turma: alunos ouvem no celular, sem criar conta", "📝 Atividade em PDF com 1 clique, a partir de qualquer mapa", "🏷️ Material com o seu nome para entregar aos alunos"],
   },
 ];
 
