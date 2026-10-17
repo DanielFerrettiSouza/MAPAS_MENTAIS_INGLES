@@ -36,3 +36,13 @@ export async function changePassword(_: FormState, form: FormData): Promise<Form
   if (error) return { error: "Não foi possível trocar a senha. Saia e entre de novo e tente outra vez." };
   return { ok: "Senha alterada!" };
 }
+
+// Nome que sai no topo do material impresso (plano Professor).
+export async function saveTeacherName(_: FormState, form: FormData): Promise<FormState> {
+  const user = await getCurrentUser();
+  if (!user) return { error: "Faça login de novo." };
+  const teacher_name = String(form.get("teacher_name") ?? "").trim().slice(0, 80);
+  const { error } = await createSupabaseServer().auth.updateUser({ data: { teacher_name } });
+  if (error) return { error: "Não foi possível salvar. Tente de novo." };
+  return { ok: "Salvo! Seu nome vai sair no material impresso." };
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import { changePassword, saveProfile, type FormState } from "@/app/app/configuracoes/actions";
+import { saveTeacherName, changePassword, saveProfile, type FormState } from "@/app/app/configuracoes/actions";
 
 const LEVELS = [
   ["A1", "A1 · Iniciante"],
@@ -43,6 +43,19 @@ export function ProfileForm({ name, level, goal }: { name: string; level: string
       </label>
       <Msg s={state} />
       <Submit label="Salvar perfil" />
+    </form>
+  );
+}
+
+export function TeacherForm({ name }: { name: string }) {
+  const [state, action] = useFormState(saveTeacherName, {});
+  return (
+    <form action={action} className="settings-card">
+      <h3>🏷️ Material para a turma</h3>
+      <p style={{ color: "var(--muted)", margin: 0 }}>Esse nome sai no topo de tudo o que você imprimir para os alunos.</p>
+      <label>Nome no material<input className="field" name="teacher_name" defaultValue={name} maxLength={80} placeholder="Ex.: Prof. Ana Souza · English School" /></label>
+      <Msg s={state} />
+      <Submit label="Salvar nome" />
     </form>
   );
 }

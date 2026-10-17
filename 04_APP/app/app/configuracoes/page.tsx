@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { PasswordForm, ProfileForm } from "@/components/SettingsForms";
+import { PasswordForm, ProfileForm, TeacherForm } from "@/components/SettingsForms";
+import { canTeach, teacherName } from "@/lib/teacher";
 import { getCurrentUser, getProfile } from "@/lib/supa/server";
 import { planName } from "@/lib/plans";
 
@@ -32,6 +33,7 @@ export default async function Settings({ searchParams }: { searchParams: { "nova
         {!usesPassword && (
           <p style={{ color: "var(--muted)", margin: 0 }}>Você entra com a sua conta Google. Se quiser, pode criar uma senha também para entrar com e-mail.</p>
         )}
+        {canTeach(profile?.plan, user.email) && <TeacherForm name={teacherName(user)} />}
         <PasswordForm />
         <div className="settings-card">
           <h3>Sua conta</h3>
