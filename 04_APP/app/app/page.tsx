@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { IconCrown, IconRepeat } from "@/components/Icons";
+import { IconCalendar, IconCrown, IconRepeat } from "@/components/Icons";
 import QuickCreate from "@/components/QuickCreate";
 import QuizPlan from "@/components/QuizPlan";
 import OfferCard from "@/components/OfferCard";
@@ -53,6 +53,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Record
       <div className="quick-actions">
         <QuickCreate credits={credits} />
         <Link href="/app/mapas" className="qa purple"><IconRepeat /> Revisar meus mapas</Link>
+        <Link href="/app/mapa-do-dia" className="qa orange"><IconCalendar /> Mapa do dia</Link>
         <Link href="/app/planos" className="qa green"><IconCrown /> Planos</Link>
       </div>
 
