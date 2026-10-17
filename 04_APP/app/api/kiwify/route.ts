@@ -72,13 +72,25 @@ export async function POST(req: Request) {
     const c = event.Commissions ?? {};
     const cents = Number(c.charge_amount ?? c.product_base_price ?? 0);
     const t = event.TrackingParameters ?? {};
+    const cu = event.Customer ?? {};
+    // O site manda "fbp~fbc" no parâmetro sck do checkout (components/SourceTracker.tsx).
+    const [sckFbp, sckFbc] = String(t.sck ?? "").split("~");
+    const names = String(cu.full_name ?? cu.first_name ?? "").trim().split(/\s+/);
     await sendCapi({
       event_name: "Purchase",
       event_id: `kiwify-${event.order_id ?? event.order_ref ?? `${email}-${productName}`}`,
       event_source_url: "https://www.mapasfalantes.com.br/metodo",
       email,
-      ip: event.Customer?.ip ?? null,
-      fbc: t.fbclid ? `fb.1.${Date.now()}.${t.fbclid}` : null,
+      ip: cu.ip ?? null,
+      fbp: sckFbp?.startsWith("fb.") ? sckFbp : null,
+      fbc: sckFbc?.startsWith("fb.") ? sckFbc : t.fbclid ? `fb.1.${Date.now()}.${t.fbclid}` : null,
+      phone: cu.mobile ?? null,
+      first_name: names[0] || null,
+      last_name: names.length > 1 ? names[names.length - 1] : null,
+      city: cu.city ?? null,
+      state: cu.state ?? null,
+      zip: cu.zipcode ?? null,
+      country: "br",
       custom_data: { value: cents / 100, currency: "BRL", content_name: productName, order_id: event.order_id },
     });
     console.log("Kiwify → Meta Purchase:", { value: cents / 100, productName, order: event.order_id });

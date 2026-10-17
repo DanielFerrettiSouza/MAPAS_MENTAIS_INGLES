@@ -37,6 +37,7 @@ export default function SourceTracker() {
       for (const f of UTM_FIELDS) if (q.get(f)) utm[f] = q.get(f)!;
       if (!utm.utm_source && q.get("fbclid")) utm.utm_source = "facebook";
       if (Object.keys(utm).length) localStorage.setItem(UTM_KEY, JSON.stringify(utm));
+      if (q.get("fbclid")) localStorage.setItem("mf_fbc", `fb.1.${Date.now()}.${q.get("fbclid")}`);
     } catch {}
     const onClick = (e: MouseEvent) => {
       const a = (e.target as Element | null)?.closest?.("a[href*='pay.kiwify.com.br']") as HTMLAnchorElement | null;
@@ -45,6 +46,11 @@ export default function SourceTracker() {
         const utm = JSON.parse(localStorage.getItem(UTM_KEY) ?? "{}") as Record<string, string>;
         const url = new URL(a.href);
         for (const [k, v] of Object.entries(utm)) if (!url.searchParams.has(k)) url.searchParams.set(k, v);
+        // Cookies do pixel (fbp e fbc) vão no sck: o webhook da Kiwify devolve e a compra
+        // chega à Meta ligada ao clique no anúncio.
+        const cookie = (n: string) => document.cookie.match(new RegExp(`(?:^|; )${n}=([^;]*)`))?.[1] ?? "";
+        const fbc = cookie("_fbc") || localStorage.getItem("mf_fbc") || "";
+        if (!url.searchParams.has("sck") && (cookie("_fbp") || fbc)) url.searchParams.set("sck", `${cookie("_fbp")}~${fbc}`);
         a.href = url.toString();
       } catch {}
     };

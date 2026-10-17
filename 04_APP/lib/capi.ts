@@ -15,6 +15,14 @@ export type CapiEvent = {
   fbp?: string | null;
   fbc?: string | null;
   custom_data?: Record<string, unknown>;
+  // Dados extras do comprador (vêm da Kiwify): melhoram a correspondência da compra com quem viu o anúncio.
+  phone?: string | null;
+  first_name?: string | null;
+  last_name?: string | null;
+  city?: string | null;
+  state?: string | null;
+  zip?: string | null;
+  country?: string | null;
 };
 
 const sha256 = (v: string) => createHash("sha256").update(v.trim().toLowerCase()).digest("hex");
@@ -30,6 +38,15 @@ export async function sendCapi(e: CapiEvent) {
   if (e.user_agent) user_data.client_user_agent = e.user_agent;
   if (e.fbp) user_data.fbp = e.fbp;
   if (e.fbc) user_data.fbc = e.fbc;
+  const norm = (v?: string | null) => (v ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const phone = (e.phone ?? "").replace(/\D/g, "");
+  if (phone) user_data.ph = [sha256(phone.length <= 11 ? `55${phone}` : phone)];
+  if (norm(e.first_name)) user_data.fn = [sha256(norm(e.first_name))];
+  if (norm(e.last_name)) user_data.ln = [sha256(norm(e.last_name))];
+  if (norm(e.city)) user_data.ct = [sha256(norm(e.city))];
+  if (norm(e.state)) user_data.st = [sha256(norm(e.state))];
+  if (norm(e.zip)) user_data.zp = [sha256(norm(e.zip))];
+  if (norm(e.country)) user_data.country = [sha256(norm(e.country))];
 
   const body: Record<string, unknown> = {
     data: [
