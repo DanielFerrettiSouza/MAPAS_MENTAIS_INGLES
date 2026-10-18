@@ -79,8 +79,51 @@ export default function PublicPlansPage() {
 
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
-            <span className="eyebrow">👩‍🏫 Para quem ensina</span>
-            <h2 className="big-title">Plano Professor: <span className="grad-text">aula pronta toda semana.</span></h2>
+            <span className="eyebrow">✓ Em todos os planos</span>
+            <h2 className="big-title">A base completa, <span className="grad-text">já incluída.</span></h2>
+            <p className="mt-sub">Qualquer plano que você escolher já vem com o Método inteiro liberado.</p>
+            <div className="mt-who">
+              <div><span>🧭</span><h3>Teste de nível e plano de estudos</h3><p>Você descobre seu nível e recebe um caminho pelo seu objetivo, com o progresso acompanhado.</p></div>
+              <div><span>📚</span><h3>120 mapas do A1 ao C2</h3><p>Mapas prontos e ilustrados, com áudio de nativo, exercício e quiz de revisão em cada um.</p></div>
+              <div><span>🎁</span><h3>Bônus com áudio</h3><p>500 frases mais usadas, 100 verbos essenciais e 150 expressões e gírias.</p></div>
+              <div><span>🗂️</span><h3>Histórico dos seus mapas</h3><p>Tudo o que você cria fica salvo na sua conta para revisar quando quiser.</p></div>
+              <div><span>🖨️</span><h3>Baixe e imprima</h3><p>Salve os mapas em imagem para estudar no papel ou offline.</p></div>
+              <div><span>📱</span><h3>No celular, tablet ou computador</h3><p>Coloque o app na tela inicial do celular e estude em qualquer lugar.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="wrap" style={{ textAlign: "center" }}>
+            <span className="eyebrow">🌱 Plano Essencial · R$29,90/mês</span>
+            <h2 className="big-title">Para estudar <span className="grad-text">no seu ritmo.</span></h2>
+            <p className="mt-sub">Para quem estuda alguns dias por semana e quer conteúdo novo sem pressa.</p>
+            <div className="mt-who">
+              <div><span>✨</span><h3>15 mapas com IA por mês</h3><p>Um mapa novo a cada dois dias, sobre os assuntos que importam para você.</p></div>
+              <div><span>🎧</span><h3>2 audiobooks novos por mês</h3><p>Histórias no seu nível para treinar o ouvido, com texto em inglês e português.</p></div>
+              <div><span>📚</span><h3>Método completo</h3><p>Os 120 mapas, o plano de estudos e os bônus, tudo liberado.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="wrap" style={{ textAlign: "center" }}>
+            <span className="eyebrow">🔥 Plano Fluente · R$49,90/mês · mais popular</span>
+            <h2 className="big-title">Para quem quer <span className="grad-text">estudar todo dia.</span></h2>
+            <p className="mt-sub">O dobro de conteúdo novo para manter o hábito diário e evoluir mais rápido.</p>
+            <div className="mt-who">
+              <div><span>✨</span><h3>30 mapas com IA por mês</h3><p>Um mapa novo por dia: prepare a reunião, a viagem, a entrevista, o que aparecer.</p></div>
+              <div><span>🎧</span><h3>4 audiobooks por mês</h3><p>Uma história nova toda semana para treinar a escuta.</p></div>
+              <div><span>💬</span><h3>Suporte prioritário</h3><p>Dúvidas sobre o app ou os estudos respondidas primeiro.</p></div>
+            </div>
+            <Cta />
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="wrap" style={{ textAlign: "center" }}>
+            <span className="eyebrow">👩‍🏫 Plano Professor · R$99,90/mês</span>
+            <h2 className="big-title">Para quem ensina: <span className="grad-text">aula pronta toda semana.</span></h2>
             <p className="mt-sub">Menos tempo preparando material, mais tempo ensinando.</p>
             <div className="mt-who">
               <div><span>📦</span><h3>Aula pronta</h3><p>Toda semana: audiobook, mapa e atividade com gabarito, prontos para usar.</p></div>
