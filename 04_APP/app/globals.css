@@ -924,3 +924,5 @@ html { scroll-behavior: smooth; }
 .pl-compare td:first-child, .pl-compare th:first-child { text-align: left; }
 .pl-compare th { font-weight: 800; }
 .pl-compare .pl-price td { font-weight: 800; border-bottom: 0; }
+.pl-name { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; font-size: clamp(32px, 6vw, 46px); font-weight: 800; padding: 16px 36px; margin-bottom: 8px; border: 2px solid var(--border); border-radius: 18px; background: var(--card); }
+.pl-name small { font-size: 19px; font-weight: 600; color: var(--muted); }

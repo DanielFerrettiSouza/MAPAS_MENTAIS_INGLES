@@ -95,7 +95,7 @@ export default function PublicPlansPage() {
 
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
-            <span className="eyebrow">🌱 Plano Essencial · R$29,90/mês</span>
+            <div className="pl-name">🌱 Plano Essencial<small>R$29,90/mês</small></div>
             <h2 className="big-title">Para estudar <span className="grad-text">no seu ritmo.</span></h2>
             <p className="mt-sub">Para quem estuda alguns dias por semana e quer conteúdo novo sem pressa.</p>
             <div className="mt-who">
@@ -108,7 +108,7 @@ export default function PublicPlansPage() {
 
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
-            <span className="eyebrow">🔥 Plano Fluente · R$49,90/mês · mais popular</span>
+            <div className="pl-name">🔥 Plano Fluente<small>R$49,90/mês · mais popular</small></div>
             <h2 className="big-title">Para quem quer <span className="grad-text">estudar todo dia.</span></h2>
             <p className="mt-sub">O dobro de conteúdo novo para manter o hábito diário e evoluir mais rápido.</p>
             <div className="mt-who">
@@ -122,7 +122,7 @@ export default function PublicPlansPage() {
 
         <section className="section">
           <div className="wrap" style={{ textAlign: "center" }}>
-            <span className="eyebrow">👩‍🏫 Plano Professor · R$99,90/mês</span>
+            <div className="pl-name">👩‍🏫 Plano Professor<small>R$99,90/mês</small></div>
             <h2 className="big-title">Para quem ensina: <span className="grad-text">aula pronta toda semana.</span></h2>
             <p className="mt-sub">Menos tempo preparando material, mais tempo ensinando.</p>
             <div className="mt-who">
