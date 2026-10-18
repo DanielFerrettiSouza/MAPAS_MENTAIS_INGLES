@@ -453,7 +453,7 @@ a { color: inherit; }
 @media (max-width: 900px) {
   .hero, .compare, .step { grid-template-columns: 1fr; }
   .stats, .testimonials { grid-template-columns: 1fr 1fr; }
-  .plans { grid-template-columns: 1fr; }
+  .plans, .plans.three { grid-template-columns: 1fr; }
   .step { gap: 8px; }
   .step-num { font-size: 36px; }
   .site-nav nav a:not(.primary-btn) { display: none; }
@@ -917,3 +917,10 @@ html { scroll-behavior: smooth; }
 /* Mapa do dia: carrossel de slides */
 .mdd-strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
 .mdd-strip img { flex: none; width: min(320px, 78vw); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; scroll-snap-align: start; border: 1px solid var(--border); }
+
+/* Página de planos: tabela comparativa */
+.pl-compare { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; font-size: 15px; min-width: 560px; }
+.pl-compare th, .pl-compare td { padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: center; }
+.pl-compare td:first-child, .pl-compare th:first-child { text-align: left; }
+.pl-compare th { font-weight: 800; }
+.pl-compare .pl-price td { font-weight: 800; border-bottom: 0; }
