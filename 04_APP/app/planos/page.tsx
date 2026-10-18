@@ -36,7 +36,7 @@ export default function PublicPlansPage() {
   return (
     <>
       <SiteNav minimal />
-      <main>
+      <main className="pl-page">
         <section className="wrap" style={{ padding: "56px 0 8px", textAlign: "center" }}>
           <span className="eyebrow">PLANOS MAPAS FALANTES</span>
           <h1 style={{ maxWidth: 820, margin: "10px auto 0" }}>
