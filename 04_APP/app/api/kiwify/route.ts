@@ -5,8 +5,10 @@ import { trackKlaviyo } from "@/lib/klaviyo";
 import { EXTRAS, PLANS, extraFromProductName, planFromProductName } from "@/lib/plans";
 import { kitFromProductName } from "@/lib/kits";
 import { sendCapi } from "@/lib/capi";
+import { waitUntil } from "@vercel/functions";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 
 // Webhook da Kiwify: libera, renova ou cancela o plano do aluno.
 // A Kiwify assina o corpo com HMAC-SHA1 usando o token do webhook e envia
@@ -78,10 +80,14 @@ export async function POST(req: Request) {
     // O site manda "fbp~fbc" no parâmetro sck do checkout (components/SourceTracker.tsx).
     const [sckFbp, sckFbc] = String(t.sck ?? "").split("~");
     const names = String(cu.full_name ?? cu.first_name ?? "").trim().split(/\s+/);
-    await sendCapi({
-      event_name: "Purchase",
-      event_id: `kiwify-${event.order_id ?? event.order_ref ?? `${email}-${productName}`}`,
-      event_source_url: "https://www.mapasfalantes.com.br/metodo",
+    // O Método e os order bumps chegam em avisos separados, ao mesmo tempo. Cada aviso guarda
+    // seu valor; depois de alguns segundos, só o primeiro pedido da pessoa manda UMA compra
+    // para a Meta com a soma de tudo (assim 1 pedido = 1 compra no Gerenciador).
+    const orderId = String(event.order_id ?? event.order_ref ?? `${Date.now()}`);
+    const dir = `capi/${email.replace(/[^a-z0-9@._-]/g, "_")}`;
+    const store = createSupabaseAdmin().storage.from("map-images");
+    await store.upload(`${dir}/${orderId}.json`, JSON.stringify({ orderId, cents, productName, ts: Date.now() }), { contentType: "application/json", upsert: true });
+    const user = {
       email,
       ip: cu.ip ?? null,
       fbp: sckFbp?.startsWith("fb.") ? sckFbp : null,
@@ -93,9 +99,33 @@ export async function POST(req: Request) {
       state: cu.state ?? null,
       zip: cu.zipcode ?? null,
       country: "br",
-      custom_data: { value: cents / 100, currency: "BRL", content_name: productName, order_id: event.order_id },
-    });
-    console.log("Kiwify → Meta Purchase:", { value: cents / 100, bruto: Number(c.charge_amount ?? 0) / 100, productName, order: event.order_id });
+    };
+    waitUntil(
+      (async () => {
+        await new Promise((r) => setTimeout(r, 20000));
+        const { data: files } = await store.list(dir, { limit: 100 });
+        const items = (
+          await Promise.all(
+            (files ?? []).filter((f) => f.name.endsWith(".json")).map(async (f) => {
+              const { data } = await store.download(`${dir}/${f.name}`);
+              return data ? (JSON.parse(await data.text()) as { orderId: string; cents: number; productName: string; ts: number; sent?: boolean }) : null;
+            })
+          )
+        ).filter((x): x is NonNullable<typeof x> => !!x && !x.sent && Date.now() - x.ts < 15 * 60_000);
+        items.sort((a, b) => a.ts - b.ts || a.orderId.localeCompare(b.orderId));
+        if (!items.length || items[0].orderId !== orderId) return; // outro aviso do mesmo pedido manda
+        const total = items.reduce((n, x) => n + x.cents, 0) / 100;
+        await sendCapi({
+          event_name: "Purchase",
+          event_id: `kiwify-${orderId}`,
+          event_source_url: "https://www.mapasfalantes.com.br/metodo",
+          ...user,
+          custom_data: { value: total, currency: "BRL", content_name: items.map((x) => x.productName).join(" + "), num_items: items.length, order_id: orderId },
+        });
+        await Promise.all(items.map((x) => store.upload(`${dir}/${x.orderId}.json`, JSON.stringify({ ...x, sent: true }), { contentType: "application/json", upsert: true })));
+        console.log("Kiwify → Meta Purchase:", { value: total, itens: items.length, order: orderId });
+      })().catch((err) => console.error("Kiwify → Meta: falha", err))
+    );
   }
 
   const admin = createSupabaseAdmin();
