@@ -70,7 +70,9 @@ export async function POST(req: Request) {
   // pedido (Método e cada order bump). Só no pagamento aprovado, não no Pix gerado.
   if (ACTIVATE.has(status) && status !== "subscription_renewed") {
     const c = event.Commissions ?? {};
-    const cents = Number(c.charge_amount ?? c.product_base_price ?? 0);
+    // Valor líquido (o que fica para nós depois das taxas e dos juros do parcelamento), igual ao
+    // "Valor líquido" da Kiwify: assim o retorno no Gerenciador bate com o que entrou de verdade.
+    const cents = Number(c.my_commission ?? c.charge_amount ?? c.product_base_price ?? 0);
     const t = event.TrackingParameters ?? {};
     const cu = event.Customer ?? {};
     // O site manda "fbp~fbc" no parâmetro sck do checkout (components/SourceTracker.tsx).
@@ -93,7 +95,7 @@ export async function POST(req: Request) {
       country: "br",
       custom_data: { value: cents / 100, currency: "BRL", content_name: productName, order_id: event.order_id },
     });
-    console.log("Kiwify → Meta Purchase:", { value: cents / 100, productName, order: event.order_id });
+    console.log("Kiwify → Meta Purchase:", { value: cents / 100, bruto: Number(c.charge_amount ?? 0) / 100, productName, order: event.order_id });
   }
 
   const admin = createSupabaseAdmin();
