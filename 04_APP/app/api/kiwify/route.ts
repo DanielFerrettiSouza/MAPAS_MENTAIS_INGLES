@@ -54,6 +54,13 @@ export async function POST(req: Request) {
   console.log("Kiwify:", { status, email, productName });
   if (!email) return NextResponse.json({ ok: true, ignored: "sem e-mail" });
 
+  // Telefone e nome do comprador para o perfil do Klaviyo (o WhatsApp usa o telefone).
+  const rawPhone = String(event.Customer?.mobile ?? event.phone ?? event.mobile ?? "").replace(/\D/g, "");
+  const kv = {
+    phone_number: rawPhone.length >= 10 ? `+${rawPhone.length <= 11 ? `55${rawPhone}` : rawPhone}` : null,
+    first_name: String(event.Customer?.first_name ?? event.Customer?.full_name ?? event.name ?? "").trim().split(/\s+/)[0] || null,
+  };
+
   // Carrinho abandonado: a pessoa preencheu o checkout e não pagou. Vira evento no
   // Klaviyo para o fluxo de recuperação (quem comprar depois sai do fluxo).
   if (/abandon/i.test(status) || (!event.order_status && event.checkout_link)) {
@@ -64,7 +71,7 @@ export async function POST(req: Request) {
       produto_nome: name,
       // A Kiwify manda só o código do checkout (ex.: "NDaCasU"): vira o link completo.
       checkout_link: event.checkout_link ? (String(event.checkout_link).startsWith("http") ? event.checkout_link : `https://pay.kiwify.com.br/${event.checkout_link}`) : null,
-    });
+    }, {}, kv);
     return NextResponse.json({ ok: true, abandoned: true });
   }
 
@@ -187,7 +194,7 @@ export async function POST(req: Request) {
     } else if (on) {
       await addPending({ kit });
     }
-    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: `kit-${kit}`, status });
+    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: `kit-${kit}`, status }, {}, kv);
     return NextResponse.json({ ok: true, kit, on });
   }
 
@@ -209,7 +216,7 @@ export async function POST(req: Request) {
     } else if (on) {
       await addPending({ extraCredits: EXTRAS.credits });
     }
-    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: extra, status }, on && extra === "biblioteca" ? { mf_biblioteca: true } : {});
+    await trackKlaviyo(email, on ? "MF Comprou" : "MF Cancelou", { produto: extra, status }, on && extra === "biblioteca" ? { mf_biblioteca: true } : {}, kv);
     return NextResponse.json({ ok: true, extra, on });
   }
 
@@ -230,13 +237,13 @@ export async function POST(req: Request) {
       // Pagou antes de criar a conta: o plano é aplicado no cadastro.
       await addPending({ plan: plan.id, planCredits: plan.credits });
     }
-    await trackKlaviyo(email, "MF Comprou", { produto: plan.id, status }, { mf_plano: plan.id });
+    await trackKlaviyo(email, "MF Comprou", { produto: plan.id, status }, { mf_plano: plan.id }, kv);
     return NextResponse.json({ ok: true, plan: plan.id });
   }
 
   if (DEACTIVATE.has(status) && profile) {
     await admin.from("profiles").update({ plan: "free", credits: 0 }).eq("id", profile.id);
-    await trackKlaviyo(email, "MF Cancelou", { produto: productName, status }, { mf_plano: "free" });
+    await trackKlaviyo(email, "MF Cancelou", { produto: productName, status }, { mf_plano: "free" }, kv);
     return NextResponse.json({ ok: true, plan: "free" });
   }
 

@@ -16,7 +16,9 @@ export async function trackKlaviyo(
   email: string | null | undefined,
   metric: MfEvent,
   properties: Record<string, unknown> = {},
-  profile: Record<string, unknown> = {}
+  profile: Record<string, unknown> = {},
+  // Dados do perfil (telefone no formato +55..., nome): o telefone é o que o WhatsApp do Klaviyo usa.
+  attrs: { phone_number?: string | null; first_name?: string | null } = {}
 ) {
   const key = process.env.KLAVIYO_API_KEY;
   if (!key || !email) return;
@@ -35,7 +37,17 @@ export async function trackKlaviyo(
           attributes: {
             properties,
             metric: { data: { type: "metric", attributes: { name: metric } } },
-            profile: { data: { type: "profile", attributes: { email, properties: profile } } },
+            profile: {
+              data: {
+                type: "profile",
+                attributes: {
+                  email,
+                  ...(attrs.phone_number ? { phone_number: attrs.phone_number } : {}),
+                  ...(attrs.first_name ? { first_name: attrs.first_name } : {}),
+                  properties: profile,
+                },
+              },
+            },
           },
         },
       }),
