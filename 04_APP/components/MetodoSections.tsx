@@ -179,6 +179,7 @@ export default function MetodoSections() {
         <div className="wrap" style={{ maxWidth: 820 }}>
           <h2 className="big-title">Perguntas frequentes</h2>
           <details><summary>É assinatura? Tem mensalidade?</summary><p>Não. Você paga uma vez e tem acesso para sempre ao método, aos mapas e aos bônus.</p></details>
+          <details><summary>E os mapas com IA?</summary><p>A compra inclui 3 criações de mapas com IA sobre o assunto que você quiser. Para criar mapas adicionais com IA depois, é preciso assinar um plano. Os 120 mapas prontos e os bônus continuam seus para sempre.</p></details>
           <details><summary>Preciso saber inglês para começar?</summary><p>Não. O método começa no A1 e todo mapa tem tradução em português.</p></details>
           <details><summary>O áudio é de verdade?</summary><p>Sim. Cada frase tem um botão que toca a pronúncia de um nativo americano.</p></details>
           <details><summary>Posso estudar pelo celular?</summary><p>Sim. Funciona no celular, tablet e computador, e você pode baixar os mapas em imagem para imprimir.</p></details>

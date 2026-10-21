@@ -16,11 +16,11 @@ export default function MetodoPage() {
           <div>
             <span className="eyebrow">MÉTODO MAPAS FALANTES · DO A1 AO C2</span>
             <h1>
-              Um método completo para aprender inglês <span className="grad-text">ouvindo e praticando.</span>
+              120 mapas mentais de inglês <span className="grad-text">que falam.</span>
             </h1>
             <p className="lead">
-              Saiba o que estudar em cada etapa, acompanhe seu progresso e pratique com mapas ilustrados,
-              áudio de pronúncia nativa e exercícios. Com o acesso vitalício, você tem um caminho organizado para estudar com direção e constância.
+              Do A1 ao C2, com áudio de nativo em cada frase, plano de estudos e 3 mapas criados por IA
+              sobre o assunto que você quiser. Pague uma vez, acesse para sempre.
             </p>
             <ul className="metodo-list">
               <li>🧭 Teste de nível, plano de estudos e acompanhamento do progresso</li>
@@ -32,10 +32,6 @@ export default function MetodoPage() {
               <a href="#oferta" className="primary-btn grad-btn">Quero o Método →</a>
               <span className="fine">Pagamento único · acesso vitalício · 7 dias de garantia</span>
             </div>
-            <p className="fine" style={{ marginTop: 14, maxWidth: 560, lineHeight: 1.5 }}>
-              As 3 criações por IA estão incluídas na compra. Para criar mapas adicionais com IA depois,
-              será necessário assinar um plano.
-            </p>
           </div>
           <div className="hero-visual">
             {/* eslint-disable-next-line @next/next/no-img-element */}
