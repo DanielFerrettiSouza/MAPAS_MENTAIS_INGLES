@@ -36,12 +36,12 @@ export default function TestimonialForm({ email = "" }: { email?: string }) {
           ))}
         </span>
       </label>
-      <label>Seu depoimento<textarea name="text" required minLength={10} rows={5} placeholder="O que você mais gostou? Como você usa os mapas no dia a dia?" /></label>
+      <label>Seu depoimento<textarea name="text" required minLength={80} rows={5} placeholder="Conte em 2 ou 3 frases: como estava seu inglês antes, como você usa os mapas no dia a dia e o que mudou." /><small>Mínimo de 80 caracteres.</small></label>
       <label>Seu nome (como quer que apareça)<input name="name" required placeholder="Ex.: Mariana S." /></label>
       <label>Cidade <small>(opcional)</small><input name="city" placeholder="Ex.: Curitiba" /></label>
       <label>Seu e-mail <small>(o mesmo da compra; não será publicado)</small><input name="email" type="email" required defaultValue={email} /></label>
-      <label>Uma foto sua <small>(opcional, mas ajuda muito: pode tirar agora com o celular)</small><input name="photo" type="file" accept="image/*" /></label>
-      <label className="tf-check"><input type="checkbox" name="consent" required /> Autorizo o Mapas Falantes a publicar meu depoimento, nome, cidade e foto (se enviada) no site e em anúncios, informando que recebi 5 mapas de presente por ele.</label>
+      <label>Uma foto sua <small>(obrigatória: pode ser uma selfie tirada agora com o celular)</small><input name="photo" type="file" accept="image/*" required /></label>
+      <label className="tf-check"><input type="checkbox" name="consent" required /> Autorizo o Mapas Falantes a publicar meu depoimento, nome, cidade e foto no site e em anúncios, informando que recebi 5 mapas de presente por ele.</label>
       {error && <p style={{ color: "var(--accent)" }}>{error}</p>}
       <button className="primary-btn grad-btn" disabled={state === "sending"}>{state === "sending" ? "Enviando…" : "Enviar depoimento"}</button>
     </form>
