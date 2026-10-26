@@ -25,8 +25,8 @@ export default async function KitMapPage({ params }: { params: { slug: string } 
   return (
     <>
       <Link href="/app/kits" className="back-link">{tr(lang, "← Voltar aos kits", "← Volver a los kits")}</Link>
-      {canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
-      {canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
+      {lang !== "es" && canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {lang !== "es" && canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
       <div style={{ height: 16 }} />
       <MindMapView map={map} lang={lang} />
       {map.quiz?.length > 0 && <ReviewQuiz quiz={map.quiz} lang={lang} />}

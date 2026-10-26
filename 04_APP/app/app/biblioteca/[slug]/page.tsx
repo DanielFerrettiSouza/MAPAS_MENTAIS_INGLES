@@ -44,8 +44,8 @@ export default async function LibraryMapPage({
   return (
     <>
       <Link href={back.href} className="back-link">{back.label}</Link>
-      {canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
-      {canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
+      {lang !== "es" && canTeach(profile?.plan, user.email) && <a href={`/imprimir/biblioteca/${params.slug}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {lang !== "es" && canTeach(profile?.plan, user.email) && <ClassLinkButton tipo="biblioteca" id={params.slug} />}
       <div style={{ height: 16 }} />
       <MindMapView map={map} lang={lang} />
       <div style={{ marginTop: 12 }}><StudyToggle slug={params.slug} done={!!prog} lang={lang} /></div>

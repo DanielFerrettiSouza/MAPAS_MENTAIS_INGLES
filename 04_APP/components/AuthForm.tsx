@@ -16,7 +16,8 @@ export default function AuthForm({ mode, lang }: { mode: "signup" | "login"; lan
   const bought = params.get("comprou") === "1" || params.get("compro") === "1";
   // Versão em espanhol: guarda o idioma (cookie + cadastro) para o app abrir em espanhol.
   useEffect(() => {
-    if (es) document.cookie = "mf-lang=es; path=/; max-age=31536000; samesite=lax";
+    // Entrar por /es/entrar deixa o app em espanhol; por /entrar, volta para português.
+    document.cookie = `mf-lang=${es ? "es" : "pt"}; path=/; max-age=31536000; samesite=lax`;
   }, [es]);
   const [email, setEmail] = useState("");
   // E-mail que a pessoa digitou no fim do quiz já vem preenchido no cadastro.

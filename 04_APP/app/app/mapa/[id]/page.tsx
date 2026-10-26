@@ -27,8 +27,8 @@ export default async function MapPage({ params }: { params: { id: string } }) {
   return (
     <>
       <Link href="/app" className="back-link">{tr(lang, "← Voltar ao início", "← Volver al inicio")}</Link>
-      {canTeach(profile?.plan, user?.email) && <a href={`/imprimir/meu/${params.id}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
-      {canTeach(profile?.plan, user?.email) && <ClassLinkButton tipo="meu" id={params.id} />}
+      {lang !== "es" && canTeach(profile?.plan, user?.email) && <a href={`/imprimir/meu/${params.id}`} className="ghost-btn print-link" target="_blank" rel="noopener">🖨️ Imprimir para a turma</a>}
+      {lang !== "es" && canTeach(profile?.plan, user?.email) && <ClassLinkButton tipo="meu" id={params.id} />}
       <div style={{ height: 16 }} />
       {outOfFree && (
         <div className="out-banner">

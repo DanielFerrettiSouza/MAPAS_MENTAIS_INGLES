@@ -56,7 +56,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         {!es && <Link href="/app/mapa-do-dia" className="side-link"><IconCalendar /><span>Mapa do dia</span></Link>}
         {!es && canTeach(profile?.plan, user.email) && <Link href="/app/aulas" className="side-link"><IconCalendar /><span>Aula pronta</span></Link>}
         <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>{tr(lang, "Configurações", "Configuración")}</span></Link>
-        {isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
+        {!es && isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
         <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>{tr(lang, "Suporte", "Soporte")}</span></a>
         <div className="spacer" />
         {!es && <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>}
