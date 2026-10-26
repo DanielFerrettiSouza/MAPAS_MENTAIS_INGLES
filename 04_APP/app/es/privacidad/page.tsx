@@ -1,12 +1,12 @@
 import LegalPage from "@/components/LegalPage";
 
-export const metadata = { title: "Política de Privacidad · Mapas Falantes" };
+export const metadata = { title: "Política de Privacidad · Mapas Parlantes" };
 
 export default function Privacidad() {
   return (
     <LegalPage title="Política de Privacidad" lang="es">
       <h2>1. Quiénes somos</h2>
-      <p>Mapas Falantes es una aplicación para estudiar inglés con mapas mentales con audio y mapas creados con inteligencia artificial. Contacto: mapasmentaisfalantes@gmail.com.</p>
+      <p>Mapas Parlantes es una aplicación para estudiar inglés con mapas mentales con audio y mapas creados con inteligencia artificial. Contacto: mapasmentaisfalantes@gmail.com.</p>
       <h2>2. Datos que recopilamos</h2>
       <ul>
         <li><b>Cuenta:</b> correo electrónico y nombre (o los datos básicos de tu perfil de Google, si entras con Google).</li>

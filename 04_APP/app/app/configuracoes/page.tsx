@@ -24,7 +24,7 @@ export default async function Settings({ searchParams }: { searchParams: { "nova
         <div className="settings-card">
           <h3>{tr(lang, "Seu plano", "Tu plan")}</h3>
           {es ? (<>
-            <p style={{ margin: 0 }}><b>Método Mapas Falantes</b> · acceso de por vida</p>
+            <p style={{ margin: 0 }}><b>Método Mapas Parlantes</b> · acceso de por vida</p>
             <p style={{ color: "var(--muted)", margin: 0 }}>{profile?.credits ?? 0} mapas con IA restantes</p>
           </>) : (<>
           <p style={{ margin: 0 }}>Plano <b>{planName(profile?.plan ?? "free")}</b></p>

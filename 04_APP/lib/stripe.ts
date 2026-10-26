@@ -8,7 +8,7 @@ export const stripe = () => new Stripe(process.env.STRIPE_SECRET_KEY ?? "");
 export type EsProduct = { key: GrantItem; lookup: string; name: string; description: string; cents: number; local: Record<string, number> };
 
 export const ES_PRODUCTS: EsProduct[] = [
-  { key: "biblioteca", lookup: "mf_es_metodo_v2", name: "Método Mapas Falantes", description: "120 mapas mentales de inglés con audio nativo, del A1 al C2, test de nivel, plan de estudio y bonos. Acceso de por vida.", cents: 2700, local: { mxn: 49900, cop: 8490000, clp: 26990, pen: 8990, eur: 2490 } },
+  { key: "biblioteca", lookup: "mf_es_metodo_v2", name: "Método Mapas Parlantes", description: "120 mapas mentales de inglés con audio nativo, del A1 al C2, test de nivel, plan de estudio y bonos. Acceso de por vida.", cents: 2700, local: { mxn: 49900, cop: 8490000, clp: 26990, pen: 8990, eur: 2490 } },
   { key: "kit-viagem", lookup: "mf_es_kit_viaje_v2", name: "Kit Viaje", description: "20 mapas listos para viajar: aeropuerto, hotel, restaurante y más.", cents: 700, local: { mxn: 12900, cop: 2190000, clp: 6990, pen: 2390, eur: 590 } },
   { key: "kit-trabalho", lookup: "mf_es_kit_trabajo_v2", name: "Kit Trabajo", description: "20 mapas listos para el trabajo: reuniones, correos, entrevistas y más.", cents: 700, local: { mxn: 12900, cop: 2190000, clp: 6990, pen: 2390, eur: 590 } },
   { key: "pacote", lookup: "mf_es_paquete5_v2", name: "Paquete 5 mapas con IA", description: "5 mapas nuevos creados con IA sobre el tema que quieras.", cents: 900, local: { mxn: 16900, cop: 2890000, clp: 8990, pen: 2990, eur: 790 } },
@@ -45,6 +45,13 @@ const FORMAT: Record<string, (n: number) => string> = {
   pen: (n) => `S/ ${(n / 100).toFixed(2).replace(".", ",")}`,
   eur: (n) => `${(n / 100).toFixed(2).replace(".", ",")} €`,
 };
+// País escolhido: ?pais= do link (anúncios por país) tem prioridade; senão, a localização do visitante.
+export function esCountry(pais: string | null | undefined, ipCountry: string | null | undefined) {
+  const p = pais?.toUpperCase();
+  return p && COUNTRY_CURRENCY[p] ? p : ipCountry?.toUpperCase() ?? "";
+}
+export const esCurrency = (country: string) => COUNTRY_CURRENCY[country] ?? "usd";
+
 export function esPriceLabel(country: string | null | undefined, item: GrantItem = "biblioteca") {
   const p = ES_PRODUCTS.find((x) => x.key === item)!;
   const cur = COUNTRY_CURRENCY[country?.toUpperCase() ?? ""];

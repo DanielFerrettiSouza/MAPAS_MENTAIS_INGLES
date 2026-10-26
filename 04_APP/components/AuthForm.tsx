@@ -110,7 +110,7 @@ export default function AuthForm({ mode, lang }: { mode: "signup" | "login"; lan
   return (
     <main className="auth-page">
       <div className="auth-card">
-        <Logo size={34} />
+        <Logo size={34} lang={lang} />
         <p className="sub">
           {bought
             ? mode === "signup"

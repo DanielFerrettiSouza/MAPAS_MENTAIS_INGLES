@@ -6,14 +6,13 @@ import sample from "@/data/es/a2-10.json";
 import LevelExplorer from "@/components/LevelExplorer";
 import { headers } from "next/headers";
 import { BONUS } from "@/lib/bonus";
-import { esPriceLabel } from "@/lib/stripe";
+import { esPriceLabel, esCountry } from "@/lib/stripe";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = { title: "Método Mapas Falantes — aprende inglés del A1 al C2" };
+export const metadata = { title: "Método Mapas Parlantes — aprende inglés del A1 al C2" };
 
 // Página de venta en español (anuncios de América Latina y España). Compra por Stripe (/api/stripe/checkout).
-const CHECKOUT = "/api/stripe/checkout";
 
 const STACK = [
   "🧭 Test de nivel + plan de estudio según tu objetivo",
@@ -34,10 +33,10 @@ const BONUS_CARDS = [
 
 const SAMPLE_PHRASES = ["Here is my passport.", "I have one bag to check.", "I'd like a window seat.", "Is this carry-on okay?"];
 
-function Cta({ big, price }: { big?: boolean; price?: string }) {
+function Cta({ big, price, checkout }: { big?: boolean; price?: string; checkout?: string }) {
   return (
     <div className="mt-cta">
-      <a href={big ? CHECKOUT : "#oferta"} className="primary-btn grad-btn" style={big ? { fontSize: 19, padding: "18px 34px" } : undefined}>
+      <a href={big ? checkout : "#oferta"} className="primary-btn grad-btn" style={big ? { fontSize: 19, padding: "18px 34px" } : undefined}>
         {big ? `Quiero el Método por ${price} →` : "Quiero el Método →"}
       </a>
       <span className="fine">🔒 Pago único · acceso de por vida · 7 días de garantía</span>
@@ -45,12 +44,14 @@ function Cta({ big, price }: { big?: boolean; price?: string }) {
   );
 }
 
-export default function MetodoEsPage() {
-  const PRICE = esPriceLabel(headers().get("x-vercel-ip-country"));
+export default function MetodoEsPage({ searchParams }: { searchParams: { pais?: string } }) {
+  const country = esCountry(searchParams.pais, headers().get("x-vercel-ip-country"));
+  const PRICE = esPriceLabel(country);
+  const CHECKOUT = `/api/stripe/checkout${country ? `?pais=${country.toLowerCase()}` : ""}`;
   return (
     <>
       <header className="site-nav"><div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "14px 0" }}>
-        <strong>🔊 Mapas Falantes</strong>
+        <strong>🔊 Mapas Parlantes</strong>
         <a href="#oferta" className="primary-btn grad-btn" style={{ padding: "8px 16px" }}>Quiero el Método</a>
       </div></header>
       <main>
@@ -189,11 +190,11 @@ export default function MetodoEsPage() {
           <div className="wrap">
             <h2 className="big-title">Empieza hoy. <span className="grad-text">5 minutos al día.</span></h2>
             <ul className="mt-final-list">{STACK.map((s) => <li key={s}>{s}</li>)}</ul>
-            <Cta big price={PRICE} />
+            <Cta big price={PRICE} checkout={CHECKOUT} />
           </div>
         </section>
       </main>
-      <footer className="site-footer">© {new Date().getFullYear()} Mapas Falantes · <Link href="/es/privacidad">Privacidad</Link> · <Link href="/es/terminos">Términos</Link></footer>
+      <footer className="site-footer">© {new Date().getFullYear()} Mapas Parlantes · <Link href="/es/privacidad">Privacidad</Link> · <Link href="/es/terminos">Términos</Link></footer>
     </>
   );
 }

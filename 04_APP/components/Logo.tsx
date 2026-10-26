@@ -18,12 +18,13 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   );
 }
 
-export default function Logo({ size = 32 }: { size?: number }) {
+// Em espanhol a marca é "Mapas Parlantes".
+export default function Logo({ size = 32, lang = "pt" }: { size?: number; lang?: "pt" | "es" }) {
   return (
     <span className="logo">
       <LogoMark size={size} />
       <span className="logo-text" style={{ fontSize: size * 0.72 }}>
-        mapas<b>falantes</b>
+        mapas<b>{lang === "es" ? "parlantes" : "falantes"}</b>
       </span>
     </span>
   );

@@ -44,7 +44,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
       <aside className="sidebar">
         <Link href="/app" className="side-brand">
           <span className="only-collapsed"><LogoMark size={30} /></span>
-          <span className="only-open"><Logo size={28} /></span>
+          <span className="only-open"><Logo size={28} lang={lang} /></span>
         </Link>
         <Link href="/app" className="side-link"><IconDashboard /><span>{tr(lang, "Início", "Inicio")}</span></Link>
         <Link href="/app/criar" className="side-link"><IconSparkles /><span>{tr(lang, "Criar mapa", "Crear mapa")}</span></Link>

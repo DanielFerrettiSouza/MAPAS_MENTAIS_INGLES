@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { stripe, esPriceIds, ES_PRODUCTS } from "@/lib/stripe";
+import { stripe, esPriceIds, ES_PRODUCTS, esCountry, esCurrency } from "@/lib/stripe";
 
 export const runtime = "nodejs";
 
@@ -14,8 +14,11 @@ export async function GET(req: Request) {
   const origin = new URL(req.url).origin;
   const c = cookies();
   const url = new URL(req.url);
+  // Mesma moeda da página: o Stripe cobra exatamente o valor que a pessoa viu.
+  const country = esCountry(url.searchParams.get("pais"), req.headers.get("x-vercel-ip-country"));
   const session = await s.checkout.sessions.create({
     mode: "payment",
+    currency: esCurrency(country),
     locale: "es",
     line_items: [{ price: ids[metodo.lookup], quantity: 1 }],
     optional_items: bumps.map((b) => ({ price: ids[b.lookup], quantity: 1 })),
@@ -25,7 +28,7 @@ export async function GET(req: Request) {
     consent_collection: { promotions: "auto" },
     after_expiration: { recovery: { enabled: true, allow_promotion_codes: false } },
     success_url: `${origin}/es/crear-cuenta?compro=1&session={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${origin}/es/metodo`,
+    cancel_url: `${origin}/es/metodo${country ? `?pais=${country.toLowerCase()}` : ""}`,
     metadata: {
       fbp: c.get("_fbp")?.value ?? "",
       fbc: c.get("_fbc")?.value ?? (url.searchParams.get("fbclid") ? `fb.1.${Date.now()}.${url.searchParams.get("fbclid")}` : ""),
