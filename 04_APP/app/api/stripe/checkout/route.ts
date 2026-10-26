@@ -21,7 +21,7 @@ export async function GET(req: Request) {
     currency: esCurrency(country),
     locale: "es",
     line_items: [{ price: ids[metodo.lookup], quantity: 1 }],
-    optional_items: bumps.map((b) => ({ price: ids[b.lookup], quantity: 1 })),
+    optional_items: bumps.map((b) => ({ price: ids[b.lookup], quantity: 1, adjustable_quantity: { enabled: false } })),
     customer_creation: "always",
     phone_number_collection: { enabled: true },
     // Sessão expirada vira carrinho abandonado (webhook → Klaviyo, com o link de recuperação).
