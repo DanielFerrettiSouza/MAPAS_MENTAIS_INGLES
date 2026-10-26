@@ -1,0 +1,188 @@
+{
+ "slug": "kit-trabalho-12",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'd like to make a reclamation.",
+     "I'd like to make a complaint.",
+     "I'd like to do a complain.",
+     "I want make a complaint."
+    ],
+    "question_pt": "¿Cómo se dice \"Quisiera presentar una queja\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Sostenga esto, por favor.",
+     "Espere un momento, por favor.",
+     "Vuelva más tarde.",
+     "Cuelgue el teléfono."
+    ],
+    "question_pt": "¿Qué significa \"Please hold for a moment\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "replacement",
+     "exchange",
+     "refund",
+     "bill"
+    ],
+    "question_pt": "¿Qué palabra significa \"reembolso\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎧",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"Could you...?\" y \"I'd like to...\" para sonar educado. Son más amables que \"Can you...?\" o \"I want...\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Could you help me, please?",
+      "pt": "¿Podría ayudarme, por favor?"
+     },
+     {
+      "en": "I have a question about my bill.",
+      "pt": "Tengo una duda sobre mi factura."
+     },
+     {
+      "en": "I'm calling about my order.",
+      "pt": "Llamo por mi pedido."
+     },
+     {
+      "en": "Can I speak to the manager?",
+      "pt": "¿Puedo hablar con el gerente?"
+     }
+    ],
+    "label_en": "Asking for Help",
+    "label_pt": "Pedir ayuda",
+    "illustration_key": "store counter",
+    "illustration_prompt": "A customer raising a hand politely at a store counter"
+   },
+   {
+    "emoji": "😠",
+    "items": [
+     {
+      "en": "I'd like to make a complaint.",
+      "pt": "Quisiera presentar una queja."
+     },
+     {
+      "en": "The product arrived damaged.",
+      "pt": "El producto llegó dañado."
+     },
+     {
+      "en": "It doesn't work.",
+      "pt": "No funciona."
+     },
+     {
+      "en": "I was charged twice.",
+      "pt": "Me cobraron dos veces."
+     }
+    ],
+    "label_en": "Complaints",
+    "label_pt": "Quejas",
+    "illustration_key": "broken appliance",
+    "illustration_prompt": "An upset customer holding a broken coffee maker"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "Could I get a refund, please?",
+      "pt": "¿Podrían devolverme el dinero, por favor?"
+     },
+     {
+      "en": "I'd like to exchange this.",
+      "pt": "Quisiera cambiar esto."
+     },
+     {
+      "en": "We'll send a replacement.",
+      "pt": "Le enviaremos uno de reemplazo."
+     },
+     {
+      "en": "Let me check that for you.",
+      "pt": "Permítame verificarlo."
+     }
+    ],
+    "label_en": "Solutions",
+    "label_pt": "Soluciones",
+    "illustration_key": "cardboard box",
+    "illustration_prompt": "A cardboard return box being handed over a counter"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "How can I help you?",
+      "pt": "¿En qué puedo ayudarle?"
+     },
+     {
+      "en": "Please hold for a moment.",
+      "pt": "Espere un momento, por favor."
+     },
+     {
+      "en": "Thank you for your patience.",
+      "pt": "Gracias por su paciencia."
+     },
+     {
+      "en": "Sorry for the inconvenience.",
+      "pt": "Disculpe las molestias."
+     },
+     {
+      "en": "Is there anything else?",
+      "pt": "¿Algo más?"
+     }
+    ],
+    "label_en": "Agent Phrases",
+    "label_pt": "Frases del agente",
+    "illustration_key": "headset worker",
+    "illustration_prompt": "A smiling call center worker with a headset giving a thumbs up"
+   }
+  ],
+  "title_en": "Customer Service",
+  "title_pt": "Atención al Cliente",
+  "cover_key": "customer service agent",
+  "exercises": [
+   {
+    "answer": "complaint",
+    "hint_pt": "(queja)",
+    "sentence": "I'd like to make a ___ about my order."
+   },
+   {
+    "answer": "refund",
+    "hint_pt": "(reembolso)",
+    "sentence": "Could I get a ___, please?"
+   },
+   {
+    "answer": "patience",
+    "hint_pt": "(paciencia)",
+    "sentence": "Thank you for your ___."
+   },
+   {
+    "answer": "manager",
+    "hint_pt": "(gerente)",
+    "sentence": "Can I speak to the ___?"
+   }
+  ],
+  "summary_pt": "Frases útiles para pedir ayuda, quejarte y resolver problemas con empresas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/customer-service-agent.png",
+  "cover_prompt": "A friendly customer service agent wearing a headset, smiling at a desk with a laptop seen from behind",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/store-counter.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/broken-appliance.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/cardboard-box.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/headset-worker.png"
+  ],
+  "common_mistake": {
+   "right": "I'd like to make a complaint.",
+   "wrong": "I want to make a reclamation.",
+   "why_pt": "\"Reclamation\" no significa reclamación; usa \"complaint\"."
+  }
+ }
+}

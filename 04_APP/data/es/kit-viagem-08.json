@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-08",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "There's no hot water.",
+     "There isn't water hot.",
+     "No have hot water.",
+     "The water is no hot."
+    ],
+    "question_pt": "¿Cómo se dice \"No hay agua caliente\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Can I check in?",
+     "Can I change rooms?",
+     "Is breakfast included?",
+     "Where is the elevator?"
+    ],
+    "question_pt": "¿Qué frase sirve para pedir un cambio de habitación?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "¿A qué hora es el desayuno?",
+     "¿Dónde está la cafetería?",
+     "¿El desayuno está incluido?",
+     "¿Puedo tomar un café?"
+    ],
+    "question_pt": "¿Qué significa \"Is breakfast included?\"",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🏨",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"I'd like to...\" y \"Could you...?\" para pedir cosas con cortesía en la recepción. Suena más amable que \"I want\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🛎️",
+    "items": [
+     {
+      "en": "I'd like to check in.",
+      "pt": "Quisiera hacer el check-in."
+     },
+     {
+      "en": "I have a reservation under Silva.",
+      "pt": "Tengo una reserva a nombre de Silva."
+     },
+     {
+      "en": "Here's my passport.",
+      "pt": "Aquí tiene mi pasaporte."
+     },
+     {
+      "en": "Is breakfast included?",
+      "pt": "¿El desayuno está incluido?"
+     }
+    ],
+    "label_en": "Checking In",
+    "label_pt": "Haciendo el check-in",
+    "illustration_key": "service bell",
+    "illustration_prompt": "A silver service bell on a wooden hotel front desk"
+   },
+   {
+    "emoji": "ℹ️",
+    "items": [
+     {
+      "en": "What's the Wi-Fi password?",
+      "pt": "¿Cuál es la contraseña del wifi?"
+     },
+     {
+      "en": "What time is checkout?",
+      "pt": "¿A qué hora es la salida?"
+     },
+     {
+      "en": "Where is the elevator?",
+      "pt": "¿Dónde está el ascensor?"
+     },
+     {
+      "en": "What time is breakfast?",
+      "pt": "¿A qué hora es el desayuno?"
+     }
+    ],
+    "label_en": "Hotel Info",
+    "label_pt": "Información del hotel",
+    "illustration_key": "key card",
+    "illustration_prompt": "A plastic hotel key card lying next to a small room key envelope, no writing"
+   },
+   {
+    "emoji": "🛠️",
+    "items": [
+     {
+      "en": "The air conditioner doesn't work.",
+      "pt": "El aire acondicionado no funciona."
+     },
+     {
+      "en": "There's no hot water.",
+      "pt": "No hay agua caliente."
+     },
+     {
+      "en": "The room is too noisy.",
+      "pt": "La habitación es demasiado ruidosa."
+     },
+     {
+      "en": "My key card doesn't work.",
+      "pt": "Mi tarjeta de la habitación no funciona."
+     },
+     {
+      "en": "The room isn't clean.",
+      "pt": "La habitación no está limpia."
+     }
+    ],
+    "label_en": "Room Problems",
+    "label_pt": "Problemas en la habitación",
+    "illustration_key": "air conditioner",
+    "illustration_prompt": "A broken air conditioner on a hotel room wall with a dripping water drop"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Could I have more towels?",
+      "pt": "¿Me podría dar más toallas?"
+     },
+     {
+      "en": "Could you send someone, please?",
+      "pt": "¿Podría enviar a alguien, por favor?"
+     },
+     {
+      "en": "Can I change rooms?",
+      "pt": "¿Puedo cambiarme de habitación?"
+     },
+     {
+      "en": "Could I get an extra pillow?",
+      "pt": "¿Me podría dar una almohada extra?"
+     }
+    ],
+    "label_en": "Asking for Help",
+    "label_pt": "Pidiendo ayuda",
+    "illustration_key": "folded towels",
+    "illustration_prompt": "A neatly folded stack of white towels and a pillow on a bed"
+   }
+  ],
+  "title_en": "Hotel Check-in",
+  "title_pt": "Check-in en el hotel",
+  "cover_key": "hotel reception",
+  "exercises": [
+   {
+    "answer": "reservation",
+    "hint_pt": "(reserva)",
+    "sentence": "I have a ___ under Silva."
+   },
+   {
+    "answer": "work",
+    "hint_pt": "(funciona)",
+    "sentence": "The air conditioner doesn't ___."
+   },
+   {
+    "answer": "password",
+    "hint_pt": "(contraseña)",
+    "sentence": "What's the Wi-Fi ___?"
+   },
+   {
+    "answer": "checkout",
+    "hint_pt": "(salida del hotel)",
+    "sentence": "What time is ___?"
+   }
+  ],
+  "summary_pt": "Frases para hacer el check-in y resolver problemas en tu habitación de hotel.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/hotel-reception.png",
+  "cover_prompt": "A friendly hotel receptionist behind a front desk handing a key card to a traveler with a suitcase",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/service-bell.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/key-card.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/air-conditioner.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/folded-towels.png"
+  ],
+  "common_mistake": {
+   "right": "There's no hot water.",
+   "wrong": "There's no water hot.",
+   "why_pt": "Ojo: en inglés el adjetivo va antes del sustantivo."
+  }
+ }
+}

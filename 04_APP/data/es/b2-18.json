@@ -1,0 +1,177 @@
+{
+ "slug": "b2-18",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Would you mind to wait?",
+     "Would you mind waiting?",
+     "Would you mind wait?",
+     "Would you mind waited?"
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Sorry to bother you, but...",
+     "Sorry for disturb, but...",
+     "Excuse to bother, but...",
+     "Sorry bothering you, but..."
+    ],
+    "question_pt": "¿Cómo se dice \"Perdona que te moleste, pero...\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Yes, I do.",
+     "Yes, I mind.",
+     "Not at all.",
+     "I'm afraid I can't."
+    ],
+    "question_pt": "Alguien te pregunta \"Do you mind if I sit here?\" y aceptas. ¿Qué respondes?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🙏",
+  "level": "B2",
+  "tip_pt": "Después de \"Would you mind\", usa el verbo con -ing: \"Would you mind opening the window?\" Ojo: responder \"No\" significa que aceptas.",
+  "branches": [
+   {
+    "emoji": "💭",
+    "items": [
+     {
+      "en": "I was wondering if you could...",
+      "pt": "Me preguntaba si podrías..."
+     },
+     {
+      "en": "Do you think you could...?",
+      "pt": "¿Crees que podrías...?"
+     },
+     {
+      "en": "Is there any chance you could...?",
+      "pt": "¿Habría alguna posibilidad de que pudieras...?"
+     },
+     {
+      "en": "Would it be possible to...?",
+      "pt": "¿Sería posible...?"
+     }
+    ],
+    "label_en": "Indirect Requests",
+    "label_pt": "Peticiones indirectas",
+    "illustration_prompt": "A cute hand-drawn thought bubble with a small question mark shape made of dots, soft colors, no text or letters"
+   },
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "Would you mind helping me?",
+      "pt": "¿Te importaría ayudarme?"
+     },
+     {
+      "en": "Would you mind waiting a minute?",
+      "pt": "¿Le importaría esperar un minuto?"
+     },
+     {
+      "en": "Do you mind if I sit here?",
+      "pt": "¿Le importa si me siento aquí?"
+     },
+     {
+      "en": "Would you mind if I left early?",
+      "pt": "¿Le importaría si me fuera temprano?"
+     }
+    ],
+    "label_en": "Would You Mind",
+    "label_pt": "Cómo usar \"mind\"",
+    "illustration_prompt": "A cute hand-drawn person scratching their head thoughtfully, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🪶",
+    "items": [
+     {
+      "en": "Could you possibly...?",
+      "pt": "¿Podría usted, por casualidad...?"
+     },
+     {
+      "en": "Just a quick favor",
+      "pt": "Solo un favorcito rápido"
+     },
+     {
+      "en": "Sorry to bother you, but...",
+      "pt": "Perdone que lo moleste, pero..."
+     },
+     {
+      "en": "If it's not too much trouble",
+      "pt": "Si no es mucha molestia"
+     }
+    ],
+    "label_en": "Softening Words",
+    "label_pt": "Cómo suavizar la petición",
+    "illustration_prompt": "A cute hand-drawn soft feather floating gently, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "👍",
+    "items": [
+     {
+      "en": "Sure, no problem.",
+      "pt": "Claro, no hay problema."
+     },
+     {
+      "en": "Not at all.",
+      "pt": "Para nada, adelante."
+     },
+     {
+      "en": "I'd really appreciate it.",
+      "pt": "Te lo agradecería mucho."
+     },
+     {
+      "en": "I'm afraid I can't right now.",
+      "pt": "Lo siento, ahora mismo no puedo."
+     }
+    ],
+    "label_en": "Responding",
+    "label_pt": "Cómo responder",
+    "illustration_prompt": "A cute hand-drawn smiling hand giving a thumbs up, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Polite Requests",
+  "title_pt": "Peticiones educadas",
+  "exercises": [
+   {
+    "answer": "opening",
+    "hint_pt": "(abrir)",
+    "sentence": "Would you mind ___ the door for me?"
+   },
+   {
+    "answer": "wondering",
+    "hint_pt": "(preguntarse)",
+    "sentence": "I was ___ if you could help me."
+   },
+   {
+    "answer": "could",
+    "hint_pt": "(podrías)",
+    "sentence": "Do you think you ___ send it today?"
+   },
+   {
+    "answer": "appreciate",
+    "hint_pt": "(agradecer)",
+    "sentence": "I'd really ___ it if you called me back."
+   }
+  ],
+  "summary_pt": "Aprende a pedir cosas en inglés de forma educada, indirecta y natural.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-18/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of two friendly people talking, one gently asking a favor with a kind smile, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Would you mind helping me?",
+   "wrong": "Would you mind to help me?",
+   "why_pt": "Después de \"mind\", el verbo va con -ing, no con \"to\"."
+  }
+ }
+}

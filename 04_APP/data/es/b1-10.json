@@ -1,0 +1,177 @@
+{
+ "slug": "b1-10",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "which",
+     "who",
+     "where",
+     "what"
+    ],
+    "question_pt": "¿Qué pronombre completa: 'A friend ___ lives abroad'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "The car who broke down",
+     "The car which broke down",
+     "The car what broke down",
+     "The car whose broke down"
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "The man called you",
+     "The book I bought",
+     "The girl sings well",
+     "The dog barks all night"
+    ],
+    "question_pt": "¿En qué frase se omitió correctamente el pronombre relativo?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🔗",
+  "level": "B1",
+  "tip_pt": "Usa who para personas, which para cosas y animales, y that para ambos en frases sin coma.",
+  "branches": [
+   {
+    "emoji": "🧑",
+    "items": [
+     {
+      "en": "The man who called you",
+      "pt": "El hombre que te llamó"
+     },
+     {
+      "en": "A friend who lives abroad",
+      "pt": "Un amigo que vive en el extranjero"
+     },
+     {
+      "en": "The girl who sings well",
+      "pt": "La chica que canta bien"
+     },
+     {
+      "en": "People who love coffee",
+      "pt": "Las personas a las que les encanta el café"
+     }
+    ],
+    "label_en": "Who: People",
+    "label_pt": "Who: personas",
+    "illustration_prompt": "Simple cute hand-drawn icon of a smiling person waving, soft colors, no text"
+   },
+   {
+    "emoji": "📦",
+    "items": [
+     {
+      "en": "The car which broke down",
+      "pt": "El coche que se averió"
+     },
+     {
+      "en": "A phone which takes great photos",
+      "pt": "Un teléfono que saca fotos excelentes"
+     },
+     {
+      "en": "The dog which barks all night",
+      "pt": "El perro que ladra toda la noche"
+     },
+     {
+      "en": "My city, which is beautiful",
+      "pt": "Mi ciudad, que es preciosa"
+     }
+    ],
+    "label_en": "Which: Things",
+    "label_pt": "Which: cosas y animales",
+    "illustration_prompt": "Simple cute hand-drawn icon of a box next to a small dog, soft colors, no text"
+   },
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "The movie that I watched",
+      "pt": "La película que vi"
+     },
+     {
+      "en": "The guy that I met",
+      "pt": "El chico que conocí"
+     },
+     {
+      "en": "Everything that you need",
+      "pt": "Todo lo que necesitas"
+     },
+     {
+      "en": "The best day that I had",
+      "pt": "El mejor día que tuve"
+     }
+    ],
+    "label_en": "That: Both",
+    "label_pt": "That: personas y cosas",
+    "illustration_prompt": "Simple cute hand-drawn icon of two circular arrows around a person and a book, soft colors, no text"
+   },
+   {
+    "emoji": "✂️",
+    "items": [
+     {
+      "en": "The book I bought",
+      "pt": "El libro que compré"
+     },
+     {
+      "en": "The woman I saw",
+      "pt": "La mujer que vi"
+     },
+     {
+      "en": "The song you like",
+      "pt": "La canción que te gusta"
+     },
+     {
+      "en": "The place we visited",
+      "pt": "El lugar que visitamos"
+     }
+    ],
+    "label_en": "Omitting the Pronoun",
+    "label_pt": "Omitir el pronombre",
+    "illustration_prompt": "Simple cute hand-drawn icon of small scissors cutting a dotted line, soft colors, no text"
+   }
+  ],
+  "title_en": "Relative Pronouns",
+  "title_pt": "Pronombres relativos",
+  "exercises": [
+   {
+    "answer": "who",
+    "hint_pt": "(que - persona)",
+    "sentence": "She's the teacher ___ helped me."
+   },
+   {
+    "answer": "which",
+    "hint_pt": "(que - cosa)",
+    "sentence": "This is the book ___ I told you about."
+   },
+   {
+    "answer": "who",
+    "hint_pt": "(que - persona)",
+    "sentence": "I have a friend ___ speaks Japanese."
+   },
+   {
+    "answer": "that",
+    "hint_pt": "(que - después de 'only')",
+    "sentence": "It's the only movie ___ I really love."
+   }
+  ],
+  "summary_pt": "Who, which y that unen frases y dan más información sobre alguien o algo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-10/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two puzzle pieces connecting, one showing a smiling person and the other a small house, joined by a friendly chain link, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "The man who lives next door is a doctor.",
+   "wrong": "The man that he lives next door is a doctor.",
+   "why_pt": "No repitas el sujeto: who o that ya lo reemplaza."
+  }
+ }
+}

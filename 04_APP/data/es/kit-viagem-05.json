@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-05",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I have nothing to declare.",
+     "I don't have nothing declare.",
+     "I have anything to declare.",
+     "Nothing I declare."
+    ],
+    "question_pt": "¿Cómo se dice \"No tengo nada que declarar\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "¿Cuánto tiempo se va a quedar?",
+     "¿Cuál es el motivo de su visita?",
+     "¿Dónde se va a hospedar?",
+     "¿Es su primera visita?"
+    ],
+    "question_pt": "¿Qué significa \"What's the purpose of your visit?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'm here in vacations.",
+     "I make vacation.",
+     "I'm here on vacation.",
+     "I'm on vacations here."
+    ],
+    "question_pt": "¿Cuál es la forma correcta de decir que estás de vacaciones?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🛂",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"I'm here for/on...\" para explicar el motivo: \"I'm here on vacation\", \"I'm here for a conference\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👮",
+    "items": [
+     {
+      "en": "Can I see your passport?",
+      "pt": "¿Puedo ver su pasaporte?"
+     },
+     {
+      "en": "What's the purpose of your visit?",
+      "pt": "¿Cuál es el motivo de su visita?"
+     },
+     {
+      "en": "How long will you stay?",
+      "pt": "¿Cuánto tiempo se va a quedar?"
+     },
+     {
+      "en": "Where are you staying?",
+      "pt": "¿Dónde se va a hospedar?"
+     },
+     {
+      "en": "Is this your first visit?",
+      "pt": "¿Es su primera visita?"
+     }
+    ],
+    "label_en": "Officer's Questions",
+    "label_pt": "Preguntas del agente",
+    "illustration_key": "immigration officer",
+    "illustration_prompt": "A friendly immigration officer in uniform sitting behind a booth, no text"
+   },
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "I'm here on vacation.",
+      "pt": "Estoy aquí de vacaciones."
+     },
+     {
+      "en": "I'm here for a conference.",
+      "pt": "Estoy aquí por una conferencia."
+     },
+     {
+      "en": "I'll stay for two weeks.",
+      "pt": "Me voy a quedar dos semanas."
+     },
+     {
+      "en": "I'm staying at a hotel downtown.",
+      "pt": "Me voy a hospedar en un hotel del centro."
+     }
+    ],
+    "label_en": "Your Answers",
+    "label_pt": "Tus respuestas",
+    "illustration_key": "smiling tourist",
+    "illustration_prompt": "A smiling tourist with a backpack talking at a counter, no text"
+   },
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "I have nothing to declare.",
+      "pt": "No tengo nada que declarar."
+     },
+     {
+      "en": "Please open your suitcase.",
+      "pt": "Por favor, abra su maleta."
+     },
+     {
+      "en": "Are you carrying any food?",
+      "pt": "¿Trae algún alimento?"
+     },
+     {
+      "en": "These are gifts for friends.",
+      "pt": "Son regalos para unos amigos."
+     }
+    ],
+    "label_en": "At Customs",
+    "label_pt": "En la aduana",
+    "illustration_key": "open suitcase",
+    "illustration_prompt": "An open suitcase on an inspection table with clothes inside, no text"
+   },
+   {
+    "emoji": "📄",
+    "items": [
+     {
+      "en": "passport",
+      "pt": "pasaporte"
+     },
+     {
+      "en": "visa",
+      "pt": "visa"
+     },
+     {
+      "en": "return ticket",
+      "pt": "boleto de regreso"
+     },
+     {
+      "en": "customs form",
+      "pt": "formulario de aduana"
+     }
+    ],
+    "label_en": "Documents",
+    "label_pt": "Documentos",
+    "illustration_key": "passport",
+    "illustration_prompt": "A passport, a boarding pass and a pen lying on a table, no visible text"
+   }
+  ],
+  "title_en": "Immigration & Customs",
+  "title_pt": "Inmigración y Aduana",
+  "cover_key": "airport passport control",
+  "exercises": [
+   {
+    "answer": "passport",
+    "hint_pt": "(pasaporte)",
+    "sentence": "Can I see your ___, please?"
+   },
+   {
+    "answer": "declare",
+    "hint_pt": "(declarar)",
+    "sentence": "I have nothing to ___."
+   },
+   {
+    "answer": "hotel",
+    "hint_pt": "(hotel)",
+    "sentence": "I'm staying at a ___ downtown."
+   },
+   {
+    "answer": "suitcase",
+    "hint_pt": "(maleta)",
+    "sentence": "Please open your ___."
+   }
+  ],
+  "summary_pt": "Frases esenciales para pasar por inmigración y aduana al llegar a otro país.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airport-passport-control.png",
+  "cover_prompt": "A traveler with a backpack handing a passport to an immigration officer at an airport booth, friendly illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/immigration-officer.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/smiling-tourist.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/open-suitcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/passport.png"
+  ],
+  "common_mistake": {
+   "right": "I'm here for tourism.",
+   "wrong": "I come to do tourism.",
+   "why_pt": "En inglés no se dice \"do tourism\"; usa \"for tourism\"."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "a1-03",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "am",
+     "is",
+     "are",
+     "be"
+    ],
+    "question_pt": "Completa: \"She ___ a teacher.\"",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "How many years you have?",
+     "How old you are?",
+     "How old are you?",
+     "How old is you?"
+    ],
+    "question_pt": "¿Cómo se dice \"¿Cuántos años tienes?\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "We's",
+     "Wer",
+     "We'm",
+     "We're"
+    ],
+    "question_pt": "¿Cuál es la forma contraída de \"We are\"?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "🙋",
+  "level": "A1",
+  "tip_pt": "Usa am con I, is con he/she/it y are con you/we/they. Al hablar, contrae: I'm, she's, they're.",
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "I am Brazilian.",
+      "pt": "Soy brasileño."
+     },
+     {
+      "en": "I'm a student.",
+      "pt": "Soy estudiante."
+     },
+     {
+      "en": "I'm happy today.",
+      "pt": "Hoy estoy feliz."
+     },
+     {
+      "en": "I'm not tired.",
+      "pt": "No estoy cansado."
+     }
+    ],
+    "label_en": "Am",
+    "label_pt": "Yo (am)",
+    "illustration_prompt": "A cute hand-drawn smiling person pointing to themselves, simple doodle style, no text"
+   },
+   {
+    "emoji": "👫",
+    "items": [
+     {
+      "en": "He is my brother.",
+      "pt": "Él es mi hermano."
+     },
+     {
+      "en": "She's a teacher.",
+      "pt": "Ella es profesora."
+     },
+     {
+      "en": "It's cold today.",
+      "pt": "Hoy hace frío."
+     },
+     {
+      "en": "My mom is at home.",
+      "pt": "Mi mamá está en casa."
+     }
+    ],
+    "label_en": "Is",
+    "label_pt": "Él, ella (is)",
+    "illustration_prompt": "A cute hand-drawn boy and girl standing side by side smiling, simple doodle style, no text"
+   },
+   {
+    "emoji": "👨‍👩‍👧",
+    "items": [
+     {
+      "en": "You are very nice.",
+      "pt": "Eres muy simpático."
+     },
+     {
+      "en": "We're friends.",
+      "pt": "Somos amigos."
+     },
+     {
+      "en": "They're at school.",
+      "pt": "Ellos están en la escuela."
+     },
+     {
+      "en": "We aren't late.",
+      "pt": "No llegamos tarde."
+     }
+    ],
+    "label_en": "Are",
+    "label_pt": "Tú, nosotros, ellos (are)",
+    "illustration_prompt": "A cute hand-drawn small group of friends hugging, simple doodle style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Are you OK?",
+      "pt": "¿Estás bien?"
+     },
+     {
+      "en": "Is she your friend?",
+      "pt": "¿Ella es tu amiga?"
+     },
+     {
+      "en": "Where are you from?",
+      "pt": "¿De dónde eres?"
+     },
+     {
+      "en": "How old are you?",
+      "pt": "¿Cuántos años tienes?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn cartoon character scratching head with a thought bubble showing a question shape, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Verb To Be",
+  "title_pt": "Verbo To Be",
+  "exercises": [
+   {
+    "answer": "am",
+    "hint_pt": "(soy)",
+    "sentence": "I ___ a student."
+   },
+   {
+    "answer": "is",
+    "hint_pt": "(es)",
+    "sentence": "She ___ my sister."
+   },
+   {
+    "answer": "are",
+    "hint_pt": "(somos)",
+    "sentence": "We ___ friends."
+   },
+   {
+    "answer": "Are",
+    "hint_pt": "(¿estás?)",
+    "sentence": "___ you tired?"
+   }
+  ],
+  "summary_pt": "El verbo to be significa ser o estar: am, is y are.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-03/cover.png",
+  "cover_prompt": "A cute hand-drawn group of three smiling cartoon friends waving together, simple soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I am 25 years old.",
+   "wrong": "I have 25 years old.",
+   "why_pt": "En inglés, la edad se dice con to be, no con have."
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-08",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Moving on to the next point",
+     "Let me get back to you",
+     "To sum up",
+     "Feel free to interrupt me"
+    ],
+    "question_pt": "¿Qué frase significa \"Pasando al siguiente punto\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Ganancia",
+     "Dolor o problema del cliente",
+     "Inversión",
+     "Cierre"
+    ],
+    "question_pt": "¿Qué significa \"pain point\" en un pitch?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "That's a great question",
+     "Let's kick off",
+     "Let me get back to you",
+     "As you can see here"
+    ],
+    "question_pt": "¿Qué frase usas cuando no sabes responder una pregunta en el momento?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎤",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa conectores como \"moving on to\" y \"to sum up\" para guiar al público entre las partes de tu presentación.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Thank you all for coming",
+      "pt": "Gracias a todos por venir"
+     },
+     {
+      "en": "Let's kick off with an overview",
+      "pt": "Empecemos con una visión general"
+     },
+     {
+      "en": "Today I'd like to walk you through",
+      "pt": "Hoy me gustaría guiarlos a través de"
+     },
+     {
+      "en": "Feel free to interrupt me",
+      "pt": "Siéntanse libres de interrumpirme"
+     }
+    ],
+    "label_en": "Opening",
+    "label_pt": "Apertura",
+    "illustration_key": "speaker on stage",
+    "illustration_prompt": "A smiling speaker waving at an audience from a small stage with a microphone"
+   },
+   {
+    "emoji": "🧭",
+    "items": [
+     {
+      "en": "Moving on to the next point",
+      "pt": "Pasando al siguiente punto"
+     },
+     {
+      "en": "Let me elaborate on that",
+      "pt": "Permítanme profundizar en eso"
+     },
+     {
+      "en": "As you can see here",
+      "pt": "Como pueden ver aquí"
+     },
+     {
+      "en": "This brings me to",
+      "pt": "Esto me lleva a"
+     }
+    ],
+    "label_en": "Structure",
+    "label_pt": "Estructura",
+    "illustration_key": "compass",
+    "illustration_prompt": "A compass resting on a wooden desk next to a closed notebook"
+   },
+   {
+    "emoji": "🚀",
+    "items": [
+     {
+      "en": "It addresses a real pain point",
+      "pt": "Resuelve un problema real"
+     },
+     {
+      "en": "Our value proposition is simple",
+      "pt": "Nuestra propuesta de valor es sencilla"
+     },
+     {
+      "en": "We're looking to scale fast",
+      "pt": "Buscamos crecer rápido"
+     },
+     {
+      "en": "We're seeking an investment",
+      "pt": "Estamos buscando una inversión"
+     }
+    ],
+    "label_en": "The Pitch",
+    "label_pt": "El pitch",
+    "illustration_key": "rocket",
+    "illustration_prompt": "A small toy rocket launching upward from a conference table"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "To sum up",
+      "pt": "En resumen"
+     },
+     {
+      "en": "That's a great question",
+      "pt": "Es una excelente pregunta"
+     },
+     {
+      "en": "Let me get back to you",
+      "pt": "Permítame averiguarlo y le respondo después"
+     },
+     {
+      "en": "I'm happy to take questions",
+      "pt": "Con gusto respondo sus preguntas"
+     }
+    ],
+    "label_en": "Closing & Q&A",
+    "label_pt": "Cierre y preguntas",
+    "illustration_key": "raised hand",
+    "illustration_prompt": "An audience member raising a hand in a row of chairs"
+   }
+  ],
+  "title_en": "Presentations & Pitch",
+  "title_pt": "Presentaciones y pitch",
+  "cover_key": "business presentation",
+  "exercises": [
+   {
+    "answer": "kick",
+    "hint_pt": "(empezar)",
+    "sentence": "Let's ___ off with a quick overview."
+   },
+   {
+    "answer": "on",
+    "hint_pt": "(pasando a)",
+    "sentence": "Moving ___ to the next point, let's look at costs."
+   },
+   {
+    "answer": "addresses",
+    "hint_pt": "(resuelve)",
+    "sentence": "Our solution ___ a real pain point for small businesses."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(en resumen)",
+    "sentence": "To sum ___, we need your support to scale."
+   }
+  ],
+  "summary_pt": "Expresiones para abrir, estructurar, convencer y cerrar tus presentaciones profesionales con confianza.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-presentation.png",
+  "cover_prompt": "A confident businesswoman standing beside a blank projection screen, gesturing toward an attentive audience in a modern meeting room",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/speaker-on-stage.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/compass.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/rocket.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/raised-hand.png"
+  ],
+  "common_mistake": {
+   "right": "I will present our new product to you.",
+   "wrong": "I will present you our new product.",
+   "why_pt": "Ojo: \"present\" no admite a la persona justo después del verbo."
+  }
+ }
+}

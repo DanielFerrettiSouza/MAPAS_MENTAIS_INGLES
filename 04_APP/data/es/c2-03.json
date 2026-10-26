@@ -1,0 +1,185 @@
+{
+ "slug": "c2-03",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Never I have felt so alive.",
+     "Never have I felt so alive.",
+     "Never I felt so alive.",
+     "Never felt I so alive."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Little she knew.",
+     "Few did she know.",
+     "Little did she know.",
+     "Little knew she did."
+    ],
+    "question_pt": "¿Cómo se dice \"Poco sabía ella\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I did tell you!",
+     "I told you!",
+     "I have told you.",
+     "I tell you."
+    ],
+    "question_pt": "¿Qué frase usa un auxiliar enfático?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "💥",
+  "level": "C2",
+  "tip_pt": "Tras adverbios negativos al inicio (Never, Rarely, Not only), invierte auxiliar y sujeto: \"Never have I seen...\"",
+  "branches": [
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "Never have I felt so alive.",
+      "pt": "Nunca me he sentido tan vivo."
+     },
+     {
+      "en": "Rarely do we get such chances.",
+      "pt": "Rara vez tenemos oportunidades así."
+     },
+     {
+      "en": "Not only did he lie...",
+      "pt": "No solo mintió..."
+     },
+     {
+      "en": "Little did she know.",
+      "pt": "Poco sabía ella."
+     },
+     {
+      "en": "Under no circumstances should you leave.",
+      "pt": "Bajo ninguna circunstancia debes irte."
+     }
+    ],
+    "label_en": "Negative Inversion",
+    "label_pt": "Inversión negativa",
+    "illustration_prompt": "A cute hand-drawn pair of curved arrows swapping places, simple doodle style, no text"
+   },
+   {
+    "emoji": "🔦",
+    "items": [
+     {
+      "en": "It was Maria who called.",
+      "pt": "Fue María quien llamó."
+     },
+     {
+      "en": "What I need is rest.",
+      "pt": "Lo que necesito es descansar."
+     },
+     {
+      "en": "All I want is peace.",
+      "pt": "Lo único que quiero es paz."
+     },
+     {
+      "en": "The reason why is simple.",
+      "pt": "El motivo es sencillo."
+     }
+    ],
+    "label_en": "Cleft Sentences",
+    "label_pt": "Oraciones escindidas",
+    "illustration_prompt": "A cute hand-drawn flashlight shining on a small star, doodle style, no text"
+   },
+   {
+    "emoji": "💪",
+    "items": [
+     {
+      "en": "I did tell you!",
+      "pt": "¡Sí que te lo dije!"
+     },
+     {
+      "en": "She does care about you.",
+      "pt": "Ella sí que se preocupa por ti."
+     },
+     {
+      "en": "Do sit down, please.",
+      "pt": "Siéntese, por favor, está en su casa."
+     },
+     {
+      "en": "We did try our best.",
+      "pt": "De verdad hicimos todo lo posible."
+     }
+    ],
+    "label_en": "Emphatic Auxiliaries",
+    "label_pt": "Auxiliares enfáticos",
+    "illustration_prompt": "A cute hand-drawn flexing arm with a tiny heart, doodle style, no text"
+   },
+   {
+    "emoji": "🔥",
+    "items": [
+     {
+      "en": "Not in the least.",
+      "pt": "En absoluto."
+     },
+     {
+      "en": "No idea whatsoever.",
+      "pt": "Ni la menor idea."
+     },
+     {
+      "en": "The very best of all.",
+      "pt": "El mejor de todos, sin duda."
+     },
+     {
+      "en": "By no means easy.",
+      "pt": "Nada fácil, de ningún modo."
+     },
+     {
+      "en": "Such was his anger...",
+      "pt": "Tal era su enojo..."
+     }
+    ],
+    "label_en": "Intensifying Phrases",
+    "label_pt": "Expresiones intensificadoras",
+    "illustration_prompt": "A cute hand-drawn little flame with rosy cheeks, doodle style, no text"
+   }
+  ],
+  "title_en": "Advanced Emphatic Structures",
+  "title_pt": "Énfasis avanzado",
+  "exercises": [
+   {
+    "answer": "did",
+    "hint_pt": "(auxiliar en pasado)",
+    "sentence": "Not only ___ she win, she broke the record."
+   },
+   {
+    "answer": "is",
+    "hint_pt": "(es)",
+    "sentence": "What I need ___ a long vacation."
+   },
+   {
+    "answer": "who",
+    "hint_pt": "(quien)",
+    "sentence": "It was John ___ called the police."
+   },
+   {
+    "answer": "did",
+    "hint_pt": "(énfasis: sí que dije)",
+    "sentence": "I ___ tell you the truth!"
+   }
+  ],
+  "summary_pt": "Estructuras que reorganizan la oración para destacar ideas con fuerza y elegancia.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-03/cover.png",
+  "cover_prompt": "A cute hand-drawn megaphone with bold sparkles and exclamation-like bursts of light, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Never have I seen such chaos.",
+   "wrong": "Never I have seen such chaos.",
+   "why_pt": "Un adverbio negativo inicial exige invertir auxiliar y sujeto."
+  }
+ }
+}

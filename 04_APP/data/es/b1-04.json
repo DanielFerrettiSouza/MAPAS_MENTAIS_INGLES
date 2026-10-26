@@ -1,0 +1,177 @@
+{
+ "slug": "b1-04",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm going to get it!",
+     "I'll get it!",
+     "I get it tomorrow!",
+     "I'm getting it last week!"
+    ],
+    "question_pt": "El teléfono acaba de sonar. ¿Qué dices?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "It's going to rain.",
+     "It rains yesterday.",
+     "I'll rain.",
+     "It's raining tomorrow ago."
+    ],
+    "question_pt": "Ves nubes oscuras en el cielo. ¿Qué frase es más natural?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "We'll buy a house now!",
+     "We buy a house.",
+     "We're going to buy a house.",
+     "We shall a house."
+    ],
+    "question_pt": "¿Cómo se dice 'Vamos a comprar una casa' (plan ya decidido)?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔮",
+  "level": "B1",
+  "tip_pt": "¿Lo decides en el momento? Usa will. ¿Ya lo tenías planeado o ves señales claras? Usa going to. Ej.: Look at those clouds! It's going to rain.",
+  "branches": [
+   {
+    "emoji": "⚡",
+    "items": [
+     {
+      "en": "I'll get it!",
+      "pt": "¡Yo contesto!"
+     },
+     {
+      "en": "I'll have the chicken, please.",
+      "pt": "Para mí, el pollo, por favor."
+     },
+     {
+      "en": "I'll help you with that.",
+      "pt": "Te ayudo con eso."
+     },
+     {
+      "en": "I'll call you back.",
+      "pt": "Te devuelvo la llamada."
+     }
+    ],
+    "label_en": "Instant Decisions",
+    "label_pt": "Decisiones en el momento",
+    "illustration_prompt": "A cute hand-drawn lightbulb with a small lightning bolt, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I promise I won't tell anyone.",
+      "pt": "Te prometo que no se lo voy a contar a nadie."
+     },
+     {
+      "en": "I'll always be there for you.",
+      "pt": "Siempre estaré a tu lado."
+     },
+     {
+      "en": "Shall I open the window?",
+      "pt": "¿Quieres que abra la ventana?"
+     },
+     {
+      "en": "I won't be late again.",
+      "pt": "No volveré a llegar tarde."
+     }
+    ],
+    "label_en": "Promises & Offers",
+    "label_pt": "Promesas y ofrecimientos",
+    "illustration_prompt": "Two cute hand-drawn hands doing a pinky promise, simple doodle style, no text"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "I'm going to travel in July.",
+      "pt": "Voy a viajar en julio."
+     },
+     {
+      "en": "We're going to buy a house.",
+      "pt": "Vamos a comprar una casa."
+     },
+     {
+      "en": "She's going to study medicine.",
+      "pt": "Ella va a estudiar medicina."
+     },
+     {
+      "en": "What are you going to do?",
+      "pt": "¿Qué vas a hacer?"
+     }
+    ],
+    "label_en": "Plans",
+    "label_pt": "Planes",
+    "illustration_prompt": "A cute hand-drawn calendar with a heart and a small suitcase, simple doodle style, no text"
+   },
+   {
+    "emoji": "🌧️",
+    "items": [
+     {
+      "en": "It's going to rain.",
+      "pt": "Va a llover."
+     },
+     {
+      "en": "Watch out! You're going to fall!",
+      "pt": "¡Cuidado! ¡Te vas a caer!"
+     },
+     {
+      "en": "I think you'll love it.",
+      "pt": "Creo que te va a encantar."
+     },
+     {
+      "en": "Maybe it will be cold tomorrow.",
+      "pt": "Quizás haga frío mañana."
+     }
+    ],
+    "label_en": "Predictions",
+    "label_pt": "Predicciones",
+    "illustration_prompt": "A cute hand-drawn dark cloud with tiny raindrops and a crystal ball beside it, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Will vs. Going To",
+  "title_pt": "Will × going to",
+  "exercises": [
+   {
+    "answer": "get",
+    "hint_pt": "(contestar)",
+    "sentence": "The phone is ringing. I'll ___ it!"
+   },
+   {
+    "answer": "rain",
+    "hint_pt": "(llover)",
+    "sentence": "Look at those clouds! It's going to ___."
+   },
+   {
+    "answer": "tell",
+    "hint_pt": "(contar)",
+    "sentence": "I promise I won't ___ anyone."
+   },
+   {
+    "answer": "buy",
+    "hint_pt": "(comprar)",
+    "sentence": "We're going to ___ a house next year."
+   }
+  ],
+  "summary_pt": "Will para decisiones en el momento y promesas; going to para planes y evidencias.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-04/cover.png",
+  "cover_prompt": "A cute hand-drawn crystal ball next to a small calendar with a checkmark, soft pastel colors, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm going to visit my parents next weekend.",
+   "wrong": "I go to visit my parents next weekend.",
+   "why_pt": "\"Voy a visitar\" no es \"I go to\": usa \"I'm going to\"."
+  }
+ }
+}

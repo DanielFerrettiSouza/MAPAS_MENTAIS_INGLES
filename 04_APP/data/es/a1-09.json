@@ -1,0 +1,189 @@
+{
+ "slug": "a1-09",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "orange milk",
+     "orange juice",
+     "apple juice",
+     "orange water"
+    ],
+    "question_pt": "¿Cómo se dice \"jugo de naranja\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Tengo hambre.",
+     "Estoy cansado.",
+     "Tengo sed.",
+     "Está delicioso."
+    ],
+    "question_pt": "¿Qué significa \"I'm thirsty\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "grapes",
+     "apple",
+     "banana",
+     "strawberry"
+    ],
+    "question_pt": "¿Qué palabra significa \"fresa\"?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "🍽️",
+  "level": "A1",
+  "tip_pt": "Usa \"some\" con cosas incontables, como water y rice: \"I want some water.\" No digas \"a water\" para pedir agua en general.",
+  "branches": [
+   {
+    "emoji": "🍞",
+    "items": [
+     {
+      "en": "bread",
+      "pt": "pan"
+     },
+     {
+      "en": "rice and beans",
+      "pt": "arroz y frijoles"
+     },
+     {
+      "en": "chicken",
+      "pt": "pollo"
+     },
+     {
+      "en": "eggs",
+      "pt": "huevos"
+     },
+     {
+      "en": "cheese",
+      "pt": "queso"
+     }
+    ],
+    "label_en": "Food",
+    "label_pt": "Comidas",
+    "illustration_prompt": "Cute hand-drawn bread loaf, simple icon, no text"
+   },
+   {
+    "emoji": "🥤",
+    "items": [
+     {
+      "en": "water",
+      "pt": "agua"
+     },
+     {
+      "en": "coffee",
+      "pt": "café"
+     },
+     {
+      "en": "orange juice",
+      "pt": "jugo (zumo) de naranja"
+     },
+     {
+      "en": "milk",
+      "pt": "leche"
+     },
+     {
+      "en": "soda",
+      "pt": "refresco"
+     }
+    ],
+    "label_en": "Drinks",
+    "label_pt": "Bebidas",
+    "illustration_prompt": "Cute hand-drawn glass of juice with a straw, simple icon, no text"
+   },
+   {
+    "emoji": "🍎",
+    "items": [
+     {
+      "en": "apple",
+      "pt": "manzana"
+     },
+     {
+      "en": "banana",
+      "pt": "plátano / banana"
+     },
+     {
+      "en": "strawberry",
+      "pt": "fresa"
+     },
+     {
+      "en": "grapes",
+      "pt": "uvas"
+     }
+    ],
+    "label_en": "Fruits",
+    "label_pt": "Frutas",
+    "illustration_prompt": "Cute hand-drawn apple and banana, simple icon, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "I'm hungry.",
+      "pt": "Tengo hambre."
+     },
+     {
+      "en": "I'm thirsty.",
+      "pt": "Tengo sed."
+     },
+     {
+      "en": "Can I have water, please?",
+      "pt": "¿Me puede dar agua, por favor?"
+     },
+     {
+      "en": "It's delicious!",
+      "pt": "¡Está delicioso!"
+     },
+     {
+      "en": "I like pizza.",
+      "pt": "Me gusta la pizza."
+     }
+    ],
+    "label_en": "Useful Phrases",
+    "label_pt": "Frases útiles",
+    "illustration_prompt": "Cute hand-drawn speech bubble next to a fork and spoon, simple icon, no text or letters"
+   }
+  ],
+  "title_en": "Food and Drinks",
+  "title_pt": "Comidas y bebidas",
+  "exercises": [
+   {
+    "answer": "coffee",
+    "hint_pt": "(café)",
+    "sentence": "I drink ___ every morning."
+   },
+   {
+    "answer": "water",
+    "hint_pt": "(agua)",
+    "sentence": "Can I have a glass of ___, please?"
+   },
+   {
+    "answer": "beans",
+    "hint_pt": "(frijoles)",
+    "sentence": "I eat rice and ___ for lunch."
+   },
+   {
+    "answer": "hungry",
+    "hint_pt": "(con hambre)",
+    "sentence": "I'm ___. Let's eat!"
+   }
+  ],
+  "summary_pt": "Aprende palabras y frases básicas para hablar de comida y bebida en el día a día.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-09/cover.png",
+  "cover_prompt": "A cute hand-drawn table with a plate of food, a glass of juice, fruits and a cup of coffee, simple soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm hungry.",
+   "wrong": "I have hunger.",
+   "why_pt": "En inglés el hambre se expresa con \"be\", no con \"have\"."
+  }
+ }
+}

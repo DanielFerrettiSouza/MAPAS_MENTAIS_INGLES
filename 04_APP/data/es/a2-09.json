@@ -1,0 +1,177 @@
+{
+ "slug": "a2-09",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "in the weekend",
+     "on the weekend",
+     "at the weekend",
+     "by the weekend"
+    ],
+    "question_pt": "¿Cómo se dice 'el fin de semana' en inglés estadounidense?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "in",
+     "on",
+     "at",
+     "to"
+    ],
+    "question_pt": "¿Qué preposición usamos con 'noon' (mediodía)?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "at the morning",
+     "on the morning",
+     "in the night",
+     "in the morning"
+    ],
+    "question_pt": "¿Qué expresión es correcta?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "⏰",
+  "level": "A2",
+  "tip_pt": "Piensa en una pirámide: IN (meses, años, estaciones) arriba, ON (días, fechas) en el medio, AT (horas exactas) en la punta.",
+  "branches": [
+   {
+    "emoji": "🕗",
+    "items": [
+     {
+      "en": "at 7 o'clock",
+      "pt": "a las 7"
+     },
+     {
+      "en": "at noon",
+      "pt": "al mediodía"
+     },
+     {
+      "en": "at midnight",
+      "pt": "a medianoche"
+     },
+     {
+      "en": "at lunchtime",
+      "pt": "a la hora del almuerzo"
+     }
+    ],
+    "label_en": "AT: Exact Times",
+    "label_pt": "AT: horas",
+    "illustration_prompt": "A cute hand-drawn round alarm clock with a smiling face, no text or numbers"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "on Monday",
+      "pt": "el lunes"
+     },
+     {
+      "en": "on the weekend",
+      "pt": "el fin de semana"
+     },
+     {
+      "en": "on May 5th",
+      "pt": "el 5 de mayo"
+     },
+     {
+      "en": "on my birthday",
+      "pt": "en mi cumpleaños"
+     }
+    ],
+    "label_en": "ON: Days and Dates",
+    "label_pt": "ON: días y fechas",
+    "illustration_prompt": "A cute hand-drawn desk calendar page with a heart marking one day, no text or numbers"
+   },
+   {
+    "emoji": "🍂",
+    "items": [
+     {
+      "en": "in July",
+      "pt": "en julio"
+     },
+     {
+      "en": "in 2020",
+      "pt": "en 2020"
+     },
+     {
+      "en": "in the summer",
+      "pt": "en verano"
+     },
+     {
+      "en": "in the 90s",
+      "pt": "en los años 90"
+     }
+    ],
+    "label_en": "IN: Longer Periods",
+    "label_pt": "IN: periodos más largos",
+    "illustration_prompt": "A cute hand-drawn tree with four sections showing spring flowers, summer sun, autumn leaves and winter snow, no text"
+   },
+   {
+    "emoji": "🌙",
+    "items": [
+     {
+      "en": "in the morning",
+      "pt": "por la mañana"
+     },
+     {
+      "en": "in the afternoon",
+      "pt": "por la tarde"
+     },
+     {
+      "en": "in the evening",
+      "pt": "al anochecer"
+     },
+     {
+      "en": "at night",
+      "pt": "por la noche"
+     }
+    ],
+    "label_en": "Parts of the Day",
+    "label_pt": "Partes del día",
+    "illustration_prompt": "A cute hand-drawn smiling sun and sleepy moon side by side, no text"
+   }
+  ],
+  "title_en": "Time Prepositions",
+  "title_pt": "Preposiciones de tiempo",
+  "exercises": [
+   {
+    "answer": "at",
+    "hint_pt": "(a las)",
+    "sentence": "The class starts ___ 8 o'clock."
+   },
+   {
+    "answer": "on",
+    "hint_pt": "(el lunes)",
+    "sentence": "I go to the gym ___ Monday."
+   },
+   {
+    "answer": "in",
+    "hint_pt": "(en verano)",
+    "sentence": "It's very hot ___ the summer."
+   },
+   {
+    "answer": "at",
+    "hint_pt": "(por la noche)",
+    "sentence": "I like to read ___ night."
+   }
+  ],
+  "summary_pt": "Usa at para las horas, on para los días e in para periodos más largos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-09/cover.png",
+  "cover_prompt": "A cute hand-drawn clock, calendar and small sun arranged together in a friendly pyramid shape, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I was born on May 5th.",
+   "wrong": "I was born in May 5th.",
+   "why_pt": "Ojo: con fechas concretas se usa on, no in."
+  }
+ }
+}

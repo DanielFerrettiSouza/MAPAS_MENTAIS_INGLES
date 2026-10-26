@@ -4,11 +4,15 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createSupabaseBrowser } from "@/lib/supa/client";
 import { GOALS } from "@/lib/curriculum";
-import { LEVEL_TEST, LEVEL_NAMES, levelFromScore } from "@/lib/levelTest";
+import { LEVEL_TEST as TEST_PT, LEVEL_NAMES as NAMES_PT, LEVEL_TEST_ES, LEVEL_NAMES_ES, GOAL_LABELS_ES, levelFromScore } from "@/lib/levelTest";
 
 // Teste de nível: objetivo + 12 perguntas. Salva nível e objetivo no perfil e
 // o plano de estudos passa a começar no nível certo.
-export default function LevelTest() {
+export default function LevelTest({ lang = "pt" }: { lang?: "pt" | "es" }) {
+  const es = lang === "es";
+  const t = (pt: string, sp: string) => (es ? sp : pt);
+  const LEVEL_TEST = es ? LEVEL_TEST_ES : TEST_PT;
+  const LEVEL_NAMES = es ? LEVEL_NAMES_ES : NAMES_PT;
   const router = useRouter();
   const [goal, setGoal] = useState<string | null>(null);
   const [step, setStep] = useState(0);
@@ -45,11 +49,11 @@ export default function LevelTest() {
   if (!goal) {
     return (
       <div className="lt-card">
-        <p className="lt-kicker">Antes de começar</p>
-        <h2>Qual é o seu principal objetivo com o inglês?</h2>
+        <p className="lt-kicker">{t("Antes de começar", "Antes de empezar")}</p>
+        <h2>{t("Qual é o seu principal objetivo com o inglês?", "¿Cuál es tu principal objetivo con el inglés?")}</h2>
         <div className="lt-options">
           {GOALS.map((g) => (
-            <button key={g.tag} className="quiz-choice" onClick={() => setGoal(g.tag)}>{g.emoji} {g.label}</button>
+            <button key={g.tag} className="quiz-choice" onClick={() => setGoal(g.tag)}>{g.emoji} {es ? GOAL_LABELS_ES[g.tag] : g.label}</button>
           ))}
         </div>
       </div>
@@ -59,11 +63,11 @@ export default function LevelTest() {
   if (result) {
     return (
       <div className="lt-card" style={{ textAlign: "center" }}>
-        <p className="lt-kicker">Resultado</p>
-        <h2>Seu nível: <span className="grad-text">{result} · {LEVEL_NAMES[result]}</span></h2>
-        <p className="app-sub">Você acertou {correct} de {LEVEL_TEST.length}. Seu plano de estudos começa no {result}, com os temas do seu objetivo primeiro.</p>
+        <p className="lt-kicker">{t("Resultado", "Resultado")}</p>
+        <h2>{t("Seu nível:", "Tu nivel:")} <span className="grad-text">{result} · {LEVEL_NAMES[result]}</span></h2>
+        <p className="app-sub">{t(`Você acertou ${correct} de ${LEVEL_TEST.length}. Seu plano de estudos começa no ${result}, com os temas do seu objetivo primeiro.`, `Acertaste ${correct} de ${LEVEL_TEST.length}. Tu plan de estudio empieza en ${result}, con los temas de tu objetivo primero.`)}</p>
         <Link href="/app/plano" className="primary-btn grad-btn" aria-disabled={saving} style={{ marginTop: 16, display: "inline-block" }}>
-          {saving ? "Montando seu plano…" : "Ver meu plano de estudos →"}
+          {saving ? t("Montando seu plano…", "Armando tu plan…") : t("Ver meu plano de estudos →", "Ver mi plan de estudio →")}
         </Link>
       </div>
     );
@@ -73,9 +77,9 @@ export default function LevelTest() {
   return (
     <div className="lt-card">
       <div className="lt-progress"><span style={{ width: `${(step / LEVEL_TEST.length) * 100}%` }} /></div>
-      <p className="lt-kicker">Pergunta {step + 1} de {LEVEL_TEST.length}</p>
+      <p className="lt-kicker">{t("Pergunta", "Pregunta")} {step + 1} {t("de", "de")} {LEVEL_TEST.length}</p>
       <h2>{q.prompt}</h2>
-      {q.audio && <button className="lt-audio" onClick={() => play(q.audio!)}>🔊 Ouvir a frase</button>}
+      {q.audio && <button className="lt-audio" onClick={() => play(q.audio!)}>🔊 {t("Ouvir a frase", "Escuchar la frase")}</button>}
       <div className="lt-options">
         {q.options.map((o, i) => (
           <button
@@ -86,7 +90,7 @@ export default function LevelTest() {
             {o}
           </button>
         ))}
-        <button className="lt-skip" onClick={() => answer(-1)}>Não sei 🤷</button>
+        <button className="lt-skip" onClick={() => answer(-1)}>{t("Não sei 🤷", "No sé 🤷")}</button>
       </div>
     </div>
   );

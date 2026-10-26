@@ -1,0 +1,185 @@
+{
+ "slug": "a1-17",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "What hours are they?",
+     "What time is it?",
+     "How many hours?",
+     "What is the hour?"
+    ],
+    "question_pt": "¿Cómo se dice \"¿Qué hora es?\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Son las dos.",
+     "Son las dos y cuarto.",
+     "Son las dos y media.",
+     "Son las dos menos cuarto."
+    ],
+    "question_pt": "\"It's half past two\" significa:",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "in",
+     "on",
+     "at",
+     "to"
+    ],
+    "question_pt": "¿Qué preposición usamos antes de una hora: \"I wake up ___ seven\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏰",
+  "level": "A1",
+  "tip_pt": "Usa \"at\" con las horas: at 7 o'clock. Usa \"o'clock\" solo para horas exactas, como three o'clock.",
+  "branches": [
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What time is it?",
+      "pt": "¿Qué hora es?"
+     },
+     {
+      "en": "Do you have the time?",
+      "pt": "¿Tiene hora?"
+     },
+     {
+      "en": "Excuse me, what time is it?",
+      "pt": "Disculpe, ¿qué hora es?"
+     },
+     {
+      "en": "What time is the class?",
+      "pt": "¿A qué hora es la clase?"
+     }
+    ],
+    "label_en": "Asking the Time",
+    "label_pt": "Preguntar la hora",
+    "illustration_prompt": "A cute cartoon person pointing at a wristwatch with a curious face, hand-drawn style, no text"
+   },
+   {
+    "emoji": "🕒",
+    "items": [
+     {
+      "en": "It's three o'clock.",
+      "pt": "Son las tres en punto."
+     },
+     {
+      "en": "It's half past two.",
+      "pt": "Son las dos y media."
+     },
+     {
+      "en": "It's a quarter past six.",
+      "pt": "Son las seis y cuarto."
+     },
+     {
+      "en": "It's a quarter to nine.",
+      "pt": "Son las nueve menos cuarto."
+     },
+     {
+      "en": "It's ten thirty.",
+      "pt": "Son las diez y media."
+     }
+    ],
+    "label_en": "Saying the Time",
+    "label_pt": "Decir la hora",
+    "illustration_prompt": "A cute simple wall clock with a happy face, hand-drawn style, no numbers or text"
+   },
+   {
+    "emoji": "🌅",
+    "items": [
+     {
+      "en": "in the morning",
+      "pt": "por la mañana"
+     },
+     {
+      "en": "in the afternoon",
+      "pt": "por la tarde"
+     },
+     {
+      "en": "in the evening",
+      "pt": "al anochecer / por la noche (temprano)"
+     },
+     {
+      "en": "at night",
+      "pt": "por la noche"
+     },
+     {
+      "en": "at noon",
+      "pt": "al mediodía"
+     }
+    ],
+    "label_en": "Parts of the Day",
+    "label_pt": "Partes del día",
+    "illustration_prompt": "A cute sun and moon side by side with smiling faces, hand-drawn style, no text"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "I wake up at seven.",
+      "pt": "Me despierto a las siete."
+     },
+     {
+      "en": "I have lunch at noon.",
+      "pt": "Almuerzo al mediodía."
+     },
+     {
+      "en": "Work starts at nine.",
+      "pt": "El trabajo empieza a las nueve."
+     },
+     {
+      "en": "I go to bed at eleven.",
+      "pt": "Me acuesto a las once."
+     }
+    ],
+    "label_en": "Daily Schedule",
+    "label_pt": "Rutina y horarios",
+    "illustration_prompt": "A cute calendar page with a small clock beside it, hand-drawn style, no text or numbers"
+   }
+  ],
+  "title_en": "Telling Time",
+  "title_pt": "La hora y los horarios",
+  "exercises": [
+   {
+    "answer": "time",
+    "hint_pt": "(hora)",
+    "sentence": "Excuse me, what ___ is it?"
+   },
+   {
+    "answer": "o'clock",
+    "hint_pt": "(en punto)",
+    "sentence": "It's three ___."
+   },
+   {
+    "answer": "at",
+    "hint_pt": "(a las)",
+    "sentence": "I wake up ___ seven."
+   },
+   {
+    "answer": "quarter",
+    "hint_pt": "(cuarto)",
+    "sentence": "It's a ___ past two."
+   }
+  ],
+  "summary_pt": "Aprende a preguntar y decir la hora y a hablar de horarios.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-17/cover.png",
+  "cover_prompt": "A cute smiling round alarm clock with little arms and legs, hand-drawn style, soft pastel colors, no text, no numbers, no letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It's three o'clock.",
+   "wrong": "They are three o'clock.",
+   "why_pt": "En inglés la hora va siempre con \"it's\", en singular."
+  }
+ }
+}

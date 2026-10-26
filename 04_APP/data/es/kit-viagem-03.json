@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-03",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I need take off my shoes?",
+     "Do I need to take off my shoes?",
+     "Need I take my shoes?",
+     "I take off shoes?"
+    ],
+    "question_pt": "¿Cómo preguntas si tienes que quitarte los zapatos?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Cambia de asiento",
+     "Abróchate el cinturón de seguridad",
+     "Pon el bolso en la cinta",
+     "Muestra tu documento"
+    ],
+    "question_pt": "¿Qué significa \"Fasten your seat belt\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "boarding card ticket",
+     "flight paper",
+     "boarding pass",
+     "gate pass"
+    ],
+    "question_pt": "¿Cómo se dice \"tarjeta de embarque\" en inglés?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🛂",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"Can I...?\" para pedir permiso y \"Do I need to...?\" para preguntar qué es obligatorio.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "Put your bag on the belt.",
+      "pt": "Ponga su bolso en la cinta."
+     },
+     {
+      "en": "Take your laptop out.",
+      "pt": "Saque su computadora portátil del bolso."
+     },
+     {
+      "en": "Do I need to take off my shoes?",
+      "pt": "¿Tengo que quitarme los zapatos?"
+     },
+     {
+      "en": "Empty your pockets, please.",
+      "pt": "Vacíe sus bolsillos, por favor."
+     }
+    ],
+    "label_en": "At Security",
+    "label_pt": "En el control de seguridad",
+    "illustration_key": "security tray",
+    "illustration_prompt": "A gray plastic airport security tray holding a laptop, keys and a belt, no text"
+   },
+   {
+    "emoji": "🛂",
+    "items": [
+     {
+      "en": "Here is my passport.",
+      "pt": "Aquí está mi pasaporte."
+     },
+     {
+      "en": "Here is my boarding pass.",
+      "pt": "Aquí está mi tarjeta de embarque."
+     },
+     {
+      "en": "Can I see your ID?",
+      "pt": "¿Puedo ver su documento de identidad?"
+     },
+     {
+      "en": "Is this my seat number?",
+      "pt": "¿Este es el número de mi asiento?"
+     }
+    ],
+    "label_en": "Documents",
+    "label_pt": "Documentos",
+    "illustration_key": "passport",
+    "illustration_prompt": "A hand holding a closed passport with a blank boarding pass tucked inside, no text"
+   },
+   {
+    "emoji": "🚪",
+    "items": [
+     {
+      "en": "Which gate is my flight?",
+      "pt": "¿En qué puerta sale mi vuelo?"
+     },
+     {
+      "en": "When does boarding start?",
+      "pt": "¿Cuándo empieza el embarque?"
+     },
+     {
+      "en": "Is my flight delayed?",
+      "pt": "¿Mi vuelo está retrasado?"
+     },
+     {
+      "en": "Please line up here.",
+      "pt": "Por favor, hagan fila aquí."
+     }
+    ],
+    "label_en": "At the Gate",
+    "label_pt": "En la puerta de embarque",
+    "illustration_key": "boarding gate",
+    "illustration_prompt": "Passengers waiting in line at an airport boarding gate with an airplane visible through a large window, no signs or text"
+   },
+   {
+    "emoji": "✈️",
+    "items": [
+     {
+      "en": "Excuse me, that's my seat.",
+      "pt": "Disculpe, ese es mi asiento."
+     },
+     {
+      "en": "Can I change seats?",
+      "pt": "¿Puedo cambiarme de asiento?"
+     },
+     {
+      "en": "Fasten your seat belt.",
+      "pt": "Abróchese el cinturón de seguridad."
+     },
+     {
+      "en": "Where can I put my bag?",
+      "pt": "¿Dónde puedo poner mi bolso?"
+     }
+    ],
+    "label_en": "On the Plane",
+    "label_pt": "En el avión",
+    "illustration_key": "airplane cabin",
+    "illustration_prompt": "Inside an airplane cabin, a passenger lifting a carry-on bag into the overhead bin, no text"
+   }
+  ],
+  "title_en": "Security and Boarding",
+  "title_pt": "Seguridad y embarque",
+  "cover_key": "airport security",
+  "exercises": [
+   {
+    "answer": "tray",
+    "hint_pt": "(bandeja)",
+    "sentence": "Please put your laptop in the ___."
+   },
+   {
+    "answer": "pass",
+    "hint_pt": "(tarjeta de embarque)",
+    "sentence": "Here is my boarding ___."
+   },
+   {
+    "answer": "gate",
+    "hint_pt": "(puerta de embarque)",
+    "sentence": "Which ___ is my flight?"
+   },
+   {
+    "answer": "delayed",
+    "hint_pt": "(retrasado)",
+    "sentence": "Is my flight ___?"
+   }
+  ],
+  "summary_pt": "Frases esenciales para pasar el control de seguridad del aeropuerto y subir al avión.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airport-security.png",
+  "cover_prompt": "A traveler placing a backpack on an airport security conveyor belt next to a gray plastic tray, simple flat illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/security-tray.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/passport.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/boarding-gate.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airplane-cabin.png"
+  ],
+  "common_mistake": {
+   "right": "Do I need to take off my shoes?",
+   "wrong": "I need to take off my shoes?",
+   "why_pt": "En inglés, las preguntas necesitan el auxiliar \"do\"."
+  }
+ }
+}

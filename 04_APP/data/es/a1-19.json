@@ -1,0 +1,181 @@
+{
+ "slug": "a1-19",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm just looking, thanks.",
+     "I'm just seeing, thanks.",
+     "I look only, thanks.",
+     "I'm watching, thanks."
+    ],
+    "question_pt": "¿Cómo se dice \"Solo estoy mirando, gracias\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "How much is these?",
+     "How much are these?",
+     "How many are these?",
+     "How much costs these?"
+    ],
+    "question_pt": "¿Cuál es la forma correcta de preguntar el precio de varios artículos?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Aquí tiene su bolsa.",
+     "Aquí tiene su tarjeta.",
+     "Aquí tiene su cambio.",
+     "Aquí tiene su recibo."
+    ],
+    "question_pt": "¿Qué significa \"Here's your change\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🛍️",
+  "level": "A1",
+  "tip_pt": "Usa \"How much is\" para una cosa y \"How much are\" para varias: How much are these shoes?",
+  "branches": [
+   {
+    "emoji": "🏬",
+    "items": [
+     {
+      "en": "Can I help you?",
+      "pt": "¿Le puedo ayudar?"
+     },
+     {
+      "en": "I'm just looking, thanks.",
+      "pt": "Solo estoy mirando, gracias."
+     },
+     {
+      "en": "I'm looking for a shirt.",
+      "pt": "Busco una camisa."
+     },
+     {
+      "en": "Can I try it on?",
+      "pt": "¿Me lo puedo probar?"
+     }
+    ],
+    "label_en": "In the Store",
+    "label_pt": "En la tienda",
+    "illustration_prompt": "A cute hand-drawn small store front with an awning, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🏷️",
+    "items": [
+     {
+      "en": "How much is this?",
+      "pt": "¿Cuánto cuesta esto?"
+     },
+     {
+      "en": "How much are these?",
+      "pt": "¿Cuánto cuestan estos?"
+     },
+     {
+      "en": "It's ten dollars.",
+      "pt": "Cuesta diez dólares."
+     },
+     {
+      "en": "Is it on sale?",
+      "pt": "¿Está en oferta?"
+     }
+    ],
+    "label_en": "Asking Prices",
+    "label_pt": "Preguntar precios",
+    "illustration_prompt": "A cute hand-drawn price tag with a string, simple doodle style, no text or numbers"
+   },
+   {
+    "emoji": "💰",
+    "items": [
+     {
+      "en": "It's cheap.",
+      "pt": "Es barato."
+     },
+     {
+      "en": "It's too expensive.",
+      "pt": "Es demasiado caro."
+     },
+     {
+      "en": "That's a good price.",
+      "pt": "Es un buen precio."
+     },
+     {
+      "en": "Do you have a cheaper one?",
+      "pt": "¿Tiene uno más barato?"
+     }
+    ],
+    "label_en": "Cheap or Expensive",
+    "label_pt": "Barato o caro",
+    "illustration_prompt": "A cute hand-drawn balance scale with a small coin and a big money bag, no text or letters"
+   },
+   {
+    "emoji": "💳",
+    "items": [
+     {
+      "en": "I'll take it.",
+      "pt": "Me lo llevo."
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "en": "Cash or card?",
+      "pt": "¿Efectivo o tarjeta?"
+     },
+     {
+      "en": "Here's your change.",
+      "pt": "Aquí tiene su cambio."
+     },
+     {
+      "en": "Can I have a bag?",
+      "pt": "¿Me da una bolsa?"
+     }
+    ],
+    "label_en": "Paying",
+    "label_pt": "Pagar",
+    "illustration_prompt": "A cute hand-drawn credit card next to a wallet and coins, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Shopping and Prices",
+  "title_pt": "Compras y precios",
+  "exercises": [
+   {
+    "answer": "is",
+    "hint_pt": "(es)",
+    "sentence": "How much ___ this bag?"
+   },
+   {
+    "answer": "card",
+    "hint_pt": "(tarjeta)",
+    "sentence": "Can I pay by ___?"
+   },
+   {
+    "answer": "expensive",
+    "hint_pt": "(caro)",
+    "sentence": "It's too ___."
+   },
+   {
+    "answer": "looking",
+    "hint_pt": "(mirando)",
+    "sentence": "I'm just ___, thanks."
+   }
+  ],
+  "summary_pt": "Frases sencillas para comprar, preguntar precios y pagar en las tiendas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-19/cover.png",
+  "cover_prompt": "A cute hand-drawn shopping bag with a price tag, coins and a small shopping cart, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "How much is this shirt?",
+   "wrong": "How much costs this shirt?",
+   "why_pt": "En inglés se dice \"is\" o \"does... cost\", no \"costs\" invertido."
+  }
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "slug": "kit-trabalho-18",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "open a call",
+     "submit a ticket",
+     "make a request call",
+     "send a chamada"
+    ],
+    "question_pt": "¿Cómo se dice \"abrir un ticket\" en soporte técnico?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "una copia de seguridad",
+     "una actualización de datos",
+     "una filtración de datos",
+     "un corte de luz"
+    ],
+    "question_pt": "¿Qué significa \"a data breach\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "The server is off air.",
+     "The server is out.",
+     "The server is down.",
+     "The server is under."
+    ],
+    "question_pt": "¿Qué frase significa \"el servidor está caído\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💻",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Muchos verbos de TI son phrasal verbs: log in, back up, set up, roll out. El sustantivo suele escribirse junto: a backup, a setup.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👨‍💻",
+    "items": [
+     {
+      "en": "fix a bug",
+      "pt": "corregir un error"
+     },
+     {
+      "en": "roll out a new feature",
+      "pt": "lanzar una nueva funcionalidad"
+     },
+     {
+      "en": "run the tests",
+      "pt": "ejecutar las pruebas"
+     },
+     {
+      "en": "deploy to production",
+      "pt": "desplegar en producción"
+     },
+     {
+      "en": "the code is outdated",
+      "pt": "el código está desactualizado"
+     }
+    ],
+    "label_en": "Software Development",
+    "label_pt": "Desarrollo",
+    "illustration_key": "programmer",
+    "illustration_prompt": "A young programmer wearing headphones typing on a keyboard, screen showing only abstract colored blocks, no text"
+   },
+   {
+    "emoji": "🌐",
+    "items": [
+     {
+      "en": "the server is down",
+      "pt": "el servidor está caído"
+     },
+     {
+      "en": "a slow connection",
+      "pt": "una conexión lenta"
+     },
+     {
+      "en": "store it in the cloud",
+      "pt": "guardarlo en la nube"
+     },
+     {
+      "en": "reboot the router",
+      "pt": "reiniciar el router"
+     }
+    ],
+    "label_en": "Networks & Servers",
+    "label_pt": "Redes y servidores",
+    "illustration_key": "server rack",
+    "illustration_prompt": "A row of server racks with blinking lights and neat blue cables in a data center, no text"
+   },
+   {
+    "emoji": "🔒",
+    "items": [
+     {
+      "en": "a data breach",
+      "pt": "una filtración de datos"
+     },
+     {
+      "en": "two-factor authentication",
+      "pt": "autenticación de dos factores"
+     },
+     {
+      "en": "a phishing email",
+      "pt": "un correo de phishing"
+     },
+     {
+      "en": "reset your password",
+      "pt": "restablecer tu contraseña"
+     },
+     {
+      "en": "back up your files",
+      "pt": "hacer una copia de seguridad de tus archivos"
+     }
+    ],
+    "label_en": "Cybersecurity",
+    "label_pt": "Ciberseguridad",
+    "illustration_key": "padlock shield",
+    "illustration_prompt": "A large golden padlock in front of a shield, simple flat style, no text"
+   },
+   {
+    "emoji": "🛠️",
+    "items": [
+     {
+      "en": "submit a ticket",
+      "pt": "abrir un ticket"
+     },
+     {
+      "en": "troubleshoot the issue",
+      "pt": "diagnosticar el problema"
+     },
+     {
+      "en": "install the latest update",
+      "pt": "instalar la última actualización"
+     },
+     {
+      "en": "it keeps crashing",
+      "pt": "se sigue bloqueando"
+     }
+    ],
+    "label_en": "Tech Support",
+    "label_pt": "Soporte técnico",
+    "illustration_key": "help desk agent",
+    "illustration_prompt": "A friendly help desk agent wearing a headset smiling at a desk, no text"
+   }
+  ],
+  "title_en": "Tech & IT Terms",
+  "title_pt": "Términos de TI",
+  "cover_key": "laptop desk",
+  "exercises": [
+   {
+    "answer": "back",
+    "hint_pt": "(hacer copia de seguridad)",
+    "sentence": "Don't forget to ___ up your files every week."
+   },
+   {
+    "answer": "bug",
+    "hint_pt": "(error en el código)",
+    "sentence": "The developers found a ___ in the new release."
+   },
+   {
+    "answer": "down",
+    "hint_pt": "(caído, sin servicio)",
+    "sentence": "The server is ___ for maintenance tonight."
+   },
+   {
+    "answer": "submit",
+    "hint_pt": "(abrir/registrar)",
+    "sentence": "Please ___ a ticket with the help desk."
+   }
+  ],
+  "summary_pt": "Vocabulario esencial para hablar de tecnología, software, redes y soporte técnico en el trabajo.",
+  "cover_image": null,
+  "cover_prompt": "A modern office desk with a laptop, a second monitor showing abstract colorful shapes, a headset and a coffee mug, flat illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/programmer.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/server-rack.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/padlock-shield.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/help-desk-agent.png"
+  ],
+  "common_mistake": {
+   "right": "I need to update the software.",
+   "wrong": "I need to actualize the software.",
+   "why_pt": "\"Actualize\" no significa actualizar; usa \"update\"."
+  }
+ }
+}

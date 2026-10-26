@@ -1,0 +1,177 @@
+{
+ "slug": "b1-03",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "What did you doing?",
+     "What were you doing?",
+     "What was you doing?",
+     "What you were doing?"
+    ],
+    "question_pt": "¿Cómo se dice '¿Qué estabas haciendo?'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "were",
+     "is",
+     "was",
+     "did"
+    ],
+    "question_pt": "Completa: 'It ___ raining when I left.'",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "She wasn't paying attention.",
+     "She didn't paying attention.",
+     "She weren't paying attention.",
+     "She not was paying attention."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B1",
+  "tip_pt": "Usa was con I/he/she/it y were con you/we/they. Combínalo con 'when' + pasado simple para interrupciones.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I was working late.",
+      "pt": "Estaba trabajando hasta tarde."
+     },
+     {
+      "en": "She was cooking dinner.",
+      "pt": "Ella estaba preparando la cena."
+     },
+     {
+      "en": "We were waiting for you.",
+      "pt": "Te estábamos esperando."
+     },
+     {
+      "en": "They were having fun.",
+      "pt": "Ellos se estaban divirtiendo."
+     }
+    ],
+    "label_en": "Affirmative",
+    "label_pt": "Afirmativa",
+    "illustration_prompt": "A cute hand-drawn green check mark with a small clock, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I wasn't listening.",
+      "pt": "No estaba escuchando."
+     },
+     {
+      "en": "He wasn't feeling well.",
+      "pt": "Él no se sentía bien."
+     },
+     {
+      "en": "We weren't talking about you.",
+      "pt": "No estábamos hablando de ti."
+     },
+     {
+      "en": "She wasn't paying attention.",
+      "pt": "Ella no estaba prestando atención."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Negativa",
+    "illustration_prompt": "A cute hand-drawn red stop sign with a small sleeping face, simple doodle style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What were you doing?",
+      "pt": "¿Qué estabas haciendo?"
+     },
+     {
+      "en": "Were you sleeping?",
+      "pt": "¿Estabas durmiendo?"
+     },
+     {
+      "en": "Was it raining?",
+      "pt": "¿Estaba lloviendo?"
+     },
+     {
+      "en": "Who were you talking to?",
+      "pt": "¿Con quién estabas hablando?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn question mark shape character with big eyes, simple doodle style, no letters"
+   },
+   {
+    "emoji": "⚡",
+    "items": [
+     {
+      "en": "I was showering when you called.",
+      "pt": "Me estaba duchando cuando llamaste."
+     },
+     {
+      "en": "It was raining when I left.",
+      "pt": "Estaba lloviendo cuando salí."
+     },
+     {
+      "en": "While I was driving, it broke.",
+      "pt": "Mientras conducía, se averió."
+     },
+     {
+      "en": "We were eating when he arrived.",
+      "pt": "Estábamos comiendo cuando él llegó."
+     }
+    ],
+    "label_en": "Interruptions",
+    "label_pt": "Interrupciones",
+    "illustration_prompt": "A cute hand-drawn person in the shower surprised by a ringing phone with a lightning bolt, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Past Continuous",
+  "title_pt": "Pasado continuo",
+  "exercises": [
+   {
+    "answer": "was",
+    "hint_pt": "(estaba)",
+    "sentence": "I ___ watching TV when you called."
+   },
+   {
+    "answer": "having",
+    "hint_pt": "(cenando)",
+    "sentence": "They were ___ dinner at eight."
+   },
+   {
+    "answer": "Were",
+    "hint_pt": "(estabas)",
+    "sentence": "___ you sleeping when I arrived?"
+   },
+   {
+    "answer": "paying",
+    "hint_pt": "(prestando)",
+    "sentence": "She wasn't ___ attention."
+   }
+  ],
+  "summary_pt": "Usamos was/were + verbo con -ing para acciones en curso en el pasado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-03/cover.png",
+  "cover_prompt": "A cute hand-drawn person reading a book on a couch while a phone rings beside them, a small clock on the wall, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I was watching TV when you called.",
+   "wrong": "I watched TV when you called.",
+   "why_pt": "Para acción en curso interrumpida usa was/were + -ing, no pasado simple."
+  }
+ }
+}

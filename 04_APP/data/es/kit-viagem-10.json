@@ -1,0 +1,192 @@
+{
+ "slug": "kit-viagem-10",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Turn left",
+     "Go left",
+     "Turn in the left",
+     "Walk left side"
+    ],
+    "question_pt": "¿Cómo se dice \"Gire a la izquierda\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Al lado del parque",
+     "Dentro del parque",
+     "Enfrente del parque",
+     "Detrás del parque"
+    ],
+    "question_pt": "¿Qué significa \"Across from the park\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Hey you",
+     "Excuse me",
+     "Thank you",
+     "You can't miss it"
+    ],
+    "question_pt": "¿Qué frase usas para llamar la atención de alguien con educación?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🗺️",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"Excuse me\" para llamar la atención de alguien y \"Could you tell me...?\" para preguntar con educación.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Excuse me",
+      "pt": "Disculpe"
+     },
+     {
+      "en": "Where is the subway station?",
+      "pt": "¿Dónde está la estación de metro?"
+     },
+     {
+      "en": "How do I get there?",
+      "pt": "¿Cómo llego allí?"
+     },
+     {
+      "en": "Is it far from here?",
+      "pt": "¿Está lejos de aquí?"
+     },
+     {
+      "en": "Could you help me?",
+      "pt": "¿Podría ayudarme?"
+     }
+    ],
+    "label_en": "Asking Politely",
+    "label_pt": "Preguntar con educación",
+    "illustration_key": "polite question",
+    "illustration_prompt": "A young woman raising her hand politely to get the attention of a man on a sidewalk, no text"
+   },
+   {
+    "emoji": "➡️",
+    "items": [
+     {
+      "en": "Go straight",
+      "pt": "Siga recto"
+     },
+     {
+      "en": "Turn left",
+      "pt": "Gire a la izquierda"
+     },
+     {
+      "en": "Turn right",
+      "pt": "Gire a la derecha"
+     },
+     {
+      "en": "Cross the street",
+      "pt": "Cruce la calle"
+     },
+     {
+      "en": "Go two blocks",
+      "pt": "Camine dos calles"
+     }
+    ],
+    "label_en": "Directions",
+    "label_pt": "Indicaciones",
+    "illustration_key": "pointing hand",
+    "illustration_prompt": "A person pointing straight ahead at a city intersection, no signs or text"
+   },
+   {
+    "emoji": "📍",
+    "items": [
+     {
+      "en": "Next to the bank",
+      "pt": "Al lado del banco"
+     },
+     {
+      "en": "Across from the park",
+      "pt": "Enfrente del parque"
+     },
+     {
+      "en": "On the corner",
+      "pt": "En la esquina"
+     },
+     {
+      "en": "Between the café and hotel",
+      "pt": "Entre la cafetería y el hotel"
+     }
+    ],
+    "label_en": "Location",
+    "label_pt": "Ubicación",
+    "illustration_key": "street corner",
+    "illustration_prompt": "Two small shops side by side on a street corner, one with a green awning, no text or signs"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "It's a five-minute walk",
+      "pt": "Está a cinco minutos a pie"
+     },
+     {
+      "en": "Sorry, I'm not from here",
+      "pt": "Lo siento, no soy de aquí"
+     },
+     {
+      "en": "Thank you so much!",
+      "pt": "¡Muchas gracias!"
+     },
+     {
+      "en": "You can't miss it",
+      "pt": "No tiene pérdida"
+     }
+    ],
+    "label_en": "Responses",
+    "label_pt": "Respuestas y agradecimientos",
+    "illustration_key": "handshake",
+    "illustration_prompt": "Two people smiling and shaking hands on a sidewalk, no text"
+   }
+  ],
+  "title_en": "Asking for Directions",
+  "title_pt": "Pedir indicaciones",
+  "cover_key": "tourist asking directions",
+  "exercises": [
+   {
+    "answer": "Excuse",
+    "hint_pt": "(disculpe)",
+    "sentence": "___ me, where is the subway station?"
+   },
+   {
+    "answer": "straight",
+    "hint_pt": "(recto)",
+    "sentence": "Go ___ for two blocks."
+   },
+   {
+    "answer": "next",
+    "hint_pt": "(al lado)",
+    "sentence": "The bank is ___ to the pharmacy."
+   },
+   {
+    "answer": "left",
+    "hint_pt": "(a la izquierda)",
+    "sentence": "Turn ___ at the corner."
+   }
+  ],
+  "summary_pt": "Aprende a pedir y entender indicaciones para llegar a lugares en la calle.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/tourist-asking-directions.png",
+  "cover_prompt": "A friendly tourist holding a folded paper map asking a smiling local for directions on a city sidewalk, with buildings and trees in the background, no text or signs",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/polite-question.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/pointing-hand.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/street-corner.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handshake.png"
+  ],
+  "common_mistake": {
+   "right": "Is it far from here?",
+   "wrong": "Is far from here?",
+   "why_pt": "En inglés siempre necesitas el sujeto: \"Is it far?\""
+  }
+ }
+}

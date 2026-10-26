@@ -1,0 +1,177 @@
+{
+ "slug": "a2-07",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "much",
+     "many",
+     "a lot",
+     "lot of"
+    ],
+    "question_pt": "¿Cuál completa: \"How ___ apples?\"",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I don't have many time.",
+     "I don't have much time.",
+     "I don't have a lot time.",
+     "I haven't many time."
+    ],
+    "question_pt": "¿Cómo se dice \"No tengo mucho tiempo\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "many",
+     "much",
+     "a lot of",
+     "how many"
+    ],
+    "question_pt": "¿Qué expresión sirve para contables e incontables?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔢",
+  "level": "A2",
+  "tip_pt": "En frases afirmativas, usa \"a lot of\". \"Much\" aparece más en negativas y preguntas: \"I don't have much time.\"",
+  "branches": [
+   {
+    "emoji": "🍎",
+    "items": [
+     {
+      "en": "many friends",
+      "pt": "muchos amigos"
+     },
+     {
+      "en": "How many apples?",
+      "pt": "¿Cuántas manzanas?"
+     },
+     {
+      "en": "not many people",
+      "pt": "no mucha gente"
+     },
+     {
+      "en": "too many books",
+      "pt": "demasiados libros"
+     }
+    ],
+    "label_en": "Many",
+    "label_pt": "Many (contables)",
+    "illustration_prompt": "Cute hand-drawn group of several red apples in a row, simple doodle, no text"
+   },
+   {
+    "emoji": "🥛",
+    "items": [
+     {
+      "en": "How much money?",
+      "pt": "¿Cuánto dinero?"
+     },
+     {
+      "en": "I don't have much time.",
+      "pt": "No tengo mucho tiempo."
+     },
+     {
+      "en": "too much sugar",
+      "pt": "demasiado azúcar"
+     },
+     {
+      "en": "not much water",
+      "pt": "poca agua"
+     }
+    ],
+    "label_en": "Much",
+    "label_pt": "Much (incontables)",
+    "illustration_prompt": "Cute hand-drawn glass of milk next to a small clock, simple doodle, no text"
+   },
+   {
+    "emoji": "📚",
+    "items": [
+     {
+      "en": "a lot of work",
+      "pt": "mucho trabajo"
+     },
+     {
+      "en": "a lot of friends",
+      "pt": "muchos amigos"
+     },
+     {
+      "en": "She drinks a lot of coffee.",
+      "pt": "Ella toma mucho café."
+     },
+     {
+      "en": "We have a lot of homework.",
+      "pt": "Tenemos muchas tareas."
+     }
+    ],
+    "label_en": "A Lot Of",
+    "label_pt": "A lot of (ambos)",
+    "illustration_prompt": "Cute hand-drawn tall stack of books beside a big coffee cup, simple doodle, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "How much is it?",
+      "pt": "¿Cuánto cuesta?"
+     },
+     {
+      "en": "How many brothers do you have?",
+      "pt": "¿Cuántos hermanos tienes?"
+     },
+     {
+      "en": "How much water do you drink?",
+      "pt": "¿Cuánta agua tomas?"
+     },
+     {
+      "en": "How many people are here?",
+      "pt": "¿Cuántas personas hay aquí?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "Cute hand-drawn shopping bag with coins and a thinking bubble, simple doodle, no text"
+   }
+  ],
+  "title_en": "Much, Many, A Lot Of",
+  "title_pt": "Mucho y muchos",
+  "exercises": [
+   {
+    "answer": "many",
+    "hint_pt": "(muchos – contable)",
+    "sentence": "How ___ brothers do you have?"
+   },
+   {
+    "answer": "much",
+    "hint_pt": "(mucho – incontable)",
+    "sentence": "I don't have ___ time today."
+   },
+   {
+    "answer": "lot",
+    "hint_pt": "(mucho)",
+    "sentence": "She drinks a ___ of coffee."
+   },
+   {
+    "answer": "much",
+    "hint_pt": "(cuánto)",
+    "sentence": "How ___ money do you need?"
+   }
+  ],
+  "summary_pt": "Many para contables, much para incontables, a lot of para ambos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-07/cover.png",
+  "cover_prompt": "A cute hand-drawn scale with a pile of apples on one side and a jar of milk on the other, soft pastel colors, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I don't have much money.",
+   "wrong": "I don't have many money.",
+   "why_pt": "Money es incontable en inglés; usa much, no many."
+  }
+ }
+}

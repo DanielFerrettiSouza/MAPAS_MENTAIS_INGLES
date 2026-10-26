@@ -1,0 +1,185 @@
+{
+ "slug": "b2-09",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Me asustó",
+     "Desapareció sin decir nada",
+     "Me ayudó",
+     "Me mintió"
+    ],
+    "question_pt": "¿Qué significa \"He ghosted me\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Throw shade!",
+     "Chill out!",
+     "Spill the tea!",
+     "No way!"
+    ],
+    "question_pt": "¿Cómo dices \"¡Cuéntame el chisme!\" en jerga?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Eso es una señal de alerta",
+     "Eso es muy bonito",
+     "Eso está prohibido",
+     "Eso es gracioso"
+    ],
+    "question_pt": "\"That's a red flag\" quiere decir:",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "📺",
+  "level": "B2",
+  "tip_pt": "La jerga es informal: úsala con amigos, nunca en correos de trabajo ni en entrevistas. Fíjate en el tono y el contexto de cada escena.",
+  "branches": [
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I've got your back.",
+      "pt": "Cuenta conmigo."
+     },
+     {
+      "en": "She's my ride or die.",
+      "pt": "Ella es mi compañera incondicional."
+     },
+     {
+      "en": "What's up, dude?",
+      "pt": "¿Qué tal, amigo?"
+     },
+     {
+      "en": "We're squad goals.",
+      "pt": "Somos el grupo ideal."
+     }
+    ],
+    "label_en": "Friendship",
+    "label_pt": "Amistad",
+    "illustration_prompt": "Two cute hand-drawn cartoon friends doing a fist bump, simple doodle style, no text"
+   },
+   {
+    "emoji": "😱",
+    "items": [
+     {
+      "en": "No way!",
+      "pt": "¡No puede ser!"
+     },
+     {
+      "en": "That's so cringey.",
+      "pt": "Qué vergüenza ajena."
+     },
+     {
+      "en": "I'm dead!",
+      "pt": "¡Me muero de risa!"
+     },
+     {
+      "en": "Are you for real?",
+      "pt": "¿Lo dices en serio?"
+     },
+     {
+      "en": "I'm so hyped!",
+      "pt": "¡Estoy muy emocionado!"
+     }
+    ],
+    "label_en": "Reactions",
+    "label_pt": "Reacciones",
+    "illustration_prompt": "A cute hand-drawn shocked face with wide eyes and hands on cheeks, no text"
+   },
+   {
+    "emoji": "💘",
+    "items": [
+     {
+      "en": "He ghosted me.",
+      "pt": "Desapareció sin decir nada."
+     },
+     {
+      "en": "She has a crush on him.",
+      "pt": "A ella le gusta él."
+     },
+     {
+      "en": "They hooked up.",
+      "pt": "Estuvieron juntos."
+     },
+     {
+      "en": "That's a red flag.",
+      "pt": "Eso es una señal de alerta."
+     }
+    ],
+    "label_en": "Dating",
+    "label_pt": "Relaciones",
+    "illustration_prompt": "A cute hand-drawn heart with a small phone and a broken chat bubble, simple doodle, no text"
+   },
+   {
+    "emoji": "😎",
+    "items": [
+     {
+      "en": "Don't be so extra.",
+      "pt": "No exageres."
+     },
+     {
+      "en": "Chill out!",
+      "pt": "¡Relájate!"
+     },
+     {
+      "en": "She's so salty.",
+      "pt": "Ella está muy resentida."
+     },
+     {
+      "en": "He's throwing shade.",
+      "pt": "Está lanzando indirectas."
+     },
+     {
+      "en": "Spill the tea!",
+      "pt": "¡Cuéntame el chisme!"
+     }
+    ],
+    "label_en": "Attitude",
+    "label_pt": "Actitud y comportamiento",
+    "illustration_prompt": "A cute hand-drawn character wearing sunglasses with a relaxed smile, doodle style, no text"
+   }
+  ],
+  "title_en": "TV Show Slang",
+  "title_pt": "Jerga de series",
+  "exercises": [
+   {
+    "answer": "back",
+    "hint_pt": "(espalda, apoyo)",
+    "sentence": "Don't worry, I've got your ___."
+   },
+   {
+    "answer": "extra",
+    "hint_pt": "(dramático, exagerado)",
+    "sentence": "Stop being so ___! It's just a joke."
+   },
+   {
+    "answer": "hyped",
+    "hint_pt": "(emocionado)",
+    "sentence": "I'm so ___ right now, I can't believe we won!"
+   },
+   {
+    "answer": "ghosted",
+    "hint_pt": "(desapareció, ignoró)",
+    "sentence": "She totally ___ me, she never texted back."
+   }
+  ],
+  "summary_pt": "Jerga común en series estadounidenses para que entiendas los diálogos y hables con naturalidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-09/cover.png",
+  "cover_prompt": "A cute hand-drawn TV with a happy face, surrounded by popcorn and small speech bubbles with only emoji-like doodles, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She has a crush on him.",
+   "wrong": "She has a crush for him.",
+   "why_pt": "Se dice \"crush on\"; no traduzcas \"por\" como \"for\"."
+  }
+ }
+}

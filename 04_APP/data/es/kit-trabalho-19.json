@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-19",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "assist a conference",
+     "attend a conference",
+     "watch a conference",
+     "go in a conference"
+    ],
+    "question_pt": "¿Cómo se dice \"asistir a una conferencia\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Vamos a tocarnos",
+     "Sigamos en contacto",
+     "Programemos una reunión",
+     "Volvamos al hotel"
+    ],
+    "question_pt": "¿Qué significa \"Let's keep in touch\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "maleta",
+     "recibo",
+     "gafete / acreditación",
+     "boleto / billete"
+    ],
+    "question_pt": "¿Cuál es la traducción de \"badge\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"attend\" sin preposición: \"attend a conference\". Nunca digas \"attend to a conference\" con este sentido.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "✈️",
+    "items": [
+     {
+      "en": "book a flight",
+      "pt": "reservar un vuelo"
+     },
+     {
+      "en": "go on a business trip",
+      "pt": "hacer un viaje de negocios"
+     },
+     {
+      "en": "a round-trip ticket",
+      "pt": "un boleto (billete) de ida y vuelta"
+     },
+     {
+      "en": "pack light",
+      "pt": "llevar poco equipaje"
+     }
+    ],
+    "label_en": "Planning the Trip",
+    "label_pt": "Planeando el viaje",
+    "illustration_key": "suitcase",
+    "illustration_prompt": "A small black carry-on suitcase standing next to a laptop bag"
+   },
+   {
+    "emoji": "🏨",
+    "items": [
+     {
+      "en": "I have a reservation",
+      "pt": "Tengo una reservación (reserva)"
+     },
+     {
+      "en": "check in early",
+      "pt": "hacer el check-in temprano"
+     },
+     {
+      "en": "Is breakfast included?",
+      "pt": "¿El desayuno está incluido?"
+     },
+     {
+      "en": "keep the receipt",
+      "pt": "guardar el recibo"
+     }
+    ],
+    "label_en": "At the Hotel",
+    "label_pt": "En el hotel",
+    "illustration_key": "hotel reception",
+    "illustration_prompt": "A hotel reception desk with a small bell and a room key card"
+   },
+   {
+    "emoji": "🎤",
+    "items": [
+     {
+      "en": "attend a conference",
+      "pt": "asistir a una conferencia"
+     },
+     {
+      "en": "pick up my badge",
+      "pt": "recoger mi gafete (acreditación)"
+     },
+     {
+      "en": "give a presentation",
+      "pt": "hacer una presentación"
+     },
+     {
+      "en": "the keynote speaker",
+      "pt": "el ponente principal"
+     }
+    ],
+    "label_en": "At the Conference",
+    "label_pt": "En el evento",
+    "illustration_key": "conference stage",
+    "illustration_prompt": "A speaker on a stage holding a microphone in front of an audience seated in rows"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "exchange business cards",
+      "pt": "intercambiar tarjetas de presentación"
+     },
+     {
+      "en": "What do you do?",
+      "pt": "¿A qué te dedicas?"
+     },
+     {
+      "en": "Let's keep in touch",
+      "pt": "Sigamos en contacto"
+     },
+     {
+      "en": "follow up by email",
+      "pt": "dar seguimiento por correo electrónico"
+     }
+    ],
+    "label_en": "Networking",
+    "label_pt": "Haciendo contactos",
+    "illustration_key": "handshake",
+    "illustration_prompt": "Two professionals shaking hands at a coffee break with cups in the background"
+   }
+  ],
+  "title_en": "Business Travel",
+  "title_pt": "Viaje de Negocios",
+  "cover_key": "business traveler",
+  "exercises": [
+   {
+    "answer": "book",
+    "hint_pt": "(reservar)",
+    "sentence": "I need to ___ my flight for Monday morning."
+   },
+   {
+    "answer": "badge",
+    "hint_pt": "(gafete / acreditación)",
+    "sentence": "Can I pick up my ___ at the registration desk?"
+   },
+   {
+    "answer": "reimburse",
+    "hint_pt": "(reembolsar)",
+    "sentence": "The company will ___ me for the hotel."
+   },
+   {
+    "answer": "exchange",
+    "hint_pt": "(intercambiar)",
+    "sentence": "Let's ___ business cards after the talk."
+   }
+  ],
+  "summary_pt": "Vocabulario y frases útiles para viajes de negocios, conferencias y eventos profesionales.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-traveler.png",
+  "cover_prompt": "A professional woman in a suit walking through an airport terminal pulling a carry-on suitcase, holding a laptop bag",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/suitcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/hotel-reception.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/conference-stage.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handshake.png"
+  ],
+  "common_mistake": {
+   "right": "I will attend the conference next week.",
+   "wrong": "I will assist the conference next week.",
+   "why_pt": "\"Assist\" significa ayudar; \"asistir a\" un evento es \"attend\"."
+  }
+ }
+}

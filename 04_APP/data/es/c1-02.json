@@ -1,0 +1,177 @@
+{
+ "slug": "c1-02",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "All what I want is peace.",
+     "All I want is peace.",
+     "All I want it's peace.",
+     "Everything I want are peace."
+    ],
+    "question_pt": "¿Cómo se dice 'Todo lo que quiero es paz'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "It was John that he called.",
+     "Was John who called.",
+     "It was John who called.",
+     "It is John who he called."
+    ],
+    "question_pt": "¿Qué oración es correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "is",
+     "were",
+     "was to",
+     "was"
+    ],
+    "question_pt": "Completa: 'What we did ___ call him.'",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "🎯",
+  "level": "C1",
+  "tip_pt": "En 'What I need is...', el verbo 'is' suele ir en singular, incluso antes de un plural. 'What I need are' también aparece, pero 'is' es más común.",
+  "branches": [
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "What I need is coffee.",
+      "pt": "Lo que necesito es café."
+     },
+     {
+      "en": "What bothers me is the noise.",
+      "pt": "Lo que me molesta es el ruido."
+     },
+     {
+      "en": "What we did was call him.",
+      "pt": "Lo que hicimos fue llamarlo."
+     },
+     {
+      "en": "What happened was a misunderstanding.",
+      "pt": "Lo que pasó fue un malentendido."
+     }
+    ],
+    "label_en": "What-clefts",
+    "label_pt": "Con 'What'",
+    "illustration_prompt": "A cute hand-drawn glowing light bulb with a small arrow pointing at it, no text"
+   },
+   {
+    "emoji": "👉",
+    "items": [
+     {
+      "en": "It was John who called.",
+      "pt": "Fue John quien llamó."
+     },
+     {
+      "en": "It's the price that worries me.",
+      "pt": "Es el precio lo que me preocupa."
+     },
+     {
+      "en": "It was in Rio that we met.",
+      "pt": "Fue en Río donde nos conocimos."
+     },
+     {
+      "en": "It's you I'm talking to.",
+      "pt": "Es contigo con quien estoy hablando."
+     }
+    ],
+    "label_en": "It-clefts",
+    "label_pt": "Con 'It was'",
+    "illustration_prompt": "A cute hand-drawn finger pointing at a smiling person, no text"
+   },
+   {
+    "emoji": "🤏",
+    "items": [
+     {
+      "en": "All I want is peace.",
+      "pt": "Todo lo que quiero es paz."
+     },
+     {
+      "en": "All you need is patience.",
+      "pt": "Solo necesitas paciencia."
+     },
+     {
+      "en": "All I did was ask.",
+      "pt": "Solo pregunté."
+     },
+     {
+      "en": "All we can do is wait.",
+      "pt": "Solo nos queda esperar."
+     }
+    ],
+    "label_en": "All-clefts",
+    "label_pt": "Con 'All'",
+    "illustration_prompt": "A cute hand-drawn small hand holding one tiny heart, no text"
+   },
+   {
+    "emoji": "📍",
+    "items": [
+     {
+      "en": "The thing is, I'm tired.",
+      "pt": "Lo que pasa es que estoy cansado."
+     },
+     {
+      "en": "The reason why I left...",
+      "pt": "La razón por la que me fui..."
+     },
+     {
+      "en": "The place where we met...",
+      "pt": "El lugar donde nos conocimos..."
+     },
+     {
+      "en": "The person who helped me...",
+      "pt": "La persona que me ayudó..."
+     }
+    ],
+    "label_en": "Noun Clefts",
+    "label_pt": "Con sustantivos",
+    "illustration_prompt": "A cute hand-drawn map pin next to a small clock and a question mark shape without letters, no text"
+   }
+  ],
+  "title_en": "Cleft Sentences",
+  "title_pt": "Oraciones hendidas",
+  "exercises": [
+   {
+    "answer": "What",
+    "hint_pt": "(lo que)",
+    "sentence": "___ I need is a long vacation."
+   },
+   {
+    "answer": "who",
+    "hint_pt": "(quien)",
+    "sentence": "It was Sarah ___ called you."
+   },
+   {
+    "answer": "want",
+    "hint_pt": "(quiero)",
+    "sentence": "All I ___ is a little respect."
+   },
+   {
+    "answer": "why",
+    "hint_pt": "(por la que)",
+    "sentence": "The reason ___ I left is simple."
+   }
+  ],
+  "summary_pt": "Estructuras que ponen énfasis en una parte de la oración, como 'What I need is...'.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-02/cover.png",
+  "cover_prompt": "A cute hand-drawn spotlight shining on a single puzzle piece among others, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "What I need is for you to help me.",
+   "wrong": "What I need is that you help me.",
+   "why_pt": "No calques 'es que me ayudes'; usa 'for you to'."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "b2-06",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "That mustn't be true.",
+     "That can't be true.",
+     "That might not true.",
+     "That doesn't must be true."
+    ],
+    "question_pt": "¿Cómo se dice 'Eso no puede ser verdad'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "It must rain.",
+     "It must have rained.",
+     "It can't have rained.",
+     "It might rain."
+    ],
+    "question_pt": "¿Qué frase significa 'Debe de haber llovido'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "must",
+     "can't",
+     "might",
+     "mustn't"
+    ],
+    "question_pt": "¿Qué modal indica solo posibilidad?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🕵️",
+  "level": "B2",
+  "tip_pt": "Para el pasado, usa modal + have + participio: must have been, can't have known, might have left.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "You must be tired.",
+      "pt": "Debes de estar cansado."
+     },
+     {
+      "en": "That must be the delivery guy.",
+      "pt": "Debe de ser el repartidor."
+     },
+     {
+      "en": "She must be kidding!",
+      "pt": "¡Tiene que estar bromeando!"
+     },
+     {
+      "en": "It must be really expensive.",
+      "pt": "Debe de ser carísimo."
+     }
+    ],
+    "label_en": "Certainty: Must",
+    "label_pt": "Casi seguro",
+    "illustration_prompt": "A cute hand-drawn green check mark with a smiling face, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "That can't be true.",
+      "pt": "Eso no puede ser verdad."
+     },
+     {
+      "en": "You can't be serious!",
+      "pt": "¡No puedes estar hablando en serio!"
+     },
+     {
+      "en": "He can't be hungry already.",
+      "pt": "No puede tener hambre ya."
+     },
+     {
+      "en": "It can't be that hard.",
+      "pt": "No puede ser tan difícil."
+     }
+    ],
+    "label_en": "Impossible: Can't",
+    "label_pt": "Imposibilidad",
+    "illustration_prompt": "A cute hand-drawn red crossed circle with a surprised face, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "She might be stuck in traffic.",
+      "pt": "Puede que esté atrapada en el tráfico."
+     },
+     {
+      "en": "It could be a mistake.",
+      "pt": "Podría ser un error."
+     },
+     {
+      "en": "He may be out of town.",
+      "pt": "Puede que esté fuera de la ciudad."
+     },
+     {
+      "en": "They might not know yet.",
+      "pt": "Puede que todavía no lo sepan."
+     }
+    ],
+    "label_en": "Possibility: Might",
+    "label_pt": "Posibilidad",
+    "illustration_prompt": "A cute hand-drawn thinking cloud with a question mark shape made of dots, simple doodle style, no letters or text"
+   },
+   {
+    "emoji": "⏪",
+    "items": [
+     {
+      "en": "It must have rained.",
+      "pt": "Debe de haber llovido."
+     },
+     {
+      "en": "She can't have forgotten.",
+      "pt": "No puede haberlo olvidado."
+     },
+     {
+      "en": "He might have missed the bus.",
+      "pt": "Puede que haya perdido el autobús."
+     },
+     {
+      "en": "You must have been worried.",
+      "pt": "Debes de haber estado preocupado."
+     }
+    ],
+    "label_en": "Past Deductions",
+    "label_pt": "Deducciones en pasado",
+    "illustration_prompt": "A cute hand-drawn clock with arrows spinning backward, simple doodle style, no numbers or text"
+   }
+  ],
+  "title_en": "Modals of Deduction",
+  "title_pt": "Modales de deducción",
+  "exercises": [
+   {
+    "answer": "must",
+    "hint_pt": "(debe de estar)",
+    "sentence": "She's been working all day. She ___ be exhausted."
+   },
+   {
+    "answer": "can't",
+    "hint_pt": "(no puede ser)",
+    "sentence": "That ___ be Tom. He's in Paris this week."
+   },
+   {
+    "answer": "might",
+    "hint_pt": "(puede que esté)",
+    "sentence": "I'm not sure where he is. He ___ be at the gym."
+   },
+   {
+    "answer": "rained",
+    "hint_pt": "(llovido)",
+    "sentence": "The ground is wet. It must have ___ last night."
+   }
+  ],
+  "summary_pt": "Usamos must, might y can't para sacar conclusiones lógicas sobre distintas situaciones.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-06/cover.png",
+  "cover_prompt": "A cute hand-drawn detective with a magnifying glass looking at footprints and clues, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "He can't be home; the lights are off.",
+   "wrong": "He mustn't be home; the lights are off.",
+   "why_pt": "Lo contrario de must be (deducción) es can't be, no mustn't."
+  }
+ }
+}

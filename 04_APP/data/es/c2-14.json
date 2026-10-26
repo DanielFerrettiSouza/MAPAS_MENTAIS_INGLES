@@ -1,0 +1,177 @@
+{
+ "slug": "c2-14",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "No, I won't.",
+     "I'm afraid I'll have to pass.",
+     "That's a bad idea.",
+     "Forget it."
+    ],
+    "question_pt": "¿Qué frase rechaza una invitación de forma educada?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Hay espacio en la sala.",
+     "Está perfecto.",
+     "Hay margen de mejora.",
+     "Necesitamos más espacio."
+    ],
+    "question_pt": "¿Qué significa \"There's room for improvement\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "You're wrong.",
+     "I'm not entirely convinced.",
+     "That's stupid.",
+     "No way."
+    ],
+    "question_pt": "¿Qué expresión suaviza un desacuerdo?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🕊️",
+  "level": "C2",
+  "tip_pt": "Usa modales (might, could), negaciones suavizadas (not entirely) y preguntas para sonar menos directo y más diplomático.",
+  "branches": [
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I'm not entirely convinced.",
+      "pt": "No estoy del todo convencido."
+     },
+     {
+      "en": "With all due respect…",
+      "pt": "Con todo respeto…"
+     },
+     {
+      "en": "I see it slightly differently.",
+      "pt": "Yo lo veo de forma un poco distinta."
+     },
+     {
+      "en": "That's one way of looking at it.",
+      "pt": "Es una forma de verlo."
+     }
+    ],
+    "label_en": "Softening Disagreement",
+    "label_pt": "Discrepar con tacto",
+    "illustration_prompt": "Simple cute hand-drawn icon of two speech bubbles gently overlapping, no text"
+   },
+   {
+    "emoji": "🙅",
+    "items": [
+     {
+      "en": "I'm afraid I'll have to pass.",
+      "pt": "Me temo que tendré que declinar."
+     },
+     {
+      "en": "That might be difficult for us.",
+      "pt": "Eso podría resultarnos difícil."
+     },
+     {
+      "en": "I'd love to, but…",
+      "pt": "Me encantaría, pero…"
+     },
+     {
+      "en": "Let me get back to you.",
+      "pt": "Déjeme que se lo confirme más adelante."
+     }
+    ],
+    "label_en": "Polite Refusals",
+    "label_pt": "Rechazar con educación",
+    "illustration_prompt": "Simple cute hand-drawn icon of a hand gently raised in a polite stop gesture, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "There's room for improvement.",
+      "pt": "Hay margen de mejora."
+     },
+     {
+      "en": "It's not quite what we expected.",
+      "pt": "No es exactamente lo que esperábamos."
+     },
+     {
+      "en": "You might want to reconsider.",
+      "pt": "Quizás le convenga reconsiderarlo."
+     },
+     {
+      "en": "It could be a bit clearer.",
+      "pt": "Podría estar un poco más claro."
+     }
+    ],
+    "label_en": "Tactful Criticism",
+    "label_pt": "Criticar con tacto",
+    "illustration_prompt": "Simple cute hand-drawn icon of a feather pen writing gently on paper, no letters"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "Perhaps we could explore other options.",
+      "pt": "Quizás podríamos explorar otras opciones."
+     },
+     {
+      "en": "Would it be worth considering…?",
+      "pt": "¿Valdría la pena considerar…?"
+     },
+     {
+      "en": "Have you thought about…?",
+      "pt": "¿Ha pensado en…?"
+     },
+     {
+      "en": "It might help to…",
+      "pt": "Tal vez ayudaría…"
+     }
+    ],
+    "label_en": "Gentle Suggestions",
+    "label_pt": "Sugerir con delicadeza",
+    "illustration_prompt": "Simple cute hand-drawn icon of a glowing light bulb with a small smile, no text"
+   }
+  ],
+  "title_en": "Diplomatic Language",
+  "title_pt": "Lenguaje diplomático",
+  "exercises": [
+   {
+    "answer": "entirely",
+    "hint_pt": "(del todo)",
+    "sentence": "I'm not ___ convinced this is the best approach."
+   },
+   {
+    "answer": "respect",
+    "hint_pt": "(respeto)",
+    "sentence": "With all due ___, I see it differently."
+   },
+   {
+    "answer": "pass",
+    "hint_pt": "(declinar educadamente)",
+    "sentence": "I'm afraid I'll have to ___ this time."
+   },
+   {
+    "answer": "explore",
+    "hint_pt": "(explorar)",
+    "sentence": "Perhaps we could ___ other options."
+   }
+  ],
+  "summary_pt": "Aprende a suavizar críticas, rechazos y desacuerdos con un lenguaje indirecto y educado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-14/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two people shaking hands across a small table with a dove and olive branch above them, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm not entirely sure that would work.",
+   "wrong": "I don't agree with you. Your idea is bad.",
+   "why_pt": "Traducir literalmente suena brusco; el inglés suaviza los desacuerdos."
+  }
+ }
+}

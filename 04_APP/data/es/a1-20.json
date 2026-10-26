@@ -1,0 +1,177 @@
+{
+ "slug": "a1-20",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I don't can drive.",
+     "I can't drive.",
+     "I can't to drive.",
+     "I no can drive."
+    ],
+    "question_pt": "¿Cómo se dice 'No sé manejar'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Yes, I swim.",
+     "Yes, I do.",
+     "Yes, I can.",
+     "Yes, I cans."
+    ],
+    "question_pt": "¿Cuál es la respuesta corta correcta para 'Can you swim?'",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "She cans dance.",
+     "She can dances.",
+     "She can to dance.",
+     "She can dance."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "💪",
+  "level": "A1",
+  "tip_pt": "Después de can, usa el verbo sin 'to' y sin 's': She can swim, nunca 'She cans swim'.",
+  "branches": [
+   {
+    "emoji": "⚽",
+    "items": [
+     {
+      "en": "I can swim.",
+      "pt": "Sé nadar."
+     },
+     {
+      "en": "I can ride a bike.",
+      "pt": "Sé andar en bicicleta."
+     },
+     {
+      "en": "I can't play soccer.",
+      "pt": "No sé jugar al fútbol."
+     },
+     {
+      "en": "I can run fast.",
+      "pt": "Puedo correr rápido."
+     }
+    ],
+    "label_en": "Sports",
+    "label_pt": "Deportes",
+    "illustration_prompt": "A cute hand-drawn soccer ball and swimming goggles, simple icon, no text"
+   },
+   {
+    "emoji": "🎸",
+    "items": [
+     {
+      "en": "I can sing.",
+      "pt": "Sé cantar."
+     },
+     {
+      "en": "I can play the guitar.",
+      "pt": "Sé tocar la guitarra."
+     },
+     {
+      "en": "I can't draw.",
+      "pt": "No sé dibujar."
+     },
+     {
+      "en": "She can dance.",
+      "pt": "Ella sabe bailar."
+     }
+    ],
+    "label_en": "Music and Art",
+    "label_pt": "Música y arte",
+    "illustration_prompt": "A cute hand-drawn guitar and paintbrush, simple icon, no text"
+   },
+   {
+    "emoji": "🍳",
+    "items": [
+     {
+      "en": "I can cook.",
+      "pt": "Sé cocinar."
+     },
+     {
+      "en": "I can't drive.",
+      "pt": "No sé manejar."
+     },
+     {
+      "en": "He can speak English.",
+      "pt": "Él sabe hablar inglés."
+     },
+     {
+      "en": "We can use a computer.",
+      "pt": "Sabemos usar una computadora."
+     }
+    ],
+    "label_en": "Everyday Skills",
+    "label_pt": "Habilidades cotidianas",
+    "illustration_prompt": "A cute hand-drawn frying pan and car, simple icon, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Can you swim?",
+      "pt": "¿Sabes nadar?"
+     },
+     {
+      "en": "Yes, I can.",
+      "pt": "Sí, sé."
+     },
+     {
+      "en": "No, I can't.",
+      "pt": "No, no sé."
+     },
+     {
+      "en": "Can she cook?",
+      "pt": "¿Ella sabe cocinar?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas y respuestas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a question mark shape made of stars, simple icon, no text or letters"
+   }
+  ],
+  "title_en": "Can and Can't",
+  "title_pt": "Can y Can't",
+  "exercises": [
+   {
+    "answer": "run",
+    "hint_pt": "(correr)",
+    "sentence": "I can ___ very fast."
+   },
+   {
+    "answer": "can't",
+    "hint_pt": "(no puede)",
+    "sentence": "She ___ play the guitar. She never learned."
+   },
+   {
+    "answer": "Can",
+    "hint_pt": "(¿sabes?)",
+    "sentence": "___ you speak English?"
+   },
+   {
+    "answer": "ride",
+    "hint_pt": "(andar en)",
+    "sentence": "He can ___ a bike."
+   }
+  ],
+  "summary_pt": "Usamos can y can't para hablar de lo que sabemos o no sabemos hacer.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-20/cover.png",
+  "cover_prompt": "A cheerful cartoon child flexing arm surrounded by small icons of a bicycle, guitar, swimming waves and a cooking pot, cute hand-drawn style, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I can't swim.",
+   "wrong": "I no can swim.",
+   "why_pt": "La negación es can't o cannot, nunca 'no can'."
+  }
+ }
+}

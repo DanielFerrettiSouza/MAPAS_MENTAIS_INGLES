@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-07",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I couldn't agree more.",
+     "I'm not sure I agree.",
+     "Fair enough.",
+     "With all due respect,"
+    ],
+    "question_pt": "¿Qué expresión significa 'Estoy totalmente de acuerdo'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "You're wrong, but",
+     "I see your point, but",
+     "I am agree, but",
+     "In my opinion,"
+    ],
+    "question_pt": "¿Cómo dices 'Entiendo tu punto, pero' con educación?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "That's ridiculous.",
+     "No way.",
+     "I might be wrong, but",
+     "You don't understand."
+    ],
+    "question_pt": "¿Qué expresión suaviza un desacuerdo?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🗣️",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Suaviza el desacuerdo con 'I see your point, but...' o 'I'm not sure that...'. Evita un 'You're wrong' directo.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "💭",
+    "items": [
+     {
+      "en": "In my opinion,",
+      "pt": "En mi opinión,"
+     },
+     {
+      "en": "As far as I'm concerned,",
+      "pt": "En lo que a mí respecta,"
+     },
+     {
+      "en": "The way I see it,",
+      "pt": "Desde mi punto de vista,"
+     },
+     {
+      "en": "I'd say that",
+      "pt": "Yo diría que"
+     }
+    ],
+    "label_en": "Giving Opinions",
+    "label_pt": "Dar tu opinión",
+    "illustration_key": "thinking woman",
+    "illustration_prompt": "A woman with a thoughtful expression, hand on her chin, speaking calmly"
+   },
+   {
+    "emoji": "👍",
+    "items": [
+     {
+      "en": "I couldn't agree more.",
+      "pt": "Estoy totalmente de acuerdo."
+     },
+     {
+      "en": "That's exactly what I think.",
+      "pt": "Es exactamente lo que pienso."
+     },
+     {
+      "en": "You have a point.",
+      "pt": "En eso tienes razón."
+     },
+     {
+      "en": "Fair enough.",
+      "pt": "Me parece justo."
+     }
+    ],
+    "label_en": "Agreeing",
+    "label_pt": "Estar de acuerdo",
+    "illustration_key": "nodding people",
+    "illustration_prompt": "Two people nodding and smiling at each other across a table"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I see your point, but",
+      "pt": "Entiendo tu punto, pero"
+     },
+     {
+      "en": "I'm not sure I agree.",
+      "pt": "No sé si estoy de acuerdo."
+     },
+     {
+      "en": "I see it a bit differently.",
+      "pt": "Yo lo veo un poco diferente."
+     },
+     {
+      "en": "With all due respect,",
+      "pt": "Con todo respeto,"
+     }
+    ],
+    "label_en": "Polite Disagreeing",
+    "label_pt": "Discrepar",
+    "illustration_key": "polite objection",
+    "illustration_prompt": "A man raising one hand gently while smiling, politely objecting in a meeting"
+   },
+   {
+    "emoji": "🪶",
+    "items": [
+     {
+      "en": "That's a fair point, but",
+      "pt": "Es un punto válido, pero"
+     },
+     {
+      "en": "Have you considered",
+      "pt": "¿Has pensado en"
+     },
+     {
+      "en": "Maybe we could",
+      "pt": "Tal vez podríamos"
+     },
+     {
+      "en": "I might be wrong, but",
+      "pt": "Puede que me equivoque, pero"
+     }
+    ],
+    "label_en": "Softening",
+    "label_pt": "Suavizar",
+    "illustration_key": "feather",
+    "illustration_prompt": "A soft feather resting on a wooden table"
+   }
+  ],
+  "title_en": "Polite Disagreement",
+  "title_pt": "Discrepar con educación",
+  "cover_key": "friendly discussion",
+  "exercises": [
+   {
+    "answer": "point",
+    "hint_pt": "(punto)",
+    "sentence": "I see your ___, but I think it's too expensive."
+   },
+   {
+    "answer": "concerned",
+    "hint_pt": "(en lo que a mí respecta)",
+    "sentence": "As far as I'm ___, it's a great idea."
+   },
+   {
+    "answer": "agree",
+    "hint_pt": "(estar de acuerdo)",
+    "sentence": "I'm not sure I ___ with that."
+   },
+   {
+    "answer": "considered",
+    "hint_pt": "(considerado)",
+    "sentence": "That's a fair point, but have you ___ the costs?"
+   }
+  ],
+  "summary_pt": "Expresiones para dar tu opinión y discrepar sin sonar grosero ni agresivo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/friendly-discussion.png",
+  "cover_prompt": "Two colleagues sitting at a café table having a calm, friendly discussion, one gesturing thoughtfully while the other listens",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/thinking-woman.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/nodding-people.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/polite-objection.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/feather.png"
+  ],
+  "common_mistake": {
+   "right": "I agree with you.",
+   "wrong": "I am agree with you.",
+   "why_pt": "'Agree' es verbo; no uses 'am' delante, aunque digas 'estoy'."
+  }
+ }
+}

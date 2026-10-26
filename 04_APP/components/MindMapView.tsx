@@ -24,7 +24,8 @@ function ttsUrl(text: string) {
 // Desenha o mapa como uma página de caderno: título, seções numeradas em
 // grade ao redor de um círculo central, dica, erro comum e mini exercício.
 // Todo texto é renderizado pelo app (sempre correto); as ilustrações vêm da IA.
-export default function MindMapView({ map, preview = false }: { map: MapWithImages; preview?: boolean }) {
+export default function MindMapView({ map, preview = false, lang = "pt" }: { map: MapWithImages; preview?: boolean; lang?: "pt" | "es" }) {
+  const t = (pt: string, es: string) => (lang === "es" ? es : pt);
   const pageRef = useRef<HTMLDivElement | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
@@ -48,8 +49,8 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
       setPlaying(null);
       // Busca a mensagem do servidor para mostrar o motivo real.
       const res = await fetch(ttsUrl(text)).catch(() => null);
-      const detail = res && !res.ok ? await res.text() : "o navegador bloqueou o som";
-      setAudioError(`Não foi possível tocar o áudio: ${detail}`);
+      const detail = res && !res.ok ? await res.text() : t("o navegador bloqueou o som", "el navegador bloqueó el sonido");
+      setAudioError(`${t("Não foi possível tocar o áudio", "No se pudo reproducir el audio")}: ${detail}`);
     }
   }
 
@@ -97,7 +98,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                 className={`nb-play ${playing === item.en ? "active" : ""}`}
                 style={{ color: s.color.main }}
                 onClick={() => play(item.en)}
-                aria-label={`Ouvir: ${item.en}`}
+                aria-label={`${t("Ouvir", "Escuchar")}: ${item.en}`}
                 data-no-export="true"
               >
                 {playing === item.en ? "🔊" : "▶"}
@@ -126,7 +127,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
             </h2>
             <p className="nb-subtitle">{map.title_en}</p>
           </div>
-          <span className="nb-badge">Nível {map.level}</span>
+          <span className="nb-badge">{t("Nível", "Nivel")} {map.level}</span>
         </header>
 
         <div className="nb-grid">
@@ -148,12 +149,12 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
             {map.summary_pt && <p className="nb-summary">{map.summary_pt}</p>}
 
             <div className="nb-card nb-tip">
-              <div className="nb-card-head">💡 Dica rápida</div>
+              <div className="nb-card-head">💡 {t("Dica rápida", "Consejo rápido")}</div>
               <p>{map.tip_pt}</p>
             </div>
 
             <div className="nb-card nb-mistake">
-              <div className="nb-card-head">⚠️ Erro comum</div>
+              <div className="nb-card-head">⚠️ {t("Erro comum", "Error común")}</div>
               <p>
                 <span className="nb-wrong">✗ {map.common_mistake.wrong}</span>
                 <br />
@@ -162,7 +163,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                   className="nb-play"
                   style={{ color: "#16a34a" }}
                   onClick={() => play(map.common_mistake.right)}
-                  aria-label={`Ouvir: ${map.common_mistake.right}`}
+                  aria-label={`${t("Ouvir", "Escuchar")}: ${map.common_mistake.right}`}
                   data-no-export="true"
                 >
                   ▶
@@ -178,7 +179,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
         </div>
 
         <footer className="nb-exercise">
-          <div className="nb-exercise-title">✏️ Mini exercício</div>
+          <div className="nb-exercise-title">✏️ {t("Mini exercício", "Mini ejercicio")}</div>
           <ol>
             {map.exercises.map((ex, i) => (
               <li key={i}>
@@ -198,7 +199,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                             setChecked(false);
                           }}
                           onKeyDown={(e) => e.key === "Enter" && setChecked(true)}
-                          aria-label={`Resposta ${i + 1}`}
+                          aria-label={`${t("Resposta", "Respuesta")} ${i + 1}`}
                           autoCapitalize="off"
                           autoCorrect="off"
                           spellCheck={false}
@@ -219,13 +220,13 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
           </ol>
           <div className="nb-ex-actions" data-no-export="true">
             <button className="nb-answers-btn nb-check-btn" onClick={() => setChecked(true)}>
-              Verificar respostas
+              {t("Verificar respostas", "Comprobar respuestas")}
             </button>
             {checked && (
               <>
                 <span className="nb-score">
                   {score === map.exercises.length ? "🎉 " : ""}
-                  {score}/{map.exercises.length} certas
+                  {score}/{map.exercises.length} {t("certas", "correctas")}
                 </span>
                 <button
                   className="nb-answers-btn"
@@ -234,7 +235,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
                     setChecked(false);
                   }}
                 >
-                  Tentar de novo
+                  {t("Tentar de novo", "Intentar de nuevo")}
                 </button>
               </>
             )}
@@ -245,7 +246,7 @@ export default function MindMapView({ map, preview = false }: { map: MapWithImag
       {audioError && <p className="error">{audioError}</p>}
 
       {!preview && <button className="secondary-btn" onClick={downloadPng}>
-        ⬇ Baixar mapa (PNG)
+        ⬇ {t("Baixar mapa (PNG)", "Descargar mapa (PNG)")}
       </button>}
     </div>
   );

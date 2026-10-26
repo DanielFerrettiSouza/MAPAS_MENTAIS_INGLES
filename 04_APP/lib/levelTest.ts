@@ -34,3 +34,18 @@ export const LEVEL_NAMES: Record<string, string> = {
 export function levelFromScore(correct: number) {
   return LEVELS[Math.min(5, Math.floor(Math.max(0, correct - 1) / 2))];
 }
+
+// Versão em espanhol: mesmas perguntas, áudios e respostas; enunciados e alternativas traduzidos.
+const ES_TEXT: Record<number, { prompt?: string; options?: string[] }> = {
+  1: { prompt: "Escucha. ¿Qué preguntó la persona?", options: ["¿Cuántos años tienes?", "¿Cómo estás?", "¿Dónde vives?", "¿Cómo te llamas?"] },
+  3: { prompt: "¿Qué significa “I'm looking for the station”?", options: ["Estoy buscando la estación", "Estoy mirando la estación", "Estoy saliendo de la estación", "Estoy cerca de la estación"] },
+  5: { prompt: "Escucha. ¿Qué dijo la persona?", options: ["Llovió ayer y nos quedamos en casa", "Si lloviera, nos quedaríamos en casa", "Si llueve mañana, nos vamos a quedar en casa", "Mañana vamos a salir aunque llueva"] },
+  7: { prompt: "¿Qué significa “It's not worth it”?", options: ["No está listo", "No es verdad", "No vale la pena", "No es barato"] },
+  9: { prompt: "Escucha. ¿Qué dijo la persona?", options: ["Ya se lo conté a todo el mundo", "Deberías contárselo a alguien", "No sabía que lo habías contado", "Preferiría que no se lo contaras a nadie"] },
+  11: { prompt: "¿Qué significa “He's beating around the bush”?", options: ["Está trabajando en el jardín", "Está dando rodeos para no ir al grano", "Está muy enojado", "Está huyendo de alguien"] },
+};
+export const LEVEL_TEST_ES: LevelQuestion[] = LEVEL_TEST.map((q, i) => ({ ...q, ...ES_TEXT[i] }));
+export const LEVEL_NAMES_ES: Record<string, string> = {
+  A1: "Primeros pasos", A2: "Supervivencia", B1: "Independiente", B2: "Natural", C1: "Avanzado", C2: "Dominio",
+};
+export const GOAL_LABELS_ES: Record<string, string> = { v: "Viajar", t: "Trabajo", s: "Series y música", p: "Exámenes / gramática", d: "Día a día" };

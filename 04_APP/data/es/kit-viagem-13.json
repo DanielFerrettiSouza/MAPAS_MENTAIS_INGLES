@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-13",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Can I get the count?",
+     "Can I get the check?",
+     "Can I get the bill paper?",
+     "Can I get the account?"
+    ],
+    "question_pt": "¿Cómo pides la cuenta en un restaurante de EE. UU.?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Dos mesas, por favor.",
+     "Una mesa a las dos.",
+     "Una mesa para dos, por favor.",
+     "La mesa número dos."
+    ],
+    "question_pt": "¿Qué significa \"A table for two, please\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Keep the change.",
+     "Take the tip.",
+     "Hold the money.",
+     "Stay with the change."
+    ],
+    "question_pt": "¿Cómo se dice \"Quédese con el cambio\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🍽️",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"I'd like...\" o \"Can I get...?\" para pedir con cortesía. En EE. UU., la propina suele ser del 15 % al 20 %.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "📞",
+    "items": [
+     {
+      "en": "I'd like to make a reservation.",
+      "pt": "Quisiera hacer una reserva."
+     },
+     {
+      "en": "A table for two, please.",
+      "pt": "Una mesa para dos, por favor."
+     },
+     {
+      "en": "For tonight at seven.",
+      "pt": "Para esta noche, a las siete."
+     },
+     {
+      "en": "Do you have a table outside?",
+      "pt": "¿Tienen alguna mesa afuera?"
+     }
+    ],
+    "label_en": "Reservation",
+    "label_pt": "Reserva",
+    "illustration_key": "phone call",
+    "illustration_prompt": "A person holding a phone to their ear, smiling, next to an empty restaurant table"
+   },
+   {
+    "emoji": "📝",
+    "items": [
+     {
+      "en": "Can I see the menu?",
+      "pt": "¿Puedo ver la carta?"
+     },
+     {
+      "en": "I'd like the chicken, please.",
+      "pt": "Quiero el pollo, por favor."
+     },
+     {
+      "en": "What do you recommend?",
+      "pt": "¿Qué me recomienda?"
+     },
+     {
+      "en": "Can I get a soda?",
+      "pt": "¿Me trae un refresco?"
+     },
+     {
+      "en": "No onions, please.",
+      "pt": "Sin cebolla, por favor."
+     }
+    ],
+    "label_en": "Ordering",
+    "label_pt": "Cómo pedir",
+    "illustration_key": "waiter notepad",
+    "illustration_prompt": "A waiter holding a small notepad and pen, listening to a customer at a table"
+   },
+   {
+    "emoji": "🍝",
+    "items": [
+     {
+      "en": "This is delicious!",
+      "pt": "¡Esto está delicioso!"
+     },
+     {
+      "en": "Could we have more water?",
+      "pt": "¿Nos podría traer más agua?"
+     },
+     {
+      "en": "Excuse me, this is cold.",
+      "pt": "Disculpe, esto está frío."
+     },
+     {
+      "en": "Can I get a to-go box?",
+      "pt": "¿Me da un recipiente para llevar?"
+     }
+    ],
+    "label_en": "During the Meal",
+    "label_pt": "Durante la comida",
+    "illustration_key": "plate of pasta",
+    "illustration_prompt": "A plate of pasta with a fork and a glass of water on a table"
+   },
+   {
+    "emoji": "💵",
+    "items": [
+     {
+      "en": "Can I get the check?",
+      "pt": "¿Me trae la cuenta?"
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "en": "Is the tip included?",
+      "pt": "¿La propina está incluida?"
+     },
+     {
+      "en": "Keep the change.",
+      "pt": "Quédese con el cambio."
+     }
+    ],
+    "label_en": "Check and Tip",
+    "label_pt": "Cuenta y propina",
+    "illustration_key": "bill folder",
+    "illustration_prompt": "A small leather bill folder on a table with a credit card and a few coins beside it"
+   }
+  ],
+  "title_en": "At the Restaurant",
+  "title_pt": "En el restaurante",
+  "cover_key": "restaurant table",
+  "exercises": [
+   {
+    "answer": "reservation",
+    "hint_pt": "(reserva)",
+    "sentence": "I'd like to make a ___ for two."
+   },
+   {
+    "answer": "menu",
+    "hint_pt": "(carta, menú)",
+    "sentence": "Can I see the ___, please?"
+   },
+   {
+    "answer": "check",
+    "hint_pt": "(cuenta)",
+    "sentence": "Can I get the ___, please?"
+   },
+   {
+    "answer": "tip",
+    "hint_pt": "(propina)",
+    "sentence": "Is the ___ included?"
+   }
+  ],
+  "summary_pt": "Frases para reservar mesa, pedir la comida, pagar y dejar propina.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/restaurant-table.png",
+  "cover_prompt": "A cozy restaurant table set for two with plates, glasses, and a small candle, a friendly waiter standing nearby",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/phone-call.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waiter-notepad.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/plate-of-pasta.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/bill-folder.png"
+  ],
+  "common_mistake": {
+   "right": "Can I get the check, please?",
+   "wrong": "Can I get the account, please?",
+   "why_pt": "La cuenta del restaurante es \"check\", no \"account\"."
+  }
+ }
+}

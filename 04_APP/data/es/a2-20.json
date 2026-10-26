@@ -1,0 +1,173 @@
+{
+ "slug": "a2-20",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Long time no see!",
+     "Much time!",
+     "How much time?",
+     "Time is long!"
+    ],
+    "question_pt": "¿Cómo se dice \"¡Cuánto tiempo!\" al reencontrarte con alguien?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "What's new?",
+     "How's it going?",
+     "I've got to go.",
+     "How about you?"
+    ],
+    "question_pt": "¿Qué frase sirve para terminar una conversación?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "¿Trabajas el fin de semana?",
+     "¿Algún plan para el fin de semana?",
+     "¿Qué tal tu fin de semana?",
+     "¿Ya se acabó el fin de semana?"
+    ],
+    "question_pt": "¿Qué significa \"Any plans for the weekend?\"",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "💬",
+  "level": "A2",
+  "tip_pt": "Usa preguntas abiertas como \"How about you?\" para devolver la pregunta y mantener la conversación de forma natural.",
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "How's it going?",
+      "pt": "¿Qué tal todo?"
+     },
+     {
+      "en": "How was your day?",
+      "pt": "¿Qué tal tu día?"
+     },
+     {
+      "en": "Long time no see!",
+      "pt": "¡Cuánto tiempo!"
+     },
+     {
+      "en": "What's new?",
+      "pt": "¿Qué hay de nuevo?"
+     }
+    ],
+    "label_en": "Starting",
+    "label_pt": "Para empezar",
+    "illustration_prompt": "A cute hand-drawn waving hand, simple icon, soft colors, no text"
+   },
+   {
+    "emoji": "☀️",
+    "items": [
+     {
+      "en": "Nice weather today, isn't it?",
+      "pt": "Qué buen tiempo hace hoy, ¿no?"
+     },
+     {
+      "en": "It's so hot today!",
+      "pt": "¡Hace mucho calor hoy!"
+     },
+     {
+      "en": "It looks like rain.",
+      "pt": "Parece que va a llover."
+     }
+    ],
+    "label_en": "Weather",
+    "label_pt": "El tiempo",
+    "illustration_prompt": "A cute smiling sun peeking from behind a small cloud, hand-drawn icon, no text"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "What do you do for work?",
+      "pt": "¿A qué te dedicas?"
+     },
+     {
+      "en": "Any plans for the weekend?",
+      "pt": "¿Algún plan para el fin de semana?"
+     },
+     {
+      "en": "How about you?",
+      "pt": "¿Y tú?"
+     },
+     {
+      "en": "Sounds fun!",
+      "pt": "¡Suena divertido!"
+     }
+    ],
+    "label_en": "Life & Plans",
+    "label_pt": "Vida y planes",
+    "illustration_prompt": "A cute hand-drawn calendar with a small heart, simple icon, no letters or numbers"
+   },
+   {
+    "emoji": "🚪",
+    "items": [
+     {
+      "en": "It was nice talking to you.",
+      "pt": "Fue un gusto hablar contigo."
+     },
+     {
+      "en": "I've got to go.",
+      "pt": "Me tengo que ir."
+     },
+     {
+      "en": "See you around!",
+      "pt": "¡Nos vemos!"
+     },
+     {
+      "en": "Have a good one!",
+      "pt": "¡Que te vaya bien!"
+     }
+    ],
+    "label_en": "Ending",
+    "label_pt": "Para despedirte",
+    "illustration_prompt": "A cute hand-drawn open door with a little person waving goodbye, simple icon, no text"
+   }
+  ],
+  "title_en": "Small Talk",
+  "title_pt": "Charla casual",
+  "exercises": [
+   {
+    "answer": "weather",
+    "hint_pt": "(tiempo/clima)",
+    "sentence": "Nice ___ today, isn't it?"
+   },
+   {
+    "answer": "work",
+    "hint_pt": "(trabajo)",
+    "sentence": "What do you do for ___?"
+   },
+   {
+    "answer": "weekend",
+    "hint_pt": "(fin de semana)",
+    "sentence": "Any plans for the ___?"
+   },
+   {
+    "answer": "talking to",
+    "hint_pt": "(hablar con)",
+    "sentence": "It was nice ___ you."
+   }
+  ],
+  "summary_pt": "Frases sencillas para iniciar y mantener conversaciones ligeras con conocidos o desconocidos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-20/cover.png",
+  "cover_prompt": "Two cute cartoon people chatting happily with coffee cups, simple speech bubbles without any text, hand-drawn style, soft colors",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It's very hot today!",
+   "wrong": "It makes a lot of heat today!",
+   "why_pt": "Para el clima se usa \"it's\", no \"it makes\" (hace)."
+  }
+ }
+}

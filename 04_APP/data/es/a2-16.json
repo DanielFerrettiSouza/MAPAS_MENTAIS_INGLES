@@ -1,0 +1,181 @@
+{
+ "slug": "a2-16",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "outgoing",
+     "outside",
+     "quiet",
+     "shy"
+    ],
+    "question_pt": "¿Cómo se dice \"extrovertida\" en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Él es un poco tímido.",
+     "Él es un poco perezoso.",
+     "Él es un poco grosero.",
+     "Él es un poco callado."
+    ],
+    "question_pt": "¿Cuál es la traducción de \"He is a little lazy\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "educated",
+     "rude",
+     "polite",
+     "selfish"
+    ],
+    "question_pt": "¿Qué palabra significa \"educado\" (en el trato con las personas)?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "😊",
+  "level": "A2",
+  "tip_pt": "Usa \"be\" para la personalidad: \"She is shy\". Los adjetivos no tienen plural en inglés: \"They are kind\", nunca \"kinds\".",
+  "branches": [
+   {
+    "emoji": "🌟",
+    "items": [
+     {
+      "en": "She is very kind.",
+      "pt": "Ella es muy amable."
+     },
+     {
+      "en": "He is so friendly.",
+      "pt": "Él es muy simpático."
+     },
+     {
+      "en": "My mom is patient.",
+      "pt": "Mi mamá es paciente."
+     },
+     {
+      "en": "You are really helpful.",
+      "pt": "Eres muy servicial."
+     }
+    ],
+    "label_en": "Positive Traits",
+    "label_pt": "Cualidades",
+    "illustration_prompt": "A cute hand-drawn smiling star with a little heart, soft colors, no text"
+   },
+   {
+    "emoji": "😠",
+    "items": [
+     {
+      "en": "He is a little lazy.",
+      "pt": "Él es un poco perezoso."
+     },
+     {
+      "en": "Don't be rude!",
+      "pt": "¡No seas grosero!"
+     },
+     {
+      "en": "She is very selfish.",
+      "pt": "Ella es muy egoísta."
+     },
+     {
+      "en": "My boss is impatient.",
+      "pt": "Mi jefe es impaciente."
+     }
+    ],
+    "label_en": "Negative Traits",
+    "label_pt": "Defectos",
+    "illustration_prompt": "A cute hand-drawn grumpy cloud with crossed arms, soft colors, no text"
+   },
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "I'm a bit shy.",
+      "pt": "Soy un poco tímido."
+     },
+     {
+      "en": "She is very outgoing.",
+      "pt": "Ella es muy extrovertida."
+     },
+     {
+      "en": "He is so talkative.",
+      "pt": "Él es muy hablador."
+     },
+     {
+      "en": "My sister is quiet.",
+      "pt": "Mi hermana es callada."
+     }
+    ],
+    "label_en": "Social Style",
+    "label_pt": "Forma de Ser en Sociedad",
+    "illustration_prompt": "A cute hand-drawn pair of speech bubbles, one big and one small, no letters or text"
+   },
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "She is hardworking.",
+      "pt": "Ella es trabajadora."
+     },
+     {
+      "en": "He is always polite.",
+      "pt": "Él siempre es educado."
+     },
+     {
+      "en": "My teacher is funny.",
+      "pt": "Mi profesor es divertido."
+     },
+     {
+      "en": "You are very smart.",
+      "pt": "Eres muy inteligente."
+     },
+     {
+      "en": "Be more organized.",
+      "pt": "Sé más organizado."
+     }
+    ],
+    "label_en": "At Work and School",
+    "label_pt": "En el Trabajo y la Escuela",
+    "illustration_prompt": "A cute hand-drawn briefcase next to a stack of books and a smiling pencil, no text"
+   }
+  ],
+  "title_en": "Personality Adjectives",
+  "title_pt": "Adjetivos de Personalidad",
+  "exercises": [
+   {
+    "answer": "shy",
+    "hint_pt": "(tímida)",
+    "sentence": "She never talks in class. She is very ___."
+   },
+   {
+    "answer": "polite",
+    "hint_pt": "(educado)",
+    "sentence": "My dad always says \"please\" and \"thank you\". He is ___."
+   },
+   {
+    "answer": "lazy",
+    "hint_pt": "(perezoso)",
+    "sentence": "He never helps at home. He is so ___!"
+   },
+   {
+    "answer": "funny",
+    "hint_pt": "(divertido, gracioso)",
+    "sentence": "My teacher is really ___. He makes us laugh."
+   }
+  ],
+  "summary_pt": "Palabras para describir cómo son y cómo se comportan las personas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-16/cover.png",
+  "cover_prompt": "A cute hand-drawn group of four diverse cartoon friends with different facial expressions: smiling, shy, laughing, and thinking, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "My brother is very polite with everyone.",
+   "wrong": "My brother is very educated with everyone.",
+   "why_pt": "\"Educated\" significa con estudios; educado en el trato es \"polite\"."
+  }
+ }
+}

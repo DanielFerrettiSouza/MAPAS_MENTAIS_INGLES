@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-01",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm engineer.",
+     "I'm an engineer.",
+     "I am a engineer.",
+     "I engineer."
+    ],
+    "question_pt": "¿Cuál es la forma correcta de decir \"Soy ingeniero\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Nice to meet you too.",
+     "Me too meet.",
+     "Good, thanks.",
+     "You're welcome."
+    ],
+    "question_pt": "¿Cómo respondes a \"Nice to meet you!\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Estoy cansado de las ventas.",
+     "Soy responsable de ventas.",
+     "Estoy buscando ventas.",
+     "Compré en las rebajas."
+    ],
+    "question_pt": "¿Qué significa \"I'm in charge of sales\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🤝",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"I work as a...\" o \"I'm a...\" con artículo antes de la profesión: \"I'm a designer\", nunca \"I'm designer\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Hi, I'm Ana.",
+      "pt": "Hola, soy Ana."
+     },
+     {
+      "en": "Nice to meet you!",
+      "pt": "¡Mucho gusto!"
+     },
+     {
+      "en": "Nice to meet you too.",
+      "pt": "El gusto es mío."
+     },
+     {
+      "en": "I'm new here.",
+      "pt": "Soy nuevo aquí."
+     }
+    ],
+    "label_en": "Greetings",
+    "label_pt": "Saludos",
+    "illustration_key": "person waving",
+    "illustration_prompt": "A friendly young woman waving hello in an office hallway"
+   },
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "I'm the new marketing manager.",
+      "pt": "Soy el nuevo gerente de marketing."
+     },
+     {
+      "en": "I work as a designer.",
+      "pt": "Trabajo como diseñador."
+     },
+     {
+      "en": "I'm an engineer.",
+      "pt": "Soy ingeniero."
+     },
+     {
+      "en": "I'm in charge of sales.",
+      "pt": "Soy responsable de ventas."
+     }
+    ],
+    "label_en": "Your Job",
+    "label_pt": "Tu puesto",
+    "illustration_key": "briefcase",
+    "illustration_prompt": "A man in a shirt holding a briefcase standing next to his desk"
+   },
+   {
+    "emoji": "👥",
+    "items": [
+     {
+      "en": "I work on the sales team.",
+      "pt": "Trabajo en el equipo de ventas."
+     },
+     {
+      "en": "I'm in the IT department.",
+      "pt": "Estoy en el departamento de informática."
+     },
+     {
+      "en": "I report to Mr. Lee.",
+      "pt": "Mi jefe directo es el Sr. Lee."
+     },
+     {
+      "en": "This is my coworker, Sam.",
+      "pt": "Este es mi compañero de trabajo, Sam."
+     }
+    ],
+    "label_en": "Your Team",
+    "label_pt": "Tu equipo",
+    "illustration_key": "meeting table",
+    "illustration_prompt": "A small group of colleagues sitting around a meeting table"
+   },
+   {
+    "emoji": "☕",
+    "items": [
+     {
+      "en": "How long have you worked here?",
+      "pt": "¿Cuánto tiempo llevas trabajando aquí?"
+     },
+     {
+      "en": "What do you do here?",
+      "pt": "¿A qué te dedicas aquí?"
+     },
+     {
+      "en": "Where's the break room?",
+      "pt": "¿Dónde está la sala de descanso?"
+     },
+     {
+      "en": "Let me know if you need help.",
+      "pt": "Avísame si necesitas ayuda."
+     }
+    ],
+    "label_en": "Small Talk",
+    "label_pt": "Charla informal",
+    "illustration_key": "coffee mugs",
+    "illustration_prompt": "Two coworkers chatting while holding coffee mugs in an office kitchen"
+   }
+  ],
+  "title_en": "Introducing Yourself at Work",
+  "title_pt": "Preséntate en el trabajo",
+  "cover_key": "office handshake",
+  "exercises": [
+   {
+    "answer": "new",
+    "hint_pt": "(nuevo)",
+    "sentence": "Hi, I'm Ana. I'm the ___ marketing manager."
+   },
+   {
+    "answer": "meet",
+    "hint_pt": "(conocer)",
+    "sentence": "Nice to ___ you!"
+   },
+   {
+    "answer": "on",
+    "hint_pt": "(en)",
+    "sentence": "I work ___ the sales team."
+   },
+   {
+    "answer": "worked",
+    "hint_pt": "(trabajado)",
+    "sentence": "How long have you ___ here?"
+   }
+  ],
+  "summary_pt": "Aprende a presentarte a tus compañeros, hablar de tu puesto y empezar una conversación.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-handshake.png",
+  "cover_prompt": "Two smiling coworkers shaking hands in a bright modern office with desks and plants in the background",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/person-waving.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/briefcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/meeting-table.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/coffee-mugs.png"
+  ],
+  "common_mistake": {
+   "right": "I'm an engineer in the IT department.",
+   "wrong": "I'm engineer in the IT department.",
+   "why_pt": "En inglés, la profesión en singular necesita a/an."
+  }
+ }
+}

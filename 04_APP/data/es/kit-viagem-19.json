@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-19",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I lost my connection",
+     "I missed my connection",
+     "I forgot my connection",
+     "I left my connection"
+    ],
+    "question_pt": "¿Cómo se dice 'Perdí mi conexión'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Quisiera un reembolso",
+     "Quisiera una queja",
+     "Quisiera un hotel",
+     "Quisiera cambiar la fecha"
+    ],
+    "question_pt": "¿Qué significa 'I'd like a refund'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "This is unacceptable",
+     "Where is lost and found?",
+     "Can I speak to a manager?",
+     "Can you rebook me?"
+    ],
+    "question_pt": "¿Qué frase usas para pedir hablar con un gerente?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧳",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa 'I'd like to...' y 'Could you...?' para quejarte con educación; suena firme, pero amable.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "✈️",
+    "items": [
+     {
+      "en": "My flight was delayed",
+      "pt": "Mi vuelo se retrasó"
+     },
+     {
+      "en": "The flight was canceled",
+      "pt": "El vuelo fue cancelado"
+     },
+     {
+      "en": "I missed my connection",
+      "pt": "Perdí mi conexión"
+     },
+     {
+      "en": "When is the next flight?",
+      "pt": "¿Cuándo sale el próximo vuelo?"
+     },
+     {
+      "en": "Can you rebook me?",
+      "pt": "¿Me puede cambiar a otro vuelo?"
+     }
+    ],
+    "label_en": "Flight Delays",
+    "label_pt": "Vuelos retrasados",
+    "illustration_key": "parked airplane",
+    "illustration_prompt": "An airplane parked at an airport gate on a rainy day"
+   },
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "My bag didn't arrive",
+      "pt": "Mi maleta no llegó"
+     },
+     {
+      "en": "I lost my passport",
+      "pt": "Perdí mi pasaporte"
+     },
+     {
+      "en": "Where is lost and found?",
+      "pt": "¿Dónde está la oficina de objetos perdidos?"
+     },
+     {
+      "en": "Someone stole my wallet",
+      "pt": "Me robaron la cartera"
+     }
+    ],
+    "label_en": "Lost Items",
+    "label_pt": "Objetos perdidos",
+    "illustration_key": "baggage carousel",
+    "illustration_prompt": "An empty airport baggage carousel with one lonely backpack"
+   },
+   {
+    "emoji": "😤",
+    "items": [
+     {
+      "en": "I'd like to file a complaint",
+      "pt": "Quisiera presentar una queja"
+     },
+     {
+      "en": "This is unacceptable",
+      "pt": "Esto es inaceptable"
+     },
+     {
+      "en": "Can I speak to a manager?",
+      "pt": "¿Puedo hablar con un gerente?"
+     },
+     {
+      "en": "I'm not satisfied with this",
+      "pt": "No estoy satisfecho con esto"
+     }
+    ],
+    "label_en": "Making Complaints",
+    "label_pt": "Quejas",
+    "illustration_key": "service counter",
+    "illustration_prompt": "A traveler talking seriously with a staff member at a service counter"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "I'd like a refund",
+      "pt": "Quisiera un reembolso"
+     },
+     {
+      "en": "Do you offer compensation?",
+      "pt": "¿Ofrecen alguna compensación?"
+     },
+     {
+      "en": "Can I get a hotel voucher?",
+      "pt": "¿Me pueden dar un vale de hotel?"
+     },
+     {
+      "en": "Could you help me, please?",
+      "pt": "¿Me podría ayudar, por favor?"
+     }
+    ],
+    "label_en": "Asking for Help",
+    "label_pt": "Pedir soluciones",
+    "illustration_key": "helpful employee",
+    "illustration_prompt": "A friendly airline employee handing a meal voucher card to a passenger"
+   }
+  ],
+  "title_en": "Travel Problems",
+  "title_pt": "Imprevistos de viaje",
+  "cover_key": "airport traveler",
+  "exercises": [
+   {
+    "answer": "delayed",
+    "hint_pt": "(retrasado)",
+    "sentence": "Our flight has been ___ for two hours."
+   },
+   {
+    "answer": "missed",
+    "hint_pt": "(perdí)",
+    "sentence": "I think I ___ my connection."
+   },
+   {
+    "answer": "arrive",
+    "hint_pt": "(llegar)",
+    "sentence": "My suitcase didn't ___ ."
+   },
+   {
+    "answer": "complaint",
+    "hint_pt": "(queja)",
+    "sentence": "I'd like to file a ___ ."
+   }
+  ],
+  "summary_pt": "Frases para manejar vuelos retrasados, objetos perdidos y quejas educadas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airport-traveler.png",
+  "cover_prompt": "A tired traveler sitting on a suitcase in an airport waiting area, looking at a large window with parked airplanes outside",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/parked-airplane.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/baggage-carousel.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/service-counter.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/helpful-employee.png"
+  ],
+  "common_mistake": {
+   "right": "I missed my flight.",
+   "wrong": "I lost my flight.",
+   "why_pt": "Perder un vuelo o autobús es 'miss'; 'lose', perder objetos."
+  }
+ }
+}

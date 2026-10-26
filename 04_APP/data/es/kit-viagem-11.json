@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-11",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "round-trip ticket",
+     "one-way ticket",
+     "single card",
+     "go ticket"
+    ],
+    "question_pt": "¿Cómo se dice \"boleto solo de ida\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Tengo que pagar aquí",
+     "Tengo que bajarme aquí",
+     "Tengo que hacer transbordo aquí",
+     "Tengo que esperar aquí"
+    ],
+    "question_pt": "¿Qué significa \"I need to transfer here\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I lost my train.",
+     "I missed my train.",
+     "I forgot my train.",
+     "I left my train."
+    ],
+    "question_pt": "¿Cómo se dice \"Perdí mi tren\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🚇",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"take\" con los medios de transporte: \"I take the bus.\" Para subir y bajar, usa \"get on\" y \"get off\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🎫",
+    "items": [
+     {
+      "en": "Where can I buy a ticket?",
+      "pt": "¿Dónde puedo comprar un boleto?"
+     },
+     {
+      "en": "A one-way ticket, please.",
+      "pt": "Un boleto solo de ida, por favor."
+     },
+     {
+      "en": "A round-trip ticket",
+      "pt": "Un boleto de ida y vuelta"
+     },
+     {
+      "en": "How much is the fare?",
+      "pt": "¿Cuánto cuesta el pasaje?"
+     },
+     {
+      "en": "I need to refill my card.",
+      "pt": "Tengo que recargar mi tarjeta."
+     }
+    ],
+    "label_en": "Tickets",
+    "label_pt": "Boletos",
+    "illustration_key": "transit ticket",
+    "illustration_prompt": "A hand holding a paper transit ticket and a plastic fare card, simple flat illustration, no text"
+   },
+   {
+    "emoji": "🚇",
+    "items": [
+     {
+      "en": "Which line goes downtown?",
+      "pt": "¿Qué línea va al centro?"
+     },
+     {
+      "en": "Which platform is it?",
+      "pt": "¿Qué andén es?"
+     },
+     {
+      "en": "I need to transfer here.",
+      "pt": "Tengo que hacer transbordo aquí."
+     },
+     {
+      "en": "Mind the gap.",
+      "pt": "Cuidado con el espacio entre el tren y el andén."
+     }
+    ],
+    "label_en": "Subway",
+    "label_pt": "Metro",
+    "illustration_key": "subway platform",
+    "illustration_prompt": "An underground subway platform with a train arriving and people waiting, no signs, no text"
+   },
+   {
+    "emoji": "🚌",
+    "items": [
+     {
+      "en": "Does this bus go to the airport?",
+      "pt": "¿Este autobús va al aeropuerto?"
+     },
+     {
+      "en": "Where is the bus stop?",
+      "pt": "¿Dónde está la parada de autobús?"
+     },
+     {
+      "en": "I need to get off here.",
+      "pt": "Tengo que bajarme aquí."
+     },
+     {
+      "en": "Is this seat taken?",
+      "pt": "¿Está ocupado este asiento?"
+     }
+    ],
+    "label_en": "Bus",
+    "label_pt": "Autobús",
+    "illustration_key": "city bus",
+    "illustration_prompt": "A city bus stopped at a bus stop with a woman getting on, no text, no numbers"
+   },
+   {
+    "emoji": "🚆",
+    "items": [
+     {
+      "en": "What time does the train leave?",
+      "pt": "¿A qué hora sale el tren?"
+     },
+     {
+      "en": "The train is late.",
+      "pt": "El tren viene con retraso."
+     },
+     {
+      "en": "Is this the next stop?",
+      "pt": "¿Esta es la próxima parada?"
+     },
+     {
+      "en": "I missed my train.",
+      "pt": "Perdí mi tren."
+     }
+    ],
+    "label_en": "Train",
+    "label_pt": "Tren",
+    "illustration_key": "passenger train",
+    "illustration_prompt": "A modern passenger train waiting at an outdoor station with travelers holding suitcases, no text"
+   }
+  ],
+  "title_en": "Public Transportation",
+  "title_pt": "Transporte público",
+  "cover_key": "public transportation",
+  "exercises": [
+   {
+    "answer": "ticket",
+    "hint_pt": "(boleto)",
+    "sentence": "Where can I buy a ___?"
+   },
+   {
+    "answer": "get",
+    "hint_pt": "(bajarse)",
+    "sentence": "I need to ___ off at the next stop."
+   },
+   {
+    "answer": "platform",
+    "hint_pt": "(andén)",
+    "sentence": "Which ___ goes downtown?"
+   },
+   {
+    "answer": "late",
+    "hint_pt": "(retrasado)",
+    "sentence": "The train is ___ today."
+   }
+  ],
+  "summary_pt": "Frases útiles para usar el metro, el autobús y el tren en el día a día.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/public-transportation.png",
+  "cover_prompt": "A busy city scene with a subway train, a city bus and a passenger train side by side, commuters with backpacks, flat colorful illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/transit-ticket.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/subway-platform.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/city-bus.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/passenger-train.png"
+  ],
+  "common_mistake": {
+   "right": "I missed the bus.",
+   "wrong": "I lost the bus.",
+   "why_pt": "\"Perder\" un transporte se dice \"miss\", no \"lose\"."
+  }
+ }
+}

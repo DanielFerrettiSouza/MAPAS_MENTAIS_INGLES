@@ -1,0 +1,181 @@
+{
+ "slug": "a1-07",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "police officer",
+     "firefighter",
+     "driver",
+     "waiter"
+    ],
+    "question_pt": "¿Cómo se dice \"bombero\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I am engineer.",
+     "I am a engineer.",
+     "I am an engineer.",
+     "I engineer."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "What do you do?",
+     "What are you do?",
+     "Where do you work job?",
+     "What is you job?"
+    ],
+    "question_pt": "¿Cómo preguntas la profesión de alguien?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "👩‍💼",
+  "level": "A1",
+  "tip_pt": "Usa \"a\" o \"an\" antes de la profesión: I'm a teacher. I'm an engineer. Usa \"an\" antes de sonido de vocal.",
+  "branches": [
+   {
+    "emoji": "🏥",
+    "items": [
+     {
+      "en": "doctor",
+      "pt": "médico(a)"
+     },
+     {
+      "en": "nurse",
+      "pt": "enfermero(a)"
+     },
+     {
+      "en": "dentist",
+      "pt": "dentista"
+     },
+     {
+      "en": "teacher",
+      "pt": "profesor(a)"
+     }
+    ],
+    "label_en": "Health and School",
+    "label_pt": "Salud y escuela",
+    "illustration_prompt": "Cute hand-drawn stethoscope next to an apple and a book, simple doodle style, no text"
+   },
+   {
+    "emoji": "👮",
+    "items": [
+     {
+      "en": "police officer",
+      "pt": "policía, agente de policía"
+     },
+     {
+      "en": "firefighter",
+      "pt": "bombero(a)"
+     },
+     {
+      "en": "cook",
+      "pt": "cocinero(a)"
+     },
+     {
+      "en": "waiter",
+      "pt": "mesero, camarero"
+     },
+     {
+      "en": "driver",
+      "pt": "conductor(a)"
+     }
+    ],
+    "label_en": "Services",
+    "label_pt": "Servicios",
+    "illustration_prompt": "Cute hand-drawn police cap, chef hat and firefighter helmet side by side, simple doodle style, no text"
+   },
+   {
+    "emoji": "🏢",
+    "items": [
+     {
+      "en": "I work in an office.",
+      "pt": "Trabajo en una oficina."
+     },
+     {
+      "en": "I work at a hospital.",
+      "pt": "Trabajo en un hospital."
+     },
+     {
+      "en": "I work at a school.",
+      "pt": "Trabajo en una escuela."
+     },
+     {
+      "en": "I work from home.",
+      "pt": "Trabajo desde casa."
+     }
+    ],
+    "label_en": "Workplaces",
+    "label_pt": "Lugares de trabajo",
+    "illustration_prompt": "Cute hand-drawn small buildings: a hospital, a school and an office, simple doodle style, no text or signs"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "What do you do?",
+      "pt": "¿A qué te dedicas?"
+     },
+     {
+      "en": "I'm an engineer.",
+      "pt": "Soy ingeniero(a)."
+     },
+     {
+      "en": "I'm a student.",
+      "pt": "Soy estudiante."
+     },
+     {
+      "en": "I like my job.",
+      "pt": "Me gusta mi trabajo."
+     }
+    ],
+    "label_en": "Talking About Jobs",
+    "label_pt": "Hablar del trabajo",
+    "illustration_prompt": "Cute hand-drawn two people chatting with empty speech bubbles, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Jobs",
+  "title_pt": "Profesiones",
+  "exercises": [
+   {
+    "answer": "nurse",
+    "hint_pt": "(enfermera)",
+    "sentence": "My mother is a ___. She works at a hospital."
+   },
+   {
+    "answer": "teacher",
+    "hint_pt": "(profesor)",
+    "sentence": "He is a ___. He teaches English."
+   },
+   {
+    "answer": "do",
+    "hint_pt": "(hacer)",
+    "sentence": "What do you ___?"
+   },
+   {
+    "answer": "office",
+    "hint_pt": "(oficina)",
+    "sentence": "I work in an ___."
+   }
+  ],
+  "summary_pt": "Aprende nombres de profesiones y cómo hablar de tu trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-07/cover.png",
+  "cover_prompt": "Cute hand-drawn group of diverse workers: a doctor, a teacher, a chef and a police officer smiling together, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I am a teacher.",
+   "wrong": "I am teacher.",
+   "why_pt": "En inglés, la profesión necesita el artículo a/an."
+  }
+ }
+}

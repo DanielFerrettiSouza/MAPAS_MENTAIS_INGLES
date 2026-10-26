@@ -1,0 +1,185 @@
+{
+ "slug": "b2-08",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "call off",
+     "call up",
+     "set up",
+     "bring up"
+    ],
+    "question_pt": "¿Qué phrasal verb significa 'cancelar la reunión'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "take off a new project",
+     "take on a new project",
+     "turn on a new project",
+     "put on a new project"
+    ],
+    "question_pt": "¿Cómo se dice 'asumir un nuevo proyecto'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "contratar empleados",
+     "capacitar empleados",
+     "despedir empleados",
+     "ascender empleados"
+    ],
+    "question_pt": "¿Qué significa 'lay off employees'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "B2",
+  "tip_pt": "Muchos phrasal verbs son separables: 'set up a meeting' o 'set it up'. Con pronombre, este siempre va en medio.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "take on a new project",
+      "pt": "asumir un nuevo proyecto"
+     },
+     {
+      "en": "carry out the plan",
+      "pt": "llevar a cabo el plan"
+     },
+     {
+      "en": "hand in the report",
+      "pt": "entregar el informe"
+     },
+     {
+      "en": "fall behind schedule",
+      "pt": "retrasarse con el cronograma"
+     },
+     {
+      "en": "catch up on emails",
+      "pt": "ponerse al día con los correos"
+     }
+    ],
+    "label_en": "Tasks",
+    "label_pt": "Tareas",
+    "illustration_prompt": "A cute hand-drawn checklist clipboard with check marks and no writing, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "🗓️",
+    "items": [
+     {
+      "en": "set up a meeting",
+      "pt": "programar una reunión"
+     },
+     {
+      "en": "call off the meeting",
+      "pt": "cancelar la reunión"
+     },
+     {
+      "en": "bring up an issue",
+      "pt": "plantear un tema"
+     },
+     {
+      "en": "follow up with the client",
+      "pt": "hacer seguimiento con el cliente"
+     }
+    ],
+    "label_en": "Meetings",
+    "label_pt": "Reuniones",
+    "illustration_prompt": "A cute hand-drawn round table with three simple chairs and speech bubbles without words, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "📈",
+    "items": [
+     {
+      "en": "turn down a job offer",
+      "pt": "rechazar una oferta de trabajo"
+     },
+     {
+      "en": "step down as manager",
+      "pt": "dejar el cargo de gerente"
+     },
+     {
+      "en": "take over the team",
+      "pt": "tomar el mando del equipo"
+     },
+     {
+      "en": "lay off employees",
+      "pt": "despedir empleados"
+     }
+    ],
+    "label_en": "Career",
+    "label_pt": "Carrera",
+    "illustration_prompt": "A cute hand-drawn staircase with a small briefcase climbing up and a star at the top, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "come up with a solution",
+      "pt": "idear una solución"
+     },
+     {
+      "en": "figure out the problem",
+      "pt": "entender el problema"
+     },
+     {
+      "en": "sort out the details",
+      "pt": "resolver los detalles"
+     },
+     {
+      "en": "deal with complaints",
+      "pt": "atender las quejas"
+     },
+     {
+      "en": "look into the issue",
+      "pt": "investigar el asunto"
+     }
+    ],
+    "label_en": "Problem Solving",
+    "label_pt": "Resolución de problemas",
+    "illustration_prompt": "A cute hand-drawn glowing light bulb next to a puzzle piece, pastel colors, no text or letters"
+   }
+  ],
+  "title_en": "Work Phrasal Verbs",
+  "title_pt": "Phrasal verbs del trabajo",
+  "exercises": [
+   {
+    "answer": "set",
+    "hint_pt": "(programar)",
+    "sentence": "Can we ___ up a call for Monday morning?"
+   },
+   {
+    "answer": "down",
+    "hint_pt": "(rechazar)",
+    "sentence": "She decided to turn ___ the job offer."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(hacer seguimiento)",
+    "sentence": "I'll follow ___ with an email after the meeting."
+   },
+   {
+    "answer": "with",
+    "hint_pt": "(idear, tener una idea)",
+    "sentence": "We need to come up ___ a new strategy."
+   }
+  ],
+  "summary_pt": "Phrasal verbs comunes para hablar de tareas, reuniones, carrera y problemas en el trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-08/cover.png",
+  "cover_prompt": "A cute hand-drawn office desk with a laptop, coffee mug, sticky notes without writing, and a small plant, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Let's set it up for Monday.",
+   "wrong": "Let's set up it for Monday.",
+   "why_pt": "Con pronombre, este va en medio: 'set it up'."
+  }
+ }
+}

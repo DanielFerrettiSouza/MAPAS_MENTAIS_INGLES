@@ -1,0 +1,177 @@
+{
+ "slug": "c2-15",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "sharp criticism",
+     "scathing criticism",
+     "heavy criticism",
+     "strong criticism"
+    ],
+    "question_pt": "¿Qué collocation significa 'crítica mordaz'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "aware",
+     "known",
+     "clear",
+     "sure"
+    ],
+    "question_pt": "Completa: 'acutely ___' (plenamente consciente)",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "by pure chance only",
+     "for sheer coincidence",
+     "by sheer coincidence",
+     "in sheer coincidence"
+    ],
+    "question_pt": "¿Cómo se dice 'por pura coincidencia'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧩",
+  "level": "C2",
+  "tip_pt": "Memoriza las collocations en bloques completos. Traducir palabra por palabra genera combinaciones raras, como 'take a decision' en vez de 'make a decision'.",
+  "branches": [
+   {
+    "emoji": "⚙️",
+    "items": [
+     {
+      "en": "spark controversy",
+      "pt": "generar polémica"
+     },
+     {
+      "en": "bear the brunt",
+      "pt": "llevarse la peor parte"
+     },
+     {
+      "en": "wield influence",
+      "pt": "ejercer influencia"
+     },
+     {
+      "en": "draw a distinction",
+      "pt": "establecer una distinción"
+     }
+    ],
+    "label_en": "Verb + Noun",
+    "label_pt": "Verbo + Sustantivo",
+    "illustration_prompt": "Cute hand-drawn gear turning with a small spark, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "acutely aware",
+      "pt": "plenamente consciente"
+     },
+     {
+      "en": "painfully obvious",
+      "pt": "dolorosamente obvio"
+     },
+     {
+      "en": "deeply entrenched",
+      "pt": "profundamente arraigado"
+     },
+     {
+      "en": "vastly different",
+      "pt": "enormemente diferente"
+     }
+    ],
+    "label_en": "Adverb + Adjective",
+    "label_pt": "Adverbio + Adjetivo",
+    "illustration_prompt": "Cute hand-drawn target with an arrow in the center, simple doodle, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "stunned silence",
+      "pt": "silencio estupefacto"
+     },
+     {
+      "en": "scathing criticism",
+      "pt": "crítica mordaz"
+     },
+     {
+      "en": "sweeping changes",
+      "pt": "cambios radicales"
+     },
+     {
+      "en": "a tacit agreement",
+      "pt": "un acuerdo tácito"
+     }
+    ],
+    "label_en": "Adjective + Noun",
+    "label_pt": "Adjetivo + Sustantivo",
+    "illustration_prompt": "Cute hand-drawn speech bubble with a tiny star inside, doodle style, no letters"
+   },
+   {
+    "emoji": "🔗",
+    "items": [
+     {
+      "en": "by sheer coincidence",
+      "pt": "por pura coincidencia"
+     },
+     {
+      "en": "to a large extent",
+      "pt": "en gran medida"
+     },
+     {
+      "en": "in the wake of",
+      "pt": "a raíz de"
+     },
+     {
+      "en": "at the expense of",
+      "pt": "a costa de"
+     }
+    ],
+    "label_en": "Fixed Phrases",
+    "label_pt": "Expresiones fijas",
+    "illustration_prompt": "Cute hand-drawn chain links connected with little hearts, simple doodle, no text"
+   }
+  ],
+  "title_en": "Advanced Collocations",
+  "title_pt": "Collocations avanzadas",
+  "exercises": [
+   {
+    "answer": "sparked",
+    "hint_pt": "(generó)",
+    "sentence": "The new policy has ___ controversy across the country."
+   },
+   {
+    "answer": "acutely",
+    "hint_pt": "(plenamente)",
+    "sentence": "She was ___ aware of the risks involved."
+   },
+   {
+    "answer": "bear",
+    "hint_pt": "(cargar con)",
+    "sentence": "The CEO had to ___ the brunt of the criticism."
+   },
+   {
+    "answer": "stunned",
+    "hint_pt": "(estupefacto)",
+    "sentence": "His remarks were met with ___ silence."
+   }
+  ],
+  "summary_pt": "Combinaciones naturales de palabras que los nativos usan en contextos sofisticados.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-15/cover.png",
+  "cover_prompt": "Cute hand-drawn puzzle pieces fitting together with tiny sparkles, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "We need to make a decision about the merger.",
+   "wrong": "We need to take a decision about the merger.",
+   "why_pt": "Calco de 'tomar': en inglés estándar se dice 'make a decision'."
+  }
+ }
+}

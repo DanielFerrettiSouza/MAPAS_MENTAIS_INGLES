@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-12",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Take the next exit",
+     "Get the next out",
+     "Take the next leave",
+     "Go the next door"
+    ],
+    "question_pt": "¿Cómo se dice \"Tome la próxima salida\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "El auto no se detiene",
+     "El auto no arranca",
+     "El auto es nuevo",
+     "El auto no tiene gasolina"
+    ],
+    "question_pt": "¿Qué significa \"The car won't start\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Is full insurance included?",
+     "Is complete safe inside?",
+     "Has total security?",
+     "Is the insurance full of?"
+    ],
+    "question_pt": "¿Qué frase pregunta si el seguro de cobertura total está incluido?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🚗",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"I'd like to...\" para pedir algo con cortesía en el mostrador: \"I'd like to rent a compact car\" suena más natural que \"I want\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🔑",
+    "items": [
+     {
+      "en": "I have a reservation",
+      "pt": "Tengo una reserva"
+     },
+     {
+      "en": "I'd like to rent a car",
+      "pt": "Quisiera alquilar un auto"
+     },
+     {
+      "en": "Here's my driver's license",
+      "pt": "Aquí tiene mi licencia de conducir"
+     },
+     {
+      "en": "Is full insurance included?",
+      "pt": "¿Está incluido el seguro de cobertura total?"
+     },
+     {
+      "en": "Can I pick it up today?",
+      "pt": "¿Puedo recogerlo hoy?"
+     }
+    ],
+    "label_en": "At the Counter",
+    "label_pt": "En el mostrador",
+    "illustration_key": "service counter",
+    "illustration_prompt": "A customer handing a driver's license to a rental agent across a counter"
+   },
+   {
+    "emoji": "🛣️",
+    "items": [
+     {
+      "en": "Take the next exit",
+      "pt": "Tome la próxima salida"
+     },
+     {
+      "en": "Turn left at the light",
+      "pt": "Gire a la izquierda en el semáforo"
+     },
+     {
+      "en": "What's the speed limit?",
+      "pt": "¿Cuál es el límite de velocidad?"
+     },
+     {
+      "en": "Merge onto the highway",
+      "pt": "Incorpórese a la autopista"
+     }
+    ],
+    "label_en": "On the Road",
+    "label_pt": "En la carretera",
+    "illustration_key": "highway",
+    "illustration_prompt": "A car driving on an open highway through green hills"
+   },
+   {
+    "emoji": "⛽",
+    "items": [
+     {
+      "en": "Fill up the tank",
+      "pt": "Llenar el tanque"
+     },
+     {
+      "en": "Where's the nearest gas station?",
+      "pt": "¿Dónde está la gasolinera más cercana?"
+     },
+     {
+      "en": "Where can I park?",
+      "pt": "¿Dónde puedo estacionar?"
+     },
+     {
+      "en": "Is parking free here?",
+      "pt": "¿El estacionamiento es gratis aquí?"
+     }
+    ],
+    "label_en": "Gas and Parking",
+    "label_pt": "Combustible y estacionamiento",
+    "illustration_key": "gas pump",
+    "illustration_prompt": "A person refueling a car at a gas pump"
+   },
+   {
+    "emoji": "🔧",
+    "items": [
+     {
+      "en": "I have a flat tire",
+      "pt": "Se me pinchó un neumático"
+     },
+     {
+      "en": "The car won't start",
+      "pt": "El auto no arranca"
+     },
+     {
+      "en": "I need roadside assistance",
+      "pt": "Necesito asistencia en carretera"
+     },
+     {
+      "en": "The battery is dead",
+      "pt": "La batería está descargada"
+     }
+    ],
+    "label_en": "Car Problems",
+    "label_pt": "Problemas con el auto",
+    "illustration_key": "flat tire",
+    "illustration_prompt": "A worried driver looking at a car with a flat tire on the roadside"
+   }
+  ],
+  "title_en": "Renting a Car",
+  "title_pt": "Alquila un auto",
+  "cover_key": "rental car",
+  "exercises": [
+   {
+    "answer": "fill up",
+    "hint_pt": "(llenar)",
+    "sentence": "Do I need to ___ the tank before returning it?"
+   },
+   {
+    "answer": "full",
+    "hint_pt": "(cobertura total)",
+    "sentence": "Is ___ insurance included in the price?"
+   },
+   {
+    "answer": "tire",
+    "hint_pt": "(neumático)",
+    "sentence": "I have a flat ___."
+   },
+   {
+    "answer": "park",
+    "hint_pt": "(estacionar)",
+    "sentence": "Where can I ___ near the hotel?"
+   }
+  ],
+  "summary_pt": "Frases útiles para alquilar un auto, conducir y resolver problemas en la carretera.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/rental-car.png",
+  "cover_prompt": "A smiling traveler holding car keys next to a shiny compact rental car in a parking lot, sunny day",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/service-counter.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/highway.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/gas-pump.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/flat-tire.png"
+  ],
+  "common_mistake": {
+   "right": "Can I pick up the car at the airport?",
+   "wrong": "Can I take the car in the airport?",
+   "why_pt": "Para recoger un auto alquilado se dice \"pick up\"; lugar: \"at\"."
+  }
+ }
+}

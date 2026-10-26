@@ -1,0 +1,185 @@
+{
+ "slug": "a1-05",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ],
+    "question_pt": "¿Cómo se dice 'miércoles' en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "June",
+     "January",
+     "July",
+     "April"
+    ],
+    "question_pt": "¿Cuál es el mes de 'julio'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "in",
+     "at",
+     "on",
+     "to"
+    ],
+    "question_pt": "Completa: My birthday is ___ May 5th.",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📅",
+  "level": "A1",
+  "tip_pt": "En inglés, los días y los meses siempre empiezan con mayúscula. Usa 'on' con días y fechas, e 'in' con meses.",
+  "branches": [
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "Monday",
+      "pt": "lunes"
+     },
+     {
+      "en": "Tuesday",
+      "pt": "martes"
+     },
+     {
+      "en": "Wednesday",
+      "pt": "miércoles"
+     },
+     {
+      "en": "Thursday",
+      "pt": "jueves"
+     },
+     {
+      "en": "Friday",
+      "pt": "viernes"
+     }
+    ],
+    "label_en": "Weekdays",
+    "label_pt": "Días laborables",
+    "illustration_prompt": "A cute hand-drawn briefcase with a small calendar page, simple doodle style, no text"
+   },
+   {
+    "emoji": "🏖️",
+    "items": [
+     {
+      "en": "Saturday",
+      "pt": "sábado"
+     },
+     {
+      "en": "Sunday",
+      "pt": "domingo"
+     },
+     {
+      "en": "See you on Sunday!",
+      "pt": "¡Nos vemos el domingo!"
+     },
+     {
+      "en": "Have a nice weekend!",
+      "pt": "¡Buen fin de semana!"
+     }
+    ],
+    "label_en": "The Weekend",
+    "label_pt": "Fin de semana",
+    "illustration_prompt": "A cute hand-drawn beach umbrella and sun, simple doodle style, no text"
+   },
+   {
+    "emoji": "🗓️",
+    "items": [
+     {
+      "en": "January",
+      "pt": "enero"
+     },
+     {
+      "en": "April",
+      "pt": "abril"
+     },
+     {
+      "en": "July",
+      "pt": "julio"
+     },
+     {
+      "en": "October",
+      "pt": "octubre"
+     },
+     {
+      "en": "December",
+      "pt": "diciembre"
+     }
+    ],
+    "label_en": "Months",
+    "label_pt": "Meses",
+    "illustration_prompt": "A cute hand-drawn wall calendar with seasonal symbols like a snowflake and a flower, no text"
+   },
+   {
+    "emoji": "🎂",
+    "items": [
+     {
+      "en": "What's the date today?",
+      "pt": "¿Qué fecha es hoy?"
+     },
+     {
+      "en": "Today is March 10th.",
+      "pt": "Hoy es 10 de marzo."
+     },
+     {
+      "en": "My birthday is on May 5th.",
+      "pt": "Mi cumpleaños es el 5 de mayo."
+     },
+     {
+      "en": "What day is it today?",
+      "pt": "¿Qué día es hoy?"
+     }
+    ],
+    "label_en": "Talking About Dates",
+    "label_pt": "Hablando de fechas",
+    "illustration_prompt": "A cute hand-drawn birthday cake with a calendar page next to it, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Days and Dates",
+  "title_pt": "Días y fechas",
+  "exercises": [
+   {
+    "answer": "on",
+    "hint_pt": "(preposición para días)",
+    "sentence": "I go to the gym ___ Monday."
+   },
+   {
+    "answer": "Saturday",
+    "hint_pt": "(sábado)",
+    "sentence": "Today is ___, the last day of the week."
+   },
+   {
+    "answer": "December",
+    "hint_pt": "(diciembre)",
+    "sentence": "Christmas is in ___."
+   },
+   {
+    "answer": "date",
+    "hint_pt": "(fecha)",
+    "sentence": "What's the ___ today?"
+   }
+  ],
+  "summary_pt": "Aprende a decir los días de la semana, los meses y las fechas en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-05/cover.png",
+  "cover_prompt": "A cute hand-drawn calendar with colorful pages, a small sun and a smiling clock beside it, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "My birthday is on May 5th.",
+   "wrong": "My birthday is on may 5th.",
+   "why_pt": "En inglés, los meses y los días van con mayúscula."
+  }
+ }
+}

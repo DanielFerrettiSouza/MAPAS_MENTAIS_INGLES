@@ -1,0 +1,173 @@
+{
+ "slug": "c2-05",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Despegó en avión",
+     "Despegó (tuvo gran éxito)",
+     "Se tomó el día libre",
+     "Se quitó la ropa"
+    ],
+    "question_pt": "En 'Her career really took off', ¿qué significa 'took off'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I came across an old photo.",
+     "I came up an old photo.",
+     "I picked off an old photo.",
+     "I made up an old photo."
+    ],
+    "question_pt": "¿Qué frase significa 'Encontré por casualidad una foto antigua'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Inventar",
+     "Reconciliarse",
+     "Componer",
+     "Maquillar"
+    ],
+    "question_pt": "En 'Women make up half the team', 'make up' significa:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔀",
+  "level": "C2",
+  "tip_pt": "Fíjate en el objeto y el contexto: 'pick up a habit' y 'pick up the phone' usan el mismo verbo con sentidos muy distintos.",
+  "branches": [
+   {
+    "emoji": "🧲",
+    "items": [
+     {
+      "en": "I picked up some Spanish.",
+      "pt": "Aprendí un poco de español."
+     },
+     {
+      "en": "Business is picking up.",
+      "pt": "Los negocios están mejorando."
+     },
+     {
+      "en": "Can you pick me up?",
+      "pt": "¿Puedes pasar a recogerme?"
+     },
+     {
+      "en": "Police picked him up.",
+      "pt": "La policía lo detuvo."
+     }
+    ],
+    "label_en": "Pick Up",
+    "label_pt": "Pick up",
+    "illustration_prompt": "A cute hand-drawn hand lifting a small box, simple doodle style, no text"
+   },
+   {
+    "emoji": "🛫",
+    "items": [
+     {
+      "en": "The plane took off.",
+      "pt": "El avión despegó."
+     },
+     {
+      "en": "Her career really took off.",
+      "pt": "Su carrera despegó de verdad."
+     },
+     {
+      "en": "I'm taking Friday off.",
+      "pt": "Me voy a tomar el viernes libre."
+     },
+     {
+      "en": "Take off your coat.",
+      "pt": "Quítate el abrigo."
+     }
+    ],
+    "label_en": "Take Off",
+    "label_pt": "Take off",
+    "illustration_prompt": "A cute hand-drawn airplane lifting into the sky with a small rocket trail, no text"
+   },
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "I came across an old photo.",
+      "pt": "Encontré por casualidad una foto antigua."
+     },
+     {
+      "en": "He comes across as shy.",
+      "pt": "Da la impresión de ser tímido."
+     },
+     {
+      "en": "Her point came across clearly.",
+      "pt": "Su idea se entendió con claridad."
+     }
+    ],
+    "label_en": "Come Across",
+    "label_pt": "Come across",
+    "illustration_prompt": "A cute hand-drawn magnifying glass finding a small treasure, no text"
+   },
+   {
+    "emoji": "🧩",
+    "items": [
+     {
+      "en": "The plan fell through.",
+      "pt": "El plan no salió adelante."
+     },
+     {
+      "en": "She made up an excuse.",
+      "pt": "Ella se inventó una excusa."
+     },
+     {
+      "en": "They kissed and made up.",
+      "pt": "Se besaron e hicieron las paces."
+     },
+     {
+      "en": "Women make up half the team.",
+      "pt": "Las mujeres constituyen la mitad del equipo."
+     }
+    ],
+    "label_en": "Fall Through",
+    "label_pt": "Fall through / Make up",
+    "illustration_prompt": "A cute hand-drawn puzzle with one piece falling away, no text"
+   }
+  ],
+  "title_en": "Polysemous Phrasal Verbs",
+  "title_pt": "Phrasal verbs polisémicos",
+  "exercises": [
+   {
+    "answer": "up",
+    "hint_pt": "(aprender sin estudiar)",
+    "sentence": "I picked ___ some Italian while living in Rome."
+   },
+   {
+    "answer": "off",
+    "hint_pt": "(despegar)",
+    "sentence": "The plane took ___ two hours late."
+   },
+   {
+    "answer": "through",
+    "hint_pt": "(no concretarse)",
+    "sentence": "The deal fell ___ at the last minute."
+   },
+   {
+    "answer": "across",
+    "hint_pt": "(dar la impresión)",
+    "sentence": "He came ___ as a bit arrogant."
+   }
+  ],
+  "summary_pt": "Un mismo phrasal verb puede tener varios sentidos, que dependen del contexto.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-05/cover.png",
+  "cover_prompt": "A cute hand-drawn signpost with many arrows pointing in different directions, each arrow with a tiny different icon, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Take off your coat.",
+   "wrong": "Take out your coat.",
+   "why_pt": "Quitarse ropa es 'take off'; 'take out' significa sacar."
+  }
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "slug": "c1-04",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "If I saved more, I'd have been rich.",
+     "If I had saved more, I'd be rich now.",
+     "If I would save more, I'd be rich.",
+     "If I have saved, I'm rich."
+    ],
+    "question_pt": "¿Qué frase significa 'Si hubiera ahorrado más, ahora sería rico'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "would get",
+     "had gotten",
+     "would have gotten",
+     "gets"
+    ],
+    "question_pt": "Completa: If she spoke English, she ___ the job.",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Had I known",
+     "Did I know",
+     "Have I known",
+     "Would I know"
+    ],
+    "question_pt": "¿Cuál es la forma invertida de 'If I had known'?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🔀",
+  "level": "C1",
+  "tip_pt": "Pasado→presente: If + had + participio, would + verbo. Presente→pasado: If + pasado simple, would have + participio.",
+  "branches": [
+   {
+    "emoji": "⏪",
+    "items": [
+     {
+      "en": "If I had saved more,",
+      "pt": "Si hubiera ahorrado más,"
+     },
+     {
+      "en": "I'd be rich now.",
+      "pt": "ahora sería rico."
+     },
+     {
+      "en": "If I hadn't moved,",
+      "pt": "Si no me hubiera mudado,"
+     },
+     {
+      "en": "we'd still be neighbors.",
+      "pt": "todavía seríamos vecinos."
+     }
+    ],
+    "label_en": "Past → Present",
+    "label_pt": "El pasado afecta al presente",
+    "illustration_prompt": "A cute hand-drawn rewind arrow pointing to a smiling sun, no text"
+   },
+   {
+    "emoji": "⏩",
+    "items": [
+     {
+      "en": "If I weren't so busy,",
+      "pt": "Si no estuviera tan ocupado,"
+     },
+     {
+      "en": "I'd have called you.",
+      "pt": "te habría llamado."
+     },
+     {
+      "en": "If she spoke English,",
+      "pt": "Si ella hablara inglés,"
+     },
+     {
+      "en": "she'd have gotten the job.",
+      "pt": "habría conseguido el trabajo."
+     }
+    ],
+    "label_en": "Present → Past",
+    "label_pt": "El presente afecta al pasado",
+    "illustration_prompt": "A cute hand-drawn person looking back at a footprint trail, no text"
+   },
+   {
+    "emoji": "😔",
+    "items": [
+     {
+      "en": "I wish I'd listened.",
+      "pt": "Ojalá hubiera escuchado."
+     },
+     {
+      "en": "If only I'd known.",
+      "pt": "Si lo hubiera sabido."
+     },
+     {
+      "en": "I'd be happier now.",
+      "pt": "Ahora sería más feliz."
+     }
+    ],
+    "label_en": "Regrets",
+    "label_pt": "Arrepentimientos",
+    "illustration_prompt": "A cute hand-drawn sad cloud with a tiny raindrop, no text"
+   },
+   {
+    "emoji": "🧩",
+    "items": [
+     {
+      "en": "Had I known,",
+      "pt": "De haberlo sabido,"
+     },
+     {
+      "en": "But for your help,",
+      "pt": "De no ser por tu ayuda,"
+     },
+     {
+      "en": "I might be there now.",
+      "pt": "quizás ahora estaría allí."
+     },
+     {
+      "en": "Were I you,",
+      "pt": "Si yo fuera tú,"
+     }
+    ],
+    "label_en": "Useful Variations",
+    "label_pt": "Variaciones útiles",
+    "illustration_prompt": "A cute hand-drawn set of puzzle pieces fitting together, no text"
+   }
+  ],
+  "title_en": "Mixed Conditionals",
+  "title_pt": "Condicionales mixtas",
+  "exercises": [
+   {
+    "answer": "would",
+    "hint_pt": "(estaría)",
+    "sentence": "If I had taken that job, I ___ be living in Boston now."
+   },
+   {
+    "answer": "weren't",
+    "hint_pt": "(no fuera)",
+    "sentence": "If she ___ so shy, she would have spoken up."
+   },
+   {
+    "answer": "there",
+    "hint_pt": "(allí)",
+    "sentence": "If we had left earlier, we'd be ___ by now."
+   },
+   {
+    "answer": "gotten",
+    "hint_pt": "(conseguido)",
+    "sentence": "If I spoke French, I would have ___ the job."
+   }
+  ],
+  "summary_pt": "Combinan tiempos distintos: un pasado irreal que afecta al presente, o un presente que afecta al pasado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-04/cover.png",
+  "cover_prompt": "A cute hand-drawn crossroads with one path showing a clock from the past and another a sunny present scene, soft pastel colors, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "If I had studied, I would be a doctor now.",
+   "wrong": "If I would have studied, I would be a doctor now.",
+   "why_pt": "Ojo: nunca uses would en la oración con if."
+  }
+ }
+}

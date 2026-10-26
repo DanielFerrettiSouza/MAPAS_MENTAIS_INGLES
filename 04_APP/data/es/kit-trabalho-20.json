@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-20",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Let's keep in touch",
+     "Let's make contact",
+     "Let's stay connected in",
+     "Let's touch again"
+    ],
+    "question_pt": "¿Cómo se dice 'Sigamos en contacto' en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I'm calling you because...",
+     "I'm reaching out because...",
+     "I'm touching you because...",
+     "I'm making contact for..."
+    ],
+    "question_pt": "¿Qué frase se usa para empezar un mensaje de contacto profesional?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Oficina abierta",
+     "Trabajo remoto",
+     "Disponible para trabajar",
+     "Vacante cubierta"
+    ],
+    "question_pt": "¿Qué significa 'Open to work'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🤝",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa 'reach out to' para contactar a alguien profesionalmente: 'I'm reaching out to you about the role.' Suena natural y educado.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👤",
+    "items": [
+     {
+      "en": "Update your headline",
+      "pt": "Actualiza tu titular"
+     },
+     {
+      "en": "Add a professional photo",
+      "pt": "Añade una foto profesional"
+     },
+     {
+      "en": "Highlight your key skills",
+      "pt": "Destaca tus principales habilidades"
+     },
+     {
+      "en": "Open to work",
+      "pt": "Disponible para trabajar"
+     }
+    ],
+    "label_en": "Your Profile",
+    "label_pt": "Tu perfil",
+    "illustration_key": "professional headshot",
+    "illustration_prompt": "A friendly professional headshot portrait of a smiling woman in a blazer against a plain background"
+   },
+   {
+    "emoji": "✉️",
+    "items": [
+     {
+      "en": "I'm reaching out because...",
+      "pt": "Me pongo en contacto contigo porque..."
+     },
+     {
+      "en": "I'd love to connect",
+      "pt": "Me encantaría conectar contigo"
+     },
+     {
+      "en": "Are you open to a quick chat?",
+      "pt": "¿Te interesaría tener una charla rápida?"
+     },
+     {
+      "en": "Thanks for accepting my request",
+      "pt": "Gracias por aceptar mi solicitud"
+     }
+    ],
+    "label_en": "Reaching Out",
+    "label_pt": "Cómo contactar",
+    "illustration_key": "envelope laptop",
+    "illustration_prompt": "A sealed envelope flying out of an open laptop on a wooden desk"
+   },
+   {
+    "emoji": "🎤",
+    "items": [
+     {
+      "en": "What do you do?",
+      "pt": "¿A qué te dedicas?"
+     },
+     {
+      "en": "Let's keep in touch",
+      "pt": "Sigamos en contacto"
+     },
+     {
+      "en": "Here's my business card",
+      "pt": "Aquí tienes mi tarjeta"
+     },
+     {
+      "en": "Could you introduce me to her?",
+      "pt": "¿Podrías presentármela?"
+     }
+    ],
+    "label_en": "At Events",
+    "label_pt": "En eventos",
+    "illustration_key": "conference crowd",
+    "illustration_prompt": "A group of people holding coffee cups and talking in a bright conference hall"
+   },
+   {
+    "emoji": "🌱",
+    "items": [
+     {
+      "en": "Follow up after the meeting",
+      "pt": "Haz seguimiento después de la reunión"
+     },
+     {
+      "en": "Endorse a colleague's skills",
+      "pt": "Valida las aptitudes de un colega"
+     },
+     {
+      "en": "Write a recommendation",
+      "pt": "Escribe una recomendación"
+     },
+     {
+      "en": "Congratulate them on the new job",
+      "pt": "Felicítalos por su nuevo empleo"
+     }
+    ],
+    "label_en": "Building Relationships",
+    "label_pt": "Construir relaciones",
+    "illustration_key": "growing plant",
+    "illustration_prompt": "Two hands together watering a small green plant growing in a pot"
+   }
+  ],
+  "title_en": "LinkedIn & Networking",
+  "title_pt": "LinkedIn y networking",
+  "cover_key": "business handshake",
+  "exercises": [
+   {
+    "answer": "reaching",
+    "hint_pt": "(contactando)",
+    "sentence": "I'm ___ out to see if you're open to a quick chat."
+   },
+   {
+    "answer": "introduce",
+    "hint_pt": "(presentar)",
+    "sentence": "Could you ___ me to your hiring manager?"
+   },
+   {
+    "answer": "profile",
+    "hint_pt": "(perfil)",
+    "sentence": "I just updated my ___ with my new role."
+   },
+   {
+    "answer": "endorsing",
+    "hint_pt": "(validar/recomendar)",
+    "sentence": "Thanks for ___ my skills on LinkedIn!"
+   }
+  ],
+  "summary_pt": "Vocabulario y frases para crear contactos profesionales en línea y en eventos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-handshake.png",
+  "cover_prompt": "Two professionals in business casual clothes shaking hands warmly at a modern networking event, soft office background",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/professional-headshot.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/envelope-laptop.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/conference-crowd.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/growing-plant.png"
+  ],
+  "common_mistake": {
+   "right": "I'd like to contact you.",
+   "wrong": "I'd like to contact with you.",
+   "why_pt": "'Contact' no lleva 'with': se dice 'contact someone'."
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-17",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Where is the meeting point?",
+     "Where is the found point?",
+     "Where we meet point?",
+     "Where is the encounter place?"
+    ],
+    "question_pt": "¿Cómo preguntas \"¿Dónde es el punto de encuentro?\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "How much costs the tour?",
+     "How much does the tour cost?",
+     "How much the tour costs?",
+     "How much is cost the tour?"
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Fue caro",
+     "Fue agotador",
+     "Valió la pena",
+     "Fue rápido"
+    ],
+    "question_pt": "¿Qué significa \"It was worth it\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🗺️",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"How long does the tour take?\" para preguntar la duración y \"What time does it start?\" para la hora. Ojo: el auxiliar \"does\" es imprescindible.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🎟️",
+    "items": [
+     {
+      "en": "Can I book a tour?",
+      "pt": "¿Puedo reservar un tour?"
+     },
+     {
+      "en": "Is lunch included in the price?",
+      "pt": "¿El almuerzo está incluido en el precio?"
+     },
+     {
+      "en": "Are there any spots left?",
+      "pt": "¿Todavía quedan plazas?"
+     },
+     {
+      "en": "Do you offer group discounts?",
+      "pt": "¿Ofrecen descuentos para grupos?"
+     }
+    ],
+    "label_en": "Booking a Tour",
+    "label_pt": "Reservar un tour",
+    "illustration_key": "travel desk",
+    "illustration_prompt": "A traveler at a tourist information desk talking to a smiling clerk, with brochures on the counter without any text"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "Where is the meeting point?",
+      "pt": "¿Dónde es el punto de encuentro?"
+     },
+     {
+      "en": "What time does it start?",
+      "pt": "¿A qué hora empieza?"
+     },
+     {
+      "en": "How long does the tour take?",
+      "pt": "¿Cuánto dura el tour?"
+     },
+     {
+      "en": "Should I bring anything?",
+      "pt": "¿Debo llevar algo?"
+     }
+    ],
+    "label_en": "Before Starting",
+    "label_pt": "Antes de empezar",
+    "illustration_key": "tour bus",
+    "illustration_prompt": "A small group of tourists waiting next to a parked tour bus in the morning"
+   },
+   {
+    "emoji": "🚶",
+    "items": [
+     {
+      "en": "Can we take pictures here?",
+      "pt": "¿Podemos tomar fotos aquí?"
+     },
+     {
+      "en": "When was this built?",
+      "pt": "¿Cuándo se construyó esto?"
+     },
+     {
+      "en": "Could you repeat that, please?",
+      "pt": "¿Podría repetirlo, por favor?"
+     },
+     {
+      "en": "How much free time do we have?",
+      "pt": "¿Cuánto tiempo libre tenemos?"
+     }
+    ],
+    "label_en": "During the Tour",
+    "label_pt": "Durante el recorrido",
+    "illustration_key": "sightseeing group",
+    "illustration_prompt": "A tour guide pointing at an old cathedral while tourists look up and take photos"
+   },
+   {
+    "emoji": "⭐",
+    "items": [
+     {
+      "en": "The tour guide was amazing!",
+      "pt": "¡El guía fue increíble!"
+     },
+     {
+      "en": "It was worth it.",
+      "pt": "Valió la pena."
+     },
+     {
+      "en": "I learned a lot today.",
+      "pt": "Hoy aprendí mucho."
+     },
+     {
+      "en": "I'd highly recommend it.",
+      "pt": "Lo recomiendo muchísimo."
+     }
+    ],
+    "label_en": "Giving Feedback",
+    "label_pt": "Dar tu opinión",
+    "illustration_key": "handshake thanks",
+    "illustration_prompt": "A happy tourist shaking hands with a tour guide at the end of a trip"
+   }
+  ],
+  "title_en": "Guided Tours",
+  "title_pt": "Visitas guiadas",
+  "cover_key": "tour guide group",
+  "exercises": [
+   {
+    "answer": "included",
+    "hint_pt": "(incluido)",
+    "sentence": "Is lunch ___ in the price?"
+   },
+   {
+    "answer": "point",
+    "hint_pt": "(punto)",
+    "sentence": "Where is the meeting ___?"
+   },
+   {
+    "answer": "guide",
+    "hint_pt": "(guía)",
+    "sentence": "Our tour ___ was really friendly."
+   },
+   {
+    "answer": "book",
+    "hint_pt": "(reservar)",
+    "sentence": "Can I ___ a tour for tomorrow?"
+   }
+  ],
+  "summary_pt": "Frases útiles para reservar, participar y disfrutar de visitas guiadas en tus viajes.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/tour-guide-group.png",
+  "cover_prompt": "A smiling tour guide holding a small flag, leading a group of tourists through an old European square with historic buildings",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/travel-desk.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/tour-bus.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/sightseeing-group.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handshake-thanks.png"
+  ],
+  "common_mistake": {
+   "right": "How much does the tour cost?",
+   "wrong": "How much costs the tour?",
+   "why_pt": "En preguntas, usa el auxiliar \"does\" antes del sujeto, no como en español."
+  }
+ }
+}

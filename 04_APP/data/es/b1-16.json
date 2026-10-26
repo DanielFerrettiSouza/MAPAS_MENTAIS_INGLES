@@ -1,0 +1,181 @@
+{
+ "slug": "b1-16",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "get lost",
+     "get off",
+     "get over",
+     "get along"
+    ],
+    "question_pt": "¿Cómo se dice \"perderse\" en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Voy a volver a casa",
+     "Te respondo más adelante",
+     "Voy a recogerte",
+     "Voy a olvidarte"
+    ],
+    "question_pt": "¿Qué significa \"I'll get back to you\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "get on the train",
+     "get up the train",
+     "get off the train",
+     "get rid of the train"
+    ],
+    "question_pt": "¿Qué expresión significa \"bajarse del tren\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔑",
+  "level": "B1",
+  "tip_pt": "Get + adjetivo indica un cambio de estado: get tired (cansarse), get better (mejorar), get married (casarse).",
+  "branches": [
+   {
+    "emoji": "🌡️",
+    "items": [
+     {
+      "en": "get tired",
+      "pt": "cansarse"
+     },
+     {
+      "en": "get better",
+      "pt": "mejorar"
+     },
+     {
+      "en": "get married",
+      "pt": "casarse"
+     },
+     {
+      "en": "get nervous",
+      "pt": "ponerse nervioso"
+     },
+     {
+      "en": "get lost",
+      "pt": "perderse"
+     }
+    ],
+    "label_en": "Changing States",
+    "label_pt": "Cambio de estado",
+    "illustration_prompt": "A cute hand-drawn thermometer with a smiling face, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚌",
+    "items": [
+     {
+      "en": "get up early",
+      "pt": "levantarse temprano"
+     },
+     {
+      "en": "get on the bus",
+      "pt": "subirse al autobús"
+     },
+     {
+      "en": "get off the train",
+      "pt": "bajarse del tren"
+     },
+     {
+      "en": "get home late",
+      "pt": "llegar tarde a casa"
+     }
+    ],
+    "label_en": "Movement",
+    "label_pt": "Movimiento",
+    "illustration_prompt": "A cute hand-drawn little bus with a person stepping on, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎁",
+    "items": [
+     {
+      "en": "get a message",
+      "pt": "recibir un mensaje"
+     },
+     {
+      "en": "get a job",
+      "pt": "conseguir un trabajo"
+     },
+     {
+      "en": "get a ticket",
+      "pt": "comprar un boleto"
+     },
+     {
+      "en": "get some coffee",
+      "pt": "tomar un café"
+     }
+    ],
+    "label_en": "Receiving",
+    "label_pt": "Recibir y conseguir",
+    "illustration_prompt": "A cute hand-drawn gift box with a ribbon and sparkles, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "get along with someone",
+      "pt": "llevarse bien con alguien"
+     },
+     {
+      "en": "get over it",
+      "pt": "superarlo"
+     },
+     {
+      "en": "get back to you",
+      "pt": "responderte más adelante"
+     },
+     {
+      "en": "get rid of",
+      "pt": "deshacerse de"
+     }
+    ],
+    "label_en": "Phrasal Verbs",
+    "label_pt": "Phrasal verbs",
+    "illustration_prompt": "A cute hand-drawn pair of hands shaking with small hearts, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Expressions with Get",
+  "title_pt": "Expresiones con get",
+  "exercises": [
+   {
+    "answer": "get",
+    "hint_pt": "(levantarte)",
+    "sentence": "What time do you usually ___ up?"
+   },
+   {
+    "answer": "off",
+    "hint_pt": "(bajarme del)",
+    "sentence": "I need to get ___ the bus at the next stop."
+   },
+   {
+    "answer": "married",
+    "hint_pt": "(se casó)",
+    "sentence": "She got ___ last year in Brazil."
+   },
+   {
+    "answer": "along",
+    "hint_pt": "(me llevo bien)",
+    "sentence": "I really get ___ with my coworkers."
+   }
+  ],
+  "summary_pt": "El verbo get cambia de significado según la palabra que va después.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-16/cover.png",
+  "cover_prompt": "A cute hand-drawn character holding a big friendly key surrounded by small icons of a bus, a heart, a sun, and a gift, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She got married to a doctor.",
+   "wrong": "She got married with a doctor.",
+   "why_pt": "\"Casarse con alguien\" en inglés es \"get married to\", no \"with\"."
+  }
+ }
+}

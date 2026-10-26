@@ -1,0 +1,177 @@
+{
+ "slug": "c2-13",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "La serie se volvió más aterradora",
+     "La serie se pasó de la raya y decayó",
+     "La serie ganó premios",
+     "La serie fue cancelada pronto"
+    ],
+    "question_pt": "¿Qué significa 'the show jumped the shark'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Winter is coming",
+     "Catch-22 situation",
+     "Yada yada yada",
+     "Take the red pill"
+    ],
+    "question_pt": "¿Qué expresión describe una situación sin salida?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Vivir gratis",
+     "No salir de mi cabeza",
+     "Tener dolor de cabeza",
+     "Olvidar algo"
+    ],
+    "question_pt": "'Living rent-free in my head' significa:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🎬",
+  "level": "C2",
+  "tip_pt": "Muchas expresiones funcionan como verbos o adjetivos: 'to gaslight someone', 'that's so meta'. Fíjate en la categoría gramatical antes de usarlas.",
+  "branches": [
+   {
+    "emoji": "🍿",
+    "items": [
+     {
+      "en": "You can't handle the truth!",
+      "pt": "¡No puedes soportar la verdad!"
+     },
+     {
+      "en": "Take the red pill",
+      "pt": "Afrontar la cruda realidad"
+     },
+     {
+      "en": "A Shyamalan twist",
+      "pt": "Un giro inesperado"
+     },
+     {
+      "en": "Houston, we have a problem",
+      "pt": "Tenemos un problema serio"
+     }
+    ],
+    "label_en": "From Movies",
+    "label_pt": "Del cine",
+    "illustration_prompt": "Cute hand-drawn film reel with popcorn, no text"
+   },
+   {
+    "emoji": "📺",
+    "items": [
+     {
+      "en": "The show jumped the shark",
+      "pt": "La serie se pasó de la raya"
+     },
+     {
+      "en": "Yada yada yada",
+      "pt": "Y bla, bla, bla"
+     },
+     {
+      "en": "Winter is coming",
+      "pt": "Se vienen tiempos difíciles"
+     },
+     {
+      "en": "That's what she said",
+      "pt": "Eso dijo ella (chiste)"
+     }
+    ],
+    "label_en": "From TV",
+    "label_pt": "De la tele",
+    "illustration_prompt": "Cute hand-drawn retro television with a shark fin on screen, no text"
+   },
+   {
+    "emoji": "🧠",
+    "items": [
+     {
+      "en": "Stop gaslighting me",
+      "pt": "Deja de manipularme"
+     },
+     {
+      "en": "Drink the Kool-Aid",
+      "pt": "Aceptar algo ciegamente"
+     },
+     {
+      "en": "Catch-22 situation",
+      "pt": "Situación sin salida"
+     },
+     {
+      "en": "Big Brother is watching",
+      "pt": "Nos están vigilando"
+     }
+    ],
+    "label_en": "Psych & Society",
+    "label_pt": "Comportamiento",
+    "illustration_prompt": "Cute hand-drawn old gas lamp next to a cup of punch, no text"
+   },
+   {
+    "emoji": "💻",
+    "items": [
+     {
+      "en": "That's so meta",
+      "pt": "Eso es muy autorreferencial"
+     },
+     {
+      "en": "Main character energy",
+      "pt": "Vibra de protagonista"
+     },
+     {
+      "en": "It's giving drama",
+      "pt": "Tiene pinta de drama"
+     },
+     {
+      "en": "Living rent-free in my head",
+      "pt": "No sale de mi cabeza"
+     }
+    ],
+    "label_en": "Internet Slang",
+    "label_pt": "Jerga de internet",
+    "illustration_prompt": "Cute hand-drawn laptop with heart and laughing face bubbles, no symbols or letters"
+   }
+  ],
+  "title_en": "Pop Culture Idioms",
+  "title_pt": "Expresiones de la cultura pop",
+  "exercises": [
+   {
+    "answer": "jumped",
+    "hint_pt": "(se pasó de la raya)",
+    "sentence": "The show really ___ the shark after season five."
+   },
+   {
+    "answer": "gaslight",
+    "hint_pt": "(manipular psicológicamente)",
+    "sentence": "Stop trying to ___ me; I know what I saw."
+   },
+   {
+    "answer": "Shyamalan",
+    "hint_pt": "(estilo Shyamalan)",
+    "sentence": "That ending was a total ___ twist."
+   },
+   {
+    "answer": "drank",
+    "hint_pt": "(aceptamos ciegamente)",
+    "sentence": "Our boss can't handle the truth, so we just ___ the Kool-Aid."
+   }
+  ],
+  "summary_pt": "Expresiones nacidas del cine, las series e internet, usadas en el inglés cotidiano estadounidense.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-13/cover.png",
+  "cover_prompt": "Cute hand-drawn icon of a movie clapperboard, a TV, and a smartphone with popcorn, soft pastel colors, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It's so meta.",
+   "wrong": "It's very metal.",
+   "why_pt": "Ojo: 'meta' es autorreferencial; 'metal' es otra palabra."
+  }
+ }
+}

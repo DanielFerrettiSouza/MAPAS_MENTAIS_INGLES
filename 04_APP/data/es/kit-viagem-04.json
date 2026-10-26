@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-04",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "window seat",
+     "aisle seat",
+     "middle seat",
+     "exit seat"
+    ],
+    "question_pt": "¿Cómo se dice \"asiento de pasillo\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Apaga el teléfono",
+     "Levanta la mesita",
+     "Abróchate el cinturón de seguridad",
+     "Quédate sentado"
+    ],
+    "question_pt": "¿Qué significa \"Fasten your seat belt\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I want blanket.",
+     "Give blanket.",
+     "Could I have a blanket?",
+     "Blanket me, please."
+    ],
+    "question_pt": "¿Cómo pides una manta con cortesía?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "✈️",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"Could I have...?\" para pedir algo con cortesía. Suena más amable que \"I want...\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "💺",
+    "items": [
+     {
+      "en": "Excuse me, that's my seat.",
+      "pt": "Disculpe, ese es mi asiento."
+     },
+     {
+      "en": "window seat",
+      "pt": "asiento de ventanilla"
+     },
+     {
+      "en": "aisle seat",
+      "pt": "asiento de pasillo"
+     },
+     {
+      "en": "Can we switch seats?",
+      "pt": "¿Podemos cambiar de asiento?"
+     }
+    ],
+    "label_en": "Your Seat",
+    "label_pt": "Tu asiento",
+    "illustration_key": "airplane seat",
+    "illustration_prompt": "A single airplane seat by an oval window with a seat belt lying on the cushion"
+   },
+   {
+    "emoji": "🦺",
+    "items": [
+     {
+      "en": "Fasten your seat belt.",
+      "pt": "Abróchese el cinturón de seguridad."
+     },
+     {
+      "en": "emergency exit",
+      "pt": "salida de emergencia"
+     },
+     {
+      "en": "life vest",
+      "pt": "chaleco salvavidas"
+     },
+     {
+      "en": "Turn off your phone.",
+      "pt": "Apague su teléfono."
+     }
+    ],
+    "label_en": "Safety",
+    "label_pt": "Seguridad",
+    "illustration_key": "life vest",
+    "illustration_prompt": "A flight attendant demonstrating a yellow life vest in an airplane aisle"
+   },
+   {
+    "emoji": "🥤",
+    "items": [
+     {
+      "en": "Chicken or pasta?",
+      "pt": "¿Pollo o pasta?"
+     },
+     {
+      "en": "Could I have some water?",
+      "pt": "¿Me podría dar agua?"
+     },
+     {
+      "en": "Coffee, please.",
+      "pt": "Café, por favor."
+     },
+     {
+      "en": "tray table",
+      "pt": "mesita plegable"
+     }
+    ],
+    "label_en": "Food and Drinks",
+    "label_pt": "Comida y bebida",
+    "illustration_key": "airplane meal",
+    "illustration_prompt": "A small airplane tray table with a meal box, a plastic cup of juice and a napkin"
+   },
+   {
+    "emoji": "😴",
+    "items": [
+     {
+      "en": "Could I have a blanket?",
+      "pt": "¿Me podría dar una manta?"
+     },
+     {
+      "en": "pillow",
+      "pt": "almohada"
+     },
+     {
+      "en": "Where is the restroom?",
+      "pt": "¿Dónde está el baño?"
+     },
+     {
+      "en": "I feel sick.",
+      "pt": "Estoy mareado."
+     }
+    ],
+    "label_en": "Comfort",
+    "label_pt": "Comodidad",
+    "illustration_key": "neck pillow",
+    "illustration_prompt": "A traveler sleeping in an airplane seat with a neck pillow and a blue blanket"
+   }
+  ],
+  "title_en": "On the Plane",
+  "title_pt": "Dentro del avión",
+  "cover_key": "airplane cabin",
+  "exercises": [
+   {
+    "answer": "belt",
+    "hint_pt": "(cinturón)",
+    "sentence": "Please fasten your seat ___."
+   },
+   {
+    "answer": "blanket",
+    "hint_pt": "(manta)",
+    "sentence": "Could I have a ___, please? I'm cold."
+   },
+   {
+    "answer": "seat",
+    "hint_pt": "(asiento)",
+    "sentence": "Excuse me, I think you're in my ___."
+   },
+   {
+    "answer": "aisle",
+    "hint_pt": "(pasillo)",
+    "sentence": "I'd like an ___ seat, please."
+   }
+  ],
+  "summary_pt": "Frases útiles para comunicarte con los auxiliares de vuelo y otros pasajeros durante el vuelo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airplane-cabin.png",
+  "cover_prompt": "Interior of a passenger airplane cabin with rows of seats, a friendly flight attendant pushing a drink cart down the aisle, soft light through small oval windows",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airplane-seat.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/life-vest.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airplane-meal.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/neck-pillow.png"
+  ],
+  "common_mistake": {
+   "right": "Can you lend me a pen?",
+   "wrong": "Can you borrow me a pen?",
+   "why_pt": "\"Borrow\" es pedir prestado; \"lend\" es prestar a alguien."
+  }
+ }
+}

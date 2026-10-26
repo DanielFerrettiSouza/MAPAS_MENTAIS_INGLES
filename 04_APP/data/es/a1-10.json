@@ -1,0 +1,177 @@
+{
+ "slug": "a1-10",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "stove",
+     "fridge",
+     "sink",
+     "closet"
+    ],
+    "question_pt": "¿Cómo se dice \"refrigerador\" (nevera) en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Bathroom",
+     "Kitchen",
+     "Living room",
+     "Bedroom"
+    ],
+    "question_pt": "¿Dónde está \"the couch\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "toalla",
+     "almohada",
+     "alfombra",
+     "espejo"
+    ],
+    "question_pt": "¿Qué significa \"towel\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🏠",
+  "level": "A1",
+  "tip_pt": "Usa \"in the\" para las habitaciones: in the kitchen, in the bedroom. Usa \"There is\" para un objeto y \"There are\" para varios.",
+  "branches": [
+   {
+    "emoji": "🍳",
+    "items": [
+     {
+      "en": "the fridge",
+      "pt": "el refrigerador (la nevera)"
+     },
+     {
+      "en": "the stove",
+      "pt": "la estufa (la cocina)"
+     },
+     {
+      "en": "the sink",
+      "pt": "el fregadero"
+     },
+     {
+      "en": "a table and chairs",
+      "pt": "una mesa y sillas"
+     }
+    ],
+    "label_en": "Kitchen",
+    "label_pt": "Cocina",
+    "illustration_prompt": "A cute hand-drawn kitchen icon with a small stove and a frying pan, soft colors, no text"
+   },
+   {
+    "emoji": "🛏️",
+    "items": [
+     {
+      "en": "the bed",
+      "pt": "la cama"
+     },
+     {
+      "en": "a pillow",
+      "pt": "una almohada"
+     },
+     {
+      "en": "the closet",
+      "pt": "el armario (el clóset)"
+     },
+     {
+      "en": "a lamp",
+      "pt": "una lámpara"
+     }
+    ],
+    "label_en": "Bedroom",
+    "label_pt": "Dormitorio",
+    "illustration_prompt": "A cute hand-drawn bed with a fluffy pillow and blanket, soft colors, no text"
+   },
+   {
+    "emoji": "🛋️",
+    "items": [
+     {
+      "en": "the couch",
+      "pt": "el sofá"
+     },
+     {
+      "en": "the TV",
+      "pt": "la tele"
+     },
+     {
+      "en": "a rug",
+      "pt": "una alfombra"
+     },
+     {
+      "en": "the window",
+      "pt": "la ventana"
+     }
+    ],
+    "label_en": "Living Room",
+    "label_pt": "Sala",
+    "illustration_prompt": "A cute hand-drawn couch next to a small TV on a stand, soft colors, no text"
+   },
+   {
+    "emoji": "🛁",
+    "items": [
+     {
+      "en": "the shower",
+      "pt": "la ducha (la regadera)"
+     },
+     {
+      "en": "the toilet",
+      "pt": "el inodoro"
+     },
+     {
+      "en": "a towel",
+      "pt": "una toalla"
+     },
+     {
+      "en": "the mirror",
+      "pt": "el espejo"
+     }
+    ],
+    "label_en": "Bathroom",
+    "label_pt": "Baño",
+    "illustration_prompt": "A cute hand-drawn bathtub with bubbles and a rubber duck, soft colors, no text"
+   }
+  ],
+  "title_en": "My House",
+  "title_pt": "Mi casa",
+  "exercises": [
+   {
+    "answer": "bedroom",
+    "hint_pt": "(dormitorio)",
+    "sentence": "I sleep in my ___."
+   },
+   {
+    "answer": "fridge",
+    "hint_pt": "(refrigerador)",
+    "sentence": "The milk is in the ___."
+   },
+   {
+    "answer": "couch",
+    "hint_pt": "(sofá)",
+    "sentence": "There is a big ___ in the living room."
+   },
+   {
+    "answer": "bathroom",
+    "hint_pt": "(baño)",
+    "sentence": "I take a shower in the ___."
+   }
+  ],
+  "summary_pt": "Aprende las partes de la casa y los objetos que usamos en cada una.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-10/cover.png",
+  "cover_prompt": "A cute small cartoon house cut open like a dollhouse, showing a kitchen, bedroom, living room and bathroom, hand-drawn style, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "There are two beds in my bedroom.",
+   "wrong": "There is two beds in my bedroom.",
+   "why_pt": "\"Hay\" no cambia, pero en inglés el plural es \"there are\"."
+  }
+ }
+}

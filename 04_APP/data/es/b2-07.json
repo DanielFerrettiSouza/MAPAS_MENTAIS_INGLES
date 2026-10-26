@@ -1,0 +1,177 @@
+{
+ "slug": "b2-07",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I wish I studied harder.",
+     "I wish I had studied harder.",
+     "I wish I would study harder.",
+     "I wish I have studied harder."
+    ],
+    "question_pt": "¿Cómo se dice 'Ojalá hubiera estudiado más'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I wish it rained.",
+     "I wish it had rained.",
+     "I wish it would stop raining.",
+     "I wish it stops raining."
+    ],
+    "question_pt": "¿Qué frase expresa fastidio por la lluvia?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "is",
+     "were",
+     "will be",
+     "has been"
+    ],
+    "question_pt": "Completa: 'If only it ___ Friday.'",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🌠",
+  "level": "B2",
+  "tip_pt": "Deseo sobre el presente: wish + pasado simple. Arrepentimiento del pasado: wish + past perfect. Fastidio con alguien: wish + would.",
+  "branches": [
+   {
+    "emoji": "💭",
+    "items": [
+     {
+      "en": "I wish I had more time.",
+      "pt": "Ojalá tuviera más tiempo."
+     },
+     {
+      "en": "I wish I lived closer.",
+      "pt": "Ojalá viviera más cerca."
+     },
+     {
+      "en": "I wish I could speak French.",
+      "pt": "Ojalá supiera hablar francés."
+     },
+     {
+      "en": "I wish I were taller.",
+      "pt": "Ojalá fuera más alto."
+     }
+    ],
+    "label_en": "Present Wishes",
+    "label_pt": "Deseos en el presente",
+    "illustration_prompt": "A cute hand-drawn thought bubble with a small sun and clock inside, simple doodle style, no text"
+   },
+   {
+    "emoji": "😔",
+    "items": [
+     {
+      "en": "I wish I had studied harder.",
+      "pt": "Ojalá hubiera estudiado más."
+     },
+     {
+      "en": "I wish I hadn't said that.",
+      "pt": "Ojalá no hubiera dicho eso."
+     },
+     {
+      "en": "I wish I had called her.",
+      "pt": "Ojalá la hubiera llamado."
+     },
+     {
+      "en": "I wish I'd known earlier.",
+      "pt": "Ojalá lo hubiera sabido antes."
+     }
+    ],
+    "label_en": "Past Regrets",
+    "label_pt": "Arrepentimientos",
+    "illustration_prompt": "A cute hand-drawn sad face looking at an old calendar page, simple doodle style, no text"
+   },
+   {
+    "emoji": "😤",
+    "items": [
+     {
+      "en": "I wish you would listen.",
+      "pt": "Ojalá me escucharas."
+     },
+     {
+      "en": "I wish it would stop raining.",
+      "pt": "Ojalá dejara de llover."
+     },
+     {
+      "en": "I wish he wouldn't shout.",
+      "pt": "Ojalá no gritara."
+     },
+     {
+      "en": "I wish they would hurry up.",
+      "pt": "Ojalá se dieran prisa."
+     }
+    ],
+    "label_en": "Complaints",
+    "label_pt": "Quejas y fastidios",
+    "illustration_prompt": "A cute hand-drawn grumpy cloud with a tiny storm, simple doodle style, no text"
+   },
+   {
+    "emoji": "🙏",
+    "items": [
+     {
+      "en": "If only I knew!",
+      "pt": "¡Si al menos lo supiera!"
+     },
+     {
+      "en": "If only I had listened.",
+      "pt": "Si al menos hubiera escuchado."
+     },
+     {
+      "en": "If only it were Friday.",
+      "pt": "Si al menos fuera viernes."
+     },
+     {
+      "en": "If only you would try.",
+      "pt": "Si al menos lo intentaras."
+     }
+    ],
+    "label_en": "If Only",
+    "label_pt": "Si al menos",
+    "illustration_prompt": "A cute hand-drawn pair of hands holding a small glowing star, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Wish & If Only",
+  "title_pt": "Wish e If Only",
+  "exercises": [
+   {
+    "answer": "had",
+    "hint_pt": "(tuviera)",
+    "sentence": "I wish I ___ more free time."
+   },
+   {
+    "answer": "had",
+    "hint_pt": "(hubiera)",
+    "sentence": "If only I ___ studied harder."
+   },
+   {
+    "answer": "would",
+    "hint_pt": "(dejaras - fastidio)",
+    "sentence": "I wish you ___ stop interrupting me."
+   },
+   {
+    "answer": "could",
+    "hint_pt": "(pudiera)",
+    "sentence": "I wish I ___ speak French."
+   }
+  ],
+  "summary_pt": "Usamos wish e if only para expresar deseos, arrepentimientos y quejas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-07/cover.png",
+  "cover_prompt": "A cute hand-drawn person looking up at a shooting star with a dreamy thought bubble containing a heart, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I wish I had more time.",
+   "wrong": "I hope I had more time.",
+   "why_pt": "Para deseos imposibles usa wish, no hope (\"esperar\")."
+  }
+ }
+}

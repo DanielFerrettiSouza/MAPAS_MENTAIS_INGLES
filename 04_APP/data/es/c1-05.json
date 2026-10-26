@@ -1,0 +1,181 @@
+{
+ "slug": "c1-05",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "rule out",
+     "draw up",
+     "wear off",
+     "look up"
+    ],
+    "question_pt": "¿Qué phrasal verb significa 'descartar una opción'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "pelearse fuerte",
+     "distanciarse con el tiempo",
+     "hacer las paces",
+     "enamorarse"
+    ],
+    "question_pt": "¿Qué significa 'drift apart'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "out",
+     "off",
+     "through",
+     "down"
+    ],
+    "question_pt": "Completa: 'The deal fell ___.'",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧩",
+  "level": "C1",
+  "tip_pt": "Muchos phrasal verbs avanzados son separables: con pronombres, 'iron it out' funciona, pero 'iron out it' nunca.",
+  "branches": [
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "iron out the details",
+      "pt": "pulir los detalles"
+     },
+     {
+      "en": "the deal fell through",
+      "pt": "el trato se vino abajo"
+     },
+     {
+      "en": "draw up a contract",
+      "pt": "redactar un contrato"
+     },
+     {
+      "en": "follow up on an email",
+      "pt": "dar seguimiento a un correo"
+     },
+     {
+      "en": "phase out old systems",
+      "pt": "eliminar gradualmente los sistemas antiguos"
+     }
+    ],
+    "label_en": "Work & Business",
+    "label_pt": "Trabajo y negocios",
+    "illustration_prompt": "Cute hand-drawn briefcase with a small handshake above it, pastel colors, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "put up with someone",
+      "pt": "aguantar a alguien"
+     },
+     {
+      "en": "look down on people",
+      "pt": "menospreciar a la gente"
+     },
+     {
+      "en": "drift apart over time",
+      "pt": "distanciarse con el tiempo"
+     },
+     {
+      "en": "stand up for yourself",
+      "pt": "defenderse a uno mismo"
+     }
+    ],
+    "label_en": "Relationships",
+    "label_pt": "Relaciones",
+    "illustration_prompt": "Two cute hand-drawn smiling faces with a small heart between them, pastel colors, no text"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "come up with a plan",
+      "pt": "idear un plan"
+     },
+     {
+      "en": "mull it over",
+      "pt": "pensarlo bien"
+     },
+     {
+      "en": "rule out an option",
+      "pt": "descartar una opción"
+     },
+     {
+      "en": "figure it out",
+      "pt": "averiguarlo, entenderlo"
+     }
+    ],
+    "label_en": "Thinking & Ideas",
+    "label_pt": "Pensamiento e ideas",
+    "illustration_prompt": "Cute hand-drawn glowing light bulb with tiny sparkles, pastel colors, no text"
+   },
+   {
+    "emoji": "⚡",
+    "items": [
+     {
+      "en": "things are looking up",
+      "pt": "las cosas están mejorando"
+     },
+     {
+      "en": "crack down on fraud",
+      "pt": "tomar medidas enérgicas contra el fraude"
+     },
+     {
+      "en": "bounce back quickly",
+      "pt": "recuperarse rápido"
+     },
+     {
+      "en": "the effect wore off",
+      "pt": "el efecto se pasó"
+     }
+    ],
+    "label_en": "Problems & Change",
+    "label_pt": "Problemas y cambios",
+    "illustration_prompt": "Cute hand-drawn little storm cloud turning into a sun, pastel colors, no text"
+   }
+  ],
+  "title_en": "Advanced Phrasal Verbs",
+  "title_pt": "Phrasal verbs avanzados",
+  "exercises": [
+   {
+    "answer": "out",
+    "hint_pt": "(resolver)",
+    "sentence": "Let's iron ___ the details tomorrow."
+   },
+   {
+    "answer": "through",
+    "hint_pt": "(no se concretó)",
+    "sentence": "The deal fell ___ at the last minute."
+   },
+   {
+    "answer": "with",
+    "hint_pt": "(tolerar)",
+    "sentence": "I can't put up ___ his attitude anymore."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(se le ocurrió)",
+    "sentence": "She came ___ with a brilliant idea."
+   }
+  ],
+  "summary_pt": "Verbos con partículas que cambian de sentido en contextos formales e informales.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-05/cover.png",
+  "cover_prompt": "Cute hand-drawn puzzle pieces fitting together, one shaped like a verb arrow and one like a small particle, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "We need to figure it out before Friday.",
+   "wrong": "We need to figure out it before Friday.",
+   "why_pt": "Con pronombre, el objeto va entre el verbo y la partícula."
+  }
+ }
+}

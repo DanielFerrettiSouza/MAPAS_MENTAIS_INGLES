@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-14",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'll take that on board",
+     "I'll put that on table",
+     "I'll take that in count",
+     "I'll board that"
+    ],
+    "question_pt": "¿Cómo se dice 'Lo tendré en cuenta'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Give me a feedback",
+     "Give me some feedback",
+     "Give me feedbacks",
+     "Give me one feedbacks"
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "cumplir las metas",
+     "bajar el nivel",
+     "superar las expectativas",
+     "fijar metas"
+    ],
+    "question_pt": "¿Qué significa 'exceed expectations'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📊",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa 'feedback' siempre en singular y nunca digas 'a feedback': di 'some feedback' o 'a piece of feedback'. En inglés es un sustantivo incontable.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👏",
+    "items": [
+     {
+      "en": "You did an outstanding job",
+      "pt": "Hiciste un trabajo excelente"
+     },
+     {
+      "en": "You've really raised the bar",
+      "pt": "Realmente subiste el nivel"
+     },
+     {
+      "en": "Your effort didn't go unnoticed",
+      "pt": "Tu esfuerzo no pasó desapercibido"
+     },
+     {
+      "en": "Keep up the great work",
+      "pt": "Sigue así, haces un gran trabajo"
+     }
+    ],
+    "label_en": "Giving Praise",
+    "label_pt": "Elogiar",
+    "illustration_key": "thumbs up",
+    "illustration_prompt": "A smiling manager giving a thumbs-up to a colleague in an office"
+   },
+   {
+    "emoji": "🛠️",
+    "items": [
+     {
+      "en": "There's room for improvement",
+      "pt": "Hay margen de mejora"
+     },
+     {
+      "en": "You might want to consider",
+      "pt": "Quizás te convenga considerar"
+     },
+     {
+      "en": "This area needs more attention",
+      "pt": "Esta área necesita más atención"
+     },
+     {
+      "en": "Let's work on your deadlines",
+      "pt": "Trabajemos en tus plazos de entrega"
+     }
+    ],
+    "label_en": "Constructive Criticism",
+    "label_pt": "Críticas constructivas",
+    "illustration_key": "toolbox",
+    "illustration_prompt": "A wrench and a screwdriver lying on a wooden desk"
+   },
+   {
+    "emoji": "👂",
+    "items": [
+     {
+      "en": "I appreciate the feedback",
+      "pt": "Agradezco tus comentarios"
+     },
+     {
+      "en": "Could you give me an example?",
+      "pt": "¿Podrías darme un ejemplo?"
+     },
+     {
+      "en": "That's a fair point",
+      "pt": "Es un punto válido"
+     },
+     {
+      "en": "I'll take that on board",
+      "pt": "Lo tendré en cuenta"
+     }
+    ],
+    "label_en": "Receiving Feedback",
+    "label_pt": "Recibir comentarios",
+    "illustration_key": "listening person",
+    "illustration_prompt": "A young professional listening attentively and nodding, holding a notebook"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "Let's set clear goals",
+      "pt": "Fijemos metas claras"
+     },
+     {
+      "en": "exceed expectations",
+      "pt": "superar las expectativas"
+     },
+     {
+      "en": "meet the targets",
+      "pt": "cumplir las metas"
+     },
+     {
+      "en": "a development plan",
+      "pt": "un plan de desarrollo"
+     }
+    ],
+    "label_en": "Goals and Growth",
+    "label_pt": "Metas y crecimiento",
+    "illustration_key": "dartboard",
+    "illustration_prompt": "A dartboard with a dart hitting the bullseye"
+   }
+  ],
+  "title_en": "Performance Feedback",
+  "title_pt": "Feedback y evaluación",
+  "cover_key": "office meeting",
+  "exercises": [
+   {
+    "answer": "raised",
+    "hint_pt": "(subiste)",
+    "sentence": "You've really ___ the bar this quarter."
+   },
+   {
+    "answer": "improvement",
+    "hint_pt": "(mejora)",
+    "sentence": "There's still room for ___ in your reports."
+   },
+   {
+    "answer": "appreciate",
+    "hint_pt": "(agradezco)",
+    "sentence": "Thanks, I really ___ the feedback."
+   },
+   {
+    "answer": "goals",
+    "hint_pt": "(metas)",
+    "sentence": "Let's set clear ___ for next year."
+   }
+  ],
+  "summary_pt": "Aprende a dar, recibir y comentar feedback profesional de forma clara y constructiva.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-meeting.png",
+  "cover_prompt": "A manager and an employee sitting across a desk in a bright office, having a friendly one-on-one conversation, no text or screens",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/thumbs-up.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/toolbox.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/listening-person.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/dartboard.png"
+  ],
+  "common_mistake": {
+   "right": "Can you give me some feedback on my presentation?",
+   "wrong": "Can you give me a feedback about my presentation?",
+   "why_pt": "'Feedback' es incontable: no lleva 'a'. Usa 'on', no 'about'."
+  }
+ }
+}

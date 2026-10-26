@@ -1,0 +1,177 @@
+{
+ "slug": "c1-06",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "The ball is in your court.",
+     "Let's call it a day.",
+     "Think outside the box.",
+     "We're swamped."
+    ],
+    "question_pt": "¿Qué expresión significa \"ahora la decisión es tuya\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Ir a la reunión",
+     "Volver a empezar de cero",
+     "Dibujar un gráfico",
+     "Cerrar el trato"
+    ],
+    "question_pt": "¿Qué significa \"back to the drawing board\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Let's touch base.",
+     "Let's meet halfway.",
+     "Let's take this offline.",
+     "Let's cut corners."
+    ],
+    "question_pt": "¿Cómo se dice \"lleguemos a un punto medio\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "💼",
+  "level": "C1",
+  "tip_pt": "Los idioms de negocios suenan naturales en reuniones, pero no abuses de ellos: usa uno o dos por conversación para sonar fluido, no forzado.",
+  "branches": [
+   {
+    "emoji": "🗓️",
+    "items": [
+     {
+      "en": "Let's touch base next week.",
+      "pt": "Hablamos la semana que viene."
+     },
+     {
+      "en": "We're on the same page.",
+      "pt": "Estamos en sintonía."
+     },
+     {
+      "en": "Let's get down to business.",
+      "pt": "Vamos al grano."
+     },
+     {
+      "en": "Can we take this offline?",
+      "pt": "¿Podemos hablarlo luego, en privado?"
+     }
+    ],
+    "label_en": "Meetings",
+    "label_pt": "Reuniones",
+    "illustration_prompt": "Cute hand-drawn round table with chairs and coffee cups, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "Let's meet halfway.",
+      "pt": "Lleguemos a un punto medio."
+     },
+     {
+      "en": "The ball is in your court.",
+      "pt": "Ahora la decisión es tuya."
+     },
+     {
+      "en": "That's a deal breaker.",
+      "pt": "Eso hace inviable el acuerdo."
+     },
+     {
+      "en": "The deal is in the bag.",
+      "pt": "El trato está asegurado."
+     }
+    ],
+    "label_en": "Negotiation",
+    "label_pt": "Negociación",
+    "illustration_prompt": "Cute hand-drawn handshake between two cartoon hands, soft colors, no text"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "Think outside the box.",
+      "pt": "Pensar fuera de la caja."
+     },
+     {
+      "en": "Back to the drawing board.",
+      "pt": "Volver a empezar de cero."
+     },
+     {
+      "en": "Let's look at the big picture.",
+      "pt": "Veamos el panorama general."
+     },
+     {
+      "en": "It's a game changer.",
+      "pt": "Esto lo cambia todo."
+     }
+    ],
+    "label_en": "Ideas & Strategy",
+    "label_pt": "Ideas y estrategia",
+    "illustration_prompt": "Cute hand-drawn glowing light bulb popping out of a box, doodle style, no text"
+   },
+   {
+    "emoji": "📈",
+    "items": [
+     {
+      "en": "We're swamped this week.",
+      "pt": "Estamos saturados de trabajo esta semana."
+     },
+     {
+      "en": "Let's call it a day.",
+      "pt": "Dejémoslo por hoy."
+     },
+     {
+      "en": "We cut corners there.",
+      "pt": "Ahí hicimos las cosas a medias."
+     },
+     {
+      "en": "That's the bottom line.",
+      "pt": "Eso es lo esencial."
+     }
+    ],
+    "label_en": "Work & Results",
+    "label_pt": "Trabajo y resultados",
+    "illustration_prompt": "Cute hand-drawn rising bar chart with a small smiling arrow, pastel colors, no text"
+   }
+  ],
+  "title_en": "Business Idioms",
+  "title_pt": "Expresiones de negocios",
+  "exercises": [
+   {
+    "answer": "box",
+    "hint_pt": "(caja)",
+    "sentence": "We need to think outside the ___ to solve this."
+   },
+   {
+    "answer": "base",
+    "hint_pt": "(base)",
+    "sentence": "Let's touch ___ next week about the budget."
+   },
+   {
+    "answer": "bag",
+    "hint_pt": "(bolsa)",
+    "sentence": "The deal is finally in the ___."
+   },
+   {
+    "answer": "page",
+    "hint_pt": "(página)",
+    "sentence": "We're on the same ___ about the strategy."
+   }
+  ],
+  "summary_pt": "Expresiones idiomáticas que se usan en reuniones, negociaciones y en el día a día de la empresa.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-06/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a friendly briefcase surrounded by small icons of a handshake, a light bulb and a rising chart, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "We're on the same page about the strategy.",
+   "wrong": "We're in the same page about the strategy.",
+   "why_pt": "Se dice \"on the same page\", no \"in\": preposición fija."
+  }
+ }
+}

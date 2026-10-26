@@ -1,0 +1,181 @@
+{
+ "slug": "c2-18",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Fin del día",
+     "Fin de la discusión",
+     "Todos los días",
+     "Error de datos"
+    ],
+    "question_pt": "¿Qué significa 'EOD' en un mensaje de trabajo?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "SMH",
+     "HMU",
+     "TTYL",
+     "FYI"
+    ],
+    "question_pt": "¿Qué expresión significa 'escríbeme cuando puedas'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "No fue gracioso",
+     "No voy a mentir, fue graciosísimo",
+     "Nadie se rio",
+     "Nunca más"
+    ],
+    "question_pt": "'Ngl, that was hilarious' quiere decir:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "💬",
+  "level": "C2",
+  "tip_pt": "Muchas abreviaturas cambian el tono: 'k' suena seco o molesto; 'okay!' parece más amable. El contexto y la relación definen su uso.",
+  "branches": [
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "IMO, it's overrated.",
+      "pt": "En mi opinión, está sobrevalorado."
+     },
+     {
+      "en": "TBH, I'm not convinced.",
+      "pt": "Para ser sincero, no estoy convencido."
+     },
+     {
+      "en": "Unpopular opinion, but I agree.",
+      "pt": "Opinión impopular, pero estoy de acuerdo."
+     },
+     {
+      "en": "Ngl, that was hilarious.",
+      "pt": "No voy a mentir, fue graciosísimo."
+     }
+    ],
+    "label_en": "Opinions & Honesty",
+    "label_pt": "Opinión y sinceridad",
+    "illustration_prompt": "A cute hand-drawn thinking face with a small thought bubble, simple doodle style, no text"
+   },
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "FYI, the deadline changed.",
+      "pt": "Para que lo sepas, cambió la fecha límite."
+     },
+     {
+      "en": "I'll send it EOD.",
+      "pt": "Lo envío antes de que termine el día."
+     },
+     {
+      "en": "Need this ASAP, please.",
+      "pt": "Necesito esto lo antes posible, por favor."
+     },
+     {
+      "en": "Sorry, OOO until Monday.",
+      "pt": "Disculpa, estoy fuera de la oficina hasta el lunes."
+     },
+     {
+      "en": "TL;DR: we're over budget.",
+      "pt": "En resumen: nos pasamos del presupuesto."
+     }
+    ],
+    "label_en": "Work Chat",
+    "label_pt": "Chat de trabajo",
+    "illustration_prompt": "A cute hand-drawn laptop with a tiny briefcase beside it, doodle style, no text"
+   },
+   {
+    "emoji": "😂",
+    "items": [
+     {
+      "en": "LMAO, I'm dead.",
+      "pt": "Jajaja, me muero."
+     },
+     {
+      "en": "SMH, not again.",
+      "pt": "Niego con la cabeza, otra vez no."
+     },
+     {
+      "en": "I can't even.",
+      "pt": "Es que no puedo, en serio."
+     },
+     {
+      "en": "Big mood.",
+      "pt": "Me identifico totalmente."
+     }
+    ],
+    "label_en": "Reactions",
+    "label_pt": "Reacciones",
+    "illustration_prompt": "A cute hand-drawn laughing face with tears of joy, doodle style, no text"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "BRB, grabbing coffee.",
+      "pt": "Ya vuelvo, voy por un café."
+     },
+     {
+      "en": "Was AFK, what'd I miss?",
+      "pt": "Estaba ausente, ¿qué me perdí?"
+     },
+     {
+      "en": "TTYL, gotta run.",
+      "pt": "Hablamos luego, me tengo que ir."
+     },
+     {
+      "en": "HMU when you're free.",
+      "pt": "Escríbeme cuando estés libre."
+     }
+    ],
+    "label_en": "Availability",
+    "label_pt": "Disponibilidad",
+    "illustration_prompt": "A cute hand-drawn alarm clock next to a tiny keyboard, doodle style, no text"
+   }
+  ],
+  "title_en": "Chat Slang",
+  "title_pt": "Jerga de chat",
+  "exercises": [
+   {
+    "answer": "AFAIK",
+    "hint_pt": "(que yo sepa)",
+    "sentence": "___, I think the meeting got moved to Friday."
+   },
+   {
+    "answer": "AFK",
+    "hint_pt": "(lejos del teclado)",
+    "sentence": "Sorry, I was ___ all afternoon at the doctor's."
+   },
+   {
+    "answer": "TL;DR",
+    "hint_pt": "(en resumen)",
+    "sentence": "Long thread, sorry. ___: we need more budget."
+   },
+   {
+    "answer": "TBH",
+    "hint_pt": "(para ser sincero)",
+    "sentence": "___, I never liked that show anyway."
+   }
+  ],
+  "summary_pt": "Aprende las abreviaturas y códigos informales que los nativos usan en mensajes, redes sociales y trabajo remoto.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-18/cover.png",
+  "cover_prompt": "A cute hand-drawn smartphone with colorful speech bubbles filled only with emoji and dots floating around it, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "What time is the meeting?",
+   "wrong": "K time is the meeting?",
+   "why_pt": "Ojo: en inglés, 'k' significa 'okay', no 'qué'."
+  }
+ }
+}

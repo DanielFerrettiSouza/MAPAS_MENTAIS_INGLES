@@ -1,13 +1,15 @@
 import type { ReactNode } from "react";
 import SiteNav from "./SiteNav";
 
-export default function LegalPage({ title, children }: { title: string; children: ReactNode }) {
+export default function LegalPage({ title, children, lang = "pt" }: { title: string; children: ReactNode; lang?: "pt" | "es" }) {
   return (
     <>
-      <SiteNav />
+      {lang === "es" ? (
+        <header className="site-nav"><div className="wrap" style={{ padding: "14px 0" }}><a href="/es/metodo"><strong>🔊 Mapas Falantes</strong></a></div></header>
+      ) : <SiteNav />}
       <main className="wrap legal">
         <h1 className="big-title">{title}</h1>
-        <p style={{ color: "var(--muted)" }}>Última atualização: outubro de 2026</p>
+        <p style={{ color: "var(--muted)" }}>{lang === "es" ? "Última actualización: octubre de 2026" : "Última atualização: outubro de 2026"}</p>
         {children}
       </main>
       <footer className="site-footer">© {new Date().getFullYear()} Mapas Falantes</footer>

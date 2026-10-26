@@ -1,0 +1,177 @@
+{
+ "slug": "c2-11",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "That argument doesn't hold water",
+     "That argument doesn't hold air",
+     "That argument doesn't keep water",
+     "That argument doesn't stand water"
+    ],
+    "question_pt": "¿Qué expresión significa \"ese argumento no se sostiene\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "as for example lower costs",
+     "like for example lower costs",
+     "such as lower costs",
+     "as such lower costs"
+    ],
+    "question_pt": "¿Cuál es la forma correcta de introducir ejemplos?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Inaction is not an option",
+     "Granted, this has some merit",
+     "A case in point is",
+     "Let us seize this opportunity"
+    ],
+    "question_pt": "¿Qué frase se usa para hacer una concesión?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🖋️",
+  "level": "C2",
+  "tip_pt": "Anticipa las objeciones y refútalas con elegancia: reconocer el otro punto de vista aumenta tu credibilidad y hace tu argumento más convincente.",
+  "branches": [
+   {
+    "emoji": "🚀",
+    "items": [
+     {
+      "en": "It is imperative that we act",
+      "pt": "Es imprescindible que actuemos"
+     },
+     {
+      "en": "Few would dispute that",
+      "pt": "Pocos discutirían que"
+     },
+     {
+      "en": "Consider, for a moment,",
+      "pt": "Considere, por un momento,"
+     },
+     {
+      "en": "At stake is nothing less than",
+      "pt": "Lo que está en juego es nada menos que"
+     }
+    ],
+    "label_en": "Strong Openings",
+    "label_pt": "Comienzos impactantes",
+    "illustration_prompt": "A cute hand-drawn rocket launching from an open book, simple doodle style, no text"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "Critics may contend that",
+      "pt": "Los críticos podrían argumentar que"
+     },
+     {
+      "en": "Granted, this has some merit",
+      "pt": "Es cierto que esto tiene algo de mérito"
+     },
+     {
+      "en": "That argument doesn't hold water",
+      "pt": "Ese argumento no se sostiene"
+     },
+     {
+      "en": "This overlooks a crucial point",
+      "pt": "Esto pasa por alto un punto crucial"
+     }
+    ],
+    "label_en": "Conceding & Rebutting",
+    "label_pt": "Concesión y refutación",
+    "illustration_prompt": "A cute hand-drawn balance scale with two small speech bubbles without letters, doodle style, no text"
+   },
+   {
+    "emoji": "📊",
+    "items": [
+     {
+      "en": "The evidence overwhelmingly suggests",
+      "pt": "Las pruebas indican de forma abrumadora"
+     },
+     {
+      "en": "A case in point is",
+      "pt": "Un claro ejemplo es"
+     },
+     {
+      "en": "Such as lower costs",
+      "pt": "Como unos costos más bajos"
+     },
+     {
+      "en": "Data consistently bear this out",
+      "pt": "Los datos lo confirman sistemáticamente"
+     }
+    ],
+    "label_en": "Building Evidence",
+    "label_pt": "Cómo aportar pruebas",
+    "illustration_prompt": "A cute hand-drawn bar chart next to a magnifying glass, doodle style, no text or numbers"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "The choice could not be clearer",
+      "pt": "La elección no podría ser más clara"
+     },
+     {
+      "en": "Ultimately, the stakes are too high",
+      "pt": "En definitiva, lo que está en juego es demasiado"
+     },
+     {
+      "en": "Inaction is simply not an option",
+      "pt": "La inacción simplemente no es una opción"
+     },
+     {
+      "en": "Let us seize this opportunity",
+      "pt": "Aprovechemos esta oportunidad"
+     }
+    ],
+    "label_en": "Powerful Closings",
+    "label_pt": "Cierres contundentes",
+    "illustration_prompt": "A cute hand-drawn dart hitting the center of a target, doodle style, no text"
+   }
+  ],
+  "title_en": "Persuasive Writing",
+  "title_pt": "Escritura persuasiva",
+  "exercises": [
+   {
+    "answer": "imperative",
+    "hint_pt": "(imprescindible, crucial)",
+    "sentence": "It is ___ that we act now, before it is too late."
+   },
+   {
+    "answer": "contend",
+    "hint_pt": "(argumentar, sostener)",
+    "sentence": "Critics may ___ that the costs are too high."
+   },
+   {
+    "answer": "overwhelmingly",
+    "hint_pt": "(de forma abrumadora)",
+    "sentence": "The evidence ___ suggests a different conclusion."
+   },
+   {
+    "answer": "water",
+    "hint_pt": "(agua)",
+    "sentence": "This argument does not hold ___ under scrutiny."
+   }
+  ],
+  "summary_pt": "Técnicas sofisticadas para convencer al lector con argumentos, retórica y un estilo refinado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-11/cover.png",
+  "cover_prompt": "A cute hand-drawn fountain pen writing on a scroll, with a small glowing lightbulb and a balanced scale nearby, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "This policy will bring many benefits, such as lower costs.",
+   "wrong": "This policy will bring many benefits, as for example lower costs.",
+   "why_pt": "\"As for example\" es calco de \"como por ejemplo\"."
+  }
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "slug": "a2-06",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "more cheap than",
+     "cheaper than",
+     "cheapest than",
+     "cheaper that"
+    ],
+    "question_pt": "¿Cómo se dice \"más barato que\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "the goodest",
+     "the most good",
+     "the best",
+     "the better"
+    ],
+    "question_pt": "¿Cuál es el superlativo de \"good\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "as tall as me",
+     "so tall like me",
+     "taller as me",
+     "as taller as me"
+    ],
+    "question_pt": "¿Cómo se dice \"tan alto como yo\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "📊",
+  "level": "A2",
+  "tip_pt": "Los adjetivos cortos llevan -er/-est (taller, tallest); los largos usan more/most (more expensive, most expensive).",
+  "branches": [
+   {
+    "emoji": "📏",
+    "items": [
+     {
+      "en": "taller than",
+      "pt": "más alto que"
+     },
+     {
+      "en": "the tallest",
+      "pt": "el más alto"
+     },
+     {
+      "en": "cheaper than",
+      "pt": "más barato que"
+     },
+     {
+      "en": "the biggest city",
+      "pt": "la ciudad más grande"
+     },
+     {
+      "en": "happier than before",
+      "pt": "más feliz que antes"
+     }
+    ],
+    "label_en": "Short Adjectives",
+    "label_pt": "Adjetivos cortos",
+    "illustration_prompt": "Two cute cartoon trees side by side, one short and one tall, simple hand-drawn style, no text"
+   },
+   {
+    "emoji": "💎",
+    "items": [
+     {
+      "en": "more expensive than",
+      "pt": "más caro que"
+     },
+     {
+      "en": "the most beautiful",
+      "pt": "el más bonito"
+     },
+     {
+      "en": "more interesting than",
+      "pt": "más interesante que"
+     },
+     {
+      "en": "the most important thing",
+      "pt": "lo más importante"
+     }
+    ],
+    "label_en": "Long Adjectives",
+    "label_pt": "Adjetivos largos",
+    "illustration_prompt": "A cute cartoon shiny diamond with a sparkle, simple hand-drawn style, no text"
+   },
+   {
+    "emoji": "⭐",
+    "items": [
+     {
+      "en": "better than",
+      "pt": "mejor que"
+     },
+     {
+      "en": "the best",
+      "pt": "el mejor"
+     },
+     {
+      "en": "worse than",
+      "pt": "peor que"
+     },
+     {
+      "en": "the worst",
+      "pt": "el peor"
+     },
+     {
+      "en": "farther away",
+      "pt": "más lejos"
+     }
+    ],
+    "label_en": "Irregular Forms",
+    "label_pt": "Formas irregulares",
+    "illustration_prompt": "A cute cartoon star with a happy face next to a sad cloud, simple hand-drawn style, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "as tall as me",
+      "pt": "tan alto como yo"
+     },
+     {
+      "en": "not as good as",
+      "pt": "no tan bueno como"
+     },
+     {
+      "en": "much better now",
+      "pt": "mucho mejor ahora"
+     },
+     {
+      "en": "the best day ever",
+      "pt": "el mejor día de todos"
+     }
+    ],
+    "label_en": "Everyday Phrases",
+    "label_pt": "Frases del día a día",
+    "illustration_prompt": "A cute cartoon speech bubble with a small heart inside, simple hand-drawn style, no text"
+   }
+  ],
+  "title_en": "Comparatives & Superlatives",
+  "title_pt": "Comparativos y superlativos",
+  "exercises": [
+   {
+    "answer": "taller",
+    "hint_pt": "(más alto)",
+    "sentence": "My brother is ___ than me."
+   },
+   {
+    "answer": "best",
+    "hint_pt": "(mejor)",
+    "sentence": "This is the ___ day of my life."
+   },
+   {
+    "answer": "worse",
+    "hint_pt": "(peor)",
+    "sentence": "Today is ___ than yesterday."
+   },
+   {
+    "answer": "expensive",
+    "hint_pt": "(caro)",
+    "sentence": "This phone is more ___ than that one."
+   }
+  ],
+  "summary_pt": "Usamos los comparativos para comparar dos cosas y los superlativos para destacar una entre varias.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-06/cover.png",
+  "cover_prompt": "Three cute cartoon cats of different sizes standing on a podium, small, medium and big, simple hand-drawn style, pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "My house is bigger than yours.",
+   "wrong": "My house is more big than yours.",
+   "why_pt": "Los adjetivos cortos usan -er, no more."
+  }
+ }
+}

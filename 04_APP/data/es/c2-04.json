@@ -1,0 +1,177 @@
+{
+ "slug": "c2-04",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Una victoria fácil",
+     "Una victoria con un costo altísimo",
+     "Una victoria injusta",
+     "Una victoria inesperada"
+    ],
+    "question_pt": "¿Qué significa 'a Pyrrhic victory'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "A moot point",
+     "Split hairs",
+     "A red herring",
+     "Gild the lily"
+    ],
+    "question_pt": "¿Qué expresión significa 'pista falsa'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Descansar merecidamente",
+     "Conformarse con los éxitos pasados",
+     "Recibir un premio",
+     "Trabajar hasta tarde"
+    ],
+    "question_pt": "'Rest on one's laurels' significa:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🎩",
+  "level": "C2",
+  "tip_pt": "Usa estas expresiones con moderación, porque en exceso suenan artificiales. Funcionan mejor en textos formales, discursos y conversaciones ingeniosas.",
+  "branches": [
+   {
+    "emoji": "🌷",
+    "items": [
+     {
+      "en": "Gild the lily",
+      "pt": "Adornar lo que ya es perfecto"
+     },
+     {
+      "en": "Carry coals to Newcastle",
+      "pt": "Llevar agua al mar"
+     },
+     {
+      "en": "Herculean task",
+      "pt": "Tarea hercúlea"
+     },
+     {
+      "en": "Burn the midnight oil",
+      "pt": "Quemarse las pestañas"
+     }
+    ],
+    "label_en": "Excess & Effort",
+    "label_pt": "Exceso y esfuerzo",
+    "illustration_prompt": "A cute hand-drawn lily with a tiny golden paintbrush adding gold, simple doodle style, no text"
+   },
+   {
+    "emoji": "💣",
+    "items": [
+     {
+      "en": "Hoist with one's own petard",
+      "pt": "Caer en su propia trampa"
+     },
+     {
+      "en": "A Pyrrhic victory",
+      "pt": "Una victoria pírrica"
+     },
+     {
+      "en": "Sword of Damocles",
+      "pt": "Espada de Damocles"
+     },
+     {
+      "en": "Cassandra's warning",
+      "pt": "Advertencia de desgracia ignorada"
+     }
+    ],
+    "label_en": "Irony & Fate",
+    "label_pt": "Ironía y destino",
+    "illustration_prompt": "A cute hand-drawn small cartoon bomb bouncing back toward a surprised character, simple doodle, no text"
+   },
+   {
+    "emoji": "🐟",
+    "items": [
+     {
+      "en": "A red herring",
+      "pt": "Una pista falsa"
+     },
+     {
+      "en": "A moot point",
+      "pt": "Una cuestión irrelevante"
+     },
+     {
+      "en": "Split hairs",
+      "pt": "Buscarle cinco pies al gato"
+     },
+     {
+      "en": "Beg the question",
+      "pt": "Incurrir en petición de principio"
+     }
+    ],
+    "label_en": "Arguments",
+    "label_pt": "Discusiones y argumentos",
+    "illustration_prompt": "A cute hand-drawn red fish lying on a path with a confused detective dog sniffing it, no text"
+   },
+   {
+    "emoji": "🏆",
+    "items": [
+     {
+      "en": "A tour de force",
+      "pt": "Una obra maestra"
+     },
+     {
+      "en": "Rest on one's laurels",
+      "pt": "Dormirse en los laureles"
+     },
+     {
+      "en": "Pièce de résistance",
+      "pt": "El plato fuerte"
+     },
+     {
+      "en": "Cut the Gordian knot",
+      "pt": "Cortar el nudo gordiano"
+     }
+    ],
+    "label_en": "Mastery",
+    "label_pt": "Excelencia y dominio",
+    "illustration_prompt": "A cute hand-drawn trophy with a laurel wreath and sparkles, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Rare Elegant Idioms",
+  "title_pt": "Expresiones raras y elegantes",
+  "exercises": [
+   {
+    "answer": "tour",
+    "hint_pt": "(obra maestra)",
+    "sentence": "His speech was a real ___ de force."
+   },
+   {
+    "answer": "petard",
+    "hint_pt": "(trampa/explosivo)",
+    "sentence": "She was hoist with her own ___."
+   },
+   {
+    "answer": "herring",
+    "hint_pt": "(pista falsa)",
+    "sentence": "That argument is a red ___."
+   },
+   {
+    "answer": "lily",
+    "hint_pt": "(lirio)",
+    "sentence": "Let's not gild the ___."
+   }
+  ],
+  "summary_pt": "Expresiones idiomáticas sofisticadas que aportan refinamiento y precisión a tu inglés avanzado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-04/cover.png",
+  "cover_prompt": "A cute hand-drawn top hat with a monocle and a quill pen beside an open antique book, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Don't rest on your laurels.",
+   "wrong": "Don't rest in your laurels.",
+   "why_pt": "En inglés se dice \"rest on\", no \"in\" como en \"dormirse en\"."
+  }
+ }
+}

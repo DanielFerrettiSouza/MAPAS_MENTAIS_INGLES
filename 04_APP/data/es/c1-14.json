@@ -1,0 +1,185 @@
+{
+ "slug": "c1-14",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "request",
+     "find out",
+     "check in",
+     "get"
+    ],
+    "question_pt": "¿Cuál es el equivalente formal de \"ask for\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Hey, what's up?",
+     "Long time no see!",
+     "I am writing to inquire about",
+     "Catch you later!"
+    ],
+    "question_pt": "¿Qué expresión es adecuada para empezar un correo formal?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Best regards",
+     "Please do not hesitate to contact me",
+     "I would greatly appreciate your reply",
+     "Talk soon!"
+    ],
+    "question_pt": "¿Qué despedida es informal?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "🎩",
+  "level": "C1",
+  "tip_pt": "En textos formales, prefiere verbos de origen latino (obtain, request) a los phrasal verbs (get, ask for) y evita las contracciones.",
+  "branches": [
+   {
+    "emoji": "✉️",
+    "items": [
+     {
+      "en": "I am writing to inquire about",
+      "pt": "Le escribo para solicitar información sobre"
+     },
+     {
+      "en": "I hope this email finds you well",
+      "pt": "Espero que se encuentre bien"
+     },
+     {
+      "en": "With regard to your request",
+      "pt": "En relación con su solicitud"
+     },
+     {
+      "en": "Further to our conversation",
+      "pt": "En seguimiento a nuestra conversación"
+     }
+    ],
+    "label_en": "Formal Openings",
+    "label_pt": "Saludos formales",
+    "illustration_prompt": "A cute hand-drawn sealed envelope with a wax seal, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "Hey, what's up?",
+      "pt": "¡Hola! ¿Qué tal?"
+     },
+     {
+      "en": "Long time no see!",
+      "pt": "¡Cuánto tiempo!"
+     },
+     {
+      "en": "Just wanted to check in",
+      "pt": "Solo quería saber cómo estás"
+     },
+     {
+      "en": "No worries at all",
+      "pt": "No te preocupes, tranquilo"
+     }
+    ],
+    "label_en": "Casual Talk",
+    "label_pt": "Conversación informal",
+    "illustration_prompt": "Two cute hand-drawn speech bubbles with smiley faces, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "get → obtain",
+      "pt": "conseguir → obtener"
+     },
+     {
+      "en": "ask for → request",
+      "pt": "pedir → solicitar"
+     },
+     {
+      "en": "find out → discover",
+      "pt": "averiguar → descubrir"
+     },
+     {
+      "en": "help → assist",
+      "pt": "ayudar → asistir"
+     },
+     {
+      "en": "need → require",
+      "pt": "necesitar → requerir"
+     }
+    ],
+    "label_en": "Word Swaps",
+    "label_pt": "Cambio de vocabulario",
+    "illustration_prompt": "Two cute hand-drawn arrows forming a circle between a bow tie and a baseball cap, doodle style, no text or letters"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "Please do not hesitate to contact me",
+      "pt": "No dude en ponerse en contacto conmigo"
+     },
+     {
+      "en": "I would greatly appreciate your reply",
+      "pt": "Le agradecería mucho su respuesta"
+     },
+     {
+      "en": "Best regards",
+      "pt": "Saludos cordiales"
+     },
+     {
+      "en": "Talk soon!",
+      "pt": "¡Hablamos pronto!"
+     },
+     {
+      "en": "Catch you later!",
+      "pt": "¡Nos vemos!"
+     }
+    ],
+    "label_en": "Closings",
+    "label_pt": "Despedidas",
+    "illustration_prompt": "A cute hand-drawn handshake next to a waving hand, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Formal vs. Informal",
+  "title_pt": "Formal × Informal",
+  "exercises": [
+   {
+    "answer": "hesitate",
+    "hint_pt": "(dudar)",
+    "sentence": "Please do not ___ to contact me with any questions."
+   },
+   {
+    "answer": "inquire",
+    "hint_pt": "(preguntar, informarse)",
+    "sentence": "I am writing to ___ about the position."
+   },
+   {
+    "answer": "what's",
+    "hint_pt": "(qué hay)",
+    "sentence": "Hey, ___ up? Long time no see!"
+   },
+   {
+    "answer": "greatly",
+    "hint_pt": "(mucho, enormemente)",
+    "sentence": "I'd ___ appreciate your prompt reply."
+   }
+  ],
+  "summary_pt": "Elegir el registro adecuado depende del contexto, del público y de la relación.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-14/cover.png",
+  "cover_prompt": "A cute hand-drawn split illustration: on one side a character in a suit with a top hat holding a letter, on the other side the same character in a hoodie with a smartphone, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I look forward to hearing from you.",
+   "wrong": "I wait for your answer.",
+   "why_pt": "Calco de \"Quedo a la espera de su respuesta\"; suena poco natural."
+  }
+ }
+}

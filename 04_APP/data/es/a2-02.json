@@ -1,0 +1,173 @@
+{
+ "slug": "a2-02",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "studyed",
+     "studied",
+     "studed",
+     "studdied"
+    ],
+    "question_pt": "¿Cuál es el pasado de \"study\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "She didn't liked it.",
+     "She not liked it.",
+     "She didn't like it.",
+     "She don't liked it."
+    ],
+    "question_pt": "¿Qué oración es correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "The bus stoped here.",
+     "The bus stopped here.",
+     "The bus stop here.",
+     "The bus did stopped here."
+    ],
+    "question_pt": "¿Cómo se dice \"El autobús paró aquí\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "⏪",
+  "level": "A2",
+  "tip_pt": "La terminación -ed tiene tres sonidos: /t/ (worked), /d/ (played) e /ɪd/ (wanted). Solo suena /ɪd/ después de t o d.",
+  "branches": [
+   {
+    "emoji": "➕",
+    "items": [
+     {
+      "en": "I worked all day.",
+      "pt": "Trabajé todo el día."
+     },
+     {
+      "en": "We watched a movie.",
+      "pt": "Vimos una película."
+     },
+     {
+      "en": "She cleaned her room.",
+      "pt": "Ella limpió su habitación."
+     },
+     {
+      "en": "They played soccer.",
+      "pt": "Ellos jugaron al fútbol."
+     }
+    ],
+    "label_en": "Add -ed",
+    "label_pt": "Regla general: -ed",
+    "illustration_prompt": "A cute hand-drawn plus sign next to a small happy clock, pastel colors, no text"
+   },
+   {
+    "emoji": "✏️",
+    "items": [
+     {
+      "en": "I lived in Brazil.",
+      "pt": "Viví en Brasil."
+     },
+     {
+      "en": "He studied English.",
+      "pt": "Él estudió inglés."
+     },
+     {
+      "en": "The bus stopped here.",
+      "pt": "El autobús paró aquí."
+     },
+     {
+      "en": "She tried again.",
+      "pt": "Ella lo intentó de nuevo."
+     }
+    ],
+    "label_en": "Spelling Changes",
+    "label_pt": "Cambios en la escritura",
+    "illustration_prompt": "A cute hand-drawn pencil with a smiling face erasing a small mark, pastel colors, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I didn't call you.",
+      "pt": "No te llamé."
+     },
+     {
+      "en": "She didn't like it.",
+      "pt": "No le gustó."
+     },
+     {
+      "en": "We didn't walk home.",
+      "pt": "No volvimos a casa a pie."
+     }
+    ],
+    "label_en": "Negatives",
+    "label_pt": "Negativa",
+    "illustration_prompt": "A cute hand-drawn red circle with a cross, smiling, pastel colors, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Did you enjoy the party?",
+      "pt": "¿Disfrutaste la fiesta?"
+     },
+     {
+      "en": "Did he finish work?",
+      "pt": "¿Él terminó el trabajo?"
+     },
+     {
+      "en": "Yes, I did.",
+      "pt": "Sí."
+     },
+     {
+      "en": "No, she didn't.",
+      "pt": "No, ella no."
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a curious face, pastel colors, no text or symbols"
+   }
+  ],
+  "title_en": "Simple Past: Regular Verbs",
+  "title_pt": "Pasado simple: verbos regulares",
+  "exercises": [
+   {
+    "answer": "played",
+    "hint_pt": "(jugué)",
+    "sentence": "I ___ soccer with my friends last Sunday."
+   },
+   {
+    "answer": "lived",
+    "hint_pt": "(vivió)",
+    "sentence": "She ___ in New York in 2019."
+   },
+   {
+    "answer": "watched",
+    "hint_pt": "(vimos)",
+    "sentence": "We ___ a movie last night."
+   },
+   {
+    "answer": "missed",
+    "hint_pt": "(perdió)",
+    "sentence": "He ___ the bus this morning."
+   }
+  ],
+  "summary_pt": "Los verbos regulares en pasado llevan -ed y sirven para todas las personas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-02/cover.png",
+  "cover_prompt": "A cute hand-drawn calendar with a curved arrow pointing backward, surrounded by small icons of a soccer ball, a TV and a house, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I didn't work yesterday.",
+   "wrong": "I didn't worked yesterday.",
+   "why_pt": "Con didn't, el verbo vuelve a su forma base, sin -ed."
+  }
+ }
+}

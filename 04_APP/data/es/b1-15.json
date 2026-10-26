@@ -1,0 +1,181 @@
+{
+ "slug": "b1-15",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I was overcharged.",
+     "I was overpaid.",
+     "I paid less.",
+     "I was charged off."
+    ],
+    "question_pt": "¿Cómo se dice \"Me cobraron de más\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Can I get a receipt?",
+     "Can I get a refund?",
+     "Can I get a reclamation?",
+     "Can I get a return ticket?"
+    ],
+    "question_pt": "¿Qué frase pide un reembolso?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Déjeme pagárselo.",
+     "Déjeme verificarlo.",
+     "Déjeme llamarlo.",
+     "Déjeme cambiárselo."
+    ],
+    "question_pt": "¿Qué significa \"Let me check for you\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "😤",
+  "level": "B1",
+  "tip_pt": "Usa \"I'm afraid...\" o \"I'm sorry, but...\" para suavizar la queja y sonar educado.",
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "I'd like to make a complaint.",
+      "pt": "Me gustaría poner una queja."
+     },
+     {
+      "en": "I'm afraid there's a problem.",
+      "pt": "Me temo que hay un problema."
+     },
+     {
+      "en": "Sorry, but this isn't right.",
+      "pt": "Disculpe, pero esto no está bien."
+     },
+     {
+      "en": "Could you help me, please?",
+      "pt": "¿Podría ayudarme, por favor?"
+     }
+    ],
+    "label_en": "Starting Politely",
+    "label_pt": "Cómo empezar una queja",
+    "illustration_prompt": "A cute hand-drawn person raising a hand politely, simple doodle style, no text"
+   },
+   {
+    "emoji": "🔧",
+    "items": [
+     {
+      "en": "The air conditioner isn't working.",
+      "pt": "El aire acondicionado no funciona."
+     },
+     {
+      "en": "It's broken.",
+      "pt": "Está roto."
+     },
+     {
+      "en": "My order is wrong.",
+      "pt": "Mi pedido está mal."
+     },
+     {
+      "en": "The food is cold.",
+      "pt": "La comida está fría."
+     },
+     {
+      "en": "I was overcharged.",
+      "pt": "Me cobraron de más."
+     }
+    ],
+    "label_en": "Describing Problems",
+    "label_pt": "Describir el problema",
+    "illustration_prompt": "A cute hand-drawn broken phone with a little bandage, simple doodle style, no text"
+   },
+   {
+    "emoji": "💵",
+    "items": [
+     {
+      "en": "Can I get a refund?",
+      "pt": "¿Me pueden devolver el dinero?"
+     },
+     {
+      "en": "Could I exchange this?",
+      "pt": "¿Podría cambiar esto?"
+     },
+     {
+      "en": "Can I speak to the manager?",
+      "pt": "¿Puedo hablar con el gerente?"
+     },
+     {
+      "en": "Could you fix it, please?",
+      "pt": "¿Podría arreglarlo, por favor?"
+     }
+    ],
+    "label_en": "Asking for Solutions",
+    "label_pt": "Pedir una solución",
+    "illustration_prompt": "A cute hand-drawn wallet with coins coming back out, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I'm so sorry about that.",
+      "pt": "Lo siento mucho."
+     },
+     {
+      "en": "Let me check for you.",
+      "pt": "Déjeme verificarlo."
+     },
+     {
+      "en": "We'll take care of it.",
+      "pt": "Nosotros nos encargamos."
+     },
+     {
+      "en": "Thanks for your patience.",
+      "pt": "Gracias por su paciencia."
+     }
+    ],
+    "label_en": "Staff Responses",
+    "label_pt": "Respuestas del personal",
+    "illustration_prompt": "A cute hand-drawn friendly clerk smiling behind a counter, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Complaints and Problems",
+  "title_pt": "Quejas y problemas",
+  "exercises": [
+   {
+    "answer": "complaint",
+    "hint_pt": "(queja)",
+    "sentence": "I'd like to make a ___."
+   },
+   {
+    "answer": "working",
+    "hint_pt": "(funcionando)",
+    "sentence": "The air conditioner isn't ___."
+   },
+   {
+    "answer": "refund",
+    "hint_pt": "(reembolso)",
+    "sentence": "Can I get a ___, please?"
+   },
+   {
+    "answer": "manager",
+    "hint_pt": "(gerente)",
+    "sentence": "Can I speak to the ___?"
+   }
+  ],
+  "summary_pt": "Aprende a quejarte con educación y resolver problemas en tiendas, hoteles y restaurantes.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-15/cover.png",
+  "cover_prompt": "A cute hand-drawn customer politely talking to a clerk at a service counter with a broken gadget, simple pastel style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I want to make a complaint.",
+   "wrong": "I want to make a reclamation.",
+   "why_pt": "\"Reclamation\" no significa reclamación; usa \"complaint\"."
+  }
+ }
+}

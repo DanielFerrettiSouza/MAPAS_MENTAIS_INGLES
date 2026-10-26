@@ -1,0 +1,185 @@
+{
+ "slug": "c1-19",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "queue",
+     "line",
+     "row",
+     "rank"
+    ],
+    "question_pt": "¿Cuál es la palabra estadounidense para 'fila'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "centre",
+     "colour",
+     "organise",
+     "traveled"
+    ],
+    "question_pt": "¿Qué grafía es estadounidense?",
+    "answer_index": 3
+   },
+   {
+    "options": [
+     "primer piso sobre la planta baja",
+     "planta baja",
+     "sótano",
+     "ático"
+    ],
+    "question_pt": "En EE. UU., 'first floor' significa:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🌍",
+  "level": "C1",
+  "tip_pt": "Elige una variante y sé coherente: no mezcles 'color' con 'colour' en el mismo texto, sobre todo en textos formales.",
+  "branches": [
+   {
+    "emoji": "📚",
+    "items": [
+     {
+      "en": "apartment vs. flat",
+      "pt": "apartamento, piso"
+     },
+     {
+      "en": "cookie vs. biscuit",
+      "pt": "galleta"
+     },
+     {
+      "en": "sidewalk vs. pavement",
+      "pt": "acera, banqueta"
+     },
+     {
+      "en": "vacation vs. holiday",
+      "pt": "vacaciones"
+     },
+     {
+      "en": "line vs. queue",
+      "pt": "fila, cola"
+     }
+    ],
+    "label_en": "Vocabulary",
+    "label_pt": "Vocabulario",
+    "illustration_prompt": "Cute hand-drawn icon of an open book with a small umbrella and a cookie on its pages, no text or letters"
+   },
+   {
+    "emoji": "✏️",
+    "items": [
+     {
+      "en": "color vs. colour",
+      "pt": "color"
+     },
+     {
+      "en": "center vs. centre",
+      "pt": "centro"
+     },
+     {
+      "en": "organize vs. organise",
+      "pt": "organizar"
+     },
+     {
+      "en": "traveled vs. travelled",
+      "pt": "viajó"
+     }
+    ],
+    "label_en": "Spelling",
+    "label_pt": "Ortografía",
+    "illustration_prompt": "Cute hand-drawn icon of a pencil with an eraser drawing a curly line, no text or letters"
+   },
+   {
+    "emoji": "🧩",
+    "items": [
+     {
+      "en": "I just ate.",
+      "pt": "Acabo de comer."
+     },
+     {
+      "en": "Do you have a car?",
+      "pt": "¿Tienes coche?"
+     },
+     {
+      "en": "The team is winning.",
+      "pt": "El equipo va ganando."
+     },
+     {
+      "en": "on the weekend",
+      "pt": "el fin de semana"
+     }
+    ],
+    "label_en": "Grammar",
+    "label_pt": "Gramática",
+    "illustration_prompt": "Cute hand-drawn icon of two puzzle pieces fitting together, no text or letters"
+   },
+   {
+    "emoji": "🚕",
+    "items": [
+     {
+      "en": "Can I get the check?",
+      "pt": "¿Me trae la cuenta, por favor?"
+     },
+     {
+      "en": "Take the elevator.",
+      "pt": "Tome el ascensor."
+     },
+     {
+      "en": "I'll call you a cab.",
+      "pt": "Te pido un taxi."
+     },
+     {
+      "en": "Where's the restroom?",
+      "pt": "¿Dónde está el baño?"
+     },
+     {
+      "en": "It's on the first floor.",
+      "pt": "Está en la planta baja."
+     }
+    ],
+    "label_en": "Everyday Life",
+    "label_pt": "Día a día",
+    "illustration_prompt": "Cute hand-drawn icon of a small taxi cab next to a shopping cart, no text or letters"
+   }
+  ],
+  "title_en": "British vs American",
+  "title_pt": "Británico vs. estadounidense",
+  "exercises": [
+   {
+    "answer": "elevator",
+    "hint_pt": "(ascensor)",
+    "sentence": "In the US, you take the ___ to the tenth floor; in the UK, the lift."
+   },
+   {
+    "answer": "colour",
+    "hint_pt": "(color, ortografía británica)",
+    "sentence": "Americans write 'color', while the British write ___."
+   },
+   {
+    "answer": "check",
+    "hint_pt": "(cuenta, en el restaurante, EE. UU.)",
+    "sentence": "Could I get the ___, please? We're ready to leave."
+   },
+   {
+    "answer": "just",
+    "hint_pt": "(acabar de)",
+    "sentence": "In the UK, people say 'I've just eaten', but Americans often say 'I ___ ate'."
+   }
+  ],
+  "summary_pt": "El inglés británico y el estadounidense se diferencian en vocabulario, ortografía, gramática y pronunciación.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-19/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a red double-decker bus and a yellow taxi cab facing each other on a split road, one side with a teapot, the other with a coffee cup, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'll meet you on the first floor of the mall.",
+   "wrong": "I'll meet you in the first floor of the mall.",
+   "why_pt": "Los pisos llevan 'on'; en EE. UU., 'first floor' es planta baja."
+  }
+ }
+}

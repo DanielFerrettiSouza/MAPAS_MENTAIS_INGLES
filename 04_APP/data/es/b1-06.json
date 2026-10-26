@@ -1,0 +1,177 @@
+{
+ "slug": "b1-06",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "You must wear a helmet.",
+     "You should get some rest.",
+     "I have to work tomorrow.",
+     "You mustn't touch that."
+    ],
+    "question_pt": "¿Qué frase da un consejo?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "No puedes pagar.",
+     "Deberías pagar.",
+     "No tienes que pagar.",
+     "Tienes que pagar."
+    ],
+    "question_pt": "¿Qué significa \"You don't have to pay\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "must",
+     "had to",
+     "should",
+     "have"
+    ],
+    "question_pt": "Completa: \"We ___ wait an hour.\" (pasado de have to)",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "⚖️",
+  "level": "B1",
+  "tip_pt": "Después de should y must, usa el verbo sin \"to\". Have to cambia: he has to, she had to.",
+  "branches": [
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "You should get some rest.",
+      "pt": "Deberías descansar un poco."
+     },
+     {
+      "en": "You shouldn't eat so late.",
+      "pt": "No deberías comer tan tarde."
+     },
+     {
+      "en": "Should I call her?",
+      "pt": "¿Debería llamarla?"
+     },
+     {
+      "en": "We should leave early.",
+      "pt": "Deberíamos salir temprano."
+     }
+    ],
+    "label_en": "Advice: Should",
+    "label_pt": "Consejos",
+    "illustration_prompt": "Cute hand-drawn glowing lightbulb with a smiling face, no text"
+   },
+   {
+    "emoji": "📋",
+    "items": [
+     {
+      "en": "You must wear a helmet.",
+      "pt": "Tienes que usar casco."
+     },
+     {
+      "en": "Passengers must show their tickets.",
+      "pt": "Los pasajeros deben mostrar sus boletos."
+     },
+     {
+      "en": "I must remember her birthday.",
+      "pt": "Tengo que acordarme de su cumpleaños."
+     },
+     {
+      "en": "You must be tired.",
+      "pt": "Debes de estar cansado."
+     }
+    ],
+    "label_en": "Rules: Must",
+    "label_pt": "Reglas y obligaciones",
+    "illustration_prompt": "Cute hand-drawn clipboard with check marks and a pencil, no text or letters"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "I have to work tomorrow.",
+      "pt": "Tengo que trabajar mañana."
+     },
+     {
+      "en": "She has to take the bus.",
+      "pt": "Ella tiene que tomar el autobús."
+     },
+     {
+      "en": "We had to wait an hour.",
+      "pt": "Tuvimos que esperar una hora."
+     },
+     {
+      "en": "Do you have to go?",
+      "pt": "¿Tienes que irte?"
+     }
+    ],
+    "label_en": "Duties: Have To",
+    "label_pt": "Tener que",
+    "illustration_prompt": "Cute hand-drawn alarm clock next to a work bag, no text or numbers"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "You mustn't touch that.",
+      "pt": "No debes tocar eso."
+     },
+     {
+      "en": "You don't have to pay.",
+      "pt": "No tienes que pagar."
+     },
+     {
+      "en": "He doesn't have to come.",
+      "pt": "Él no tiene que venir."
+     },
+     {
+      "en": "You mustn't be late.",
+      "pt": "No debes llegar tarde."
+     }
+    ],
+    "label_en": "Negatives",
+    "label_pt": "Prohibición vs. sin necesidad",
+    "illustration_prompt": "Cute hand-drawn red stop sign beside a relaxed smiling cup of coffee, no text"
+   }
+  ],
+  "title_en": "Should, Must, Have To",
+  "title_pt": "Verbos modales",
+  "exercises": [
+   {
+    "answer": "should",
+    "hint_pt": "(deberías)",
+    "sentence": "You ___ see a doctor about that cough."
+   },
+   {
+    "answer": "has",
+    "hint_pt": "(tiene que)",
+    "sentence": "She ___ to work on Saturdays."
+   },
+   {
+    "answer": "mustn't",
+    "hint_pt": "(no debes, prohibido)",
+    "sentence": "You ___ smoke in the hospital."
+   },
+   {
+    "answer": "have",
+    "hint_pt": "(no tienes que)",
+    "sentence": "You don't ___ to come if you're busy."
+   }
+  ],
+  "summary_pt": "Usa should para consejos; must y have to para obligaciones y reglas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-06/cover.png",
+  "cover_prompt": "Cute hand-drawn scene of a friendly person at a crossroads with a lightbulb, a checklist, and a stop sign icon, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "You must wear a seatbelt.",
+   "wrong": "You must to wear a seatbelt.",
+   "why_pt": "Ojo: después de must no va \"to\", aunque digas \"tener que\"."
+  }
+ }
+}

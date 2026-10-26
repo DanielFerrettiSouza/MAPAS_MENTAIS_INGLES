@@ -1,0 +1,177 @@
+{
+ "slug": "b1-18",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Did you ever go to Japan?",
+     "Have you ever been to Japan?",
+     "Are you ever been to Japan?",
+     "Have you ever went to Japan?"
+    ],
+    "question_pt": "¿Cómo se dice \"¿Has ido alguna vez a Japón?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Nuestro vuelo fue cancelado",
+     "Perdimos nuestro vuelo",
+     "Nuestro vuelo se retrasó",
+     "Nuestro vuelo llegó temprano"
+    ],
+    "question_pt": "¿Qué significa \"Our flight was delayed\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "It was a bit overrated.",
+     "I'd love to go back.",
+     "It was totally worth it.",
+     "I highly recommend it."
+    ],
+    "question_pt": "¿Qué frase significa \"Valió totalmente la pena\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "✈️",
+  "level": "B1",
+  "tip_pt": "Usa el present perfect para experiencias sin fecha (I've been to Rome) y el past simple con tiempo definido (I went last year).",
+  "branches": [
+   {
+    "emoji": "🗺️",
+    "items": [
+     {
+      "en": "Have you ever been to Japan?",
+      "pt": "¿Has ido alguna vez a Japón?"
+     },
+     {
+      "en": "I've never been abroad.",
+      "pt": "Nunca he estado en el extranjero."
+     },
+     {
+      "en": "I went to Chile last year.",
+      "pt": "Fui a Chile el año pasado."
+     },
+     {
+      "en": "I backpacked around Europe.",
+      "pt": "Recorrí Europa de mochilero."
+     }
+    ],
+    "label_en": "Past Trips",
+    "label_pt": "Viajes pasados",
+    "illustration_prompt": "A cute hand-drawn folded map with a red pin, no text"
+   },
+   {
+    "emoji": "🌄",
+    "items": [
+     {
+      "en": "The view was breathtaking.",
+      "pt": "La vista era impresionante."
+     },
+     {
+      "en": "The locals were really friendly.",
+      "pt": "La gente del lugar era muy amable."
+     },
+     {
+      "en": "I tried the local food.",
+      "pt": "Probé la comida local."
+     },
+     {
+      "en": "It was a trip of a lifetime.",
+      "pt": "Fue el viaje de mi vida."
+     }
+    ],
+    "label_en": "Highlights",
+    "label_pt": "Lo mejor del viaje",
+    "illustration_prompt": "A cute hand-drawn mountain sunrise with a tiny camera, no text"
+   },
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "We missed our flight.",
+      "pt": "Perdimos el vuelo."
+     },
+     {
+      "en": "The airline lost my luggage.",
+      "pt": "La aerolínea perdió mi equipaje."
+     },
+     {
+      "en": "Our flight was delayed.",
+      "pt": "Nuestro vuelo se retrasó."
+     },
+     {
+      "en": "I got lost downtown.",
+      "pt": "Me perdí en el centro."
+     }
+    ],
+    "label_en": "Travel Problems",
+    "label_pt": "Problemas en el viaje",
+    "illustration_prompt": "A cute hand-drawn sad suitcase with a small bandage, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "It was totally worth it.",
+      "pt": "Valió totalmente la pena."
+     },
+     {
+      "en": "I'd love to go back.",
+      "pt": "Me encantaría volver."
+     },
+     {
+      "en": "It was a bit overrated.",
+      "pt": "Estaba un poco sobrevalorado."
+     },
+     {
+      "en": "I highly recommend it.",
+      "pt": "Lo recomiendo mucho."
+     }
+    ],
+    "label_en": "Opinions",
+    "label_pt": "Opiniones",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a heart and a star, no text"
+   }
+  ],
+  "title_en": "Travel Experiences",
+  "title_pt": "Experiencias de viaje",
+  "exercises": [
+   {
+    "answer": "been",
+    "hint_pt": "(ido/estado)",
+    "sentence": "Have you ever ___ to Japan?"
+   },
+   {
+    "answer": "missed",
+    "hint_pt": "(perdimos)",
+    "sentence": "We ___ our flight because of traffic."
+   },
+   {
+    "answer": "breathtaking",
+    "hint_pt": "(impresionante)",
+    "sentence": "The view was absolutely ___."
+   },
+   {
+    "answer": "backpacked",
+    "hint_pt": "(viajé de mochilero)",
+    "sentence": "I ___ around Europe by train."
+   }
+  ],
+  "summary_pt": "Aprende a contar tus viajes usando el present perfect y el past simple.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-18/cover.png",
+  "cover_prompt": "A cute hand-drawn traveler with a backpack and suitcase next to a globe, airplane and map, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I went to Paris last year.",
+   "wrong": "I have gone to Paris last year.",
+   "why_pt": "Con un tiempo pasado definido, usa el past simple."
+  }
+ }
+}

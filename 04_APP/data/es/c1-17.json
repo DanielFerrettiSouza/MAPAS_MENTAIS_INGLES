@@ -1,0 +1,185 @@
+{
+ "slug": "c1-17",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "That went over my head",
+     "That cracked me up",
+     "I see what you did there",
+     "I was dying"
+    ],
+    "question_pt": "¿Cómo se dice \"No entendí el chiste\" de forma natural?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Te estoy ayudando",
+     "Solo te estoy tomando el pelo",
+     "Te estoy tirando de la pierna",
+     "Me duele la pierna"
+    ],
+    "question_pt": "¿Qué significa \"I'm just pulling your leg\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "slapstick comedy",
+     "a running gag",
+     "a dry sense of humor",
+     "dark humor"
+    ],
+    "question_pt": "¿Qué expresión describe un humor que no muestra emoción?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "😂",
+  "level": "C1",
+  "tip_pt": "Los juegos de palabras usan palabras con doble sonido o sentido; reacciona con \"groan\" o \"I see what you did there\" para mostrar que lo entendiste.",
+  "branches": [
+   {
+    "emoji": "🎭",
+    "items": [
+     {
+      "en": "a dry sense of humor",
+      "pt": "un humor seco"
+     },
+     {
+      "en": "dark humor",
+      "pt": "humor negro"
+     },
+     {
+      "en": "self-deprecating jokes",
+      "pt": "chistes autocríticos (reírse de uno mismo)"
+     },
+     {
+      "en": "a running gag",
+      "pt": "un chiste recurrente"
+     },
+     {
+      "en": "slapstick comedy",
+      "pt": "comedia de golpes (humor físico)"
+     }
+    ],
+    "label_en": "Types of Humor",
+    "label_pt": "Tipos de humor",
+    "illustration_prompt": "Simple cute hand-drawn comedy and tragedy theater masks, no text"
+   },
+   {
+    "emoji": "🤣",
+    "items": [
+     {
+      "en": "I see what you did there",
+      "pt": "Ya veo lo que hiciste ahí"
+     },
+     {
+      "en": "That cracked me up",
+      "pt": "Eso me hizo morir de risa"
+     },
+     {
+      "en": "I was dying!",
+      "pt": "¡Me moría de risa!"
+     },
+     {
+      "en": "That went over my head",
+      "pt": "No entendí el chiste"
+     },
+     {
+      "en": "Ugh, dad joke!",
+      "pt": "¡Ay, qué chiste tan malo!"
+     }
+    ],
+    "label_en": "Reacting to Jokes",
+    "label_pt": "Cómo reaccionar a los chistes",
+    "illustration_prompt": "Cute hand-drawn face crying with laughter, simple doodle style, no text"
+   },
+   {
+    "emoji": "🥖",
+    "items": [
+     {
+      "en": "I knead you",
+      "pt": "Te necesito (knead = amasar)"
+     },
+     {
+      "en": "Lettuce celebrate!",
+      "pt": "¡Celebremos! (lettuce = let us)"
+     },
+     {
+      "en": "Time flies like an arrow",
+      "pt": "El tiempo vuela como una flecha"
+     },
+     {
+      "en": "I'm reading a book on anti-gravity",
+      "pt": "Un libro sobre antigravedad: imposible de soltar"
+     }
+    ],
+    "label_en": "Classic Puns",
+    "label_pt": "Juegos de palabras clásicos",
+    "illustration_prompt": "Cute hand-drawn smiling piece of bread winking, doodle style, no text"
+   },
+   {
+    "emoji": "😜",
+    "items": [
+     {
+      "en": "I'm just pulling your leg",
+      "pt": "Solo te estoy tomando el pelo"
+     },
+     {
+      "en": "No offense, just kidding",
+      "pt": "Sin ofender, es broma"
+     },
+     {
+      "en": "Don't take it personally",
+      "pt": "No te lo tomes como algo personal"
+     },
+     {
+      "en": "You're such a smart aleck",
+      "pt": "Eres un sabelotodo"
+     }
+    ],
+    "label_en": "Teasing",
+    "label_pt": "Bromas y burlas",
+    "illustration_prompt": "Cute hand-drawn cartoon character playfully sticking out tongue, no text"
+   }
+  ],
+  "title_en": "Humor and Puns",
+  "title_pt": "Humor y juegos de palabras",
+  "exercises": [
+   {
+    "answer": "did",
+    "hint_pt": "(hiciste)",
+    "sentence": "Nice one! I see what you ___ there."
+   },
+   {
+    "answer": "pulling",
+    "hint_pt": "(tomando el pelo)",
+    "sentence": "Don't take it seriously, I was just ___ your leg."
+   },
+   {
+    "answer": "groan",
+    "hint_pt": "(quejarse)",
+    "sentence": "That pun was so bad it made me ___."
+   },
+   {
+    "answer": "dry",
+    "hint_pt": "(seco)",
+    "sentence": "His sense of humor is really ___; he never smiles."
+   }
+  ],
+  "summary_pt": "Aprende a entender, reaccionar y crear chistes y juegos de palabras en inglés con naturalidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-17/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two cartoon friends laughing together, one holding a tiny comedy mask, with playful swirls and sparkles around them, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "He told a really funny joke and everybody laughed at him.",
+   "wrong": "He told a joke very funny and everybody laughed of him.",
+   "why_pt": "El adjetivo va antes del sustantivo; se dice \"laugh at\", no \"of\"."
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-20",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "How long are you here?",
+     "How long have you been here?",
+     "How much time you are here?",
+     "Since when you are here?"
+    ],
+    "question_pt": "¿Cómo se pregunta \"¿Cuánto tiempo llevas aquí?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "What do you recommend?",
+     "Mind if I join you?",
+     "Let's keep in touch!",
+     "Where are you from?"
+    ],
+    "question_pt": "¿Qué frase le pide una recomendación a alguien del lugar?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "¡Vamos a tocarnos!",
+     "¡Sigamos en contacto!",
+     "¡Salgamos juntos!",
+     "¡Vámonos!"
+    ],
+    "question_pt": "¿Qué significa \"Let's keep in touch!\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🗣️",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"Have you ever...?\" para preguntar por experiencias y \"How long have you been...?\" para el tiempo hasta ahora.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Where are you from?",
+      "pt": "¿De dónde eres?"
+     },
+     {
+      "en": "Is this your first time here?",
+      "pt": "¿Es tu primera vez aquí?"
+     },
+     {
+      "en": "Mind if I join you?",
+      "pt": "¿Te importa si me uno?"
+     },
+     {
+      "en": "How long have you been here?",
+      "pt": "¿Cuánto tiempo llevas aquí?"
+     }
+    ],
+    "label_en": "Breaking the Ice",
+    "label_pt": "Romper el hielo",
+    "illustration_key": "handshake",
+    "illustration_prompt": "Two young tourists smiling and shaking hands in a hostel common room"
+   },
+   {
+    "emoji": "🗺️",
+    "items": [
+     {
+      "en": "What do you recommend?",
+      "pt": "¿Qué me recomiendas?"
+     },
+     {
+      "en": "Any good places to eat?",
+      "pt": "¿Algún buen sitio para comer?"
+     },
+     {
+      "en": "Is it worth visiting?",
+      "pt": "¿Vale la pena visitarlo?"
+     },
+     {
+      "en": "Where do locals hang out?",
+      "pt": "¿Adónde suele ir la gente de aquí?"
+     }
+    ],
+    "label_en": "Asking Locals",
+    "label_pt": "Pedir consejos",
+    "illustration_key": "giving directions",
+    "illustration_prompt": "A local woman pointing down a street while a tourist holds a paper map"
+   },
+   {
+    "emoji": "🎒",
+    "items": [
+     {
+      "en": "Have you ever been to Brazil?",
+      "pt": "¿Alguna vez has estado en Brasil?"
+     },
+     {
+      "en": "Where are you heading next?",
+      "pt": "¿Adónde vas después?"
+     },
+     {
+      "en": "I've been traveling for two weeks.",
+      "pt": "Llevo dos semanas viajando."
+     },
+     {
+      "en": "You should definitely go there!",
+      "pt": "¡Tienes que ir sin falta!"
+     }
+    ],
+    "label_en": "Sharing Experiences",
+    "label_pt": "Compartir experiencias",
+    "illustration_key": "campfire",
+    "illustration_prompt": "Backpackers sitting around a campfire sharing stories"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "It was nice meeting you!",
+      "pt": "¡Fue un placer conocerte!"
+     },
+     {
+      "en": "Let's keep in touch!",
+      "pt": "¡Sigamos en contacto!"
+     },
+     {
+      "en": "Are you on Instagram?",
+      "pt": "¿Tienes Instagram?"
+     },
+     {
+      "en": "Enjoy the rest of your trip!",
+      "pt": "¡Disfruta el resto del viaje!"
+     }
+    ],
+    "label_en": "Saying Goodbye",
+    "label_pt": "Despedidas",
+    "illustration_key": "goodbye hug",
+    "illustration_prompt": "Two friends hugging goodbye at a train station platform with luggage"
+   }
+  ],
+  "title_en": "Talking to Strangers",
+  "title_pt": "Conversando en el viaje",
+  "cover_key": "travelers chatting",
+  "exercises": [
+   {
+    "answer": "time",
+    "hint_pt": "(vez)",
+    "sentence": "Is this your first ___ here?"
+   },
+   {
+    "answer": "eat",
+    "hint_pt": "(comer)",
+    "sentence": "Do you know any good places to ___?"
+   },
+   {
+    "answer": "been",
+    "hint_pt": "(estado/ido)",
+    "sentence": "Have you ever ___ to Brazil?"
+   },
+   {
+    "answer": "touch",
+    "hint_pt": "(contacto)",
+    "sentence": "Let's keep in ___!"
+   }
+  ],
+  "summary_pt": "Frases para iniciar conversaciones, pedir consejos y hacer amigos cuando viajas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/travelers-chatting.png",
+  "cover_prompt": "A friendly group of travelers with backpacks chatting and laughing with a local person at an outdoor café table in a sunny plaza",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handshake.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/giving-directions.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/campfire.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/goodbye-hug.png"
+  ],
+  "common_mistake": {
+   "right": "I've been traveling for two weeks.",
+   "wrong": "I'm traveling since two weeks.",
+   "why_pt": "\"Llevo... desde\" se dice con present perfect y \"for\"."
+  }
+ }
+}

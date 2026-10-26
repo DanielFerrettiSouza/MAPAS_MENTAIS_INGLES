@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-01",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "One-way ticket",
+     "Round-trip ticket",
+     "Double ticket",
+     "Return seat"
+    ],
+    "question_pt": "¿Cómo se dice \"boleto de ida y vuelta\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Is breakfast included?",
+     "Is breakfast free time?",
+     "Do you have breakfast?",
+     "Can I pay breakfast?"
+    ],
+    "question_pt": "¿Qué frase significa \"¿El desayuno está incluido?\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I need to cancel my reserve.",
+     "I need cancel my booking room.",
+     "I need to cancel my reservation.",
+     "I need to change the date."
+    ],
+    "question_pt": "¿Cómo dices \"Necesito cancelar mi reserva\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧳",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"I'd like to...\" para pedir algo con cortesía: \"I'd like to book a room\". Es más amable que \"I want\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🗺️",
+    "items": [
+     {
+      "en": "Where should we go?",
+      "pt": "¿Adónde deberíamos ir?"
+     },
+     {
+      "en": "How long is the trip?",
+      "pt": "¿Cuánto dura el viaje?"
+     },
+     {
+      "en": "What's our budget?",
+      "pt": "¿Cuál es nuestro presupuesto?"
+     },
+     {
+      "en": "Let's travel in July.",
+      "pt": "Viajemos en julio."
+     }
+    ],
+    "label_en": "Planning",
+    "label_pt": "Planificación",
+    "illustration_key": "paper map",
+    "illustration_prompt": "An unfolded paper map with a compass and a pencil on a wooden table"
+   },
+   {
+    "emoji": "✈️",
+    "items": [
+     {
+      "en": "A round-trip ticket, please.",
+      "pt": "Un boleto de ida y vuelta, por favor."
+     },
+     {
+      "en": "A one-way ticket",
+      "pt": "Un boleto solo de ida"
+     },
+     {
+      "en": "Window or aisle seat?",
+      "pt": "¿Asiento de ventanilla o de pasillo?"
+     },
+     {
+      "en": "Is there a direct flight?",
+      "pt": "¿Hay vuelo directo?"
+     }
+    ],
+    "label_en": "Flights",
+    "label_pt": "Vuelos",
+    "illustration_key": "airplane",
+    "illustration_prompt": "A white passenger airplane flying in a clear blue sky"
+   },
+   {
+    "emoji": "🏨",
+    "items": [
+     {
+      "en": "I'd like to book a room.",
+      "pt": "Quisiera reservar una habitación."
+     },
+     {
+      "en": "For two nights",
+      "pt": "Por dos noches"
+     },
+     {
+      "en": "Is breakfast included?",
+      "pt": "¿El desayuno está incluido?"
+     },
+     {
+      "en": "What time is checkout?",
+      "pt": "¿A qué hora es la salida?"
+     },
+     {
+      "en": "A double room, please.",
+      "pt": "Una habitación doble, por favor."
+     }
+    ],
+    "label_en": "Hotel Booking",
+    "label_pt": "Reserva de hotel",
+    "illustration_key": "hotel reception",
+    "illustration_prompt": "A hotel reception desk with a small bell and a room key"
+   },
+   {
+    "emoji": "💳",
+    "items": [
+     {
+      "en": "I need to cancel my reservation.",
+      "pt": "Necesito cancelar mi reserva."
+     },
+     {
+      "en": "Can I change the date?",
+      "pt": "¿Puedo cambiar la fecha?"
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "en": "Is there a cancellation fee?",
+      "pt": "¿Hay algún cargo por cancelación?"
+     }
+    ],
+    "label_en": "Changes and Payment",
+    "label_pt": "Cambios y pagos",
+    "illustration_key": "credit card",
+    "illustration_prompt": "A hand holding a credit card next to a small calendar with no writing"
+   }
+  ],
+  "title_en": "Planning a Trip",
+  "title_pt": "Planifica tu viaje",
+  "cover_key": "trip planning",
+  "exercises": [
+   {
+    "answer": "book",
+    "hint_pt": "(reservar)",
+    "sentence": "I'd like to ___ a room for two nights."
+   },
+   {
+    "answer": "included",
+    "hint_pt": "(incluido)",
+    "sentence": "Is breakfast ___?"
+   },
+   {
+    "answer": "ticket",
+    "hint_pt": "(boleto, billete)",
+    "sentence": "I need a round-trip ___ to Miami."
+   },
+   {
+    "answer": "checkout",
+    "hint_pt": "(salida del hotel)",
+    "sentence": "What time is ___?"
+   }
+  ],
+  "summary_pt": "Frases útiles para planificar viajes y reservar hoteles, vuelos y excursiones.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/trip-planning.png",
+  "cover_prompt": "A cheerful traveler sitting at a table with an open suitcase, a paper map, and a passport, planning a trip",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/paper-map.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airplane.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/hotel-reception.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/credit-card.png"
+  ],
+  "common_mistake": {
+   "right": "I'd like to make a reservation for two nights.",
+   "wrong": "I want to make a reserve for two nights.",
+   "why_pt": "Ojo: en inglés \"reserva\" se dice \"reservation\", no \"reserve\"."
+  }
+ }
+}

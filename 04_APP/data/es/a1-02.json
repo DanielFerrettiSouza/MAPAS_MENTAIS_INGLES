@@ -1,0 +1,185 @@
+{
+ "slug": "a1-02",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Nice to see you",
+     "Nice to meet you",
+     "Good to know",
+     "Pleasure you"
+    ],
+    "question_pt": "¿Cómo se dice \"Mucho gusto en conocerte\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Good evening",
+     "Good afternoon",
+     "Good night",
+     "Good morning"
+    ],
+    "question_pt": "¿Qué expresión usas para decir \"buenas noches\" al despedirte?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I have 25 years.",
+     "I'm 25 years old.",
+     "I have 25 years old.",
+     "My age have 25."
+    ],
+    "question_pt": "¿Cuál es la forma correcta de decir \"Tengo 25 años\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "👋",
+  "level": "A1",
+  "tip_pt": "Usa \"Nice to meet you\" solo la primera vez que ves a alguien. Después, di \"Nice to see you\" o \"Good to see you\".",
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Hello!",
+      "pt": "¡Hola!"
+     },
+     {
+      "en": "Hi!",
+      "pt": "¡Hola! (informal)"
+     },
+     {
+      "en": "Good morning!",
+      "pt": "¡Buenos días!"
+     },
+     {
+      "en": "Good afternoon!",
+      "pt": "¡Buenas tardes!"
+     },
+     {
+      "en": "Good evening!",
+      "pt": "¡Buenas noches! (al llegar)"
+     }
+    ],
+    "label_en": "Saying Hello",
+    "label_pt": "Saludos",
+    "illustration_prompt": "A cute hand-drawn waving hand with a bright sun behind it, no text"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "My name is Paulo.",
+      "pt": "Me llamo Paulo."
+     },
+     {
+      "en": "I'm from Brazil.",
+      "pt": "Soy de Brasil."
+     },
+     {
+      "en": "I'm 25 years old.",
+      "pt": "Tengo 25 años."
+     },
+     {
+      "en": "Nice to meet you!",
+      "pt": "¡Mucho gusto en conocerte!"
+     }
+    ],
+    "label_en": "Introducing Yourself",
+    "label_pt": "Presentarte",
+    "illustration_prompt": "A cute hand-drawn smiling person pointing to themselves, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What's your name?",
+      "pt": "¿Cómo te llamas?"
+     },
+     {
+      "en": "How are you?",
+      "pt": "¿Cómo estás?"
+     },
+     {
+      "en": "Where are you from?",
+      "pt": "¿De dónde eres?"
+     },
+     {
+      "en": "I'm fine, thanks.",
+      "pt": "Estoy bien, gracias."
+     }
+    ],
+    "label_en": "Asking Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a question mark shape made of dots, no letters"
+   },
+   {
+    "emoji": "🌙",
+    "items": [
+     {
+      "en": "Goodbye!",
+      "pt": "¡Adiós!"
+     },
+     {
+      "en": "Bye!",
+      "pt": "¡Chao!"
+     },
+     {
+      "en": "See you later!",
+      "pt": "¡Hasta luego!"
+     },
+     {
+      "en": "Good night!",
+      "pt": "¡Buenas noches! (al irte)"
+     },
+     {
+      "en": "Have a nice day!",
+      "pt": "¡Que tengas un buen día!"
+     }
+    ],
+    "label_en": "Saying Goodbye",
+    "label_pt": "Despedidas",
+    "illustration_prompt": "A cute hand-drawn person waving goodbye under a crescent moon, no text"
+   }
+  ],
+  "title_en": "Greetings & Introductions",
+  "title_pt": "Saludos y presentaciones",
+  "exercises": [
+   {
+    "answer": "morning",
+    "hint_pt": "(mañana)",
+    "sentence": "Good ___! How are you today?"
+   },
+   {
+    "answer": "name",
+    "hint_pt": "(nombre)",
+    "sentence": "Hi, my ___ is Ana."
+   },
+   {
+    "answer": "meet",
+    "hint_pt": "(conocer)",
+    "sentence": "Nice to ___ you!"
+   },
+   {
+    "answer": "later",
+    "hint_pt": "(más tarde)",
+    "sentence": "See you ___!"
+   }
+  ],
+  "summary_pt": "Aprende a saludar, presentarte y despedirte en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-02/cover.png",
+  "cover_prompt": "Two cute cartoon people smiling and waving hello to each other, hand-drawn style, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I am 25 years old.",
+   "wrong": "I have 25 years.",
+   "why_pt": "Ojo: en inglés la edad usa \"to be\", no \"have\"."
+  }
+ }
+}

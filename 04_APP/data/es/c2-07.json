@@ -1,0 +1,185 @@
+{
+ "slug": "c2-07",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "burden of proof",
+     "weight of evidence",
+     "charge of truth",
+     "load of proof"
+    ],
+    "question_pt": "¿Cómo se dice \"carga de la prueba\" en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Apelar la resolución",
+     "Llegar a un acuerdo extrajudicial",
+     "Salir del tribunal",
+     "Archivar el caso"
+    ],
+    "question_pt": "¿Qué significa \"to settle out of court\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "defendant",
+     "prosecutor",
+     "plaintiff",
+     "paralegal"
+    ],
+    "question_pt": "¿Qué término designa a quien presenta la demanda (el demandante)?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⚖️",
+  "level": "C2",
+  "tip_pt": "En los contratos, \"shall\" indica obligación, no futuro: \"The tenant shall pay rent\" significa \"El arrendatario deberá pagar el alquiler\".",
+  "branches": [
+   {
+    "emoji": "📜",
+    "items": [
+     {
+      "en": "breach of contract",
+      "pt": "incumplimiento de contrato"
+     },
+     {
+      "en": "binding agreement",
+      "pt": "acuerdo vinculante"
+     },
+     {
+      "en": "terms and conditions",
+      "pt": "términos y condiciones"
+     },
+     {
+      "en": "null and void",
+      "pt": "nulo y sin efecto"
+     },
+     {
+      "en": "in full force and effect",
+      "pt": "en pleno vigor"
+     }
+    ],
+    "label_en": "Contracts",
+    "label_pt": "Contratos",
+    "illustration_prompt": "A cute hand-drawn rolled scroll with a fountain pen and a wax seal, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "📂",
+    "items": [
+     {
+      "en": "to file a lawsuit",
+      "pt": "presentar una demanda"
+     },
+     {
+      "en": "to settle out of court",
+      "pt": "llegar a un acuerdo extrajudicial"
+     },
+     {
+      "en": "to appeal the ruling",
+      "pt": "apelar la resolución"
+     },
+     {
+      "en": "burden of proof",
+      "pt": "carga de la prueba"
+     }
+    ],
+    "label_en": "Litigation",
+    "label_pt": "Litigios",
+    "illustration_prompt": "A cute hand-drawn stack of folders tied with a ribbon, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🏛️",
+    "items": [
+     {
+      "en": "Objection, Your Honor!",
+      "pt": "¡Protesto, su señoría!"
+     },
+     {
+      "en": "Objection sustained.",
+      "pt": "Ha lugar a la protesta."
+     },
+     {
+      "en": "The jury reached a verdict.",
+      "pt": "El jurado llegó a un veredicto."
+     },
+     {
+      "en": "to take the stand",
+      "pt": "subir al estrado a declarar"
+     }
+    ],
+    "label_en": "The Courtroom",
+    "label_pt": "En el tribunal",
+    "illustration_prompt": "A cute hand-drawn classical courthouse building with columns, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "👩‍⚖️",
+    "items": [
+     {
+      "en": "attorney",
+      "pt": "abogado"
+     },
+     {
+      "en": "prosecutor",
+      "pt": "fiscal"
+     },
+     {
+      "en": "paralegal",
+      "pt": "asistente jurídico"
+     },
+     {
+      "en": "notary public",
+      "pt": "notario"
+     },
+     {
+      "en": "plaintiff and defendant",
+      "pt": "demandante y demandado"
+     }
+    ],
+    "label_en": "Legal Professionals",
+    "label_pt": "Profesionales del derecho",
+    "illustration_prompt": "A cute hand-drawn judge character in a black robe holding a small gavel, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Basic Legal English",
+  "title_pt": "Inglés jurídico básico",
+  "exercises": [
+   {
+    "answer": "settle",
+    "hint_pt": "(resolver mediante acuerdo)",
+    "sentence": "The parties agreed to ___ the dispute out of court."
+   },
+   {
+    "answer": "appeal",
+    "hint_pt": "(apelar)",
+    "sentence": "The defendant decided to ___ the ruling to a higher court."
+   },
+   {
+    "answer": "effect",
+    "hint_pt": "(efecto / vigor)",
+    "sentence": "This clause shall remain in full force and ___."
+   },
+   {
+    "answer": "lawsuit",
+    "hint_pt": "(demanda judicial)",
+    "sentence": "The company filed a ___ against its former supplier."
+   }
+  ],
+  "summary_pt": "Vocabulario esencial para entender contratos, litigios, tribunales y profesionales del derecho.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-07/cover.png",
+  "cover_prompt": "A cute hand-drawn balance scale next to a wooden gavel and a rolled contract with a wax seal, soft pastel colors, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She is studying to become a lawyer at law school.",
+   "wrong": "She is studying to become a lawyer at the faculty of law.",
+   "why_pt": "En EE. UU., \"faculty\" es el profesorado; facultad de derecho: \"law school\"."
+  }
+ }
+}

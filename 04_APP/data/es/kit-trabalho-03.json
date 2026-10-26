@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-03",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm a fast learner",
+     "I learn fastly",
+     "I'm a quick student fast",
+     "I have fast learning"
+    ],
+    "question_pt": "¿Cómo se dice 'Aprendo rápido' en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I have five years of experience",
+     "I have five years of experiences",
+     "I am five years of experience",
+     "I have experience of five years ago"
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Perdí un plazo",
+     "Me enfrenté a un plazo muy ajustado",
+     "Pedí más plazo",
+     "Cumplí el plazo antes de tiempo"
+    ],
+    "question_pt": "¿Qué significa 'I faced a tight deadline'?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🏆",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa el present perfect para experiencias sin fecha (I've led...) y el simple past para hechos con un momento definido (In 2021, I led...).",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "I have five years of experience",
+      "pt": "Tengo cinco años de experiencia"
+     },
+     {
+      "en": "I started out as an intern",
+      "pt": "Empecé como becario en prácticas"
+     },
+     {
+      "en": "I was responsible for a team",
+      "pt": "Era responsable de un equipo"
+     },
+     {
+      "en": "I was promoted to team leader",
+      "pt": "Me ascendieron a líder de equipo"
+     }
+    ],
+    "label_en": "Background",
+    "label_pt": "Trayectoria profesional",
+    "illustration_key": "briefcase",
+    "illustration_prompt": "A leather briefcase resting on a wooden office desk next to a coffee cup"
+   },
+   {
+    "emoji": "🏆",
+    "items": [
+     {
+      "en": "I'm proud of leading that project",
+      "pt": "Estoy orgulloso de haber liderado ese proyecto"
+     },
+     {
+      "en": "We increased sales by thirty percent",
+      "pt": "Aumentamos las ventas un treinta por ciento"
+     },
+     {
+      "en": "We managed to cut costs",
+      "pt": "Logramos reducir costos"
+     },
+     {
+      "en": "I exceeded my targets every quarter",
+      "pt": "Superé mis objetivos cada trimestre"
+     }
+    ],
+    "label_en": "Achievements",
+    "label_pt": "Logros",
+    "illustration_key": "trophy",
+    "illustration_prompt": "A shiny gold trophy standing on a clean office shelf"
+   },
+   {
+    "emoji": "🧗",
+    "items": [
+     {
+      "en": "I faced a tight deadline",
+      "pt": "Me enfrenté a un plazo muy ajustado"
+     },
+     {
+      "en": "I had to deal with conflict",
+      "pt": "Tuve que manejar un conflicto"
+     },
+     {
+      "en": "I turned the situation around",
+      "pt": "Logré darle la vuelta a la situación"
+     },
+     {
+      "en": "I learned a lot from it",
+      "pt": "Aprendí mucho de ello"
+     }
+    ],
+    "label_en": "Challenges",
+    "label_pt": "Retos superados",
+    "illustration_key": "mountain climber",
+    "illustration_prompt": "A climber reaching the top of a steep rocky mountain under a blue sky"
+   },
+   {
+    "emoji": "💪",
+    "items": [
+     {
+      "en": "I work well under pressure",
+      "pt": "Trabajo bien bajo presión"
+     },
+     {
+      "en": "I'm a fast learner",
+      "pt": "Aprendo rápido"
+     },
+     {
+      "en": "I'm good at solving problems",
+      "pt": "Se me da bien resolver problemas"
+     },
+     {
+      "en": "I take initiative",
+      "pt": "Tengo iniciativa"
+     }
+    ],
+    "label_en": "Strengths",
+    "label_pt": "Puntos fuertes",
+    "illustration_key": "growing plant",
+    "illustration_prompt": "A sturdy green plant growing strong in a pot on a sunny windowsill"
+   }
+  ],
+  "title_en": "Experience & Achievements",
+  "title_pt": "Experiencia y logros",
+  "cover_key": "job interview",
+  "exercises": [
+   {
+    "answer": "responsible",
+    "hint_pt": "(responsable)",
+    "sentence": "I was ___ for a team of ten people."
+   },
+   {
+    "answer": "cut",
+    "hint_pt": "(reducir)",
+    "sentence": "We managed to ___ costs by twenty percent."
+   },
+   {
+    "answer": "promoted",
+    "hint_pt": "(ascendido)",
+    "sentence": "I was ___ to team leader after a year."
+   },
+   {
+    "answer": "learned",
+    "hint_pt": "(aprendido)",
+    "sentence": "I've ___ a lot from that challenge."
+   }
+  ],
+  "summary_pt": "Cómo describir tu trayectoria y tus resultados con seguridad en una entrevista de trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/job-interview.png",
+  "cover_prompt": "A confident professional woman in a blazer shaking hands with an interviewer across a desk in a bright modern office",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/briefcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/trophy.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/mountain-climber.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/growing-plant.png"
+  ],
+  "common_mistake": {
+   "right": "I have worked there for three years.",
+   "wrong": "I work there since three years.",
+   "why_pt": "Para duración hasta hoy usa present perfect con 'for', no presente."
+  }
+ }
+}

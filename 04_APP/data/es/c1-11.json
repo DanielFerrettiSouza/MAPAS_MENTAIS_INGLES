@@ -1,0 +1,185 @@
+{
+ "slug": "c1-11",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "refused to say",
+     "declined to comment",
+     "denied the comment",
+     "avoided commenting it"
+    ],
+    "question_pt": "¿Cómo se dice \"prefirió no hacer comentarios\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "un periódico sensacionalista",
+     "un periódico diario",
+     "un periódico local",
+     "un periódico digital"
+    ],
+    "question_pt": "¿Qué significa \"a tabloid newspaper\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "broke the scandal",
+     "faced allegations",
+     "sparked outrage",
+     "leaked documents"
+    ],
+    "question_pt": "¿Qué expresión significa \"provocó indignación\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📰",
+  "level": "C1",
+  "tip_pt": "Los titulares en inglés omiten los artículos y usan el presente simple para hechos pasados: \"Senate passes bill\" significa que el Senado aprobó el proyecto de ley.",
+  "branches": [
+   {
+    "emoji": "📺",
+    "items": [
+     {
+      "en": "a reputable news outlet",
+      "pt": "un medio de comunicación de prestigio"
+     },
+     {
+      "en": "the mainstream media",
+      "pt": "los grandes medios"
+     },
+     {
+      "en": "a tabloid newspaper",
+      "pt": "un periódico sensacionalista"
+     },
+     {
+      "en": "live coverage",
+      "pt": "cobertura en vivo"
+     },
+     {
+      "en": "a press conference",
+      "pt": "una conferencia de prensa"
+     }
+    ],
+    "label_en": "Media Outlets",
+    "label_pt": "Medios de Comunicación",
+    "illustration_prompt": "Cute hand-drawn old TV set next to a small radio, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎤",
+    "items": [
+     {
+      "en": "breaking news",
+      "pt": "noticia de última hora"
+     },
+     {
+      "en": "according to sources",
+      "pt": "según fuentes"
+     },
+     {
+      "en": "an anonymous source",
+      "pt": "una fuente anónima"
+     },
+     {
+      "en": "declined to comment",
+      "pt": "prefirió no hacer comentarios"
+     },
+     {
+      "en": "an exclusive interview",
+      "pt": "una entrevista exclusiva"
+     }
+    ],
+    "label_en": "Reporting",
+    "label_pt": "Periodismo",
+    "illustration_prompt": "Cute hand-drawn microphone with a notepad and pencil, doodle style, no text"
+   },
+   {
+    "emoji": "🔥",
+    "items": [
+     {
+      "en": "the scandal broke",
+      "pt": "estalló el escándalo"
+     },
+     {
+      "en": "leaked documents",
+      "pt": "documentos filtrados"
+     },
+     {
+      "en": "facing allegations",
+      "pt": "enfrentando acusaciones"
+     },
+     {
+      "en": "sparked outrage",
+      "pt": "provocó indignación"
+     }
+    ],
+    "label_en": "Controversy",
+    "label_pt": "Polémicas",
+    "illustration_prompt": "Cute hand-drawn small flame beside a magnifying glass, doodle style, no text"
+   },
+   {
+    "emoji": "🧐",
+    "items": [
+     {
+      "en": "fake news spreads fast",
+      "pt": "las noticias falsas se difunden rápido"
+     },
+     {
+      "en": "a biased headline",
+      "pt": "un titular tendencioso"
+     },
+     {
+      "en": "fact-check the claim",
+      "pt": "verificar la afirmación"
+     },
+     {
+      "en": "clickbait articles",
+      "pt": "artículos ciberanzuelo"
+     }
+    ],
+    "label_en": "Media Literacy",
+    "label_pt": "Lectura Crítica",
+    "illustration_prompt": "Cute hand-drawn magnifying glass over a newspaper with a check mark, doodle style, no text or letters"
+   }
+  ],
+  "title_en": "News Vocabulary",
+  "title_pt": "Vocabulario de Noticias",
+  "exercises": [
+   {
+    "answer": "comment",
+    "hint_pt": "(comentar)",
+    "sentence": "The minister refused to ___ on the allegations."
+   },
+   {
+    "answer": "leaked",
+    "hint_pt": "(filtrada)",
+    "sentence": "The story was ___ by an anonymous source."
+   },
+   {
+    "answer": "breaking",
+    "hint_pt": "(de última hora)",
+    "sentence": "We interrupt this program for ___ news."
+   },
+   {
+    "answer": "source",
+    "hint_pt": "(fuente)",
+    "sentence": "Always check if the ___ is reliable."
+   }
+  ],
+  "summary_pt": "Términos y expresiones avanzadas para entender y comentar las noticias con precisión.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-11/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a folded newspaper, a microphone and a smartphone with a globe icon, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I read a news story about the elections.",
+   "wrong": "I read a new about the elections.",
+   "why_pt": "\"News\" es incontable; \"una noticia\" no se dice \"a new\"."
+  }
+ }
+}

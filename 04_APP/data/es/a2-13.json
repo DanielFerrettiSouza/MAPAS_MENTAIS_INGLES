@@ -1,0 +1,181 @@
+{
+ "slug": "a2-13",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I am with fever.",
+     "I have a fever.",
+     "I feel fever.",
+     "I make a fever."
+    ],
+    "question_pt": "¿Cómo se dice «Tengo fiebre» en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Receta médica",
+     "Consulta",
+     "Farmacia",
+     "Síntoma"
+    ],
+    "question_pt": "¿Qué significa «prescription»?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Drink lots of water.",
+     "Take it after meals.",
+     "Get some rest.",
+     "I feel dizzy."
+    ],
+    "question_pt": "¿Qué frase significa «Descanse un poco»?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🏥",
+  "level": "A2",
+  "tip_pt": "Usa «I have a...» para los síntomas: I have a headache, I have a fever. Para el dolor de espalda, di «My back hurts».",
+  "branches": [
+   {
+    "emoji": "🤒",
+    "items": [
+     {
+      "en": "I have a headache.",
+      "pt": "Me duele la cabeza."
+     },
+     {
+      "en": "I have a fever.",
+      "pt": "Tengo fiebre."
+     },
+     {
+      "en": "My throat hurts.",
+      "pt": "Me duele la garganta."
+     },
+     {
+      "en": "I feel dizzy.",
+      "pt": "Estoy mareado."
+     },
+     {
+      "en": "I have a cough.",
+      "pt": "Tengo tos."
+     }
+    ],
+    "label_en": "Symptoms",
+    "label_pt": "Síntomas",
+    "illustration_prompt": "Cute hand-drawn sick face with a thermometer in its mouth, pastel colors, no text"
+   },
+   {
+    "emoji": "🩺",
+    "items": [
+     {
+      "en": "I'd like to make an appointment.",
+      "pt": "Quisiera pedir una cita."
+     },
+     {
+      "en": "What's the matter?",
+      "pt": "¿Qué le pasa?"
+     },
+     {
+      "en": "How long have you felt sick?",
+      "pt": "¿Desde hace cuánto se siente mal?"
+     },
+     {
+      "en": "Are you allergic to anything?",
+      "pt": "¿Es alérgico a algo?"
+     }
+    ],
+    "label_en": "At the Clinic",
+    "label_pt": "En la clínica",
+    "illustration_prompt": "Cute hand-drawn stethoscope and a clipboard, simple doodle style, no text"
+   },
+   {
+    "emoji": "💊",
+    "items": [
+     {
+      "en": "Do I need a prescription?",
+      "pt": "¿Necesito receta?"
+     },
+     {
+      "en": "Something for a cold, please.",
+      "pt": "Algo para el resfriado, por favor."
+     },
+     {
+      "en": "Do you have painkillers?",
+      "pt": "¿Tienen analgésicos?"
+     },
+     {
+      "en": "Here's my prescription.",
+      "pt": "Aquí está mi receta."
+     }
+    ],
+    "label_en": "At the Pharmacy",
+    "label_pt": "En la farmacia",
+    "illustration_prompt": "Cute hand-drawn pharmacy shelf with medicine bottles and pills, pastel colors, no text"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "Take one pill twice a day.",
+      "pt": "Tome una pastilla dos veces al día."
+     },
+     {
+      "en": "Take it after meals.",
+      "pt": "Tómela después de las comidas."
+     },
+     {
+      "en": "Drink lots of water.",
+      "pt": "Beba mucha agua."
+     },
+     {
+      "en": "Get some rest.",
+      "pt": "Descanse un poco."
+     }
+    ],
+    "label_en": "Instructions",
+    "label_pt": "Cómo tomarlo",
+    "illustration_prompt": "Cute hand-drawn clock next to a glass of water and a pill, doodle style, no text"
+   }
+  ],
+  "title_en": "Doctor and Pharmacy",
+  "title_pt": "Médico y farmacia",
+  "exercises": [
+   {
+    "answer": "fever",
+    "hint_pt": "(fiebre)",
+    "sentence": "I have a ___ . My temperature is high."
+   },
+   {
+    "answer": "appointment",
+    "hint_pt": "(cita)",
+    "sentence": "I'd like to make an ___ , please."
+   },
+   {
+    "answer": "day",
+    "hint_pt": "(día)",
+    "sentence": "Take one pill twice a ___ ."
+   },
+   {
+    "answer": "prescription",
+    "hint_pt": "(receta)",
+    "sentence": "Do I need a ___ for this?"
+   }
+  ],
+  "summary_pt": "Frases para explicar tus síntomas, pedir citas y comprar medicamentos en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-13/cover.png",
+  "cover_prompt": "A friendly cartoon doctor with a stethoscope next to a smiling pharmacist holding a medicine bottle, cute hand-drawn style, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I have a fever.",
+   "wrong": "I have fever.",
+   "why_pt": "En inglés, fever y headache llevan el artículo «a»."
+  }
+ }
+}

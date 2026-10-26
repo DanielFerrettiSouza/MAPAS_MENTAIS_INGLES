@@ -1,0 +1,177 @@
+{
+ "slug": "b2-12",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Let's meet each other halfway.",
+     "Let's go to the middle way.",
+     "Let's make a half deal.",
+     "Let's split the road."
+    ],
+    "question_pt": "¿Cómo se dice \"Lleguemos a un punto medio\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "No way, forget it.",
+     "I'm afraid that's not feasible.",
+     "That's stupid.",
+     "I don't want."
+    ],
+    "question_pt": "¿Qué frase rechaza una propuesta con cortesía?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Vamos a escribir un libro.",
+     "Firmemos después.",
+     "Pongámoslo por escrito.",
+     "Leamos el contrato."
+    ],
+    "question_pt": "¿Qué significa \"Let's put it in writing\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🤝",
+  "level": "B2",
+  "tip_pt": "Usa condicionales para suavizar tus propuestas: \"If you could lower the price, we would sign today.\" Suena más diplomático y profesional.",
+  "branches": [
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "What if we offered a discount?",
+      "pt": "¿Y si ofreciéramos un descuento?"
+     },
+     {
+      "en": "We're prepared to offer more.",
+      "pt": "Estamos dispuestos a ofrecer más."
+     },
+     {
+      "en": "How does that sound to you?",
+      "pt": "¿Qué le parece?"
+     },
+     {
+      "en": "Would you be willing to lower the price?",
+      "pt": "¿Estaría dispuesto a bajar el precio?"
+     }
+    ],
+    "label_en": "Making Offers",
+    "label_pt": "Hacer propuestas",
+    "illustration_prompt": "Cute hand-drawn briefcase with a small sparkle, simple icon, no text or letters"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "Let's meet each other halfway.",
+      "pt": "Lleguemos a un punto medio."
+     },
+     {
+      "en": "We could be flexible on that.",
+      "pt": "Podríamos ser flexibles en eso."
+     },
+     {
+      "en": "That seems like a fair deal.",
+      "pt": "Parece un acuerdo justo."
+     },
+     {
+      "en": "I can live with that.",
+      "pt": "Puedo aceptarlo."
+     }
+    ],
+    "label_en": "Compromising",
+    "label_pt": "Ceder",
+    "illustration_prompt": "Cute hand-drawn balanced scale, simple icon, no text or letters"
+   },
+   {
+    "emoji": "🙅",
+    "items": [
+     {
+      "en": "I'm afraid that's not feasible.",
+      "pt": "Me temo que eso no es viable."
+     },
+     {
+      "en": "I see your point, but...",
+      "pt": "Entiendo su punto de vista, pero..."
+     },
+     {
+      "en": "That's a bit beyond our budget.",
+      "pt": "Eso supera un poco nuestro presupuesto."
+     },
+     {
+      "en": "We'd need something in return.",
+      "pt": "Necesitaríamos algo a cambio."
+     }
+    ],
+    "label_en": "Polite Disagreement",
+    "label_pt": "Discrepar con cortesía",
+    "illustration_prompt": "Cute hand-drawn hand gently raised in a stop gesture, simple icon, no text or letters"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "I think we have a deal.",
+      "pt": "Creo que tenemos un acuerdo."
+     },
+     {
+      "en": "Let's put it in writing.",
+      "pt": "Pongámoslo por escrito."
+     },
+     {
+      "en": "I'll send you the contract.",
+      "pt": "Le enviaré el contrato."
+     },
+     {
+      "en": "It's a pleasure doing business.",
+      "pt": "Es un placer hacer negocios con usted."
+     }
+    ],
+    "label_en": "Closing the Deal",
+    "label_pt": "Cerrar el acuerdo",
+    "illustration_prompt": "Cute hand-drawn pen signing a blank contract paper, simple icon, no text or letters"
+   }
+  ],
+  "title_en": "Negotiation",
+  "title_pt": "Negociación",
+  "exercises": [
+   {
+    "answer": "lower",
+    "hint_pt": "(bajar)",
+    "sentence": "Would you be willing to ___ the price a little?"
+   },
+   {
+    "answer": "feasible",
+    "hint_pt": "(viable)",
+    "sentence": "I'm afraid that's not ___ for us."
+   },
+   {
+    "answer": "halfway",
+    "hint_pt": "(a mitad de camino)",
+    "sentence": "Let's meet each other ___."
+   },
+   {
+    "answer": "deal",
+    "hint_pt": "(acuerdo)",
+    "sentence": "I think we have a ___."
+   }
+  ],
+  "summary_pt": "Expresiones para proponer, ceder, discrepar con cortesía y cerrar acuerdos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-12/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two business people shaking hands across a small table with documents and coffee cups, soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "We reached an agreement.",
+   "wrong": "We arrived to an agreement.",
+   "why_pt": "En inglés se dice \"reach an agreement\", no \"arrive to\"."
+  }
+ }
+}

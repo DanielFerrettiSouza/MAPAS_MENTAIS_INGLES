@@ -1,0 +1,177 @@
+{
+ "slug": "b1-13",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm sending attached the report.",
+     "Please find the report attached.",
+     "Follow the report attached.",
+     "The report goes in attach."
+    ],
+    "question_pt": "¿Cómo se dice \"Adjunto el informe\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Dear Mr. Smith,",
+     "Hi team,",
+     "Best regards,",
+     "Regarding your last email,"
+    ],
+    "question_pt": "¿Qué expresión se usa para cerrar un correo?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Quedo a la espera de su respuesta.",
+     "Te estoy escuchando.",
+     "Mira hacia adelante.",
+     "Siéntete como en casa."
+    ],
+    "question_pt": "¿Qué significa \"I look forward to hearing from you\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "📧",
+  "level": "B1",
+  "tip_pt": "Usa \"I'd like to\" y \"Could you\" para sonar cortés; evita \"I want\" en correos formales.",
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Dear Mr. Smith,",
+      "pt": "Estimado Sr. Smith:"
+     },
+     {
+      "en": "Hi team,",
+      "pt": "Hola, equipo:"
+     },
+     {
+      "en": "I hope this email finds you well.",
+      "pt": "Espero que se encuentre bien."
+     },
+     {
+      "en": "Thank you for your quick reply.",
+      "pt": "Gracias por su pronta respuesta."
+     }
+    ],
+    "label_en": "Opening",
+    "label_pt": "Saludo inicial",
+    "illustration_prompt": "A cute hand-drawn waving hand next to an open envelope, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "I'm writing to ask about",
+      "pt": "Le escribo para preguntar sobre"
+     },
+     {
+      "en": "I'd like to confirm the meeting.",
+      "pt": "Me gustaría confirmar la reunión."
+     },
+     {
+      "en": "Just a quick follow-up.",
+      "pt": "Solo un breve recordatorio."
+     },
+     {
+      "en": "Regarding your last email,",
+      "pt": "En relación con su último correo,"
+     }
+    ],
+    "label_en": "Purpose",
+    "label_pt": "Motivo",
+    "illustration_prompt": "A cute hand-drawn target with an arrow in the center, simple doodle style, no text"
+   },
+   {
+    "emoji": "🙏",
+    "items": [
+     {
+      "en": "Could you send me the file?",
+      "pt": "¿Podría enviarme el archivo?"
+     },
+     {
+      "en": "Please find the report attached.",
+      "pt": "Adjunto el informe."
+     },
+     {
+      "en": "Please let me know.",
+      "pt": "Por favor, avíseme."
+     },
+     {
+      "en": "Would Monday work for you?",
+      "pt": "¿Le viene bien el lunes?"
+     }
+    ],
+    "label_en": "Requests",
+    "label_pt": "Peticiones",
+    "illustration_prompt": "A cute hand-drawn pair of hands holding a small paper with a question mark shape, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "I look forward to hearing from you.",
+      "pt": "Quedo a la espera de su respuesta."
+     },
+     {
+      "en": "Feel free to contact me.",
+      "pt": "No dude en contactarme."
+     },
+     {
+      "en": "Best regards,",
+      "pt": "Saludos cordiales,"
+     },
+     {
+      "en": "Thanks in advance,",
+      "pt": "Gracias de antemano,"
+     }
+    ],
+    "label_en": "Closing",
+    "label_pt": "Despedida",
+    "illustration_prompt": "A cute hand-drawn pen signing a wavy line on paper, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Professional Emails",
+  "title_pt": "Correos electrónicos profesionales",
+  "exercises": [
+   {
+    "answer": "finds",
+    "hint_pt": "(encuentra)",
+    "sentence": "I hope this email ___ you well."
+   },
+   {
+    "answer": "ask",
+    "hint_pt": "(preguntar)",
+    "sentence": "I'm writing to ___ about the meeting."
+   },
+   {
+    "answer": "attached",
+    "hint_pt": "(adjunto)",
+    "sentence": "Please find the file ___."
+   },
+   {
+    "answer": "hearing",
+    "hint_pt": "(tener noticias)",
+    "sentence": "I look forward to ___ from you."
+   }
+  ],
+  "summary_pt": "Expresiones útiles para saludar, pedir, adjuntar archivos y despedirte en correos de trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-13/cover.png",
+  "cover_prompt": "A cute hand-drawn laptop with an envelope flying out of the screen, soft pastel colors, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Please find the report attached.",
+   "wrong": "I send you attached the report.",
+   "why_pt": "Traducir \"te envío adjunto\" palabra por palabra no suena natural."
+  }
+ }
+}

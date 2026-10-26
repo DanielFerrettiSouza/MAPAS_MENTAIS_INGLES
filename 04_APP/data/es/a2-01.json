@@ -1,0 +1,177 @@
+{
+ "slug": "a2-01",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Where was you?",
+     "Where were you?",
+     "Where you were?",
+     "Where are you?"
+    ],
+    "question_pt": "¿Cómo se dice \"¿Dónde estabas?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "were",
+     "is been",
+     "was",
+     "weren't"
+    ],
+    "question_pt": "Completa: \"She ___ happy.\"",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "dentro de dos días",
+     "hace dos días",
+     "dos días por semana",
+     "en dos días"
+    ],
+    "question_pt": "¿Qué significa \"two days ago\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "⏪",
+  "level": "A2",
+  "tip_pt": "Usa was con I, he, she, it. Usa were con you, we, they. En negativo: wasn't y weren't.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I was at home.",
+      "pt": "Estaba en casa."
+     },
+     {
+      "en": "She was happy.",
+      "pt": "Ella estaba feliz."
+     },
+     {
+      "en": "We were friends.",
+      "pt": "Éramos amigos."
+     },
+     {
+      "en": "They were late.",
+      "pt": "Llegaron tarde."
+     }
+    ],
+    "label_en": "Affirmative",
+    "label_pt": "Afirmativa",
+    "illustration_prompt": "A cute hand-drawn green check mark with a happy face, simple doodle style, no text"
+   },
+   {
+    "emoji": "❌",
+    "items": [
+     {
+      "en": "I wasn't hungry.",
+      "pt": "No tenía hambre."
+     },
+     {
+      "en": "It wasn't easy.",
+      "pt": "No fue fácil."
+     },
+     {
+      "en": "You weren't there.",
+      "pt": "Tú no estabas allí."
+     },
+     {
+      "en": "They weren't ready.",
+      "pt": "Ellos no estaban listos."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Negativa",
+    "illustration_prompt": "A cute hand-drawn red X shape with a shy face, simple doodle style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Was it fun?",
+      "pt": "¿Fue divertido?"
+     },
+     {
+      "en": "Were you sick?",
+      "pt": "¿Estabas enfermo?"
+     },
+     {
+      "en": "Where were you?",
+      "pt": "¿Dónde estabas?"
+     },
+     {
+      "en": "How was your weekend?",
+      "pt": "¿Qué tal tu fin de semana?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a curious face, simple doodle style, no text or symbols"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "yesterday",
+      "pt": "ayer"
+     },
+     {
+      "en": "last night",
+      "pt": "anoche"
+     },
+     {
+      "en": "last week",
+      "pt": "la semana pasada"
+     },
+     {
+      "en": "two days ago",
+      "pt": "hace dos días"
+     }
+    ],
+    "label_en": "Time Words",
+    "label_pt": "Expresiones de tiempo",
+    "illustration_prompt": "A cute hand-drawn calendar with a smiling face and a small moon, simple doodle style, no text or numbers"
+   }
+  ],
+  "title_en": "Was and Were",
+  "title_pt": "Was y Were",
+  "exercises": [
+   {
+    "answer": "was",
+    "hint_pt": "(estaba)",
+    "sentence": "I ___ tired last night."
+   },
+   {
+    "answer": "were",
+    "hint_pt": "(estábamos)",
+    "sentence": "We ___ at the beach on Sunday."
+   },
+   {
+    "answer": "wasn't",
+    "hint_pt": "(no fue)",
+    "sentence": "The movie ___ very good."
+   },
+   {
+    "answer": "Were",
+    "hint_pt": "(¿estabas?)",
+    "sentence": "___ you at work yesterday?"
+   }
+  ],
+  "summary_pt": "Was y were son el pasado del verbo to be: era, estaba, fue.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-01/cover.png",
+  "cover_prompt": "A cute hand-drawn clock with arrows turning backward next to a smiling calendar page, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It was very hot yesterday.",
+   "wrong": "Was very hot yesterday.",
+   "why_pt": "En inglés el sujeto es obligatorio: no olvides el it."
+  }
+ }
+}

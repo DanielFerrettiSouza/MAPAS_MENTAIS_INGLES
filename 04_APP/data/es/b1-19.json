@@ -1,0 +1,177 @@
+{
+ "slug": "b1-19",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I already finished.",
+     "I haven't finished yet.",
+     "I've never finished.",
+     "I haven't finished already."
+    ],
+    "question_pt": "¿Cómo se dice 'Todavía no he terminado'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I haven't never flown.",
+     "I've never flown before.",
+     "I've ever flown before.",
+     "I never have flown yet."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "yet",
+     "already",
+     "ever",
+     "never"
+    ],
+    "question_pt": "Completa: 'Have you ___ been to Brazil?'",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B1",
+  "tip_pt": "Usa 'ever' en preguntas, 'never' en negativas sin 'not', 'already' en medio de la frase y 'yet' al final de negativas y preguntas.",
+  "branches": [
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Have you ever been to Brazil?",
+      "pt": "¿Alguna vez has estado en Brasil?"
+     },
+     {
+      "en": "Have you ever eaten sushi?",
+      "pt": "¿Alguna vez has comido sushi?"
+     },
+     {
+      "en": "Has she ever met him?",
+      "pt": "¿Ella lo ha conocido alguna vez?"
+     },
+     {
+      "en": "It's the best movie I've ever seen.",
+      "pt": "Es la mejor película que he visto."
+     }
+    ],
+    "label_en": "Ever",
+    "label_pt": "Alguna vez",
+    "illustration_prompt": "A cute hand-drawn globe with a curious little question bubble shape, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I've never flown before.",
+      "pt": "Nunca he volado en avión."
+     },
+     {
+      "en": "She has never seen snow.",
+      "pt": "Ella nunca ha visto la nieve."
+     },
+     {
+      "en": "We've never met.",
+      "pt": "Nunca nos hemos conocido."
+     },
+     {
+      "en": "I've never heard of it.",
+      "pt": "Nunca he oído hablar de eso."
+     }
+    ],
+    "label_en": "Never",
+    "label_pt": "Nunca",
+    "illustration_prompt": "A cute hand-drawn airplane with a small red prohibition circle over it, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I've already eaten.",
+      "pt": "Ya he comido."
+     },
+     {
+      "en": "She has already left.",
+      "pt": "Ella ya se ha ido."
+     },
+     {
+      "en": "Have you already finished?",
+      "pt": "¿Ya has terminado?"
+     },
+     {
+      "en": "The movie has already started.",
+      "pt": "La película ya ha empezado."
+     }
+    ],
+    "label_en": "Already",
+    "label_pt": "Ya",
+    "illustration_prompt": "A cute hand-drawn empty plate with a green check mark beside it, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "I haven't finished yet.",
+      "pt": "Todavía no he terminado."
+     },
+     {
+      "en": "Have you called him yet?",
+      "pt": "¿Ya lo has llamado?"
+     },
+     {
+      "en": "Not yet.",
+      "pt": "Todavía no."
+     },
+     {
+      "en": "They haven't arrived yet.",
+      "pt": "Ellos todavía no han llegado."
+     }
+    ],
+    "label_en": "Yet",
+    "label_pt": "Todavía / Ya",
+    "illustration_prompt": "A cute hand-drawn alarm clock waiting next to a closed gift box, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Ever, Never, Already, Yet",
+  "title_pt": "Ever, never, already, yet",
+  "exercises": [
+   {
+    "answer": "ever",
+    "hint_pt": "(alguna vez)",
+    "sentence": "Have you ___ been to New York?"
+   },
+   {
+    "answer": "never",
+    "hint_pt": "(nunca)",
+    "sentence": "I've ___ tried sushi."
+   },
+   {
+    "answer": "already",
+    "hint_pt": "(ya)",
+    "sentence": "She has ___ left the office."
+   },
+   {
+    "answer": "yet",
+    "hint_pt": "(todavía)",
+    "sentence": "We haven't decided ___."
+   }
+  ],
+  "summary_pt": "Adverbios que se usan con el present perfect para hablar de experiencias y expectativas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-19/cover.png",
+  "cover_prompt": "A cute hand-drawn hourglass with a small calendar and a check mark beside it, soft pastel colors, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I've never seen snow.",
+   "wrong": "I haven't never seen snow.",
+   "why_pt": "En inglés no se usa doble negación: 'never' ya es negativo."
+  }
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "slug": "c2-06",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Vamos a nadar",
+     "Vámonos de aquí",
+     "Vamos a comer",
+     "Vamos a bailar"
+    ],
+    "question_pt": "¿Qué significa \"Let's dip\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Excelente",
+     "Caro",
+     "Mediocre/regular",
+     "Nuevo"
+    ],
+    "question_pt": "Si algo es \"mid\", es:",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Spill the tea",
+     "Cop the tea",
+     "Drop the cap",
+     "Dip the tea"
+    ],
+    "question_pt": "¿Cómo se dice \"Cuéntame el chisme\" en jerga?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🛹",
+  "level": "C2",
+  "tip_pt": "La jerga depende del contexto y de la confianza. Evítala en situaciones formales y fíjate en el tono antes de usarla con desconocidos.",
+  "branches": [
+   {
+    "emoji": "🔥",
+    "items": [
+     {
+      "en": "That's fire",
+      "pt": "Esto está buenísimo"
+     },
+     {
+      "en": "The party was lit",
+      "pt": "La fiesta estuvo increíble"
+     },
+     {
+      "en": "She ate that",
+      "pt": "Se lució por completo"
+     },
+     {
+      "en": "It slaps",
+      "pt": "Suena genial (música)"
+     },
+     {
+      "en": "No cap, it's goated",
+      "pt": "En serio, es el mejor de todos"
+     }
+    ],
+    "label_en": "Hype & Praise",
+    "label_pt": "Elogios",
+    "illustration_prompt": "Cute hand-drawn flame with sparkles and a happy face, no text"
+   },
+   {
+    "emoji": "🤨",
+    "items": [
+     {
+      "en": "That's cap",
+      "pt": "Eso es mentira"
+     },
+     {
+      "en": "He's acting sus",
+      "pt": "Se está portando de forma sospechosa"
+     },
+     {
+      "en": "She's so extra",
+      "pt": "Es exageradísima"
+     },
+     {
+      "en": "Quit being salty",
+      "pt": "Deja de estar resentido"
+     },
+     {
+      "en": "That's mid",
+      "pt": "Eso es mediocre"
+     }
+    ],
+    "label_en": "Calling Out",
+    "label_pt": "Críticas y desconfianza",
+    "illustration_prompt": "Cute hand-drawn face with one raised eyebrow and a magnifying glass, no text"
+   },
+   {
+    "emoji": "🫂",
+    "items": [
+     {
+      "en": "What's good, fam?",
+      "pt": "¿Qué tal, familia?"
+     },
+     {
+      "en": "He ghosted me",
+      "pt": "Dejó de hablarme sin explicación"
+     },
+     {
+      "en": "That's my ride or die",
+      "pt": "Es mi amigo incondicional"
+     },
+     {
+      "en": "She's catching feelings",
+      "pt": "Se está enamorando"
+     }
+    ],
+    "label_en": "Relationships",
+    "label_pt": "Relaciones y gente",
+    "illustration_prompt": "Cute hand-drawn two friends fist bumping with little hearts, no text"
+   },
+   {
+    "emoji": "👟",
+    "items": [
+     {
+      "en": "I'm gonna cop those",
+      "pt": "Me voy a comprar esos"
+     },
+     {
+      "en": "Let's dip",
+      "pt": "Vámonos de aquí"
+     },
+     {
+      "en": "I'm chilling at the crib",
+      "pt": "Estoy relajado en casa"
+     },
+     {
+      "en": "Spill the tea",
+      "pt": "Cuéntame el chisme"
+     }
+    ],
+    "label_en": "Street Actions",
+    "label_pt": "Acciones cotidianas",
+    "illustration_prompt": "Cute hand-drawn sneaker box and shopping bag with motion lines, no text"
+   }
+  ],
+  "title_en": "Street Slang",
+  "title_pt": "Jerga callejera",
+  "exercises": [
+   {
+    "answer": "cap",
+    "hint_pt": "(mintiendo/exagerando)",
+    "sentence": "Stop playing, you're straight up ___ right now."
+   },
+   {
+    "answer": "ghosting",
+    "hint_pt": "(dejar de responder sin explicación)",
+    "sentence": "He keeps dodging my texts; I think he's ___ me."
+   },
+   {
+    "answer": "cop",
+    "hint_pt": "(comprar/conseguir)",
+    "sentence": "That jacket is fire. Where'd you ___ it?"
+   },
+   {
+    "answer": "sus",
+    "hint_pt": "(sospechoso)",
+    "sentence": "Don't trust him, he's kind of ___."
+   }
+  ],
+  "summary_pt": "Expresiones informales estadounidenses que usan los nativos en conversaciones casuales y en redes sociales.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-06/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a city street corner with a graffiti-free brick wall, a skateboard, sneakers and a smartphone with speech bubbles containing only emoji shapes, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "That party was lit, bro.",
+   "wrong": "That party was very lit, bro.",
+   "why_pt": "\"Lit\" ya es intenso; con \"very\" suena forzado y extranjero."
+  }
+ }
+}

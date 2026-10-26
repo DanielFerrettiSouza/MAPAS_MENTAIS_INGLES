@@ -1,0 +1,177 @@
+{
+ "slug": "b2-14",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Actually",
+     "Currently",
+     "Eventually",
+     "Really"
+    ],
+    "question_pt": "¿Cómo se dice \"actualmente\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Relativos",
+     "Padres",
+     "Parientes",
+     "Informes"
+    ],
+    "question_pt": "¿Qué significa \"relatives\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Pretender",
+     "Fingir",
+     "Entregar",
+     "Ayudar"
+    ],
+    "question_pt": "¿Cuál es la traducción de \"pretend\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🎭",
+  "level": "B2",
+  "tip_pt": "Desconfía de las palabras muy parecidas al español; confirma su significado en el contexto antes de usarlas.",
+  "branches": [
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "Actually, I disagree.",
+      "pt": "En realidad, no estoy de acuerdo."
+     },
+     {
+      "en": "I'm currently working from home.",
+      "pt": "Actualmente estoy trabajando desde casa."
+     },
+     {
+      "en": "Eventually, we found the hotel.",
+      "pt": "Al final, encontramos el hotel."
+     },
+     {
+      "en": "Eventually means \"in the end\"",
+      "pt": "Eventually significa \"al final\""
+     }
+    ],
+    "label_en": "Time Words",
+    "label_pt": "Palabras de tiempo",
+    "illustration_prompt": "Cute hand-drawn alarm clock with a smiling face, simple pastel icon, no text"
+   },
+   {
+    "emoji": "🧑‍🤝‍🧑",
+    "items": [
+     {
+      "en": "My parents live nearby.",
+      "pt": "Mis padres viven cerca."
+     },
+     {
+      "en": "My relatives are visiting.",
+      "pt": "Mis parientes nos están visitando."
+     },
+     {
+      "en": "He's a very nice guy.",
+      "pt": "Es un tipo muy agradable."
+     },
+     {
+      "en": "She's really sensible.",
+      "pt": "Ella es muy sensata."
+     }
+    ],
+    "label_en": "People",
+    "label_pt": "Personas",
+    "illustration_prompt": "Two cute hand-drawn cartoon friends smiling side by side, simple pastel icon, no text"
+   },
+   {
+    "emoji": "🏠",
+    "items": [
+     {
+      "en": "I'm reading a great novel.",
+      "pt": "Estoy leyendo una novela excelente."
+     },
+     {
+      "en": "I bought it at the library?",
+      "pt": "¿Lo compré en la biblioteca?"
+     },
+     {
+      "en": "I got it at the bookstore.",
+      "pt": "Lo compré en la librería."
+     },
+     {
+      "en": "Grab a pillow from the bed.",
+      "pt": "Toma una almohada de la cama."
+     }
+    ],
+    "label_en": "Everyday Things",
+    "label_pt": "Cosas cotidianas",
+    "illustration_prompt": "Cute hand-drawn little house with a book and a pillow, simple pastel icon, no text"
+   },
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "Pretend you don't know.",
+      "pt": "Finge que no lo sabes."
+     },
+     {
+      "en": "I intend to travel soon.",
+      "pt": "Pretendo viajar pronto."
+     },
+     {
+      "en": "Please submit your report.",
+      "pt": "Por favor, entrega tu informe."
+     },
+     {
+      "en": "Can you assist me?",
+      "pt": "¿Me puedes ayudar?"
+     }
+    ],
+    "label_en": "Common Verbs",
+    "label_pt": "Verbos comunes",
+    "illustration_prompt": "Cute hand-drawn circular arrows with a smiling face, simple pastel icon, no text"
+   }
+  ],
+  "title_en": "False Friends",
+  "title_pt": "Falsos amigos",
+  "exercises": [
+   {
+    "answer": "submit",
+    "hint_pt": "(entregar / enviar)",
+    "sentence": "I need to ___ my report before Friday."
+   },
+   {
+    "answer": "supportive",
+    "hint_pt": "(comprensiva / solidaria)",
+    "sentence": "She's very ___; she always helps everyone."
+   },
+   {
+    "answer": "left",
+    "hint_pt": "(olvidé / dejé)",
+    "sentence": "I ___ my phone at home this morning."
+   },
+   {
+    "answer": "Actually",
+    "hint_pt": "(en realidad)",
+    "sentence": "___, I don't like coffee at all."
+   }
+  ],
+  "summary_pt": "Palabras parecidas al español, pero con significados diferentes en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-14/cover.png",
+  "cover_prompt": "Two cute cartoon words-shaped characters wearing masks shaking hands, one looking surprised, simple hand-drawn style, pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Currently, I live in Madrid, but I'm moving soon.",
+   "wrong": "Actually, I live in Madrid, but I'm moving soon.",
+   "why_pt": "\"Actually\" significa \"en realidad\", no \"actualmente\"."
+  }
+ }
+}

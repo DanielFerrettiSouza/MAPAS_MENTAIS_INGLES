@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Botão grande da página de vendas: toca frases reais do mapa de amostra, uma por toque.
-export default function ListenButton({ phrases }: { phrases: string[] }) {
+export default function ListenButton({ phrases, label = "Toque para ouvir" }: { phrases: string[]; label?: string }) {
   const [i, setI] = useState(0);
   const [playing, setPlaying] = useState(false);
   const text = phrases[i % phrases.length];
@@ -17,7 +17,7 @@ export default function ListenButton({ phrases }: { phrases: string[] }) {
     <button className={`mt-listen${playing ? " on" : ""}`} onClick={play}>
       <span className="mt-listen-ico">{playing ? "🔊" : "▶"}</span>
       <span>
-        <b>Toque para ouvir</b>
+        <b>{label}</b>
         <small>“{text}”</small>
       </span>
     </button>

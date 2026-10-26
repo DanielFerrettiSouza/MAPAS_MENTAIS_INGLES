@@ -1,0 +1,181 @@
+{
+ "slug": "b2-10",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Estoy muy feliz",
+     "Estoy cansado",
+     "Estoy confundido",
+     "Estoy enfermo"
+    ],
+    "question_pt": "¿Qué significa \"I'm on cloud nine\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Break the ice",
+     "Don't beat around the bush",
+     "Call it a day",
+     "Cut corners"
+    ],
+    "question_pt": "¿Qué expresión significa \"no te andes con rodeos\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'm under the weather",
+     "I'm all ears",
+     "I have butterflies in my stomach",
+     "It's a piece of cake"
+    ],
+    "question_pt": "¿Cómo dices \"siento mariposas en el estómago\" (estoy nervioso)?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💬",
+  "level": "B2",
+  "tip_pt": "Aprende los idioms en frases completas y en contexto; traducir palabra por palabra casi siempre genera confusión.",
+  "branches": [
+   {
+    "emoji": "🍰",
+    "items": [
+     {
+      "en": "It's a piece of cake.",
+      "pt": "Es pan comido."
+     },
+     {
+      "en": "It's a no-brainer.",
+      "pt": "Es obvio, ni hay que pensarlo."
+     },
+     {
+      "en": "Easy as pie.",
+      "pt": "Facilísimo."
+     },
+     {
+      "en": "I could do it blindfolded.",
+      "pt": "Lo hago con los ojos cerrados."
+     }
+    ],
+    "label_en": "Easy Things",
+    "label_pt": "Cosas fáciles",
+    "illustration_prompt": "A cute hand-drawn slice of cake on a small plate, soft pastel colors, no text"
+   },
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "Let's call it a day.",
+      "pt": "Dejémoslo por hoy."
+     },
+     {
+      "en": "I'm swamped with work.",
+      "pt": "Estoy saturado de trabajo."
+     },
+     {
+      "en": "Back to square one.",
+      "pt": "Otra vez desde cero."
+     },
+     {
+      "en": "Cut corners",
+      "pt": "Hacer las cosas a la ligera"
+     }
+    ],
+    "label_en": "Work and Effort",
+    "label_pt": "Trabajo y esfuerzo",
+    "illustration_prompt": "A cute hand-drawn briefcase with a small clock beside it, soft colors, no text"
+   },
+   {
+    "emoji": "😊",
+    "items": [
+     {
+      "en": "I'm on cloud nine.",
+      "pt": "Estoy en el séptimo cielo."
+     },
+     {
+      "en": "I'm feeling under the weather.",
+      "pt": "Me siento algo indispuesto."
+     },
+     {
+      "en": "I have butterflies in my stomach.",
+      "pt": "Siento mariposas en el estómago."
+     },
+     {
+      "en": "Keep your chin up.",
+      "pt": "Ánimo, levanta la cabeza."
+     }
+    ],
+    "label_en": "Feelings",
+    "label_pt": "Sentimientos",
+    "illustration_prompt": "A cute hand-drawn smiling face floating on a fluffy cloud, pastel colors, no text"
+   },
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "You hit the nail on the head.",
+      "pt": "Diste en el clavo."
+     },
+     {
+      "en": "Let's break the ice.",
+      "pt": "Rompamos el hielo."
+     },
+     {
+      "en": "Don't beat around the bush.",
+      "pt": "No te andes con rodeos."
+     },
+     {
+      "en": "I'm all ears.",
+      "pt": "Soy todo oídos."
+     },
+     {
+      "en": "Hit the hay",
+      "pt": "Irse a dormir"
+     }
+    ],
+    "label_en": "Conversation",
+    "label_pt": "Conversación",
+    "illustration_prompt": "A cute hand-drawn hammer hitting a nail next to two small speech bubbles without letters, soft colors"
+   }
+  ],
+  "title_en": "Common Idioms",
+  "title_pt": "Expresiones idiomáticas",
+  "exercises": [
+   {
+    "answer": "cake",
+    "hint_pt": "(pastel)",
+    "sentence": "Don't worry, the test was a piece of ___."
+   },
+   {
+    "answer": "hay",
+    "hint_pt": "(heno)",
+    "sentence": "I have to hit the ___ early tonight."
+   },
+   {
+    "answer": "day",
+    "hint_pt": "(día)",
+    "sentence": "Let's call it a ___ and go home."
+   },
+   {
+    "answer": "nail",
+    "hint_pt": "(clavo)",
+    "sentence": "You hit the ___ on the head!"
+   }
+  ],
+  "summary_pt": "Los idioms son expresiones cuyo significado no sale de la traducción literal de sus palabras.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-10/cover.png",
+  "cover_prompt": "A cute hand-drawn speech bubble filled with tiny playful symbols like a cake slice, a cloud with cats and dogs, and a hammer hitting a nail, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It costs an arm and a leg.",
+   "wrong": "It costs an eye of the face.",
+   "why_pt": "No traduzcas literalmente «cuesta un ojo de la cara»."
+  }
+ }
+}

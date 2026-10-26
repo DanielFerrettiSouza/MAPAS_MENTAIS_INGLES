@@ -1,0 +1,177 @@
+{
+ "slug": "a2-10",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "My flight is late time.",
+     "My flight is delayed.",
+     "My flight is canceled.",
+     "My flight is lost."
+    ],
+    "question_pt": "¿Cómo se dice \"Mi vuelo está retrasado\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I lost my flight.",
+     "I forgot my flight.",
+     "I missed my flight.",
+     "I left my flight."
+    ],
+    "question_pt": "¿Qué frase significa \"Perdí mi vuelo\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I'd like a window seat.",
+     "I want a glass chair.",
+     "Give me the aisle seat.",
+     "I'd like a door seat."
+    ],
+    "question_pt": "¿Cómo pides un asiento junto a la ventanilla?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "✈️",
+  "level": "A2",
+  "tip_pt": "Usa \"Can I...?\" para pedir permiso y \"Where is...?\" para preguntar por lugares. Son las estructuras más útiles en el aeropuerto.",
+  "branches": [
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "Here is my passport.",
+      "pt": "Aquí tiene mi pasaporte."
+     },
+     {
+      "en": "I have one bag to check.",
+      "pt": "Tengo una maleta para documentar."
+     },
+     {
+      "en": "I'd like a window seat.",
+      "pt": "Quisiera un asiento junto a la ventanilla."
+     },
+     {
+      "en": "Is this carry-on okay?",
+      "pt": "¿Está bien este equipaje de mano?"
+     }
+    ],
+    "label_en": "Check-in",
+    "label_pt": "Facturación / Check-in",
+    "illustration_prompt": "A cute hand-drawn suitcase on a check-in scale, simple doodle style, no text"
+   },
+   {
+    "emoji": "🛂",
+    "items": [
+     {
+      "en": "Take off your shoes.",
+      "pt": "Quítese los zapatos."
+     },
+     {
+      "en": "Put your laptop in the tray.",
+      "pt": "Ponga su computadora portátil en la bandeja."
+     },
+     {
+      "en": "No liquids, please.",
+      "pt": "Nada de líquidos, por favor."
+     },
+     {
+      "en": "Can I go now?",
+      "pt": "¿Ya puedo pasar?"
+     }
+    ],
+    "label_en": "Security",
+    "label_pt": "Control de seguridad",
+    "illustration_prompt": "A cute hand-drawn security tray with a small bag and shoes, doodle style, no text"
+   },
+   {
+    "emoji": "🚪",
+    "items": [
+     {
+      "en": "Where is gate 12?",
+      "pt": "¿Dónde está la puerta 12?"
+     },
+     {
+      "en": "What time is boarding?",
+      "pt": "¿A qué hora es el embarque?"
+     },
+     {
+      "en": "Where is the restroom?",
+      "pt": "¿Dónde está el baño?"
+     },
+     {
+      "en": "Is this the line for Miami?",
+      "pt": "¿Esta es la fila para Miami?"
+     }
+    ],
+    "label_en": "Finding the Gate",
+    "label_pt": "Buscando la puerta de embarque",
+    "illustration_prompt": "A cute hand-drawn directional sign with arrows and a small airplane symbol, doodle style, no text or numbers"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "My flight is delayed.",
+      "pt": "Mi vuelo está retrasado."
+     },
+     {
+      "en": "My flight was canceled.",
+      "pt": "Cancelaron mi vuelo."
+     },
+     {
+      "en": "I missed my flight.",
+      "pt": "Perdí mi vuelo."
+     },
+     {
+      "en": "I can't find my bag.",
+      "pt": "No encuentro mi maleta."
+     }
+    ],
+    "label_en": "Flight Problems",
+    "label_pt": "Problemas con el vuelo",
+    "illustration_prompt": "A cute hand-drawn worried airplane next to a clock, doodle style, no text"
+   }
+  ],
+  "title_en": "At the Airport",
+  "title_pt": "En el aeropuerto",
+  "exercises": [
+   {
+    "answer": "passport",
+    "hint_pt": "(pasaporte)",
+    "sentence": "Here is my ___ and boarding pass."
+   },
+   {
+    "answer": "seat",
+    "hint_pt": "(asiento)",
+    "sentence": "I'd like a window ___, please."
+   },
+   {
+    "answer": "gate",
+    "hint_pt": "(puerta de embarque)",
+    "sentence": "Where is ___ 12?"
+   },
+   {
+    "answer": "delayed",
+    "hint_pt": "(retrasado)",
+    "sentence": "My flight is ___."
+   }
+  ],
+  "summary_pt": "Frases esenciales para hacer el check-in, pasar el control de seguridad y embarcar con tranquilidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-10/cover.png",
+  "cover_prompt": "A cute hand-drawn airport scene with a smiling airplane, a rolling suitcase, and a small control tower, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I missed my flight.",
+   "wrong": "I lost my flight.",
+   "why_pt": "Perder un vuelo, autobús o tren es \"miss\", no \"lose\"."
+  }
+ }
+}

@@ -1,0 +1,655 @@
+{
+ "title": "100 verbos esenciales",
+ "sections": [
+  {
+   "theme": "Rutina",
+   "items": [
+    {
+     "en": "wake up",
+     "pt": "despertarse",
+     "ex_en": "I wake up at 6 a.m. every day.",
+     "ex_pt": "Me despierto a las 6 de la mañana todos los días."
+    },
+    {
+     "en": "get up",
+     "pt": "levantarse (de la cama)",
+     "ex_en": "I usually get up right after my alarm goes off.",
+     "ex_pt": "Normalmente me levanto justo después de que suena el despertador."
+    },
+    {
+     "en": "take a shower",
+     "pt": "ducharse",
+     "ex_en": "She takes a shower before breakfast.",
+     "ex_pt": "Ella se ducha antes del desayuno."
+    },
+    {
+     "en": "have breakfast",
+     "pt": "desayunar",
+     "ex_en": "We have breakfast together on weekends.",
+     "ex_pt": "Desayunamos juntos los fines de semana."
+    },
+    {
+     "en": "get dressed",
+     "pt": "vestirse",
+     "ex_en": "He gets dressed in five minutes.",
+     "ex_pt": "Él se viste en cinco minutos."
+    },
+    {
+     "en": "go to work",
+     "pt": "ir al trabajo",
+     "ex_en": "I go to work by bus.",
+     "ex_pt": "Voy al trabajo en autobús."
+    },
+    {
+     "en": "brush your teeth",
+     "pt": "cepillarse los dientes",
+     "ex_en": "Don't forget to brush your teeth before bed.",
+     "ex_pt": "No olvides cepillarte los dientes antes de dormir."
+    },
+    {
+     "en": "get home",
+     "pt": "llegar a casa",
+     "ex_en": "I usually get home around 7 p.m.",
+     "ex_pt": "Normalmente llego a casa alrededor de las 7 de la tarde."
+    },
+    {
+     "en": "cook dinner",
+     "pt": "hacer la cena",
+     "ex_en": "My husband cooks dinner on Fridays.",
+     "ex_pt": "Mi esposo hace la cena los viernes."
+    },
+    {
+     "en": "go to bed",
+     "pt": "irse a dormir",
+     "ex_en": "I go to bed at 11 on weeknights.",
+     "ex_pt": "Me voy a dormir a las 11 entre semana."
+    }
+   ]
+  },
+  {
+   "theme": "Casa",
+   "items": [
+    {
+     "en": "clean up",
+     "pt": "ordenar, limpiar",
+     "ex_en": "Let's clean up the kitchen after dinner.",
+     "ex_pt": "Vamos a limpiar la cocina después de la cena."
+    },
+    {
+     "en": "do the dishes",
+     "pt": "lavar los platos",
+     "ex_en": "It's your turn to do the dishes tonight.",
+     "ex_pt": "Esta noche te toca lavar los platos."
+    },
+    {
+     "en": "make the bed",
+     "pt": "hacer la cama",
+     "ex_en": "I make the bed every morning.",
+     "ex_pt": "Hago la cama todas las mañanas."
+    },
+    {
+     "en": "do the laundry",
+     "pt": "lavar la ropa",
+     "ex_en": "I usually do the laundry on Sundays.",
+     "ex_pt": "Suelo lavar la ropa los domingos."
+    },
+    {
+     "en": "take out the trash",
+     "pt": "sacar la basura",
+     "ex_en": "Can you take out the trash, please?",
+     "ex_pt": "¿Puedes sacar la basura, por favor?"
+    },
+    {
+     "en": "vacuum",
+     "pt": "pasar la aspiradora",
+     "ex_en": "I need to vacuum the living room.",
+     "ex_pt": "Necesito pasar la aspiradora en la sala."
+    },
+    {
+     "en": "put away",
+     "pt": "guardar",
+     "ex_en": "Put away your toys before bed.",
+     "ex_pt": "Guarda tus juguetes antes de dormir."
+    },
+    {
+     "en": "move in",
+     "pt": "mudarse (a un lugar)",
+     "ex_en": "We moved in last month.",
+     "ex_pt": "Nos mudamos el mes pasado."
+    },
+    {
+     "en": "fix",
+     "pt": "arreglar, reparar",
+     "ex_en": "My dad fixed the leaky faucet.",
+     "ex_pt": "Mi papá arregló el grifo que goteaba."
+    },
+    {
+     "en": "mop",
+     "pt": "trapear, fregar (el suelo)",
+     "ex_en": "Don't walk here, I just mopped the floor.",
+     "ex_pt": "No pises aquí, acabo de trapear el suelo."
+    }
+   ]
+  },
+  {
+   "theme": "Trabajo",
+   "items": [
+    {
+     "en": "work",
+     "pt": "trabajar",
+     "ex_en": "I work from home on Fridays.",
+     "ex_pt": "Trabajo desde casa los viernes."
+    },
+    {
+     "en": "hire",
+     "pt": "contratar",
+     "ex_en": "The company is hiring new developers.",
+     "ex_pt": "La empresa está contratando nuevos desarrolladores."
+    },
+    {
+     "en": "apply",
+     "pt": "postularse",
+     "ex_en": "She applied for a marketing job.",
+     "ex_pt": "Ella se postuló a un puesto de marketing."
+    },
+    {
+     "en": "quit",
+     "pt": "renunciar",
+     "ex_en": "He quit his job last month.",
+     "ex_pt": "Él renunció a su trabajo el mes pasado."
+    },
+    {
+     "en": "fire",
+     "pt": "despedir",
+     "ex_en": "They fired him for being late every day.",
+     "ex_pt": "Lo despidieron por llegar tarde todos los días."
+    },
+    {
+     "en": "earn",
+     "pt": "ganar (sueldo)",
+     "ex_en": "How much do you earn per month?",
+     "ex_pt": "¿Cuánto ganas al mes?"
+    },
+    {
+     "en": "manage",
+     "pt": "dirigir",
+     "ex_en": "She manages a team of ten people.",
+     "ex_pt": "Ella dirige un equipo de diez personas."
+    },
+    {
+     "en": "meet",
+     "pt": "reunirse",
+     "ex_en": "Let's meet at 3 p.m. to discuss the project.",
+     "ex_pt": "Reunámonos a las 15:00 para hablar del proyecto."
+    },
+    {
+     "en": "promote",
+     "pt": "ascender",
+     "ex_en": "I got promoted to manager this year.",
+     "ex_pt": "Me ascendieron a gerente este año."
+    },
+    {
+     "en": "retire",
+     "pt": "jubilarse",
+     "ex_en": "My dad plans to retire next year.",
+     "ex_pt": "Mi papá piensa jubilarse el próximo año."
+    }
+   ]
+  },
+  {
+   "theme": "Viaje",
+   "items": [
+    {
+     "en": "travel",
+     "pt": "viajar",
+     "ex_en": "We love to travel during the summer.",
+     "ex_pt": "Nos encanta viajar durante el verano."
+    },
+    {
+     "en": "book",
+     "pt": "reservar",
+     "ex_en": "I need to book a hotel for next weekend.",
+     "ex_pt": "Necesito reservar un hotel para el próximo fin de semana."
+    },
+    {
+     "en": "pack",
+     "pt": "hacer las maletas, meter en la maleta",
+     "ex_en": "Did you pack your passport?",
+     "ex_pt": "¿Metiste el pasaporte en la maleta?"
+    },
+    {
+     "en": "check in",
+     "pt": "registrarse, hacer el check-in",
+     "ex_en": "We can check in at the hotel after 3 p.m.",
+     "ex_pt": "Podemos registrarnos en el hotel después de las 15:00."
+    },
+    {
+     "en": "check out",
+     "pt": "dejar la habitación, hacer el check-out",
+     "ex_en": "We have to check out by noon.",
+     "ex_pt": "Tenemos que dejar la habitación antes del mediodía."
+    },
+    {
+     "en": "take off",
+     "pt": "despegar",
+     "ex_en": "The plane will take off in ten minutes.",
+     "ex_pt": "El avión va a despegar en diez minutos."
+    },
+    {
+     "en": "land",
+     "pt": "aterrizar",
+     "ex_en": "We landed in Miami early in the morning.",
+     "ex_pt": "Aterrizamos en Miami temprano por la mañana."
+    },
+    {
+     "en": "get on",
+     "pt": "subir, abordar (autobús, tren, avión)",
+     "ex_en": "Let's get on the bus before it leaves.",
+     "ex_pt": "Subamos al autobús antes de que se vaya."
+    },
+    {
+     "en": "get off",
+     "pt": "bajar, bajarse, desembarcar",
+     "ex_en": "We get off at the next stop.",
+     "ex_pt": "Nos bajamos en la próxima parada."
+    },
+    {
+     "en": "rent",
+     "pt": "alquilar, rentar",
+     "ex_en": "We're going to rent a car at the airport.",
+     "ex_pt": "Vamos a alquilar un coche en el aeropuerto."
+    }
+   ]
+  },
+  {
+   "theme": "Comunicación",
+   "items": [
+    {
+     "en": "talk",
+     "pt": "conversar, hablar",
+     "ex_en": "We need to talk about the project.",
+     "ex_pt": "Necesitamos hablar sobre el proyecto."
+    },
+    {
+     "en": "say",
+     "pt": "decir",
+     "ex_en": "What did she say to you?",
+     "ex_pt": "¿Qué te dijo ella?"
+    },
+    {
+     "en": "tell",
+     "pt": "contar, decir (a alguien)",
+     "ex_en": "Can you tell me the truth?",
+     "ex_pt": "¿Puedes decirme la verdad?"
+    },
+    {
+     "en": "ask",
+     "pt": "preguntar, pedir",
+     "ex_en": "I'll ask my boss tomorrow.",
+     "ex_pt": "Le voy a preguntar a mi jefe mañana."
+    },
+    {
+     "en": "call",
+     "pt": "llamar (por teléfono)",
+     "ex_en": "Call me when you get home.",
+     "ex_pt": "Llámame cuando llegues a casa."
+    },
+    {
+     "en": "text",
+     "pt": "enviar un mensaje",
+     "ex_en": "I'll text you the address.",
+     "ex_pt": "Te voy a enviar la dirección por mensaje."
+    },
+    {
+     "en": "explain",
+     "pt": "explicar",
+     "ex_en": "Can you explain this again?",
+     "ex_pt": "¿Puedes explicar esto otra vez?"
+    },
+    {
+     "en": "reply",
+     "pt": "responder",
+     "ex_en": "He didn't reply to my email.",
+     "ex_pt": "Él no respondió a mi correo electrónico."
+    },
+    {
+     "en": "mention",
+     "pt": "mencionar",
+     "ex_en": "She mentioned you at the meeting.",
+     "ex_pt": "Ella te mencionó en la reunión."
+    },
+    {
+     "en": "get in touch",
+     "pt": "ponerse en contacto",
+     "ex_en": "I'll get in touch with you next week.",
+     "ex_pt": "Me pondré en contacto contigo la próxima semana."
+    }
+   ]
+  },
+  {
+   "theme": "Emociones",
+   "items": [
+    {
+     "en": "feel",
+     "pt": "sentir(se)",
+     "ex_en": "I always feel nervous before a test.",
+     "ex_pt": "Siempre me pongo nervioso antes de un examen."
+    },
+    {
+     "en": "love",
+     "pt": "amar, encantar",
+     "ex_en": "I love spending time with my family.",
+     "ex_pt": "Me encanta pasar tiempo con mi familia."
+    },
+    {
+     "en": "worry",
+     "pt": "preocuparse",
+     "ex_en": "Don't worry, everything will be fine.",
+     "ex_pt": "No te preocupes, todo va a salir bien."
+    },
+    {
+     "en": "miss",
+     "pt": "extrañar, echar de menos",
+     "ex_en": "I really miss my friends from college.",
+     "ex_pt": "Extraño mucho a mis amigos de la universidad."
+    },
+    {
+     "en": "hate",
+     "pt": "odiar",
+     "ex_en": "I hate waiting in long lines.",
+     "ex_pt": "Odio hacer filas largas."
+    },
+    {
+     "en": "cry",
+     "pt": "llorar",
+     "ex_en": "She cried when she heard the news.",
+     "ex_pt": "Ella lloró cuando escuchó la noticia."
+    },
+    {
+     "en": "laugh",
+     "pt": "reír(se)",
+     "ex_en": "We laughed all night at his jokes.",
+     "ex_pt": "Nos reímos toda la noche con sus chistes."
+    },
+    {
+     "en": "calm down",
+     "pt": "calmarse, tranquilizarse",
+     "ex_en": "Calm down and tell me what happened.",
+     "ex_pt": "Cálmate y cuéntame qué pasó."
+    },
+    {
+     "en": "cheer up",
+     "pt": "animar(se)",
+     "ex_en": "This song always cheers me up.",
+     "ex_pt": "Esta canción siempre me anima."
+    },
+    {
+     "en": "freak out",
+     "pt": "volverse loco, perder los nervios",
+     "ex_en": "He freaked out when he lost his phone.",
+     "ex_pt": "Perdió los nervios cuando perdió el celular."
+    }
+   ]
+  },
+  {
+   "theme": "Compras y dinero",
+   "items": [
+    {
+     "en": "buy",
+     "pt": "comprar",
+     "ex_en": "I need to buy some groceries after work.",
+     "ex_pt": "Necesito comprar algunas cosas en el supermercado después del trabajo."
+    },
+    {
+     "en": "pay",
+     "pt": "pagar",
+     "ex_en": "Can I pay by card?",
+     "ex_pt": "¿Puedo pagar con tarjeta?"
+    },
+    {
+     "en": "spend",
+     "pt": "gastar",
+     "ex_en": "We spent too much money on clothes this month.",
+     "ex_pt": "Gastamos demasiado dinero en ropa este mes."
+    },
+    {
+     "en": "cost",
+     "pt": "costar",
+     "ex_en": "How much does this jacket cost?",
+     "ex_pt": "¿Cuánto cuesta esta chaqueta?"
+    },
+    {
+     "en": "save",
+     "pt": "ahorrar",
+     "ex_en": "I'm trying to save money for a new car.",
+     "ex_pt": "Estoy intentando ahorrar para un auto nuevo."
+    },
+    {
+     "en": "sell",
+     "pt": "vender",
+     "ex_en": "They sell fresh bread every morning.",
+     "ex_pt": "Venden pan fresco todas las mañanas."
+    },
+    {
+     "en": "afford",
+     "pt": "poder permitirse (pagar algo)",
+     "ex_en": "I can't afford a new phone right now.",
+     "ex_pt": "No puedo permitirme un teléfono nuevo ahora mismo."
+    },
+    {
+     "en": "return",
+     "pt": "devolver",
+     "ex_en": "I want to return these shoes because they're too small.",
+     "ex_pt": "Quiero devolver estos zapatos porque me quedan demasiado pequeños."
+    },
+    {
+     "en": "try on",
+     "pt": "probarse (ropa)",
+     "ex_en": "Can I try on this dress?",
+     "ex_pt": "¿Puedo probarme este vestido?"
+    },
+    {
+     "en": "pay off",
+     "pt": "saldar, liquidar (una deuda)",
+     "ex_en": "She finally paid off her credit card.",
+     "ex_pt": "Por fin terminó de pagar la deuda de su tarjeta de crédito."
+    }
+   ]
+  },
+  {
+   "theme": "Movimiento",
+   "items": [
+    {
+     "en": "go",
+     "pt": "ir",
+     "ex_en": "Let's go to the beach this weekend.",
+     "ex_pt": "Vamos a la playa este fin de semana."
+    },
+    {
+     "en": "come",
+     "pt": "venir",
+     "ex_en": "Can you come to my party on Saturday?",
+     "ex_pt": "¿Puedes venir a mi fiesta el sábado?"
+    },
+    {
+     "en": "walk",
+     "pt": "andar, caminar",
+     "ex_en": "We walk in the park every morning.",
+     "ex_pt": "Caminamos en el parque todas las mañanas."
+    },
+    {
+     "en": "run",
+     "pt": "correr",
+     "ex_en": "She runs three miles every day.",
+     "ex_pt": "Ella corre cinco kilómetros todos los días."
+    },
+    {
+     "en": "move",
+     "pt": "mover, moverse; mudarse",
+     "ex_en": "Please don't move while I take the picture.",
+     "ex_pt": "Por favor, no te muevas mientras tomo la foto."
+    },
+    {
+     "en": "turn",
+     "pt": "girar, doblar",
+     "ex_en": "Turn left at the next light.",
+     "ex_pt": "Gira a la izquierda en el próximo semáforo."
+    },
+    {
+     "en": "fall",
+     "pt": "caer, caerse",
+     "ex_en": "Be careful not to fall on the ice.",
+     "ex_pt": "Ten cuidado de no caerte en el hielo."
+    },
+    {
+     "en": "jump",
+     "pt": "saltar, brincar",
+     "ex_en": "The kids love to jump in the pool.",
+     "ex_pt": "A los niños les encanta saltar a la piscina."
+    },
+    {
+     "en": "climb",
+     "pt": "subir, escalar",
+     "ex_en": "We climbed the stairs to the fifth floor.",
+     "ex_pt": "Subimos las escaleras hasta el quinto piso."
+    },
+    {
+     "en": "slow down",
+     "pt": "desacelerar, ir más despacio",
+     "ex_en": "Slow down, you're driving too fast!",
+     "ex_pt": "¡Ve más despacio, estás conduciendo demasiado rápido!"
+    }
+   ]
+  },
+  {
+   "theme": "Estudio",
+   "items": [
+    {
+     "en": "study",
+     "pt": "estudiar",
+     "ex_en": "I study English every night.",
+     "ex_pt": "Estudio inglés todas las noches."
+    },
+    {
+     "en": "learn",
+     "pt": "aprender",
+     "ex_en": "She learns new words every day.",
+     "ex_pt": "Ella aprende palabras nuevas todos los días."
+    },
+    {
+     "en": "read",
+     "pt": "leer",
+     "ex_en": "Read chapter three before class.",
+     "ex_pt": "Lee el capítulo tres antes de la clase."
+    },
+    {
+     "en": "write",
+     "pt": "escribir",
+     "ex_en": "We have to write an essay this week.",
+     "ex_pt": "Tenemos que escribir un ensayo esta semana."
+    },
+    {
+     "en": "review",
+     "pt": "repasar, revisar",
+     "ex_en": "Let's review the notes before the test.",
+     "ex_pt": "Repasemos los apuntes antes del examen."
+    },
+    {
+     "en": "pass",
+     "pt": "aprobar (un examen)",
+     "ex_en": "I hope I pass the exam.",
+     "ex_pt": "Espero aprobar el examen."
+    },
+    {
+     "en": "fail",
+     "pt": "reprobar, suspender, ir mal",
+     "ex_en": "He failed math last semester.",
+     "ex_pt": "Él reprobó matemáticas el semestre pasado."
+    },
+    {
+     "en": "take notes",
+     "pt": "tomar apuntes",
+     "ex_en": "Always take notes during the lecture.",
+     "ex_pt": "Toma apuntes siempre durante la clase."
+    },
+    {
+     "en": "look up",
+     "pt": "buscar (en el diccionario/internet)",
+     "ex_en": "Look up the word in the dictionary.",
+     "ex_pt": "Busca la palabra en el diccionario."
+    },
+    {
+     "en": "memorize",
+     "pt": "memorizar, aprender de memoria",
+     "ex_en": "I need to memorize these formulas.",
+     "ex_pt": "Necesito memorizar estas fórmulas."
+    }
+   ]
+  },
+  {
+   "theme": "Phrasal verbs esenciales",
+   "items": [
+    {
+     "en": "show up",
+     "pt": "aparecer; llegar",
+     "ex_en": "He showed up an hour late to the meeting.",
+     "ex_pt": "Él llegó a la reunión con una hora de retraso."
+    },
+    {
+     "en": "go out",
+     "pt": "salir (a divertirse)",
+     "ex_en": "Do you want to go out tonight?",
+     "ex_pt": "¿Quieres salir esta noche?"
+    },
+    {
+     "en": "find out",
+     "pt": "enterarse; descubrir",
+     "ex_en": "I just found out she's moving to Chicago.",
+     "ex_pt": "Acabo de enterarme de que ella se va a mudar a Chicago."
+    },
+    {
+     "en": "pick up",
+     "pt": "recoger; pasar a buscar",
+     "ex_en": "Can you pick me up after work?",
+     "ex_pt": "¿Puedes pasar a recogerme después del trabajo?"
+    },
+    {
+     "en": "look for",
+     "pt": "buscar",
+     "ex_en": "I'm looking for my keys.",
+     "ex_pt": "Estoy buscando mis llaves."
+    },
+    {
+     "en": "come back",
+     "pt": "volver; regresar",
+     "ex_en": "When are you coming back from vacation?",
+     "ex_pt": "¿Cuándo vuelves de tus vacaciones?"
+    },
+    {
+     "en": "turn on",
+     "pt": "encender (aparato, luz)",
+     "ex_en": "Can you turn on the lights?",
+     "ex_pt": "¿Puedes encender las luces?"
+    },
+    {
+     "en": "give up",
+     "pt": "rendirse; darse por vencido",
+     "ex_en": "Don't give up now, you're almost there.",
+     "ex_pt": "No te rindas ahora, ya casi lo logras."
+    },
+    {
+     "en": "figure out",
+     "pt": "entender; resolver",
+     "ex_en": "I can't figure out how this app works.",
+     "ex_pt": "No logro entender cómo funciona esta app."
+    },
+    {
+     "en": "run out of",
+     "pt": "quedarse sin; acabarse",
+     "ex_en": "We ran out of milk again.",
+     "ex_pt": "Nos quedamos sin leche otra vez."
+    }
+   ]
+  }
+ ]
+}

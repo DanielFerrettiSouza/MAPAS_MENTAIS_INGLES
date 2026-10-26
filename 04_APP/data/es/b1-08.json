@@ -1,0 +1,177 @@
+{
+ "slug": "b1-08",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "take off",
+     "get off",
+     "check off",
+     "set up"
+    ],
+    "question_pt": "¿Cómo se dice 'despegar' en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Recójame aquí, por favor.",
+     "Déjeme aquí, por favor.",
+     "Espere aquí, por favor.",
+     "Vuelva aquí, por favor."
+    ],
+    "question_pt": "¿Qué significa 'Drop me off here, please'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "check in",
+     "stay in",
+     "check out",
+     "look around"
+    ],
+    "question_pt": "¿Qué phrasal verb usas al salir del hotel y pagar la cuenta?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "✈️",
+  "level": "B1",
+  "tip_pt": "Muchos phrasal verbs son separables: 'pick me up' es correcto. Los pronombres van siempre en medio, nunca al final.",
+  "branches": [
+   {
+    "emoji": "🛫",
+    "items": [
+     {
+      "en": "The plane took off late.",
+      "pt": "El avión despegó con retraso."
+     },
+     {
+      "en": "We touched down in Miami.",
+      "pt": "Aterrizamos en Miami."
+     },
+     {
+      "en": "I got on the plane.",
+      "pt": "Me subí al avión."
+     },
+     {
+      "en": "She got off the bus.",
+      "pt": "Ella se bajó del autobús."
+     }
+    ],
+    "label_en": "At the Airport",
+    "label_pt": "En el aeropuerto",
+    "illustration_prompt": "A cute hand-drawn airplane taking off from a runway, simple doodle style, no text"
+   },
+   {
+    "emoji": "🏨",
+    "items": [
+     {
+      "en": "We checked in at noon.",
+      "pt": "Hicimos el check-in al mediodía."
+     },
+     {
+      "en": "I need to check out.",
+      "pt": "Necesito hacer el check-out."
+     },
+     {
+      "en": "Let's stay in tonight.",
+      "pt": "Quedémonos en el hotel esta noche."
+     },
+     {
+      "en": "I'll freshen up quickly.",
+      "pt": "Voy a arreglarme rapidito."
+     }
+    ],
+    "label_en": "At the Hotel",
+    "label_pt": "En el hotel",
+    "illustration_prompt": "A cute hand-drawn hotel bell and room key on a counter, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚕",
+    "items": [
+     {
+      "en": "Can you pick me up?",
+      "pt": "¿Puedes recogerme?"
+     },
+     {
+      "en": "Drop me off here, please.",
+      "pt": "Déjeme aquí, por favor."
+     },
+     {
+      "en": "We got lost downtown.",
+      "pt": "Nos perdimos en el centro."
+     },
+     {
+      "en": "Let's head back now.",
+      "pt": "Volvamos ya."
+     }
+    ],
+    "label_en": "Getting Around",
+    "label_pt": "Desplazarse",
+    "illustration_prompt": "A cute hand-drawn yellow taxi with a smiling passenger waving, simple doodle style, no text"
+   },
+   {
+    "emoji": "📸",
+    "items": [
+     {
+      "en": "Let's look around the city.",
+      "pt": "Vamos a dar una vuelta por la ciudad."
+     },
+     {
+      "en": "We set off early.",
+      "pt": "Salimos temprano."
+     },
+     {
+      "en": "Let's stop by the museum.",
+      "pt": "Pasemos por el museo."
+     },
+     {
+      "en": "I want to eat out.",
+      "pt": "Quiero comer fuera."
+     }
+    ],
+    "label_en": "Sightseeing",
+    "label_pt": "Paseos",
+    "illustration_prompt": "A cute hand-drawn camera with a tiny landmark and map beside it, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Travel Phrasal Verbs",
+  "title_pt": "Phrasal Verbs de Viaje",
+  "exercises": [
+   {
+    "answer": "in",
+    "hint_pt": "(hacer el check-in)",
+    "sentence": "We need to check ___ at the hotel before 3 p.m."
+   },
+   {
+    "answer": "off",
+    "hint_pt": "(despegar)",
+    "sentence": "The plane will take ___ in ten minutes."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(recoger)",
+    "sentence": "Can you pick me ___ at the airport?"
+   },
+   {
+    "answer": "around",
+    "hint_pt": "(recorrer, dar una vuelta)",
+    "sentence": "Let's look ___ the city tomorrow morning."
+   }
+  ],
+  "summary_pt": "Verbos con partícula muy usados en aeropuertos, hoteles y paseos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-08/cover.png",
+  "cover_prompt": "A cute hand-drawn suitcase with travel stickers next to a small airplane and a map, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Can you pick me up at the airport?",
+   "wrong": "Can you pick up me at the airport?",
+   "why_pt": "El pronombre va en medio: 'pick me up', no al final."
+  }
+ }
+}

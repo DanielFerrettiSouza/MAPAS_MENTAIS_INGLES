@@ -6,6 +6,7 @@ import Logo, { LogoMark } from "@/components/Logo";
 import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/server";
 import { isAdmin } from "@/lib/admin";
 import RegistrationPixel from "@/components/RegistrationPixel";
+import { getLang, tr } from "@/lib/lang";
 import { IconCrown, IconDashboard, IconHelp, IconLogout, IconMaps, IconSettings, IconSparkles, IconBook, IconCalendar } from "@/components/Icons";
 
 export const dynamic = "force-dynamic";
@@ -35,6 +36,9 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
     await createSupabaseAdmin().from("profiles").update({ plan: "professor", credits: 999 }).eq("id", user.id);
   }
 
+  // Clientes da versão em espanhol: menu em espanhol, sem as ofertas e áudios que só existem em português.
+  const lang = getLang(user);
+  const es = lang === "es";
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -42,22 +46,22 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
           <span className="only-collapsed"><LogoMark size={30} /></span>
           <span className="only-open"><Logo size={28} /></span>
         </Link>
-        <Link href="/app" className="side-link"><IconDashboard /><span>Início</span></Link>
-        <Link href="/app/criar" className="side-link"><IconSparkles /><span>Criar mapa</span></Link>
-        <Link href="/app/mapas" className="side-link"><IconMaps /><span>Meus mapas</span></Link>
+        <Link href="/app" className="side-link"><IconDashboard /><span>{tr(lang, "Início", "Inicio")}</span></Link>
+        <Link href="/app/criar" className="side-link"><IconSparkles /><span>{tr(lang, "Criar mapa", "Crear mapa")}</span></Link>
+        <Link href="/app/mapas" className="side-link"><IconMaps /><span>{tr(lang, "Meus mapas", "Mis mapas")}</span></Link>
         <Link href="/app/biblioteca" className="side-link"><IconBook /><span>Biblioteca</span></Link>
-        <Link href="/app/plano" className="side-link"><IconCalendar /><span>Meu plano</span></Link>
+        <Link href="/app/plano" className="side-link"><IconCalendar /><span>{tr(lang, "Meu plano", "Mi plan")}</span></Link>
         <Link href="/app/kits" className="side-link"><IconMaps /><span>Kits</span></Link>
-        <Link href="/app/audiobooks" className="side-link"><IconBook /><span>Audiobooks</span></Link>
-        <Link href="/app/mapa-do-dia" className="side-link"><IconCalendar /><span>Mapa do dia</span></Link>
-        {canTeach(profile?.plan, user.email) && <Link href="/app/aulas" className="side-link"><IconCalendar /><span>Aula pronta</span></Link>}
-        <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>Configurações</span></Link>
+        {!es && <Link href="/app/audiobooks" className="side-link"><IconBook /><span>Audiobooks</span></Link>}
+        {!es && <Link href="/app/mapa-do-dia" className="side-link"><IconCalendar /><span>Mapa do dia</span></Link>}
+        {!es && canTeach(profile?.plan, user.email) && <Link href="/app/aulas" className="side-link"><IconCalendar /><span>Aula pronta</span></Link>}
+        <Link href="/app/configuracoes" className="side-link"><IconSettings /><span>{tr(lang, "Configurações", "Configuración")}</span></Link>
         {isAdmin(user.email) && <Link href="/app/admin" className="side-link"><IconDashboard /><span>Admin</span></Link>}
-        <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>Suporte</span></a>
+        <a href="mailto:mapasmentaisfalantes@gmail.com" className="side-link"><IconHelp /><span>{tr(lang, "Suporte", "Soporte")}</span></a>
         <div className="spacer" />
-        <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>
+        {!es && <Link href="/app/planos" className="side-link upgrade"><IconCrown /><span>Assinar plano</span></Link>}
         <form action="/auth/sair" method="post">
-          <button className="side-link"><IconLogout /><span>Sair</span></button>
+          <button className="side-link"><IconLogout /><span>{tr(lang, "Sair", "Salir")}</span></button>
         </form>
         <div className="user">
           <span className="avatar">{user.email?.[0]?.toUpperCase()}</span>

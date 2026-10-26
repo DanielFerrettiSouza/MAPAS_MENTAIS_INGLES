@@ -1,0 +1,177 @@
+{
+ "slug": "b1-02",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I have called him last night.",
+     "I called him last night.",
+     "I call him last night.",
+     "I has called him last night."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I live here since 2019.",
+     "I lived here since 2019.",
+     "I've lived here since 2019.",
+     "I'm living here for 2019."
+    ],
+    "question_pt": "¿Cómo se dice «Vivo aquí desde 2019»?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Voy a llegar.",
+     "Llegué ayer.",
+     "Nunca llegué.",
+     "Acabo de llegar."
+    ],
+    "question_pt": "¿Qué significa «I've just arrived»?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B1",
+  "tip_pt": "Con yesterday, last week, in 2020 o ago, usa el pasado simple. Con ever, never, already, yet y just, usa el presente perfecto.",
+  "branches": [
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "I saw her yesterday.",
+      "pt": "La vi ayer."
+     },
+     {
+      "en": "We moved two years ago.",
+      "pt": "Nos mudamos hace dos años."
+     },
+     {
+      "en": "He called me last night.",
+      "pt": "Me llamó anoche."
+     },
+     {
+      "en": "They visited Rio in 2020.",
+      "pt": "Visitaron Río en 2020."
+     }
+    ],
+    "label_en": "Finished Past",
+    "label_pt": "Pasado terminado",
+    "illustration_prompt": "A cute hand-drawn calendar page with a check mark, pastel colors, no text"
+   },
+   {
+    "emoji": "🌍",
+    "items": [
+     {
+      "en": "Have you ever been to Canada?",
+      "pt": "¿Alguna vez has estado en Canadá?"
+     },
+     {
+      "en": "I've never eaten sushi.",
+      "pt": "Nunca he comido sushi."
+     },
+     {
+      "en": "She has traveled a lot.",
+      "pt": "Ella ha viajado mucho."
+     },
+     {
+      "en": "I've seen that movie twice.",
+      "pt": "He visto esa película dos veces."
+     }
+    ],
+    "label_en": "Life Experience",
+    "label_pt": "Experiencias de vida",
+    "illustration_prompt": "A cute hand-drawn globe with a tiny backpack, pastel colors, no text"
+   },
+   {
+    "emoji": "📰",
+    "items": [
+     {
+      "en": "I've just arrived.",
+      "pt": "Acabo de llegar."
+     },
+     {
+      "en": "I've already finished.",
+      "pt": "Ya terminé."
+     },
+     {
+      "en": "Have you eaten yet?",
+      "pt": "¿Ya comiste?"
+     },
+     {
+      "en": "I've lost my keys!",
+      "pt": "¡Perdí mis llaves!"
+     }
+    ],
+    "label_en": "Recent News",
+    "label_pt": "Novedades recientes",
+    "illustration_prompt": "A cute hand-drawn smartphone with a sparkle notification bubble, pastel colors, no text"
+   },
+   {
+    "emoji": "🕰️",
+    "items": [
+     {
+      "en": "I've lived here since 2019.",
+      "pt": "Vivo aquí desde 2019."
+     },
+     {
+      "en": "We've known each other for years.",
+      "pt": "Nos conocemos desde hace años."
+     },
+     {
+      "en": "She has worked here for months.",
+      "pt": "Ella trabaja aquí desde hace meses."
+     },
+     {
+      "en": "How long have you been here?",
+      "pt": "¿Cuánto tiempo llevas aquí?"
+     }
+    ],
+    "label_en": "Up to Now",
+    "label_pt": "Hasta ahora",
+    "illustration_prompt": "A cute hand-drawn smiling clock with an arrow pointing forward, pastel colors, no text"
+   }
+  ],
+  "title_en": "Present Perfect vs Past",
+  "title_pt": "Perfect × Pasado",
+  "exercises": [
+   {
+    "answer": "ever",
+    "hint_pt": "(alguna vez)",
+    "sentence": "Have you ___ been to Canada?"
+   },
+   {
+    "answer": "lost",
+    "hint_pt": "(perdí)",
+    "sentence": "I ___ my keys two hours ago."
+   },
+   {
+    "answer": "already",
+    "hint_pt": "(ya)",
+    "sentence": "She has ___ finished her homework."
+   },
+   {
+    "answer": "since",
+    "hint_pt": "(desde)",
+    "sentence": "I have lived here ___ 2019."
+   }
+  ],
+  "summary_pt": "El pasado simple tiene un momento definido; el presente perfecto conecta el pasado con el presente.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-02/cover.png",
+  "cover_prompt": "A cute hand-drawn timeline with a small calendar on the left and a smiling clock on the right connected by a dotted arrow, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I've lived here since 2019.",
+   "wrong": "I live here since 2019.",
+   "why_pt": "Si la acción sigue hasta hoy, usa presente perfecto, no presente."
+  }
+ }
+}

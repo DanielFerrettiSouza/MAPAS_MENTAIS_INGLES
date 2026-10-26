@@ -1,0 +1,177 @@
+{
+ "slug": "b1-11",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm a fast learner.",
+     "I learn fastly.",
+     "I'm a quick learning.",
+     "I learn very rapid."
+    ],
+    "question_pt": "¿Cómo se dice \"Aprendo rápido\" en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I work here since 2019.",
+     "I have worked in sales.",
+     "I am working here since 2019.",
+     "I worked here since 2019."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "¿Cuáles son tus puntos fuertes?",
+     "¿Dónde está la escalera?",
+     "¿Cuáles son los próximos pasos?",
+     "¿Cuándo empiezo?"
+    ],
+    "question_pt": "¿Qué significa \"What are the next steps?\"",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "B1",
+  "tip_pt": "Usa el present perfect para hablar de experiencia: \"I have worked in sales for five years\" (y no \"I work since...\").",
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Thank you for having me.",
+      "pt": "Gracias por recibirme."
+     },
+     {
+      "en": "Let me tell you about myself.",
+      "pt": "Permítame hablarle un poco sobre mí."
+     },
+     {
+      "en": "I graduated in business.",
+      "pt": "Me gradué en administración de empresas."
+     },
+     {
+      "en": "I'm currently working as a designer.",
+      "pt": "Actualmente trabajo como diseñador."
+     }
+    ],
+    "label_en": "Introducing Yourself",
+    "label_pt": "Presentación",
+    "illustration_prompt": "Simple cute hand-drawn icon of a person waving hello with a friendly smile, no text"
+   },
+   {
+    "emoji": "📄",
+    "items": [
+     {
+      "en": "I have five years of experience.",
+      "pt": "Tengo cinco años de experiencia."
+     },
+     {
+      "en": "I was responsible for a team.",
+      "pt": "Era responsable de un equipo."
+     },
+     {
+      "en": "I have worked in sales.",
+      "pt": "He trabajado en ventas."
+     },
+     {
+      "en": "I led an important project.",
+      "pt": "Dirigí un proyecto importante."
+     }
+    ],
+    "label_en": "Experience",
+    "label_pt": "Experiencia",
+    "illustration_prompt": "Simple cute hand-drawn icon of a resume sheet with a star sticker, no letters or text"
+   },
+   {
+    "emoji": "💪",
+    "items": [
+     {
+      "en": "My greatest strength is teamwork.",
+      "pt": "Mi mayor fortaleza es el trabajo en equipo."
+     },
+     {
+      "en": "I'm a fast learner.",
+      "pt": "Aprendo rápido."
+     },
+     {
+      "en": "I work well under pressure.",
+      "pt": "Trabajo bien bajo presión."
+     },
+     {
+      "en": "I'm very organized.",
+      "pt": "Soy muy organizado."
+     }
+    ],
+    "label_en": "Strengths",
+    "label_pt": "Puntos fuertes",
+    "illustration_prompt": "Simple cute hand-drawn icon of a flexed arm with sparkles, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What does a typical day look like?",
+      "pt": "¿Cómo es un día típico?"
+     },
+     {
+      "en": "What are the next steps?",
+      "pt": "¿Cuáles son los próximos pasos?"
+     },
+     {
+      "en": "Is there room for growth?",
+      "pt": "¿Hay posibilidades de crecimiento?"
+     },
+     {
+      "en": "When can I expect an answer?",
+      "pt": "¿Cuándo puedo esperar una respuesta?"
+     }
+    ],
+    "label_en": "Asking Questions",
+    "label_pt": "Hacer preguntas",
+    "illustration_prompt": "Simple cute hand-drawn icon of a speech bubble with a question mark shape drawn as a doodle, no letters"
+   }
+  ],
+  "title_en": "Job Interview",
+  "title_pt": "Entrevista de trabajo",
+  "exercises": [
+   {
+    "answer": "experience",
+    "hint_pt": "(experiencia)",
+    "sentence": "I have five years of ___ in marketing."
+   },
+   {
+    "answer": "strength",
+    "hint_pt": "(punto fuerte)",
+    "sentence": "My greatest ___ is that I'm very organized."
+   },
+   {
+    "answer": "learner",
+    "hint_pt": "(aprendiz)",
+    "sentence": "I'm a fast ___ and I love challenges."
+   },
+   {
+    "answer": "steps",
+    "hint_pt": "(pasos)",
+    "sentence": "What are the next ___ in the process?"
+   }
+  ],
+  "summary_pt": "Frases esenciales para presentarte, responder preguntas y causar una buena impresión.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-11/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a smiling candidate shaking hands with an interviewer across a desk, with a resume and a coffee cup, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I have worked here since 2019.",
+   "wrong": "I work here since 2019.",
+   "why_pt": "Con \"since\" se usa present perfect, no present simple."
+  }
+ }
+}

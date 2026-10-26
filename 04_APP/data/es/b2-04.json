@@ -1,0 +1,185 @@
+{
+ "slug": "b2-04",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "He said me that he was late.",
+     "He told me that he was late.",
+     "He told that he was late to me.",
+     "He said to me he is late yesterday."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "he will went",
+     "he goes",
+     "he would go",
+     "he had go"
+    ],
+    "question_pt": "\"I will go\" en estilo indirecto se convierte en:",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "the day before",
+     "the next day",
+     "that day",
+     "yesterday"
+    ],
+    "question_pt": "\"tomorrow\" en estilo indirecto se convierte en:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🗣️",
+  "level": "B2",
+  "tip_pt": "Si el verbo introductorio va en pasado, retrocede el tiempo verbal: is → was, will → would, can → could.",
+  "branches": [
+   {
+    "emoji": "📢",
+    "items": [
+     {
+      "en": "She said that",
+      "pt": "Ella dijo que"
+     },
+     {
+      "en": "He told me that",
+      "pt": "Él me dijo que"
+     },
+     {
+      "en": "They explained that",
+      "pt": "Ellos explicaron que"
+     },
+     {
+      "en": "She promised to help",
+      "pt": "Ella prometió ayudar"
+     },
+     {
+      "en": "He admitted lying",
+      "pt": "Él admitió haber mentido"
+     }
+    ],
+    "label_en": "Reporting Verbs",
+    "label_pt": "Verbos introductorios",
+    "illustration_prompt": "Simple cute hand-drawn megaphone icon, pastel colors, no text"
+   },
+   {
+    "emoji": "⏪",
+    "items": [
+     {
+      "en": "\"I am tired\" → she was tired",
+      "pt": "\"Estoy cansada\" → ella estaba cansada"
+     },
+     {
+      "en": "\"I will go\" → he would go",
+      "pt": "\"Iré\" → él iría"
+     },
+     {
+      "en": "\"I can swim\" → she could swim",
+      "pt": "\"Sé nadar\" → ella sabía nadar"
+     },
+     {
+      "en": "\"I saw it\" → he had seen it",
+      "pt": "\"Lo vi\" → él lo había visto"
+     }
+    ],
+    "label_en": "Tense Backshift",
+    "label_pt": "Cambio de tiempo verbal",
+    "illustration_prompt": "Simple cute hand-drawn clock with a backward arrow, pastel colors, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "She asked if I was okay",
+      "pt": "Ella me preguntó si estaba bien"
+     },
+     {
+      "en": "He asked where I lived",
+      "pt": "Él me preguntó dónde vivía"
+     },
+     {
+      "en": "They wanted to know why",
+      "pt": "Ellos querían saber por qué"
+     },
+     {
+      "en": "She asked whether I agreed",
+      "pt": "Ella me preguntó si estaba de acuerdo"
+     }
+    ],
+    "label_en": "Reported Questions",
+    "label_pt": "Preguntas indirectas",
+    "illustration_prompt": "Simple cute hand-drawn question mark character with a small speech bubble, pastel colors, no text"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "today → that day",
+      "pt": "hoy → ese día"
+     },
+     {
+      "en": "tomorrow → the next day",
+      "pt": "mañana → al día siguiente"
+     },
+     {
+      "en": "yesterday → the day before",
+      "pt": "ayer → el día anterior"
+     },
+     {
+      "en": "here → there",
+      "pt": "aquí → allí"
+     },
+     {
+      "en": "now → then",
+      "pt": "ahora → en ese momento"
+     }
+    ],
+    "label_en": "Time and Place",
+    "label_pt": "Tiempo y lugar",
+    "illustration_prompt": "Simple cute hand-drawn calendar and map pin icon, pastel colors, no text"
+   }
+  ],
+  "title_en": "Reported Speech",
+  "title_pt": "Estilo indirecto",
+  "exercises": [
+   {
+    "answer": "told",
+    "hint_pt": "(le dijo a alguien)",
+    "sentence": "He ___ me he would call later."
+   },
+   {
+    "answer": "if",
+    "hint_pt": "(si)",
+    "sentence": "She asked me ___ I was ready."
+   },
+   {
+    "answer": "would",
+    "hint_pt": "(vendrían)",
+    "sentence": "They said they ___ come the next day."
+   },
+   {
+    "answer": "lived",
+    "hint_pt": "(vivía)",
+    "sentence": "He asked me where I ___."
+   }
+  ],
+  "summary_pt": "Usamos el estilo indirecto para contar lo que otra persona dijo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-04/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two friends chatting, one whispering to the other with a speech bubble containing only a small heart, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She told me that she was tired.",
+   "wrong": "She said me that she was tired.",
+   "why_pt": "\"Say\" no lleva persona directa: usa \"tell\" + persona."
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-10",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "We're behind schedule",
+     "We're on schedule",
+     "We're late time",
+     "We're after schedule"
+    ],
+    "question_pt": "¿Cómo se dice \"Vamos atrasados\" en un proyecto?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Te voy a enviar una carta",
+     "Te mantendré informado",
+     "Te voy a despedir",
+     "Lo voy a publicar en internet"
+    ],
+    "question_pt": "¿Qué significa \"I'll keep you posted\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Can we pull the deadline?",
+     "Can we delay the date line?",
+     "Can we push the deadline?",
+     "Can we move until Friday?"
+    ],
+    "question_pt": "¿Cómo pides aplazar la fecha límite?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📅",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa el present perfect para novedades recientes: \"I've finished the report\". Usa \"by\" para la fecha límite: \"by Friday\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "The deadline is by Friday",
+      "pt": "La fecha límite es el viernes"
+     },
+     {
+      "en": "We're running out of time",
+      "pt": "Se nos está acabando el tiempo"
+     },
+     {
+      "en": "Can we push the deadline?",
+      "pt": "¿Podemos aplazar la fecha límite?"
+     },
+     {
+      "en": "It's due next week",
+      "pt": "Vence la próxima semana"
+     }
+    ],
+    "label_en": "Deadlines",
+    "label_pt": "Plazos",
+    "illustration_key": "alarm clock",
+    "illustration_prompt": "An alarm clock on top of a stack of folders on an office desk, no text"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "Can you assign this task?",
+      "pt": "¿Puedes asignar esta tarea?"
+     },
+     {
+      "en": "I'm working on it",
+      "pt": "Estoy en ello"
+     },
+     {
+      "en": "Who's in charge of this?",
+      "pt": "¿Quién está a cargo de esto?"
+     },
+     {
+      "en": "Let's prioritize this one",
+      "pt": "Vamos a darle prioridad a esta"
+     }
+    ],
+    "label_en": "Tasks",
+    "label_pt": "Tareas",
+    "illustration_key": "clipboard",
+    "illustration_prompt": "A clipboard with blank checkboxes and a pen, no writing"
+   },
+   {
+    "emoji": "📈",
+    "items": [
+     {
+      "en": "We're on schedule",
+      "pt": "Vamos según lo previsto"
+     },
+     {
+      "en": "We're behind schedule",
+      "pt": "Vamos atrasados"
+     },
+     {
+      "en": "I've finished the report",
+      "pt": "Ya terminé el informe"
+     },
+     {
+      "en": "It's almost done",
+      "pt": "Está casi listo"
+     }
+    ],
+    "label_en": "Progress",
+    "label_pt": "Avance",
+    "illustration_key": "stairs flag",
+    "illustration_prompt": "A person climbing stairs toward a flag at the top, no text"
+   },
+   {
+    "emoji": "📢",
+    "items": [
+     {
+      "en": "Here's a quick update",
+      "pt": "Les doy una actualización rápida"
+     },
+     {
+      "en": "I'll keep you posted",
+      "pt": "Te mantendré informado"
+     },
+     {
+      "en": "Any updates on this?",
+      "pt": "¿Hay novedades sobre esto?"
+     },
+     {
+      "en": "Let's follow up tomorrow",
+      "pt": "Lo retomamos mañana"
+     }
+    ],
+    "label_en": "Updates",
+    "label_pt": "Novedades",
+    "illustration_key": "office meeting",
+    "illustration_prompt": "A woman speaking at a small office meeting while colleagues listen, no text"
+   }
+  ],
+  "title_en": "Project Updates",
+  "title_pt": "Novedades del proyecto",
+  "cover_key": "team meeting",
+  "exercises": [
+   {
+    "answer": "by",
+    "hint_pt": "(como máximo el)",
+    "sentence": "The deadline is ___ Friday."
+   },
+   {
+    "answer": "on",
+    "hint_pt": "(según lo previsto)",
+    "sentence": "We're ___ schedule this week."
+   },
+   {
+    "answer": "assign",
+    "hint_pt": "(asignar)",
+    "sentence": "Can you ___ this task to Mark?"
+   },
+   {
+    "answer": "posted",
+    "hint_pt": "(informado)",
+    "sentence": "I'll keep you ___."
+   }
+  ],
+  "summary_pt": "Frases para hablar de plazos, tareas y avance de proyectos en el trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/team-meeting.png",
+  "cover_prompt": "A small team of coworkers gathered around a desk with a wall calendar and sticky notes, discussing a project, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/alarm-clock.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/clipboard.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/stairs-flag.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-meeting.png"
+  ],
+  "common_mistake": {
+   "right": "I need to deliver the report by Friday.",
+   "wrong": "I need to deliver the report until Friday.",
+   "why_pt": "\"Hasta\" como fecha límite es \"by\", no \"until\"."
+  }
+ }
+}

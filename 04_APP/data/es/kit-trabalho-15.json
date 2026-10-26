@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-15",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm swamped with work today.",
+     "I'm full of work today.",
+     "I have many works today.",
+     "I'm drowning work today."
+    ],
+    "question_pt": "¿Cómo se dice 'Estoy hasta arriba de trabajo hoy'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Do you want to take a coffee?",
+     "Do you want to grab a coffee?",
+     "Do you want to make a coffee with me?",
+     "Do you want drinking coffee?"
+    ],
+    "question_pt": "¿Cuál es la forma natural de invitar a alguien a un café?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "¡Cuélgalo ahí!",
+     "¡Espera afuera!",
+     "¡Aguanta, tú puedes!",
+     "¡Hasta luego!"
+    ],
+    "question_pt": "¿Qué significa 'Hang in there!'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "☕",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa 'How's it going?' como saludo rápido; basta con responder 'Pretty good, you?', sin dar muchos detalles.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "How's it going?",
+      "pt": "¿Qué tal? ¿Cómo va todo?"
+     },
+     {
+      "en": "Pretty good, you?",
+      "pt": "Bastante bien, ¿y tú?"
+     },
+     {
+      "en": "Long time no see!",
+      "pt": "¡Cuánto tiempo!"
+     },
+     {
+      "en": "How was your weekend?",
+      "pt": "¿Qué tal tu fin de semana?"
+     }
+    ],
+    "label_en": "Greetings",
+    "label_pt": "Saludos",
+    "illustration_key": "waving hello",
+    "illustration_prompt": "A woman waving hello to a colleague in an office hallway"
+   },
+   {
+    "emoji": "☕",
+    "items": [
+     {
+      "en": "Do you want to grab a coffee?",
+      "pt": "¿Quieres ir por un café?"
+     },
+     {
+      "en": "Let's take a quick break.",
+      "pt": "Hagamos una pausa rápida."
+     },
+     {
+      "en": "Want to grab lunch?",
+      "pt": "¿Vamos a comer algo?"
+     },
+     {
+      "en": "I'm starving.",
+      "pt": "Me muero de hambre."
+     }
+    ],
+    "label_en": "Coffee Break",
+    "label_pt": "Pausa para el café",
+    "illustration_key": "coffee cups",
+    "illustration_prompt": "Two paper coffee cups on a small office kitchen counter"
+   },
+   {
+    "emoji": "📚",
+    "items": [
+     {
+      "en": "I'm swamped with work today.",
+      "pt": "Hoy estoy hasta arriba de trabajo."
+     },
+     {
+      "en": "It's been a crazy week.",
+      "pt": "Ha sido una semana de locos."
+     },
+     {
+      "en": "I'm running behind.",
+      "pt": "Voy atrasado con todo."
+     },
+     {
+      "en": "Hang in there!",
+      "pt": "¡Aguanta, tú puedes!"
+     }
+    ],
+    "label_en": "Workload",
+    "label_pt": "Carga de trabajo",
+    "illustration_key": "stack of folders",
+    "illustration_prompt": "A tall stack of blank folders on a desk next to a tired office worker"
+   },
+   {
+    "emoji": "🗓️",
+    "items": [
+     {
+      "en": "Any plans for the weekend?",
+      "pt": "¿Algún plan para el fin de semana?"
+     },
+     {
+      "en": "Let's catch up later.",
+      "pt": "Luego nos ponemos al día."
+     },
+     {
+      "en": "See you tomorrow!",
+      "pt": "¡Hasta mañana!"
+     },
+     {
+      "en": "Have a good one!",
+      "pt": "¡Que te vaya bien!"
+     }
+    ],
+    "label_en": "Plans & Goodbyes",
+    "label_pt": "Planes y despedidas",
+    "illustration_key": "leaving work",
+    "illustration_prompt": "A man putting on his backpack and waving goodbye near the office door"
+   }
+  ],
+  "title_en": "Office Small Talk",
+  "title_pt": "Charla en la oficina",
+  "cover_key": "office coffee chat",
+  "exercises": [
+   {
+    "answer": "grab",
+    "hint_pt": "(tomar/ir por)",
+    "sentence": "Do you want to ___ a coffee?"
+   },
+   {
+    "answer": "weekend",
+    "hint_pt": "(fin de semana)",
+    "sentence": "Any plans for the ___?"
+   },
+   {
+    "answer": "work",
+    "hint_pt": "(trabajo)",
+    "sentence": "I'm swamped with ___ today."
+   },
+   {
+    "answer": "catch",
+    "hint_pt": "(ponerse al día)",
+    "sentence": "Let's ___ up later."
+   }
+  ],
+  "summary_pt": "Frases informales para charlar con tus compañeros en el día a día del trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-coffee-chat.png",
+  "cover_prompt": "Two smiling coworkers chatting casually next to a coffee machine in a bright modern office",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waving-hello.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/coffee-cups.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/stack-of-folders.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/leaving-work.png"
+  ],
+  "common_mistake": {
+   "right": "Do you want to grab a coffee?",
+   "wrong": "Do you want to take a coffee?",
+   "why_pt": "Ojo: 'tomar un café' no es 'take'; usa 'grab' o 'get'."
+  }
+ }
+}

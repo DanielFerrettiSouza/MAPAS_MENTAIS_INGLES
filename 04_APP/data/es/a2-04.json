@@ -1,0 +1,169 @@
+{
+ "slug": "a2-04",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "What do you do?",
+     "What are you doing?",
+     "What you doing?",
+     "What is you doing?"
+    ],
+    "question_pt": "¿Cómo se dice '¿Qué estás haciendo?'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "He not sleeping.",
+     "He don't sleeping.",
+     "He isn't sleeping.",
+     "He aren't sleeping."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Hábito",
+     "Plano futuro",
+     "Passado",
+     "Ordem"
+    ],
+    "question_pt": "'We're traveling next week' indica:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "⏳",
+  "level": "A2",
+  "tip_pt": "Los verbos que terminan en -e pierden la e: make → making. La consonante final se duplica en sílaba corta: run → running.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I am working now.",
+      "pt": "Estoy trabajando ahora."
+     },
+     {
+      "en": "She is cooking dinner.",
+      "pt": "Ella está preparando la cena."
+     },
+     {
+      "en": "We are watching TV.",
+      "pt": "Estamos viendo la tele."
+     },
+     {
+      "en": "They are playing soccer.",
+      "pt": "Ellos están jugando al fútbol."
+     }
+    ],
+    "label_en": "Affirmative",
+    "label_pt": "Afirmativa",
+    "illustration_prompt": "Cute hand-drawn green check mark with a smiling face, no text"
+   },
+   {
+    "emoji": "❌",
+    "items": [
+     {
+      "en": "I'm not working today.",
+      "pt": "Hoy no estoy trabajando."
+     },
+     {
+      "en": "He isn't sleeping.",
+      "pt": "Él no está durmiendo."
+     },
+     {
+      "en": "We aren't studying now.",
+      "pt": "Ahora no estamos estudiando."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Negativa",
+    "illustration_prompt": "Cute hand-drawn red X with a little sleepy face, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What are you doing?",
+      "pt": "¿Qué estás haciendo?"
+     },
+     {
+      "en": "Are you listening to me?",
+      "pt": "¿Me estás escuchando?"
+     },
+     {
+      "en": "Is it raining outside?",
+      "pt": "¿Está lloviendo afuera?"
+     },
+     {
+      "en": "Where are you going?",
+      "pt": "¿Adónde vas?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "Cute hand-drawn speech bubble with a question mark shape, no letters"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "I'm meeting Ana tomorrow.",
+      "pt": "Mañana voy a ver a Ana."
+     },
+     {
+      "en": "We're traveling next week.",
+      "pt": "Vamos a viajar la semana que viene."
+     },
+     {
+      "en": "She's leaving tonight.",
+      "pt": "Ella se va esta noche."
+     }
+    ],
+    "label_en": "Future Plans",
+    "label_pt": "Planes futuros",
+    "illustration_prompt": "Cute hand-drawn calendar with a heart marked on one day, no text or numbers"
+   }
+  ],
+  "title_en": "Present Continuous",
+  "title_pt": "Presente continuo",
+  "exercises": [
+   {
+    "answer": "is",
+    "hint_pt": "(está)",
+    "sentence": "She ___ cooking dinner right now."
+   },
+   {
+    "answer": "watching",
+    "hint_pt": "(viendo)",
+    "sentence": "We are ___ TV in the living room."
+   },
+   {
+    "answer": "listening",
+    "hint_pt": "(escuchando)",
+    "sentence": "Are you ___ to me?"
+   },
+   {
+    "answer": "working",
+    "hint_pt": "(trabajando)",
+    "sentence": "I'm not ___ today."
+   }
+  ],
+  "summary_pt": "Lo usas para acciones que ocurren ahora o planes cercanos: am/is/are + verbo-ing.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-04/cover.png",
+  "cover_prompt": "Cute hand-drawn person typing on a laptop with a small clock nearby showing the action happening now, soft colors, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I am working now.",
+   "wrong": "I working now.",
+   "why_pt": "No olvides el verbo to be antes del -ing."
+  }
+ }
+}

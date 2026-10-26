@@ -1,0 +1,181 @@
+{
+ "slug": "c1-13",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "We're pressed for time",
+     "We're killing time",
+     "We have a good time",
+     "We're behind the times"
+    ],
+    "question_pt": "¿Cómo se dice \"Tenemos poco tiempo\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Para siempre",
+     "Por ahora",
+     "En el momento justo",
+     "Hace mucho tiempo"
+    ],
+    "question_pt": "¿Qué significa \"for the time being\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Ahead of its time",
+     "Time will tell",
+     "Behind the times",
+     "Take your time"
+    ],
+    "question_pt": "¿Qué expresión describe a alguien anticuado?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏳",
+  "level": "C1",
+  "tip_pt": "\"In time\" significa a tiempo (antes del límite); \"on time\" significa puntualmente, a la hora exacta acordada.",
+  "branches": [
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "We're running out of time",
+      "pt": "Se nos acaba el tiempo"
+     },
+     {
+      "en": "We're pressed for time",
+      "pt": "Vamos justos de tiempo"
+     },
+     {
+      "en": "It's a race against time",
+      "pt": "Es una carrera contra el tiempo"
+     },
+     {
+      "en": "Just in the nick of time",
+      "pt": "Justo a tiempo, en el último momento"
+     }
+    ],
+    "label_en": "Deadlines & Pressure",
+    "label_pt": "Plazos y presión",
+    "illustration_prompt": "A cute hand-drawn alarm clock ringing with tiny sweat drops, simple doodle style, no text"
+   },
+   {
+    "emoji": "🕰️",
+    "items": [
+     {
+      "en": "I'm just killing time",
+      "pt": "Solo estoy matando el tiempo"
+     },
+     {
+      "en": "Take your time",
+      "pt": "Tómate tu tiempo"
+     },
+     {
+      "en": "Let's make up for lost time",
+      "pt": "Recuperemos el tiempo perdido"
+     },
+     {
+      "en": "It's a waste of time",
+      "pt": "Es una pérdida de tiempo"
+     },
+     {
+      "en": "I'm buying time",
+      "pt": "Estoy ganando tiempo"
+     }
+    ],
+    "label_en": "Using Time",
+    "label_pt": "Usar el tiempo",
+    "illustration_prompt": "A cute hand-drawn pocket watch resting on a cozy cushion, doodle style, no text"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "It's only a matter of time",
+      "pt": "Es solo cuestión de tiempo"
+     },
+     {
+      "en": "The time is ripe",
+      "pt": "Ha llegado el momento oportuno"
+     },
+     {
+      "en": "Better late than never",
+      "pt": "Más vale tarde que nunca"
+     },
+     {
+      "en": "Time will tell",
+      "pt": "El tiempo lo dirá"
+     }
+    ],
+    "label_en": "Timing & Opportunity",
+    "label_pt": "Momento y oportunidad",
+    "illustration_prompt": "A cute hand-drawn target with a tiny clock at the center, doodle style, no text"
+   },
+   {
+    "emoji": "🔮",
+    "items": [
+     {
+      "en": "Ahead of its time",
+      "pt": "Adelantado a su época"
+     },
+     {
+      "en": "Behind the times",
+      "pt": "Anticuado, desfasado"
+     },
+     {
+      "en": "Once upon a time",
+      "pt": "Érase una vez"
+     },
+     {
+      "en": "For the time being",
+      "pt": "Por ahora, de momento"
+     }
+    ],
+    "label_en": "Past & Future",
+    "label_pt": "Pasado y futuro",
+    "illustration_prompt": "A cute hand-drawn crystal ball next to an old photo frame, doodle style, no text"
+   }
+  ],
+  "title_en": "Time Expressions",
+  "title_pt": "Expresiones con Time",
+  "exercises": [
+   {
+    "answer": "time",
+    "hint_pt": "(tiempo)",
+    "sentence": "We're running out of ___, so let's wrap this up."
+   },
+   {
+    "answer": "time",
+    "hint_pt": "(cuestión de tiempo)",
+    "sentence": "Don't worry, it's only a matter of ___."
+   },
+   {
+    "answer": "time",
+    "hint_pt": "(matar el tiempo)",
+    "sentence": "He's always killing ___ on his phone at the airport."
+   },
+   {
+    "answer": "time",
+    "hint_pt": "(adelantado a su época)",
+    "sentence": "That idea was ahead of its ___."
+   }
+  ],
+  "summary_pt": "Aprende expresiones idiomáticas con \"time\" para hablar de plazos, ritmo y oportunidades.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-13/cover.png",
+  "cover_prompt": "A cute hand-drawn hourglass with a smiling face, surrounded by small clocks and calendar pages floating around, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "We had a great time at the party.",
+   "wrong": "We passed a great time at the party.",
+   "why_pt": "\"Pasarlo bien\" se dice \"have a good time\", no \"pass\"."
+  }
+ }
+}

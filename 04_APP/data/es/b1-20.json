@@ -1,0 +1,173 @@
+{
+ "slug": "b1-20",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I use to watch cartoons.",
+     "I used to watch cartoons.",
+     "I used to watching cartoons.",
+     "I was used to watch cartoons."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I didn't used to like coffee.",
+     "I don't used to like coffee.",
+     "I didn't use to like coffee.",
+     "I not used to like coffee."
+    ],
+    "question_pt": "¿Cómo se dice \"Antes no me gustaba el café\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Va a haber un parque aquí",
+     "Hay un parque aquí",
+     "Antes había un parque aquí",
+     "Yo iba al parque aquí"
+    ],
+    "question_pt": "¿Qué significa \"There used to be a park here\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B1",
+  "tip_pt": "Usa \"used to\" + verbo en infinitivo sin \"to\". En la negativa y en la pregunta, con \"did\", escribe \"use to\" (sin la d).",
+  "branches": [
+   {
+    "emoji": "🧸",
+    "items": [
+     {
+      "en": "I used to play outside",
+      "pt": "Solía jugar en la calle"
+     },
+     {
+      "en": "I used to watch cartoons",
+      "pt": "Solía ver dibujos animados"
+     },
+     {
+      "en": "I used to ride my bike",
+      "pt": "Solía andar en bicicleta"
+     },
+     {
+      "en": "I used to collect stickers",
+      "pt": "Coleccionaba calcomanías"
+     }
+    ],
+    "label_en": "Childhood Habits",
+    "label_pt": "Hábitos de la infancia",
+    "illustration_prompt": "A cute hand-drawn teddy bear next to a small bicycle, simple icon, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I didn't use to like coffee",
+      "pt": "Antes no me gustaba el café"
+     },
+     {
+      "en": "She didn't use to exercise",
+      "pt": "Ella no solía hacer ejercicio"
+     },
+     {
+      "en": "We didn't use to travel",
+      "pt": "No solíamos viajar"
+     }
+    ],
+    "label_en": "Negative Form",
+    "label_pt": "Forma negativa",
+    "illustration_prompt": "A cute hand-drawn coffee cup with a gentle cross over it, simple icon, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Did you use to have pets?",
+      "pt": "¿Tenías mascotas?"
+     },
+     {
+      "en": "Where did you use to live?",
+      "pt": "¿Dónde vivías?"
+     },
+     {
+      "en": "What did you use to do?",
+      "pt": "¿Qué solías hacer?"
+     },
+     {
+      "en": "Did he use to smoke?",
+      "pt": "¿Él solía fumar?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a big question mark shape made of dots, simple icon, no letters"
+   },
+   {
+    "emoji": "🏡",
+    "items": [
+     {
+      "en": "I used to live in Recife",
+      "pt": "Vivía en Recife"
+     },
+     {
+      "en": "He used to have long hair",
+      "pt": "Él tenía el pelo largo"
+     },
+     {
+      "en": "There used to be a park here",
+      "pt": "Antes había un parque aquí"
+     },
+     {
+      "en": "We used to be neighbors",
+      "pt": "Éramos vecinos"
+     }
+    ],
+    "label_en": "Past States",
+    "label_pt": "Situaciones del pasado",
+    "illustration_prompt": "A cute hand-drawn small old house with a tree beside it, simple icon, no text"
+   }
+  ],
+  "title_en": "Used To",
+  "title_pt": "Solía",
+  "exercises": [
+   {
+    "answer": "used",
+    "hint_pt": "(solía)",
+    "sentence": "I ___ to live in a small town."
+   },
+   {
+    "answer": "like",
+    "hint_pt": "(gustar)",
+    "sentence": "She didn't use to ___ coffee."
+   },
+   {
+    "answer": "Did",
+    "hint_pt": "(auxiliar del pasado)",
+    "sentence": "___ you use to walk to school?"
+   },
+   {
+    "answer": "play",
+    "hint_pt": "(jugar)",
+    "sentence": "We used to ___ video games all night."
+   }
+  ],
+  "summary_pt": "\"Used to\" habla de hábitos y situaciones del pasado que ya no ocurren.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-20/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of a person looking at an old photo album showing their childhood memories, a bicycle and a vintage toy nearby, soft warm colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I usually drink coffee every morning.",
+   "wrong": "I use to drink coffee every morning.",
+   "why_pt": "\"Used to\" es solo pasado; para \"suelo\", usa \"usually\"."
+  }
+ }
+}

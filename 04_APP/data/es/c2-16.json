@@ -1,0 +1,177 @@
+{
+ "slug": "c2-16",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "The policy backfired badly.",
+     "The policy went back.",
+     "The politics fired out.",
+     "The policy shot itself."
+    ],
+    "question_pt": "¿Cómo se dice \"a la medida le salió el tiro por la culata\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Inventar datos",
+     "Elegir solo los datos que convienen",
+     "Analizar datos con cuidado",
+     "Borrar datos"
+    ],
+    "question_pt": "¿Qué significa \"cherry-picking the data\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Straw man",
+     "Loophole",
+     "Echo chamber",
+     "Safety net"
+    ],
+    "question_pt": "¿Qué expresión significa \"burbuja de opinión\" o \"cámara de eco\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🏛️",
+  "level": "C2",
+  "tip_pt": "Usa hedging (\"arguably\", \"to some extent\") para sonar ponderado; en inglés, las afirmaciones categóricas sobre política pueden parecer agresivas.",
+  "branches": [
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "That's a slippery slope argument.",
+      "pt": "Ese es un argumento de pendiente resbaladiza."
+     },
+     {
+      "en": "Let's not conflate the two issues.",
+      "pt": "No mezclemos las dos cuestiones."
+     },
+     {
+      "en": "You're cherry-picking the data.",
+      "pt": "Estás escogiendo solo los datos que te convienen."
+     },
+     {
+      "en": "That's a bit of a straw man.",
+      "pt": "Eso es un poco una falacia del hombre de paja."
+     }
+    ],
+    "label_en": "Political Debate",
+    "label_pt": "Debate político",
+    "illustration_prompt": "Two cute hand-drawn podiums facing each other with small sparks between them, no text"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "The bill passed along party lines.",
+      "pt": "El proyecto de ley se aprobó con un voto estrictamente partidista."
+     },
+     {
+      "en": "They're stoking the culture war.",
+      "pt": "Están avivando la guerra cultural."
+     },
+     {
+      "en": "It's an echo chamber.",
+      "pt": "Es una cámara de eco."
+     },
+     {
+      "en": "Common ground is hard to find.",
+      "pt": "Es difícil encontrar un punto en común."
+     }
+    ],
+    "label_en": "Polarization",
+    "label_pt": "Polarización",
+    "illustration_prompt": "A cute hand-drawn magnet pulling two groups of tiny figures apart, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "Inequality is deeply entrenched.",
+      "pt": "La desigualdad está profundamente arraigada."
+     },
+     {
+      "en": "The safety net is fraying.",
+      "pt": "La red de protección social se está deteriorando."
+     },
+     {
+      "en": "Marginalized communities bear the brunt.",
+      "pt": "Las comunidades marginadas son las más perjudicadas."
+     },
+     {
+      "en": "It's a systemic issue.",
+      "pt": "Es un problema estructural."
+     }
+    ],
+    "label_en": "Social Issues",
+    "label_pt": "Cuestiones sociales",
+    "illustration_prompt": "Cute hand-drawn hands of different colors holding a small heart together, no text"
+   },
+   {
+    "emoji": "📜",
+    "items": [
+     {
+      "en": "The policy backfired badly.",
+      "pt": "A la medida le salió el tiro por la culata."
+     },
+     {
+      "en": "There's no accountability whatsoever.",
+      "pt": "No hay ninguna rendición de cuentas."
+     },
+     {
+      "en": "They're exploiting a loophole.",
+      "pt": "Están aprovechando un vacío legal."
+     },
+     {
+      "en": "It's pure political posturing.",
+      "pt": "Es puro postureo político."
+     }
+    ],
+    "label_en": "Governance",
+    "label_pt": "Gobierno y gestión",
+    "illustration_prompt": "A cute hand-drawn scroll with a seal and a small gavel beside it, no letters"
+   }
+  ],
+  "title_en": "Politics & Society",
+  "title_pt": "Política y sociedad",
+  "exercises": [
+   {
+    "answer": "exploit",
+    "hint_pt": "(explotar, sacar provecho)",
+    "sentence": "Both parties are trying to ___ the culture war for votes."
+   },
+   {
+    "answer": "lines",
+    "hint_pt": "(líneas partidistas)",
+    "sentence": "The bill was passed along party ___."
+   },
+   {
+    "answer": "slope",
+    "hint_pt": "(pendiente resbaladiza)",
+    "sentence": "That's a slippery ___ argument."
+   },
+   {
+    "answer": "entrenched",
+    "hint_pt": "(arraigada)",
+    "sentence": "Inequality is deeply ___ in the system."
+   }
+  ],
+  "summary_pt": "Expresiones sofisticadas para debatir sobre política, polarización y cuestiones sociales con matices.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-16/cover.png",
+  "cover_prompt": "A cute hand-drawn capitol building with diverse people talking in speech bubbles containing only simple shapes, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "The government's policy is highly controversial.",
+   "wrong": "The politics of the government is very polemic.",
+   "why_pt": "\"Policy\" es una medida concreta; \"polemic\" no se usa como adjetivo."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "c2-02",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I suggest he goes.",
+     "I suggest he go.",
+     "I suggest he to go.",
+     "I suggest he going."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "is",
+     "was",
+     "be",
+     "being"
+    ],
+    "question_pt": "Completa: It's essential that he ___ there.",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I ask that he doesn't call",
+     "I ask that he not call",
+     "I ask that he don't call",
+     "I ask that he not calls"
+    ],
+    "question_pt": "¿Cómo se dice 'Pido que él no llame'?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "⚖️",
+  "level": "C2",
+  "tip_pt": "Después de suggest, insist, demand o it's essential that, usa la forma base: sin -s y sin to. En negativa: not + verbo.",
+  "branches": [
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "I suggest he go",
+      "pt": "Sugiero que él vaya"
+     },
+     {
+      "en": "She insisted he stay",
+      "pt": "Ella insistió en que él se quedara"
+     },
+     {
+      "en": "They demand she apologize",
+      "pt": "Exigen que ella pida disculpas"
+     },
+     {
+      "en": "We recommend you rest",
+      "pt": "Te recomendamos que descanses"
+     }
+    ],
+    "label_en": "Mandative Verbs",
+    "label_pt": "Verbos de sugerencia",
+    "illustration_prompt": "A cute hand-drawn glowing light bulb with a small smile, simple doodle style, no text"
+   },
+   {
+    "emoji": "❗",
+    "items": [
+     {
+      "en": "It's essential that he be there",
+      "pt": "Es esencial que él esté allí"
+     },
+     {
+      "en": "It's vital that she know",
+      "pt": "Es vital que ella lo sepa"
+     },
+     {
+      "en": "It's crucial that we leave",
+      "pt": "Es crucial que nos vayamos"
+     },
+     {
+      "en": "It's important that you listen",
+      "pt": "Es importante que escuches"
+     }
+    ],
+    "label_en": "Fixed Expressions",
+    "label_pt": "Expresiones con It's",
+    "illustration_prompt": "A cute hand-drawn alarm clock with an urgent face, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I ask that he not call",
+      "pt": "Pido que él no llame"
+     },
+     {
+      "en": "She suggested we not wait",
+      "pt": "Ella sugirió que no esperáramos"
+     },
+     {
+      "en": "It's best that you not worry",
+      "pt": "Es mejor que no te preocupes"
+     }
+    ],
+    "label_en": "Negative Form",
+    "label_pt": "Forma negativa",
+    "illustration_prompt": "A cute hand-drawn stop sign shape with a friendly face, no letters, doodle style"
+   },
+   {
+    "emoji": "🌈",
+    "items": [
+     {
+      "en": "If I were you",
+      "pt": "Si yo fuera tú"
+     },
+     {
+      "en": "I wish she were here",
+      "pt": "Ojalá ella estuviera aquí"
+     },
+     {
+      "en": "As if he were king",
+      "pt": "Como si él fuera rey"
+     },
+     {
+      "en": "So be it",
+      "pt": "Que así sea"
+     },
+     {
+      "en": "God bless America",
+      "pt": "Dios bendiga a América"
+     }
+    ],
+    "label_en": "Were Subjunctive",
+    "label_pt": "Hipótesis con were",
+    "illustration_prompt": "A cute hand-drawn dreamy cloud with a small rainbow, doodle style, no text"
+   }
+  ],
+  "title_en": "The Subjunctive",
+  "title_pt": "El subjuntivo",
+  "exercises": [
+   {
+    "answer": "drink",
+    "hint_pt": "(beber)",
+    "sentence": "The doctor recommended that she ___ more water."
+   },
+   {
+    "answer": "be",
+    "hint_pt": "(estar/ser)",
+    "sentence": "It's essential that everyone ___ on time."
+   },
+   {
+    "answer": "not",
+    "hint_pt": "(negativa: no salir)",
+    "sentence": "They insisted that he ___ not leave early."
+   },
+   {
+    "answer": "were",
+    "hint_pt": "(fuera)",
+    "sentence": "If I ___ you, I'd take the job."
+   }
+  ],
+  "summary_pt": "Después de verbos y expresiones de sugerencia o exigencia, se usa el verbo en su forma base.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-02/cover.png",
+  "cover_prompt": "A cute hand-drawn scene of a wise owl in a suit gently pointing forward, giving advice to a small fox, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I suggest that he go to the doctor.",
+   "wrong": "I suggest him to go to the doctor.",
+   "why_pt": "Suggest no admite objeto + to: usa that + forma base."
+  }
+ }
+}

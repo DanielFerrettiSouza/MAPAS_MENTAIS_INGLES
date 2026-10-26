@@ -1,0 +1,165 @@
+{
+ "slug": "a1-18",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Can I have the check?",
+     "Can I have the account?",
+     "Give me the count.",
+     "Can I see the menu?"
+    ],
+    "question_pt": "¿Cómo pides la cuenta en inglés estadounidense?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I want a burger.",
+     "Give me a burger.",
+     "I'd like a burger, please.",
+     "Burger now."
+    ],
+    "question_pt": "¿Cuál es la forma más educada de pedir?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "¿Cuánto cuesta?",
+     "¿Qué me recomienda?",
+     "¿Dónde está el baño?",
+     "Eso es todo."
+    ],
+    "question_pt": "¿Qué significa \"What do you recommend?\"",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🍽️",
+  "level": "A1",
+  "tip_pt": "Usa \"I'd like...\" o \"Can I have...?\" para pedir con educación. Evita \"I want\", que suena brusco.",
+  "branches": [
+   {
+    "emoji": "🚪",
+    "items": [
+     {
+      "en": "A table for two, please.",
+      "pt": "Una mesa para dos, por favor."
+     },
+     {
+      "en": "Do you have a table?",
+      "pt": "¿Tienen una mesa?"
+     },
+     {
+      "en": "Can I see the menu?",
+      "pt": "¿Puedo ver el menú?"
+     }
+    ],
+    "label_en": "Arriving",
+    "label_pt": "Al llegar",
+    "illustration_prompt": "A cute hand-drawn restaurant door with a small table and two chairs, simple icon, no text"
+   },
+   {
+    "emoji": "📝",
+    "items": [
+     {
+      "en": "I'd like a burger, please.",
+      "pt": "Quisiera una hamburguesa, por favor."
+     },
+     {
+      "en": "Can I have a salad?",
+      "pt": "¿Me puede traer una ensalada?"
+     },
+     {
+      "en": "What do you recommend?",
+      "pt": "¿Qué me recomienda?"
+     },
+     {
+      "en": "That's all, thanks.",
+      "pt": "Eso es todo, gracias."
+     }
+    ],
+    "label_en": "Ordering",
+    "label_pt": "Al pedir",
+    "illustration_prompt": "A cute hand-drawn notepad and pencil next to a smiling waiter, simple icon, no text"
+   },
+   {
+    "emoji": "🥤",
+    "items": [
+     {
+      "en": "A glass of water, please.",
+      "pt": "Un vaso de agua, por favor."
+     },
+     {
+      "en": "Orange juice, please.",
+      "pt": "Jugo de naranja (zumo de naranja), por favor."
+     },
+     {
+      "en": "A Coke, no ice.",
+      "pt": "Una Coca-Cola, sin hielo."
+     }
+    ],
+    "label_en": "Drinks",
+    "label_pt": "Bebidas",
+    "illustration_prompt": "A cute hand-drawn glass of juice, a water bottle and a soda cup, simple icon, no text"
+   },
+   {
+    "emoji": "💳",
+    "items": [
+     {
+      "en": "Can I have the check?",
+      "pt": "¿Me trae la cuenta?"
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "en": "Keep the change.",
+      "pt": "Quédese con el cambio."
+     }
+    ],
+    "label_en": "Paying",
+    "label_pt": "Al pagar",
+    "illustration_prompt": "A cute hand-drawn credit card and a small receipt tray, simple icon, no text or numbers"
+   }
+  ],
+  "title_en": "Ordering Food",
+  "title_pt": "Pedir comida",
+  "exercises": [
+   {
+    "answer": "menu",
+    "hint_pt": "(menú, carta)",
+    "sentence": "Can I see the ___, please?"
+   },
+   {
+    "answer": "like",
+    "hint_pt": "(quisiera)",
+    "sentence": "I'd ___ a burger, please."
+   },
+   {
+    "answer": "check",
+    "hint_pt": "(cuenta)",
+    "sentence": "Can I have the ___, please?"
+   },
+   {
+    "answer": "two",
+    "hint_pt": "(dos)",
+    "sentence": "A table for ___, please."
+   }
+  ],
+  "summary_pt": "Frases sencillas para pedir mesa, hacer tu pedido y pagar en el restaurante.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-18/cover.png",
+  "cover_prompt": "A cute hand-drawn cozy restaurant table with a plate of food, a glass of juice, and a smiling waiter holding a notepad, simple style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Can I have the check, please?",
+   "wrong": "Can I have the account, please?",
+   "why_pt": "\"La cuenta\" del restaurante es \"check\", no \"account\"."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "c1-09",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I agree in parts",
+     "I agree to some extent",
+     "I agree in some points only",
+     "I partly am agree"
+    ],
+    "question_pt": "¿Cómo se dice \"Estoy de acuerdo hasta cierto punto\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Eso es esencial",
+     "Eso está al lado",
+     "Eso no viene al caso",
+     "Eso es un buen punto"
+    ],
+    "question_pt": "¿Qué significa \"That's beside the point\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "With all due respect",
+     "Play devil's advocate",
+     "I'll grant you that",
+     "Agree to disagree"
+    ],
+    "question_pt": "¿Qué expresión sirve para defender a propósito la postura contraria?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🗣️",
+  "level": "C1",
+  "tip_pt": "Usa hedging (\"arguably\", \"it could be argued\") para sonar menos agresivo y más persuasivo en debates formales.",
+  "branches": [
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "The way I see it,",
+      "pt": "Desde mi punto de vista,"
+     },
+     {
+      "en": "It could be argued that",
+      "pt": "Se podría argumentar que"
+     },
+     {
+      "en": "The evidence clearly suggests",
+      "pt": "Las pruebas sugieren claramente"
+     },
+     {
+      "en": "What it boils down to is",
+      "pt": "En resumidas cuentas, lo que importa es"
+     }
+    ],
+    "label_en": "Making Your Case",
+    "label_pt": "Defiende tu postura",
+    "illustration_prompt": "Cute hand-drawn lightbulb with a raised fist, simple doodle style, no text"
+   },
+   {
+    "emoji": "✋",
+    "items": [
+     {
+      "en": "That's a fair point, but",
+      "pt": "Es un punto válido, pero"
+     },
+     {
+      "en": "I'm not entirely convinced",
+      "pt": "No estoy del todo convencido"
+     },
+     {
+      "en": "That doesn't necessarily follow",
+      "pt": "Eso no se deduce necesariamente"
+     },
+     {
+      "en": "With all due respect,",
+      "pt": "Con todo respeto,"
+     }
+    ],
+    "label_en": "Pushing Back",
+    "label_pt": "Rebatir argumentos",
+    "illustration_prompt": "Cute hand-drawn raised hand in a stop gesture, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I'll grant you that",
+      "pt": "En eso te doy la razón"
+     },
+     {
+      "en": "I agree to some extent",
+      "pt": "Estoy de acuerdo hasta cierto punto"
+     },
+     {
+      "en": "Let's agree to disagree",
+      "pt": "Aceptemos que no estamos de acuerdo"
+     },
+     {
+      "en": "You've got a point there",
+      "pt": "Ahí tienes razón"
+     }
+    ],
+    "label_en": "Conceding",
+    "label_pt": "Hacer concesiones",
+    "illustration_prompt": "Cute hand-drawn handshake doodle with small hearts, no text"
+   },
+   {
+    "emoji": "♟️",
+    "items": [
+     {
+      "en": "To play devil's advocate,",
+      "pt": "Haciendo de abogado del diablo,"
+     },
+     {
+      "en": "Let's not lose sight of",
+      "pt": "No perdamos de vista"
+     },
+     {
+      "en": "That's beside the point",
+      "pt": "Eso no viene al caso"
+     },
+     {
+      "en": "Correct me if I'm wrong,",
+      "pt": "Corrígeme si me equivoco,"
+     }
+    ],
+    "label_en": "Debate Moves",
+    "label_pt": "Estrategias de debate",
+    "illustration_prompt": "Cute hand-drawn chess knight piece with a thinking expression, no text"
+   }
+  ],
+  "title_en": "Debating & Arguing",
+  "title_pt": "Debatir y argumentar",
+  "exercises": [
+   {
+    "answer": "point",
+    "hint_pt": "(punto)",
+    "sentence": "That's a fair ___, but I see it differently."
+   },
+   {
+    "answer": "suggests",
+    "hint_pt": "(sugiere)",
+    "sentence": "The evidence clearly ___ that the policy failed."
+   },
+   {
+    "answer": "disagree",
+    "hint_pt": "(discrepar)",
+    "sentence": "Let's agree to ___."
+   },
+   {
+    "answer": "advocate",
+    "hint_pt": "(abogado)",
+    "sentence": "Just to play devil's ___, what if it works?"
+   }
+  ],
+  "summary_pt": "Expresiones avanzadas para defender ideas, rebatir argumentos y negociar consensos con elegancia.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-09/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two friendly cartoon characters at podiums exchanging speech bubbles with lightbulbs and scales, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I agree with you to some extent.",
+   "wrong": "I'm agree with you to some extent.",
+   "why_pt": "\"Agree\" ya es verbo; no copies \"estoy de acuerdo\" con \"am\"."
+  }
+ }
+}

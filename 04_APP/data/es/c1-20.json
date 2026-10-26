@@ -1,0 +1,177 @@
+{
+ "slug": "c1-20",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "ship or sheep",
+     "bad or bed",
+     "staff or stuff",
+     "good job"
+    ],
+    "question_pt": "¿Qué par mínimo contrasta una vocal corta y una larga?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Decir \"I fink so\" sin TH",
+     "Decir \"I sink so\"",
+     "Decir \"I thinks so\"",
+     "Decir \"I thinking so\""
+    ],
+    "question_pt": "¿Qué error es común entre hispanohablantes al decir \"I think so\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Añadir una \"e\" al final: \"jobe\"",
+     "Pronunciar la B final sin vocal extra",
+     "Cambiar la G por una R",
+     "Alargar la O de \"good\""
+    ],
+    "question_pt": "En \"Good job\", ¿qué detalle es importante cuidar?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🗣️",
+  "level": "C1",
+  "tip_pt": "Practica con pares mínimos: grábate diciendo los dos sonidos, compáralos y exagera la diferencia hasta que te salga natural al hablar rápido.",
+  "branches": [
+   {
+    "emoji": "👅",
+    "items": [
+     {
+      "en": "I think so",
+      "pt": "Creo que sí"
+     },
+     {
+      "en": "thirty-three thousand",
+      "pt": "treinta y tres mil"
+     },
+     {
+      "en": "Thanks for the thought",
+      "pt": "Gracias por el detalle"
+     },
+     {
+      "en": "Breathe in, then breathe out",
+      "pt": "Inhala y luego exhala"
+     }
+    ],
+    "label_en": "TH Sounds",
+    "label_pt": "Sonidos de TH",
+    "illustration_prompt": "A cute hand-drawn cartoon tongue peeking between two teeth, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎵",
+    "items": [
+     {
+      "en": "ship or sheep",
+      "pt": "barco u oveja"
+     },
+     {
+      "en": "full or fool",
+      "pt": "lleno o tonto"
+     },
+     {
+      "en": "live or leave",
+      "pt": "vivir o irse"
+     },
+     {
+      "en": "sit in the seat",
+      "pt": "siéntate en el asiento"
+     }
+    ],
+    "label_en": "Short vs. Long Vowels",
+    "label_pt": "Vocales cortas y largas",
+    "illustration_prompt": "A cute hand-drawn short note and a long stretched note side by side, simple doodle, no text"
+   },
+   {
+    "emoji": "😮",
+    "items": [
+     {
+      "en": "bad or bed",
+      "pt": "malo o cama"
+     },
+     {
+      "en": "sell or sale",
+      "pt": "vender o rebaja"
+     },
+     {
+      "en": "shut the cut",
+      "pt": "cierra la herida"
+     },
+     {
+      "en": "staff or stuff",
+      "pt": "personal o cosas"
+     }
+    ],
+    "label_en": "Open Vowels",
+    "label_pt": "Vocales abiertas",
+    "illustration_prompt": "A cute hand-drawn wide open cartoon mouth surprised, simple doodle, no text"
+   },
+   {
+    "emoji": "🛑",
+    "items": [
+     {
+      "en": "Good job",
+      "pt": "Buen trabajo"
+     },
+     {
+      "en": "Is it big?",
+      "pt": "¿Es grande?"
+     },
+     {
+      "en": "I've worked hard",
+      "pt": "He trabajado mucho"
+     },
+     {
+      "en": "Feel the wall",
+      "pt": "Toca la pared"
+     }
+    ],
+    "label_en": "Final Consonants",
+    "label_pt": "Consonantes finales",
+    "illustration_prompt": "A cute hand-drawn stop sign with a small smiling face, simple doodle, no text or letters"
+   }
+  ],
+  "title_en": "Tricky English Sounds",
+  "title_pt": "Sonidos difíciles",
+  "exercises": [
+   {
+    "answer": "think",
+    "hint_pt": "(creo)",
+    "sentence": "I ___ we should leave a bit earlier."
+   },
+   {
+    "answer": "sell",
+    "hint_pt": "(vender)",
+    "sentence": "She wants to ___ the old car next month."
+   },
+   {
+    "answer": "staff",
+    "hint_pt": "(bastón / vara)",
+    "sentence": "He bought a new ___ for the hike."
+   },
+   {
+    "answer": "shut",
+    "hint_pt": "(cerrar)",
+    "sentence": "Could you ___ the door, please?"
+   }
+  ],
+  "summary_pt": "Sonidos del inglés que los hispanohablantes suelen confundir y cómo practicarlos con pares mínimos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-20/cover.png",
+  "cover_prompt": "A cute hand-drawn smiling mouth with a visible tongue and sound waves coming out, surrounded by small musical notes, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I think so.",
+   "wrong": "I sink so. (for \"I think so\")",
+   "why_pt": "La TH se pronuncia con la lengua entre los dientes, no como S."
+  }
+ }
+}

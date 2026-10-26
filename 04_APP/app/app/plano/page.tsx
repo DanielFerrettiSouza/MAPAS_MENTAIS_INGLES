@@ -3,6 +3,9 @@ import { createSupabaseAdmin, getCurrentUser, getProfile } from "@/lib/supa/serv
 import { canUseLibrary } from "@/lib/library";
 import { CURRICULUM, GOALS, goalTag } from "@/lib/curriculum";
 import LibraryLocked from "@/components/LibraryLocked";
+import { getLang, tr } from "@/lib/lang";
+import { GOAL_LABELS_ES } from "@/lib/levelTest";
+import TITLES_ES from "@/data/es/titles.json";
 
 export const dynamic = "force-dynamic";
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -13,10 +16,13 @@ const PER_WEEK = 3;
 export default async function StudyPlanPage({ searchParams }: { searchParams: { objetivo?: string } }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
+  const lang = getLang(user);
+  const es = lang === "es";
+  const topic = (t: { slug: string; topic: string }) => (es ? (TITLES_ES as Record<string, string>)[t.slug] ?? t.topic : t.topic);
   const header = (
     <>
-      <h1 className="app-hello">Meu <span className="grad-text">plano de estudos</span></h1>
-      <p className="app-sub">3 mapas por semana, do seu nível em diante, priorizando o seu objetivo.</p>
+      <h1 className="app-hello">{tr(lang, "Meu", "Mi")} <span className="grad-text">{tr(lang, "plano de estudos", "plan de estudio")}</span></h1>
+      <p className="app-sub">{tr(lang, "3 mapas por semana, do seu nível em diante, priorizando o seu objetivo.", "3 mapas por semana, desde tu nivel en adelante, priorizando tu objetivo.")}</p>
     </>
   );
   if (!canUseLibrary(profile?.plan, user)) return <>{header}<LibraryLocked what="O plano de estudos" email={user.email} /></>;
@@ -48,27 +54,27 @@ export default async function StudyPlanPage({ searchParams }: { searchParams: { 
       {!user.user_metadata?.level_test && (
         <Link href="/app/nivel" className="lt-banner">
           <span>🧭</span>
-          <div><b>Comece pelo teste de nível</b><small>3 minutos para o seu plano começar no ponto certo.</small></div>
-          <em>Fazer agora →</em>
+          <div><b>{tr(lang, "Comece pelo teste de nível", "Empieza con el test de nivel")}</b><small>{tr(lang, "3 minutos para o seu plano começar no ponto certo.", "3 minutos para que tu plan empiece en el punto correcto.")}</small></div>
+          <em>{tr(lang, "Fazer agora →", "Hacerlo ahora →")}</em>
         </Link>
       )}
       <div className="chips" style={{ marginTop: 16 }}>
         {GOALS.map((g) => (
-          <Link key={g.tag} href={`/app/plano?objetivo=${g.tag}`} className={`chip ${g.tag === goal ? "chip-on" : ""}`}>{g.emoji} {g.label}</Link>
+          <Link key={g.tag} href={`/app/plano?objetivo=${g.tag}`} className={`chip ${g.tag === goal ? "chip-on" : ""}`}>{g.emoji} {es ? GOAL_LABELS_ES[g.tag] : g.label}</Link>
         ))}
       </div>
-      <p className="admin-note">Nível de partida: <b>{level}</b> · <Link href="/app/nivel">refazer teste de nível</Link>. Progresso: {doneCount}/{total} mapas.</p>
+      <p className="admin-note">{tr(lang, "Nível de partida", "Nivel de partida")}: <b>{level}</b> · <Link href="/app/nivel">{tr(lang, "refazer teste de nível", "rehacer test de nivel")}</Link>. {tr(lang, "Progresso", "Progreso")}: {doneCount}/{total} mapas.</p>
       <div className="plan-weeks">
         {weeks.map((w, i) => (
           <div key={i} className="plan-week">
-            <strong>Semana {i + 1}</strong>
+            <strong>{tr(lang, "Semana", "Semana")} {i + 1}</strong>
             <ul>
               {w.map((t) => (
                 <li key={t.slug}>
                   {have.has(t.slug) ? (
-                    <Link href={`/app/biblioteca/${t.slug}?de=plano&objetivo=${goal}`}>{done.has(t.slug) ? "✅" : "⬜"} {t.topic}</Link>
+                    <Link href={`/app/biblioteca/${t.slug}?de=plano&objetivo=${goal}`}>{done.has(t.slug) ? "✅" : "⬜"} {topic(t)}</Link>
                   ) : (
-                    <span style={{ opacity: 0.5 }}>⏳ {t.topic}</span>
+                    <span style={{ opacity: 0.5 }}>⏳ {topic(t)}</span>
                   )}
                   <small> · {t.level}</small>
                 </li>

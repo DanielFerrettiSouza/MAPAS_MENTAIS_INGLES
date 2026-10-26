@@ -1,0 +1,188 @@
+{
+ "slug": "kit-trabalho-06",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "You're on mute",
+     "You're muted off",
+     "You're silent mode",
+     "You're closed"
+    ],
+    "question_pt": "¿Cómo avisas a alguien de que tiene el micrófono silenciado?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Você terminou o namoro",
+     "Sua voz está falhando",
+     "Você saiu da chamada",
+     "Você está com eco"
+    ],
+    "question_pt": "¿Qué significa \"You're breaking up\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Let me divide my screen",
+     "Let me show my monitor",
+     "Let me share my screen",
+     "Let me open my screen"
+    ],
+    "question_pt": "¿Cómo se dice \"Déjame compartir mi pantalla\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💻",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"You're on mute\" si alguien tiene el micrófono silenciado; \"break up\" significa que la voz se corta.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Can everyone hear me?",
+      "pt": "¿Me escuchan todos?"
+     },
+     {
+      "en": "Let's wait for the others",
+      "pt": "Esperemos a los demás"
+     },
+     {
+      "en": "Can you see my camera?",
+      "pt": "¿Me ves en la cámara?"
+     },
+     {
+      "en": "Thanks for joining",
+      "pt": "Gracias por conectarse"
+     }
+    ],
+    "label_en": "Starting the Call",
+    "label_pt": "Al empezar la llamada",
+    "illustration_key": "waving person",
+    "illustration_prompt": "A man waving hello in front of a laptop webcam, flat illustration, no text"
+   },
+   {
+    "emoji": "🔇",
+    "items": [
+     {
+      "en": "You're on mute",
+      "pt": "Tienes el micrófono silenciado"
+     },
+     {
+      "en": "I can't hear you",
+      "pt": "No te escucho"
+     },
+     {
+      "en": "There's an echo",
+      "pt": "Hay eco"
+     },
+     {
+      "en": "You're breaking up",
+      "pt": "Se te corta la voz"
+     }
+    ],
+    "label_en": "Audio Problems",
+    "label_pt": "Problemas de audio",
+    "illustration_key": "microphone",
+    "illustration_prompt": "A pair of headphones next to a crossed-out microphone symbol drawn as an object, flat illustration, no text"
+   },
+   {
+    "emoji": "📶",
+    "items": [
+     {
+      "en": "My connection is slow",
+      "pt": "Mi conexión está lenta"
+     },
+     {
+      "en": "Your video froze",
+      "pt": "Se te congeló el video"
+     },
+     {
+      "en": "The call dropped",
+      "pt": "Se cortó la llamada"
+     },
+     {
+      "en": "Let me rejoin the call",
+      "pt": "Déjame volver a entrar a la llamada"
+     },
+     {
+      "en": "My internet is down",
+      "pt": "Se me cayó el internet"
+     }
+    ],
+    "label_en": "Connection Issues",
+    "label_pt": "Problemas de conexión",
+    "illustration_key": "wifi router",
+    "illustration_prompt": "A wireless router with blinking lights on a wooden table, flat illustration, no text"
+   },
+   {
+    "emoji": "🖥️",
+    "items": [
+     {
+      "en": "Let me share my screen",
+      "pt": "Déjame compartir mi pantalla"
+     },
+     {
+      "en": "Can you repeat that?",
+      "pt": "¿Puedes repetirlo?"
+     },
+     {
+      "en": "Sorry, go ahead",
+      "pt": "Perdón, adelante"
+     },
+     {
+      "en": "I'll send the link",
+      "pt": "Voy a mandar el enlace"
+     }
+    ],
+    "label_en": "During the Meeting",
+    "label_pt": "Durante la reunión",
+    "illustration_key": "online meeting",
+    "illustration_prompt": "A woman pointing at a laptop while presenting to colleagues in small video squares shown as faces, flat illustration, no text or writing"
+   }
+  ],
+  "title_en": "Video Calls",
+  "title_pt": "Videollamadas",
+  "cover_key": "laptop video call",
+  "exercises": [
+   {
+    "answer": "mute",
+    "hint_pt": "(silenciado)",
+    "sentence": "Sorry, you're on ___. We can't hear you."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(se corta)",
+    "sentence": "You're breaking ___. Can you repeat that?"
+   },
+   {
+    "answer": "screen",
+    "hint_pt": "(pantalla)",
+    "sentence": "Let me share my ___ so you can see the slides."
+   },
+   {
+    "answer": "slow",
+    "hint_pt": "(lenta)",
+    "sentence": "My connection is really ___ today."
+   }
+  ],
+  "summary_pt": "Frases útiles para participar en videollamadas y resolver problemas técnicos comunes.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/laptop-video-call.png",
+  "cover_prompt": "A young woman wearing headphones sitting at a desk, smiling and waving at a laptop with a webcam, cozy home office, flat illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waving-person.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/microphone.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/wifi-router.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/online-meeting.png"
+  ],
+  "common_mistake": {
+   "right": "Can you hear me? I think my internet is down.",
+   "wrong": "Can you hear me? I think my internet is falling.",
+   "why_pt": "En inglés el internet no \"se cae\": se dice \"is down\"."
+  }
+ }
+}

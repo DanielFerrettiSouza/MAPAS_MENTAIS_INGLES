@@ -1,0 +1,185 @@
+{
+ "slug": "a1-11",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I get dressed",
+     "I wake up",
+     "I go to bed",
+     "I get home"
+    ],
+    "question_pt": "¿Cómo se dice \"Me despierto\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Ceno",
+     "Desayuno",
+     "Almuerzo",
+     "Tomo café"
+    ],
+    "question_pt": "¿Qué significa \"I have lunch\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I go to bed",
+     "I go to work",
+     "I take a shower",
+     "I watch TV"
+    ],
+    "question_pt": "¿Qué frase significa \"Me acuesto\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "⏰",
+  "level": "A1",
+  "tip_pt": "Usa el presente simple para hablar de rutinas. Con he/she/it, añade -s: I wake up → she wakes up.",
+  "branches": [
+   {
+    "emoji": "🌅",
+    "items": [
+     {
+      "en": "I wake up",
+      "pt": "Me despierto"
+     },
+     {
+      "en": "I get up",
+      "pt": "Me levanto"
+     },
+     {
+      "en": "I take a shower",
+      "pt": "Me ducho"
+     },
+     {
+      "en": "I brush my teeth",
+      "pt": "Me cepillo los dientes"
+     },
+     {
+      "en": "I get dressed",
+      "pt": "Me visto"
+     }
+    ],
+    "label_en": "Morning",
+    "label_pt": "Mañana",
+    "illustration_prompt": "A cute hand-drawn sunrise over a small bed, simple pastel style, no text"
+   },
+   {
+    "emoji": "🍳",
+    "items": [
+     {
+      "en": "I have breakfast",
+      "pt": "Desayuno"
+     },
+     {
+      "en": "I have lunch",
+      "pt": "Almuerzo"
+     },
+     {
+      "en": "I have dinner",
+      "pt": "Ceno"
+     },
+     {
+      "en": "I drink coffee",
+      "pt": "Tomo café"
+     }
+    ],
+    "label_en": "Meals",
+    "label_pt": "Comidas",
+    "illustration_prompt": "A cute hand-drawn plate with a fried egg and a coffee cup, simple style, no text"
+   },
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "I go to work",
+      "pt": "Voy al trabajo"
+     },
+     {
+      "en": "I go to school",
+      "pt": "Voy a la escuela"
+     },
+     {
+      "en": "I take the bus",
+      "pt": "Tomo el autobús"
+     },
+     {
+      "en": "I study English",
+      "pt": "Estudio inglés"
+     },
+     {
+      "en": "I get home",
+      "pt": "Llego a casa"
+     }
+    ],
+    "label_en": "Work and Study",
+    "label_pt": "Trabajo y estudio",
+    "illustration_prompt": "A cute hand-drawn briefcase next to a stack of books, simple style, no text"
+   },
+   {
+    "emoji": "🌙",
+    "items": [
+     {
+      "en": "I watch TV",
+      "pt": "Veo la tele"
+     },
+     {
+      "en": "I relax at night",
+      "pt": "Me relajo por la noche"
+     },
+     {
+      "en": "I go to bed",
+      "pt": "Me acuesto"
+     },
+     {
+      "en": "I go to sleep at 11",
+      "pt": "Me duermo a las 11"
+     }
+    ],
+    "label_en": "Evening",
+    "label_pt": "Noche",
+    "illustration_prompt": "A cute hand-drawn crescent moon above a cozy bed with a pillow, simple style, no text"
+   }
+  ],
+  "title_en": "Daily Routine",
+  "title_pt": "Rutina diaria",
+  "exercises": [
+   {
+    "answer": "wake",
+    "hint_pt": "(me despierto)",
+    "sentence": "I ___ up at 7 a.m."
+   },
+   {
+    "answer": "teeth",
+    "hint_pt": "(dientes)",
+    "sentence": "I brush my ___ after breakfast."
+   },
+   {
+    "answer": "work",
+    "hint_pt": "(trabajo)",
+    "sentence": "I go to ___ by bus."
+   },
+   {
+    "answer": "have",
+    "hint_pt": "(ceno)",
+    "sentence": "I ___ dinner with my family."
+   }
+  ],
+  "summary_pt": "Frases sencillas para hablar de lo que haces todos los días.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-11/cover.png",
+  "cover_prompt": "A cute hand-drawn character stretching next to an alarm clock, a sun and a moon around, simple pastel style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I take a shower at night.",
+   "wrong": "I take a shower in the night.",
+   "why_pt": "Ojo: se dice \"at night\", no \"in the night\"."
+  }
+ }
+}

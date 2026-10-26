@@ -1,0 +1,173 @@
+{
+ "slug": "b1-05",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "If it will rain, I stay home.",
+     "If it rains, I'll stay home.",
+     "If it rain, I'll stay home.",
+     "If it rains, I staying home."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "If you study, you'll pass.",
+     "If I see her, I'll tell her.",
+     "If you heat ice, it melts.",
+     "If we hurry, we won't be late."
+    ],
+    "question_pt": "¿Qué frase es un ejemplo del condicional cero (hecho general)?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "If",
+     "When",
+     "Unless",
+     "As soon as"
+    ],
+    "question_pt": "Completa: '___ you hurry, you'll miss it.' (a menos que)",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔀",
+  "level": "B1",
+  "tip_pt": "Cero: if + presente, presente. Primero: if + presente, will + verbo. Nunca uses 'will' justo después de 'if'.",
+  "branches": [
+   {
+    "emoji": "🧪",
+    "items": [
+     {
+      "en": "If you heat ice, it melts.",
+      "pt": "Si calientas hielo, se derrite."
+     },
+     {
+      "en": "If I drink coffee, I can't sleep.",
+      "pt": "Si tomo café, no puedo dormir."
+     },
+     {
+      "en": "If plants don't get water, they die.",
+      "pt": "Si las plantas no reciben agua, se mueren."
+     },
+     {
+      "en": "If you press here, it opens.",
+      "pt": "Si presionas aquí, se abre."
+     }
+    ],
+    "label_en": "Zero Conditional",
+    "label_pt": "Condicional cero",
+    "illustration_prompt": "A cute hand-drawn ice cube melting into a puddle, simple doodle style, no text"
+   },
+   {
+    "emoji": "🌦️",
+    "items": [
+     {
+      "en": "If it rains, I'll stay home.",
+      "pt": "Si llueve, me quedaré en casa."
+     },
+     {
+      "en": "If you study, you'll pass.",
+      "pt": "Si estudias, aprobarás."
+     },
+     {
+      "en": "If I see her, I'll tell her.",
+      "pt": "Si la veo, se lo diré."
+     },
+     {
+      "en": "If we hurry, we won't be late.",
+      "pt": "Si nos damos prisa, no llegaremos tarde."
+     }
+    ],
+    "label_en": "First Conditional",
+    "label_pt": "Primer condicional",
+    "illustration_prompt": "A cute hand-drawn cloud with raindrops and a small umbrella, simple doodle style, no text"
+   },
+   {
+    "emoji": "🔗",
+    "items": [
+     {
+      "en": "Unless you hurry, you'll miss it.",
+      "pt": "A menos que te des prisa, lo perderás."
+     },
+     {
+      "en": "When I get home, I'll call.",
+      "pt": "Cuando llegue a casa, te llamo."
+     },
+     {
+      "en": "As soon as it stops, we'll go.",
+      "pt": "En cuanto pare, nos vamos."
+     },
+     {
+      "en": "I'll call you if I'm late.",
+      "pt": "Te llamo si llego tarde."
+     }
+    ],
+    "label_en": "Other Linkers",
+    "label_pt": "Otros conectores",
+    "illustration_prompt": "A cute hand-drawn chain link connecting two small circles, simple doodle style, no text"
+   },
+   {
+    "emoji": "⚠️",
+    "items": [
+     {
+      "en": "If you're tired, take a break.",
+      "pt": "Si estás cansado, tómate un descanso."
+     },
+     {
+      "en": "If you touch that, you'll get hurt.",
+      "pt": "Si tocas eso, te vas a hacer daño."
+     },
+     {
+      "en": "If you need help, just ask.",
+      "pt": "Si necesitas ayuda, solo pídela."
+     }
+    ],
+    "label_en": "Advice & Warnings",
+    "label_pt": "Consejos y advertencias",
+    "illustration_prompt": "A cute hand-drawn yellow warning triangle with a small smiling face, simple doodle style, no text or symbols"
+   }
+  ],
+  "title_en": "Zero & First Conditional",
+  "title_pt": "Condicional cero y primer condicional",
+  "exercises": [
+   {
+    "answer": "melts",
+    "hint_pt": "(se derrite)",
+    "sentence": "If you heat ice, it ___."
+   },
+   {
+    "answer": "will",
+    "hint_pt": "(futuro: me quedaré)",
+    "sentence": "If it rains, I ___ stay home."
+   },
+   {
+    "answer": "pass",
+    "hint_pt": "(aprobar)",
+    "sentence": "If you study, you'll ___ the test."
+   },
+   {
+    "answer": "if",
+    "hint_pt": "(si)",
+    "sentence": "I'll call you ___ I'm late."
+   }
+  ],
+  "summary_pt": "Usa 'if' para hechos generales (cero) y para posibilidades reales en el futuro (primero).",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-05/cover.png",
+  "cover_prompt": "A cute hand-drawn signpost with two arrows pointing to a sunny path and a rainy path, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "When I get home, I'll call you.",
+   "wrong": "When I will get home, I'll call you.",
+   "why_pt": "Después de 'when' usa presente, aunque en español digas 'llegue'."
+  }
+ }
+}

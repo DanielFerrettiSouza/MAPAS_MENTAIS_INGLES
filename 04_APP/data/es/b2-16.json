@@ -1,0 +1,177 @@
+{
+ "slug": "b2-16",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm feeling down.",
+     "I'm over the moon!",
+     "I'm on edge.",
+     "I'm fed up."
+    ],
+    "question_pt": "¿Qué expresión significa 'no quepo en mí de alegría'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'm cold in my stomach.",
+     "It gets on my nerves.",
+     "I have butterflies in my stomach.",
+     "I'm heartbroken."
+    ],
+    "question_pt": "¿Cómo dices que sientes nervios en el estómago antes de algo importante?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "That made my day.",
+     "I'm fed up with this.",
+     "I couldn't be happier.",
+     "I'm feeling a bit down."
+    ],
+    "question_pt": "¿Qué frase expresa irritación?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "💭",
+  "level": "B2",
+  "tip_pt": "Usa adjetivos en -ed para cómo te sientes (bored) y en -ing para lo que causa el sentimiento (boring).",
+  "branches": [
+   {
+    "emoji": "😄",
+    "items": [
+     {
+      "en": "I'm over the moon!",
+      "pt": "¡No quepo en mí de alegría!"
+     },
+     {
+      "en": "I'm thrilled to hear that.",
+      "pt": "Me alegra muchísimo saberlo."
+     },
+     {
+      "en": "That made my day.",
+      "pt": "Eso me alegró el día."
+     },
+     {
+      "en": "I couldn't be happier.",
+      "pt": "No podría estar más feliz."
+     }
+    ],
+    "label_en": "Happiness",
+    "label_pt": "Felicidad",
+    "illustration_prompt": "A cute hand-drawn smiling sun with sparkles, simple doodle style, no text"
+   },
+   {
+    "emoji": "😢",
+    "items": [
+     {
+      "en": "I'm feeling a bit down.",
+      "pt": "Estoy un poco decaído."
+     },
+     {
+      "en": "I'm heartbroken.",
+      "pt": "Tengo el corazón roto."
+     },
+     {
+      "en": "It really got to me.",
+      "pt": "Eso me afectó de verdad."
+     },
+     {
+      "en": "I'm not myself lately.",
+      "pt": "Últimamente no me siento yo mismo."
+     }
+    ],
+    "label_en": "Sadness",
+    "label_pt": "Tristeza",
+    "illustration_prompt": "A cute hand-drawn small rain cloud with a single teardrop, simple doodle style, no text"
+   },
+   {
+    "emoji": "😠",
+    "items": [
+     {
+      "en": "It really gets on my nerves.",
+      "pt": "Eso me saca de quicio."
+     },
+     {
+      "en": "I'm fed up with this.",
+      "pt": "Estoy harto de esto."
+     },
+     {
+      "en": "That drives me crazy.",
+      "pt": "Eso me vuelve loco."
+     },
+     {
+      "en": "I'm so annoyed right now.",
+      "pt": "Estoy muy molesto ahora mismo."
+     }
+    ],
+    "label_en": "Anger",
+    "label_pt": "Ira e irritación",
+    "illustration_prompt": "A cute hand-drawn steaming teapot with a grumpy face, simple doodle style, no text"
+   },
+   {
+    "emoji": "😰",
+    "items": [
+     {
+      "en": "I'm stressed out.",
+      "pt": "Estoy muy estresado."
+     },
+     {
+      "en": "I have butterflies in my stomach.",
+      "pt": "Siento un cosquilleo de nervios en el estómago."
+     },
+     {
+      "en": "I'm on edge today.",
+      "pt": "Hoy tengo los nervios de punta."
+     },
+     {
+      "en": "It's been weighing on me.",
+      "pt": "Eso me ha estado pesando."
+     }
+    ],
+    "label_en": "Worry",
+    "label_pt": "Ansiedad y preocupación",
+    "illustration_prompt": "A cute hand-drawn nervous little character biting its nails with tiny sweat drops, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Expressing Feelings",
+  "title_pt": "Expresa tus sentimientos",
+  "exercises": [
+   {
+    "answer": "stressed",
+    "hint_pt": "(estresado)",
+    "sentence": "I'm completely ___ out about the deadline."
+   },
+   {
+    "answer": "moon",
+    "hint_pt": "(luna)",
+    "sentence": "I'm over the ___ about the news!"
+   },
+   {
+    "answer": "nerves",
+    "hint_pt": "(nervios)",
+    "sentence": "It really gets on my ___."
+   },
+   {
+    "answer": "down",
+    "hint_pt": "(decaído, bajo de ánimo)",
+    "sentence": "I'm feeling a bit ___ today."
+   }
+  ],
+  "summary_pt": "Aprende a describir emociones en inglés con matices, intensidad y naturalidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-16/cover.png",
+  "cover_prompt": "A cute hand-drawn person surrounded by small floating bubbles with different facial expressions, happy, sad, angry and nervous, soft pastel colors, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm really bored at this party.",
+   "wrong": "I'm very boring at this party.",
+   "why_pt": "Boring describe la fiesta; bored describe cómo te sientes tú."
+  }
+ }
+}

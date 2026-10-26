@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-17",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "call off",
+     "put off",
+     "set up",
+     "take over"
+    ],
+    "question_pt": "¿Qué phrasal verb significa 'posponer'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "get back to you",
+     "turn you down",
+     "lay you off",
+     "fill you out"
+    ],
+    "question_pt": "¿Cómo se dice 'darte una respuesta'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "aceptar una oferta",
+     "entregar una oferta",
+     "rechazar una oferta",
+     "rellenar una oferta"
+    ],
+    "question_pt": "'Turn down an offer' significa:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Muchos phrasal verbs son separables: 'set up a meeting' o 'set a meeting up'. Con pronombres, ponlo siempre en medio: 'set it up'.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "set up a meeting",
+      "pt": "programar una reunión"
+     },
+     {
+      "en": "put off the meeting",
+      "pt": "posponer la reunión"
+     },
+     {
+      "en": "call off the meeting",
+      "pt": "cancelar la reunión"
+     },
+     {
+      "en": "bring up an idea",
+      "pt": "plantear una idea"
+     }
+    ],
+    "label_en": "Meetings",
+    "label_pt": "Reuniones",
+    "illustration_key": "meeting table",
+    "illustration_prompt": "A small group of coworkers sitting around a meeting table, no text"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "carry out a plan",
+      "pt": "llevar a cabo un plan"
+     },
+     {
+      "en": "take over the project",
+      "pt": "hacerse cargo del proyecto"
+     },
+     {
+      "en": "figure out the problem",
+      "pt": "averiguar cuál es el problema"
+     },
+     {
+      "en": "hand in the report",
+      "pt": "entregar el informe"
+     }
+    ],
+    "label_en": "Tasks",
+    "label_pt": "Tareas",
+    "illustration_key": "checklist",
+    "illustration_prompt": "A person checking items on a paper checklist with a pen, blank lines only, no text"
+   },
+   {
+    "emoji": "📞",
+    "items": [
+     {
+      "en": "call you back",
+      "pt": "devolverte la llamada"
+     },
+     {
+      "en": "follow up with the client",
+      "pt": "dar seguimiento al cliente"
+     },
+     {
+      "en": "get back to you",
+      "pt": "darte una respuesta"
+     },
+     {
+      "en": "reach out to the team",
+      "pt": "ponerse en contacto con el equipo"
+     }
+    ],
+    "label_en": "Communication",
+    "label_pt": "Comunicación",
+    "illustration_key": "phone call",
+    "illustration_prompt": "A smiling woman talking on a phone at her desk, no text"
+   },
+   {
+    "emoji": "📈",
+    "items": [
+     {
+      "en": "fill out an application",
+      "pt": "rellenar una solicitud"
+     },
+     {
+      "en": "turn down an offer",
+      "pt": "rechazar una oferta"
+     },
+     {
+      "en": "lay off workers",
+      "pt": "despedir a trabajadores"
+     },
+     {
+      "en": "step down as manager",
+      "pt": "dejar el cargo de gerente"
+     }
+    ],
+    "label_en": "Career",
+    "label_pt": "Carrera profesional",
+    "illustration_key": "career stairs",
+    "illustration_prompt": "A person climbing a staircase holding a briefcase, no text"
+   }
+  ],
+  "title_en": "Work Phrasal Verbs",
+  "title_pt": "Phrasal verbs del trabajo",
+  "cover_key": "office desk",
+  "exercises": [
+   {
+    "answer": "set",
+    "hint_pt": "(programar)",
+    "sentence": "Can we ___ up a meeting for Monday?"
+   },
+   {
+    "answer": "put",
+    "hint_pt": "(posponer)",
+    "sentence": "I need to ___ off the meeting until Friday."
+   },
+   {
+    "answer": "take",
+    "hint_pt": "(hacerse cargo)",
+    "sentence": "She will ___ over the project next week."
+   },
+   {
+    "answer": "follow",
+    "hint_pt": "(dar seguimiento)",
+    "sentence": "Let's ___ up with the client tomorrow."
+   }
+  ],
+  "summary_pt": "Verbos con partícula muy usados en reuniones, tareas y la rutina profesional.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-desk.png",
+  "cover_prompt": "A friendly office worker at a desk with a laptop, coffee mug, and notebook, colorful flat illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/meeting-table.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/checklist.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/phone-call.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/career-stairs.png"
+  ],
+  "common_mistake": {
+   "right": "I will call you back tomorrow.",
+   "wrong": "I will call back you tomorrow.",
+   "why_pt": "Con pronombre, este va entre el verbo y la partícula."
+  }
+ }
+}

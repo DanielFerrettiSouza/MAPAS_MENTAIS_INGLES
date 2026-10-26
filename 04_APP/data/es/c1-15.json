@@ -1,0 +1,185 @@
+{
+ "slug": "c1-15",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Mi internet está lenta",
+     "No tengo tiempo disponible",
+     "No entendí",
+     "No tengo autorización"
+    ],
+    "question_pt": "¿Qué significa \"I don't have the bandwidth\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Game changer",
+     "Heavy lift",
+     "Low-hanging fruit",
+     "Move the needle"
+    ],
+    "question_pt": "¿Qué expresión significa \"logros fáciles\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Vamos a apagar la computadora",
+     "Vamos a cancelar el proyecto",
+     "Hablemos de esto fuera de la reunión",
+     "Vamos a enviarlo por correo"
+    ],
+    "question_pt": "\"Let's take this offline\" quiere decir:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "C1",
+  "tip_pt": "Muchos buzzwords son phrasal verbs o sustantivos usados como verbos: \"circle back\", \"loop in\", \"action\". Úsalos con moderación para no sonar artificial.",
+  "branches": [
+   {
+    "emoji": "🗓️",
+    "items": [
+     {
+      "en": "Let's circle back on this.",
+      "pt": "Retomemos esto más adelante."
+     },
+     {
+      "en": "Let's take this offline.",
+      "pt": "Hablemos de esto fuera de la reunión."
+     },
+     {
+      "en": "Can you loop me in?",
+      "pt": "¿Me puedes incluir en la conversación?"
+     },
+     {
+      "en": "Let's touch base tomorrow.",
+      "pt": "Hablamos mañana."
+     },
+     {
+      "en": "We're on the same page.",
+      "pt": "Estamos alineados."
+     }
+    ],
+    "label_en": "Meetings",
+    "label_pt": "Reuniones",
+    "illustration_prompt": "Cute hand-drawn round table with chairs and small speech bubbles, no text"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "Think outside the box",
+      "pt": "Pensar fuera de la caja"
+     },
+     {
+      "en": "Low-hanging fruit",
+      "pt": "Logros fáciles"
+     },
+     {
+      "en": "Move the needle",
+      "pt": "Marcar una diferencia real"
+     },
+     {
+      "en": "A game changer",
+      "pt": "Algo revolucionario"
+     },
+     {
+      "en": "Leverage our strengths",
+      "pt": "Aprovechar nuestros puntos fuertes"
+     }
+    ],
+    "label_en": "Strategy",
+    "label_pt": "Estrategia",
+    "illustration_prompt": "Cute hand-drawn target with an arrow in the center, no text"
+   },
+   {
+    "emoji": "⏳",
+    "items": [
+     {
+      "en": "I don't have the bandwidth.",
+      "pt": "No tengo tiempo disponible."
+     },
+     {
+      "en": "It's on my radar.",
+      "pt": "Lo tengo en el radar."
+     },
+     {
+      "en": "Let's prioritize this.",
+      "pt": "Prioricemos esto."
+     },
+     {
+      "en": "That's a heavy lift.",
+      "pt": "Eso implica mucho trabajo."
+     }
+    ],
+    "label_en": "Workload",
+    "label_pt": "Carga de trabajo",
+    "illustration_prompt": "Cute hand-drawn hourglass next to a stack of papers, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "Great job, let's keep it up!",
+      "pt": "¡Excelente trabajo, sigamos así!"
+     },
+     {
+      "en": "Let's unpack that.",
+      "pt": "Analicemos eso a fondo."
+     },
+     {
+      "en": "What are the key takeaways?",
+      "pt": "¿Cuáles son las conclusiones principales?"
+     },
+     {
+      "en": "Any action items?",
+      "pt": "¿Hay tareas pendientes definidas?"
+     }
+    ],
+    "label_en": "Feedback",
+    "label_pt": "Retroalimentación",
+    "illustration_prompt": "Cute hand-drawn two speech bubbles with a thumbs up and a lightbulb, no text"
+   }
+  ],
+  "title_en": "Corporate Buzzwords",
+  "title_pt": "Jerga corporativa",
+  "exercises": [
+   {
+    "answer": "circle",
+    "hint_pt": "(retomar)",
+    "sentence": "Let's ___ back on this next week."
+   },
+   {
+    "answer": "in",
+    "hint_pt": "(incluir)",
+    "sentence": "Can you loop me ___ on that email?"
+   },
+   {
+    "answer": "box",
+    "hint_pt": "(caja)",
+    "sentence": "We need to think outside the ___."
+   },
+   {
+    "answer": "offline",
+    "hint_pt": "(fuera de la reunión)",
+    "sentence": "Let's take this conversation ___."
+   }
+  ],
+  "summary_pt": "Aprende expresiones típicas de las oficinas estadounidenses para reuniones, metas, plazos y retroalimentación.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-15/cover.png",
+  "cover_prompt": "Cute hand-drawn office scene with a laptop, coffee mug, speech bubbles with simple shapes, and a rising chart, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Let's discuss the budget in the meeting.",
+   "wrong": "Let's discuss about the budget in the meeting.",
+   "why_pt": "Ojo: \"discuss\" no lleva \"about\"; se dice \"discuss something\"."
+  }
+ }
+}

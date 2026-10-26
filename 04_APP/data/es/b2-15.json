@@ -1,0 +1,177 @@
+{
+ "slug": "b2-15",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "do a mistake",
+     "make a mistake",
+     "take a mistake",
+     "have a mistake"
+    ],
+    "question_pt": "¿Cómo se dice 'cometer un error'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "run",
+     "make",
+     "take",
+     "do"
+    ],
+    "question_pt": "¿Qué verbo completa '___ a risk' (correr un riesgo)?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "pagar la cuenta",
+     "prestar atención",
+     "hacer un cumplido",
+     "tener cuidado con el dinero"
+    ],
+    "question_pt": "¿Cuál es la traducción de 'pay attention'?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🧩",
+  "level": "B2",
+  "tip_pt": "Aprende bloques completos, no palabras sueltas: memoriza 'make a decision', no solo 'decision'. Así tu inglés sonará más natural.",
+  "branches": [
+   {
+    "emoji": "🛠️",
+    "items": [
+     {
+      "en": "make a decision",
+      "pt": "tomar una decisión"
+     },
+     {
+      "en": "make a mistake",
+      "pt": "cometer un error"
+     },
+     {
+      "en": "make progress",
+      "pt": "hacer progresos"
+     },
+     {
+      "en": "make an effort",
+      "pt": "hacer un esfuerzo"
+     }
+    ],
+    "label_en": "Make",
+    "label_pt": "Con MAKE",
+    "illustration_prompt": "Cute hand-drawn toolbox with a hammer, simple doodle style, pastel colors, no text"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "do me a favor",
+      "pt": "hacerme un favor"
+     },
+     {
+      "en": "do your best",
+      "pt": "dar lo mejor de ti"
+     },
+     {
+      "en": "do research",
+      "pt": "investigar"
+     },
+     {
+      "en": "do business",
+      "pt": "hacer negocios"
+     }
+    ],
+    "label_en": "Do",
+    "label_pt": "Con DO",
+    "illustration_prompt": "Cute hand-drawn checklist clipboard with check marks, doodle style, no text"
+   },
+   {
+    "emoji": "✋",
+    "items": [
+     {
+      "en": "take a break",
+      "pt": "tomar un descanso"
+     },
+     {
+      "en": "take a risk",
+      "pt": "correr un riesgo"
+     },
+     {
+      "en": "take advantage of",
+      "pt": "aprovecharse de"
+     },
+     {
+      "en": "take responsibility",
+      "pt": "asumir la responsabilidad"
+     }
+    ],
+    "label_en": "Take",
+    "label_pt": "Con TAKE",
+    "illustration_prompt": "Cute hand-drawn hand holding a small coffee cup, doodle style, pastel colors, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "pay attention",
+      "pt": "prestar atención"
+     },
+     {
+      "en": "pay a compliment",
+      "pt": "hacer un cumplido"
+     },
+     {
+      "en": "tell the truth",
+      "pt": "decir la verdad"
+     },
+     {
+      "en": "tell a lie",
+      "pt": "decir una mentira"
+     }
+    ],
+    "label_en": "Pay & Tell",
+    "label_pt": "Con PAY y TELL",
+    "illustration_prompt": "Cute hand-drawn speech bubble next to a coin, doodle style, pastel colors, no text or letters"
+   }
+  ],
+  "title_en": "Essential Collocations",
+  "title_pt": "Collocations esenciales",
+  "exercises": [
+   {
+    "answer": "do",
+    "hint_pt": "(hacer)",
+    "sentence": "Could you ___ me a favor and close the window?"
+   },
+   {
+    "answer": "pay",
+    "hint_pt": "(prestar)",
+    "sentence": "Don't forget to ___ attention to the details."
+   },
+   {
+    "answer": "take",
+    "hint_pt": "(tomar)",
+    "sentence": "Let's ___ a break and get some coffee."
+   },
+   {
+    "answer": "tell",
+    "hint_pt": "(decir)",
+    "sentence": "She always tries to ___ the truth."
+   }
+  ],
+  "summary_pt": "Las collocations son combinaciones naturales de palabras que los nativos usan juntas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-15/cover.png",
+  "cover_prompt": "Cute hand-drawn puzzle pieces fitting together, each piece with a small simple icon like a coffee cup, a clock and a lightbulb, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I need to make a decision today.",
+   "wrong": "I need to take a decision today.",
+   "why_pt": "'Tomar una decisión' es 'make a decision', no 'take'."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "c2-01",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "You needn't have bothered.",
+     "You must have bothered.",
+     "You'd better not.",
+     "You could at least apologize."
+    ],
+    "question_pt": "¿Qué frase indica que algo se hizo sin necesidad?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "He mustn't have known.",
+     "He can't have known.",
+     "He shouldn't know.",
+     "He needn't have known."
+    ],
+    "question_pt": "¿Cómo se dice 'Es imposible que lo supiera'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Debería necesitar algo.",
+     "Llame siempre.",
+     "Si necesita algo, llame.",
+     "¿Necesitó algo?"
+    ],
+    "question_pt": "'Should you need anything, call.' significa:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎚️",
+  "level": "C2",
+  "tip_pt": "Modal + have + participio habla del pasado: 'must have left' (deducción), 'should have called' (crítica), 'needn't have worried' (innecesario).",
+  "branches": [
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "She must have forgotten.",
+      "pt": "Seguro que se le olvidó."
+     },
+     {
+      "en": "He can't have known.",
+      "pt": "Es imposible que lo supiera."
+     },
+     {
+      "en": "They may well be right.",
+      "pt": "Es muy posible que tengan razón."
+     },
+     {
+      "en": "That'll be the mailman.",
+      "pt": "Seguro que es el cartero."
+     }
+    ],
+    "label_en": "Deduction",
+    "label_pt": "Deducción",
+    "illustration_prompt": "Cute hand-drawn magnifying glass over footprints, pastel colors, no text"
+   },
+   {
+    "emoji": "😤",
+    "items": [
+     {
+      "en": "You might have warned me!",
+      "pt": "¡Podrías haberme avisado!"
+     },
+     {
+      "en": "I should have known better.",
+      "pt": "Debí haberlo imaginado."
+     },
+     {
+      "en": "He would say that, wouldn't he?",
+      "pt": "Claro, era de esperar que dijera eso."
+     },
+     {
+      "en": "You could at least apologize.",
+      "pt": "Al menos podrías pedir perdón."
+     }
+    ],
+    "label_en": "Criticism",
+    "label_pt": "Crítica y arrepentimiento",
+    "illustration_prompt": "Cute hand-drawn little character with hand on forehead, pastel colors, no text"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "You needn't have bothered.",
+      "pt": "No tenías por qué molestarte."
+     },
+     {
+      "en": "I didn't need to go.",
+      "pt": "No tuve que ir."
+     },
+     {
+      "en": "We're bound to be late.",
+      "pt": "Seguro que llegamos tarde."
+     },
+     {
+      "en": "You'd better not.",
+      "pt": "Mejor no lo hagas."
+     }
+    ],
+    "label_en": "Necessity",
+    "label_pt": "Necesidad",
+    "illustration_prompt": "Cute hand-drawn balance scale with a feather and a stone, pastel colors, no text"
+   },
+   {
+    "emoji": "🎩",
+    "items": [
+     {
+      "en": "Might I suggest something?",
+      "pt": "¿Me permite sugerir algo?"
+     },
+     {
+      "en": "I would have thought so.",
+      "pt": "Yo habría pensado que sí."
+     },
+     {
+      "en": "Should you need anything, call.",
+      "pt": "Si necesita algo, llame."
+     },
+     {
+      "en": "I dare say you're right.",
+      "pt": "Me atrevería a decir que tienes razón."
+     }
+    ],
+    "label_en": "Polite Distance",
+    "label_pt": "Formalidad y cortesía",
+    "illustration_prompt": "Cute hand-drawn top hat next to a teacup, pastel colors, no text"
+   }
+  ],
+  "title_en": "Modal Nuances",
+  "title_pt": "Matices de los modales",
+  "exercises": [
+   {
+    "answer": "must",
+    "hint_pt": "(seguro que ya)",
+    "sentence": "The lights are off; they ___ have left already."
+   },
+   {
+    "answer": "might",
+    "hint_pt": "(podrías haber)",
+    "sentence": "You ___ have told me sooner!"
+   },
+   {
+    "answer": "needn't",
+    "hint_pt": "(no hacía falta)",
+    "sentence": "We ___ have worried; it went fine."
+   },
+   {
+    "answer": "might",
+    "hint_pt": "(por más que)",
+    "sentence": "Try as I ___, I couldn't open it."
+   }
+  ],
+  "summary_pt": "Los modales expresan grados sutiles de certeza, obligación, crítica y distancia cortés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-01/cover.png",
+  "cover_prompt": "Cute hand-drawn sliding dial with soft gradient from pale to bold, a small thinking cloud above, warm pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "He can't have known.",
+   "wrong": "He mustn't have known.",
+   "why_pt": "Para deducción negativa usa 'can't have', no 'mustn't have'."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "b2-17",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Believe it or not",
+     "Long story short",
+     "At first",
+     "Back when"
+    ],
+    "question_pt": "¿Qué expresión significa \"En resumen\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "has",
+     "was",
+     "had",
+     "did"
+    ],
+    "question_pt": "Completa: \"When I arrived, the movie ___ already started.\"",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "In the end",
+     "Right after that",
+     "To make matters worse",
+     "All of a sudden"
+    ],
+    "question_pt": "¿Cómo se dice \"Para colmo\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📖",
+  "level": "B2",
+  "tip_pt": "Usa el past continuous para el contexto, el simple past para las acciones principales y el past perfect para algo anterior.",
+  "branches": [
+   {
+    "emoji": "🌙",
+    "items": [
+     {
+      "en": "It was a rainy night",
+      "pt": "Era una noche lluviosa"
+     },
+     {
+      "en": "I was walking home",
+      "pt": "Iba caminando a casa"
+     },
+     {
+      "en": "A few years ago",
+      "pt": "Hace unos años"
+     },
+     {
+      "en": "Back when I was in college",
+      "pt": "Cuando estaba en la universidad"
+     }
+    ],
+    "label_en": "Setting the Scene",
+    "label_pt": "Crea el escenario",
+    "illustration_prompt": "Simple cute hand-drawn moon over a quiet street at night, no text"
+   },
+   {
+    "emoji": "➡️",
+    "items": [
+     {
+      "en": "At first",
+      "pt": "Al principio"
+     },
+     {
+      "en": "Then all of a sudden",
+      "pt": "Entonces, de repente"
+     },
+     {
+      "en": "Right after that",
+      "pt": "Justo después de eso"
+     },
+     {
+      "en": "In the end",
+      "pt": "Al final"
+     }
+    ],
+    "label_en": "Sequencing",
+    "label_pt": "Ordena los hechos",
+    "illustration_prompt": "Cute hand-drawn arrows connecting three small circles in a row, no text"
+   },
+   {
+    "emoji": "⏪",
+    "items": [
+     {
+      "en": "The movie had already started",
+      "pt": "La película ya había empezado"
+     },
+     {
+      "en": "I had never seen that before",
+      "pt": "Nunca había visto eso"
+     },
+     {
+      "en": "By the time we got there",
+      "pt": "Para cuando llegamos"
+     },
+     {
+      "en": "Everyone had left",
+      "pt": "Todos se habían ido"
+     }
+    ],
+    "label_en": "Earlier Events",
+    "label_pt": "Hechos anteriores",
+    "illustration_prompt": "Cute hand-drawn clock with hands spinning backward, no text"
+   },
+   {
+    "emoji": "😲",
+    "items": [
+     {
+      "en": "You'll never guess what happened",
+      "pt": "No vas a adivinar lo que pasó"
+     },
+     {
+      "en": "Believe it or not",
+      "pt": "Aunque no lo creas"
+     },
+     {
+      "en": "Long story short",
+      "pt": "En resumen"
+     },
+     {
+      "en": "To make matters worse",
+      "pt": "Para colmo"
+     }
+    ],
+    "label_en": "Keeping It Interesting",
+    "label_pt": "Mantén la atención",
+    "illustration_prompt": "Cute hand-drawn surprised face with wide eyes, no text"
+   }
+  ],
+  "title_en": "Telling Stories",
+  "title_pt": "Cuenta historias",
+  "exercises": [
+   {
+    "answer": "started",
+    "hint_pt": "(empezó)",
+    "sentence": "I was walking home when it suddenly ___ to rain."
+   },
+   {
+    "answer": "left",
+    "hint_pt": "(se habían ido)",
+    "sentence": "By the time we got there, everyone had ___."
+   },
+   {
+    "answer": "short",
+    "hint_pt": "(corta)",
+    "sentence": "Long story ___, we missed the flight."
+   },
+   {
+    "answer": "guess",
+    "hint_pt": "(adivinar)",
+    "sentence": "You'll never ___ what happened next."
+   }
+  ],
+  "summary_pt": "Usa los tiempos pasados y los conectores para narrar historias de forma atractiva.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-17/cover.png",
+  "cover_prompt": "Cute hand-drawn friends sitting around a campfire, one gesturing while telling a story, stars above, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I was walking home when it started to rain.",
+   "wrong": "I walked home when it started to rain.",
+   "why_pt": "Para la acción en curso, usa past continuous, como el imperfecto."
+  }
+ }
+}

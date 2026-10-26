@@ -16,10 +16,16 @@ Regras:
 - Cada ramo e o tema têm um único emoji que represente bem o conteúdo.
 - O quiz testa itens do próprio mapa.`;
 
+// Alunos da versão em espanhol: os campos *_pt (traduções, dicas, exercícios) saem em espanhol.
+const SPANISH_RULES = `
+
+IMPORTANTE: este aluno fala espanhol (América Latina e Espanha), não português. Todos os campos terminados em _pt e todos os itens "pt" devem ser escritos em espanhol neutro (sem voseo), tratando o aluno por "tú". O erro comum deve ser um erro real de falantes de espanhol. O inglês continua igual.`;
+
 export async function generateMapContent(input: {
   topic: string;
   level: string;
   goal?: string;
+  lang?: "pt" | "es";
 }): Promise<GeneratedMap> {
   const goalLine = input.goal ? `\nObjetivo do aluno: ${input.goal}` : "";
   const response = await anthropic.messages.parse({
@@ -27,7 +33,7 @@ export async function generateMapContent(input: {
     max_tokens: 16000,
     thinking: { type: "adaptive" },
     output_config: { effort: "low", format: zodOutputFormat(GeneratedMapSchema) },
-    system: SYSTEM_PROMPT,
+    system: input.lang === "es" ? SYSTEM_PROMPT + SPANISH_RULES : SYSTEM_PROMPT,
     messages: [
       {
         role: "user",

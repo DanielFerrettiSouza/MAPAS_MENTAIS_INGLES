@@ -1,0 +1,196 @@
+{
+ "slug": "kit-viagem-18",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Do I need a recipe?",
+     "Do I need a prescription?",
+     "Do I need a receipt?",
+     "Do I need a revenue?"
+    ],
+    "question_pt": "¿Cómo preguntas si necesitas receta médica?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Tengo sueño",
+     "Tengo fiebre",
+     "Estoy mareado",
+     "Tengo náuseas"
+    ],
+    "question_pt": "¿Qué significa \"I feel dizzy\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "ER",
+     "Drugstore",
+     "Clinic room",
+     "First room"
+    ],
+    "question_pt": "¿Cómo se dice \"urgencias\" (la sala de un hospital) en EE. UU.?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "💊",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"I have a...\" para síntomas: I have a headache, I have a fever. Para un dolor continuo, usa \"My back hurts\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "💊",
+    "items": [
+     {
+      "en": "Do I need a prescription?",
+      "pt": "¿Necesito receta?"
+     },
+     {
+      "en": "Can you recommend something?",
+      "pt": "¿Me puede recomendar algo?"
+     },
+     {
+      "en": "Is it over the counter?",
+      "pt": "¿Se vende sin receta?"
+     },
+     {
+      "en": "Any side effects?",
+      "pt": "¿Tiene efectos secundarios?"
+     },
+     {
+      "en": "I'd like to pick up my prescription.",
+      "pt": "Quisiera recoger mis medicamentos recetados."
+     }
+    ],
+    "label_en": "At the Pharmacy",
+    "label_pt": "En la farmacia",
+    "illustration_key": "medicine bottle",
+    "illustration_prompt": "A pharmacist holding a plain white medicine bottle and a blister pack of pills"
+   },
+   {
+    "emoji": "🤒",
+    "items": [
+     {
+      "en": "I have a sore throat.",
+      "pt": "Me duele la garganta."
+     },
+     {
+      "en": "I've had a fever since yesterday.",
+      "pt": "Tengo fiebre desde ayer."
+     },
+     {
+      "en": "I feel dizzy.",
+      "pt": "Estoy mareado."
+     },
+     {
+      "en": "My stomach hurts.",
+      "pt": "Me duele el estómago."
+     },
+     {
+      "en": "I'm allergic to penicillin.",
+      "pt": "Soy alérgico a la penicilina."
+     }
+    ],
+    "label_en": "Symptoms",
+    "label_pt": "Síntomas",
+    "illustration_key": "sick person",
+    "illustration_prompt": "A sick person in bed with a thermometer in mouth and a blanket"
+   },
+   {
+    "emoji": "⏰",
+    "items": [
+     {
+      "en": "Take two pills twice a day.",
+      "pt": "Tome dos pastillas dos veces al día."
+     },
+     {
+      "en": "Take it with food.",
+      "pt": "Tómelo con comida."
+     },
+     {
+      "en": "Don't drink alcohol.",
+      "pt": "No beba alcohol."
+     },
+     {
+      "en": "It may cause drowsiness.",
+      "pt": "Puede causar somnolencia."
+     }
+    ],
+    "label_en": "Instructions",
+    "label_pt": "Cómo tomarlo",
+    "illustration_key": "pills and water",
+    "illustration_prompt": "A glass of water next to two round pills on a table"
+   },
+   {
+    "emoji": "🚑",
+    "items": [
+     {
+      "en": "Call 911, it's an emergency!",
+      "pt": "¡Llama a emergencias, es urgente!"
+     },
+     {
+      "en": "Where's the nearest ER?",
+      "pt": "¿Dónde está la sala de urgencias más cercana?"
+     },
+     {
+      "en": "He's not breathing.",
+      "pt": "No está respirando."
+     },
+     {
+      "en": "I think I sprained my ankle.",
+      "pt": "Creo que me torcí el tobillo."
+     },
+     {
+      "en": "She's bleeding a lot.",
+      "pt": "Está sangrando mucho."
+     }
+    ],
+    "label_en": "Emergencies",
+    "label_pt": "Emergencias",
+    "illustration_key": "ambulance",
+    "illustration_prompt": "A white ambulance with flashing lights parked outside a hospital entrance"
+   }
+  ],
+  "title_en": "Pharmacy & Emergencies",
+  "title_pt": "Farmacia y emergencias",
+  "cover_key": "pharmacy counter",
+  "exercises": [
+   {
+    "answer": "prescription",
+    "hint_pt": "(receta médica)",
+    "sentence": "Do I need a ___ for this medicine?"
+   },
+   {
+    "answer": "day",
+    "hint_pt": "(día)",
+    "sentence": "Take two pills twice a ___."
+   },
+   {
+    "answer": "emergency",
+    "hint_pt": "(emergencia)",
+    "sentence": "Call 911, it's an ___!"
+   },
+   {
+    "answer": "sprained",
+    "hint_pt": "(me torcí)",
+    "sentence": "I think I ___ my ankle."
+   }
+  ],
+  "summary_pt": "Aprende a pedir medicamentos, describir síntomas y pedir ayuda en emergencias médicas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/pharmacy-counter.png",
+  "cover_prompt": "A friendly pharmacist behind a pharmacy counter handing a small paper bag of medicine to a customer, shelves with plain unlabeled bottles behind",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/medicine-bottle.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/sick-person.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/pills-and-water.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/ambulance.png"
+  ],
+  "common_mistake": {
+   "right": "I have a fever.",
+   "wrong": "I have fever.",
+   "why_pt": "En inglés, \"fever\" lleva artículo: \"a fever\", aunque digas \"tengo fiebre\"."
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-02",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "What is your salary wish?",
+     "What are your salary expectations?",
+     "How much you want win?",
+     "What salary do you pretend?"
+    ],
+    "question_pt": "¿Cómo se pregunta \"¿Cuáles son sus expectativas salariales?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'm a fast learner.",
+     "I learn fastly.",
+     "I'm a quick teacher.",
+     "I have fast learning."
+    ],
+    "question_pt": "¿Qué frase significa \"Aprendo rápido\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "¿Por qué dejó su trabajo?",
+     "¿Cuándo puede empezar?",
+     "¿Por qué deberíamos contratarlo?",
+     "¿Por qué quiere este puesto?"
+    ],
+    "question_pt": "¿Qué significa \"Why should we hire you?\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa el present perfect para hablar de experiencia: \"I have worked in sales for five years\", no \"I work in sales since...\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Tell me a little about yourself.",
+      "pt": "Hábleme un poco de usted."
+     },
+     {
+      "en": "Why do you want this job?",
+      "pt": "¿Por qué quiere este puesto?"
+     },
+     {
+      "en": "Why should we hire you?",
+      "pt": "¿Por qué deberíamos contratarlo?"
+     },
+     {
+      "en": "How did you hear about us?",
+      "pt": "¿Cómo se enteró de nosotros?"
+     }
+    ],
+    "label_en": "About You",
+    "label_pt": "Sobre ti",
+    "illustration_key": "confident candidate",
+    "illustration_prompt": "A smiling young professional sitting in a chair, speaking confidently with hand gestures"
+   },
+   {
+    "emoji": "💪",
+    "items": [
+     {
+      "en": "What are your greatest strengths?",
+      "pt": "¿Cuáles son sus mayores fortalezas?"
+     },
+     {
+      "en": "What is your biggest weakness?",
+      "pt": "¿Cuál es su mayor debilidad?"
+     },
+     {
+      "en": "I'm a fast learner.",
+      "pt": "Aprendo rápido."
+     },
+     {
+      "en": "I work well under pressure.",
+      "pt": "Trabajo bien bajo presión."
+     }
+    ],
+    "label_en": "Strengths & Weaknesses",
+    "label_pt": "Fortalezas y debilidades",
+    "illustration_key": "balance scale",
+    "illustration_prompt": "A balance scale with a flexed arm muscle icon-like weight on one side and a small feather on the other"
+   },
+   {
+    "emoji": "📁",
+    "items": [
+     {
+      "en": "Tell me about your last job.",
+      "pt": "Hábleme de su último empleo."
+     },
+     {
+      "en": "I have worked in sales.",
+      "pt": "He trabajado en ventas."
+     },
+     {
+      "en": "Why did you leave?",
+      "pt": "¿Por qué dejó ese trabajo?"
+     },
+     {
+      "en": "Describe a challenge you faced.",
+      "pt": "Describa un desafío que haya enfrentado."
+     }
+    ],
+    "label_en": "Experience",
+    "label_pt": "Experiencia",
+    "illustration_key": "briefcase",
+    "illustration_prompt": "A neat stack of folders and a briefcase on an office desk"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "Where do you see yourself in five years?",
+      "pt": "¿Dónde se ve dentro de cinco años?"
+     },
+     {
+      "en": "What are your salary expectations?",
+      "pt": "¿Cuáles son sus expectativas salariales?"
+     },
+     {
+      "en": "When can you start?",
+      "pt": "¿Cuándo puede empezar?"
+     },
+     {
+      "en": "Do you have any questions?",
+      "pt": "¿Tiene alguna pregunta?"
+     }
+    ],
+    "label_en": "Future & Salary",
+    "label_pt": "Futuro y salario",
+    "illustration_key": "dartboard",
+    "illustration_prompt": "A dartboard with a dart in the center next to a small stack of coins"
+   }
+  ],
+  "title_en": "Job Interview Questions",
+  "title_pt": "Preguntas de entrevista",
+  "cover_key": "job interview",
+  "exercises": [
+   {
+    "answer": "yourself",
+    "hint_pt": "(usted mismo)",
+    "sentence": "Tell me a little about ___."
+   },
+   {
+    "answer": "strengths",
+    "hint_pt": "(fortalezas)",
+    "sentence": "What are your greatest ___?"
+   },
+   {
+    "answer": "learner",
+    "hint_pt": "(alguien que aprende)",
+    "sentence": "I'm a fast ___."
+   },
+   {
+    "answer": "years",
+    "hint_pt": "(años)",
+    "sentence": "Where do you see yourself in five ___?"
+   }
+  ],
+  "summary_pt": "Preguntas frecuentes en entrevistas de trabajo y cómo responderlas con seguridad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/job-interview.png",
+  "cover_prompt": "A friendly job interview scene: a candidate in business clothes shaking hands with an interviewer across a desk in a bright office",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/confident-candidate.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/balance-scale.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/briefcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/dartboard.png"
+  ],
+  "common_mistake": {
+   "right": "I have worked here since 2019.",
+   "wrong": "I work here since 2019.",
+   "why_pt": "Con \"since\" se usa present perfect, no presente simple."
+  }
+ }
+}

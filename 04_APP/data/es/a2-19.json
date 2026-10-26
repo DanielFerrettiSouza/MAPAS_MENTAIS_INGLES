@@ -1,0 +1,181 @@
+{
+ "slug": "a2-19",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Wait me, please.",
+     "Hold on, please.",
+     "Stay one moment.",
+     "Keep the line."
+    ],
+    "question_pt": "¿Cómo se dice \"Espere un momento, por favor\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Você está terminando comigo.",
+     "Você está quebrando o celular.",
+     "Sua ligação está cortando.",
+     "Você está atrasado."
+    ],
+    "question_pt": "¿Qué significa \"You're breaking up\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I am Ana.",
+     "Here is Ana.",
+     "This is Ana speaking.",
+     "Ana is me."
+    ],
+    "question_pt": "¿Cuál es la forma correcta de presentarte por teléfono?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📞",
+  "level": "A2",
+  "tip_pt": "Por teléfono, usa \"This is...\" para presentarte, no \"I am...\". Ej.: \"Hi, this is Ana.\"",
+  "branches": [
+   {
+    "emoji": "☎️",
+    "items": [
+     {
+      "en": "Hello?",
+      "pt": "¿Diga? / ¿Bueno? / ¿Aló?"
+     },
+     {
+      "en": "Who's calling, please?",
+      "pt": "¿De parte de quién, por favor?"
+     },
+     {
+      "en": "This is Ana speaking.",
+      "pt": "Habla Ana."
+     },
+     {
+      "en": "How can I help you?",
+      "pt": "¿En qué puedo ayudarle?"
+     }
+    ],
+    "label_en": "Answering",
+    "label_pt": "Contestar",
+    "illustration_prompt": "A cute hand-drawn hand picking up a ringing phone, simple doodle style, no text"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Can I speak to John?",
+      "pt": "¿Puedo hablar con John?"
+     },
+     {
+      "en": "Is Mary there?",
+      "pt": "¿Está Mary?"
+     },
+     {
+      "en": "Hold on, please.",
+      "pt": "Espere un momento, por favor."
+     },
+     {
+      "en": "She's not here right now.",
+      "pt": "Ahora mismo no está."
+     }
+    ],
+    "label_en": "Asking for Someone",
+    "label_pt": "Preguntar por alguien",
+    "illustration_prompt": "A cute hand-drawn person holding a phone with a question mark bubble, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "📝",
+    "items": [
+     {
+      "en": "Can I leave a message?",
+      "pt": "¿Puedo dejar un mensaje?"
+     },
+     {
+      "en": "Can I take a message?",
+      "pt": "¿Quiere dejar un mensaje?"
+     },
+     {
+      "en": "Please call me back.",
+      "pt": "Por favor, devuélvame la llamada."
+     },
+     {
+      "en": "What's your number?",
+      "pt": "¿Cuál es su número?"
+     }
+    ],
+    "label_en": "Messages",
+    "label_pt": "Mensajes",
+    "illustration_prompt": "A cute hand-drawn notepad and pencil next to a phone, simple doodle style, no text"
+   },
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Sorry, I can't hear you.",
+      "pt": "Perdona, no te oigo."
+     },
+     {
+      "en": "Can you speak up, please?",
+      "pt": "¿Puedes hablar más alto, por favor?"
+     },
+     {
+      "en": "You're breaking up.",
+      "pt": "Se corta la llamada."
+     },
+     {
+      "en": "I'll call you back later.",
+      "pt": "Te llamo más tarde."
+     },
+     {
+      "en": "Thanks for calling. Bye!",
+      "pt": "Gracias por llamar. ¡Adiós!"
+     }
+    ],
+    "label_en": "Problems & Goodbye",
+    "label_pt": "Problemas y despedida",
+    "illustration_prompt": "A cute hand-drawn phone with a weak signal icon and a waving hand, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Phone Calls",
+  "title_pt": "Al teléfono",
+  "exercises": [
+   {
+    "answer": "this",
+    "hint_pt": "(este/esta)",
+    "sentence": "Hi, ___ is Carla speaking."
+   },
+   {
+    "answer": "hold",
+    "hint_pt": "(esperar)",
+    "sentence": "Can you ___ on, please?"
+   },
+   {
+    "answer": "message",
+    "hint_pt": "(mensaje)",
+    "sentence": "Can I leave a ___?"
+   },
+   {
+    "answer": "back",
+    "hint_pt": "(de vuelta)",
+    "sentence": "I'll call you ___ later."
+   }
+  ],
+  "summary_pt": "Frases esenciales para contestar, conversar y terminar llamadas en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-19/cover.png",
+  "cover_prompt": "A cute hand-drawn smiling smartphone with sound waves and a small speech bubble with no letters, soft pastel colors, simple doodle style, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Hello, this is Pablo. Can I speak to Mary?",
+   "wrong": "Hello, I am Pablo. Can I talk with Mary?",
+   "why_pt": "Por teléfono, preséntate con \"this is\", no con \"I am\"."
+  }
+ }
+}

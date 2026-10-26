@@ -1,0 +1,181 @@
+{
+ "slug": "a2-12",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Turn right",
+     "Go straight ahead",
+     "Cross the street",
+     "Turn back"
+    ],
+    "question_pt": "¿Cómo se dice \"Sigue derecho\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Está al lado del parque",
+     "Está dentro del parque",
+     "Está enfrente del parque",
+     "Está lejos del parque"
+    ],
+    "question_pt": "¿Qué significa \"It's across from the park\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "crosswalk",
+     "corner",
+     "traffic light",
+     "block"
+    ],
+    "question_pt": "¿Cómo se dice \"semáforo\" en inglés americano?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🗺️",
+  "level": "A2",
+  "tip_pt": "Usa \"Excuse me\" antes de pedir ayuda y \"Could you...?\" para sonar amable. Para dar indicaciones, usa el imperativo: \"Turn left\".",
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Excuse me, can you help me?",
+      "pt": "Disculpe, ¿me puede ayudar?"
+     },
+     {
+      "en": "Where is the subway station?",
+      "pt": "¿Dónde está la estación de metro?"
+     },
+     {
+      "en": "How do I get there?",
+      "pt": "¿Cómo llego allí?"
+     },
+     {
+      "en": "Is it far from here?",
+      "pt": "¿Está lejos de aquí?"
+     }
+    ],
+    "label_en": "Asking",
+    "label_pt": "Preguntar",
+    "illustration_prompt": "Cute hand-drawn person with a question bubble showing a question mark shape, no text or letters"
+   },
+   {
+    "emoji": "➡️",
+    "items": [
+     {
+      "en": "Turn left",
+      "pt": "Gire a la izquierda"
+     },
+     {
+      "en": "Turn right",
+      "pt": "Gire a la derecha"
+     },
+     {
+      "en": "Go straight ahead",
+      "pt": "Siga derecho"
+     },
+     {
+      "en": "Go two blocks",
+      "pt": "Camine dos cuadras"
+     },
+     {
+      "en": "Cross the street",
+      "pt": "Cruce la calle"
+     }
+    ],
+    "label_en": "Directions",
+    "label_pt": "Dar indicaciones",
+    "illustration_prompt": "Cute hand-drawn signpost with arrows pointing in different directions, no text or letters"
+   },
+   {
+    "emoji": "📍",
+    "items": [
+     {
+      "en": "It's next to the bank",
+      "pt": "Está al lado del banco"
+     },
+     {
+      "en": "It's across from the park",
+      "pt": "Está enfrente del parque"
+     },
+     {
+      "en": "It's on the corner",
+      "pt": "Está en la esquina"
+     },
+     {
+      "en": "It's between the café and school",
+      "pt": "Está entre la cafetería y la escuela"
+     }
+    ],
+    "label_en": "Location",
+    "label_pt": "Ubicación",
+    "illustration_prompt": "Cute hand-drawn map pin between two small buildings, no text or letters"
+   },
+   {
+    "emoji": "🏙️",
+    "items": [
+     {
+      "en": "traffic light",
+      "pt": "semáforo"
+     },
+     {
+      "en": "crosswalk",
+      "pt": "paso de peatones"
+     },
+     {
+      "en": "gas station",
+      "pt": "gasolinera"
+     },
+     {
+      "en": "drugstore",
+      "pt": "farmacia"
+     }
+    ],
+    "label_en": "City Places",
+    "label_pt": "Lugares de la ciudad",
+    "illustration_prompt": "Cute hand-drawn little city with traffic light, small shops and a crosswalk, no text or letters"
+   }
+  ],
+  "title_en": "Asking for Directions",
+  "title_pt": "Pedir indicaciones",
+  "exercises": [
+   {
+    "answer": "Excuse",
+    "hint_pt": "(disculpe)",
+    "sentence": "___ me, where is the train station?"
+   },
+   {
+    "answer": "left",
+    "hint_pt": "(izquierda)",
+    "sentence": "Turn ___ at the traffic light."
+   },
+   {
+    "answer": "straight",
+    "hint_pt": "(derecho)",
+    "sentence": "Go ___ for two blocks."
+   },
+   {
+    "answer": "next to",
+    "hint_pt": "(al lado de)",
+    "sentence": "The bank is ___ the pharmacy."
+   }
+  ],
+  "summary_pt": "Aprende a preguntar por un lugar y explicar cómo llegar en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-12/cover.png",
+  "cover_prompt": "A cute hand-drawn tourist holding a map at a street corner, a friendly local pointing the way, simple city buildings, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Where is the bank? Is it near here?",
+   "wrong": "Where is the bank? Is near here?",
+   "why_pt": "En inglés no puedes omitir el sujeto \"it\"."
+  }
+ }
+}

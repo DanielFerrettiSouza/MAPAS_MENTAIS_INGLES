@@ -1,0 +1,177 @@
+{
+ "slug": "b2-01",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "If I were you, I'd apologize.",
+     "If I would be you, I apologize.",
+     "If I am you, I'd apologize.",
+     "If I was being you, I apologize."
+    ],
+    "question_pt": "¿Qué frase se usa para dar un consejo?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "If I can fly...",
+     "If I could fly...",
+     "If I would fly...",
+     "If I flew can..."
+    ],
+    "question_pt": "¿Cómo se dice 'Si pudiera volar...'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "¿Dejaste tu trabajo?",
+     "¿Vas a dejar tu trabajo?",
+     "¿Dejarías tu trabajo?",
+     "¿Dejabas tu trabajo?"
+    ],
+    "question_pt": "¿Cuál es la traducción de 'Would you quit your job?'",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💭",
+  "level": "B2",
+  "tip_pt": "Estructura: If + pasado simple, would + verbo. Con 'be', usa 'were' para todas las personas: If I were, if she were.",
+  "branches": [
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "If I were you, I'd apologize.",
+      "pt": "Yo que tú, pediría disculpas."
+     },
+     {
+      "en": "If I were in your shoes...",
+      "pt": "Si estuviera en tu lugar..."
+     },
+     {
+      "en": "I wouldn't do that if I were you.",
+      "pt": "Yo no haría eso si fuera tú."
+     },
+     {
+      "en": "If I were you, I'd wait.",
+      "pt": "Yo que tú, esperaría."
+     }
+    ],
+    "label_en": "Giving Advice",
+    "label_pt": "Dar consejos",
+    "illustration_prompt": "A cute hand-drawn light bulb with a friendly smile, simple doodle style, no text"
+   },
+   {
+    "emoji": "🌈",
+    "items": [
+     {
+      "en": "If I won the lottery...",
+      "pt": "Si ganara la lotería..."
+     },
+     {
+      "en": "I'd travel the world.",
+      "pt": "Viajaría por el mundo."
+     },
+     {
+      "en": "If I had more time...",
+      "pt": "Si tuviera más tiempo..."
+     },
+     {
+      "en": "I'd buy a house by the beach.",
+      "pt": "Compraría una casa junto a la playa."
+     }
+    ],
+    "label_en": "Dreams and Wishes",
+    "label_pt": "Sueños y deseos",
+    "illustration_prompt": "A cute hand-drawn rainbow over a small cloud, simple doodle style, no text"
+   },
+   {
+    "emoji": "🦸",
+    "items": [
+     {
+      "en": "If I could fly...",
+      "pt": "Si pudiera volar..."
+     },
+     {
+      "en": "If I were invisible...",
+      "pt": "Si fuera invisible..."
+     },
+     {
+      "en": "If I lived abroad...",
+      "pt": "Si viviera en el extranjero..."
+     },
+     {
+      "en": "If she were the president...",
+      "pt": "Si ella fuera presidenta..."
+     }
+    ],
+    "label_en": "Imaginary Situations",
+    "label_pt": "Situaciones imaginarias",
+    "illustration_prompt": "A cute hand-drawn little superhero with a cape flying, simple doodle style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What would you do if...?",
+      "pt": "¿Qué harías si...?"
+     },
+     {
+      "en": "Where would you live?",
+      "pt": "¿Dónde vivirías?"
+     },
+     {
+      "en": "Would you quit your job?",
+      "pt": "¿Dejarías tu trabajo?"
+     },
+     {
+      "en": "Who would you call first?",
+      "pt": "¿A quién llamarías primero?"
+     }
+    ],
+    "label_en": "Asking Questions",
+    "label_pt": "Hacer preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a curious face, simple doodle style, no text or symbols"
+   }
+  ],
+  "title_en": "Second Conditional",
+  "title_pt": "Segundo condicional",
+  "exercises": [
+   {
+    "answer": "were",
+    "hint_pt": "(fuera/estuviera)",
+    "sentence": "If I ___ you, I would take the job."
+   },
+   {
+    "answer": "would",
+    "hint_pt": "(terminación -ría: dejaría)",
+    "sentence": "If I won the lottery, I ___ quit my job."
+   },
+   {
+    "answer": "had",
+    "hint_pt": "(tuviera)",
+    "sentence": "If I ___ more time, I'd learn Japanese."
+   },
+   {
+    "answer": "were",
+    "hint_pt": "(fueras)",
+    "sentence": "What would you do if you ___ invisible?"
+   }
+  ],
+  "summary_pt": "Lo usamos para hablar de situaciones hipotéticas o poco probables en el presente o el futuro.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-01/cover.png",
+  "cover_prompt": "A cute hand-drawn person with a thought bubble showing a dream house, a beach, and a pile of coins, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "If I had more time, I would travel.",
+   "wrong": "If I would have more time, I would travel.",
+   "why_pt": "No uses 'would' en la oración con 'if'."
+  }
+ }
+}

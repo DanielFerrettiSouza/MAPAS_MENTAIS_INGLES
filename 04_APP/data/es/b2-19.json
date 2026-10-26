@@ -1,0 +1,177 @@
+{
+ "slug": "b2-19",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "The video was viral.",
+     "The video went viral.",
+     "The video made viral.",
+     "The video got virals."
+    ],
+    "question_pt": "¿Cómo se dice 'El video se hizo viral'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Call me direct.",
+     "Tag me now.",
+     "Slide into my DMs.",
+     "Drop me a post."
+    ],
+    "question_pt": "¿Qué frase significa 'Escríbeme por mensaje privado'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Post a photo in Instagram.",
+     "Put a photo on Instagram.",
+     "Post a photo on Instagram.",
+     "Put a photo at Instagram."
+    ],
+    "question_pt": "¿Cuál es la forma correcta?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📱",
+  "level": "B2",
+  "tip_pt": "Usa 'go viral' sin 'to be': 'The video went viral'. Y prefiere 'post' como verbo: 'I posted a photo'.",
+  "branches": [
+   {
+    "emoji": "📸",
+    "items": [
+     {
+      "en": "I just posted a new photo.",
+      "pt": "Acabo de subir una foto nueva."
+     },
+     {
+      "en": "Swipe to see more.",
+      "pt": "Desliza para ver más."
+     },
+     {
+      "en": "Check the link in my bio.",
+      "pt": "Mira el enlace en mi bio."
+     },
+     {
+      "en": "I'm going live tonight.",
+      "pt": "Esta noche hago un directo."
+     }
+    ],
+    "label_en": "Posting",
+    "label_pt": "Publicar",
+    "illustration_prompt": "Cute hand-drawn camera with a small upload arrow, pastel colors, no text"
+   },
+   {
+    "emoji": "❤️",
+    "items": [
+     {
+      "en": "She keeps liking my posts.",
+      "pt": "Siempre le da 'me gusta' a mis publicaciones."
+     },
+     {
+      "en": "Tag a friend who needs this.",
+      "pt": "Etiqueta a un amigo que necesite esto."
+     },
+     {
+      "en": "Drop a comment below.",
+      "pt": "Deja un comentario abajo."
+     },
+     {
+      "en": "Slide into my DMs.",
+      "pt": "Escríbeme por mensaje privado."
+     }
+    ],
+    "label_en": "Interacting",
+    "label_pt": "Interactuar",
+    "illustration_prompt": "Cute hand-drawn heart and speech bubble side by side, pastel colors, no text"
+   },
+   {
+    "emoji": "🔥",
+    "items": [
+     {
+      "en": "The video went viral.",
+      "pt": "El video se hizo viral."
+     },
+     {
+      "en": "It's trending right now.",
+      "pt": "Es tendencia ahora mismo."
+     },
+     {
+      "en": "She gained thousands of followers.",
+      "pt": "Ganó miles de seguidores."
+     },
+     {
+      "en": "That meme blew up.",
+      "pt": "Ese meme arrasó."
+     }
+    ],
+    "label_en": "Going Viral",
+    "label_pt": "Hacerse viral",
+    "illustration_prompt": "Cute hand-drawn flame rising from a phone screen, pastel colors, no text"
+   },
+   {
+    "emoji": "🔒",
+    "items": [
+     {
+      "en": "I had to block him.",
+      "pt": "Tuve que bloquearlo."
+     },
+     {
+      "en": "Report this account.",
+      "pt": "Denuncia esta cuenta."
+     },
+     {
+      "en": "My account got hacked.",
+      "pt": "Me hackearon la cuenta."
+     },
+     {
+      "en": "Set your profile to private.",
+      "pt": "Pon tu perfil en privado."
+     }
+    ],
+    "label_en": "Online Safety",
+    "label_pt": "Seguridad en línea",
+    "illustration_prompt": "Cute hand-drawn padlock with a shield, pastel colors, no text"
+   }
+  ],
+  "title_en": "Social Media English",
+  "title_pt": "Inglés para redes sociales",
+  "exercises": [
+   {
+    "answer": "went",
+    "hint_pt": "(se hizo viral)",
+    "sentence": "Her dance video ___ viral overnight."
+   },
+   {
+    "answer": "check",
+    "hint_pt": "(revisar)",
+    "sentence": "Don't forget to ___ the link in your bio."
+   },
+   {
+    "answer": "block",
+    "hint_pt": "(bloquear)",
+    "sentence": "I had to ___ him because he kept sending spam."
+   },
+   {
+    "answer": "liking",
+    "hint_pt": "(dando 'me gusta')",
+    "sentence": "She's been ___ my posts all week."
+   }
+  ],
+  "summary_pt": "Vocabulario y expresiones para publicar, interactuar y hablar de redes sociales en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-19/cover.png",
+  "cover_prompt": "Cute hand-drawn smartphone surrounded by floating hearts, thumbs-up icons, speech bubbles and a camera, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm going to post a photo on Instagram.",
+   "wrong": "I'm going to upload a photo in Instagram.",
+   "why_pt": "Ojo: con redes sociales se usa 'on', no 'in'."
+  }
+ }
+}

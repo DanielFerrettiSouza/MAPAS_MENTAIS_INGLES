@@ -1,0 +1,185 @@
+{
+ "slug": "b1-17",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "do the bed",
+     "make the bed",
+     "fix the bed",
+     "clean the bed"
+    ],
+    "question_pt": "¿Cómo se dice \"hacer la cama\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "make the laundry",
+     "do the laundry",
+     "take the laundry",
+     "have the laundry"
+    ],
+    "question_pt": "¿Qué expresión es correcta para \"lavar la ropa\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "do money",
+     "win money",
+     "make money",
+     "gain the money"
+    ],
+    "question_pt": "¿Cómo se dice \"ganar dinero\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🛠️",
+  "level": "B1",
+  "tip_pt": "Usa do para tareas, trabajo y actividades generales; usa make para crear, producir o causar algo, como plans, noise y mistakes.",
+  "branches": [
+   {
+    "emoji": "🧹",
+    "items": [
+     {
+      "en": "do the dishes",
+      "pt": "lavar los platos"
+     },
+     {
+      "en": "do the laundry",
+      "pt": "lavar la ropa"
+     },
+     {
+      "en": "do the shopping",
+      "pt": "hacer las compras"
+     },
+     {
+      "en": "do the housework",
+      "pt": "hacer las tareas de la casa"
+     }
+    ],
+    "label_en": "Do: Chores",
+    "label_pt": "Do: tareas de la casa",
+    "illustration_prompt": "Cute hand-drawn broom and bucket icon, simple, no text"
+   },
+   {
+    "emoji": "📚",
+    "items": [
+     {
+      "en": "do my homework",
+      "pt": "hacer mi tarea"
+     },
+     {
+      "en": "do a good job",
+      "pt": "hacer un buen trabajo"
+     },
+     {
+      "en": "do your best",
+      "pt": "dar lo mejor de ti"
+     },
+     {
+      "en": "do me a favor",
+      "pt": "hacerme un favor"
+     },
+     {
+      "en": "do some exercise",
+      "pt": "hacer ejercicio"
+     }
+    ],
+    "label_en": "Do: Work & Study",
+    "label_pt": "Do: trabajo y estudio",
+    "illustration_prompt": "Cute hand-drawn stack of books with a pencil, simple, no text"
+   },
+   {
+    "emoji": "🎂",
+    "items": [
+     {
+      "en": "make dinner",
+      "pt": "hacer la cena"
+     },
+     {
+      "en": "make a cake",
+      "pt": "hacer un pastel"
+     },
+     {
+      "en": "make coffee",
+      "pt": "hacer café"
+     },
+     {
+      "en": "make the bed",
+      "pt": "hacer la cama"
+     }
+    ],
+    "label_en": "Make: Create",
+    "label_pt": "Make: crear y producir",
+    "illustration_prompt": "Cute hand-drawn birthday cake with a coffee cup, simple, no text"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "make a mistake",
+      "pt": "cometer un error"
+     },
+     {
+      "en": "make a decision",
+      "pt": "tomar una decisión"
+     },
+     {
+      "en": "make plans",
+      "pt": "hacer planes"
+     },
+     {
+      "en": "make money",
+      "pt": "ganar dinero"
+     },
+     {
+      "en": "make noise",
+      "pt": "hacer ruido"
+     }
+    ],
+    "label_en": "Make: Results",
+    "label_pt": "Make: acciones y resultados",
+    "illustration_prompt": "Cute hand-drawn glowing light bulb icon, simple, no text"
+   }
+  ],
+  "title_en": "Make vs. Do",
+  "title_pt": "Make y Do",
+  "exercises": [
+   {
+    "answer": "do",
+    "hint_pt": "(hacer un favor)",
+    "sentence": "Can you ___ me a favor?"
+   },
+   {
+    "answer": "make",
+    "hint_pt": "(tomar una decisión)",
+    "sentence": "We need to ___ a decision today."
+   },
+   {
+    "answer": "do",
+    "hint_pt": "(lavar los platos)",
+    "sentence": "I have to ___ the dishes after dinner."
+   },
+   {
+    "answer": "make",
+    "hint_pt": "(hacer ruido)",
+    "sentence": "Please don't ___ so much noise."
+   }
+  ],
+  "summary_pt": "Make indica crear o producir algo; do indica realizar tareas y actividades.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-17/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of two friendly characters, one baking a cake and one washing dishes, simple soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I made a mistake on the test.",
+   "wrong": "I did a mistake on the test.",
+   "why_pt": "En inglés, los errores se cometen con make, no con do."
+  }
+ }
+}

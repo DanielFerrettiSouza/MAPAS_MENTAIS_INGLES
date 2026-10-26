@@ -1,0 +1,200 @@
+{
+ "slug": "kit-viagem-14",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "to take",
+     "to go",
+     "for travel",
+     "to carry"
+    ],
+    "question_pt": "¿Cómo se dice \"para llevar\" en inglés americano?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "pan francés",
+     "papas fritas",
+     "pan tostado",
+     "cebolla frita"
+    ],
+    "question_pt": "¿Qué significa \"french fries\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Cash or card?",
+     "Keep the change.",
+     "How much is it?",
+     "For here or to go?"
+    ],
+    "question_pt": "¿Qué frase pregunta el precio?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🍔",
+  "level": "A1",
+  "style": "ink",
+  "tip_pt": "Para pedir con cortesía, usa \"I'd like...\" o \"Can I have...?\" en lugar de \"I want...\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🍟",
+    "items": [
+     {
+      "en": "a burger",
+      "pt": "una hamburguesa"
+     },
+     {
+      "en": "french fries",
+      "pt": "papas fritas / patatas fritas"
+     },
+     {
+      "en": "a hot dog",
+      "pt": "un hot dog / perrito caliente"
+     },
+     {
+      "en": "a sandwich",
+      "pt": "un sándwich"
+     },
+     {
+      "en": "a muffin",
+      "pt": "un muffin / magdalena"
+     }
+    ],
+    "label_en": "Food",
+    "label_pt": "Comida",
+    "illustration_key": "burger and fries",
+    "illustration_prompt": "A burger, a portion of french fries and a slice of pizza on a red tray"
+   },
+   {
+    "emoji": "☕",
+    "items": [
+     {
+      "en": "a coffee",
+      "pt": "un café"
+     },
+     {
+      "en": "a soda",
+      "pt": "un refresco"
+     },
+     {
+      "en": "orange juice",
+      "pt": "jugo de naranja / zumo de naranja"
+     },
+     {
+      "en": "a bottle of water",
+      "pt": "una botella de agua"
+     },
+     {
+      "en": "hot chocolate",
+      "pt": "chocolate caliente"
+     }
+    ],
+    "label_en": "Drinks",
+    "label_pt": "Bebidas",
+    "illustration_key": "coffee cup",
+    "illustration_prompt": "A cup of hot coffee, a glass of orange juice and a soda cup with a straw on a table"
+   },
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "Can I have a burger?",
+      "pt": "¿Me da una hamburguesa?"
+     },
+     {
+      "en": "I'd like a coffee, please.",
+      "pt": "Quisiera un café, por favor."
+     },
+     {
+      "en": "Small, medium or large?",
+      "pt": "¿Pequeño, mediano o grande?"
+     },
+     {
+      "en": "For here or to go?",
+      "pt": "¿Para comer aquí o para llevar?"
+     },
+     {
+      "en": "To go, please.",
+      "pt": "Para llevar, por favor."
+     }
+    ],
+    "label_en": "Ordering",
+    "label_pt": "Cómo pedir",
+    "illustration_key": "customer ordering",
+    "illustration_prompt": "A customer pointing at food behind a glass counter while talking to a smiling cashier"
+   },
+   {
+    "emoji": "💳",
+    "items": [
+     {
+      "en": "How much is it?",
+      "pt": "¿Cuánto cuesta?"
+     },
+     {
+      "en": "Cash or card?",
+      "pt": "¿Efectivo o tarjeta?"
+     },
+     {
+      "en": "By card, please.",
+      "pt": "Con tarjeta, por favor."
+     },
+     {
+      "en": "Can I have the check?",
+      "pt": "¿Me trae la cuenta?"
+     },
+     {
+      "en": "Keep the change.",
+      "pt": "Quédese con el cambio."
+     }
+    ],
+    "label_en": "Paying",
+    "label_pt": "Cómo pagar",
+    "illustration_key": "credit card payment",
+    "illustration_prompt": "A hand holding a credit card over a card machine next to a few coins on a counter"
+   }
+  ],
+  "title_en": "Fast Food & Cafés",
+  "title_pt": "Comida rápida y cafeterías",
+  "cover_key": "fast food counter",
+  "exercises": [
+   {
+    "answer": "burger",
+    "hint_pt": "(hamburguesa)",
+    "sentence": "Can I have a ___, please?"
+   },
+   {
+    "answer": "go",
+    "hint_pt": "(para llevar)",
+    "sentence": "For here or to ___?"
+   },
+   {
+    "answer": "fries",
+    "hint_pt": "(papas fritas)",
+    "sentence": "I'd like a large ___."
+   },
+   {
+    "answer": "check",
+    "hint_pt": "(cuenta)",
+    "sentence": "Can I have the ___, please?"
+   }
+  ],
+  "summary_pt": "Palabras y frases sencillas para pedir comida y bebida en restaurantes de comida rápida y cafeterías.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/fast-food-counter.png",
+  "cover_prompt": "A cheerful cashier handing a tray with a burger, fries and a soda to a smiling customer at a fast food counter, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/burger-and-fries.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/coffee-cup.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/customer-ordering.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/credit-card-payment.png"
+  ],
+  "common_mistake": {
+   "right": "A coffee to go, please.",
+   "wrong": "A coffee for carry, please.",
+   "why_pt": "\"Para llevar\" en inglés americano se dice \"to go\"."
+  }
+ }
+}

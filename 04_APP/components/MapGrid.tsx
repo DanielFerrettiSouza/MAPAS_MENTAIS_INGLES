@@ -9,12 +9,13 @@ export type MapRow = {
   data: { branch_images?: (string | null)[]; cover_image?: string | null };
 };
 
-export default function MapGrid({ maps }: { maps: MapRow[] }) {
+export default function MapGrid({ maps, lang = "pt" }: { maps: MapRow[]; lang?: "pt" | "es" }) {
+  const es = lang === "es";
   if (!maps.length) {
     return (
       <div className="empty-box">
-        <strong>Nenhum mapa ainda</strong>
-        Crie seu primeiro mapa usando os temas sugeridos ou com uma ideia sua.
+        <strong>{es ? "Aún no tienes mapas" : "Nenhum mapa ainda"}</strong>
+        {es ? "Crea tu primer mapa con un tema sugerido o con una idea tuya." : "Crie seu primeiro mapa usando os temas sugeridos ou com uma ideia sua."}
       </div>
     );
   }
@@ -31,7 +32,7 @@ export default function MapGrid({ maps }: { maps: MapRow[] }) {
               <span style={{ fontSize: 40 }}>🗺️</span>
             )}
             <strong>{m.title_pt}</strong>
-            <small>{m.level} · {new Date(m.created_at).toLocaleDateString("pt-BR")}</small>
+            <small>{m.level} · {new Date(m.created_at).toLocaleDateString(es ? "es" : "pt-BR")}</small>
           </Link>
         );
       })}

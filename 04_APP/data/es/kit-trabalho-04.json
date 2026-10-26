@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-04",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Please find the report attached.",
+     "Follow the report in annex.",
+     "The report goes attached.",
+     "See the report annexed."
+    ],
+    "question_pt": "¿Cómo se dice \"Adjunto el informe\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I stay waiting.",
+     "I look forward to hearing from you.",
+     "I wait your answer.",
+     "I keep in the wait."
+    ],
+    "question_pt": "¿Cuál es la forma correcta de decir \"Quedo a la espera de tu respuesta\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Dear Mr. Smith,",
+     "I'm writing to ask about...",
+     "Best regards,",
+     "Would it be possible to...?"
+    ],
+    "question_pt": "¿Qué expresión se usa para cerrar un correo?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📧",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"I'm writing to...\" para explicar el motivo del correo desde el principio. Evita \"I write to...\", que suena raro.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Dear Mr. Smith,",
+      "pt": "Estimado Sr. Smith:"
+     },
+     {
+      "en": "Hi Anna,",
+      "pt": "Hola, Anna:"
+     },
+     {
+      "en": "I hope you're doing well.",
+      "pt": "Espero que se encuentre bien."
+     },
+     {
+      "en": "Thank you for your email.",
+      "pt": "Gracias por su correo."
+     }
+    ],
+    "label_en": "Opening",
+    "label_pt": "Saludo inicial",
+    "illustration_key": "waving person",
+    "illustration_prompt": "A friendly office worker waving hello, flat illustration, no text"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "I'm writing to ask about...",
+      "pt": "Le escribo para preguntar sobre..."
+     },
+     {
+      "en": "I'm writing regarding the project.",
+      "pt": "Le escribo en relación con el proyecto."
+     },
+     {
+      "en": "Please find the report attached.",
+      "pt": "Adjunto le envío el informe."
+     },
+     {
+      "en": "Just a quick update:",
+      "pt": "Solo una breve actualización:"
+     }
+    ],
+    "label_en": "Purpose",
+    "label_pt": "Motivo del correo",
+    "illustration_key": "dart target",
+    "illustration_prompt": "A dart hitting the center of a target board, flat illustration, no text"
+   },
+   {
+    "emoji": "🙏",
+    "items": [
+     {
+      "en": "Could you please send me...?",
+      "pt": "¿Podría enviarme...?"
+     },
+     {
+      "en": "Would it be possible to...?",
+      "pt": "¿Sería posible...?"
+     },
+     {
+      "en": "Could you please confirm receipt?",
+      "pt": "¿Podría confirmar la recepción?"
+     },
+     {
+      "en": "Please let me know.",
+      "pt": "Por favor, avíseme."
+     }
+    ],
+    "label_en": "Requests",
+    "label_pt": "Peticiones",
+    "illustration_key": "handing folder",
+    "illustration_prompt": "Two colleagues handing a folder to each other at a desk, flat illustration, no text"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "I look forward to hearing from you.",
+      "pt": "Quedo a la espera de su respuesta."
+     },
+     {
+      "en": "Feel free to contact me.",
+      "pt": "No dude en ponerse en contacto conmigo."
+     },
+     {
+      "en": "Best regards,",
+      "pt": "Saludos cordiales,"
+     },
+     {
+      "en": "Thanks in advance,",
+      "pt": "Gracias de antemano,"
+     }
+    ],
+    "label_en": "Closing",
+    "label_pt": "Despedida",
+    "illustration_key": "signing pen",
+    "illustration_prompt": "A hand signing a paper letter with a fountain pen, flat illustration, no visible writing"
+   }
+  ],
+  "title_en": "Professional Emails",
+  "title_pt": "Correos profesionales",
+  "cover_key": "office laptop",
+  "exercises": [
+   {
+    "answer": "ask",
+    "hint_pt": "(preguntar)",
+    "sentence": "I'm writing to ___ about the meeting."
+   },
+   {
+    "answer": "attached",
+    "hint_pt": "(adjunto)",
+    "sentence": "Please find the report ___."
+   },
+   {
+    "answer": "hearing",
+    "hint_pt": "(tener noticias)",
+    "sentence": "I look forward to ___ from you."
+   },
+   {
+    "answer": "confirm",
+    "hint_pt": "(confirmar)",
+    "sentence": "Could you please ___ receipt?"
+   }
+  ],
+  "summary_pt": "Frases útiles para empezar, desarrollar, pedir algo y cerrar correos de trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-laptop.png",
+  "cover_prompt": "A person sitting at a tidy office desk with a laptop, a coffee mug and a notebook, typing thoughtfully, flat illustration, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waving-person.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/dart-target.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handing-folder.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/signing-pen.png"
+  ],
+  "common_mistake": {
+   "right": "I look forward to hearing from you.",
+   "wrong": "I remain waiting for your answer.",
+   "why_pt": "\"Quedo a la espera\" traducido literalmente no suena natural."
+  }
+ }
+}

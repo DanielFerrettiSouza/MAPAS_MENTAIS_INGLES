@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-16",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Ferris wheel",
+     "merry-go-round",
+     "bumper cars",
+     "roller coaster"
+    ],
+    "question_pt": "¿Cómo se dice \"noria\" o \"rueda de la fortuna\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Where is the restroom?",
+     "How long is the line?",
+     "How much is a ticket?",
+     "Let's go again!"
+    ],
+    "question_pt": "¿Qué frase pregunta cuánto tiempo hay que esperar en la fila?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Tengo miedo",
+     "Fue increíble",
+     "Estoy mareado",
+     "Vamos otra vez"
+    ],
+    "question_pt": "¿Qué significa \"I feel dizzy\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎢",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"ride\" como sustantivo (la atracción) y como verbo: \"ride a roller coaster\", nunca \"play a roller coaster\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🎡",
+    "items": [
+     {
+      "en": "roller coaster",
+      "pt": "montaña rusa"
+     },
+     {
+      "en": "Ferris wheel",
+      "pt": "noria / rueda de la fortuna"
+     },
+     {
+      "en": "merry-go-round",
+      "pt": "carrusel"
+     },
+     {
+      "en": "water ride",
+      "pt": "atracción acuática"
+     },
+     {
+      "en": "bumper cars",
+      "pt": "autos chocones"
+     }
+    ],
+    "label_en": "Rides",
+    "label_pt": "Atracciones",
+    "illustration_key": "ferris wheel",
+    "illustration_prompt": "A large Ferris wheel with colorful cabins against a blue sky"
+   },
+   {
+    "emoji": "🎟️",
+    "items": [
+     {
+      "en": "one-day pass",
+      "pt": "entrada de un día"
+     },
+     {
+      "en": "How much is a ticket?",
+      "pt": "¿Cuánto cuesta una entrada?"
+     },
+     {
+      "en": "Two adults, please.",
+      "pt": "Dos adultos, por favor."
+     },
+     {
+      "en": "fast pass",
+      "pt": "pase rápido"
+     }
+    ],
+    "label_en": "Tickets",
+    "label_pt": "Entradas",
+    "illustration_key": "ticket",
+    "illustration_prompt": "A blank paper admission ticket and a wristband on a table"
+   },
+   {
+    "emoji": "🗺️",
+    "items": [
+     {
+      "en": "How long is the line?",
+      "pt": "¿Cuánto hay que esperar en la fila?"
+     },
+     {
+      "en": "Where is the restroom?",
+      "pt": "¿Dónde está el baño?"
+     },
+     {
+      "en": "park map",
+      "pt": "mapa del parque"
+     },
+     {
+      "en": "height requirement",
+      "pt": "altura mínima"
+     }
+    ],
+    "label_en": "In the Park",
+    "label_pt": "En el parque",
+    "illustration_key": "waiting line",
+    "illustration_prompt": "A family waiting in a long line in front of a ride entrance"
+   },
+   {
+    "emoji": "😱",
+    "items": [
+     {
+      "en": "That was awesome!",
+      "pt": "¡Fue increíble!"
+     },
+     {
+      "en": "I'm scared!",
+      "pt": "¡Tengo miedo!"
+     },
+     {
+      "en": "Let's go again!",
+      "pt": "¡Vamos otra vez!"
+     },
+     {
+      "en": "I feel dizzy.",
+      "pt": "Estoy mareado."
+     }
+    ],
+    "label_en": "Feelings",
+    "label_pt": "Sensaciones",
+    "illustration_key": "excited riders",
+    "illustration_prompt": "Excited people with arms raised on a roller coaster car going downhill"
+   }
+  ],
+  "title_en": "Theme Parks",
+  "title_pt": "Parques temáticos",
+  "cover_key": "theme park",
+  "exercises": [
+   {
+    "answer": "ride",
+    "hint_pt": "(subirse a)",
+    "sentence": "Let's ___ the roller coaster!"
+   },
+   {
+    "answer": "line",
+    "hint_pt": "(fila)",
+    "sentence": "How long is the ___?"
+   },
+   {
+    "answer": "map",
+    "hint_pt": "(mapa)",
+    "sentence": "I need a park ___."
+   },
+   {
+    "answer": "one-day",
+    "hint_pt": "(de un día)",
+    "sentence": "Can I buy a ___ pass?"
+   }
+  ],
+  "summary_pt": "Vocabulario y frases útiles para visitar parques temáticos y disfrutar de las atracciones.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/theme-park.png",
+  "cover_prompt": "A colorful theme park with a big roller coaster, a Ferris wheel and happy families walking on a sunny day",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/ferris-wheel.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/ticket.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waiting-line.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/excited-riders.png"
+  ],
+  "common_mistake": {
+   "right": "I want to ride the roller coaster.",
+   "wrong": "I want to play the roller coaster.",
+   "why_pt": "Aunque digas \"juegos mecánicos\", en inglés las atracciones se \"ride\"."
+  }
+ }
+}

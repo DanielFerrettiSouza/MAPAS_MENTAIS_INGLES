@@ -1,0 +1,177 @@
+{
+ "slug": "b2-03",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "The package has been delivered.",
+     "The package has delivered.",
+     "The package was deliver.",
+     "The package is delivering."
+    ],
+    "question_pt": "¿Cómo se dice 'El paquete ha sido entregado' (acción reciente)?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "I cut my hair.",
+     "I had my hair cut.",
+     "I was cut my hair.",
+     "I have cut hair."
+    ],
+    "question_pt": "¿Qué frase significa 'Me corté el pelo (en la peluquería)'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "been",
+     "being",
+     "be",
+     "is"
+    ],
+    "question_pt": "Completa: 'This must ___ done today.'",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔄",
+  "level": "B2",
+  "tip_pt": "Forma: verbo 'be' en el tiempo que necesites + participio pasado. Usa 'by' solo cuando importe quién hace la acción.",
+  "branches": [
+   {
+    "emoji": "⏳",
+    "items": [
+     {
+      "en": "English is spoken worldwide.",
+      "pt": "El inglés se habla en todo el mundo."
+     },
+     {
+      "en": "The bridge was built in 1950.",
+      "pt": "El puente fue construido en 1950."
+     },
+     {
+      "en": "The road is being repaired.",
+      "pt": "Están reparando la carretera."
+     },
+     {
+      "en": "I was being followed.",
+      "pt": "Me estaban siguiendo."
+     }
+    ],
+    "label_en": "Present & Past",
+    "label_pt": "Presente y pasado",
+    "illustration_prompt": "A cute hand-drawn hourglass with a small clock beside it, soft colors, no text"
+   },
+   {
+    "emoji": "🚀",
+    "items": [
+     {
+      "en": "The package has been delivered.",
+      "pt": "El paquete ha sido entregado."
+     },
+     {
+      "en": "The tickets had been sold out.",
+      "pt": "Las entradas ya se habían agotado."
+     },
+     {
+      "en": "You will be contacted soon.",
+      "pt": "Pronto nos pondremos en contacto con usted."
+     },
+     {
+      "en": "It's going to be canceled.",
+      "pt": "Lo van a cancelar."
+     }
+    ],
+    "label_en": "Perfect & Future",
+    "label_pt": "Perfecto y futuro",
+    "illustration_prompt": "A cute hand-drawn rocket next to a check mark, soft colors, no text"
+   },
+   {
+    "emoji": "📋",
+    "items": [
+     {
+      "en": "This must be done today.",
+      "pt": "Esto tiene que hacerse hoy."
+     },
+     {
+      "en": "It can't be fixed.",
+      "pt": "No se puede arreglar."
+     },
+     {
+      "en": "It should have been reviewed.",
+      "pt": "Debería haberse revisado."
+     },
+     {
+      "en": "Phones may be used here.",
+      "pt": "Aquí se pueden usar los teléfonos."
+     }
+    ],
+    "label_en": "Modal Passive",
+    "label_pt": "Pasiva con modales",
+    "illustration_prompt": "A cute hand-drawn clipboard with a checklist made of simple boxes and checks, no text"
+   },
+   {
+    "emoji": "🎓",
+    "items": [
+     {
+      "en": "I got fined for speeding.",
+      "pt": "Me multaron por exceso de velocidad."
+     },
+     {
+      "en": "He is said to be rich.",
+      "pt": "Dicen que es rico."
+     },
+     {
+      "en": "I had my hair cut.",
+      "pt": "Me corté el pelo (en la peluquería)."
+     },
+     {
+      "en": "It is believed that he left.",
+      "pt": "Se cree que se fue."
+     }
+    ],
+    "label_en": "Advanced Forms",
+    "label_pt": "Formas avanzadas",
+    "illustration_prompt": "A cute hand-drawn graduation cap on top of a stack of books, soft colors, no text"
+   }
+  ],
+  "title_en": "Passive Voice",
+  "title_pt": "Voz pasiva",
+  "exercises": [
+   {
+    "answer": "reviewed",
+    "hint_pt": "(revisado)",
+    "sentence": "The report is being ___ right now."
+   },
+   {
+    "answer": "delivered",
+    "hint_pt": "(entregado)",
+    "sentence": "The package has already been ___."
+   },
+   {
+    "answer": "fined",
+    "hint_pt": "(multado)",
+    "sentence": "I got ___ for speeding yesterday."
+   },
+   {
+    "answer": "to",
+    "hint_pt": "(partícula del infinitivo)",
+    "sentence": "He is said ___ be a genius."
+   }
+  ],
+  "summary_pt": "La voz pasiva destaca la acción o a quien la recibe, no a quien la realiza.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-03/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of two arrows forming a circle around a gift box being handed from one hand to another, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "English is spoken here.",
+   "wrong": "Is spoken English here.",
+   "why_pt": "No copies el 'se habla' del español: el sujeto va primero."
+  }
+ }
+}

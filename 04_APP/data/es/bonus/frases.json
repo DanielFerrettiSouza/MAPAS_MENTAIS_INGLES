@@ -1,0 +1,3055 @@
+{
+ "title": "Las 500 frases más usadas",
+ "sections": [
+  {
+   "theme": "Saludos y presentaciones",
+   "items": [
+    {
+     "en": "Hi!",
+     "pt": "¡Hola!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Hello!",
+     "pt": "¡Hola! / ¡Buenas!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How are you?",
+     "pt": "¿Cómo estás?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "I'm fine, thanks.",
+     "pt": "Estoy bien, gracias.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "And you?",
+     "pt": "¿Y tú?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Good morning!",
+     "pt": "¡Buenos días!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Good afternoon!",
+     "pt": "¡Buenas tardes!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Good evening!",
+     "pt": "¡Buenas noches! (al llegar)",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Good night!",
+     "pt": "¡Buenas noches! (al despedirse)",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Nice to meet you.",
+     "pt": "Encantado(a) de conocerte.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "What's your name?",
+     "pt": "¿Cómo te llamas?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "My name is...",
+     "pt": "Me llamo...",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "I'm...",
+     "pt": "Soy...",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Hey!",
+     "pt": "¡Hola! / ¡Oye!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How's it going?",
+     "pt": "¿Cómo te va?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "What's up?",
+     "pt": "¿Qué tal? / ¿Qué hay?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Not much.",
+     "pt": "Nada especial.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Nice to meet you too.",
+     "pt": "El gusto es mío.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Where are you from?",
+     "pt": "¿De dónde eres?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "I'm from Brazil.",
+     "pt": "Soy de Brasil.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Bye!",
+     "pt": "¡Adiós! / ¡Chao!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "See you later!",
+     "pt": "¡Hasta luego!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "See you tomorrow!",
+     "pt": "¡Hasta mañana!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Take care!",
+     "pt": "¡Cuídate!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Have a nice day!",
+     "pt": "¡Que tengas un buen día!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Good to see you!",
+     "pt": "¡Qué gusto verte!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Long time no see!",
+     "pt": "¡Cuánto tiempo!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How have you been?",
+     "pt": "¿Cómo has estado?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Pretty good.",
+     "pt": "Bastante bien. / Todo bien.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Not bad.",
+     "pt": "Nada mal.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "This is my friend...",
+     "pt": "Este es mi amigo... / Esta es mi amiga...",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Let me introduce you to...",
+     "pt": "Déjame presentarte a...",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Have you met...?",
+     "pt": "¿Ya conoces a...?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "What do you do?",
+     "pt": "¿A qué te dedicas?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Welcome!",
+     "pt": "¡Bienvenido(a)!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Nice meeting you.",
+     "pt": "Fue un placer conocerte.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "See you soon!",
+     "pt": "¡Hasta pronto!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "See you around!",
+     "pt": "¡Nos vemos!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Have a good weekend!",
+     "pt": "¡Buen fin de semana!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How's your day going?",
+     "pt": "¿Qué tal va tu día?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Pleased to meet you.",
+     "pt": "Mucho gusto.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Call me...",
+     "pt": "Puedes llamarme...",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "What should I call you?",
+     "pt": "¿Cómo debo llamarte?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Sorry, what was your name again?",
+     "pt": "Perdona, ¿cómo te llamabas?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Say hi to ... for me.",
+     "pt": "Salúdame a... de mi parte.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Talk to you later!",
+     "pt": "¡Hablamos luego!",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "It was great talking to you.",
+     "pt": "Fue genial hablar contigo.",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "Where do you live?",
+     "pt": "¿Dónde vives?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How's your family?",
+     "pt": "¿Cómo está tu familia?",
+     "ex_en": "",
+     "ex_pt": ""
+    },
+    {
+     "en": "How old are you?",
+     "pt": "¿Cuántos años tienes?",
+     "ex_en": "",
+     "ex_pt": ""
+    }
+   ]
+  },
+  {
+   "theme": "Conversación cotidiana",
+   "items": [
+    {
+     "en": "Are you okay?",
+     "pt": "¿Estás bien?",
+     "ex_en": "You look pale. Are you okay?",
+     "ex_pt": "Te ves pálido. ¿Estás bien?"
+    },
+    {
+     "en": "I'm good, thanks.",
+     "pt": "Estoy bien, gracias.",
+     "ex_en": "\"How are you doing?\" \"I'm good, thanks.\"",
+     "ex_pt": "\"¿Cómo estás?\" \"Estoy bien, gracias.\""
+    },
+    {
+     "en": "Thank you so much.",
+     "pt": "Muchas gracias.",
+     "ex_en": "Thank you so much for the ride home.",
+     "ex_pt": "Muchas gracias por llevarme a casa."
+    },
+    {
+     "en": "You're welcome.",
+     "pt": "De nada.",
+     "ex_en": "\"Thanks for the coffee!\" \"You're welcome.\"",
+     "ex_pt": "\"¡Gracias por el café!\" \"De nada.\""
+    },
+    {
+     "en": "Excuse me.",
+     "pt": "Disculpe. / Con permiso.",
+     "ex_en": "Excuse me, is this seat taken?",
+     "ex_pt": "Disculpe, ¿está ocupado este asiento?"
+    },
+    {
+     "en": "I'm sorry.",
+     "pt": "Lo siento.",
+     "ex_en": "I'm sorry I'm late.",
+     "ex_pt": "Perdón por llegar tarde."
+    },
+    {
+     "en": "No problem.",
+     "pt": "No hay problema.",
+     "ex_en": "\"Can you close the door?\" \"No problem.\"",
+     "ex_pt": "\"¿Puedes cerrar la puerta?\" \"No hay problema.\""
+    },
+    {
+     "en": "What happened?",
+     "pt": "¿Qué pasó?",
+     "ex_en": "Your phone is broken! What happened?",
+     "ex_pt": "¡Tu teléfono está roto! ¿Qué pasó?"
+    },
+    {
+     "en": "I'll be right back.",
+     "pt": "Ya vuelvo.",
+     "ex_en": "I'll be right back. I just need to grab my wallet.",
+     "ex_pt": "Ya vuelvo. Solo tengo que agarrar mi billetera."
+    },
+    {
+     "en": "Can I ask you something?",
+     "pt": "¿Puedo preguntarte algo?",
+     "ex_en": "Can I ask you something? Where did you buy that jacket?",
+     "ex_pt": "¿Puedo preguntarte algo? ¿Dónde compraste esa chaqueta?"
+    },
+    {
+     "en": "Could you speak more slowly?",
+     "pt": "¿Podrías hablar más despacio?",
+     "ex_en": "Sorry, my English isn't great. Could you speak more slowly?",
+     "ex_pt": "Perdón, mi inglés no es muy bueno. ¿Podrías hablar más despacio?"
+    },
+    {
+     "en": "Can you help me?",
+     "pt": "¿Me puedes ayudar?",
+     "ex_en": "Can you help me carry these boxes?",
+     "ex_pt": "¿Me puedes ayudar a cargar estas cajas?"
+    },
+    {
+     "en": "I don't know.",
+     "pt": "No sé.",
+     "ex_en": "I don't know where he went.",
+     "ex_pt": "No sé adónde fue."
+    },
+    {
+     "en": "I don't understand.",
+     "pt": "No entiendo.",
+     "ex_en": "I don't understand. Can you explain it again?",
+     "ex_pt": "No entiendo. ¿Puedes explicarlo otra vez?"
+    },
+    {
+     "en": "Could you repeat that?",
+     "pt": "¿Podrías repetirlo?",
+     "ex_en": "Sorry, it's really loud in here. Could you repeat that?",
+     "ex_pt": "Perdón, hay mucho ruido aquí. ¿Podrías repetirlo?"
+    },
+    {
+     "en": "What do you mean?",
+     "pt": "¿Cómo que...? / ¿Qué quieres decir?",
+     "ex_en": "What do you mean, the party's canceled?",
+     "ex_pt": "¿Cómo que se canceló la fiesta?"
+    },
+    {
+     "en": "Sounds good.",
+     "pt": "Me parece bien. / Perfecto.",
+     "ex_en": "\"Let's meet at seven.\" \"Sounds good.\"",
+     "ex_pt": "\"Nos vemos a las siete.\" \"Perfecto.\""
+    },
+    {
+     "en": "Of course.",
+     "pt": "Claro.",
+     "ex_en": "\"Can I borrow your pen?\" \"Of course.\"",
+     "ex_pt": "\"¿Me prestas tu bolígrafo?\" \"Claro.\""
+    },
+    {
+     "en": "Me too.",
+     "pt": "Yo también.",
+     "ex_en": "\"I love pizza.\" \"Me too.\"",
+     "ex_pt": "\"Me encanta la pizza.\" \"A mí también.\""
+    },
+    {
+     "en": "Never mind.",
+     "pt": "No importa. / Olvídalo.",
+     "ex_en": "Never mind, I found my keys.",
+     "ex_pt": "No importa, ya encontré mis llaves."
+    },
+    {
+     "en": "Hold on a second.",
+     "pt": "Espera un segundo.",
+     "ex_en": "Hold on a second, I'm on the phone.",
+     "ex_pt": "Espera un segundo, estoy hablando por teléfono."
+    },
+    {
+     "en": "That's too bad.",
+     "pt": "Qué pena.",
+     "ex_en": "\"I can't come to the party.\" \"That's too bad.\"",
+     "ex_pt": "\"No voy a poder ir a la fiesta.\" \"Qué pena.\""
+    },
+    {
+     "en": "I have no idea.",
+     "pt": "Ni idea.",
+     "ex_en": "\"Where's the remote?\" \"I have no idea.\"",
+     "ex_pt": "\"¿Dónde está el control remoto?\" \"Ni idea.\""
+    },
+    {
+     "en": "I'm busy right now.",
+     "pt": "Estoy ocupado ahora.",
+     "ex_en": "I'm busy right now. Can I call you back?",
+     "ex_pt": "Estoy ocupado ahora. ¿Te llamo después?"
+    },
+    {
+     "en": "Thanks anyway.",
+     "pt": "Gracias de todos modos.",
+     "ex_en": "\"Sorry, I don't have change.\" \"Thanks anyway.\"",
+     "ex_pt": "\"Perdón, no tengo cambio.\" \"Gracias de todos modos.\""
+    },
+    {
+     "en": "How much is it?",
+     "pt": "¿Cuánto cuesta?",
+     "ex_en": "I like this shirt. How much is it?",
+     "ex_pt": "Me gusta esta camisa. ¿Cuánto cuesta?"
+    },
+    {
+     "en": "Where's the bathroom?",
+     "pt": "¿Dónde está el baño?",
+     "ex_en": "Excuse me, where's the bathroom?",
+     "ex_pt": "Disculpe, ¿dónde está el baño?"
+    },
+    {
+     "en": "I'm on my way.",
+     "pt": "Voy en camino.",
+     "ex_en": "Don't start without me. I'm on my way.",
+     "ex_pt": "No empiecen sin mí. Voy en camino."
+    },
+    {
+     "en": "Let me know.",
+     "pt": "Avísame.",
+     "ex_en": "If you need anything, let me know.",
+     "ex_pt": "Si necesitas algo, avísame."
+    },
+    {
+     "en": "It depends.",
+     "pt": "Depende.",
+     "ex_en": "\"Are you going to the beach tomorrow?\" \"It depends on the weather.\"",
+     "ex_pt": "\"¿Vas a la playa mañana?\" \"Depende del clima.\""
+    },
+    {
+     "en": "I agree.",
+     "pt": "Estoy de acuerdo.",
+     "ex_en": "I agree. That's a great idea.",
+     "ex_pt": "Estoy de acuerdo. Es una gran idea."
+    },
+    {
+     "en": "I'm not sure.",
+     "pt": "No estoy seguro.",
+     "ex_en": "I'm not sure, but I think the store closes at nine.",
+     "ex_pt": "No estoy seguro, pero creo que la tienda cierra a las nueve."
+    },
+    {
+     "en": "That makes sense.",
+     "pt": "Tiene sentido.",
+     "ex_en": "Oh, that makes sense. Thanks for explaining.",
+     "ex_pt": "Ah, tiene sentido. Gracias por explicarlo."
+    },
+    {
+     "en": "Don't worry.",
+     "pt": "No te preocupes.",
+     "ex_en": "Don't worry, everything will be fine.",
+     "ex_pt": "No te preocupes, todo va a salir bien."
+    },
+    {
+     "en": "Good luck!",
+     "pt": "¡Buena suerte!",
+     "ex_en": "Good luck on your test tomorrow!",
+     "ex_pt": "¡Buena suerte en el examen de mañana!"
+    },
+    {
+     "en": "It's up to you.",
+     "pt": "Tú decides.",
+     "ex_en": "Pizza or sushi? It's up to you.",
+     "ex_pt": "¿Pizza o sushi? Tú decides."
+    },
+    {
+     "en": "What time is it?",
+     "pt": "¿Qué hora es?",
+     "ex_en": "What time is it? I think we're late.",
+     "ex_pt": "¿Qué hora es? Creo que vamos tarde."
+    },
+    {
+     "en": "Are you serious?",
+     "pt": "¿En serio?",
+     "ex_en": "You quit your job? Are you serious?",
+     "ex_pt": "¿Renunciaste a tu trabajo? ¿En serio?"
+    },
+    {
+     "en": "No way!",
+     "pt": "¡No puede ser!",
+     "ex_en": "\"I won the lottery!\" \"No way!\"",
+     "ex_pt": "\"¡Me gané la lotería!\" \"¡No puede ser!\""
+    },
+    {
+     "en": "Good job!",
+     "pt": "¡Bien hecho!",
+     "ex_en": "You finished the whole project? Good job!",
+     "ex_pt": "¿Terminaste todo el proyecto? ¡Bien hecho!"
+    },
+    {
+     "en": "Congratulations!",
+     "pt": "¡Felicidades!",
+     "ex_en": "Congratulations on your new job!",
+     "ex_pt": "¡Felicidades por tu nuevo trabajo!"
+    },
+    {
+     "en": "What are you doing?",
+     "pt": "¿Qué estás haciendo?",
+     "ex_en": "Hey, what are you doing this weekend?",
+     "ex_pt": "Oye, ¿qué vas a hacer este fin de semana?"
+    },
+    {
+     "en": "Have fun!",
+     "pt": "¡Diviértete!",
+     "ex_en": "Have fun at the concert!",
+     "ex_pt": "¡Diviértete en el concierto!"
+    },
+    {
+     "en": "I'm just kidding.",
+     "pt": "Es broma.",
+     "ex_en": "Relax, I'm just kidding!",
+     "ex_pt": "¡Tranquilo, es broma!"
+    },
+    {
+     "en": "My bad.",
+     "pt": "Perdón, culpa mía.",
+     "ex_en": "Oops, I took your seat. My bad.",
+     "ex_pt": "Uy, me senté en tu lugar. Culpa mía."
+    },
+    {
+     "en": "Let's go!",
+     "pt": "¡Vamos!",
+     "ex_en": "Everyone's ready? Let's go!",
+     "ex_pt": "¿Todos listos? ¡Vamos!"
+    },
+    {
+     "en": "Help yourself.",
+     "pt": "Siéntete como en casa. / Sírvete.",
+     "ex_en": "There's food in the kitchen. Help yourself.",
+     "ex_pt": "Hay comida en la cocina. Sírvete."
+    },
+    {
+     "en": "Bless you.",
+     "pt": "Salud. (después de un estornudo)",
+     "ex_en": "\"Achoo!\" \"Bless you.\"",
+     "ex_pt": "\"¡Achís!\" \"Salud.\""
+    },
+    {
+     "en": "I'm starving.",
+     "pt": "Me muero de hambre.",
+     "ex_en": "Can we eat now? I'm starving.",
+     "ex_pt": "¿Podemos comer ya? Me muero de hambre."
+    },
+    {
+     "en": "Get well soon.",
+     "pt": "Que te mejores.",
+     "ex_en": "I heard you have the flu. Get well soon!",
+     "ex_pt": "Me enteré de que tienes gripe. ¡Que te mejores!"
+    }
+   ]
+  },
+  {
+   "theme": "Viajes y aeropuerto",
+   "items": [
+    {
+     "en": "Where is the check-in counter?",
+     "pt": "¿Dónde está el mostrador de check-in?",
+     "ex_en": "Excuse me, where is the check-in counter for Delta?",
+     "ex_pt": "Disculpe, ¿dónde está el mostrador de check-in de Delta?"
+    },
+    {
+     "en": "Can I see your passport, please?",
+     "pt": "¿Me permite ver su pasaporte, por favor?",
+     "ex_en": "Good evening. Can I see your passport, please?",
+     "ex_pt": "Buenas noches. ¿Me permite ver su pasaporte, por favor?"
+    },
+    {
+     "en": "Here's my boarding pass.",
+     "pt": "Aquí está mi pase de abordar.",
+     "ex_en": "Here's my boarding pass. Is my seat near the front?",
+     "ex_pt": "Aquí está mi pase de abordar. ¿Mi asiento está adelante?"
+    },
+    {
+     "en": "Which gate is it?",
+     "pt": "¿Cuál es la puerta?",
+     "ex_en": "Our flight to Chicago leaves at six. Which gate is it?",
+     "ex_pt": "Nuestro vuelo a Chicago sale a las seis. ¿Cuál es la puerta?"
+    },
+    {
+     "en": "Is the flight on time?",
+     "pt": "¿El vuelo está a tiempo?",
+     "ex_en": "Is the flight on time, or should we grab dinner first?",
+     "ex_pt": "¿El vuelo está a tiempo o mejor cenamos antes?"
+    },
+    {
+     "en": "I'd like to book a flight.",
+     "pt": "Quisiera reservar un vuelo.",
+     "ex_en": "I'd like to book a flight to Miami for next Friday.",
+     "ex_pt": "Quisiera reservar un vuelo a Miami para el próximo viernes."
+    },
+    {
+     "en": "My flight was delayed.",
+     "pt": "Mi vuelo se retrasó.",
+     "ex_en": "Sorry I'm late. My flight was delayed by two hours.",
+     "ex_pt": "Perdón por la demora. Mi vuelo se retrasó dos horas."
+    },
+    {
+     "en": "My flight was canceled.",
+     "pt": "Mi vuelo fue cancelado.",
+     "ex_en": "My flight was canceled, so I need a hotel for tonight.",
+     "ex_pt": "Mi vuelo fue cancelado, así que necesito un hotel para esta noche."
+    },
+    {
+     "en": "How many bags are you checking?",
+     "pt": "¿Cuántas maletas va a documentar?",
+     "ex_en": "How many bags are you checking today?",
+     "ex_pt": "¿Cuántas maletas va a documentar hoy?"
+    },
+    {
+     "en": "I only have a carry-on.",
+     "pt": "Solo tengo equipaje de mano.",
+     "ex_en": "Nothing to check. I only have a carry-on.",
+     "ex_pt": "Nada que documentar. Solo tengo equipaje de mano."
+    },
+    {
+     "en": "I'd like a window seat.",
+     "pt": "Quisiera un asiento de ventanilla.",
+     "ex_en": "I'd like a window seat so I can see the view.",
+     "ex_pt": "Quisiera un asiento de ventanilla para poder ver el paisaje."
+    },
+    {
+     "en": "I'd like an aisle seat.",
+     "pt": "Quisiera un asiento de pasillo.",
+     "ex_en": "I'd like an aisle seat. I get up a lot on long flights.",
+     "ex_pt": "Quisiera un asiento de pasillo. Me levanto mucho en los vuelos largos."
+    },
+    {
+     "en": "When does boarding start?",
+     "pt": "¿A qué hora empieza el abordaje?",
+     "ex_en": "When does boarding start for flight 305?",
+     "ex_pt": "¿A qué hora empieza el abordaje del vuelo 305?"
+    },
+    {
+     "en": "Where is baggage claim?",
+     "pt": "¿Dónde está la recogida de equipaje?",
+     "ex_en": "We just landed. Where is baggage claim?",
+     "ex_pt": "Acabamos de aterrizar. ¿Dónde está la recogida de equipaje?"
+    },
+    {
+     "en": "What's the purpose of your visit?",
+     "pt": "¿Cuál es el motivo de su visita?",
+     "ex_en": "At immigration, the officer asked me, \"What's the purpose of your visit?\"",
+     "ex_pt": "En migración, el agente me preguntó: \"¿Cuál es el motivo de su visita?\""
+    },
+    {
+     "en": "I'm here on vacation.",
+     "pt": "Estoy aquí de vacaciones.",
+     "ex_en": "I'm here on vacation with my family.",
+     "ex_pt": "Estoy aquí de vacaciones con mi familia."
+    },
+    {
+     "en": "I'm here on business.",
+     "pt": "Estoy aquí por trabajo.",
+     "ex_en": "I'm here on business for a conference.",
+     "ex_pt": "Estoy aquí por trabajo, para una conferencia."
+    },
+    {
+     "en": "How long are you staying?",
+     "pt": "¿Cuánto tiempo se va a quedar?",
+     "ex_en": "How long are you staying in the United States?",
+     "ex_pt": "¿Cuánto tiempo se va a quedar en los Estados Unidos?"
+    },
+    {
+     "en": "I'm staying for two weeks.",
+     "pt": "Me voy a quedar dos semanas.",
+     "ex_en": "I'm staying for two weeks at my cousin's place.",
+     "ex_pt": "Me voy a quedar dos semanas en casa de mi primo."
+    },
+    {
+     "en": "Do you have anything to declare?",
+     "pt": "¿Tiene algo que declarar?",
+     "ex_en": "Welcome back. Do you have anything to declare?",
+     "ex_pt": "Bienvenido de nuevo. ¿Tiene algo que declarar?"
+    },
+    {
+     "en": "I have nothing to declare.",
+     "pt": "No tengo nada que declarar.",
+     "ex_en": "No, I have nothing to declare. Just clothes and souvenirs.",
+     "ex_pt": "No, no tengo nada que declarar. Solo ropa y recuerdos."
+    },
+    {
+     "en": "I have a connecting flight.",
+     "pt": "Tengo un vuelo de conexión.",
+     "ex_en": "I have a connecting flight in Atlanta, so I can't miss this one.",
+     "ex_pt": "Tengo un vuelo de conexión en Atlanta, así que no puedo perder este."
+    },
+    {
+     "en": "I missed my connection.",
+     "pt": "Perdí mi conexión.",
+     "ex_en": "My first flight was late, and I missed my connection.",
+     "ex_pt": "Mi primer vuelo se retrasó y perdí mi conexión."
+    },
+    {
+     "en": "My luggage didn't arrive.",
+     "pt": "Mi equipaje no llegó.",
+     "ex_en": "My luggage didn't arrive. Where do I file a report?",
+     "ex_pt": "Mi equipaje no llegó. ¿Dónde pongo la reclamación?"
+    },
+    {
+     "en": "Where can I get a taxi?",
+     "pt": "¿Dónde puedo tomar un taxi?",
+     "ex_en": "Where can I get a taxi to the hotel?",
+     "ex_pt": "¿Dónde puedo tomar un taxi al hotel?"
+    },
+    {
+     "en": "How do I get downtown?",
+     "pt": "¿Cómo llego al centro?",
+     "ex_en": "How do I get downtown from the airport? Is there a train?",
+     "ex_pt": "¿Cómo llego al centro desde el aeropuerto? ¿Hay tren?"
+    },
+    {
+     "en": "I have a reservation.",
+     "pt": "Tengo una reservación.",
+     "ex_en": "Hi, I have a reservation under the name Silva.",
+     "ex_pt": "Hola, tengo una reservación a nombre de Silva."
+    },
+    {
+     "en": "Is breakfast included?",
+     "pt": "¿El desayuno está incluido?",
+     "ex_en": "Is breakfast included in the room rate?",
+     "ex_pt": "¿El desayuno está incluido en la tarifa de la habitación?"
+    },
+    {
+     "en": "What time is checkout?",
+     "pt": "¿A qué hora es el check-out?",
+     "ex_en": "What time is checkout? Our flight doesn't leave until the evening.",
+     "ex_pt": "¿A qué hora es el check-out? Nuestro vuelo no sale hasta la noche."
+    },
+    {
+     "en": "What's the Wi-Fi password?",
+     "pt": "¿Cuál es la contraseña del wifi?",
+     "ex_en": "What's the Wi-Fi password? I need to check my email.",
+     "ex_pt": "¿Cuál es la contraseña del wifi? Necesito revisar mi correo."
+    },
+    {
+     "en": "Is this seat taken?",
+     "pt": "¿Este asiento está ocupado?",
+     "ex_en": "Is this seat taken, or can I sit here?",
+     "ex_pt": "¿Este asiento está ocupado o me puedo sentar aquí?"
+    },
+    {
+     "en": "Can I get some water, please?",
+     "pt": "¿Me puede traer agua, por favor?",
+     "ex_en": "Can I get some water, please? No ice.",
+     "ex_pt": "¿Me puede traer agua, por favor? Sin hielo."
+    },
+    {
+     "en": "Please fasten your seatbelt.",
+     "pt": "Por favor, abróchese el cinturón.",
+     "ex_en": "We're about to take off. Please fasten your seatbelt.",
+     "ex_pt": "Estamos por despegar. Por favor, abróchese el cinturón."
+    },
+    {
+     "en": "Please take off your shoes.",
+     "pt": "Por favor, quítese los zapatos.",
+     "ex_en": "Please take off your shoes and put them in the bin.",
+     "ex_pt": "Por favor, quítese los zapatos y póngalos en la bandeja."
+    },
+    {
+     "en": "Put your laptop in a separate bin.",
+     "pt": "Ponga su laptop en una bandeja aparte.",
+     "ex_en": "Put your laptop in a separate bin, please.",
+     "ex_pt": "Ponga su laptop en una bandeja aparte, por favor."
+    },
+    {
+     "en": "Where can I exchange money?",
+     "pt": "¿Dónde puedo cambiar dinero?",
+     "ex_en": "Where can I exchange money? I only have reais.",
+     "ex_pt": "¿Dónde puedo cambiar dinero? Solo tengo reales."
+    },
+    {
+     "en": "One-way or round-trip?",
+     "pt": "¿Solo ida o ida y vuelta?",
+     "ex_en": "A ticket to Boston? One-way or round-trip?",
+     "ex_pt": "¿Un boleto a Boston? ¿Solo ida o ida y vuelta?"
+    },
+    {
+     "en": "My bag is overweight.",
+     "pt": "Mi maleta tiene sobrepeso.",
+     "ex_en": "My bag is overweight. Can I move some things to my backpack?",
+     "ex_pt": "Mi maleta tiene sobrepeso. ¿Puedo pasar algunas cosas a la mochila?"
+    },
+    {
+     "en": "How much is the baggage fee?",
+     "pt": "¿Cuánto cuesta el cargo por equipaje?",
+     "ex_en": "How much is the baggage fee for a second bag?",
+     "ex_pt": "¿Cuánto cuesta el cargo por una segunda maleta?"
+    },
+    {
+     "en": "Can I change my seat?",
+     "pt": "¿Puedo cambiar de asiento?",
+     "ex_en": "Can I change my seat? I'd like to sit with my wife.",
+     "ex_pt": "¿Puedo cambiar de asiento? Quisiera sentarme con mi esposa."
+    },
+    {
+     "en": "Where's Terminal 2?",
+     "pt": "¿Dónde está la Terminal 2?",
+     "ex_en": "Where's Terminal 2? My flight leaves from there.",
+     "ex_pt": "¿Dónde está la Terminal 2? Mi vuelo sale de ahí."
+    },
+    {
+     "en": "Is there a shuttle to the hotel?",
+     "pt": "¿Hay traslado al hotel?",
+     "ex_en": "Is there a shuttle to the hotel, or should I take a taxi?",
+     "ex_pt": "¿Hay traslado al hotel o mejor tomo un taxi?"
+    },
+    {
+     "en": "I'd like to rent a car.",
+     "pt": "Me gustaría rentar un auto.",
+     "ex_en": "I'd like to rent a car for five days.",
+     "ex_pt": "Me gustaría rentar un auto por cinco días."
+    },
+    {
+     "en": "Can you help me with my bags?",
+     "pt": "¿Me puede ayudar con las maletas?",
+     "ex_en": "Can you help me with my bags? They're really heavy.",
+     "ex_pt": "¿Me puede ayudar con las maletas? Están muy pesadas."
+    },
+    {
+     "en": "This is the final boarding call.",
+     "pt": "Esta es la última llamada para abordar.",
+     "ex_en": "This is the final boarding call for flight 210 to Denver.",
+     "ex_pt": "Esta es la última llamada para abordar el vuelo 210 con destino a Denver."
+    },
+    {
+     "en": "We're experiencing some turbulence.",
+     "pt": "Estamos atravesando una zona de turbulencia.",
+     "ex_en": "We're experiencing some turbulence. Please remain seated.",
+     "ex_pt": "Estamos atravesando una zona de turbulencia. Por favor, permanezcan sentados."
+    },
+    {
+     "en": "I'm traveling alone.",
+     "pt": "Estoy viajando solo.",
+     "ex_en": "I'm traveling alone, so I packed light.",
+     "ex_pt": "Estoy viajando solo, así que traje poco equipaje."
+    },
+    {
+     "en": "I'm afraid of flying.",
+     "pt": "Me da miedo volar.",
+     "ex_en": "I'm afraid of flying, so long trips make me nervous.",
+     "ex_pt": "Me da miedo volar, así que los viajes largos me ponen nervioso."
+    },
+    {
+     "en": "Have a nice flight!",
+     "pt": "¡Buen vuelo!",
+     "ex_en": "Have a nice flight! Text me when you land.",
+     "ex_pt": "¡Buen vuelo! Mándame un mensaje cuando aterrices."
+    },
+    {
+     "en": "Enjoy your trip!",
+     "pt": "¡Disfruta el viaje!",
+     "ex_en": "Enjoy your trip! Send me some pictures.",
+     "ex_pt": "¡Disfruta el viaje! Mándame unas fotos."
+    }
+   ]
+  },
+  {
+   "theme": "Hotel y alojamiento",
+   "items": [
+    {
+     "en": "What floor is my room on?",
+     "pt": "¿En qué piso está mi habitación?",
+     "ex_en": "Excuse me, what floor is my room on?",
+     "ex_pt": "Disculpe, ¿en qué piso está mi habitación?"
+    },
+    {
+     "en": "I'd like to check in.",
+     "pt": "Quisiera hacer el check-in.",
+     "ex_en": "Hi, I'd like to check in. The reservation is for three nights.",
+     "ex_pt": "Hola, quisiera hacer el check-in. La reserva es para tres noches."
+    },
+    {
+     "en": "I'd like to check out.",
+     "pt": "Quisiera hacer el check-out.",
+     "ex_en": "Good morning, I'd like to check out. Here's my key.",
+     "ex_pt": "Buenos días, quisiera hacer el check-out. Aquí está mi llave."
+    },
+    {
+     "en": "Do you have a non-smoking room?",
+     "pt": "¿Tienen habitaciones para no fumadores?",
+     "ex_en": "Do you have a non-smoking room? The smell bothers me.",
+     "ex_pt": "¿Tienen habitaciones para no fumadores? El olor me molesta."
+    },
+    {
+     "en": "The room hasn't been cleaned.",
+     "pt": "No han limpiado la habitación.",
+     "ex_en": "It's already 5 p.m. and the room hasn't been cleaned.",
+     "ex_pt": "Ya son las 5 de la tarde y no han limpiado la habitación."
+    },
+    {
+     "en": "Where is breakfast served?",
+     "pt": "¿Dónde se sirve el desayuno?",
+     "ex_en": "Where is breakfast served? In the lobby?",
+     "ex_pt": "¿Dónde se sirve el desayuno? ¿En el vestíbulo?"
+    },
+    {
+     "en": "Do you have any rooms available?",
+     "pt": "¿Tienen habitaciones disponibles?",
+     "ex_en": "Do you have any rooms available for tonight?",
+     "ex_pt": "¿Tienen habitaciones disponibles para esta noche?"
+    },
+    {
+     "en": "How much is it per night?",
+     "pt": "¿Cuánto cuesta por noche?",
+     "ex_en": "How much is it per night for a double room?",
+     "ex_pt": "¿Cuánto cuesta por noche una habitación doble?"
+    },
+    {
+     "en": "It's under the name Silva.",
+     "pt": "Está a nombre de Silva.",
+     "ex_en": "I booked online. It's under the name Silva.",
+     "ex_pt": "Reservé por internet. Está a nombre de Silva."
+    },
+    {
+     "en": "What time is breakfast?",
+     "pt": "¿A qué hora es el desayuno?",
+     "ex_en": "What time is breakfast on weekends?",
+     "ex_pt": "¿A qué hora es el desayuno los fines de semana?"
+    },
+    {
+     "en": "Can I leave my bags here?",
+     "pt": "¿Puedo dejar mis maletas aquí?",
+     "ex_en": "My flight is at night. Can I leave my bags here until then?",
+     "ex_pt": "Mi vuelo es por la noche. ¿Puedo dejar mis maletas aquí hasta entonces?"
+    },
+    {
+     "en": "Could I get a late checkout?",
+     "pt": "¿Podría hacer el check-out más tarde?",
+     "ex_en": "Could I get a late checkout, around 2 p.m.?",
+     "ex_pt": "¿Podría hacer el check-out más tarde, alrededor de las 14:00?"
+    },
+    {
+     "en": "Can I check in early?",
+     "pt": "¿Puedo hacer el check-in antes?",
+     "ex_en": "I arrived on an early flight. Can I check in early?",
+     "ex_pt": "Llegué en un vuelo temprano. ¿Puedo hacer el check-in antes?"
+    },
+    {
+     "en": "Here's my passport.",
+     "pt": "Aquí está mi pasaporte.",
+     "ex_en": "Here's my passport and my credit card.",
+     "ex_pt": "Aquí están mi pasaporte y mi tarjeta de crédito."
+    },
+    {
+     "en": "Where's the elevator?",
+     "pt": "¿Dónde está el ascensor?",
+     "ex_en": "Where's the elevator? My room is on the tenth floor.",
+     "ex_pt": "¿Dónde está el ascensor? Mi habitación está en el décimo piso."
+    },
+    {
+     "en": "I'd like to book a room.",
+     "pt": "Quisiera reservar una habitación.",
+     "ex_en": "I'd like to book a room for next Friday.",
+     "ex_pt": "Quisiera reservar una habitación para el próximo viernes."
+    },
+    {
+     "en": "For two nights.",
+     "pt": "Para dos noches.",
+     "ex_en": "A double room, please. For two nights.",
+     "ex_pt": "Una habitación doble, por favor. Para dos noches."
+    },
+    {
+     "en": "My key card isn't working.",
+     "pt": "Mi tarjeta llave no funciona.",
+     "ex_en": "My key card isn't working. The door won't open.",
+     "ex_pt": "Mi tarjeta llave no funciona. La puerta no abre."
+    },
+    {
+     "en": "Could I have another key?",
+     "pt": "¿Me podría dar otra llave?",
+     "ex_en": "Could I have another key for my wife?",
+     "ex_pt": "¿Me podría dar otra llave para mi esposa?"
+    },
+    {
+     "en": "The air conditioning isn't working.",
+     "pt": "El aire acondicionado no funciona.",
+     "ex_en": "It's really hot in here. The air conditioning isn't working.",
+     "ex_pt": "Hace mucho calor aquí. El aire acondicionado no funciona."
+    },
+    {
+     "en": "Could I get some extra towels?",
+     "pt": "¿Me podría traer toallas adicionales?",
+     "ex_en": "Could I get some extra towels for the pool?",
+     "ex_pt": "¿Me podría traer toallas adicionales para la piscina?"
+    },
+    {
+     "en": "Can I pay by card?",
+     "pt": "¿Puedo pagar con tarjeta?",
+     "ex_en": "Can I pay by card, or is it cash only?",
+     "ex_pt": "¿Puedo pagar con tarjeta o es solo en efectivo?"
+    },
+    {
+     "en": "Can you call a taxi for me?",
+     "pt": "¿Me puede pedir un taxi?",
+     "ex_en": "Can you call a taxi for me? I need to go to the airport.",
+     "ex_pt": "¿Me puede pedir un taxi? Necesito ir al aeropuerto."
+    },
+    {
+     "en": "I'd like to cancel my reservation.",
+     "pt": "Quisiera cancelar mi reserva.",
+     "ex_en": "My plans changed. I'd like to cancel my reservation.",
+     "ex_pt": "Mis planes cambiaron. Quisiera cancelar mi reserva."
+    },
+    {
+     "en": "I'd like a room with two beds.",
+     "pt": "Quisiera una habitación con dos camas.",
+     "ex_en": "I'm traveling with my brother, so I'd like a room with two beds.",
+     "ex_pt": "Viajo con mi hermano, así que quisiera una habitación con dos camas."
+    },
+    {
+     "en": "Is parking included?",
+     "pt": "¿El estacionamiento está incluido?",
+     "ex_en": "I rented a car. Is parking included?",
+     "ex_pt": "Alquilé un auto. ¿El estacionamiento está incluido?"
+    },
+    {
+     "en": "Is there a safe in the room?",
+     "pt": "¿Hay caja fuerte en la habitación?",
+     "ex_en": "Is there a safe in the room for my laptop?",
+     "ex_pt": "¿Hay caja fuerte en la habitación para mi computadora portátil?"
+    },
+    {
+     "en": "Is there a deposit?",
+     "pt": "¿Hay que dejar un depósito?",
+     "ex_en": "Is there a deposit? How much is it?",
+     "ex_pt": "¿Hay que dejar un depósito? ¿De cuánto es?"
+    },
+    {
+     "en": "There's no hot water.",
+     "pt": "No hay agua caliente.",
+     "ex_en": "I tried to take a shower, but there's no hot water.",
+     "ex_pt": "Intenté ducharme, pero no hay agua caliente."
+    },
+    {
+     "en": "Could I change rooms?",
+     "pt": "¿Podría cambiar de habitación?",
+     "ex_en": "The room smells like smoke. Could I change rooms?",
+     "ex_pt": "La habitación huele a cigarrillo. ¿Podría cambiar de habitación?"
+    },
+    {
+     "en": "The room is too noisy.",
+     "pt": "La habitación es muy ruidosa.",
+     "ex_en": "The room is too noisy. It faces the street.",
+     "ex_pt": "La habitación es muy ruidosa. Da a la calle."
+    },
+    {
+     "en": "Could you clean my room?",
+     "pt": "¿Podrían limpiar mi habitación?",
+     "ex_en": "Could you clean my room while I'm at lunch?",
+     "ex_pt": "¿Podrían limpiar mi habitación mientras estoy almorzando?"
+    },
+    {
+     "en": "Can I get a receipt?",
+     "pt": "¿Me puede dar un recibo?",
+     "ex_en": "It's a business trip. Can I get a receipt?",
+     "ex_pt": "Es un viaje de trabajo. ¿Me puede dar un recibo?"
+    },
+    {
+     "en": "There's a mistake on my bill.",
+     "pt": "Hay un error en mi cuenta.",
+     "ex_en": "There's a mistake on my bill. I didn't use the minibar.",
+     "ex_pt": "Hay un error en mi cuenta. No usé el minibar."
+    },
+    {
+     "en": "Do you have a crib?",
+     "pt": "¿Tienen cuna?",
+     "ex_en": "We're traveling with a baby. Do you have a crib?",
+     "ex_pt": "Viajamos con un bebé. ¿Tienen cuna?"
+    },
+    {
+     "en": "Can you recommend a restaurant nearby?",
+     "pt": "¿Me puede recomendar un restaurante cerca de aquí?",
+     "ex_en": "Can you recommend a restaurant nearby with local food?",
+     "ex_pt": "¿Me puede recomendar un restaurante cerca de aquí con comida típica?"
+    },
+    {
+     "en": "I'd like to extend my stay.",
+     "pt": "Quisiera extender mi estadía.",
+     "ex_en": "I love it here. I'd like to extend my stay for two more nights.",
+     "ex_pt": "Me encanta este lugar. Quisiera extender mi estadía dos noches más."
+    },
+    {
+     "en": "Do you have a room with a view?",
+     "pt": "¿Tienen habitaciones con vista?",
+     "ex_en": "Do you have a room with a view of the ocean?",
+     "ex_pt": "¿Tienen habitaciones con vista al mar?"
+    },
+    {
+     "en": "Is there a gym?",
+     "pt": "¿Hay gimnasio?",
+     "ex_en": "Is there a gym in the hotel?",
+     "ex_pt": "¿Hay gimnasio en el hotel?"
+    },
+    {
+     "en": "What time does the pool close?",
+     "pt": "¿A qué hora cierra la piscina?",
+     "ex_en": "What time does the pool close tonight?",
+     "ex_pt": "¿A qué hora cierra la piscina esta noche?"
+    },
+    {
+     "en": "Is room service available?",
+     "pt": "¿Hay servicio a la habitación?",
+     "ex_en": "Is room service available after midnight?",
+     "ex_pt": "¿Hay servicio a la habitación después de la medianoche?"
+    },
+    {
+     "en": "Could I get a wake-up call at 7?",
+     "pt": "¿Podrían llamarme para despertarme a las 7?",
+     "ex_en": "I have an early meeting. Could I get a wake-up call at 7?",
+     "ex_pt": "Tengo una reunión temprano. ¿Podrían llamarme para despertarme a las 7?"
+    },
+    {
+     "en": "I locked myself out.",
+     "pt": "Me quedé afuera sin llave.",
+     "ex_en": "I left my key inside. I locked myself out.",
+     "ex_pt": "Dejé la llave adentro. Me quedé afuera sin poder entrar."
+    },
+    {
+     "en": "Could I get an extra pillow?",
+     "pt": "¿Me podría traer una almohada adicional?",
+     "ex_en": "Could I get an extra pillow, please?",
+     "ex_pt": "¿Me podría traer una almohada adicional, por favor?"
+    },
+    {
+     "en": "Is there a laundry service?",
+     "pt": "¿Hay servicio de lavandería?",
+     "ex_en": "Is there a laundry service? I need to wash some clothes.",
+     "ex_pt": "¿Hay servicio de lavandería? Necesito lavar algo de ropa."
+    },
+    {
+     "en": "Do you have an iron?",
+     "pt": "¿Tienen plancha?",
+     "ex_en": "Do you have an iron? My shirt is wrinkled.",
+     "ex_pt": "¿Tienen plancha? Mi camisa está arrugada."
+    },
+    {
+     "en": "The toilet is clogged.",
+     "pt": "El inodoro está tapado.",
+     "ex_en": "Could you send someone up? The toilet is clogged.",
+     "ex_pt": "¿Podrían enviar a alguien? El inodoro está tapado."
+    },
+    {
+     "en": "Do you have a power adapter?",
+     "pt": "¿Tienen adaptador de enchufe?",
+     "ex_en": "My charger doesn't fit. Do you have a power adapter?",
+     "ex_pt": "Mi cargador no encaja. ¿Tienen adaptador de enchufe?"
+    },
+    {
+     "en": "Is there a minibar?",
+     "pt": "¿Hay minibar?",
+     "ex_en": "Is there a minibar in the room?",
+     "ex_pt": "¿Hay minibar en la habitación?"
+    },
+    {
+     "en": "Thanks for everything.",
+     "pt": "Gracias por todo.",
+     "ex_en": "We had a wonderful stay. Thanks for everything!",
+     "ex_pt": "Tuvimos una estadía maravillosa. ¡Gracias por todo!"
+    }
+   ]
+  },
+  {
+   "theme": "Restaurante y cafetería",
+   "items": [
+    {
+     "en": "Can I get the check, please?",
+     "pt": "¿Me trae la cuenta, por favor?",
+     "ex_en": "We're all done. Can I get the check, please?",
+     "ex_pt": "Ya terminamos. ¿Me trae la cuenta, por favor?"
+    },
+    {
+     "en": "A table for two, please.",
+     "pt": "Una mesa para dos, por favor.",
+     "ex_en": "Hi, a table for two, please. By the window, if possible.",
+     "ex_pt": "Hola, una mesa para dos, por favor. Junto a la ventana, si es posible."
+    },
+    {
+     "en": "Can I see the menu?",
+     "pt": "¿Puedo ver la carta?",
+     "ex_en": "Excuse me, can I see the menu?",
+     "ex_pt": "Disculpe, ¿puedo ver la carta?"
+    },
+    {
+     "en": "I'd like...",
+     "pt": "Quisiera...",
+     "ex_en": "I'd like the chicken salad, please.",
+     "ex_pt": "Quisiera la ensalada de pollo, por favor."
+    },
+    {
+     "en": "For here or to go?",
+     "pt": "¿Para tomar aquí o para llevar?",
+     "ex_en": "One cappuccino. For here or to go?",
+     "ex_pt": "Un capuchino. ¿Para tomar aquí o para llevar?"
+    },
+    {
+     "en": "To go, please.",
+     "pt": "Para llevar, por favor.",
+     "ex_en": "Two croissants, to go, please.",
+     "ex_pt": "Dos cruasanes para llevar, por favor."
+    },
+    {
+     "en": "Are you ready to order?",
+     "pt": "¿Ya están listos para pedir?",
+     "ex_en": "Hi there! Are you ready to order?",
+     "ex_pt": "¡Hola! ¿Ya están listos para pedir?"
+    },
+    {
+     "en": "I'll have the...",
+     "pt": "Voy a pedir el...",
+     "ex_en": "I'll have the cheeseburger with fries.",
+     "ex_pt": "Voy a pedir la hamburguesa con queso y papas fritas."
+    },
+    {
+     "en": "What do you recommend?",
+     "pt": "¿Qué me recomienda?",
+     "ex_en": "It's my first time here. What do you recommend?",
+     "ex_pt": "Es mi primera vez aquí. ¿Qué me recomienda?"
+    },
+    {
+     "en": "Sparkling or still?",
+     "pt": "¿Con gas o sin gas?",
+     "ex_en": "Would you like water? Sparkling or still?",
+     "ex_pt": "¿Desean agua? ¿Con gas o sin gas?"
+    },
+    {
+     "en": "Do you have a reservation?",
+     "pt": "¿Tienen reservación?",
+     "ex_en": "Good evening. Do you have a reservation?",
+     "ex_pt": "Buenas noches. ¿Tienen reservación?"
+    },
+    {
+     "en": "I have a reservation under...",
+     "pt": "Tengo una reservación a nombre de...",
+     "ex_en": "I have a reservation under Costa for eight o'clock.",
+     "ex_pt": "Tengo una reservación a nombre de Costa para las ocho."
+    },
+    {
+     "en": "How many in your party?",
+     "pt": "¿Mesa para cuántas personas?",
+     "ex_en": "Welcome! How many in your party?",
+     "ex_pt": "¡Bienvenidos! ¿Mesa para cuántas personas?"
+    },
+    {
+     "en": "Anything else?",
+     "pt": "¿Algo más?",
+     "ex_en": "One latte and a muffin. Anything else?",
+     "ex_pt": "Un latte y un muffin. ¿Algo más?"
+    },
+    {
+     "en": "That's all, thanks.",
+     "pt": "Eso es todo, gracias.",
+     "ex_en": "No, that's all, thanks.",
+     "ex_pt": "No, eso es todo, gracias."
+    },
+    {
+     "en": "Can we split the check?",
+     "pt": "¿Podemos dividir la cuenta?",
+     "ex_en": "Can we split the check? Half each.",
+     "ex_pt": "¿Podemos dividir la cuenta? Mitad cada uno."
+    },
+    {
+     "en": "Do you take credit cards?",
+     "pt": "¿Aceptan tarjeta de crédito?",
+     "ex_en": "I don't have cash. Do you take credit cards?",
+     "ex_pt": "No tengo efectivo. ¿Aceptan tarjeta de crédito?"
+    },
+    {
+     "en": "Keep the change.",
+     "pt": "Quédese con el cambio.",
+     "ex_en": "Here's twenty. Keep the change.",
+     "ex_pt": "Aquí tiene veinte. Quédese con el cambio."
+    },
+    {
+     "en": "Do you have decaf?",
+     "pt": "¿Tienen descafeinado?",
+     "ex_en": "It's late for coffee. Do you have decaf?",
+     "ex_pt": "Ya es tarde para tomar café. ¿Tienen descafeinado?"
+    },
+    {
+     "en": "How is everything?",
+     "pt": "¿Todo bien por aquí?",
+     "ex_en": "How is everything? Can I get you anything?",
+     "ex_pt": "¿Todo bien por aquí? ¿Les traigo algo más?"
+    },
+    {
+     "en": "Everything's great, thanks.",
+     "pt": "Todo está muy bien, gracias.",
+     "ex_en": "Everything's great, thanks. The pasta is delicious.",
+     "ex_pt": "Todo está muy bien, gracias. La pasta está deliciosa."
+    },
+    {
+     "en": "Enjoy your meal.",
+     "pt": "Buen provecho.",
+     "ex_en": "Here are your pizzas. Enjoy your meal.",
+     "ex_pt": "Aquí están sus pizzas. Buen provecho."
+    },
+    {
+     "en": "Can I get a refill?",
+     "pt": "¿Me lo puede volver a llenar?",
+     "ex_en": "This iced tea is great. Can I get a refill?",
+     "ex_pt": "Este té helado está muy rico. ¿Me lo puede volver a llenar?"
+    },
+    {
+     "en": "Could we get a few more minutes?",
+     "pt": "¿Nos da unos minutos más?",
+     "ex_en": "We're still deciding. Could we get a few more minutes?",
+     "ex_pt": "Todavía estamos decidiendo. ¿Nos da unos minutos más?"
+    },
+    {
+     "en": "I'm allergic to...",
+     "pt": "Soy alérgico a...",
+     "ex_en": "I'm allergic to shrimp. Is there any in this dish?",
+     "ex_pt": "Soy alérgico a los camarones. ¿Este plato tiene?"
+    },
+    {
+     "en": "Does this have nuts in it?",
+     "pt": "¿Esto tiene frutos secos?",
+     "ex_en": "This cake looks good. Does this have nuts in it?",
+     "ex_pt": "Este pastel se ve rico. ¿Tiene frutos secos?"
+    },
+    {
+     "en": "Do you have any vegetarian options?",
+     "pt": "¿Tienen opciones vegetarianas?",
+     "ex_en": "I don't eat meat. Do you have any vegetarian options?",
+     "ex_pt": "No como carne. ¿Tienen opciones vegetarianas?"
+    },
+    {
+     "en": "Can I get a box for this?",
+     "pt": "¿Me lo puede poner para llevar?",
+     "ex_en": "I can't finish it. Can I get a box for this?",
+     "ex_pt": "No puedo terminarlo. ¿Me lo puede poner para llevar?"
+    },
+    {
+     "en": "No ice, please.",
+     "pt": "Sin hielo, por favor.",
+     "ex_en": "A Coke, no ice, please.",
+     "ex_pt": "Una Coca-Cola sin hielo, por favor."
+    },
+    {
+     "en": "Can I get it without onions?",
+     "pt": "¿Me lo puede traer sin cebolla?",
+     "ex_en": "I'll have the burger. Can I get it without onions?",
+     "ex_pt": "Voy a pedir la hamburguesa. ¿Me la puede traer sin cebolla?"
+    },
+    {
+     "en": "On the side, please.",
+     "pt": "Aparte, por favor.",
+     "ex_en": "The dressing on the side, please.",
+     "ex_pt": "El aderezo aparte, por favor."
+    },
+    {
+     "en": "How would you like your steak?",
+     "pt": "¿Qué término desea para la carne?",
+     "ex_en": "How would you like your steak, sir?",
+     "ex_pt": "¿Qué término desea para la carne, señor?"
+    },
+    {
+     "en": "Medium rare, please.",
+     "pt": "Término medio, tirando a poco hecho, por favor.",
+     "ex_en": "Medium rare, please, with a side of fries.",
+     "ex_pt": "Término medio, tirando a poco hecho, por favor, con papas fritas de guarnición."
+    },
+    {
+     "en": "What size?",
+     "pt": "¿De qué tamaño?",
+     "ex_en": "One iced coffee. What size?",
+     "ex_pt": "Un café helado. ¿De qué tamaño?"
+    },
+    {
+     "en": "Can I get a large latte?",
+     "pt": "¿Me da un latte grande?",
+     "ex_en": "Hi, can I get a large latte?",
+     "ex_pt": "Hola, ¿me da un latte grande?"
+    },
+    {
+     "en": "With oat milk, please.",
+     "pt": "Con leche de avena, por favor.",
+     "ex_en": "A cappuccino with oat milk, please.",
+     "ex_pt": "Un capuchino con leche de avena, por favor."
+    },
+    {
+     "en": "Can we get a booth?",
+     "pt": "¿Nos puede dar una mesa con sillones?",
+     "ex_en": "There are four of us. Can we get a booth?",
+     "ex_pt": "Somos cuatro. ¿Nos puede dar una mesa con sillones?"
+    },
+    {
+     "en": "Could I get a straw?",
+     "pt": "¿Me da un popote/una pajita?",
+     "ex_en": "Could I get a straw for my juice?",
+     "ex_pt": "¿Me da un popote/una pajita para el jugo?"
+    },
+    {
+     "en": "Can we sit outside?",
+     "pt": "¿Podemos sentarnos afuera?",
+     "ex_en": "It's a nice day. Can we sit outside?",
+     "ex_pt": "Hace un día bonito. ¿Podemos sentarnos afuera?"
+    },
+    {
+     "en": "How long is the wait?",
+     "pt": "¿Cuánto hay que esperar?",
+     "ex_en": "We don't have a reservation. How long is the wait?",
+     "ex_pt": "No tenemos reservación. ¿Cuánto hay que esperar?"
+    },
+    {
+     "en": "This isn't what I ordered.",
+     "pt": "Esto no es lo que pedí.",
+     "ex_en": "Sorry, this isn't what I ordered. I asked for the fish.",
+     "ex_pt": "Disculpe, esto no es lo que pedí. Yo pedí el pescado."
+    },
+    {
+     "en": "Could we get some napkins?",
+     "pt": "¿Nos trae unas servilletas?",
+     "ex_en": "Could we get some napkins? I spilled my drink.",
+     "ex_pt": "¿Nos trae unas servilletas? Se me cayó la bebida."
+    },
+    {
+     "en": "Is the tip included?",
+     "pt": "¿La propina está incluida?",
+     "ex_en": "Is the tip included, or should I add it?",
+     "ex_pt": "¿La propina está incluida o debo agregarla?"
+    },
+    {
+     "en": "I'll pay in cash.",
+     "pt": "Voy a pagar en efectivo.",
+     "ex_en": "No card for me. I'll pay in cash.",
+     "ex_pt": "Con tarjeta no. Voy a pagar en efectivo."
+    },
+    {
+     "en": "It's on me.",
+     "pt": "Yo invito.",
+     "ex_en": "Put your wallet away. It's on me.",
+     "ex_pt": "Guarda la cartera. Yo invito."
+    },
+    {
+     "en": "Could I see the dessert menu?",
+     "pt": "¿Puedo ver la carta de postres?",
+     "ex_en": "That was delicious. Could I see the dessert menu?",
+     "ex_pt": "Estuvo delicioso. ¿Puedo ver la carta de postres?"
+    },
+    {
+     "en": "What's the soup of the day?",
+     "pt": "¿Cuál es la sopa del día?",
+     "ex_en": "What's the soup of the day? Is it vegetarian?",
+     "ex_pt": "¿Cuál es la sopa del día? ¿Es vegetariana?"
+    },
+    {
+     "en": "Do you have a kids' menu?",
+     "pt": "¿Tienen menú infantil?",
+     "ex_en": "My son is five. Do you have a kids' menu?",
+     "ex_pt": "Mi hijo tiene cinco años. ¿Tienen menú infantil?"
+    },
+    {
+     "en": "Do I pay at the counter?",
+     "pt": "¿Pago en la caja?",
+     "ex_en": "Do I pay at the counter or at the table?",
+     "ex_pt": "¿Pago en la caja o en la mesa?"
+    },
+    {
+     "en": "Could we get some more bread?",
+     "pt": "¿Nos trae más pan?",
+     "ex_en": "This bread is amazing. Could we get some more bread?",
+     "ex_pt": "Este pan está buenísimo. ¿Nos trae más pan?"
+    }
+   ]
+  },
+  {
+   "theme": "Compras",
+   "items": [
+    {
+     "en": "Is this the final price?",
+     "pt": "¿Este es el precio final?",
+     "ex_en": "Is this the final price, or is there a discount at the register?",
+     "ex_pt": "¿Este es el precio final o hay descuento en caja?"
+    },
+    {
+     "en": "Can I help you?",
+     "pt": "¿Le puedo ayudar?",
+     "ex_en": "Hi there! Can I help you?",
+     "ex_pt": "¡Hola! ¿Le puedo ayudar?"
+    },
+    {
+     "en": "I'm just looking, thanks.",
+     "pt": "Solo estoy mirando, gracias.",
+     "ex_en": "No, I'm just looking, thanks.",
+     "ex_pt": "No, solo estoy mirando, gracias."
+    },
+    {
+     "en": "I'm looking for...",
+     "pt": "Estoy buscando...",
+     "ex_en": "I'm looking for a black jacket.",
+     "ex_pt": "Estoy buscando una chaqueta negra."
+    },
+    {
+     "en": "Can I pay in installments?",
+     "pt": "¿Puedo pagar a plazos?",
+     "ex_en": "It's a little expensive. Can I pay in installments?",
+     "ex_pt": "Está un poco caro. ¿Puedo pagar a plazos?"
+    },
+    {
+     "en": "Can I try this on?",
+     "pt": "¿Me lo puedo probar?",
+     "ex_en": "I love this dress. Can I try this on?",
+     "ex_pt": "Me encanta este vestido. ¿Me lo puedo probar?"
+    },
+    {
+     "en": "Where's the fitting room?",
+     "pt": "¿Dónde está el probador?",
+     "ex_en": "Excuse me, where's the fitting room?",
+     "ex_pt": "Disculpe, ¿dónde está el probador?"
+    },
+    {
+     "en": "Do you have this in a different size?",
+     "pt": "¿Tienen esto en otra talla?",
+     "ex_en": "It's a little tight. Do you have this in a different size?",
+     "ex_pt": "Me queda un poco ajustado. ¿Tienen esto en otra talla?"
+    },
+    {
+     "en": "Do you have this in another color?",
+     "pt": "¿Tiene esto en otro color?",
+     "ex_en": "I like the style. Do you have this in another color?",
+     "ex_pt": "Me gusta el modelo. ¿Tiene esto en otro color?"
+    },
+    {
+     "en": "I'll take it.",
+     "pt": "Me lo llevo.",
+     "ex_en": "It looks great. I'll take it.",
+     "ex_pt": "Me queda genial. Me lo llevo."
+    },
+    {
+     "en": "Cash or card?",
+     "pt": "¿Efectivo o tarjeta?",
+     "ex_en": "Your total is $25. Cash or card?",
+     "ex_pt": "El total es de 25 dólares. ¿Efectivo o tarjeta?"
+    },
+    {
+     "en": "Would you like a bag?",
+     "pt": "¿Quiere una bolsa?",
+     "ex_en": "Would you like a bag? It's ten cents.",
+     "ex_pt": "¿Quiere una bolsa? Cuesta diez centavos."
+    },
+    {
+     "en": "Where can I get a cart?",
+     "pt": "¿Dónde consigo un carrito?",
+     "ex_en": "I have a lot to buy. Where can I get a cart?",
+     "ex_pt": "Tengo muchas cosas que comprar. ¿Dónde consigo un carrito?"
+    },
+    {
+     "en": "Is this on sale?",
+     "pt": "¿Esto está en oferta?",
+     "ex_en": "Is this on sale? I don't see a price tag.",
+     "ex_pt": "¿Esto está en oferta? No veo la etiqueta del precio."
+    },
+    {
+     "en": "It's too expensive.",
+     "pt": "Está demasiado caro.",
+     "ex_en": "I like it, but it's too expensive.",
+     "ex_pt": "Me gusta, pero está demasiado caro."
+    },
+    {
+     "en": "Do you have anything cheaper?",
+     "pt": "¿Tiene algo más barato?",
+     "ex_en": "That's over my budget. Do you have anything cheaper?",
+     "ex_pt": "Eso se pasa de mi presupuesto. ¿Tiene algo más barato?"
+    },
+    {
+     "en": "Where can I find...?",
+     "pt": "¿Dónde encuentro...?",
+     "ex_en": "Where can I find the shampoo?",
+     "ex_pt": "¿Dónde encuentro el champú?"
+    },
+    {
+     "en": "Where's the checkout?",
+     "pt": "¿Dónde está la caja?",
+     "ex_en": "I'm ready to pay. Where's the checkout?",
+     "ex_pt": "Ya puedo pagar. ¿Dónde está la caja?"
+    },
+    {
+     "en": "Can I pay with my phone?",
+     "pt": "¿Puedo pagar con el celular?",
+     "ex_en": "I forgot my wallet. Can I pay with my phone?",
+     "ex_pt": "Olvidé la cartera. ¿Puedo pagar con el celular?"
+    },
+    {
+     "en": "Do you have a smaller size?",
+     "pt": "¿Tiene una talla más pequeña?",
+     "ex_en": "These pants are too loose. Do you have a smaller size?",
+     "ex_pt": "Este pantalón me queda muy holgado. ¿Tiene una talla más pequeña?"
+    },
+    {
+     "en": "Do you have a bigger size?",
+     "pt": "¿Tiene una talla más grande?",
+     "ex_en": "These shoes are too tight. Do you have a bigger size?",
+     "ex_pt": "Estos zapatos me aprietan. ¿Tiene una talla más grande?"
+    },
+    {
+     "en": "It doesn't fit.",
+     "pt": "No me queda bien.",
+     "ex_en": "I tried the shirt on, but it doesn't fit.",
+     "ex_pt": "Me probé la camisa, pero no me queda bien."
+    },
+    {
+     "en": "It fits perfectly.",
+     "pt": "Me queda perfecto.",
+     "ex_en": "I'll take this jacket. It fits perfectly.",
+     "ex_pt": "Me llevo esta chaqueta. Me queda perfecta."
+    },
+    {
+     "en": "Debit or credit?",
+     "pt": "¿Débito o crédito?",
+     "ex_en": "Debit or credit? Credit, please.",
+     "ex_pt": "¿Débito o crédito? Crédito, por favor."
+    },
+    {
+     "en": "Can I pay in cash?",
+     "pt": "¿Puedo pagar en efectivo?",
+     "ex_en": "My card isn't working. Can I pay in cash?",
+     "ex_pt": "Mi tarjeta no funciona. ¿Puedo pagar en efectivo?"
+    },
+    {
+     "en": "Will that be all?",
+     "pt": "¿Algo más?",
+     "ex_en": "Two apples and a loaf of bread. Will that be all?",
+     "ex_pt": "Dos manzanas y un pan. ¿Algo más?"
+    },
+    {
+     "en": "Did you find everything okay?",
+     "pt": "¿Encontró todo lo que buscaba?",
+     "ex_en": "Hi! Did you find everything okay?",
+     "ex_pt": "¡Hola! ¿Encontró todo lo que buscaba?"
+    },
+    {
+     "en": "I'd like to return this.",
+     "pt": "Quisiera devolver esto.",
+     "ex_en": "I'd like to return this. It's the wrong size.",
+     "ex_pt": "Quisiera devolver esto. No es la talla correcta."
+    },
+    {
+     "en": "Can I exchange this?",
+     "pt": "¿Puedo cambiar esto?",
+     "ex_en": "Can I exchange this for a medium?",
+     "ex_pt": "¿Puedo cambiar esto por una talla M?"
+    },
+    {
+     "en": "What's your return policy?",
+     "pt": "¿Cuál es la política de devoluciones?",
+     "ex_en": "It's a gift. What's your return policy?",
+     "ex_pt": "Es un regalo. ¿Cuál es la política de devoluciones?"
+    },
+    {
+     "en": "Is there a discount?",
+     "pt": "¿Hay descuento?",
+     "ex_en": "Is there a discount if I buy two?",
+     "ex_pt": "¿Hay descuento si me llevo dos?"
+    },
+    {
+     "en": "Can you give me a discount?",
+     "pt": "¿Me puede hacer un descuento?",
+     "ex_en": "There's a small stain here. Can you give me a discount?",
+     "ex_pt": "Aquí hay una manchita. ¿Me puede hacer un descuento?"
+    },
+    {
+     "en": "Is tax included?",
+     "pt": "¿El impuesto está incluido?",
+     "ex_en": "The tag says $40. Is tax included?",
+     "ex_pt": "La etiqueta dice 40 dólares. ¿El impuesto está incluido?"
+    },
+    {
+     "en": "What time do you close?",
+     "pt": "¿A qué hora cierran?",
+     "ex_en": "What time do you close today?",
+     "ex_pt": "¿A qué hora cierran hoy?"
+    },
+    {
+     "en": "Are you open on Sundays?",
+     "pt": "¿Abren los domingos?",
+     "ex_en": "Are you open on Sundays, or just Monday through Saturday?",
+     "ex_pt": "¿Abren los domingos o solo de lunes a sábado?"
+    },
+    {
+     "en": "Do you have this in stock?",
+     "pt": "¿Tienen esto disponible?",
+     "ex_en": "I saw it online. Do you have this in stock?",
+     "ex_pt": "Lo vi en la página web. ¿Tienen esto disponible?"
+    },
+    {
+     "en": "It's out of stock.",
+     "pt": "Está agotado.",
+     "ex_en": "Sorry, it's out of stock right now.",
+     "ex_pt": "Lo siento, está agotado en este momento."
+    },
+    {
+     "en": "Insert or tap your card.",
+     "pt": "Inserte o acerque la tarjeta.",
+     "ex_en": "Your total is $18.50. Insert or tap your card.",
+     "ex_pt": "El total es de 18,50 dólares. Inserte o acerque la tarjeta."
+    },
+    {
+     "en": "Do you want your receipt?",
+     "pt": "¿Quiere el recibo?",
+     "ex_en": "Here you go. Do you want your receipt?",
+     "ex_pt": "Aquí tiene. ¿Quiere el recibo?"
+    },
+    {
+     "en": "Could you gift wrap it?",
+     "pt": "¿Me lo puede envolver para regalo?",
+     "ex_en": "It's for my mom. Could you gift wrap it?",
+     "ex_pt": "Es para mi mamá. ¿Me lo puede envolver para regalo?"
+    },
+    {
+     "en": "Do you have change for a twenty?",
+     "pt": "¿Tiene cambio de un billete de veinte?",
+     "ex_en": "Sorry, do you have change for a twenty?",
+     "ex_pt": "Disculpe, ¿tiene cambio de un billete de veinte?"
+    },
+    {
+     "en": "Here's your change.",
+     "pt": "Aquí tiene su cambio.",
+     "ex_en": "Here's your change and your receipt.",
+     "ex_pt": "Aquí tiene su cambio y el recibo."
+    },
+    {
+     "en": "Are you in line?",
+     "pt": "¿Está usted en la fila?",
+     "ex_en": "Excuse me, are you in line?",
+     "ex_pt": "Disculpe, ¿está usted en la fila?"
+    },
+    {
+     "en": "Next in line, please.",
+     "pt": "El siguiente, por favor.",
+     "ex_en": "Thank you! Next in line, please.",
+     "ex_pt": "¡Gracias! El siguiente, por favor."
+    },
+    {
+     "en": "Buy one, get one free.",
+     "pt": "Lleve dos y pague uno.",
+     "ex_en": "These T-shirts are buy one, get one free.",
+     "ex_pt": "Estas camisetas están en la promoción lleve dos y pague uno."
+    },
+    {
+     "en": "That's a good deal.",
+     "pt": "Es una buena oferta.",
+     "ex_en": "Two pairs for $30? That's a good deal.",
+     "ex_pt": "¿Dos pares por 30 dólares? Es una buena oferta."
+    },
+    {
+     "en": "Do you have a rewards card?",
+     "pt": "¿Tiene tarjeta de cliente frecuente?",
+     "ex_en": "Do you have a rewards card with us?",
+     "ex_pt": "¿Tiene tarjeta de cliente frecuente de nuestra tienda?"
+    },
+    {
+     "en": "Can you hold this for me?",
+     "pt": "¿Me puede apartar esto?",
+     "ex_en": "Can you hold this for me until tomorrow?",
+     "ex_pt": "¿Me puede apartar esto hasta mañana?"
+    },
+    {
+     "en": "I'll think about it.",
+     "pt": "Lo voy a pensar.",
+     "ex_en": "Thanks, but I'll think about it.",
+     "ex_pt": "Gracias, pero lo voy a pensar."
+    },
+    {
+     "en": "Can I return this without a receipt?",
+     "pt": "¿Puedo devolver esto sin el recibo?",
+     "ex_en": "I lost it. Can I return this without a receipt?",
+     "ex_pt": "Lo perdí. ¿Puedo devolver esto sin el recibo?"
+    }
+   ]
+  },
+  {
+   "theme": "Trabajo y reuniones",
+   "items": [
+    {
+     "en": "Let's get started.",
+     "pt": "Empecemos.",
+     "ex_en": "It's ten o'clock, so let's get started.",
+     "ex_pt": "Ya son las diez, así que empecemos."
+    },
+    {
+     "en": "Can you hear me?",
+     "pt": "¿Me escuchan?",
+     "ex_en": "I just switched microphones. Can you hear me?",
+     "ex_pt": "Acabo de cambiar de micrófono. ¿Me escuchan?"
+    },
+    {
+     "en": "You're on mute.",
+     "pt": "Tienes el micrófono silenciado.",
+     "ex_en": "We can't hear you, John. You're on mute.",
+     "ex_pt": "No te escuchamos, John. Tienes el micrófono silenciado."
+    },
+    {
+     "en": "Can you see my screen?",
+     "pt": "¿Pueden ver mi pantalla?",
+     "ex_en": "I'm sharing the slides now. Can you see my screen?",
+     "ex_pt": "Estoy compartiendo las diapositivas ahora. ¿Pueden ver mi pantalla?"
+    },
+    {
+     "en": "Sorry I'm late.",
+     "pt": "Perdón por el retraso.",
+     "ex_en": "Sorry I'm late. Traffic was terrible this morning.",
+     "ex_pt": "Perdón por el retraso. El tráfico estaba horrible esta mañana."
+    },
+    {
+     "en": "Any questions?",
+     "pt": "¿Alguna pregunta?",
+     "ex_en": "That's the plan for next quarter. Any questions?",
+     "ex_pt": "Ese es el plan para el próximo trimestre. ¿Alguna pregunta?"
+    },
+    {
+     "en": "I'll get back to you.",
+     "pt": "Te aviso luego.",
+     "ex_en": "I don't have the numbers right now, but I'll get back to you.",
+     "ex_pt": "No tengo las cifras ahora, pero te aviso luego."
+    },
+    {
+     "en": "Can we reschedule?",
+     "pt": "¿Podemos cambiar la fecha?",
+     "ex_en": "Something came up this afternoon. Can we reschedule?",
+     "ex_pt": "Me surgió un imprevisto esta tarde. ¿Podemos cambiar la fecha?"
+    },
+    {
+     "en": "What's the deadline?",
+     "pt": "¿Cuál es la fecha límite?",
+     "ex_en": "What's the deadline for the final report?",
+     "ex_pt": "¿Cuál es la fecha límite del informe final?"
+    },
+    {
+     "en": "Let's schedule a meeting.",
+     "pt": "Programemos una reunión.",
+     "ex_en": "Let's schedule a meeting with the client next week.",
+     "ex_pt": "Programemos una reunión con el cliente la próxima semana."
+    },
+    {
+     "en": "I have a quick question.",
+     "pt": "Tengo una pregunta rápida.",
+     "ex_en": "Before we move on, I have a quick question.",
+     "ex_pt": "Antes de seguir, tengo una pregunta rápida."
+    },
+    {
+     "en": "Can you share your screen?",
+     "pt": "¿Puedes compartir tu pantalla?",
+     "ex_en": "Can you share your screen so we can see the spreadsheet?",
+     "ex_pt": "¿Puedes compartir tu pantalla para que veamos la hoja de cálculo?"
+    },
+    {
+     "en": "I'll follow up by email.",
+     "pt": "Te escribo por correo para dar seguimiento.",
+     "ex_en": "Thanks for your time. I'll follow up by email with the details.",
+     "ex_pt": "Gracias por tu tiempo. Te escribo por correo con los detalles."
+    },
+    {
+     "en": "Let's go over the details.",
+     "pt": "Repasemos los detalles.",
+     "ex_en": "Before the launch, let's go over the details one more time.",
+     "ex_pt": "Antes del lanzamiento, repasemos los detalles una vez más."
+    },
+    {
+     "en": "I see your point.",
+     "pt": "Entiendo lo que dices.",
+     "ex_en": "I see your point, but I think we need more time.",
+     "ex_pt": "Entiendo lo que dices, pero creo que necesitamos más tiempo."
+    },
+    {
+     "en": "Thanks, everyone.",
+     "pt": "Gracias a todos.",
+     "ex_en": "Thanks, everyone. See you at the next meeting.",
+     "ex_pt": "Gracias a todos. Nos vemos en la próxima reunión."
+    },
+    {
+     "en": "Let's wrap up.",
+     "pt": "Vamos cerrando.",
+     "ex_en": "We're almost out of time, so let's wrap up.",
+     "ex_pt": "Casi se nos acaba el tiempo, así que vamos cerrando."
+    },
+    {
+     "en": "What are the next steps?",
+     "pt": "¿Cuáles son los próximos pasos?",
+     "ex_en": "Great discussion. What are the next steps?",
+     "ex_pt": "Excelente discusión. ¿Cuáles son los próximos pasos?"
+    },
+    {
+     "en": "Does that work for you?",
+     "pt": "¿Te viene bien?",
+     "ex_en": "How about Thursday at 3? Does that work for you?",
+     "ex_pt": "¿Qué tal el jueves a las 15:00? ¿Te viene bien?"
+    },
+    {
+     "en": "I'll send you the link.",
+     "pt": "Te mando el enlace.",
+     "ex_en": "The meeting is online. I'll send you the link.",
+     "ex_pt": "La reunión es en línea. Te mando el enlace."
+    },
+    {
+     "en": "Let me check.",
+     "pt": "Déjame revisar.",
+     "ex_en": "I'm not sure if the room is free. Let me check.",
+     "ex_pt": "No sé si la sala está libre. Déjame revisar."
+    },
+    {
+     "en": "I'm working from home today.",
+     "pt": "Hoy estoy trabajando desde casa.",
+     "ex_en": "I'm working from home today, so call me on Teams.",
+     "ex_pt": "Hoy estoy trabajando desde casa, así que llámame por Teams."
+    },
+    {
+     "en": "Let's take a break.",
+     "pt": "Hagamos una pausa.",
+     "ex_en": "We've been at this for two hours. Let's take a break.",
+     "ex_pt": "Llevamos dos horas con esto. Hagamos una pausa."
+    },
+    {
+     "en": "You're breaking up.",
+     "pt": "Se te corta la señal.",
+     "ex_en": "Sorry, you're breaking up. Can you say that again?",
+     "ex_pt": "Perdón, se te corta la señal. ¿Puedes repetirlo?"
+    },
+    {
+     "en": "Good point.",
+     "pt": "Buena observación.",
+     "ex_en": "Good point. We should talk to the legal team first.",
+     "ex_pt": "Buena observación. Deberíamos hablar primero con el equipo legal."
+    },
+    {
+     "en": "I'll keep you posted.",
+     "pt": "Te mantengo al tanto.",
+     "ex_en": "We're still waiting for approval. I'll keep you posted.",
+     "ex_pt": "Todavía estamos esperando la aprobación. Te mantengo al tanto."
+    },
+    {
+     "en": "Just to clarify...",
+     "pt": "Solo para aclarar...",
+     "ex_en": "Just to clarify, the deadline is Friday, right?",
+     "ex_pt": "Solo para aclarar, la fecha límite es el viernes, ¿verdad?"
+    },
+    {
+     "en": "Can we push it to tomorrow?",
+     "pt": "¿Podemos pasarlo para mañana?",
+     "ex_en": "I'm stuck in another meeting. Can we push it to tomorrow?",
+     "ex_pt": "Estoy atrapado en otra reunión. ¿Podemos pasarlo para mañana?"
+    },
+    {
+     "en": "I'm on it.",
+     "pt": "Ya me estoy encargando.",
+     "ex_en": "Don't worry about the presentation. I'm on it.",
+     "ex_pt": "No te preocupes por la presentación. Ya me estoy encargando."
+    },
+    {
+     "en": "Let's move on.",
+     "pt": "Pasemos al siguiente tema.",
+     "ex_en": "We've covered the budget. Let's move on.",
+     "ex_pt": "Ya hablamos del presupuesto. Pasemos al siguiente tema."
+    },
+    {
+     "en": "Let's circle back to that.",
+     "pt": "Retomemos eso más tarde.",
+     "ex_en": "We don't have the data yet, so let's circle back to that.",
+     "ex_pt": "Todavía no tenemos los datos, así que retomemos eso más tarde."
+    },
+    {
+     "en": "Who's taking notes?",
+     "pt": "¿Quién está tomando notas?",
+     "ex_en": "Before we start, who's taking notes today?",
+     "ex_pt": "Antes de empezar, ¿quién toma notas hoy?"
+    },
+    {
+     "en": "What's the agenda?",
+     "pt": "¿Cuál es el orden del día?",
+     "ex_en": "What's the agenda for this afternoon's meeting?",
+     "ex_pt": "¿Cuál es el orden del día de la reunión de esta tarde?"
+    },
+    {
+     "en": "I have a conflict.",
+     "pt": "Tengo otro compromiso a esa hora.",
+     "ex_en": "I have a conflict at 2. Could we meet at 4 instead?",
+     "ex_pt": "Tengo otro compromiso a las 14:00. ¿Podemos reunirnos a las 16:00?"
+    },
+    {
+     "en": "I'm out of the office.",
+     "pt": "Estoy fuera de la oficina.",
+     "ex_en": "I'm out of the office until Monday, but I'll check my email.",
+     "ex_pt": "Estoy fuera de la oficina hasta el lunes, pero revisaré mi correo."
+    },
+    {
+     "en": "Let's touch base later.",
+     "pt": "Hablamos más tarde.",
+     "ex_en": "I have to run now. Let's touch base later.",
+     "ex_pt": "Tengo que irme ya. Hablamos más tarde."
+    },
+    {
+     "en": "Can I jump in?",
+     "pt": "¿Puedo intervenir?",
+     "ex_en": "Sorry, can I jump in? I have some information on that.",
+     "ex_pt": "Perdón, ¿puedo intervenir? Tengo información sobre eso."
+    },
+    {
+     "en": "That's a good question.",
+     "pt": "Buena pregunta.",
+     "ex_en": "That's a good question. Let me find out and get back to you.",
+     "ex_pt": "Buena pregunta. Voy a averiguarlo y te aviso."
+    },
+    {
+     "en": "We're running out of time.",
+     "pt": "Se nos está acabando el tiempo.",
+     "ex_en": "We're running out of time, so let's focus on the main issue.",
+     "ex_pt": "Se nos está acabando el tiempo, así que centrémonos en el tema principal."
+    },
+    {
+     "en": "Let's keep it brief.",
+     "pt": "Seamos breves.",
+     "ex_en": "We only have fifteen minutes, so let's keep it brief.",
+     "ex_pt": "Solo tenemos quince minutos, así que seamos breves."
+    },
+    {
+     "en": "Let's stay on track.",
+     "pt": "No nos desviemos del tema.",
+     "ex_en": "That's interesting, but let's stay on track.",
+     "ex_pt": "Eso es interesante, pero no nos desviemos del tema."
+    },
+    {
+     "en": "I'm swamped right now.",
+     "pt": "Estoy hasta arriba de trabajo ahora.",
+     "ex_en": "I'm swamped right now. Can we talk after lunch?",
+     "ex_pt": "Estoy hasta arriba de trabajo ahora. ¿Podemos hablar después del almuerzo?"
+    },
+    {
+     "en": "I need to step out.",
+     "pt": "Tengo que salir un momento.",
+     "ex_en": "Sorry, I need to step out. I'll be back in five minutes.",
+     "ex_pt": "Perdón, tengo que salir un momento. Vuelvo en cinco minutos."
+    },
+    {
+     "en": "Let's take this offline.",
+     "pt": "Hablemos de esto fuera de la reunión.",
+     "ex_en": "This only affects our team, so let's take this offline.",
+     "ex_pt": "Esto solo afecta a nuestro equipo, así que hablemos de esto fuera de la reunión."
+    },
+    {
+     "en": "Let's sync up tomorrow.",
+     "pt": "Pongámonos de acuerdo mañana.",
+     "ex_en": "Let's sync up tomorrow morning before the client call.",
+     "ex_pt": "Pongámonos de acuerdo mañana por la mañana antes de la llamada con el cliente."
+    },
+    {
+     "en": "I'll loop you in.",
+     "pt": "Te incluyo en la conversación.",
+     "ex_en": "I'm emailing the vendor now. I'll loop you in.",
+     "ex_pt": "Le estoy escribiendo al proveedor ahora. Te incluyo en la conversación."
+    },
+    {
+     "en": "I have to drop off.",
+     "pt": "Tengo que salir de la llamada.",
+     "ex_en": "Sorry, I have to drop off. I have another call at 11.",
+     "ex_pt": "Perdón, tengo que salir de la llamada. Tengo otra a las 11:00."
+    },
+    {
+     "en": "Let's go around the room.",
+     "pt": "Hagamos una ronda.",
+     "ex_en": "Let's go around the room and share quick updates.",
+     "ex_pt": "Hagamos una ronda y que cada uno comparta una actualización rápida."
+    },
+    {
+     "en": "Who's leading the meeting?",
+     "pt": "¿Quién va a dirigir la reunión?",
+     "ex_en": "Who's leading the meeting while Sarah is on vacation?",
+     "ex_pt": "¿Quién va a dirigir la reunión mientras Sarah está de vacaciones?"
+    },
+    {
+     "en": "Let's put a pin in that.",
+     "pt": "Dejemos eso para después.",
+     "ex_en": "Great idea, but let's put a pin in that for now.",
+     "ex_pt": "Excelente idea, pero dejémosla para después por ahora."
+    }
+   ]
+  },
+  {
+   "theme": "Teléfono y mensajes",
+   "items": [
+    {
+     "en": "Hello?",
+     "pt": "¿Hola?",
+     "ex_en": "Hello? Is anyone there?",
+     "ex_pt": "¿Hola? ¿Hay alguien ahí?"
+    },
+    {
+     "en": "Who's calling?",
+     "pt": "¿Quién habla?",
+     "ex_en": "Sorry, who's calling?",
+     "ex_pt": "Perdón, ¿quién habla?"
+    },
+    {
+     "en": "Can I call you back?",
+     "pt": "¿Te puedo devolver la llamada?",
+     "ex_en": "I'm driving. Can I call you back?",
+     "ex_pt": "Estoy manejando. ¿Te puedo devolver la llamada?"
+    },
+    {
+     "en": "I'll call you later.",
+     "pt": "Te llamo más tarde.",
+     "ex_en": "I'm at work now. I'll call you later.",
+     "ex_pt": "Ahora estoy en el trabajo. Te llamo más tarde."
+    },
+    {
+     "en": "Text me.",
+     "pt": "Mándame un mensaje.",
+     "ex_en": "Text me if you need anything.",
+     "ex_pt": "Mándame un mensaje si necesitas algo."
+    },
+    {
+     "en": "Call me.",
+     "pt": "Llámame.",
+     "ex_en": "Call me when you wake up.",
+     "ex_pt": "Llámame cuando te despiertes."
+    },
+    {
+     "en": "I'm on the phone.",
+     "pt": "Estoy hablando por teléfono.",
+     "ex_en": "Shh, I'm on the phone with my boss.",
+     "ex_pt": "Shh, estoy hablando por teléfono con mi jefe."
+    },
+    {
+     "en": "Sorry, I missed your call.",
+     "pt": "Perdón, no pude contestar tu llamada.",
+     "ex_en": "Sorry, I missed your call. I was in the shower.",
+     "ex_pt": "Perdón, no pude contestar tu llamada. Estaba en la ducha."
+    },
+    {
+     "en": "I can't hear you.",
+     "pt": "No te oigo.",
+     "ex_en": "I can't hear you. It's too loud here.",
+     "ex_pt": "No te oigo. Aquí hay mucho ruido."
+    },
+    {
+     "en": "It went straight to voicemail.",
+     "pt": "Me mandó directo al buzón de voz.",
+     "ex_en": "I tried calling him, but it went straight to voicemail.",
+     "ex_pt": "Intenté llamarlo, pero me mandó directo al buzón de voz."
+    },
+    {
+     "en": "My battery is dying.",
+     "pt": "Se me está acabando la batería.",
+     "ex_en": "My battery is dying, so I'll be quick.",
+     "ex_pt": "Se me está acabando la batería, así que seré breve."
+    },
+    {
+     "en": "I'll text you.",
+     "pt": "Te mando un mensaje.",
+     "ex_en": "I'll text you when I leave.",
+     "ex_pt": "Te mando un mensaje cuando salga."
+    },
+    {
+     "en": "What's your number?",
+     "pt": "¿Cuál es tu número?",
+     "ex_en": "What's your number? I'll send you the photos.",
+     "ex_pt": "¿Cuál es tu número? Te mando las fotos."
+    },
+    {
+     "en": "Can I speak to...?",
+     "pt": "¿Puedo hablar con...?",
+     "ex_en": "Hi, can I speak to Maria, please?",
+     "ex_pt": "Hola, ¿puedo hablar con María, por favor?"
+    },
+    {
+     "en": "You left me on read.",
+     "pt": "Me dejaste en visto.",
+     "ex_en": "You left me on read all day!",
+     "ex_pt": "¡Me dejaste en visto todo el día!"
+    },
+    {
+     "en": "Can you send me your location?",
+     "pt": "¿Me puedes mandar tu ubicación?",
+     "ex_en": "I'm lost. Can you send me your location?",
+     "ex_pt": "Estoy perdido. ¿Me puedes mandar tu ubicación?"
+    },
+    {
+     "en": "Did you get my message?",
+     "pt": "¿Te llegó mi mensaje?",
+     "ex_en": "Did you get my message about dinner?",
+     "ex_pt": "¿Te llegó mi mensaje sobre la cena?"
+    },
+    {
+     "en": "Text me when you get there.",
+     "pt": "Mándame un mensaje cuando llegues.",
+     "ex_en": "Drive safe, and text me when you get there.",
+     "ex_pt": "Maneja con cuidado y mándame un mensaje cuando llegues."
+    },
+    {
+     "en": "I'll put you on speaker.",
+     "pt": "Te voy a poner en altavoz.",
+     "ex_en": "My mom's here, so I'll put you on speaker.",
+     "ex_pt": "Mi mamá está aquí, así que te voy a poner en altavoz."
+    },
+    {
+     "en": "I didn't see your text.",
+     "pt": "No vi tu mensaje.",
+     "ex_en": "Sorry, I didn't see your text. I was asleep.",
+     "ex_pt": "Perdón, no vi tu mensaje. Estaba dormido."
+    },
+    {
+     "en": "Sorry, wrong number.",
+     "pt": "Perdón, número equivocado.",
+     "ex_en": "Is this Pedro? — Sorry, wrong number.",
+     "ex_pt": "¿Hablo con Pedro? — Perdón, número equivocado."
+    },
+    {
+     "en": "The call dropped.",
+     "pt": "Se cortó la llamada.",
+     "ex_en": "The call dropped when I went into the tunnel.",
+     "ex_pt": "Se cortó la llamada cuando entré al túnel."
+    },
+    {
+     "en": "I have no signal.",
+     "pt": "No tengo señal.",
+     "ex_en": "I have no signal in the elevator.",
+     "ex_pt": "No tengo señal en el ascensor."
+    },
+    {
+     "en": "My phone died.",
+     "pt": "Se me descargó el celular.",
+     "ex_en": "My phone died, so I couldn't call you.",
+     "ex_pt": "Se me descargó el celular, así que no pude llamarte."
+    },
+    {
+     "en": "My phone was on silent.",
+     "pt": "Tenía el celular en silencio.",
+     "ex_en": "Sorry, my phone was on silent all morning.",
+     "ex_pt": "Perdón, tuve el celular en silencio toda la mañana."
+    },
+    {
+     "en": "Why aren't you answering?",
+     "pt": "¿Por qué no contestas?",
+     "ex_en": "I've called five times. Why aren't you answering?",
+     "ex_pt": "Ya te llamé cinco veces. ¿Por qué no contestas?"
+    },
+    {
+     "en": "Send me a voice message.",
+     "pt": "Mándame un audio.",
+     "ex_en": "I can't read right now. Send me a voice message.",
+     "ex_pt": "Ahora no puedo leer. Mándame un audio."
+    },
+    {
+     "en": "Send me a pic.",
+     "pt": "Mándame una foto.",
+     "ex_en": "Send me a pic of the menu.",
+     "ex_pt": "Mándame una foto del menú."
+    },
+    {
+     "en": "I'll send you the address.",
+     "pt": "Te mando la dirección.",
+     "ex_en": "I'll send you the address by text.",
+     "ex_pt": "Te mando la dirección por mensaje."
+    },
+    {
+     "en": "Just saw your message.",
+     "pt": "Acabo de ver tu mensaje.",
+     "ex_en": "Just saw your message. I'm in!",
+     "ex_pt": "Acabo de ver tu mensaje. ¡Me apunto!"
+    },
+    {
+     "en": "Sorry for the late reply.",
+     "pt": "Perdón por tardar en responder.",
+     "ex_en": "Sorry for the late reply. It was a crazy day.",
+     "ex_pt": "Perdón por tardar en responder. Fue un día de locos."
+    },
+    {
+     "en": "Who is this?",
+     "pt": "¿Quién eres?",
+     "ex_en": "Who is this? I don't have your number saved.",
+     "ex_pt": "¿Quién eres? No tengo tu número guardado."
+    },
+    {
+     "en": "Speaking.",
+     "pt": "Con él/ella habla.",
+     "ex_en": "Can I speak to Ana? — Speaking.",
+     "ex_pt": "¿Puedo hablar con Ana? — Con ella habla."
+    },
+    {
+     "en": "Let me save your number.",
+     "pt": "Déjame guardar tu número.",
+     "ex_en": "Wait, let me save your number.",
+     "ex_pt": "Espera, déjame guardar tu número."
+    },
+    {
+     "en": "Can you speak up?",
+     "pt": "¿Puedes hablar más fuerte?",
+     "ex_en": "Can you speak up? The music is too loud.",
+     "ex_pt": "¿Puedes hablar más fuerte? La música está muy alta."
+    },
+    {
+     "en": "Sorry, I was busy.",
+     "pt": "Perdón, estaba ocupado(a).",
+     "ex_en": "Sorry, I was busy. What did you need?",
+     "ex_pt": "Perdón, estaba ocupado. ¿Qué necesitabas?"
+    },
+    {
+     "en": "I gotta go.",
+     "pt": "Tengo que colgar.",
+     "ex_en": "I gotta go, my bus is here. Bye!",
+     "ex_pt": "Tengo que colgar, ya llegó mi autobús. ¡Chao!"
+    },
+    {
+     "en": "I need to charge my phone.",
+     "pt": "Necesito cargar mi celular.",
+     "ex_en": "I need to charge my phone before we leave.",
+     "ex_pt": "Necesito cargar mi celular antes de que salgamos."
+    },
+    {
+     "en": "Can I borrow your charger?",
+     "pt": "¿Me prestas tu cargador?",
+     "ex_en": "My phone is at 2%. Can I borrow your charger?",
+     "ex_pt": "Mi celular está al 2 %. ¿Me prestas tu cargador?"
+    },
+    {
+     "en": "I'm running out of data.",
+     "pt": "Se me están acabando los datos.",
+     "ex_en": "I'm running out of data, so I can't watch videos.",
+     "ex_pt": "Se me están acabando los datos, así que no puedo ver videos."
+    },
+    {
+     "en": "Add me on WhatsApp.",
+     "pt": "Agrégame en WhatsApp.",
+     "ex_en": "Add me on WhatsApp so we can keep in touch.",
+     "ex_pt": "Agrégame en WhatsApp para que sigamos en contacto."
+    },
+    {
+     "en": "Let's video chat.",
+     "pt": "Hagamos una videollamada.",
+     "ex_en": "I miss you. Let's video chat tonight.",
+     "ex_pt": "Te extraño. Hagamos una videollamada esta noche."
+    },
+    {
+     "en": "Sorry, I have to take this call.",
+     "pt": "Perdón, tengo que contestar esta llamada.",
+     "ex_en": "Sorry, I have to take this call. It's my boss.",
+     "ex_pt": "Perdón, tengo que contestar esta llamada. Es mi jefe."
+    },
+    {
+     "en": "Leave a message.",
+     "pt": "Deja un mensaje.",
+     "ex_en": "I can't come to the phone. Leave a message after the beep.",
+     "ex_pt": "No puedo contestar ahora. Deja un mensaje después de la señal."
+    },
+    {
+     "en": "Can I take a message?",
+     "pt": "¿Quiere dejar un mensaje?",
+     "ex_en": "She's in a meeting. Can I take a message?",
+     "ex_pt": "Está en una reunión. ¿Quiere dejar un mensaje?"
+    },
+    {
+     "en": "He's not available right now.",
+     "pt": "Él no está disponible en este momento.",
+     "ex_en": "Sorry, he's not available right now.",
+     "ex_pt": "Lo siento, él no está disponible en este momento."
+    },
+    {
+     "en": "Thanks for calling.",
+     "pt": "Gracias por llamar.",
+     "ex_en": "Thanks for calling. Have a great day!",
+     "ex_pt": "Gracias por llamar. ¡Que tenga un excelente día!"
+    },
+    {
+     "en": "Please hold.",
+     "pt": "No cuelgue, por favor.",
+     "ex_en": "Please hold while I check that for you.",
+     "ex_pt": "No cuelgue, por favor, mientras lo verifico."
+    },
+    {
+     "en": "I'll transfer your call.",
+     "pt": "Voy a transferir su llamada.",
+     "ex_en": "One moment, I'll transfer your call to sales.",
+     "ex_pt": "Un momento, voy a transferir su llamada al departamento de ventas."
+    },
+    {
+     "en": "Please don't hang up.",
+     "pt": "Por favor, no cuelgue.",
+     "ex_en": "Please don't hang up. Your call is important to us.",
+     "ex_pt": "Por favor, no cuelgue. Su llamada es importante para nosotros."
+    }
+   ]
+  },
+  {
+   "theme": "Salud y emergencias",
+   "items": [
+    {
+     "en": "Help!",
+     "pt": "¡Auxilio!",
+     "ex_en": "Help! Someone fell into the pool!",
+     "ex_pt": "¡Auxilio! ¡Alguien se cayó a la piscina!"
+    },
+    {
+     "en": "Call 911!",
+     "pt": "¡Llama a emergencias!",
+     "ex_en": "He collapsed! Call 911!",
+     "ex_pt": "¡Se desmayó! ¡Llama a emergencias!"
+    },
+    {
+     "en": "I'm bleeding.",
+     "pt": "Estoy sangrando.",
+     "ex_en": "I'm bleeding. Do you have a bandage?",
+     "ex_pt": "Estoy sangrando. ¿Tienes una curita?"
+    },
+    {
+     "en": "I need a doctor.",
+     "pt": "Necesito un médico.",
+     "ex_en": "My arm is swollen. I need a doctor.",
+     "ex_pt": "Tengo el brazo hinchado. Necesito un médico."
+    },
+    {
+     "en": "I don't feel well.",
+     "pt": "No me siento bien.",
+     "ex_en": "I don't feel well. I think I'll go home early.",
+     "ex_pt": "No me siento bien. Creo que me iré a casa temprano."
+    },
+    {
+     "en": "Call an ambulance!",
+     "pt": "¡Llamen a una ambulancia!",
+     "ex_en": "She hit her head. Call an ambulance!",
+     "ex_pt": "Se golpeó la cabeza. ¡Llamen a una ambulancia!"
+    },
+    {
+     "en": "Call the police!",
+     "pt": "¡Llamen a la policía!",
+     "ex_en": "Someone broke into the car. Call the police!",
+     "ex_pt": "Alguien forzó el auto. ¡Llamen a la policía!"
+    },
+    {
+     "en": "Where's the nearest hospital?",
+     "pt": "¿Dónde está el hospital más cercano?",
+     "ex_en": "Excuse me, where's the nearest hospital?",
+     "ex_pt": "Disculpe, ¿dónde está el hospital más cercano?"
+    },
+    {
+     "en": "It hurts here.",
+     "pt": "Me duele aquí.",
+     "ex_en": "It hurts here, on the right side.",
+     "ex_pt": "Me duele aquí, del lado derecho."
+    },
+    {
+     "en": "Where does it hurt?",
+     "pt": "¿Dónde te duele?",
+     "ex_en": "Where does it hurt? Show me.",
+     "ex_pt": "¿Dónde te duele? Muéstrame."
+    },
+    {
+     "en": "I have a headache.",
+     "pt": "Me duele la cabeza.",
+     "ex_en": "I have a headache. Do you have any aspirin?",
+     "ex_pt": "Me duele la cabeza. ¿Tienes aspirina?"
+    },
+    {
+     "en": "I feel sick.",
+     "pt": "Me siento mal.",
+     "ex_en": "I feel sick. Can we pull over?",
+     "ex_pt": "Me siento mal. ¿Podemos parar el auto?"
+    },
+    {
+     "en": "I have a fever.",
+     "pt": "Tengo fiebre.",
+     "ex_en": "I have a fever, so I'm staying home today.",
+     "ex_pt": "Tengo fiebre, así que hoy me quedo en casa."
+    },
+    {
+     "en": "I'm allergic to penicillin.",
+     "pt": "Soy alérgico a la penicilina.",
+     "ex_en": "Before you prescribe anything, I'm allergic to penicillin.",
+     "ex_pt": "Antes de que me recete algo, soy alérgico a la penicilina."
+    },
+    {
+     "en": "I feel dizzy.",
+     "pt": "Estoy mareado.",
+     "ex_en": "I feel dizzy. I need to sit down.",
+     "ex_pt": "Estoy mareado. Necesito sentarme."
+    },
+    {
+     "en": "Is anyone hurt?",
+     "pt": "¿Alguien está herido?",
+     "ex_en": "Is anyone hurt? Does anyone need help?",
+     "ex_pt": "¿Alguien está herido? ¿Alguien necesita ayuda?"
+    },
+    {
+     "en": "There's been an accident.",
+     "pt": "Hubo un accidente.",
+     "ex_en": "There's been an accident on the highway.",
+     "ex_pt": "Hubo un accidente en la autopista."
+    },
+    {
+     "en": "I can't breathe.",
+     "pt": "No puedo respirar.",
+     "ex_en": "I can't breathe. I need my inhaler.",
+     "ex_pt": "No puedo respirar. Necesito mi inhalador."
+    },
+    {
+     "en": "He's not breathing.",
+     "pt": "No está respirando.",
+     "ex_en": "He's not breathing! Does anyone know CPR?",
+     "ex_pt": "¡No está respirando! ¿Alguien sabe hacer RCP?"
+    },
+    {
+     "en": "She passed out.",
+     "pt": "Se desmayó.",
+     "ex_en": "She passed out in the heat.",
+     "ex_pt": "Se desmayó por el calor."
+    },
+    {
+     "en": "Is there a doctor here?",
+     "pt": "¿Hay algún médico aquí?",
+     "ex_en": "Is there a doctor here? This man needs help.",
+     "ex_pt": "¿Hay algún médico aquí? Este hombre necesita ayuda."
+    },
+    {
+     "en": "Stay calm.",
+     "pt": "Mantén la calma.",
+     "ex_en": "Stay calm. The ambulance is on its way.",
+     "ex_pt": "Mantén la calma. La ambulancia ya viene en camino."
+    },
+    {
+     "en": "I have a stomachache.",
+     "pt": "Me duele el estómago.",
+     "ex_en": "I have a stomachache after eating that shrimp.",
+     "ex_pt": "Me duele el estómago después de comer esos camarones."
+    },
+    {
+     "en": "I have a sore throat.",
+     "pt": "Me duele la garganta.",
+     "ex_en": "I have a sore throat and a runny nose.",
+     "ex_pt": "Me duele la garganta y tengo mocos."
+    },
+    {
+     "en": "I have a cold.",
+     "pt": "Estoy resfriado.",
+     "ex_en": "I have a cold, so don't get too close.",
+     "ex_pt": "Estoy resfriado, así que no te acerques mucho."
+    },
+    {
+     "en": "Where's the pharmacy?",
+     "pt": "¿Dónde está la farmacia?",
+     "ex_en": "Where's the pharmacy? I need some cold medicine.",
+     "ex_pt": "¿Dónde está la farmacia? Necesito un medicamento para el resfriado."
+    },
+    {
+     "en": "I'd like to make an appointment.",
+     "pt": "Quisiera pedir una cita.",
+     "ex_en": "Hi, I'd like to make an appointment with Dr. Lee.",
+     "ex_pt": "Hola, quisiera pedir una cita con el Dr. Lee."
+    },
+    {
+     "en": "I have chest pain.",
+     "pt": "Tengo dolor en el pecho.",
+     "ex_en": "I have chest pain and my left arm feels numb.",
+     "ex_pt": "Tengo dolor en el pecho y el brazo izquierdo dormido."
+    },
+    {
+     "en": "I've been throwing up.",
+     "pt": "He estado vomitando.",
+     "ex_en": "I've been throwing up since last night.",
+     "ex_pt": "He estado vomitando desde anoche."
+    },
+    {
+     "en": "I have diarrhea.",
+     "pt": "Tengo diarrea.",
+     "ex_en": "I have diarrhea. Is there something I can take?",
+     "ex_pt": "Tengo diarrea. ¿Hay algo que pueda tomar?"
+    },
+    {
+     "en": "I cut myself.",
+     "pt": "Me corté.",
+     "ex_en": "I cut myself while chopping onions.",
+     "ex_pt": "Me corté mientras picaba cebolla."
+    },
+    {
+     "en": "I think it's broken.",
+     "pt": "Creo que está roto.",
+     "ex_en": "I can't move my wrist. I think it's broken.",
+     "ex_pt": "No puedo mover la muñeca. Creo que está rota."
+    },
+    {
+     "en": "I sprained my ankle.",
+     "pt": "Me torcí el tobillo.",
+     "ex_en": "I sprained my ankle playing soccer.",
+     "ex_pt": "Me torcí el tobillo jugando fútbol."
+    },
+    {
+     "en": "Don't move him.",
+     "pt": "No lo muevan.",
+     "ex_en": "Don't move him. He might have a neck injury.",
+     "ex_pt": "No lo muevan. Puede tener una lesión en el cuello."
+    },
+    {
+     "en": "Fire!",
+     "pt": "¡Fuego!",
+     "ex_en": "Fire! Everybody get out of the building!",
+     "ex_pt": "¡Fuego! ¡Todos fuera del edificio!"
+    },
+    {
+     "en": "I'm diabetic.",
+     "pt": "Soy diabético.",
+     "ex_en": "I'm diabetic, so I need to eat something now.",
+     "ex_pt": "Soy diabético, así que necesito comer algo ya."
+    },
+    {
+     "en": "I'm pregnant.",
+     "pt": "Estoy embarazada.",
+     "ex_en": "I'm pregnant. Is this medicine safe for me?",
+     "ex_pt": "Estoy embarazada. ¿Este medicamento es seguro para mí?"
+    },
+    {
+     "en": "I'm on medication.",
+     "pt": "Estoy tomando medicamentos.",
+     "ex_en": "I'm on medication for my blood pressure.",
+     "ex_pt": "Estoy tomando medicamentos para la presión."
+    },
+    {
+     "en": "I have high blood pressure.",
+     "pt": "Tengo la presión alta.",
+     "ex_en": "I have high blood pressure, so I avoid salt.",
+     "ex_pt": "Tengo la presión alta, así que evito la sal."
+    },
+    {
+     "en": "I have health insurance.",
+     "pt": "Tengo seguro médico.",
+     "ex_en": "I have health insurance. Here's my card.",
+     "ex_pt": "Tengo seguro médico. Aquí está mi tarjeta."
+    },
+    {
+     "en": "Do I need a prescription?",
+     "pt": "¿Necesito receta?",
+     "ex_en": "Do I need a prescription for this antibiotic?",
+     "ex_pt": "¿Necesito receta para este antibiótico?"
+    },
+    {
+     "en": "How often should I take it?",
+     "pt": "¿Cada cuánto debo tomarlo?",
+     "ex_en": "How often should I take it, every eight hours?",
+     "ex_pt": "¿Cada cuánto debo tomarlo, cada ocho horas?"
+    },
+    {
+     "en": "Take two pills a day.",
+     "pt": "Tome dos pastillas al día.",
+     "ex_en": "Take two pills a day, one in the morning and one at night.",
+     "ex_pt": "Tome dos pastillas al día, una en la mañana y otra en la noche."
+    },
+    {
+     "en": "Are there any side effects?",
+     "pt": "¿Tiene efectos secundarios?",
+     "ex_en": "Are there any side effects I should know about?",
+     "ex_pt": "¿Hay algún efecto secundario que deba saber?"
+    },
+    {
+     "en": "I'm out of breath.",
+     "pt": "Me falta el aire.",
+     "ex_en": "I'm out of breath after climbing those stairs.",
+     "ex_pt": "Me falta el aire después de subir esas escaleras."
+    },
+    {
+     "en": "Put pressure on the wound.",
+     "pt": "Presiona la herida.",
+     "ex_en": "Put pressure on the wound to stop the bleeding.",
+     "ex_pt": "Presiona la herida para detener el sangrado."
+    },
+    {
+     "en": "I got bitten by a dog.",
+     "pt": "Me mordió un perro.",
+     "ex_en": "I got bitten by a dog. Do I need a rabies shot?",
+     "ex_pt": "Me mordió un perro. ¿Necesito la vacuna antirrábica?"
+    },
+    {
+     "en": "I feel better now.",
+     "pt": "Ya me siento mejor.",
+     "ex_en": "Thanks for the tea. I feel better now.",
+     "ex_pt": "Gracias por el té. Ya me siento mejor."
+    },
+    {
+     "en": "I have a toothache.",
+     "pt": "Me duele una muela.",
+     "ex_en": "I have a toothache. I need to see a dentist.",
+     "ex_pt": "Me duele una muela. Necesito ir al dentista."
+    },
+    {
+     "en": "Take care of yourself.",
+     "pt": "Cuídate.",
+     "ex_en": "Get some rest and take care of yourself.",
+     "ex_pt": "Descansa un poco y cuídate."
+    }
+   ]
+  },
+  {
+   "theme": "Sentimientos y opiniones",
+   "items": [
+    {
+     "en": "I think so.",
+     "pt": "Creo que sí.",
+     "ex_en": "Is the store still open? I think so.",
+     "ex_pt": "¿La tienda sigue abierta? Creo que sí."
+    },
+    {
+     "en": "I don't think so.",
+     "pt": "Creo que no.",
+     "ex_en": "Will it rain today? I don't think so.",
+     "ex_pt": "¿Va a llover hoy? Creo que no."
+    },
+    {
+     "en": "Exactly!",
+     "pt": "¡Exacto!",
+     "ex_en": "So we should leave early to avoid traffic? Exactly!",
+     "ex_pt": "¿Entonces deberíamos salir temprano para evitar el tráfico? ¡Exacto!"
+    },
+    {
+     "en": "I disagree.",
+     "pt": "No estoy de acuerdo.",
+     "ex_en": "I disagree. I think the first option is better.",
+     "ex_pt": "No estoy de acuerdo. Creo que la primera opción es mejor."
+    },
+    {
+     "en": "I love it!",
+     "pt": "¡Me encanta!",
+     "ex_en": "Thank you for the gift. I love it!",
+     "ex_pt": "Gracias por el regalo. ¡Me encanta!"
+    },
+    {
+     "en": "I like it.",
+     "pt": "Me gusta.",
+     "ex_en": "Your new haircut looks nice. I like it.",
+     "ex_pt": "Tu nuevo corte de pelo se ve bien. Me gusta."
+    },
+    {
+     "en": "I don't like it.",
+     "pt": "No me gusta.",
+     "ex_en": "This song is too loud. I don't like it.",
+     "ex_pt": "Esta canción es demasiado ruidosa. No me gusta."
+    },
+    {
+     "en": "I'm happy.",
+     "pt": "Estoy feliz.",
+     "ex_en": "I'm happy you could come to my party.",
+     "ex_pt": "Estoy feliz de que hayas podido venir a mi fiesta."
+    },
+    {
+     "en": "I'm tired.",
+     "pt": "Estoy cansado(a).",
+     "ex_en": "I'm tired. I'm going to bed early tonight.",
+     "ex_pt": "Estoy cansado(a). Hoy me voy a dormir temprano."
+    },
+    {
+     "en": "I'm fine.",
+     "pt": "Estoy bien.",
+     "ex_en": "Don't worry about me. I'm fine.",
+     "ex_pt": "No te preocupes por mí. Estoy bien."
+    },
+    {
+     "en": "I'm frustrated.",
+     "pt": "Estoy frustrado(a).",
+     "ex_en": "I'm frustrated because my computer keeps crashing.",
+     "ex_pt": "Estoy frustrado(a) porque mi computadora se cuelga todo el tiempo."
+    },
+    {
+     "en": "That's great!",
+     "pt": "¡Qué bien!",
+     "ex_en": "You got the job? That's great!",
+     "ex_pt": "¿Conseguiste el trabajo? ¡Qué bien!"
+    },
+    {
+     "en": "I'm not a fan.",
+     "pt": "No soy muy fan.",
+     "ex_en": "Horror movies? I'm not a fan.",
+     "ex_pt": "¿Películas de terror? No soy muy fan."
+    },
+    {
+     "en": "In my opinion...",
+     "pt": "En mi opinión...",
+     "ex_en": "In my opinion, this is the best pizza in town.",
+     "ex_pt": "En mi opinión, esta es la mejor pizza de la ciudad."
+    },
+    {
+     "en": "You're right.",
+     "pt": "Tienes razón.",
+     "ex_en": "You're right. I should call her and apologize.",
+     "ex_pt": "Tienes razón. Debería llamarla y pedirle disculpas."
+    },
+    {
+     "en": "That's not fair.",
+     "pt": "Eso no es justo.",
+     "ex_en": "He got a bonus and we didn't? That's not fair.",
+     "ex_pt": "¿Él recibió un bono y nosotros no? Eso no es justo."
+    },
+    {
+     "en": "I feel bad.",
+     "pt": "Me siento mal.",
+     "ex_en": "I feel bad that I forgot your birthday.",
+     "ex_pt": "Me siento mal por haber olvidado tu cumpleaños."
+    },
+    {
+     "en": "I'm worried.",
+     "pt": "Estoy preocupado(a).",
+     "ex_en": "I'm worried. She hasn't called all day.",
+     "ex_pt": "Estoy preocupado(a). Ella no ha llamado en todo el día."
+    },
+    {
+     "en": "I'm so excited!",
+     "pt": "¡Estoy muy emocionado(a)!",
+     "ex_en": "We're going to Disney next week. I'm so excited!",
+     "ex_pt": "Vamos a Disney la próxima semana. ¡Estoy muy emocionado(a)!"
+    },
+    {
+     "en": "I'm jealous.",
+     "pt": "Me da envidia.",
+     "ex_en": "You're going to Paris? I'm so jealous!",
+     "ex_pt": "¿Vas a ir a París? ¡Qué envidia!"
+    },
+    {
+     "en": "I don't care.",
+     "pt": "Me da igual. / No me importa.",
+     "ex_en": "Pizza or burgers? I don't care, you choose.",
+     "ex_pt": "¿Pizza o hamburguesa? Me da igual, tú eliges."
+    },
+    {
+     "en": "I'm stressed out.",
+     "pt": "Estoy estresado(a).",
+     "ex_en": "I have three exams this week. I'm stressed out.",
+     "ex_pt": "Tengo tres exámenes esta semana. Estoy estresado(a)."
+    },
+    {
+     "en": "I'm bored.",
+     "pt": "Estoy aburrido(a).",
+     "ex_en": "There's nothing to do here. I'm bored.",
+     "ex_pt": "No hay nada que hacer aquí. Estoy aburrido(a)."
+    },
+    {
+     "en": "It's not a big deal.",
+     "pt": "No es para tanto.",
+     "ex_en": "Don't worry about the glass. It's not a big deal.",
+     "ex_pt": "No te preocupes por el vaso. No es para tanto."
+    },
+    {
+     "en": "I'm upset.",
+     "pt": "Estoy molesto(a).",
+     "ex_en": "I'm upset because he didn't keep his promise.",
+     "ex_pt": "Estoy molesto(a) porque él no cumplió su promesa."
+    },
+    {
+     "en": "I'm nervous.",
+     "pt": "Estoy nervioso(a).",
+     "ex_en": "I have a job interview tomorrow. I'm nervous.",
+     "ex_pt": "Mañana tengo una entrevista de trabajo. Estoy nervioso(a)."
+    },
+    {
+     "en": "I miss you.",
+     "pt": "Te extraño.",
+     "ex_en": "Come visit soon. I miss you.",
+     "ex_pt": "Ven a visitarme pronto. Te extraño."
+    },
+    {
+     "en": "I'm so proud of you.",
+     "pt": "Estoy muy orgulloso(a) de ti.",
+     "ex_en": "You graduated! I'm so proud of you.",
+     "ex_pt": "¡Te graduaste! Estoy muy orgulloso(a) de ti."
+    },
+    {
+     "en": "I'm in a good mood.",
+     "pt": "Estoy de buen humor.",
+     "ex_en": "The sun is out and I'm in a good mood.",
+     "ex_pt": "Hace sol y estoy de buen humor."
+    },
+    {
+     "en": "I'm in a bad mood.",
+     "pt": "Estoy de mal humor.",
+     "ex_en": "Sorry, I'm in a bad mood today.",
+     "ex_pt": "Perdón, hoy estoy de mal humor."
+    },
+    {
+     "en": "I'm mad.",
+     "pt": "Estoy enojado(a).",
+     "ex_en": "I'm mad at you for lying to me.",
+     "ex_pt": "Estoy enojado(a) contigo por haberme mentido."
+    },
+    {
+     "en": "I'm scared.",
+     "pt": "Tengo miedo.",
+     "ex_en": "Can you turn on the light? I'm scared.",
+     "ex_pt": "¿Puedes encender la luz? Tengo miedo."
+    },
+    {
+     "en": "I can't stand it.",
+     "pt": "No lo soporto.",
+     "ex_en": "This noise is driving me crazy. I can't stand it.",
+     "ex_pt": "Este ruido me está volviendo loco(a). No lo soporto."
+    },
+    {
+     "en": "That's annoying.",
+     "pt": "Qué fastidio. / Qué molesto.",
+     "ex_en": "The bus is late again? That's annoying.",
+     "ex_pt": "¿El autobús se retrasó otra vez? Qué fastidio."
+    },
+    {
+     "en": "I'm so glad.",
+     "pt": "Me alegro mucho.",
+     "ex_en": "I'm so glad you're feeling better.",
+     "ex_pt": "Me alegro mucho de que te sientas mejor."
+    },
+    {
+     "en": "I feel the same way.",
+     "pt": "Siento lo mismo.",
+     "ex_en": "I'm going to miss this place. I feel the same way.",
+     "ex_pt": "Voy a extrañar este lugar. Siento lo mismo."
+    },
+    {
+     "en": "I'm lonely.",
+     "pt": "Me siento solo(a).",
+     "ex_en": "My family is far away, and sometimes I'm lonely.",
+     "ex_pt": "Mi familia vive lejos y a veces me siento solo(a)."
+    },
+    {
+     "en": "I'm confused.",
+     "pt": "Estoy confundido(a).",
+     "ex_en": "I'm confused. Which bus should I take?",
+     "ex_pt": "Estoy confundido(a). ¿Qué autobús debo tomar?"
+    },
+    {
+     "en": "That's amazing!",
+     "pt": "¡Qué increíble!",
+     "ex_en": "You ran a marathon? That's amazing!",
+     "ex_pt": "¿Corriste un maratón? ¡Qué increíble!"
+    },
+    {
+     "en": "That's weird.",
+     "pt": "Qué raro.",
+     "ex_en": "The door was open when I got home. That's weird.",
+     "ex_pt": "La puerta estaba abierta cuando llegué a casa. Qué raro."
+    },
+    {
+     "en": "I'm relieved.",
+     "pt": "Estoy aliviado(a).",
+     "ex_en": "The test results were normal. I'm relieved.",
+     "ex_pt": "Los resultados de los análisis salieron normales. Estoy aliviado(a)."
+    },
+    {
+     "en": "I'm fed up.",
+     "pt": "Estoy harto(a).",
+     "ex_en": "I'm fed up with all this traffic.",
+     "ex_pt": "Estoy harto(a) de todo este tráfico."
+    },
+    {
+     "en": "I'm disappointed.",
+     "pt": "Estoy decepcionado(a).",
+     "ex_en": "I'm disappointed that the concert was canceled.",
+     "ex_pt": "Estoy decepcionado(a) porque cancelaron el concierto."
+    },
+    {
+     "en": "I'm not in the mood.",
+     "pt": "No tengo ganas.",
+     "ex_en": "Thanks, but I'm not in the mood to go out tonight.",
+     "ex_pt": "Gracias, pero no tengo ganas de salir esta noche."
+    },
+    {
+     "en": "I'm embarrassed.",
+     "pt": "Me da vergüenza.",
+     "ex_en": "I called my teacher \"Mom.\" I'm so embarrassed!",
+     "ex_pt": "Le dije \"mamá\" a mi profesora. ¡Qué vergüenza!"
+    },
+    {
+     "en": "Fair enough.",
+     "pt": "Me parece justo. / Está bien.",
+     "ex_en": "You cooked, so I'll do the dishes. Fair enough.",
+     "ex_pt": "Tú cocinaste, así que yo lavo los platos. Me parece justo."
+    },
+    {
+     "en": "I couldn't care less.",
+     "pt": "Me importa un comino.",
+     "ex_en": "He's mad at me? I couldn't care less.",
+     "ex_pt": "¿Está enojado conmigo? Me importa un comino."
+    },
+    {
+     "en": "I'm grateful.",
+     "pt": "Estoy agradecido(a).",
+     "ex_en": "I'm grateful for all your help.",
+     "ex_pt": "Estoy agradecido(a) por toda tu ayuda."
+    },
+    {
+     "en": "I have mixed feelings.",
+     "pt": "Tengo sentimientos encontrados.",
+     "ex_en": "I have mixed feelings about moving to another city.",
+     "ex_pt": "Tengo sentimientos encontrados sobre mudarme a otra ciudad."
+    },
+    {
+     "en": "It's not my thing.",
+     "pt": "No es lo mío.",
+     "ex_en": "I tried yoga, but it's not my thing.",
+     "ex_pt": "Probé el yoga, pero no es lo mío."
+    }
+   ]
+  }
+ ]
+}

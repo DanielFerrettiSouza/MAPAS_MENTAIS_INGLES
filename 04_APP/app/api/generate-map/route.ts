@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { buildMap, finishImages } from "@/lib/buildMap";
 import { waitUntil } from "@vercel/functions";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
+import { getLang } from "@/lib/lang";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 export const runtime = "nodejs";
@@ -12,13 +13,13 @@ const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 export async function POST(req: Request) {
   const user = await getCurrentUser();
-  if (!user) return NextResponse.json({ error: "Faça login para criar mapas." }, { status: 401 });
+  if (!user) return NextResponse.json({ error: getLang() === "es" ? "Inicia sesión para crear mapas." : "Faça login para criar mapas." }, { status: 401 });
 
   const body = await req.json().catch(() => ({}));
   const topic = String(body.topic ?? "").trim().slice(0, 200);
   const level = LEVELS.includes(body.level) ? body.level : "A1";
   const goal = body.goal ? String(body.goal).slice(0, 200) : undefined;
-  if (!topic) return NextResponse.json({ error: "Informe um assunto." }, { status: 400 });
+  if (!topic) return NextResponse.json({ error: getLang(user) === "es" ? "Escribe un tema." : "Informe um assunto." }, { status: 400 });
 
   const admin = createSupabaseAdmin();
 
@@ -26,7 +27,7 @@ export async function POST(req: Request) {
   const { data: profile } = await admin.from("profiles").select("credits, plan").eq("id", user.id).maybeSingle();
   const credits = profile?.credits ?? 0;
   if (credits <= 0) {
-    return NextResponse.json({ error: "Seus mapas acabaram. Assine um plano para continuar." }, { status: 402 });
+    return NextResponse.json({ error: getLang(user) === "es" ? "Ya usaste tus mapas con IA." : "Seus mapas acabaram. Assine um plano para continuar." }, { status: 402 });
   }
   const { data: reserved } = await admin
     .from("profiles")
@@ -35,7 +36,7 @@ export async function POST(req: Request) {
     .eq("credits", credits)
     .select("credits");
   if (!reserved?.length) {
-    return NextResponse.json({ error: "Tente de novo em instantes." }, { status: 409 });
+    return NextResponse.json({ error: getLang(user) === "es" ? "Inténtalo de nuevo en unos instantes." : "Tente de novo em instantes." }, { status: 409 });
   }
 
   try {
@@ -46,6 +47,7 @@ export async function POST(req: Request) {
       topic,
       level,
       goal,
+      lang: getLang(user),
       illustrate: false,
       notebook: true,
       imagePath: `${user.id}/${id}`,

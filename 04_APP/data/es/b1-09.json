@@ -1,0 +1,185 @@
+{
+ "slug": "b1-09",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I enjoy to cook.",
+     "I enjoy cooking.",
+     "I enjoy cook.",
+     "I enjoy for cooking."
+    ],
+    "question_pt": "¿Qué oración es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Dejé de comprar agua.",
+     "Olvidé comprar agua.",
+     "Me detuve para comprar agua.",
+     "Me acordé de comprar agua."
+    ],
+    "question_pt": "¿Qué significa \"I stopped to buy water\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "to draw",
+     "draw",
+     "drawing",
+     "drew"
+    ],
+    "question_pt": "Completa: \"I'm good at ___.\"",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🔀",
+  "level": "B1",
+  "tip_pt": "Después de preposición, usa siempre -ing: \"I'm good at cooking\", \"thanks for coming\". Nunca \"for to come\".",
+  "branches": [
+   {
+    "emoji": "🏃",
+    "items": [
+     {
+      "en": "I enjoy cooking.",
+      "pt": "Disfruto cocinar."
+     },
+     {
+      "en": "She finished working late.",
+      "pt": "Ella terminó de trabajar tarde."
+     },
+     {
+      "en": "Avoid eating too much sugar.",
+      "pt": "Evita comer demasiada azúcar."
+     },
+     {
+      "en": "Do you mind waiting?",
+      "pt": "¿Te importa esperar?"
+     },
+     {
+      "en": "I keep forgetting his name.",
+      "pt": "Siempre se me olvida su nombre."
+     }
+    ],
+    "label_en": "Verb + -ing",
+    "label_pt": "Verbo + -ing",
+    "illustration_prompt": "A cute hand-drawn smiling person relaxing in a hammock, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "I want to travel.",
+      "pt": "Quiero viajar."
+     },
+     {
+      "en": "We decided to stay home.",
+      "pt": "Decidimos quedarnos en casa."
+     },
+     {
+      "en": "He promised to call me.",
+      "pt": "Él prometió llamarme."
+     },
+     {
+      "en": "I need to rest.",
+      "pt": "Necesito descansar."
+     },
+     {
+      "en": "They plan to move soon.",
+      "pt": "Ellos planean mudarse pronto."
+     }
+    ],
+    "label_en": "Verb + to",
+    "label_pt": "Verbo + to",
+    "illustration_prompt": "A cute hand-drawn dart hitting the center of a target, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🧩",
+    "items": [
+     {
+      "en": "I'm good at drawing.",
+      "pt": "Soy bueno para dibujar."
+     },
+     {
+      "en": "Thanks for coming.",
+      "pt": "Gracias por venir."
+     },
+     {
+      "en": "I'm interested in learning Spanish.",
+      "pt": "Me interesa aprender español."
+     },
+     {
+      "en": "I'm tired of waiting.",
+      "pt": "Estoy cansado de esperar."
+     }
+    ],
+    "label_en": "After Prepositions",
+    "label_pt": "Después de preposición",
+    "illustration_prompt": "A cute hand-drawn pair of puzzle pieces fitting together, simple doodle style, no text or letters"
+   },
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "I stopped smoking.",
+      "pt": "Dejé de fumar."
+     },
+     {
+      "en": "I stopped to buy water.",
+      "pt": "Me detuve para comprar agua."
+     },
+     {
+      "en": "Remember to lock the door.",
+      "pt": "Acuérdate de cerrar la puerta con llave."
+     },
+     {
+      "en": "I remember meeting her.",
+      "pt": "Recuerdo haberla conocido."
+     }
+    ],
+    "label_en": "Meaning Changes",
+    "label_pt": "Cambia el significado",
+    "illustration_prompt": "A cute hand-drawn pair of circular arrows around a small lightbulb, simple doodle style, no text or letters"
+   }
+  ],
+  "title_en": "Gerund vs. Infinitive",
+  "title_pt": "Gerundio × infinitivo",
+  "exercises": [
+   {
+    "answer": "to learn",
+    "hint_pt": "(aprender)",
+    "sentence": "I want ___ a new language this year."
+   },
+   {
+    "answer": "drinking",
+    "hint_pt": "(beber)",
+    "sentence": "She avoids ___ coffee at night."
+   },
+   {
+    "answer": "helping",
+    "hint_pt": "(ayudar)",
+    "sentence": "Thanks for ___ me with my homework."
+   },
+   {
+    "answer": "smoking",
+    "hint_pt": "(fumar)",
+    "sentence": "I stopped ___ two years ago. Now I'm healthier."
+   }
+  ],
+  "summary_pt": "Algunos verbos piden -ing, otros piden to + verbo; algunos cambian de significado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-09/cover.png",
+  "cover_prompt": "A cute hand-drawn signpost with two arrows pointing in different directions, one decorated with a small running shoe and the other with a small target, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm thinking about changing jobs.",
+   "wrong": "I'm thinking about to change jobs.",
+   "why_pt": "Después de preposición va -ing, aunque en español uses infinitivo."
+  }
+ }
+}

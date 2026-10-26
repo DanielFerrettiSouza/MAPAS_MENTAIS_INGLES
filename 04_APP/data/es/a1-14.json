@@ -1,0 +1,189 @@
+{
+ "slug": "a1-14",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "his name",
+     "her name",
+     "she name",
+     "hers name"
+    ],
+    "question_pt": "¿Cómo se dice \"el nombre de ella\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "your",
+     "you",
+     "yours",
+     "yous"
+    ],
+    "question_pt": "Completa: \"Is this ___?\" (¿Esto es tuyo?)",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "He",
+     "She",
+     "They",
+     "It"
+    ],
+    "question_pt": "¿Qué pronombre usamos para un gato o un objeto?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "👥",
+  "level": "A1",
+  "tip_pt": "Usa \"my, your, his\" antes del sustantivo; usa \"mine, yours, his\" solos, sin sustantivo después.",
+  "branches": [
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "I am happy.",
+      "pt": "Estoy feliz."
+     },
+     {
+      "en": "You are nice.",
+      "pt": "Eres simpático."
+     },
+     {
+      "en": "He is tall.",
+      "pt": "Él es alto."
+     },
+     {
+      "en": "She is my sister.",
+      "pt": "Ella es mi hermana."
+     },
+     {
+      "en": "We are friends.",
+      "pt": "Somos amigos."
+     }
+    ],
+    "label_en": "Subject Pronouns",
+    "label_pt": "Pronombres personales",
+    "illustration_prompt": "Cute hand-drawn person raising a hand, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🐱",
+    "items": [
+     {
+      "en": "It is a cat.",
+      "pt": "Es un gato."
+     },
+     {
+      "en": "It is cold today.",
+      "pt": "Hoy hace frío."
+     },
+     {
+      "en": "They are students.",
+      "pt": "Ellos son estudiantes."
+     },
+     {
+      "en": "They live here.",
+      "pt": "Ellos viven aquí."
+     }
+    ],
+    "label_en": "More Subjects",
+    "label_pt": "It y They",
+    "illustration_prompt": "Cute hand-drawn cat next to two smiling kids, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🎒",
+    "items": [
+     {
+      "en": "my phone",
+      "pt": "mi teléfono"
+     },
+     {
+      "en": "your house",
+      "pt": "tu casa"
+     },
+     {
+      "en": "his car",
+      "pt": "el coche de él"
+     },
+     {
+      "en": "her name",
+      "pt": "el nombre de ella"
+     },
+     {
+      "en": "our teacher",
+      "pt": "nuestro profesor"
+     }
+    ],
+    "label_en": "Possessive Adjectives",
+    "label_pt": "Posesivos + sustantivo",
+    "illustration_prompt": "Cute hand-drawn backpack with a heart, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🔑",
+    "items": [
+     {
+      "en": "It's mine.",
+      "pt": "Es mío."
+     },
+     {
+      "en": "Is this yours?",
+      "pt": "¿Esto es tuyo?"
+     },
+     {
+      "en": "The pen is his.",
+      "pt": "El bolígrafo es de él."
+     },
+     {
+      "en": "The bag is hers.",
+      "pt": "El bolso es de ella."
+     },
+     {
+      "en": "The house is theirs.",
+      "pt": "La casa es de ellos."
+     }
+    ],
+    "label_en": "Possessive Pronouns",
+    "label_pt": "Posesivos solos",
+    "illustration_prompt": "Cute hand-drawn key held by a small hand, simple doodle icon, no text"
+   }
+  ],
+  "title_en": "Pronouns",
+  "title_pt": "Pronombres",
+  "exercises": [
+   {
+    "answer": "I",
+    "hint_pt": "(yo)",
+    "sentence": "___ am a student."
+   },
+   {
+    "answer": "my",
+    "hint_pt": "(mi)",
+    "sentence": "This is ___ book."
+   },
+   {
+    "answer": "her",
+    "hint_pt": "(de ella)",
+    "sentence": "Maria loves ___ dog."
+   },
+   {
+    "answer": "ours",
+    "hint_pt": "(nuestro)",
+    "sentence": "The bag is ___."
+   }
+  ],
+  "summary_pt": "Los pronombres reemplazan nombres y muestran quién hace algo o de quién es algo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-14/cover.png",
+  "cover_prompt": "Cute hand-drawn group of diverse friends pointing at themselves and at each other's colorful backpacks, simple pastel style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She is my friend. Her name is Ana.",
+   "wrong": "She is my friend. His name is Ana.",
+   "why_pt": "\"Su\" no indica género; en inglés, dueña mujer usa \"her\"."
+  }
+ }
+}

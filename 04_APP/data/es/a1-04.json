@@ -1,0 +1,181 @@
+{
+ "slug": "a1-04",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "How many years you have?",
+     "How old are you?",
+     "What is your age have?",
+     "How years are you?"
+    ],
+    "question_pt": "¿Cómo se pregunta la edad de alguien?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "fifty",
+     "five",
+     "fifteen",
+     "fourteen"
+    ],
+    "question_pt": "¿Cómo se dice el número 'quince' en inglés?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "What's your phone number?",
+     "Where is your phone?",
+     "Call me later.",
+     "How old are you?"
+    ],
+    "question_pt": "¿Cómo pides el número de teléfono de alguien?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🔢",
+  "level": "A1",
+  "tip_pt": "Para la edad, usa el verbo 'to be': I am 25. En los teléfonos, el cero se suele decir 'oh'.",
+  "branches": [
+   {
+    "emoji": "✋",
+    "items": [
+     {
+      "en": "one, two, three",
+      "pt": "uno, dos, tres"
+     },
+     {
+      "en": "four, five, six",
+      "pt": "cuatro, cinco, seis"
+     },
+     {
+      "en": "seven, eight",
+      "pt": "siete, ocho"
+     },
+     {
+      "en": "nine, ten",
+      "pt": "nueve, diez"
+     }
+    ],
+    "label_en": "Numbers 1-10",
+    "label_pt": "Números del 1 al 10",
+    "illustration_prompt": "A cute hand-drawn open hand with five fingers raised, simple doodle style, no text"
+   },
+   {
+    "emoji": "💯",
+    "items": [
+     {
+      "en": "eleven, twelve",
+      "pt": "once, doce"
+     },
+     {
+      "en": "thirteen, fifteen",
+      "pt": "trece, quince"
+     },
+     {
+      "en": "twenty, thirty",
+      "pt": "veinte, treinta"
+     },
+     {
+      "en": "forty, fifty",
+      "pt": "cuarenta, cincuenta"
+     },
+     {
+      "en": "one hundred",
+      "pt": "cien"
+     }
+    ],
+    "label_en": "Bigger Numbers",
+    "label_pt": "Números más grandes",
+    "illustration_prompt": "A cute hand-drawn stack of colorful wooden blocks growing taller, simple doodle style, no text"
+   },
+   {
+    "emoji": "🎂",
+    "items": [
+     {
+      "en": "How old are you?",
+      "pt": "¿Cuántos años tienes?"
+     },
+     {
+      "en": "I'm twenty-five years old.",
+      "pt": "Tengo veinticinco años."
+     },
+     {
+      "en": "She is ten.",
+      "pt": "Ella tiene diez años."
+     },
+     {
+      "en": "When is your birthday?",
+      "pt": "¿Cuándo es tu cumpleaños?"
+     }
+    ],
+    "label_en": "Age",
+    "label_pt": "Edad",
+    "illustration_prompt": "A cute hand-drawn birthday cake with candles, simple doodle style, no text"
+   },
+   {
+    "emoji": "📱",
+    "items": [
+     {
+      "en": "What's your phone number?",
+      "pt": "¿Cuál es tu número de teléfono?"
+     },
+     {
+      "en": "My number is 555-0182.",
+      "pt": "Mi número es 555-0182."
+     },
+     {
+      "en": "Can you repeat, please?",
+      "pt": "¿Puedes repetirlo, por favor?"
+     },
+     {
+      "en": "Call me later.",
+      "pt": "Llámame más tarde."
+     }
+    ],
+    "label_en": "Phone Number",
+    "label_pt": "Número de teléfono",
+    "illustration_prompt": "A cute hand-drawn smiling smartphone with a speech bubble, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Numbers, Age, Phone",
+  "title_pt": "Números, edad y teléfono",
+  "exercises": [
+   {
+    "answer": "old",
+    "hint_pt": "(de edad)",
+    "sentence": "I am twenty years ___."
+   },
+   {
+    "answer": "old",
+    "hint_pt": "(cuántos años)",
+    "sentence": "How ___ are you?"
+   },
+   {
+    "answer": "number",
+    "hint_pt": "(número)",
+    "sentence": "What's your phone ___?"
+   },
+   {
+    "answer": "ten",
+    "hint_pt": "(diez)",
+    "sentence": "Five plus five is ___."
+   }
+  ],
+  "summary_pt": "Usa los números para decir tu edad y tu teléfono en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-04/cover.png",
+  "cover_prompt": "A cute hand-drawn smartphone next to a birthday cake with candles and colorful floating number shapes, no text, no letters, no digits",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I am 30 years old.",
+   "wrong": "I have 30 years.",
+   "why_pt": "En inglés, la edad se dice con 'to be', no con 'have'."
+  }
+ }
+}

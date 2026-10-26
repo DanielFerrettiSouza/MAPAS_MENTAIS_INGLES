@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-05",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Let's get started.",
+     "Let's make start.",
+     "Let's begin the reunion.",
+     "Let's go on."
+    ],
+    "question_pt": "¿Cómo se dice 'Empecemos' en una reunión?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "You are wrong.",
+     "I see your point, but...",
+     "No way.",
+     "That makes sense."
+    ],
+    "question_pt": "¿Qué frase expresa desacuerdo con educación?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Para sumar",
+     "En resumen",
+     "Para empezar",
+     "A continuación"
+    ],
+    "question_pt": "¿Qué significa 'To sum up'?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "💼",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa 'Could I...?' y 'I'd like to...' para sonar educado. En las reuniones, las frases indirectas suenan más naturales que las órdenes directas.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Thanks for coming today.",
+      "pt": "Gracias por venir hoy."
+     },
+     {
+      "en": "Let's get started.",
+      "pt": "Empecemos."
+     },
+     {
+      "en": "Is everyone here?",
+      "pt": "¿Estamos todos?"
+     },
+     {
+      "en": "Today we'll discuss the budget.",
+      "pt": "Hoy vamos a hablar del presupuesto."
+     }
+    ],
+    "label_en": "Opening",
+    "label_pt": "Abrir la reunión",
+    "illustration_key": "welcoming host",
+    "illustration_prompt": "A smiling woman standing at the head of a meeting table, welcoming colleagues with an open hand gesture"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Could I add something here?",
+      "pt": "¿Puedo añadir algo aquí?"
+     },
+     {
+      "en": "In my opinion,",
+      "pt": "En mi opinión,"
+     },
+     {
+      "en": "Sorry, could you repeat that?",
+      "pt": "Perdón, ¿podría repetirlo?"
+     },
+     {
+      "en": "Good point.",
+      "pt": "Buena observación."
+     }
+    ],
+    "label_en": "Participating",
+    "label_pt": "Participar",
+    "illustration_key": "raised hand",
+    "illustration_prompt": "A man at a meeting table raising his hand to speak politely"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I totally agree.",
+      "pt": "Estoy totalmente de acuerdo."
+     },
+     {
+      "en": "I see your point, but...",
+      "pt": "Entiendo tu punto de vista, pero..."
+     },
+     {
+      "en": "I'm not so sure about that.",
+      "pt": "No estoy tan seguro de eso."
+     },
+     {
+      "en": "That makes sense.",
+      "pt": "Tiene sentido."
+     }
+    ],
+    "label_en": "Agreeing & Disagreeing",
+    "label_pt": "Estar de acuerdo y en desacuerdo",
+    "illustration_key": "handshake",
+    "illustration_prompt": "Two colleagues shaking hands across a table after a discussion"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "Let's wrap it up.",
+      "pt": "Vamos a terminar."
+     },
+     {
+      "en": "To sum up,",
+      "pt": "En resumen,"
+     },
+     {
+      "en": "Any other questions?",
+      "pt": "¿Alguna otra pregunta?"
+     },
+     {
+      "en": "I'll send a follow-up email.",
+      "pt": "Enviaré un correo de seguimiento."
+     }
+    ],
+    "label_en": "Closing",
+    "label_pt": "Cerrar la reunión",
+    "illustration_key": "closing laptop",
+    "illustration_prompt": "People closing their laptops and standing up from a meeting table, smiling"
+   }
+  ],
+  "title_en": "Business Meetings",
+  "title_pt": "Reuniones",
+  "cover_key": "meeting table",
+  "exercises": [
+   {
+    "answer": "coming",
+    "hint_pt": "(venir)",
+    "sentence": "Thanks for ___ today, everyone."
+   },
+   {
+    "answer": "here",
+    "hint_pt": "(aquí)",
+    "sentence": "Could I add something ___?"
+   },
+   {
+    "answer": "but",
+    "hint_pt": "(pero)",
+    "sentence": "I see your point, ___ I disagree."
+   },
+   {
+    "answer": "wrap",
+    "hint_pt": "(terminar, cerrar)",
+    "sentence": "Let's ___ it up for today."
+   }
+  ],
+  "summary_pt": "Frases útiles para abrir, participar, discrepar con educación y cerrar reuniones.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/meeting-table.png",
+  "cover_prompt": "A group of diverse coworkers sitting around a conference table with laptops and coffee cups, talking in a bright office",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/welcoming-host.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/raised-hand.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/handshake.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/closing-laptop.png"
+  ],
+  "common_mistake": {
+   "right": "Let's start the meeting.",
+   "wrong": "Let's start the reunion.",
+   "why_pt": "'Reunion' es un reencuentro, no una reunión de trabajo."
+  }
+ }
+}

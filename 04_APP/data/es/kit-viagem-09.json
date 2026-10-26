@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-09",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "What's the Wi-Fi password?",
+     "Which is the Wi-Fi key word?",
+     "How is the Wi-Fi secret?",
+     "What's the Wi-Fi pass number?"
+    ],
+    "question_pt": "¿Cómo preguntas la contraseña del wifi?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Estoy encerrado dentro",
+     "Me quedé fuera sin poder entrar",
+     "Perdí el vuelo",
+     "Estoy saliendo"
+    ],
+    "question_pt": "¿Qué significa \"I'm locked out\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Can I make the checkout later?",
+     "Can I check out late?",
+     "Can I do late out?",
+     "Can I exit tardy?"
+    ],
+    "question_pt": "¿Qué frase sirve para pedir salir más tarde?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🏠",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa \"Could you...?\" y \"Would it be possible to...?\" para pedir algo con cortesía; suenan más amables que \"Can you...?\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "✈️",
+    "items": [
+     {
+      "en": "Is early check-in possible?",
+      "pt": "¿Es posible hacer el check-in más temprano?"
+     },
+     {
+      "en": "My flight lands at 3 p.m.",
+      "pt": "Mi vuelo aterriza a las 3 de la tarde."
+     },
+     {
+      "en": "How do I get the keys?",
+      "pt": "¿Cómo recojo las llaves?"
+     },
+     {
+      "en": "Is there parking nearby?",
+      "pt": "¿Hay estacionamiento cerca?"
+     }
+    ],
+    "label_en": "Before Arrival",
+    "label_pt": "Antes de llegar",
+    "illustration_key": "traveler with suitcase",
+    "illustration_prompt": "A traveler sitting with a suitcase and a smartphone, waiting at an airport gate"
+   },
+   {
+    "emoji": "🔑",
+    "items": [
+     {
+      "en": "What's the Wi-Fi password?",
+      "pt": "¿Cuál es la contraseña del wifi?"
+     },
+     {
+      "en": "Where do I put the trash?",
+      "pt": "¿Dónde pongo la basura?"
+     },
+     {
+      "en": "How does the AC work?",
+      "pt": "¿Cómo funciona el aire acondicionado?"
+     },
+     {
+      "en": "Can I use the washing machine?",
+      "pt": "¿Puedo usar la lavadora?"
+     }
+    ],
+    "label_en": "House Info",
+    "label_pt": "Información de la casa",
+    "illustration_key": "key lockbox",
+    "illustration_prompt": "A small key box with a set of keys hanging on a door handle"
+   },
+   {
+    "emoji": "🔧",
+    "items": [
+     {
+      "en": "The hot water isn't working.",
+      "pt": "El agua caliente no funciona."
+     },
+     {
+      "en": "I'm locked out.",
+      "pt": "Me quedé fuera sin poder entrar."
+     },
+     {
+      "en": "There are no clean towels.",
+      "pt": "No hay toallas limpias."
+     },
+     {
+      "en": "Could you send someone?",
+      "pt": "¿Podría enviar a alguien?"
+     }
+    ],
+    "label_en": "Problems",
+    "label_pt": "Problemas",
+    "illustration_key": "leaking shower",
+    "illustration_prompt": "A leaking bathroom shower with water dripping and a wrench beside it"
+   },
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Can I check out late?",
+      "pt": "¿Puedo salir más tarde?"
+     },
+     {
+      "en": "Where should I leave the keys?",
+      "pt": "¿Dónde debo dejar las llaves?"
+     },
+     {
+      "en": "Can I leave my bags here?",
+      "pt": "¿Puedo dejar mis maletas aquí?"
+     },
+     {
+      "en": "Thanks for everything!",
+      "pt": "¡Gracias por todo!"
+     }
+    ],
+    "label_en": "Checking Out",
+    "label_pt": "Salida",
+    "illustration_key": "tidy bedroom",
+    "illustration_prompt": "A neatly made bed in a tidy bedroom with keys placed on the nightstand"
+   }
+  ],
+  "title_en": "Talking to Your Host",
+  "title_pt": "Habla con tu anfitrión",
+  "cover_key": "host handing keys",
+  "exercises": [
+   {
+    "answer": "check-in",
+    "hint_pt": "(entrada/check-in)",
+    "sentence": "Is early ___ possible?"
+   },
+   {
+    "answer": "password",
+    "hint_pt": "(contraseña)",
+    "sentence": "What's the Wi-Fi ___?"
+   },
+   {
+    "answer": "working",
+    "hint_pt": "(funcionando)",
+    "sentence": "The hot water isn't ___."
+   },
+   {
+    "answer": "keys",
+    "hint_pt": "(llaves)",
+    "sentence": "Where should I leave the ___?"
+   }
+  ],
+  "summary_pt": "Frases útiles para comunicarte con tu anfitrión antes, durante y después de tu estancia.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/host-handing-keys.png",
+  "cover_prompt": "A friendly host handing a set of keys to a smiling traveler with a suitcase at the door of a cozy apartment",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/traveler-with-suitcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/key-lockbox.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/leaking-shower.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/tidy-bedroom.png"
+  ],
+  "common_mistake": {
+   "right": "What time can I check in?",
+   "wrong": "What time can I make the check-in?",
+   "why_pt": "\"Check in\" ya es verbo; no lleva \"make\" (\"hacer\") delante."
+  }
+ }
+}

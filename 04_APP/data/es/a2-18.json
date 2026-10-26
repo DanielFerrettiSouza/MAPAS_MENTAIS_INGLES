@@ -1,0 +1,177 @@
+{
+ "slug": "a2-18",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I go always to work.",
+     "I always go to work.",
+     "Always I go to work.",
+     "I go to work always."
+    ],
+    "question_pt": "¿Qué oración es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "She never is late.",
+     "She is late never.",
+     "She is never late.",
+     "Never she is late."
+    ],
+    "question_pt": "¿Cómo se dice 'Ella nunca llega tarde'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "usually",
+     "rarely",
+     "often",
+     "sometimes"
+    ],
+    "question_pt": "¿Qué adverbio significa 'a veces'?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "⏰",
+  "level": "A2",
+  "tip_pt": "El adverbio va antes del verbo principal, pero después del verbo to be: I always eat / I am always late.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I always brush my teeth",
+      "pt": "Siempre me lavo los dientes"
+     },
+     {
+      "en": "She always wakes up early",
+      "pt": "Ella siempre se despierta temprano"
+     },
+     {
+      "en": "I always drink coffee",
+      "pt": "Siempre tomo café"
+     },
+     {
+      "en": "We are always happy",
+      "pt": "Siempre estamos felices"
+     }
+    ],
+    "label_en": "Always",
+    "label_pt": "Siempre (100%)",
+    "illustration_prompt": "A cute hand-drawn full green circle with a happy face, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🔁",
+    "items": [
+     {
+      "en": "I usually take the bus",
+      "pt": "Normalmente tomo el autobús"
+     },
+     {
+      "en": "We usually eat pizza",
+      "pt": "Normalmente comemos pizza"
+     },
+     {
+      "en": "He often plays soccer",
+      "pt": "Él juega al fútbol a menudo"
+     },
+     {
+      "en": "They often visit their grandma",
+      "pt": "Ellos visitan a su abuela con frecuencia"
+     }
+    ],
+    "label_en": "Usually & Often",
+    "label_pt": "Normalmente y A menudo",
+    "illustration_prompt": "A cute hand-drawn circular arrow with a smile, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🌗",
+    "items": [
+     {
+      "en": "He sometimes watches TV",
+      "pt": "Él a veces ve la tele"
+     },
+     {
+      "en": "I sometimes cook dinner",
+      "pt": "A veces preparo la cena"
+     },
+     {
+      "en": "She is sometimes tired",
+      "pt": "Ella a veces está cansada"
+     },
+     {
+      "en": "We sometimes go out",
+      "pt": "A veces salimos"
+     }
+    ],
+    "label_en": "Sometimes",
+    "label_pt": "A veces",
+    "illustration_prompt": "A cute hand-drawn half-filled circle with a calm face, simple doodle icon, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I rarely eat fast food",
+      "pt": "Rara vez como comida rápida"
+     },
+     {
+      "en": "She is never late",
+      "pt": "Ella nunca llega tarde"
+     },
+     {
+      "en": "He never drinks soda",
+      "pt": "Él nunca toma refrescos"
+     },
+     {
+      "en": "I hardly ever watch movies",
+      "pt": "Casi nunca veo películas"
+     }
+    ],
+    "label_en": "Rarely & Never",
+    "label_pt": "Rara vez y Nunca",
+    "illustration_prompt": "A cute hand-drawn empty circle with a sleepy face, simple doodle icon, no text"
+   }
+  ],
+  "title_en": "Frequency Adverbs",
+  "title_pt": "Adverbios de frecuencia",
+  "exercises": [
+   {
+    "answer": "always",
+    "hint_pt": "(siempre)",
+    "sentence": "I ___ drink coffee in the morning."
+   },
+   {
+    "answer": "never",
+    "hint_pt": "(nunca)",
+    "sentence": "She is ___ late for work."
+   },
+   {
+    "answer": "usually",
+    "hint_pt": "(normalmente)",
+    "sentence": "We ___ eat pizza on Fridays."
+   },
+   {
+    "answer": "sometimes",
+    "hint_pt": "(a veces)",
+    "sentence": "He ___ watches TV at night."
+   }
+  ],
+  "summary_pt": "Palabras que dicen con qué frecuencia haces algo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-18/cover.png",
+  "cover_prompt": "A cute hand-drawn calendar with a smiling clock beside it, colorful check marks on some days, simple doodle style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I always go to the gym.",
+   "wrong": "I go always to the gym.",
+   "why_pt": "Ojo: el adverbio va antes del verbo principal, no después."
+  }
+ }
+}

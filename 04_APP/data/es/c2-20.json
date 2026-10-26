@@ -1,0 +1,177 @@
+{
+ "slug": "c2-20",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I actually agree with you.",
+     "I currently agree with you.",
+     "I'm agree with you actually.",
+     "Actually I am agreeing you."
+    ],
+    "question_pt": "¿Cómo se dice 'En realidad, estoy de acuerdo contigo'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "do a decision",
+     "take a decision",
+     "make a decision",
+     "get a decision"
+    ],
+    "question_pt": "¿Qué colocación es correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I live here since 2015.",
+     "I'm living here since 2015.",
+     "I've lived here since 2015.",
+     "I lived here since 2015."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎯",
+  "level": "C2",
+  "tip_pt": "Muchos errores avanzados vienen de falsos amigos y estructuras del español; repasa colocaciones, preposiciones y registro, no solo vocabulario.",
+  "branches": [
+   {
+    "emoji": "🎭",
+    "items": [
+     {
+      "en": "I actually agree with you.",
+      "pt": "En realidad, estoy de acuerdo contigo."
+     },
+     {
+      "en": "He's very sensible about money.",
+      "pt": "Es muy sensato con el dinero."
+     },
+     {
+      "en": "I eventually found a job.",
+      "pt": "Al final, conseguí un trabajo."
+     },
+     {
+      "en": "Please hold on a second.",
+      "pt": "Por favor, espere un segundo."
+     }
+    ],
+    "label_en": "False Friends",
+    "label_pt": "Falsos amigos",
+    "illustration_prompt": "Two cute hand-drawn masks smiling and winking at each other, pastel colors, no text"
+   },
+   {
+    "emoji": "🧩",
+    "items": [
+     {
+      "en": "make a decision",
+      "pt": "tomar una decisión"
+     },
+     {
+      "en": "pay attention to detail",
+      "pt": "prestar atención a los detalles"
+     },
+     {
+      "en": "take a nap",
+      "pt": "tomar una siesta"
+     },
+     {
+      "en": "do someone a favor",
+      "pt": "hacerle un favor a alguien"
+     }
+    ],
+    "label_en": "Collocations",
+    "label_pt": "Colocaciones",
+    "illustration_prompt": "Two cute hand-drawn puzzle pieces fitting together, pastel colors, no text"
+   },
+   {
+    "emoji": "⚙️",
+    "items": [
+     {
+      "en": "I've lived here since 2015.",
+      "pt": "Vivo aquí desde 2015."
+     },
+     {
+      "en": "Hardly had I arrived when...",
+      "pt": "Apenas había llegado cuando..."
+     },
+     {
+      "en": "It's high time we left.",
+      "pt": "Ya va siendo hora de irnos."
+     },
+     {
+      "en": "Let me know if...",
+      "pt": "Avísame si..."
+     }
+    ],
+    "label_en": "Tricky Grammar",
+    "label_pt": "Gramática engañosa",
+    "illustration_prompt": "Cute hand-drawn gears turning together with small sparkles, pastel colors, no text"
+   },
+   {
+    "emoji": "👔",
+    "items": [
+     {
+      "en": "I'd appreciate your input.",
+      "pt": "Agradecería su opinión."
+     },
+     {
+      "en": "Could you clarify that?",
+      "pt": "¿Podría aclarar eso?"
+     },
+     {
+      "en": "Just a heads-up.",
+      "pt": "Solo un aviso."
+     },
+     {
+      "en": "I'm afraid that won't work.",
+      "pt": "Me temo que eso no funcionará."
+     }
+    ],
+    "label_en": "Register",
+    "label_pt": "Registro y tono",
+    "illustration_prompt": "A cute hand-drawn necktie next to a casual baseball cap, pastel colors, no text"
+   }
+  ],
+  "title_en": "Advanced Pitfalls",
+  "title_pt": "Trampas avanzadas",
+  "exercises": [
+   {
+    "answer": "let",
+    "hint_pt": "(dejar)",
+    "sentence": "Please ___ me know if anything changes."
+   },
+   {
+    "answer": "since",
+    "hint_pt": "(desde)",
+    "sentence": "She's been working here ___ 2019."
+   },
+   {
+    "answer": "make",
+    "hint_pt": "(tomar)",
+    "sentence": "We need to ___ a decision by Friday."
+   },
+   {
+    "answer": "had",
+    "hint_pt": "(inversión)",
+    "sentence": "Hardly ___ I arrived when it started raining."
+   }
+  ],
+  "summary_pt": "Errores sutiles que incluso los hispanohablantes avanzados todavía cometen en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-20/cover.png",
+  "cover_prompt": "A cute hand-drawn magnifying glass examining a small speech bubble with a tiny warning sign shape, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I've been living here since 2015.",
+   "wrong": "I'm living here since 2015.",
+   "why_pt": "Con 'since', una acción que continúa hasta ahora pide present perfect."
+  }
+ }
+}

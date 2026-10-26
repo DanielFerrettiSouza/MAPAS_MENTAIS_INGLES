@@ -1,0 +1,184 @@
+{
+ "slug": "kit-viagem-06",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "My bag didn't arrive.",
+     "My bag not came.",
+     "My bag don't arrive.",
+     "My bag isn't arrive."
+    ],
+    "question_pt": "¿Cómo se dice \"Mi maleta no llegó\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "¿Voy a recoger mi maleta?",
+     "¿Me van a reembolsar?",
+     "¿Voy a recibir un recibo?",
+     "¿Me van a atender?"
+    ],
+    "question_pt": "¿Qué significa \"Will I get reimbursed?\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I lost two baggages.",
+     "I lost my luggages.",
+     "I lost my baggage.",
+     "I lost a baggage."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧳",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Usa el present perfect para problemas recientes: \"My bag hasn't arrived\" o \"I've lost my suitcase\".",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "📋",
+    "items": [
+     {
+      "en": "My bag didn't arrive.",
+      "pt": "Mi maleta no llegó."
+     },
+     {
+      "en": "I'd like to file a claim.",
+      "pt": "Quisiera presentar una reclamación."
+     },
+     {
+      "en": "Where is the lost baggage office?",
+      "pt": "¿Dónde está la oficina de equipaje extraviado?"
+     },
+     {
+      "en": "Here is my baggage claim tag.",
+      "pt": "Aquí tiene mi etiqueta del equipaje."
+     }
+    ],
+    "label_en": "Reporting",
+    "label_pt": "Reportar el problema",
+    "illustration_key": "service counter",
+    "illustration_prompt": "A traveler talking to an airline agent at a service counter"
+   },
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "It's a large black suitcase.",
+      "pt": "Es una maleta negra grande."
+     },
+     {
+      "en": "It has a red ribbon.",
+      "pt": "Tiene una cinta roja."
+     },
+     {
+      "en": "It's a hard-shell bag.",
+      "pt": "Es una maleta rígida."
+     },
+     {
+      "en": "It has four wheels.",
+      "pt": "Tiene cuatro ruedas."
+     }
+    ],
+    "label_en": "Describing It",
+    "label_pt": "Describir la maleta",
+    "illustration_key": "suitcase",
+    "illustration_prompt": "A black hard-shell suitcase with a red ribbon tied on the handle"
+   },
+   {
+    "emoji": "📞",
+    "items": [
+     {
+      "en": "How long will it take?",
+      "pt": "¿Cuánto tiempo va a tardar?"
+     },
+     {
+      "en": "Can you deliver it to my hotel?",
+      "pt": "¿Pueden entregarla en mi hotel?"
+     },
+     {
+      "en": "Is there any update?",
+      "pt": "¿Hay alguna novedad?"
+     },
+     {
+      "en": "Please call me when you find it.",
+      "pt": "Por favor, llámenme cuando la encuentren."
+     }
+    ],
+    "label_en": "Follow-Up",
+    "label_pt": "Seguimiento",
+    "illustration_key": "phone call",
+    "illustration_prompt": "A person holding a phone to their ear in a hotel room"
+   },
+   {
+    "emoji": "💵",
+    "items": [
+     {
+      "en": "Will I get reimbursed?",
+      "pt": "¿Me van a reembolsar?"
+     },
+     {
+      "en": "I need to buy essentials.",
+      "pt": "Necesito comprar artículos básicos."
+     },
+     {
+      "en": "Should I keep the receipts?",
+      "pt": "¿Debo guardar los recibos?"
+     },
+     {
+      "en": "My bag was damaged.",
+      "pt": "Mi maleta resultó dañada."
+     }
+    ],
+    "label_en": "Compensation",
+    "label_pt": "Compensación",
+    "illustration_key": "toiletry bag",
+    "illustration_prompt": "A small travel toiletry bag with a toothbrush and toothpaste"
+   }
+  ],
+  "title_en": "Lost Luggage",
+  "title_pt": "Equipaje extraviado",
+  "cover_key": "baggage carousel",
+  "exercises": [
+   {
+    "answer": "claim",
+    "hint_pt": "(reclamación)",
+    "sentence": "I'd like to file a ___ for my missing bag."
+   },
+   {
+    "answer": "tag",
+    "hint_pt": "(etiqueta)",
+    "sentence": "Here is my baggage claim ___."
+   },
+   {
+    "answer": "black",
+    "hint_pt": "(negra)",
+    "sentence": "My suitcase is ___ with a red ribbon."
+   },
+   {
+    "answer": "reimbursed",
+    "hint_pt": "(reembolsado)",
+    "sentence": "Will I get ___ for essentials?"
+   }
+  ],
+  "summary_pt": "Aprende a reportar y resolver problemas con equipaje perdido en el aeropuerto.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/baggage-carousel.png",
+  "cover_prompt": "A worried traveler standing alone next to an empty airport baggage carousel",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/service-counter.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/suitcase.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/phone-call.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/toiletry-bag.png"
+  ],
+  "common_mistake": {
+   "right": "I lost my baggage at the airport.",
+   "wrong": "I lost my baggages at the airport.",
+   "why_pt": "\"Baggage\" y \"luggage\" son incontables; no tienen plural."
+  }
+ }
+}

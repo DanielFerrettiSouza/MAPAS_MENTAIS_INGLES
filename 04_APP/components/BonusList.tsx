@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import type { Bonus } from "@/lib/bonus";
 
 // Lista de um bônus: cada item toca o áudio nativo (mesmo áudio dos mapas, guardado após o 1º play).
-export default function BonusList({ sections, locked }: { sections: Bonus["sections"]; locked: number }) {
+export default function BonusList({ sections, locked, lang = "pt" }: { sections: Bonus["sections"]; locked: number; lang?: "pt" | "es" }) {
   const audio = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
   const play = (t: string) => {
@@ -22,7 +22,7 @@ export default function BonusList({ sections, locked }: { sections: Bonus["secti
           <ul>
             {s.items.map((it) => (
               <li key={it.en}>
-                <button className={`qmm-play ${playing === it.en ? "on" : ""}`} onClick={() => play(it.en)} aria-label={`Ouvir: ${it.en}`}>
+                <button className={`qmm-play ${playing === it.en ? "on" : ""}`} onClick={() => play(it.en)} aria-label={`${lang === "es" ? "Escuchar" : "Ouvir"}: ${it.en}`}>
                   {playing === it.en ? "🔊" : "▶"}
                 </button>
                 <div>

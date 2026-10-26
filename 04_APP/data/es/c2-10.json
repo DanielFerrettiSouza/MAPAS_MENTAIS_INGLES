@@ -1,0 +1,177 @@
+{
+ "slug": "c2-10",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Break the ice",
+     "Circle back",
+     "Wrap up",
+     "Set the stage"
+    ],
+    "question_pt": "¿Qué expresión significa 'retomar un punto anterior'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Déjame guardar eso",
+     "Déjame desglosar eso",
+     "Déjame omitir eso",
+     "Déjame terminar"
+    ],
+    "question_pt": "¿Qué significa 'Let me unpack that'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Picture this for a moment",
+     "Bear with me",
+     "To wrap things up",
+     "Show of hands"
+    ],
+    "question_pt": "¿Qué frase se usa para cerrar una presentación?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🎤",
+  "level": "C2",
+  "tip_pt": "Usa marcadores como 'to circle back' y 'bear with me' para guiar al público y sonar natural, no memorizado.",
+  "branches": [
+   {
+    "emoji": "🚀",
+    "items": [
+     {
+      "en": "Let me set the stage",
+      "pt": "Permítanme poner en contexto"
+     },
+     {
+      "en": "I'll keep this brief",
+      "pt": "Seré breve"
+     },
+     {
+      "en": "Picture this for a moment",
+      "pt": "Imaginen esto por un momento"
+     },
+     {
+      "en": "Allow me to break the ice",
+      "pt": "Permítanme romper el hielo"
+     }
+    ],
+    "label_en": "Opening Strong",
+    "label_pt": "Apertura",
+    "illustration_prompt": "A cute hand-drawn curtain opening on a small stage, no text"
+   },
+   {
+    "emoji": "🧭",
+    "items": [
+     {
+      "en": "Bear with me for a moment",
+      "pt": "Ténganme paciencia un momento"
+     },
+     {
+      "en": "I'd like to circle back",
+      "pt": "Me gustaría retomar"
+     },
+     {
+      "en": "That brings me to my next point",
+      "pt": "Eso me lleva a mi siguiente punto"
+     },
+     {
+      "en": "To put it another way",
+      "pt": "Dicho de otro modo"
+     }
+    ],
+    "label_en": "Signposting",
+    "label_pt": "Guiar el discurso",
+    "illustration_prompt": "A cute hand-drawn signpost with arrows pointing different directions, no text"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Show of hands, who here...",
+      "pt": "Levanten la mano: ¿quién aquí...?"
+     },
+     {
+      "en": "I'll take questions at the end",
+      "pt": "Responderé preguntas al final"
+     },
+     {
+      "en": "That's a great question",
+      "pt": "Excelente pregunta"
+     },
+     {
+      "en": "Let me unpack that",
+      "pt": "Permítanme desglosar eso"
+     }
+    ],
+    "label_en": "Engaging the Audience",
+    "label_pt": "Conectar con el público",
+    "illustration_prompt": "A cute hand-drawn audience raising hands happily, no text"
+   },
+   {
+    "emoji": "🏁",
+    "items": [
+     {
+      "en": "To wrap things up",
+      "pt": "Para concluir"
+     },
+     {
+      "en": "The key takeaway is this",
+      "pt": "La idea clave es esta"
+     },
+     {
+      "en": "Some food for thought",
+      "pt": "Algo para reflexionar"
+     },
+     {
+      "en": "Thank you for your time",
+      "pt": "Gracias por su atención"
+     }
+    ],
+    "label_en": "Wrapping Up",
+    "label_pt": "Cierre",
+    "illustration_prompt": "A cute hand-drawn checkered finish flag with a bow, no text"
+   }
+  ],
+  "title_en": "Public Speaking",
+  "title_pt": "Hablar en público",
+  "exercises": [
+   {
+    "answer": "set",
+    "hint_pt": "(preparar)",
+    "sentence": "Let me ___ the stage for what follows."
+   },
+   {
+    "answer": "with",
+    "hint_pt": "(tengan paciencia conmigo)",
+    "sentence": "Bear ___ me for a moment."
+   },
+   {
+    "answer": "back",
+    "hint_pt": "(volver)",
+    "sentence": "I'd like to circle ___ to my first point."
+   },
+   {
+    "answer": "thought",
+    "hint_pt": "(reflexión)",
+    "sentence": "Let me leave you with some food for ___."
+   }
+  ],
+  "summary_pt": "Expresiones sofisticadas para abrir, guiar, conectar con el público y cerrar discursos con seguridad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-10/cover.png",
+  "cover_prompt": "A cute hand-drawn speaker at a podium with a microphone, facing a small smiling audience, warm spotlight, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I will present my project to you today.",
+   "wrong": "I will present you my project today.",
+   "why_pt": "'Present' exige 'to' antes de quien recibe la presentación."
+  }
+ }
+}

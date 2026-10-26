@@ -1,0 +1,177 @@
+{
+ "slug": "b1-01",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Did you ever go to London?",
+     "Have you ever been to London?",
+     "Are you ever been to London?",
+     "Have you ever went to London?"
+    ],
+    "question_pt": "¿Cómo se dice '¿Alguna vez has ido a Londres?'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "already",
+     "since",
+     "yet",
+     "for"
+    ],
+    "question_pt": "Completa: 'He hasn't arrived ___.'",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I've lived here for 2015.",
+     "I live here since 2015.",
+     "I've lived here since 2015.",
+     "I'm living here since 2015."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B1",
+  "tip_pt": "Usa el present perfect cuando no hay un tiempo exacto (ever, already, yet). Con yesterday, last week o ago, usa el simple past.",
+  "branches": [
+   {
+    "emoji": "🌍",
+    "items": [
+     {
+      "en": "Have you ever been to London?",
+      "pt": "¿Alguna vez has ido a Londres?"
+     },
+     {
+      "en": "I've never eaten sushi.",
+      "pt": "Nunca he comido sushi."
+     },
+     {
+      "en": "She's seen that movie twice.",
+      "pt": "Ha visto esa película dos veces."
+     },
+     {
+      "en": "We've met before.",
+      "pt": "Ya nos conocíamos."
+     }
+    ],
+    "label_en": "Experiences",
+    "label_pt": "Experiencias",
+    "illustration_prompt": "A cute hand-drawn globe with a small airplane circling it, pastel colors, no text"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I've already finished.",
+      "pt": "Ya he terminado."
+     },
+     {
+      "en": "Have you eaten yet?",
+      "pt": "¿Ya has comido?"
+     },
+     {
+      "en": "He hasn't arrived yet.",
+      "pt": "Todavía no ha llegado."
+     },
+     {
+      "en": "I've just woken up.",
+      "pt": "Me acabo de despertar."
+     }
+    ],
+    "label_en": "Already & Yet",
+    "label_pt": "Ya y todavía",
+    "illustration_prompt": "A cute hand-drawn checklist with one checked box and one empty box, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "I've lived here since 2015.",
+      "pt": "Vivo aquí desde 2015."
+     },
+     {
+      "en": "We've known each other for years.",
+      "pt": "Nos conocemos desde hace años."
+     },
+     {
+      "en": "How long have you worked there?",
+      "pt": "¿Cuánto tiempo llevas trabajando ahí?"
+     },
+     {
+      "en": "She's been sick since Monday.",
+      "pt": "Está enferma desde el lunes."
+     }
+    ],
+    "label_en": "For & Since",
+    "label_pt": "Duración",
+    "illustration_prompt": "A cute hand-drawn calendar next to a small clock, pastel colors, no text or numbers"
+   },
+   {
+    "emoji": "🔑",
+    "items": [
+     {
+      "en": "I've lost my keys.",
+      "pt": "He perdido mis llaves."
+     },
+     {
+      "en": "Someone has broken the window.",
+      "pt": "Alguien ha roto la ventana."
+     },
+     {
+      "en": "Prices have gone up.",
+      "pt": "Los precios han subido."
+     },
+     {
+      "en": "She's changed a lot.",
+      "pt": "Ha cambiado mucho."
+     }
+    ],
+    "label_en": "Recent Results",
+    "label_pt": "Resultados recientes",
+    "illustration_prompt": "A cute hand-drawn lost key with a small question mark-shaped swirl drawn as a doodle cloud, pastel colors, no text or letters"
+   }
+  ],
+  "title_en": "Present Perfect",
+  "title_pt": "Presente perfecto",
+  "exercises": [
+   {
+    "answer": "ever",
+    "hint_pt": "(alguna vez)",
+    "sentence": "Have you ___ been to Brazil?"
+   },
+   {
+    "answer": "already",
+    "hint_pt": "(ya)",
+    "sentence": "I've ___ finished my homework."
+   },
+   {
+    "answer": "yet",
+    "hint_pt": "(todavía)",
+    "sentence": "She hasn't called me ___."
+   },
+   {
+    "answer": "since",
+    "hint_pt": "(desde)",
+    "sentence": "I've lived here ___ 2015."
+   }
+  ],
+  "summary_pt": "Conecta acciones pasadas con el presente, sin un tiempo definido: have/has + participio.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-01/cover.png",
+  "cover_prompt": "A cute hand-drawn hourglass connecting a small calendar on the left to a smiling person on the right, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I've lived here since 2015.",
+   "wrong": "I live here since 2015.",
+   "why_pt": "Para duración hasta ahora, usa present perfect, no presente simple."
+  }
+ }
+}

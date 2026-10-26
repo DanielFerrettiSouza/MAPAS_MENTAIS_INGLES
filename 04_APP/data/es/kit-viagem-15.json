@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-15",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'm just looking.",
+     "I'm only seeing.",
+     "I'm just watching.",
+     "I look only."
+    ],
+    "question_pt": "¿Cómo se dice 'Solo estoy mirando' en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Está demasiado holgado.",
+     "Está demasiado ajustado.",
+     "Está demasiado caro.",
+     "Está demasiado corto."
+    ],
+    "question_pt": "¿Qué significa 'It's too tight'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Can I get a receipt?",
+     "Can I pay by card?",
+     "Can I get a refund?",
+     "Is it on sale?"
+    ],
+    "question_pt": "¿Cómo pides que te devuelvan el dinero?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🛍️",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa 'Can I try this on?' para probarte ropa. El verbo correcto es 'try on', no 'prove'.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🏬",
+    "items": [
+     {
+      "en": "I'm just looking, thanks.",
+      "pt": "Solo estoy mirando, gracias."
+     },
+     {
+      "en": "Can you help me?",
+      "pt": "¿Me puede ayudar?"
+     },
+     {
+      "en": "Where are the fitting rooms?",
+      "pt": "¿Dónde están los probadores?"
+     },
+     {
+      "en": "Can I try this on?",
+      "pt": "¿Puedo probarme esto?"
+     }
+    ],
+    "label_en": "In the Store",
+    "label_pt": "En la tienda",
+    "illustration_key": "store clerk",
+    "illustration_prompt": "A friendly store clerk helping a customer near a rack of shirts"
+   },
+   {
+    "emoji": "📏",
+    "items": [
+     {
+      "en": "What size are you?",
+      "pt": "¿Qué talla usa?"
+     },
+     {
+      "en": "It's too small.",
+      "pt": "Me queda demasiado pequeño."
+     },
+     {
+      "en": "It's too tight.",
+      "pt": "Me queda demasiado ajustado."
+     },
+     {
+      "en": "Do you have a bigger size?",
+      "pt": "¿Tienen una talla más grande?"
+     },
+     {
+      "en": "It fits perfectly.",
+      "pt": "Me queda perfecto."
+     }
+    ],
+    "label_en": "Sizes",
+    "label_pt": "Tallas",
+    "illustration_key": "folded t-shirts",
+    "illustration_prompt": "Three folded T-shirts of different sizes stacked from small to large"
+   },
+   {
+    "emoji": "💳",
+    "items": [
+     {
+      "en": "How much is this?",
+      "pt": "¿Cuánto cuesta esto?"
+     },
+     {
+      "en": "Is it on sale?",
+      "pt": "¿Está en oferta?"
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "en": "I'll take it.",
+      "pt": "Me lo llevo."
+     }
+    ],
+    "label_en": "Paying",
+    "label_pt": "El pago",
+    "illustration_key": "credit card",
+    "illustration_prompt": "A hand holding a credit card over a card machine at a store counter"
+   },
+   {
+    "emoji": "🔄",
+    "items": [
+     {
+      "en": "I'd like to exchange this.",
+      "pt": "Quisiera cambiar esto."
+     },
+     {
+      "en": "I'd like to return this.",
+      "pt": "Quisiera devolver esto."
+     },
+     {
+      "en": "Here is my receipt.",
+      "pt": "Aquí tiene mi recibo."
+     },
+     {
+      "en": "Can I get a refund?",
+      "pt": "¿Me pueden devolver el dinero?"
+     }
+    ],
+    "label_en": "Returns",
+    "label_pt": "Cambios y devoluciones",
+    "illustration_key": "returning item",
+    "illustration_prompt": "A customer handing a shopping bag back to a cashier at a counter"
+   }
+  ],
+  "title_en": "Shopping for Clothes",
+  "title_pt": "Comprar ropa",
+  "cover_key": "shopping bags",
+  "exercises": [
+   {
+    "answer": "try",
+    "hint_pt": "(probarse)",
+    "sentence": "Can I ___ this on?"
+   },
+   {
+    "answer": "bigger",
+    "hint_pt": "(más grande)",
+    "sentence": "Do you have this in a ___ size?"
+   },
+   {
+    "answer": "exchange",
+    "hint_pt": "(cambiar)",
+    "sentence": "I'd like to ___ this jacket."
+   },
+   {
+    "answer": "receipt",
+    "hint_pt": "(recibo/ticket)",
+    "sentence": "Here is my ___."
+   }
+  ],
+  "summary_pt": "Frases para comprar ropa, pedir tallas y cambiar o devolver productos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/shopping-bags.png",
+  "cover_prompt": "A smiling young woman holding colorful shopping bags inside a bright clothing store with racks of clothes",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/store-clerk.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/folded-t-shirts.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/credit-card.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/returning-item.png"
+  ],
+  "common_mistake": {
+   "right": "I'd like to exchange this shirt.",
+   "wrong": "I want to change this shirt.",
+   "why_pt": "'Change' es modificar; para cambiar algo en una tienda, usa 'exchange'."
+  }
+ }
+}

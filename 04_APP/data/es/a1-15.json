@@ -1,0 +1,177 @@
+{
+ "slug": "a1-15",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "is",
+     "are",
+     "have",
+     "be"
+    ],
+    "question_pt": "Completa: There ___ three apples.",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Have a bathroom here?",
+     "There is a bathroom here?",
+     "Is there a bathroom here?",
+     "Are there a bathroom here?"
+    ],
+    "question_pt": "¿Cómo se dice '¿Hay un baño aquí?'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "There isn't any milk.",
+     "There aren't any milk.",
+     "Don't have milk.",
+     "There is no have milk."
+    ],
+    "question_pt": "¿Qué frase significa 'No hay leche'?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "🏠",
+  "level": "A1",
+  "tip_pt": "Usa there is con una cosa y there are con varias. En la pregunta, invierte el orden: Is there...? Are there...?",
+  "branches": [
+   {
+    "emoji": "☝️",
+    "items": [
+     {
+      "en": "There is a cat on the sofa.",
+      "pt": "Hay un gato en el sofá."
+     },
+     {
+      "en": "There is a bank near here.",
+      "pt": "Hay un banco cerca de aquí."
+     },
+     {
+      "en": "There's a book on the table.",
+      "pt": "Hay un libro en la mesa."
+     },
+     {
+      "en": "There is a park downtown.",
+      "pt": "Hay un parque en el centro."
+     }
+    ],
+    "label_en": "Singular",
+    "label_pt": "Singular",
+    "illustration_prompt": "A cute hand-drawn single red apple on a small table, simple pastel style, no text"
+   },
+   {
+    "emoji": "🍎",
+    "items": [
+     {
+      "en": "There are two windows.",
+      "pt": "Hay dos ventanas."
+     },
+     {
+      "en": "There are three apples.",
+      "pt": "Hay tres manzanas."
+     },
+     {
+      "en": "There are many people here.",
+      "pt": "Hay mucha gente aquí."
+     },
+     {
+      "en": "There are some chairs.",
+      "pt": "Hay algunas sillas."
+     }
+    ],
+    "label_en": "Plural",
+    "label_pt": "Plural",
+    "illustration_prompt": "A cute hand-drawn group of three apples together, simple pastel style, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "There isn't any milk.",
+      "pt": "No hay leche."
+     },
+     {
+      "en": "There aren't any eggs.",
+      "pt": "No hay huevos."
+     },
+     {
+      "en": "There isn't a TV here.",
+      "pt": "Aquí no hay televisión."
+     },
+     {
+      "en": "There are no students today.",
+      "pt": "Hoy no hay estudiantes."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Negativa",
+    "illustration_prompt": "A cute hand-drawn empty open fridge with a small sad face, simple pastel style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Is there a bathroom here?",
+      "pt": "¿Hay un baño aquí?"
+     },
+     {
+      "en": "Are there any cookies?",
+      "pt": "¿Hay galletas?"
+     },
+     {
+      "en": "Yes, there is.",
+      "pt": "Sí, hay."
+     },
+     {
+      "en": "No, there aren't.",
+      "pt": "No, no hay."
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn magnifying glass looking at a little house, simple pastel style, no text"
+   }
+  ],
+  "title_en": "There Is / There Are",
+  "title_pt": "Hay",
+  "exercises": [
+   {
+    "answer": "is",
+    "hint_pt": "(hay - singular)",
+    "sentence": "There ___ a cat on the sofa."
+   },
+   {
+    "answer": "windows",
+    "hint_pt": "(ventanas)",
+    "sentence": "There are two ___ in my room."
+   },
+   {
+    "answer": "Is",
+    "hint_pt": "(¿hay? - pregunta)",
+    "sentence": "___ there a bathroom here?"
+   },
+   {
+    "answer": "aren't",
+    "hint_pt": "(no hay - plural)",
+    "sentence": "There ___ any eggs in the fridge."
+   }
+  ],
+  "summary_pt": "Usamos there is (singular) y there are (plural) para decir que algo existe, como 'hay' en español.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-15/cover.png",
+  "cover_prompt": "A cute hand-drawn cozy house interior with a sofa, a cat, a table with apples, and a window, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "There are three apples.",
+   "wrong": "There is three apples.",
+   "why_pt": "En plural usa there are, aunque en español siempre digas 'hay'."
+  }
+ }
+}

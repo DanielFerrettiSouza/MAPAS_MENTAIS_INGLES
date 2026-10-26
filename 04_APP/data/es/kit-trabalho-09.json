@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-09",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'll put you through.",
+     "I'll put you down.",
+     "I'll transfer your call me.",
+     "I'll pass you up."
+    ],
+    "question_pt": "¿Cómo se dice \"Le paso la llamada\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Can I write you?",
+     "Can I take a message?",
+     "Can I make a message?",
+     "Can I do a message?"
+    ],
+    "question_pt": "¿Qué frase ofrece tomar un recado?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I am Ana.",
+     "Here is Ana.",
+     "This is Ana speaking.",
+     "Me Ana."
+    ],
+    "question_pt": "¿Cómo te identificas correctamente por teléfono?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📞",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "Por teléfono, di \"This is Ana\" para presentarte, no \"I am Ana\". Usa \"Could I...\" para sonar educado.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "☎️",
+    "items": [
+     {
+      "en": "Good morning, ABC Company.",
+      "pt": "Buenos días, empresa ABC."
+     },
+     {
+      "en": "How can I help you?",
+      "pt": "¿En qué puedo ayudarle?"
+     },
+     {
+      "en": "Who's calling, please?",
+      "pt": "¿De parte de quién, por favor?"
+     },
+     {
+      "en": "This is Ana speaking.",
+      "pt": "Habla Ana."
+     }
+    ],
+    "label_en": "Answering",
+    "label_pt": "Contestar",
+    "illustration_key": "receptionist",
+    "illustration_prompt": "A receptionist at a front desk picking up a ringing desk telephone"
+   },
+   {
+    "emoji": "🔀",
+    "items": [
+     {
+      "en": "Please hold the line.",
+      "pt": "No cuelgue, por favor."
+     },
+     {
+      "en": "I'll put you through.",
+      "pt": "Le paso la llamada."
+     },
+     {
+      "en": "Could I speak to Mr. Brown?",
+      "pt": "¿Podría hablar con el señor Brown?"
+     },
+     {
+      "en": "She's in a meeting.",
+      "pt": "Está en una reunión."
+     }
+    ],
+    "label_en": "Transferring",
+    "label_pt": "Transferir",
+    "illustration_key": "desk telephone",
+    "illustration_prompt": "A hand pressing a button on an office desk telephone"
+   },
+   {
+    "emoji": "📝",
+    "items": [
+     {
+      "en": "Would you like to leave a message?",
+      "pt": "¿Quiere dejar un recado?"
+     },
+     {
+      "en": "Can I take a message?",
+      "pt": "¿Le tomo un recado?"
+     },
+     {
+      "en": "I'll ask him to call back.",
+      "pt": "Le diré que le devuelva la llamada."
+     },
+     {
+      "en": "Could you spell that, please?",
+      "pt": "¿Podría deletrearlo, por favor?"
+     }
+    ],
+    "label_en": "Messages",
+    "label_pt": "Recados",
+    "illustration_key": "notepad and pen",
+    "illustration_prompt": "A notepad and pen next to a telephone on a desk, with blank paper"
+   },
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Thanks for calling.",
+      "pt": "Gracias por llamar."
+     },
+     {
+      "en": "Is there anything else?",
+      "pt": "¿Algo más?"
+     },
+     {
+      "en": "Talk to you soon.",
+      "pt": "Hablamos pronto."
+     },
+     {
+      "en": "Have a nice day.",
+      "pt": "Que tenga un buen día."
+     }
+    ],
+    "label_en": "Ending the Call",
+    "label_pt": "Terminar la llamada",
+    "illustration_key": "hanging up phone",
+    "illustration_prompt": "A businessman smiling as he hangs up an office phone"
+   }
+  ],
+  "title_en": "Business Phone Calls",
+  "title_pt": "Llamadas de trabajo",
+  "cover_key": "office phone call",
+  "exercises": [
+   {
+    "answer": "speak",
+    "hint_pt": "(hablar)",
+    "sentence": "Could I ___ to Mr. Brown, please?"
+   },
+   {
+    "answer": "line",
+    "hint_pt": "(línea)",
+    "sentence": "Please hold the ___ for a moment."
+   },
+   {
+    "answer": "message",
+    "hint_pt": "(recado)",
+    "sentence": "Would you like to leave a ___?"
+   },
+   {
+    "answer": "calling",
+    "hint_pt": "(llamar)",
+    "sentence": "Thanks for ___, have a nice day."
+   }
+  ],
+  "summary_pt": "Frases esenciales para contestar, transferir, tomar recados y terminar llamadas de trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/office-phone-call.png",
+  "cover_prompt": "A professional woman in an office sitting at a desk, smiling while holding a desk phone receiver to her ear",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/receptionist.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/desk-telephone.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/notepad-and-pen.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/hanging-up-phone.png"
+  ],
+  "common_mistake": {
+   "right": "Hello, this is Carlos from Sales.",
+   "wrong": "Hello, I am Carlos from Sales.",
+   "why_pt": "Por teléfono, usa \"this is\" para identificarte, no \"I am\"."
+  }
+ }
+}

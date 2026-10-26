@@ -1,0 +1,177 @@
+{
+ "slug": "c1-03",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "She should have forgotten.",
+     "She must have forgotten.",
+     "She must forget.",
+     "She can't have forgotten."
+    ],
+    "question_pt": "¿Cómo se dice \"Ella debe de haberlo olvidado\" (deducción)?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I might have left it home.",
+     "He can't have finished already.",
+     "I should have listened to you.",
+     "They must have been exhausted."
+    ],
+    "question_pt": "¿Qué frase expresa arrepentimiento?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Deberías haberte molestado.",
+     "No puede ser que te hayas molestado.",
+     "No hacía falta que te molestaras.",
+     "Te vas a molestar."
+    ],
+    "question_pt": "¿Qué significa \"You needn't have bothered\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏪",
+  "level": "C1",
+  "tip_pt": "Al hablar, \"should have\" se reduce a \"should've\" (suena como \"shoulda\"). Nunca escribas \"should of\": lo correcto siempre es have + participio.",
+  "branches": [
+   {
+    "emoji": "😔",
+    "items": [
+     {
+      "en": "I should have listened to you.",
+      "pt": "Debí haberte hecho caso."
+     },
+     {
+      "en": "You shouldn't have said that.",
+      "pt": "No deberías haber dicho eso."
+     },
+     {
+      "en": "We ought to have left earlier.",
+      "pt": "Deberíamos haber salido antes."
+     },
+     {
+      "en": "I should've known better.",
+      "pt": "Debí imaginármelo."
+     }
+    ],
+    "label_en": "Regrets & Criticism",
+    "label_pt": "Arrepentimiento y crítica",
+    "illustration_prompt": "A cute hand-drawn character facepalming with a small sad cloud above, simple pastel icon, no text"
+   },
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "She must have forgotten.",
+      "pt": "Debe de haberlo olvidado."
+     },
+     {
+      "en": "He can't have finished already.",
+      "pt": "No puede haber terminado ya."
+     },
+     {
+      "en": "They must have been exhausted.",
+      "pt": "Debían de estar agotados."
+     },
+     {
+      "en": "You couldn't have seen him.",
+      "pt": "No puede ser que lo hayas visto."
+     }
+    ],
+    "label_en": "Deductions",
+    "label_pt": "Deducciones",
+    "illustration_prompt": "A cute hand-drawn magnifying glass over small footprints, simple pastel icon, no text"
+   },
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "It might have been the cat.",
+      "pt": "Puede que haya sido el gato."
+     },
+     {
+      "en": "She may have overslept.",
+      "pt": "Puede que se haya quedado dormida."
+     },
+     {
+      "en": "He could have gotten lost.",
+      "pt": "Puede que se haya perdido."
+     },
+     {
+      "en": "I might have left it home.",
+      "pt": "Puede que lo haya dejado en casa."
+     }
+    ],
+    "label_en": "Possibilities",
+    "label_pt": "Posibilidades",
+    "illustration_prompt": "A cute hand-drawn fork in a road with a small question mark shaped cloud, simple pastel icon, no letters"
+   },
+   {
+    "emoji": "💭",
+    "items": [
+     {
+      "en": "You could have hurt yourself!",
+      "pt": "¡Podrías haberte hecho daño!"
+     },
+     {
+      "en": "I would have helped you.",
+      "pt": "Te habría ayudado."
+     },
+     {
+      "en": "You needn't have bothered.",
+      "pt": "No hacía falta que te molestaras."
+     },
+     {
+      "en": "We could have won that game.",
+      "pt": "Podríamos haber ganado ese partido."
+     }
+    ],
+    "label_en": "Unreal Past",
+    "label_pt": "Pasado hipotético",
+    "illustration_prompt": "A cute hand-drawn dream bubble containing a tiny alternate scene with a star, simple pastel icon, no text"
+   }
+  ],
+  "title_en": "Past Modals",
+  "title_pt": "Modales en pasado",
+  "exercises": [
+   {
+    "answer": "told",
+    "hint_pt": "(dicho)",
+    "sentence": "You should have ___ me you were coming."
+   },
+   {
+    "answer": "missed",
+    "hint_pt": "(perdido)",
+    "sentence": "She must have ___ the train; she's not here yet."
+   },
+   {
+    "answer": "said",
+    "hint_pt": "(dicho)",
+    "sentence": "I wouldn't have ___ that if I'd known."
+   },
+   {
+    "answer": "gotten",
+    "hint_pt": "(quedado)",
+    "sentence": "They might have ___ stuck in traffic."
+   }
+  ],
+  "summary_pt": "Usa modal + have + participio para hablar de arrepentimientos, deducciones y posibilidades en el pasado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-03/cover.png",
+  "cover_prompt": "A cute hand-drawn person looking back thoughtfully at a winding path behind them, with a small clock running backwards and a thought bubble with a question mark shape, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I should have gone to the doctor.",
+   "wrong": "I must have gone to the doctor.",
+   "why_pt": "\"Must have\" es deducción; para arrepentimiento (\"debí\") usa \"should have\"."
+  }
+ }
+}

@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function StudyToggle({ slug, done }: { slug: string; done: boolean }) {
+export default function StudyToggle({ slug, done, lang = "pt" }: { slug: string; done: boolean; lang?: "pt" | "es" }) {
+  const t = (pt: string, es: string) => (lang === "es" ? es : pt);
   const [on, setOn] = useState(done);
   const router = useRouter();
   return (
@@ -15,7 +16,7 @@ export default function StudyToggle({ slug, done }: { slug: string; done: boolea
         router.refresh();
       }}
     >
-      {on ? "✓ Estudado (desmarcar)" : "Marcar como estudado"}
+      {on ? t("✓ Estudado (desmarcar)", "✓ Estudiado (desmarcar)") : t("Marcar como estudado", "Marcar como estudiado")}
     </button>
   );
 }

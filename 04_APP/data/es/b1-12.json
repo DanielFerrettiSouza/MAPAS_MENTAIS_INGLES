@@ -1,0 +1,177 @@
+{
+ "slug": "b1-12",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "You're on mute.",
+     "You're in silence.",
+     "You're with mute.",
+     "You're muted off."
+    ],
+    "question_pt": "¿Cómo dices que alguien tiene el micrófono silenciado?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Estás terminando conmigo.",
+     "Se te corta la voz.",
+     "Te estás yendo.",
+     "Llegas tarde."
+    ],
+    "question_pt": "¿Qué significa \"You're breaking up\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Shall we get started?",
+     "Can I add something?",
+     "Let's wrap up.",
+     "Let me share my screen."
+    ],
+    "question_pt": "¿Qué frase usas para cerrar la reunión?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💻",
+  "level": "B1",
+  "tip_pt": "Usa \"Could you...?\" para pedir algo con cortesía: \"Could you repeat that?\" suena más natural y profesional que \"Repeat, please\".",
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Can everyone hear me?",
+      "pt": "¿Me escuchan todos?"
+     },
+     {
+      "en": "Let's wait a few minutes.",
+      "pt": "Esperemos unos minutos."
+     },
+     {
+      "en": "Shall we get started?",
+      "pt": "¿Empezamos?"
+     },
+     {
+      "en": "Thanks for joining today.",
+      "pt": "Gracias por conectarse hoy."
+     }
+    ],
+    "label_en": "Getting Started",
+    "label_pt": "Para empezar",
+    "illustration_prompt": "Cute hand-drawn waving hand next to a small laptop screen, pastel colors, no text"
+   },
+   {
+    "emoji": "🔌",
+    "items": [
+     {
+      "en": "You're on mute.",
+      "pt": "Tienes el micrófono silenciado."
+     },
+     {
+      "en": "You're breaking up.",
+      "pt": "Se te corta la voz."
+     },
+     {
+      "en": "My connection is unstable.",
+      "pt": "Mi conexión es inestable."
+     },
+     {
+      "en": "Your camera is off.",
+      "pt": "Tu cámara está apagada."
+     }
+    ],
+    "label_en": "Tech Problems",
+    "label_pt": "Problemas técnicos",
+    "illustration_prompt": "Cute hand-drawn unplugged cable and a sad wifi symbol, pastel colors, no text"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Could you repeat that?",
+      "pt": "¿Podrías repetirlo?"
+     },
+     {
+      "en": "Can I add something?",
+      "pt": "¿Puedo agregar algo?"
+     },
+     {
+      "en": "Let me share my screen.",
+      "pt": "Déjame compartir mi pantalla."
+     },
+     {
+      "en": "I agree with that point.",
+      "pt": "Estoy de acuerdo con ese punto."
+     }
+    ],
+    "label_en": "Participating",
+    "label_pt": "Participar",
+    "illustration_prompt": "Cute hand-drawn raised hand next to a speech bubble, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "Let's wrap up.",
+      "pt": "Vamos cerrando."
+     },
+     {
+      "en": "I'll send a calendar invite.",
+      "pt": "Enviaré una invitación de calendario."
+     },
+     {
+      "en": "Any final questions?",
+      "pt": "¿Alguna última pregunta?"
+     },
+     {
+      "en": "Talk to you soon.",
+      "pt": "Hablamos pronto."
+     }
+    ],
+    "label_en": "Wrapping Up",
+    "label_pt": "Para cerrar",
+    "illustration_prompt": "Cute hand-drawn calendar with a green check mark, pastel colors, no text or numbers"
+   }
+  ],
+  "title_en": "Online Meetings",
+  "title_pt": "Reuniones en línea",
+  "exercises": [
+   {
+    "answer": "mute",
+    "hint_pt": "(silenciado)",
+    "sentence": "Sorry, you're on ___. We can't hear you."
+   },
+   {
+    "answer": "share",
+    "hint_pt": "(compartir)",
+    "sentence": "Let me ___ my screen so you can see the slides."
+   },
+   {
+    "answer": "up",
+    "hint_pt": "(se corta)",
+    "sentence": "Sorry, you're breaking ___. Could you repeat that?"
+   },
+   {
+    "answer": "calendar",
+    "hint_pt": "(calendario)",
+    "sentence": "I'll send a ___ invite for next week."
+   }
+  ],
+  "summary_pt": "Frases clave para participar en videollamadas con claridad y cortesía.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-12/cover.png",
+  "cover_prompt": "Cute hand-drawn laptop showing a video call grid with four smiling people, a small headset and coffee mug beside it, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Can you hear me?",
+   "wrong": "Do you hear me?",
+   "why_pt": "Para comprobar el audio se usa \"Can you hear me?\"."
+  }
+ }
+}

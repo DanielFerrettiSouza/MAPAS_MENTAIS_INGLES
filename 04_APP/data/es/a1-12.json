@@ -1,0 +1,185 @@
+{
+ "slug": "a1-12",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "She work in a bank.",
+     "She works in a bank.",
+     "She working in a bank.",
+     "She is work in a bank."
+    ],
+    "question_pt": "¿Qué frase es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "She don't work today.",
+     "She doesn't works today.",
+     "She doesn't work today.",
+     "She not work today."
+    ],
+    "question_pt": "¿Cómo se dice 'Ella no trabaja hoy'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Does",
+     "Are",
+     "Is",
+     "Do"
+    ],
+    "question_pt": "Completa: ___ you like pizza?",
+    "answer_index": 3
+   }
+  ],
+  "emoji": "⏰",
+  "level": "A1",
+  "tip_pt": "Con he, she e it, el verbo lleva -s: I work, she works. Have pasa a has; go pasa a goes.",
+  "branches": [
+   {
+    "emoji": "👥",
+    "items": [
+     {
+      "en": "I work every day.",
+      "pt": "Trabajo todos los días."
+     },
+     {
+      "en": "You live in Brazil.",
+      "pt": "Vives en Brasil."
+     },
+     {
+      "en": "We study English.",
+      "pt": "Estudiamos inglés."
+     },
+     {
+      "en": "They play soccer.",
+      "pt": "Ellos juegan al fútbol."
+     }
+    ],
+    "label_en": "I, You, We, They",
+    "label_pt": "Sin -s",
+    "illustration_prompt": "A cute hand-drawn group of four smiling friends standing together, simple doodle style, no text"
+   },
+   {
+    "emoji": "🧍",
+    "items": [
+     {
+      "en": "She works in a bank.",
+      "pt": "Ella trabaja en un banco."
+     },
+     {
+      "en": "He goes to school.",
+      "pt": "Él va a la escuela."
+     },
+     {
+      "en": "She has a dog.",
+      "pt": "Ella tiene un perro."
+     },
+     {
+      "en": "It rains a lot.",
+      "pt": "Llueve mucho."
+     },
+     {
+      "en": "He watches TV.",
+      "pt": "Él ve la televisión."
+     }
+    ],
+    "label_en": "He, She, It",
+    "label_pt": "Con -s",
+    "illustration_prompt": "A cute hand-drawn girl, boy and cat waving, simple doodle style, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I don't like coffee.",
+      "pt": "No me gusta el café."
+     },
+     {
+      "en": "She doesn't work today.",
+      "pt": "Ella no trabaja hoy."
+     },
+     {
+      "en": "They don't speak Spanish.",
+      "pt": "Ellos no hablan español."
+     },
+     {
+      "en": "He doesn't eat meat.",
+      "pt": "Él no come carne."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Negativa",
+    "illustration_prompt": "A cute hand-drawn character shaking its head next to a red cross symbol, doodle style, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Do you like pizza?",
+      "pt": "¿Te gusta la pizza?"
+     },
+     {
+      "en": "Does she work here?",
+      "pt": "¿Ella trabaja aquí?"
+     },
+     {
+      "en": "Where do you live?",
+      "pt": "¿Dónde vives?"
+     },
+     {
+      "en": "Yes, I do.",
+      "pt": "Sí, me gusta."
+     },
+     {
+      "en": "No, she doesn't.",
+      "pt": "No, ella no trabaja aquí."
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn curious character with a big question mark bubble shape, doodle style, no letters"
+   }
+  ],
+  "title_en": "Simple Present",
+  "title_pt": "Presente Simple",
+  "exercises": [
+   {
+    "answer": "works",
+    "hint_pt": "(trabaja)",
+    "sentence": "She ___ in an office."
+   },
+   {
+    "answer": "drink",
+    "hint_pt": "(bebo)",
+    "sentence": "I ___ coffee every morning."
+   },
+   {
+    "answer": "goes",
+    "hint_pt": "(va)",
+    "sentence": "He ___ to school by bus."
+   },
+   {
+    "answer": "Do",
+    "hint_pt": "(auxiliar de pregunta)",
+    "sentence": "___ you like pizza?"
+   }
+  ],
+  "summary_pt": "Usamos el presente simple para rutinas, hábitos y hechos de la vida diaria.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-12/cover.png",
+  "cover_prompt": "A cute hand-drawn character following a daily routine: waking up with an alarm clock, drinking coffee and walking to work, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "She works in a bank.",
+   "wrong": "She work in a bank.",
+   "why_pt": "Con she, he e it, el verbo lleva -s."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "c1-08",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I'd like to sleep on it.",
+     "Let me reflect on that.",
+     "We parted on good terms.",
+     "Is there any flexibility?"
+    ],
+    "question_pt": "¿Qué expresión sirve para ganar tiempo antes de responder?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'd rather not badmouth anyone.",
+     "I hold myself to high standards.",
+     "It's an area for growth.",
+     "Off the top of my head."
+    ],
+    "question_pt": "¿Cómo se dice \"Prefiero no hablar mal de nadie\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Estoy cansado.",
+     "Quiero dormir más temprano.",
+     "Me gustaría pensarlo con calma.",
+     "Acepto la oferta ahora."
+    ],
+    "question_pt": "¿Qué significa \"I'd like to sleep on it\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💼",
+  "level": "C1",
+  "tip_pt": "Usa hedging (\"I'd say\", \"to some extent\") para sonar diplomático y ganar tiempo sin parecer inseguro.",
+  "branches": [
+   {
+    "emoji": "⏳",
+    "items": [
+     {
+      "en": "That's a great question.",
+      "pt": "Excelente pregunta."
+     },
+     {
+      "en": "Let me reflect on that.",
+      "pt": "Permítame reflexionar al respecto."
+     },
+     {
+      "en": "If I understand you correctly...",
+      "pt": "Si entendí bien..."
+     },
+     {
+      "en": "Off the top of my head...",
+      "pt": "Así, sin pensarlo mucho..."
+     }
+    ],
+    "label_en": "Buying Time",
+    "label_pt": "Ganar tiempo",
+    "illustration_prompt": "A cute hand-drawn hourglass with a small thinking cloud beside it, simple pastel style, no text"
+   },
+   {
+    "emoji": "🌱",
+    "items": [
+     {
+      "en": "I hold myself to high standards.",
+      "pt": "Soy muy exigente conmigo mismo."
+     },
+     {
+      "en": "I've been working on delegating.",
+      "pt": "He estado trabajando en delegar más."
+     },
+     {
+      "en": "It's an area for growth.",
+      "pt": "Es un aspecto que puedo mejorar."
+     },
+     {
+      "en": "I've learned to prioritize better.",
+      "pt": "He aprendido a priorizar mejor."
+     }
+    ],
+    "label_en": "Weaknesses",
+    "label_pt": "Puntos débiles",
+    "illustration_prompt": "A cute hand-drawn small sprout growing from a pot, simple pastel style, no text"
+   },
+   {
+    "emoji": "🚪",
+    "items": [
+     {
+      "en": "I'm ready for a new challenge.",
+      "pt": "Estoy listo para un nuevo desafío."
+     },
+     {
+      "en": "It leverages my skills better.",
+      "pt": "Aprovecha mejor mis habilidades."
+     },
+     {
+      "en": "I'd rather not badmouth anyone.",
+      "pt": "Prefiero no hablar mal de nadie."
+     },
+     {
+      "en": "We parted on good terms.",
+      "pt": "Terminamos en buenos términos."
+     }
+    ],
+    "label_en": "Leaving a Job",
+    "label_pt": "Salida del empleo",
+    "illustration_prompt": "A cute hand-drawn open door with a sunny path ahead, simple pastel style, no text"
+   },
+   {
+    "emoji": "🤝",
+    "items": [
+     {
+      "en": "I'm open to discussing compensation.",
+      "pt": "Estoy abierto a hablar de la remuneración."
+     },
+     {
+      "en": "Based on market rates...",
+      "pt": "Según los valores del mercado..."
+     },
+     {
+      "en": "Is there any flexibility?",
+      "pt": "¿Hay algo de flexibilidad?"
+     },
+     {
+      "en": "I'd like to sleep on it.",
+      "pt": "Me gustaría pensarlo con calma."
+     }
+    ],
+    "label_en": "Negotiating",
+    "label_pt": "Negociación",
+    "illustration_prompt": "A cute hand-drawn handshake with a small coin beside it, simple pastel style, no text"
+   }
+  ],
+  "title_en": "Tough Interviews",
+  "title_pt": "Entrevistas difíciles",
+  "exercises": [
+   {
+    "answer": "reflect",
+    "hint_pt": "(reflexionar)",
+    "sentence": "That's a great question; let me ___ on that for a moment."
+   },
+   {
+    "answer": "hold",
+    "hint_pt": "(exigirse, mantener)",
+    "sentence": "I tend to ___ myself to very high standards."
+   },
+   {
+    "answer": "leverages",
+    "hint_pt": "(aprovecha, usa)",
+    "sentence": "I'm looking for a role that better ___ my skills."
+   },
+   {
+    "answer": "badmouth",
+    "hint_pt": "(hablar mal de)",
+    "sentence": "I'd rather not ___ my former employer."
+   }
+  ],
+  "summary_pt": "Expresiones sofisticadas para responder preguntas difíciles con seguridad, claridad y diplomacia.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-08/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of a confident person in a suit sitting across a desk from an interviewer, with a thought bubble showing a lightbulb, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I have been working in marketing for five years.",
+   "wrong": "I have five years working in marketing.",
+   "why_pt": "La duración se expresa con present perfect continuous, no con \"have\"."
+  }
+ }
+}

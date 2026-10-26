@@ -1,0 +1,173 @@
+{
+ "slug": "a2-05",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "It going to rain",
+     "It's going to rain",
+     "It's go to rain",
+     "It's going rain"
+    ],
+    "question_pt": "¿Cómo se dice \"Va a llover\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "He not going to come",
+     "He isn't going to come",
+     "He doesn't going to come",
+     "He isn't go to come"
+    ],
+    "question_pt": "¿Cuál es la negación correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "What you going to do?",
+     "What are you going do?",
+     "What are you going to do?",
+     "What do you going to do?"
+    ],
+    "question_pt": "¿Cómo preguntas \"¿Qué vas a hacer?\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🗓️",
+  "level": "A2",
+  "tip_pt": "Estructura: sujeto + am/is/are + going to + verbo base. Al hablar, \"going to\" muchas veces suena como \"gonna\".",
+  "branches": [
+   {
+    "emoji": "📝",
+    "items": [
+     {
+      "en": "I'm going to travel",
+      "pt": "Voy a viajar"
+     },
+     {
+      "en": "We're going to move",
+      "pt": "Nos vamos a mudar"
+     },
+     {
+      "en": "She's going to study English",
+      "pt": "Ella va a estudiar inglés"
+     },
+     {
+      "en": "I'm going to visit my grandma",
+      "pt": "Voy a visitar a mi abuela"
+     }
+    ],
+    "label_en": "Plans",
+    "label_pt": "Planes",
+    "illustration_prompt": "A cute hand-drawn notebook with a pencil and checkmarks, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "🌧️",
+    "items": [
+     {
+      "en": "It's going to rain",
+      "pt": "Va a llover"
+     },
+     {
+      "en": "You're going to fall!",
+      "pt": "¡Te vas a caer!"
+     },
+     {
+      "en": "We're going to be late",
+      "pt": "Vamos a llegar tarde"
+     },
+     {
+      "en": "The bus is going to leave",
+      "pt": "El autobús va a salir"
+     }
+    ],
+    "label_en": "Predictions",
+    "label_pt": "Predicciones",
+    "illustration_prompt": "A cute hand-drawn dark cloud with raindrops starting to fall, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "I'm not going to work",
+      "pt": "No voy a trabajar"
+     },
+     {
+      "en": "He isn't going to come",
+      "pt": "Él no va a venir"
+     },
+     {
+      "en": "They aren't going to buy it",
+      "pt": "Ellos no lo van a comprar"
+     }
+    ],
+    "label_en": "Negatives",
+    "label_pt": "Negaciones",
+    "illustration_prompt": "A cute hand-drawn red circle with a small couch inside showing staying home, pastel colors, no text or letters"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What are you going to do?",
+      "pt": "¿Qué vas a hacer?"
+     },
+     {
+      "en": "Are you going to cook?",
+      "pt": "¿Vas a cocinar?"
+     },
+     {
+      "en": "Where are you going to go?",
+      "pt": "¿Adónde vas a ir?"
+     },
+     {
+      "en": "Is she going to call?",
+      "pt": "¿Ella va a llamar?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a question mark shape made of stars, pastel colors, no text or letters"
+   }
+  ],
+  "title_en": "Going To Future",
+  "title_pt": "Futuro con Going To",
+  "exercises": [
+   {
+    "answer": "visit",
+    "hint_pt": "(visitar)",
+    "sentence": "I'm going to ___ my grandma this weekend."
+   },
+   {
+    "answer": "rain",
+    "hint_pt": "(llover)",
+    "sentence": "Look at those clouds! It's going to ___."
+   },
+   {
+    "answer": "is",
+    "hint_pt": "(verbo to be)",
+    "sentence": "She ___ going to start a new job."
+   },
+   {
+    "answer": "cook",
+    "hint_pt": "(cocinar)",
+    "sentence": "Are you going to ___ dinner tonight?"
+   }
+  ],
+  "summary_pt": "Usamos going to para planes ya decididos y predicciones basadas en evidencias.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-05/cover.png",
+  "cover_prompt": "A cute hand-drawn person looking at a calendar with a suitcase and a small arrow pointing forward, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I'm going to travel next week.",
+   "wrong": "I go to travel next week.",
+   "why_pt": "En inglés se usa \"am going to\", no \"go to\" como \"voy a\"."
+  }
+ }
+}

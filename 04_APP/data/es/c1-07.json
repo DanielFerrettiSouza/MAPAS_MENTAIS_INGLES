@@ -1,0 +1,181 @@
+{
+ "slug": "c1-07",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "As long as I know...",
+     "As far as I know...",
+     "As much as I know...",
+     "So far I know..."
+    ],
+    "question_pt": "¿Qué frase significa 'Que yo sepa...'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "The data appears suggesting...",
+     "The data appears suggest...",
+     "The data appears to suggest...",
+     "The data appear suggesting..."
+    ],
+    "question_pt": "¿Cuál es la forma correcta?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Until some point, yes.",
+     "To some extent, yes.",
+     "In certain point, yes.",
+     "At some extent, yes."
+    ],
+    "question_pt": "¿Cómo se dice 'Hasta cierto punto, sí'?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🤔",
+  "level": "C1",
+  "tip_pt": "Combina los hedges con moderación: 'It might perhaps possibly be' suena exagerado. Con uno o dos por frase basta.",
+  "branches": [
+   {
+    "emoji": "🔀",
+    "items": [
+     {
+      "en": "It might be too early.",
+      "pt": "Puede que sea demasiado pronto."
+     },
+     {
+      "en": "This could cause problems.",
+      "pt": "Esto podría causar problemas."
+     },
+     {
+      "en": "That may not be accurate.",
+      "pt": "Puede que eso no sea exacto."
+     },
+     {
+      "en": "We would need more data.",
+      "pt": "Necesitaríamos más datos."
+     }
+    ],
+    "label_en": "Modal Verbs",
+    "label_pt": "Verbos modales",
+    "illustration_prompt": "A simple hand-drawn signpost with two arrows pointing in different directions, cute style, no text"
+   },
+   {
+    "emoji": "👀",
+    "items": [
+     {
+      "en": "It seems to be working.",
+      "pt": "Parece que está funcionando."
+     },
+     {
+      "en": "The data appears to suggest...",
+      "pt": "Los datos parecen indicar..."
+     },
+     {
+      "en": "I tend to agree.",
+      "pt": "Me inclino a estar de acuerdo."
+     },
+     {
+      "en": "It looks like we're late.",
+      "pt": "Parece que llegamos tarde."
+     }
+    ],
+    "label_en": "Seeming Verbs",
+    "label_pt": "Verbos de apariencia",
+    "illustration_prompt": "A cute hand-drawn magnifying glass over a blurry shape, no text"
+   },
+   {
+    "emoji": "🪶",
+    "items": [
+     {
+      "en": "It's probably a mistake.",
+      "pt": "Probablemente sea un error."
+     },
+     {
+      "en": "That's arguably the best option.",
+      "pt": "Podría decirse que es la mejor opción."
+     },
+     {
+      "en": "It's somewhat risky.",
+      "pt": "Es algo arriesgado."
+     },
+     {
+      "en": "Perhaps we should wait.",
+      "pt": "Quizás deberíamos esperar."
+     },
+     {
+      "en": "It's largely true.",
+      "pt": "Es en gran parte cierto."
+     }
+    ],
+    "label_en": "Softening Adverbs",
+    "label_pt": "Adverbios atenuantes",
+    "illustration_prompt": "A cute hand-drawn floating feather with soft curved lines, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "As far as I know...",
+      "pt": "Que yo sepa..."
+     },
+     {
+      "en": "I'd say it's fair.",
+      "pt": "Yo diría que es justo."
+     },
+     {
+      "en": "To some extent, yes.",
+      "pt": "Hasta cierto punto, sí."
+     },
+     {
+      "en": "I'm not entirely sure.",
+      "pt": "No estoy del todo seguro."
+     }
+    ],
+    "label_en": "Opinion Phrases",
+    "label_pt": "Expresiones de opinión",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a small question mark-free swirl inside, no text or letters"
+   }
+  ],
+  "title_en": "Hedging Language",
+  "title_pt": "Hablar con cautela",
+  "exercises": [
+   {
+    "answer": "might",
+    "hint_pt": "(podría)",
+    "sentence": "There ___ be a better way to do this."
+   },
+   {
+    "answer": "appear",
+    "hint_pt": "(parecen)",
+    "sentence": "The results ___ to suggest a clear trend."
+   },
+   {
+    "answer": "say",
+    "hint_pt": "(diría)",
+    "sentence": "I'd ___ that the plan needs more work."
+   },
+   {
+    "answer": "probably",
+    "hint_pt": "(probablemente)",
+    "sentence": "It's ___ worth checking again."
+   }
+  ],
+  "summary_pt": "El hedging suaviza las afirmaciones y muestra incertidumbre, cortesía o apertura a otras opiniones.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-07/cover.png",
+  "cover_prompt": "A cute hand-drawn person gently tilting their hand side to side in a 'so-so' gesture, with a small thought bubble containing a balance scale, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It seems that it is working.",
+   "wrong": "It seems that is working.",
+   "why_pt": "En inglés el sujeto es obligatorio: di 'that it is'."
+  }
+ }
+}

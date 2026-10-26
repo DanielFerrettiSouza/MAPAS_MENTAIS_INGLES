@@ -1,0 +1,177 @@
+{
+ "slug": "c1-18",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "It pays for itself.",
+     "It pays alone.",
+     "It pays by itself money.",
+     "It self-pays."
+    ],
+    "question_pt": "¿Cómo se dice \"Se paga solo\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "It's a game changer.",
+     "What's holding you back?",
+     "Shall we seal the deal?",
+     "That makes perfect sense."
+    ],
+    "question_pt": "¿Qué frase se usa para descubrir una objeción?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "¿Sellamos la carta?",
+     "¿Lo dejamos para después?",
+     "¿Cerramos el trato?",
+     "¿Negociamos el precio?"
+    ],
+    "question_pt": "¿Qué significa \"Shall we seal the deal?\"",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🤝",
+  "level": "C1",
+  "tip_pt": "Usa preguntas abiertas y verbos como \"would\" y \"could\" para sonar persuasivo sin parecer insistente ni agresivo.",
+  "branches": [
+   {
+    "emoji": "😊",
+    "items": [
+     {
+      "en": "What matters most to you?",
+      "pt": "¿Qué es lo más importante para usted?"
+     },
+     {
+      "en": "I hear what you're saying.",
+      "pt": "Entiendo lo que me dice."
+     },
+     {
+      "en": "Walk me through your challenges.",
+      "pt": "Cuénteme cuáles son sus retos."
+     },
+     {
+      "en": "That makes perfect sense.",
+      "pt": "Eso tiene todo el sentido."
+     }
+    ],
+    "label_en": "Building Rapport",
+    "label_pt": "Crear conexión",
+    "illustration_prompt": "Cute hand-drawn icon of two speech bubbles overlapping with a small heart, no text"
+   },
+   {
+    "emoji": "💎",
+    "items": [
+     {
+      "en": "It pays for itself.",
+      "pt": "Se paga solo."
+     },
+     {
+      "en": "You'll save time and money.",
+      "pt": "Ahorrará tiempo y dinero."
+     },
+     {
+      "en": "It's a game changer.",
+      "pt": "Esto lo cambia todo."
+     },
+     {
+      "en": "Backed by proven results.",
+      "pt": "Respaldado por resultados comprobados."
+     }
+    ],
+    "label_en": "Highlighting Value",
+    "label_pt": "Destacar el valor",
+    "illustration_prompt": "Cute hand-drawn icon of a shiny diamond with sparkles, no text"
+   },
+   {
+    "emoji": "🛡️",
+    "items": [
+     {
+      "en": "I understand your hesitation.",
+      "pt": "Entiendo sus dudas."
+     },
+     {
+      "en": "What's holding you back?",
+      "pt": "¿Qué le impide decidirse?"
+     },
+     {
+      "en": "Let me put it this way.",
+      "pt": "Permítame explicarlo de otra manera."
+     },
+     {
+      "en": "Fair point, however...",
+      "pt": "Es un buen argumento, sin embargo..."
+     }
+    ],
+    "label_en": "Handling Objections",
+    "label_pt": "Manejar objeciones",
+    "illustration_prompt": "Cute hand-drawn icon of a small friendly shield with a check mark, no text"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "Shall we seal the deal?",
+      "pt": "¿Cerramos el trato?"
+     },
+     {
+      "en": "Only for a limited time.",
+      "pt": "Solo por tiempo limitado."
+     },
+     {
+      "en": "Shall I draw up the contract?",
+      "pt": "¿Preparo el contrato?"
+     },
+     {
+      "en": "What would it take?",
+      "pt": "¿Qué haría falta para cerrar el trato?"
+     }
+    ],
+    "label_en": "Closing the Deal",
+    "label_pt": "Cerrar la venta",
+    "illustration_prompt": "Cute hand-drawn icon of a pen signing a simple blank contract, no text"
+   }
+  ],
+  "title_en": "Persuasion and Sales",
+  "title_pt": "Persuasión y ventas",
+  "exercises": [
+   {
+    "answer": "hesitation",
+    "hint_pt": "(duda, vacilación)",
+    "sentence": "I completely understand your ___, but consider the long-term savings."
+   },
+   {
+    "answer": "limited",
+    "hint_pt": "(limitado)",
+    "sentence": "This offer is only available for a ___ time."
+   },
+   {
+    "answer": "seal",
+    "hint_pt": "(cerrar, sellar)",
+    "sentence": "Shall we go ahead and ___ the deal?"
+   },
+   {
+    "answer": "itself",
+    "hint_pt": "(sí mismo)",
+    "sentence": "It pays for ___ within six months."
+   }
+  ],
+  "summary_pt": "Expresiones avanzadas para convencer a clientes, manejar objeciones y cerrar tratos con naturalidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-18/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of two smiling people shaking hands over a small table with a coffee cup and a simple chart, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Let's close the deal today.",
+   "wrong": "Let's close the business today.",
+   "why_pt": "En inglés se cierra un \"deal\", no un \"business\"."
+  }
+ }
+}

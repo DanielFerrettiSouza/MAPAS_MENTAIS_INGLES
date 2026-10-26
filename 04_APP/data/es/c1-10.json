@@ -1,0 +1,177 @@
+{
+ "slug": "c1-10",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Thank you, Captain Obvious.",
+     "Lucky me.",
+     "Whatever you say.",
+     "Story of my life."
+    ],
+    "question_pt": "¿Qué expresión significa 'Gracias, Capitán Obvio'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "You don't say.",
+     "Oh, great. Just what I needed.",
+     "No kidding.",
+     "Sure, Jan."
+    ],
+    "question_pt": "¿Cómo dices 'Lo que me faltaba' con sarcasmo?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "No digas nada",
+     "Tú no lo dijiste",
+     "No me digas",
+     "Cuéntame más"
+    ],
+    "question_pt": "¿Qué significa 'You don't say'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🙄",
+  "level": "C1",
+  "tip_pt": "El sarcasmo depende de la entonación: alarga palabras como 'great' o 'sure' y usa un tono seco. Sin eso, la frase suena literal.",
+  "branches": [
+   {
+    "emoji": "🎉",
+    "items": [
+     {
+      "en": "Oh, great. Just what I needed.",
+      "pt": "Ah, genial. Lo que me faltaba."
+     },
+     {
+      "en": "Wow, what a surprise.",
+      "pt": "Vaya, qué sorpresa."
+     },
+     {
+      "en": "Lucky me.",
+      "pt": "Qué suerte la mía."
+     },
+     {
+      "en": "Well, that went well.",
+      "pt": "Bueno, eso salió de maravilla."
+     }
+    ],
+    "label_en": "Fake Enthusiasm",
+    "label_pt": "Falso entusiasmo",
+    "illustration_prompt": "A cute hand-drawn deflated party balloon with a tiny bored face, no text"
+   },
+   {
+    "emoji": "🙃",
+    "items": [
+     {
+      "en": "Yeah, sure you are.",
+      "pt": "Sí, claro que sí."
+     },
+     {
+      "en": "Right, because that makes sense.",
+      "pt": "Claro, porque eso tiene todo el sentido."
+     },
+     {
+      "en": "Sure, Jan.",
+      "pt": "Ajá, sí, claro."
+     },
+     {
+      "en": "Whatever you say.",
+      "pt": "Si tú lo dices..."
+     }
+    ],
+    "label_en": "Mock Agreement",
+    "label_pt": "Darle la razón con ironía",
+    "illustration_prompt": "A cute hand-drawn upside-down smiling face with a thumbs up, no text"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "Thank you, Captain Obvious.",
+      "pt": "Gracias, Capitán Obvio."
+     },
+     {
+      "en": "Tell me something I don't know.",
+      "pt": "Cuéntame algo que no sepa."
+     },
+     {
+      "en": "No kidding.",
+      "pt": "¿En serio? Ni me había dado cuenta."
+     },
+     {
+      "en": "You don't say.",
+      "pt": "No me digas."
+     }
+    ],
+    "label_en": "Stating the Obvious",
+    "label_pt": "Decir lo obvio",
+    "illustration_prompt": "A cute hand-drawn light bulb with a sleepy, unimpressed face, no text"
+   },
+   {
+    "emoji": "🔪",
+    "items": [
+     {
+      "en": "I'm sorry, did I ask?",
+      "pt": "Perdona, ¿yo te pregunté?"
+     },
+     {
+      "en": "Glad we cleared that up.",
+      "pt": "Qué bueno que lo aclaramos."
+     },
+     {
+      "en": "Don't strain yourself.",
+      "pt": "No te vayas a cansar, ¿eh?"
+     },
+     {
+      "en": "Story of my life.",
+      "pt": "La historia de mi vida."
+     }
+    ],
+    "label_en": "Dry Comebacks",
+    "label_pt": "Respuestas mordaces",
+    "illustration_prompt": "A cute hand-drawn small cactus wearing sunglasses with a smirk, no text"
+   }
+  ],
+  "title_en": "Irony & Sarcasm",
+  "title_pt": "Ironía y sarcasmo",
+  "exercises": [
+   {
+    "answer": "great",
+    "hint_pt": "(genial)",
+    "sentence": "Oh, ___ . Just what I needed."
+   },
+   {
+    "answer": "sure",
+    "hint_pt": "(claro, irónico)",
+    "sentence": "Yeah, ___ you are."
+   },
+   {
+    "answer": "well",
+    "hint_pt": "(bien)",
+    "sentence": "Well, that went ___ ."
+   },
+   {
+    "answer": "know",
+    "hint_pt": "(sé)",
+    "sentence": "Tell me something I don't ___ ."
+   }
+  ],
+  "summary_pt": "En las series, el sarcasmo dice lo contrario de lo que se piensa, con un tono marcado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-10/cover.png",
+  "cover_prompt": "A cute hand-drawn TV screen with a character rolling eyes and smirking, popcorn bowl beside it, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Oh, great. Just what I needed.",
+   "wrong": "Oh, great. Just what I was needing.",
+   "why_pt": "'Need' no suele usarse en forma continua: di 'what I needed'."
+  }
+ }
+}

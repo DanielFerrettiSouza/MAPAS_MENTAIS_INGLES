@@ -1,0 +1,185 @@
+{
+ "slug": "b1-14",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I don't think so.",
+     "I couldn't agree more.",
+     "I'm not so sure.",
+     "If you ask me."
+    ],
+    "question_pt": "¿Qué expresión significa \"Estoy totalmente de acuerdo\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "You're wrong.",
+     "No way!",
+     "I see your point, but...",
+     "Exactly!"
+    ],
+    "question_pt": "¿Cuál es la forma más educada de expresar desacuerdo?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "What do you think?",
+     "I believe that...",
+     "Absolutely!",
+     "I agree with you."
+    ],
+    "question_pt": "¿Cómo le preguntas a alguien su opinión?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "💬",
+  "level": "B1",
+  "tip_pt": "Di \"I agree\" sin el verbo \"to be\": agree ya es un verbo. Para suavizar un desacuerdo, empieza con \"I see your point, but...\"",
+  "branches": [
+   {
+    "emoji": "🗣️",
+    "items": [
+     {
+      "en": "I think that...",
+      "pt": "Creo que..."
+     },
+     {
+      "en": "In my opinion,...",
+      "pt": "En mi opinión,..."
+     },
+     {
+      "en": "I believe that...",
+      "pt": "Considero que..."
+     },
+     {
+      "en": "If you ask me,...",
+      "pt": "Si me preguntas,..."
+     },
+     {
+      "en": "It seems to me that...",
+      "pt": "Me parece que..."
+     }
+    ],
+    "label_en": "Giving Opinions",
+    "label_pt": "Dar tu opinión",
+    "illustration_prompt": "A cute hand-drawn person with an empty speech bubble and a lightbulb above the head, no text"
+   },
+   {
+    "emoji": "👍",
+    "items": [
+     {
+      "en": "I agree with you.",
+      "pt": "Estoy de acuerdo contigo."
+     },
+     {
+      "en": "Absolutely!",
+      "pt": "¡Por supuesto!"
+     },
+     {
+      "en": "That's so true.",
+      "pt": "Es muy cierto."
+     },
+     {
+      "en": "I couldn't agree more.",
+      "pt": "Estoy totalmente de acuerdo."
+     },
+     {
+      "en": "Exactly!",
+      "pt": "¡Exacto!"
+     }
+    ],
+    "label_en": "Agreeing",
+    "label_pt": "Estar de acuerdo",
+    "illustration_prompt": "A cute hand-drawn thumbs up with a small smiling face, no text"
+   },
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "I see your point, but...",
+      "pt": "Entiendo lo que dices, pero..."
+     },
+     {
+      "en": "I'm not so sure.",
+      "pt": "No estoy tan seguro."
+     },
+     {
+      "en": "I don't think so.",
+      "pt": "No creo."
+     },
+     {
+      "en": "I see it differently.",
+      "pt": "Yo lo veo de otra manera."
+     }
+    ],
+    "label_en": "Disagreeing Politely",
+    "label_pt": "Expresar desacuerdo con educación",
+    "illustration_prompt": "A cute hand-drawn character with a thoughtful face and hand on chin, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "What do you think?",
+      "pt": "¿Qué opinas?"
+     },
+     {
+      "en": "How do you feel about it?",
+      "pt": "¿Qué piensas de eso?"
+     },
+     {
+      "en": "Do you agree?",
+      "pt": "¿Estás de acuerdo?"
+     },
+     {
+      "en": "What's your take on this?",
+      "pt": "¿Cuál es tu punto de vista sobre esto?"
+     }
+    ],
+    "label_en": "Asking Opinions",
+    "label_pt": "Pedir opiniones",
+    "illustration_prompt": "A cute hand-drawn person with a big question mark shape floating nearby, no letters"
+   }
+  ],
+  "title_en": "Opinions & Agreeing",
+  "title_pt": "Opiniones y acuerdo",
+  "exercises": [
+   {
+    "answer": "opinion",
+    "hint_pt": "(opinión)",
+    "sentence": "In my ___, it's a great idea."
+   },
+   {
+    "answer": "agree",
+    "hint_pt": "(estar de acuerdo)",
+    "sentence": "I totally ___ with you."
+   },
+   {
+    "answer": "point",
+    "hint_pt": "(punto de vista)",
+    "sentence": "I see your ___, but I disagree."
+   },
+   {
+    "answer": "think",
+    "hint_pt": "(pensar/opinar)",
+    "sentence": "What do you ___ about it?"
+   }
+  ],
+  "summary_pt": "Expresiones para dar tu opinión, mostrar acuerdo, expresar desacuerdo con educación y pedir la opinión de otros.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b1-14/cover.png",
+  "cover_prompt": "Two cute cartoon friends sitting at a café table talking, with empty speech bubbles, one giving a thumbs up, hand-drawn style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I agree with you.",
+   "wrong": "I am agree with you.",
+   "why_pt": "\"Agree\" ya es verbo; no copies \"estoy de acuerdo\" con \"am\"."
+  }
+ }
+}

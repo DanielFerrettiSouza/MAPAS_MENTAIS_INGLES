@@ -1,0 +1,181 @@
+{
+ "slug": "b2-05",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "We are waiting for hours.",
+     "We've been waiting for hours.",
+     "We waited since hours.",
+     "We have waiting for hours."
+    ],
+    "question_pt": "¿Cómo se dice 'Llevamos horas esperando'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "for",
+     "during",
+     "since",
+     "ago"
+    ],
+    "question_pt": "¿Qué palabra completa: 'She's been living here ___ May'?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "¿Qué hiciste ayer?",
+     "¿Qué vas a hacer?",
+     "¿Qué has estado haciendo últimamente?",
+     "¿Qué estás haciendo ahora?"
+    ],
+    "question_pt": "¿Qué significa 'What have you been doing lately?'",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "⏳",
+  "level": "B2",
+  "tip_pt": "Usa have/has + been + verbo-ing. Con 'for' indicas duración; con 'since', el punto de inicio. Los verbos de estado (know, like) no usan esta forma.",
+  "branches": [
+   {
+    "emoji": "⏱️",
+    "items": [
+     {
+      "en": "I've been working all day.",
+      "pt": "He estado trabajando todo el día."
+     },
+     {
+      "en": "We've been waiting for hours.",
+      "pt": "Llevamos horas esperando."
+     },
+     {
+      "en": "She's been living here since May.",
+      "pt": "Ella vive aquí desde mayo."
+     },
+     {
+      "en": "It's been raining for a week.",
+      "pt": "Lleva una semana lloviendo."
+     }
+    ],
+    "label_en": "Duration",
+    "label_pt": "Duración",
+    "illustration_prompt": "A cute hand-drawn stopwatch with a smiling face, simple pastel icon, no text"
+   },
+   {
+    "emoji": "💦",
+    "items": [
+     {
+      "en": "You look tired. Have you been running?",
+      "pt": "Te ves cansado. ¿Has estado corriendo?"
+     },
+     {
+      "en": "Your eyes are red. Have you been crying?",
+      "pt": "Tienes los ojos rojos. ¿Has estado llorando?"
+     },
+     {
+      "en": "I've been cooking, sorry about the mess.",
+      "pt": "He estado cocinando, perdona el desorden."
+     },
+     {
+      "en": "He's been painting the house.",
+      "pt": "Él ha estado pintando la casa."
+     }
+    ],
+    "label_en": "Visible Results",
+    "label_pt": "Resultados visibles",
+    "illustration_prompt": "A cute hand-drawn tired person with sweat drops after exercise, simple pastel icon, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "How long have you been waiting?",
+      "pt": "¿Cuánto tiempo llevas esperando?"
+     },
+     {
+      "en": "What have you been doing lately?",
+      "pt": "¿Qué has estado haciendo últimamente?"
+     },
+     {
+      "en": "Have you been sleeping well?",
+      "pt": "¿Has estado durmiendo bien?"
+     },
+     {
+      "en": "Who have you been talking to?",
+      "pt": "¿Con quién has estado hablando?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a question mark shape made of a clock, simple pastel icon, no letters"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "for two years",
+      "pt": "desde hace dos años"
+     },
+     {
+      "en": "since last summer",
+      "pt": "desde el verano pasado"
+     },
+     {
+      "en": "lately",
+      "pt": "últimamente"
+     },
+     {
+      "en": "all morning",
+      "pt": "toda la mañana"
+     },
+     {
+      "en": "recently",
+      "pt": "recientemente"
+     }
+    ],
+    "label_en": "Time Expressions",
+    "label_pt": "Expresiones de tiempo",
+    "illustration_prompt": "A cute hand-drawn calendar with a small arrow pointing forward, simple pastel icon, no text or numbers"
+   }
+  ],
+  "title_en": "Present Perfect Continuous",
+  "title_pt": "Presente perfecto continuo",
+  "exercises": [
+   {
+    "answer": "looking",
+    "hint_pt": "(buscando)",
+    "sentence": "I've been ___ for you all morning."
+   },
+   {
+    "answer": "since",
+    "hint_pt": "(desde)",
+    "sentence": "She has been studying English ___ 2020."
+   },
+   {
+    "answer": "walking",
+    "hint_pt": "(caminando)",
+    "sentence": "Why are you wet? Have you been ___ in the rain?"
+   },
+   {
+    "answer": "waiting",
+    "hint_pt": "(esperando)",
+    "sentence": "How long have you been ___ here?"
+   }
+  ],
+  "summary_pt": "Acciones que empezaron en el pasado y continúan o acaban de terminar.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/b2-05/cover.png",
+  "cover_prompt": "A cute hand-drawn hourglass next to a person happily jogging along a path from a sunrise to a clock, simple pastel icon style, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I have been working here for five years.",
+   "wrong": "I am working here since five years.",
+   "why_pt": "Para duración hasta ahora, usa present perfect, no presente."
+  }
+ }
+}

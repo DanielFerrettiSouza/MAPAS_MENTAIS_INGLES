@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-13",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "We can meet you halfway.",
+     "We can go to the middle.",
+     "We can find half the way.",
+     "We can arrive in the middle."
+    ],
+    "question_pt": "¿Cómo se dice 'Podemos llegar a un punto medio'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "What's your price?",
+     "What's your budget?",
+     "What's your bill?",
+     "What's your account?"
+    ],
+    "question_pt": "¿Qué frase significa '¿Cuál es su presupuesto?'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Te voy a seguir la próxima semana.",
+     "Voy a subir la próxima semana.",
+     "Me pondré en contacto la próxima semana.",
+     "Voy a cancelar la próxima semana."
+    ],
+    "question_pt": "'I'll follow up next week' significa:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🤝",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa 'would' y 'could' para sonar más cortés: 'Would you be interested in...?' es más suave que 'Do you want...?'",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "How can I help you today?",
+      "pt": "¿En qué puedo ayudarle hoy?"
+     },
+     {
+      "en": "What are you looking for?",
+      "pt": "¿Qué está buscando?"
+     },
+     {
+      "en": "Thanks for reaching out.",
+      "pt": "Gracias por ponerse en contacto."
+     },
+     {
+      "en": "What matters most to you?",
+      "pt": "¿Qué es lo más importante para usted?"
+     }
+    ],
+    "label_en": "Approaching Clients",
+    "label_pt": "Primer contacto",
+    "illustration_key": "store greeting",
+    "illustration_prompt": "A smiling store clerk greeting a customer at the entrance of a shop"
+   },
+   {
+    "emoji": "📦",
+    "items": [
+     {
+      "en": "Let me walk you through it.",
+      "pt": "Permítame explicarle cómo funciona."
+     },
+     {
+      "en": "It's our best-selling model.",
+      "pt": "Es nuestro modelo más vendido."
+     },
+     {
+      "en": "It saves you time and money.",
+      "pt": "Le ahorra tiempo y dinero."
+     },
+     {
+      "en": "Would you be interested in a trial?",
+      "pt": "¿Le interesaría una prueba gratuita?"
+     }
+    ],
+    "label_en": "Pitching Products",
+    "label_pt": "Presentación del producto",
+    "illustration_key": "product box",
+    "illustration_prompt": "A salesperson holding up a sleek product box and pointing at it"
+   },
+   {
+    "emoji": "💰",
+    "items": [
+     {
+      "en": "I can offer you a discount.",
+      "pt": "Puedo ofrecerle un descuento."
+     },
+     {
+      "en": "That's our best price.",
+      "pt": "Ese es nuestro mejor precio."
+     },
+     {
+      "en": "What's your budget?",
+      "pt": "¿Cuál es su presupuesto?"
+     },
+     {
+      "en": "We can meet you halfway.",
+      "pt": "Podemos llegar a un punto medio."
+     }
+    ],
+    "label_en": "Negotiating",
+    "label_pt": "Negociación",
+    "illustration_key": "calculator coins",
+    "illustration_prompt": "Two people sitting at a table with a calculator and coins between them"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "Shall we close the deal?",
+      "pt": "¿Cerramos el trato?"
+     },
+     {
+      "en": "I'll send you the contract.",
+      "pt": "Le enviaré el contrato."
+     },
+     {
+      "en": "I'll follow up next week.",
+      "pt": "Me pondré en contacto con usted la próxima semana."
+     },
+     {
+      "en": "It's a pleasure doing business.",
+      "pt": "Es un placer hacer negocios con usted."
+     }
+    ],
+    "label_en": "Closing the Deal",
+    "label_pt": "Cierre de la venta",
+    "illustration_key": "signing contract",
+    "illustration_prompt": "A hand signing a paper contract with a pen on a wooden desk"
+   }
+  ],
+  "title_en": "Sales Conversations",
+  "title_pt": "Conversaciones de ventas",
+  "cover_key": "business handshake",
+  "exercises": [
+   {
+    "answer": "interested",
+    "hint_pt": "(interesado)",
+    "sentence": "Would you be ___ in a free trial?"
+   },
+   {
+    "answer": "discount",
+    "hint_pt": "(descuento)",
+    "sentence": "I can offer you a 10% ___."
+   },
+   {
+    "answer": "through",
+    "hint_pt": "(a través de / por)",
+    "sentence": "Let me walk you ___ the main features."
+   },
+   {
+    "answer": "close",
+    "hint_pt": "(cerrar)",
+    "sentence": "Shall we go ahead and ___ the deal?"
+   }
+  ],
+  "summary_pt": "Expresiones para atender a clientes, presentar productos, negociar y cerrar ventas con profesionalidad.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-handshake.png",
+  "cover_prompt": "A friendly salesperson shaking hands with a smiling customer across a desk in a bright modern office",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/store-greeting.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/product-box.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/calculator-coins.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/signing-contract.png"
+  ],
+  "common_mistake": {
+   "right": "Can I help you with something?",
+   "wrong": "Can I help you in something?",
+   "why_pt": "En inglés se ayuda 'with' algo, no 'in' (ayudar en)."
+  }
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "slug": "a2-11",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "I have a reserve.",
+     "I have a reservation.",
+     "I have a booking room.",
+     "I make a reserve."
+    ],
+    "question_pt": "¿Cómo se dice \"Tengo una reserva\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "una habitación con dos camas individuales",
+     "dos habitaciones",
+     "una habitación doble con cama de matrimonio",
+     "una habitación con baño"
+    ],
+    "question_pt": "¿Qué significa \"a double room\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "I want towels.",
+     "Give me towels.",
+     "Could I have extra towels?",
+     "Towels more, please."
+    ],
+    "question_pt": "¿Cómo pides toallas extra de forma educada?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🏨",
+  "level": "A2",
+  "tip_pt": "Usa \"Could I...?\" o \"Can I...?\" para pedir algo con educación. Ej.: \"Could I have extra towels?\" suena más amable que \"I want...\".",
+  "branches": [
+   {
+    "emoji": "🛎️",
+    "items": [
+     {
+      "en": "I have a reservation.",
+      "pt": "Tengo una reserva."
+     },
+     {
+      "en": "It's under Silva.",
+      "pt": "Está a nombre de Silva."
+     },
+     {
+      "en": "Here's my passport.",
+      "pt": "Aquí tiene mi pasaporte."
+     },
+     {
+      "en": "Is breakfast included?",
+      "pt": "¿El desayuno está incluido?"
+     }
+    ],
+    "label_en": "Check-in",
+    "label_pt": "Llegada",
+    "illustration_prompt": "A cute hand-drawn service bell on a hotel front desk, simple doodle style, no text"
+   },
+   {
+    "emoji": "🛏️",
+    "items": [
+     {
+      "en": "a single room",
+      "pt": "una habitación individual"
+     },
+     {
+      "en": "a double room",
+      "pt": "una habitación doble (cama de matrimonio)"
+     },
+     {
+      "en": "the key card",
+      "pt": "la tarjeta llave"
+     },
+     {
+      "en": "What's the Wi-Fi password?",
+      "pt": "¿Cuál es la contraseña del wifi?"
+     }
+    ],
+    "label_en": "The Room",
+    "label_pt": "La habitación",
+    "illustration_prompt": "A cute hand-drawn cozy hotel bed with pillows and a key card, simple doodle style, no text"
+   },
+   {
+    "emoji": "🧺",
+    "items": [
+     {
+      "en": "Could I have extra towels?",
+      "pt": "¿Podría darme toallas extra?"
+     },
+     {
+      "en": "Can I get a wake-up call?",
+      "pt": "¿Me pueden llamar para despertarme?"
+     },
+     {
+      "en": "Can you call a taxi?",
+      "pt": "¿Puede llamar a un taxi?"
+     },
+     {
+      "en": "Can I leave my bags here?",
+      "pt": "¿Puedo dejar mis maletas aquí?"
+     }
+    ],
+    "label_en": "Requests",
+    "label_pt": "Peticiones",
+    "illustration_prompt": "A cute hand-drawn stack of fluffy folded towels, simple doodle style, no text"
+   },
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "The air conditioner doesn't work.",
+      "pt": "El aire acondicionado no funciona."
+     },
+     {
+      "en": "There's no hot water.",
+      "pt": "No hay agua caliente."
+     },
+     {
+      "en": "What time is checkout?",
+      "pt": "¿A qué hora es la salida?"
+     },
+     {
+      "en": "I'd like to check out.",
+      "pt": "Quisiera hacer el check-out."
+     }
+    ],
+    "label_en": "Problems & Checkout",
+    "label_pt": "Problemas y salida",
+    "illustration_prompt": "A cute hand-drawn suitcase next to a broken air conditioner with a little wrench, simple doodle style, no text"
+   }
+  ],
+  "title_en": "At the Hotel",
+  "title_pt": "En el hotel",
+  "exercises": [
+   {
+    "answer": "reservation",
+    "hint_pt": "(reserva)",
+    "sentence": "I have a ___ under Silva."
+   },
+   {
+    "answer": "checkout",
+    "hint_pt": "(salida del hotel)",
+    "sentence": "What time is ___?"
+   },
+   {
+    "answer": "towels",
+    "hint_pt": "(toallas)",
+    "sentence": "Could I have extra ___, please?"
+   },
+   {
+    "answer": "work",
+    "hint_pt": "(funciona)",
+    "sentence": "The air conditioner doesn't ___."
+   }
+  ],
+  "summary_pt": "Frases esenciales para hacer el check-in, pedir ayuda y resolver problemas en el hotel.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-11/cover.png",
+  "cover_prompt": "A cute hand-drawn hotel building with a smiling receptionist at a front desk, a suitcase and a room key, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I have a reservation for two nights.",
+   "wrong": "I have a reserve for two nights.",
+   "why_pt": "En inglés, la \"reserva\" de hotel es \"reservation\", no \"reserve\"."
+  }
+ }
+}

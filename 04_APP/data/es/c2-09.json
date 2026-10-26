@@ -1,0 +1,181 @@
+{
+ "slug": "c2-09",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "You really went above and beyond",
+     "You really went over the top",
+     "You really went far away",
+     "You really passed the line"
+    ],
+    "question_pt": "¿Qué expresión significa 'Realmente fuiste más allá'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "This is wrong",
+     "It might be worth reconsidering",
+     "Change it now",
+     "You failed"
+    ],
+    "question_pt": "¿Cuál es la forma más diplomática de sugerir un cambio?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Apaguemos internet",
+     "Cerremos el proyecto",
+     "Hablemos de esto en privado",
+     "Pospongámoslo para siempre"
+    ],
+    "question_pt": "¿Qué significa 'Let's take this offline'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🧭",
+  "level": "C2",
+  "tip_pt": "En el feedback de alto nivel, usa lenguaje matizado (hedging): 'I wonder if...', 'It might be worth...' suaviza las críticas sin perder claridad.",
+  "branches": [
+   {
+    "emoji": "👑",
+    "items": [
+     {
+      "en": "Lead by example",
+      "pt": "Predicar con el ejemplo"
+     },
+     {
+      "en": "Empower your team to decide",
+      "pt": "Dar autonomía al equipo para decidir"
+     },
+     {
+      "en": "Foster a culture of trust",
+      "pt": "Fomentar una cultura de confianza"
+     },
+     {
+      "en": "Set clear expectations upfront",
+      "pt": "Definir expectativas claras desde el principio"
+     }
+    ],
+    "label_en": "Leading People",
+    "label_pt": "Liderar personas",
+    "illustration_prompt": "A cute hand-drawn figure with a small flag guiding a line of little people, simple doodle style, no text"
+   },
+   {
+    "emoji": "🌟",
+    "items": [
+     {
+      "en": "Nothing short of exceptional",
+      "pt": "Simplemente excepcional"
+     },
+     {
+      "en": "You really went above and beyond",
+      "pt": "Realmente fuiste más allá"
+     },
+     {
+      "en": "Your input was invaluable",
+      "pt": "Tu aporte fue invaluable"
+     },
+     {
+      "en": "Credit where credit's due",
+      "pt": "Hay que reconocer el mérito de quien lo tiene"
+     }
+    ],
+    "label_en": "Praise",
+    "label_pt": "Elogiar",
+    "illustration_prompt": "A cute hand-drawn shining star with a smiling face and a small trophy, doodle style, no text"
+   },
+   {
+    "emoji": "🛠️",
+    "items": [
+     {
+      "en": "I'd like to raise a concern",
+      "pt": "Quisiera plantear una inquietud"
+     },
+     {
+      "en": "It might be worth reconsidering",
+      "pt": "Quizás valga la pena reconsiderarlo"
+     },
+     {
+      "en": "There's room for improvement",
+      "pt": "Hay margen de mejora"
+     },
+     {
+      "en": "I wonder if we could",
+      "pt": "Me pregunto si podríamos"
+     },
+     {
+      "en": "This fell short of expectations",
+      "pt": "Esto quedó por debajo de las expectativas"
+     }
+    ],
+    "label_en": "Constructive Criticism",
+    "label_pt": "Crítica constructiva",
+    "illustration_prompt": "A cute hand-drawn wrench and a small plant growing, symbolizing improvement, doodle style, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "Let's take this offline",
+      "pt": "Hablemos de esto en privado"
+     },
+     {
+      "en": "I hear where you're coming from",
+      "pt": "Entiendo tu punto de vista"
+     },
+     {
+      "en": "Let's find common ground",
+      "pt": "Busquemos un punto en común"
+     },
+     {
+      "en": "I owe you some candid feedback",
+      "pt": "Te debo una retroalimentación sincera"
+     }
+    ],
+    "label_en": "Difficult Conversations",
+    "label_pt": "Conversaciones difíciles",
+    "illustration_prompt": "Two cute hand-drawn speech bubbles, one cloudy and one sunny, meeting in the middle, doodle style, no text"
+   }
+  ],
+  "title_en": "Leadership & Feedback",
+  "title_pt": "Liderazgo y feedback",
+  "exercises": [
+   {
+    "answer": "raise",
+    "hint_pt": "(plantear)",
+    "sentence": "I'd like to ___ a few concerns about the timeline."
+   },
+   {
+    "answer": "lead",
+    "hint_pt": "(liderar)",
+    "sentence": "A good leader knows how to ___ by example."
+   },
+   {
+    "answer": "take",
+    "hint_pt": "(llevar)",
+    "sentence": "Let's ___ this conversation offline."
+   },
+   {
+    "answer": "exceptional",
+    "hint_pt": "(excepcional)",
+    "sentence": "Your work has been nothing short of ___."
+   }
+  ],
+  "summary_pt": "Expresiones sofisticadas para liderar equipos y dar feedback con tacto y precisión.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-09/cover.png",
+  "cover_prompt": "A cute hand-drawn team leader holding a compass, surrounded by colleagues exchanging speech bubbles with hearts and lightbulbs, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Can you give me some feedback on my report?",
+   "wrong": "Can you give me a feedback on my report?",
+   "why_pt": "'Feedback' es incontable; no uses 'a' ni plural."
+  }
+ }
+}

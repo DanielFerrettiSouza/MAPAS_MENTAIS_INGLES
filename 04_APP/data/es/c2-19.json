@@ -1,0 +1,177 @@
+{
+ "slug": "c2-19",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Still waters run deep",
+     "The apple doesn't fall far from the tree",
+     "Birds of a feather flock together",
+     "Look before you leap"
+    ],
+    "question_pt": "¿Qué refrán equivale a \"De tal palo, tal astilla\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Strike while the iron is hot",
+     "Rome wasn't built in a day",
+     "Don't put all your eggs in one basket",
+     "Every cloud has a silver lining"
+    ],
+    "question_pt": "¿Qué refrán aconseja diversificar los riesgos?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "Every cloud has a silver lining",
+     "Better safe than sorry",
+     "A watched pot never boils",
+     "Necessity is the mother of invention"
+    ],
+    "question_pt": "¿Cuál es el equivalente de \"No hay mal que por bien no venga\"?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "📜",
+  "level": "C2",
+  "tip_pt": "Los nativos suelen citar solo la primera mitad del refrán: \"Well, when in Rome...\". Decir la frase completa puede sonar demasiado didáctico.",
+  "branches": [
+   {
+    "emoji": "⏳",
+    "items": [
+     {
+      "en": "Don't count your chickens before they hatch",
+      "pt": "No vendas la piel del oso antes de cazarlo"
+     },
+     {
+      "en": "Rome wasn't built in a day",
+      "pt": "Roma no se construyó en un día"
+     },
+     {
+      "en": "Strike while the iron is hot",
+      "pt": "Aprovecha mientras puedas"
+     },
+     {
+      "en": "A watched pot never boils",
+      "pt": "El que espera, desespera"
+     }
+    ],
+    "label_en": "Patience & Timing",
+    "label_pt": "Paciencia y el momento oportuno",
+    "illustration_prompt": "A cute hand-drawn hourglass with a small egg about to hatch beside it, no text"
+   },
+   {
+    "emoji": "🍎",
+    "items": [
+     {
+      "en": "The apple doesn't fall far from the tree",
+      "pt": "De tal palo, tal astilla"
+     },
+     {
+      "en": "Birds of a feather flock together",
+      "pt": "Dios los cría y ellos se juntan"
+     },
+     {
+      "en": "Still waters run deep",
+      "pt": "Del agua mansa líbrame Dios"
+     },
+     {
+      "en": "A leopard can't change its spots",
+      "pt": "Genio y figura hasta la sepultura"
+     }
+    ],
+    "label_en": "Character & Family",
+    "label_pt": "Carácter y familia",
+    "illustration_prompt": "A cute hand-drawn apple tree with one apple lying right next to its trunk, no text"
+   },
+   {
+    "emoji": "🧺",
+    "items": [
+     {
+      "en": "Don't put all your eggs in one basket",
+      "pt": "No lo apuestes todo a una sola carta"
+     },
+     {
+      "en": "A bird in the hand is worth two in the bush",
+      "pt": "Más vale pájaro en mano que ciento volando"
+     },
+     {
+      "en": "Better safe than sorry",
+      "pt": "Más vale prevenir que curar"
+     },
+     {
+      "en": "Look before you leap",
+      "pt": "Piensa antes de actuar"
+     }
+    ],
+    "label_en": "Caution & Risk",
+    "label_pt": "Cautela y riesgo",
+    "illustration_prompt": "A cute hand-drawn basket full of eggs balanced carefully, no text"
+   },
+   {
+    "emoji": "💡",
+    "items": [
+     {
+      "en": "Don't look a gift horse in the mouth",
+      "pt": "A caballo regalado no se le mira el diente"
+     },
+     {
+      "en": "Necessity is the mother of invention",
+      "pt": "La necesidad agudiza el ingenio"
+     },
+     {
+      "en": "When in Rome, do as the Romans do",
+      "pt": "Allá donde fueres, haz lo que vieres"
+     },
+     {
+      "en": "Every cloud has a silver lining",
+      "pt": "No hay mal que por bien no venga"
+     }
+    ],
+    "label_en": "Life Lessons",
+    "label_pt": "Lecciones de vida",
+    "illustration_prompt": "A cute hand-drawn horse wearing a gift bow next to a glowing light bulb, no text"
+   }
+  ],
+  "title_en": "English Proverbs",
+  "title_pt": "Refranes en inglés",
+  "exercises": [
+   {
+    "answer": "apple",
+    "hint_pt": "(manzana)",
+    "sentence": "The ___ doesn't fall far from the tree."
+   },
+   {
+    "answer": "mouth",
+    "hint_pt": "(boca)",
+    "sentence": "Don't look a gift horse in the ___."
+   },
+   {
+    "answer": "deep",
+    "hint_pt": "(profundo)",
+    "sentence": "Still waters run ___."
+   },
+   {
+    "answer": "invention",
+    "hint_pt": "(invención)",
+    "sentence": "Necessity is the mother of ___."
+   }
+  ],
+  "summary_pt": "Los refranes condensan la sabiduría popular y suenan naturales si los usas con precisión e ironía.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-19/cover.png",
+  "cover_prompt": "A cute hand-drawn old scroll surrounded by small icons of an apple, a horse, a bird and a clock, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Don't count your chickens before they hatch.",
+   "wrong": "Don't sell the bear's skin before you hunt it.",
+   "why_pt": "Calco del refrán español; en inglés se usa otra imagen fija."
+  }
+ }
+}

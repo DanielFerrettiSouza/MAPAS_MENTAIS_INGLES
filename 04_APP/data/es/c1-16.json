@@ -1,0 +1,177 @@
+{
+ "slug": "c1-16",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "soared",
+     "plummeted",
+     "leveled off",
+     "picked up"
+    ],
+    "question_pt": "¿Qué expresión significa 'se desplomaron'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "fluctuated",
+     "dipped",
+     "leveled off",
+     "bottomed out"
+    ],
+    "question_pt": "¿Cómo se dice 'se estabilizó' después de una subida?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "in",
+     "by",
+     "of",
+     "at"
+    ],
+    "question_pt": "Completa: 'Costs rose ___ 15%.'",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "📈",
+  "level": "C1",
+  "tip_pt": "Usa verbo + adverbio (rose sharply) o adjetivo + sustantivo (a sharp rise). Con cifras, usa 'by' para la diferencia y 'to' para el valor final.",
+  "branches": [
+   {
+    "emoji": "🚀",
+    "items": [
+     {
+      "en": "Sales soared last quarter",
+      "pt": "Las ventas se dispararon el último trimestre"
+     },
+     {
+      "en": "a steady increase",
+      "pt": "un aumento constante"
+     },
+     {
+      "en": "Costs rose by 15%",
+      "pt": "Los costos subieron un 15 %"
+     },
+     {
+      "en": "Demand picked up again",
+      "pt": "La demanda volvió a repuntar"
+     }
+    ],
+    "label_en": "Upward Movement",
+    "label_pt": "Aumento",
+    "illustration_prompt": "A cute hand-drawn rocket flying up along a rising arrow, no text"
+   },
+   {
+    "emoji": "📉",
+    "items": [
+     {
+      "en": "Profits plummeted in 2020",
+      "pt": "Las ganancias se desplomaron en 2020"
+     },
+     {
+      "en": "a gradual decline",
+      "pt": "un descenso gradual"
+     },
+     {
+      "en": "Exports dipped slightly",
+      "pt": "Las exportaciones bajaron ligeramente"
+     },
+     {
+      "en": "Prices bottomed out",
+      "pt": "Los precios tocaron fondo"
+     }
+    ],
+    "label_en": "Downward Movement",
+    "label_pt": "Descenso",
+    "illustration_prompt": "A cute hand-drawn arrow sliding down a hill, no text"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "remained stable",
+      "pt": "se mantuvo estable"
+     },
+     {
+      "en": "leveled off",
+      "pt": "se estabilizó"
+     },
+     {
+      "en": "fluctuated wildly",
+      "pt": "fluctuó mucho"
+     },
+     {
+      "en": "hit a peak",
+      "pt": "alcanzó un máximo"
+     }
+    ],
+    "label_en": "Stability & Change",
+    "label_pt": "Estabilidad y fluctuación",
+    "illustration_prompt": "A cute hand-drawn balance scale next to a wavy line, no text"
+   },
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "The chart clearly shows",
+      "pt": "El gráfico muestra claramente"
+     },
+     {
+      "en": "accounted for a third",
+      "pt": "representó un tercio"
+     },
+     {
+      "en": "compared to the previous year",
+      "pt": "en comparación con el año anterior"
+     },
+     {
+      "en": "a significant upward trend",
+      "pt": "una tendencia al alza significativa"
+     }
+    ],
+    "label_en": "Interpreting Data",
+    "label_pt": "Interpretar datos",
+    "illustration_prompt": "A cute hand-drawn magnifying glass over a bar chart, no text"
+   }
+  ],
+  "title_en": "Describing Trends",
+  "title_pt": "Describe tendencias",
+  "exercises": [
+   {
+    "answer": "soared",
+    "hint_pt": "(se dispararon)",
+    "sentence": "Profits ___ sharply after the product launch."
+   },
+   {
+    "answer": "stable",
+    "hint_pt": "(estables)",
+    "sentence": "Prices have remained ___ since January."
+   },
+   {
+    "answer": "peak",
+    "hint_pt": "(máximo, pico)",
+    "sentence": "Unemployment hit a ___ in March."
+   },
+   {
+    "answer": "gradual",
+    "hint_pt": "(gradual)",
+    "sentence": "There was a ___ decline in exports."
+   }
+  ],
+  "summary_pt": "Aprende vocabulario preciso para describir variaciones, ritmo y comparaciones en gráficos y datos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-16/cover.png",
+  "cover_prompt": "A cute hand-drawn line chart with an arrow going up and down, small magnifying glass and pie chart nearby, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "Sales increased by 20% last year.",
+   "wrong": "Sales increased in a 20% last year.",
+   "why_pt": "Ojo: para la diferencia porcentual se usa 'by', sin 'in a'."
+  }
+ }
+}

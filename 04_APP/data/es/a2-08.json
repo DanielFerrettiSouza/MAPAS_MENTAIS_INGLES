@@ -1,0 +1,177 @@
+{
+ "slug": "a2-08",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "some",
+     "any",
+     "a",
+     "many"
+    ],
+    "question_pt": "Completa: \"There isn't ___ milk.\"",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Would you like any coffee?",
+     "Would you like some coffee?",
+     "Do you like some coffee?",
+     "You want any coffee?"
+    ],
+    "question_pt": "¿Qué frase ofrece algo con cortesía?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Do you have some question?",
+     "Have you any questions?",
+     "Do you have any questions?",
+     "You have some questions?"
+    ],
+    "question_pt": "¿Cómo se dice \"¿Tienes alguna pregunta?\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🍎",
+  "level": "A2",
+  "tip_pt": "Usa some en frases afirmativas y ofrecimientos; usa any en negativas y preguntas normales.",
+  "branches": [
+   {
+    "emoji": "✅",
+    "items": [
+     {
+      "en": "I have some friends.",
+      "pt": "Tengo algunos amigos."
+     },
+     {
+      "en": "There is some bread.",
+      "pt": "Hay un poco de pan."
+     },
+     {
+      "en": "I need some help.",
+      "pt": "Necesito un poco de ayuda."
+     },
+     {
+      "en": "She bought some apples.",
+      "pt": "Ella compró algunas manzanas."
+     }
+    ],
+    "label_en": "Affirmative",
+    "label_pt": "Frases afirmativas",
+    "illustration_prompt": "A cute hand-drawn green check mark next to a small pile of cookies, no text"
+   },
+   {
+    "emoji": "❌",
+    "items": [
+     {
+      "en": "I don't have any money.",
+      "pt": "No tengo nada de dinero."
+     },
+     {
+      "en": "There isn't any milk.",
+      "pt": "No hay leche."
+     },
+     {
+      "en": "We don't have any time.",
+      "pt": "No tenemos nada de tiempo."
+     },
+     {
+      "en": "He doesn't have any brothers.",
+      "pt": "Él no tiene hermanos."
+     }
+    ],
+    "label_en": "Negative",
+    "label_pt": "Frases negativas",
+    "illustration_prompt": "A cute hand-drawn empty wallet with a small red cross, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "Do you have any questions?",
+      "pt": "¿Tienes alguna pregunta?"
+     },
+     {
+      "en": "Is there any sugar?",
+      "pt": "¿Hay azúcar?"
+     },
+     {
+      "en": "Do you have any kids?",
+      "pt": "¿Tienes hijos?"
+     },
+     {
+      "en": "Are there any eggs?",
+      "pt": "¿Hay huevos?"
+     }
+    ],
+    "label_en": "Questions",
+    "label_pt": "Preguntas",
+    "illustration_prompt": "A cute hand-drawn speech bubble with a big question mark shape, no letters"
+   },
+   {
+    "emoji": "☕",
+    "items": [
+     {
+      "en": "Would you like some coffee?",
+      "pt": "¿Quiere un café?"
+     },
+     {
+      "en": "Can I have some water?",
+      "pt": "¿Me da un poco de agua, por favor?"
+     },
+     {
+      "en": "Would you like some cake?",
+      "pt": "¿Quieres un trozo de pastel?"
+     },
+     {
+      "en": "Can I get some napkins?",
+      "pt": "¿Me trae unas servilletas, por favor?"
+     }
+    ],
+    "label_en": "Offers and Requests",
+    "label_pt": "Ofrecimientos y pedidos",
+    "illustration_prompt": "A cute hand-drawn hand offering a steaming coffee cup, no text"
+   }
+  ],
+  "title_en": "Some and Any",
+  "title_pt": "Some y Any",
+  "exercises": [
+   {
+    "answer": "some",
+    "hint_pt": "(algunos)",
+    "sentence": "I have ___ friends in New York."
+   },
+   {
+    "answer": "any",
+    "hint_pt": "(nada de)",
+    "sentence": "There isn't ___ milk in the fridge."
+   },
+   {
+    "answer": "any",
+    "hint_pt": "(alguna)",
+    "sentence": "Do you have ___ questions?"
+   },
+   {
+    "answer": "some",
+    "hint_pt": "(un poco de)",
+    "sentence": "Would you like ___ coffee?"
+   }
+  ],
+  "summary_pt": "Some y any indican cantidades indefinidas: algunos, algo de, nada de.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-08/cover.png",
+  "cover_prompt": "A cute hand-drawn kitchen table with a basket holding a few apples next to an empty bowl, simple soft colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I don't have any money.",
+   "wrong": "I don't have no money.",
+   "why_pt": "En inglés no se usa doble negación: don't + any."
+  }
+ }
+}

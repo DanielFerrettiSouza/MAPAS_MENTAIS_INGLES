@@ -1,0 +1,177 @@
+{
+ "slug": "c2-08",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "write off bad debt",
+     "write down bad debt",
+     "cancel lost debt",
+     "erase bad credit"
+    ],
+    "question_pt": "¿Cómo se dice \"dar de baja una deuda incobrable\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "un sentimiento alcista",
+     "un sentimiento bajista",
+     "un mercado estable",
+     "una alta volatilidad"
+    ],
+    "question_pt": "¿Qué significa \"a bearish sentiment\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "raise operating costs",
+     "hedge operating costs",
+     "slash operating costs",
+     "post operating costs"
+    ],
+    "question_pt": "¿Qué expresión significa \"recortar drásticamente los gastos operativos\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💹",
+  "level": "C2",
+  "tip_pt": "En el inglés financiero, prefiere verbos precisos: \"slash costs\", \"post a loss\", \"hedge exposure\". Evitan la vaguedad y te harán sonar como un nativo en las reuniones.",
+  "branches": [
+   {
+    "emoji": "📈",
+    "items": [
+     {
+      "en": "The stock plummeted overnight",
+      "pt": "La acción se desplomó de la noche a la mañana"
+     },
+     {
+      "en": "a bearish sentiment",
+      "pt": "un sentimiento bajista"
+     },
+     {
+      "en": "Markets rallied on the news",
+      "pt": "Los mercados repuntaron con la noticia"
+     },
+     {
+      "en": "high volatility",
+      "pt": "alta volatilidad"
+     }
+    ],
+    "label_en": "Markets",
+    "label_pt": "Mercados",
+    "illustration_prompt": "Cute hand-drawn bull and bear facing each other over a zigzag chart line, no text"
+   },
+   {
+    "emoji": "💰",
+    "items": [
+     {
+      "en": "diversify your portfolio",
+      "pt": "diversificar tu cartera"
+     },
+     {
+      "en": "hedge our exposure",
+      "pt": "cubrir nuestra exposición"
+     },
+     {
+      "en": "a long-term yield",
+      "pt": "un rendimiento a largo plazo"
+     },
+     {
+      "en": "risk-adjusted returns",
+      "pt": "rentabilidad ajustada al riesgo"
+     }
+    ],
+    "label_en": "Investing",
+    "label_pt": "Inversiones",
+    "illustration_prompt": "Cute hand-drawn small plant growing from a pile of coins, no text"
+   },
+   {
+    "emoji": "🧾",
+    "items": [
+     {
+      "en": "post a net loss",
+      "pt": "registrar una pérdida neta"
+     },
+     {
+      "en": "write off bad debt",
+      "pt": "dar de baja una deuda incobrable"
+     },
+     {
+      "en": "the balance sheet",
+      "pt": "el balance general"
+     },
+     {
+      "en": "cash flow statement",
+      "pt": "estado de flujos de efectivo"
+     }
+    ],
+    "label_en": "Accounting",
+    "label_pt": "Contabilidad",
+    "illustration_prompt": "Cute hand-drawn calculator next to a ledger book with a pencil, no text or numbers"
+   },
+   {
+    "emoji": "🏦",
+    "items": [
+     {
+      "en": "a highly leveraged buyout",
+      "pt": "una compra altamente apalancada"
+     },
+     {
+      "en": "slash operating costs",
+      "pt": "recortar drásticamente los gastos operativos"
+     },
+     {
+      "en": "raise fresh capital",
+      "pt": "captar capital nuevo"
+     },
+     {
+      "en": "the leverage ratio",
+      "pt": "el índice de apalancamiento"
+     }
+    ],
+    "label_en": "Corporate Finance",
+    "label_pt": "Finanzas corporativas",
+    "illustration_prompt": "Cute hand-drawn office building with a handshake symbol above it, no text"
+   }
+  ],
+  "title_en": "Financial English",
+  "title_pt": "Inglés financiero",
+  "exercises": [
+   {
+    "answer": "hedge",
+    "hint_pt": "(cubrir, proteger contra)",
+    "sentence": "We need to ___ our exposure to currency risk."
+   },
+   {
+    "answer": "posted",
+    "hint_pt": "(registró)",
+    "sentence": "The firm ___ a net loss last quarter."
+   },
+   {
+    "answer": "leverage",
+    "hint_pt": "(apalancamiento)",
+    "sentence": "Investors are worried about the company's ___ ratio."
+   },
+   {
+    "answer": "plummeted",
+    "hint_pt": "(se desplomó)",
+    "sentence": "The stock ___ after the earnings report."
+   }
+  ],
+  "summary_pt": "Vocabulario avanzado para hablar de mercados, inversiones, contabilidad y finanzas corporativas.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-08/cover.png",
+  "cover_prompt": "Cute hand-drawn illustration of a piggy bank wearing glasses beside a rising stock chart line and gold coins, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "The company made a profit of two million dollars.",
+   "wrong": "The company made benefits of two million dollars.",
+   "why_pt": "\"Benefits\" son prestaciones; el beneficio económico es \"profit\"."
+  }
+ }
+}

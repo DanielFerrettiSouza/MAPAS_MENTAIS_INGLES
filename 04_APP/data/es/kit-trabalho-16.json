@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-16",
+ "level": "B1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Sorry for the late reply!",
+     "Sorry for the delay answer!",
+     "Sorry to answer late now!",
+     "Sorry, I stay late!"
+    ],
+    "question_pt": "¿Cómo se dice 'Perdón por tardar en responder'?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "¿Podemos saltarnos la reunión?",
+     "¿Podemos hacer una llamada rápida?",
+     "¿Me puedes llamar mañana?",
+     "¿Cancelamos la llamada?"
+    ],
+    "question_pt": "¿Qué significa 'Can we hop on a call?'?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Sounds good",
+     "Be right back",
+     "On it!",
+     "Just checking in"
+    ],
+    "question_pt": "¿Qué frase significa '¡Ya me pongo con eso!'?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "💬",
+  "level": "B1",
+  "style": "ink",
+  "tip_pt": "En el chat del trabajo, sé breve y amable: usa 'quick question', 'just checking in' y 'thanks!' para sonar natural.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "👋",
+    "items": [
+     {
+      "en": "Hey, got a minute?",
+      "pt": "Hola, ¿tienes un minuto?"
+     },
+     {
+      "en": "Quick question about the report",
+      "pt": "Una pregunta rápida sobre el informe"
+     },
+     {
+      "en": "Just checking in",
+      "pt": "Solo quería saber cómo va todo"
+     },
+     {
+      "en": "Hope you're doing well!",
+      "pt": "¡Espero que estés bien!"
+     }
+    ],
+    "label_en": "Starting a Chat",
+    "label_pt": "Cómo iniciar la conversación",
+    "illustration_key": "waving person",
+    "illustration_prompt": "A friendly person waving hello at a laptop, no text"
+   },
+   {
+    "emoji": "🙋",
+    "items": [
+     {
+      "en": "Could you take a look?",
+      "pt": "¿Podrías echarle un vistazo?"
+     },
+     {
+      "en": "Can you send me the link?",
+      "pt": "¿Me puedes enviar el enlace?"
+     },
+     {
+      "en": "Do you have time today?",
+      "pt": "¿Tienes tiempo hoy?"
+     },
+     {
+      "en": "Any updates on this?",
+      "pt": "¿Alguna novedad sobre esto?"
+     }
+    ],
+    "label_en": "Asking for Help",
+    "label_pt": "Cómo pedir ayuda",
+    "illustration_key": "raised hand",
+    "illustration_prompt": "A person raising a hand at a desk with a laptop, no text"
+   },
+   {
+    "emoji": "↩️",
+    "items": [
+     {
+      "en": "Sorry for the late reply!",
+      "pt": "¡Perdón por tardar en responder!"
+     },
+     {
+      "en": "Let me get back to you",
+      "pt": "Te respondo más tarde"
+     },
+     {
+      "en": "On it!",
+      "pt": "¡Ya me pongo con eso!"
+     },
+     {
+      "en": "Sounds good to me",
+      "pt": "Me parece bien"
+     }
+    ],
+    "label_en": "Replying",
+    "label_pt": "Cómo responder",
+    "illustration_key": "typing hands",
+    "illustration_prompt": "A person typing quickly on a keyboard with a coffee mug nearby, no text"
+   },
+   {
+    "emoji": "📅",
+    "items": [
+     {
+      "en": "Can we hop on a call?",
+      "pt": "¿Hacemos una llamada rápida?"
+     },
+     {
+      "en": "I'm in a meeting",
+      "pt": "Estoy en una reunión"
+     },
+     {
+      "en": "Be right back",
+      "pt": "Vuelvo enseguida"
+     },
+     {
+      "en": "Running five minutes late",
+      "pt": "Llego cinco minutos tarde"
+     }
+    ],
+    "label_en": "Meetings & Status",
+    "label_pt": "Reuniones y estado",
+    "illustration_key": "video call",
+    "illustration_prompt": "A video call scene with a person wearing headphones in front of a laptop, no text"
+   }
+  ],
+  "title_en": "Workplace Chat",
+  "title_pt": "Chat del trabajo",
+  "cover_key": "laptop chat",
+  "exercises": [
+   {
+    "answer": "question",
+    "hint_pt": "(pregunta)",
+    "sentence": "Hey, quick ___ about the report."
+   },
+   {
+    "answer": "in",
+    "hint_pt": "(saber cómo va)",
+    "sentence": "Just checking ___ on the project."
+   },
+   {
+    "answer": "reply",
+    "hint_pt": "(respuesta)",
+    "sentence": "Sorry for the late ___!"
+   },
+   {
+    "answer": "get",
+    "hint_pt": "(responder más tarde)",
+    "sentence": "Let me ___ back to you."
+   }
+  ],
+  "summary_pt": "Frases cortas y amables para hablar con tus compañeros en Slack y Teams.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/laptop-chat.png",
+  "cover_prompt": "A young professional smiling at a laptop in a bright home office, with colorful speech bubbles floating above, no text",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/waving-person.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/raised-hand.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/typing-hands.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/video-call.png"
+  ],
+  "common_mistake": {
+   "right": "I'll wait for your answer.",
+   "wrong": "I'll wait your answer.",
+   "why_pt": "'Wait' necesita 'for' antes del objeto: 'wait for'."
+  }
+ }
+}

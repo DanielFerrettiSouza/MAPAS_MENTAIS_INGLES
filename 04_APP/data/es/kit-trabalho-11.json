@@ -1,0 +1,184 @@
+{
+ "slug": "kit-trabalho-11",
+ "level": "B2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Let's meet each other halfway.",
+     "Let's go to the middle.",
+     "Let's split the way.",
+     "Let's find the half."
+    ],
+    "question_pt": "¿Cómo se dice \"Busquemos un punto intermedio\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Eso cierra el acuerdo.",
+     "Eso hace inviable el acuerdo.",
+     "Eso es una pausa.",
+     "Eso es barato."
+    ],
+    "question_pt": "¿Qué significa \"That's a deal breaker\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "I'm afraid that won't work.",
+     "That's a bit too high.",
+     "We've reached an agreement.",
+     "Is there any room for flexibility?"
+    ],
+    "question_pt": "¿Qué frase indica que se cerró el acuerdo?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🤝",
+  "level": "B2",
+  "style": "ink",
+  "tip_pt": "Usa condicionales para suavizar tus propuestas: \"If you could lower the price, we would sign today.\" Suena firme, pero educado.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "💼",
+    "items": [
+     {
+      "en": "What if we offered a discount?",
+      "pt": "¿Y si ofreciéramos un descuento?"
+     },
+     {
+      "en": "We're prepared to offer more.",
+      "pt": "Estamos dispuestos a ofrecer más."
+     },
+     {
+      "en": "How does that sound?",
+      "pt": "¿Qué le parece?"
+     },
+     {
+      "en": "That's our final offer.",
+      "pt": "Esa es nuestra oferta final."
+     }
+    ],
+    "label_en": "Making Offers",
+    "label_pt": "Hacer propuestas",
+    "illustration_key": "business folder",
+    "illustration_prompt": "A businesswoman sliding a folder across a table toward a colleague"
+   },
+   {
+    "emoji": "⚖️",
+    "items": [
+     {
+      "en": "Let's meet each other halfway.",
+      "pt": "Busquemos un punto intermedio."
+     },
+     {
+      "en": "Is there any room for flexibility?",
+      "pt": "¿Hay algún margen de flexibilidad?"
+     },
+     {
+      "en": "We could live with that.",
+      "pt": "Podríamos aceptarlo."
+     },
+     {
+      "en": "I'm willing to compromise.",
+      "pt": "Estoy dispuesto a ceder."
+     }
+    ],
+    "label_en": "Compromising",
+    "label_pt": "Ceder y llegar a acuerdos",
+    "illustration_key": "balance scale",
+    "illustration_prompt": "A balanced brass scale on a wooden desk"
+   },
+   {
+    "emoji": "🙅",
+    "items": [
+     {
+      "en": "I'm afraid that won't work.",
+      "pt": "Me temo que eso no va a funcionar."
+     },
+     {
+      "en": "That's a deal breaker.",
+      "pt": "Eso hace inviable el acuerdo."
+     },
+     {
+      "en": "I see your point, but...",
+      "pt": "Entiendo su punto de vista, pero..."
+     },
+     {
+      "en": "That's a bit too high.",
+      "pt": "Eso es un poco elevado."
+     }
+    ],
+    "label_en": "Disagreeing Politely",
+    "label_pt": "Discrepar con educación",
+    "illustration_key": "raised hand",
+    "illustration_prompt": "A man in a suit raising one hand politely in a meeting"
+   },
+   {
+    "emoji": "✍️",
+    "items": [
+     {
+      "en": "I think we have a deal.",
+      "pt": "Creo que tenemos un trato."
+     },
+     {
+      "en": "Let's put it in writing.",
+      "pt": "Pongámoslo por escrito."
+     },
+     {
+      "en": "We've reached an agreement.",
+      "pt": "Hemos llegado a un acuerdo."
+     },
+     {
+      "en": "It's a win-win situation.",
+      "pt": "Es una situación en la que todos ganan."
+     }
+    ],
+    "label_en": "Closing the Deal",
+    "label_pt": "Cerrar el acuerdo",
+    "illustration_key": "signing contract",
+    "illustration_prompt": "A hand signing a contract with a fountain pen"
+   }
+  ],
+  "title_en": "Negotiation",
+  "title_pt": "Negociación",
+  "cover_key": "business handshake",
+  "exercises": [
+   {
+    "answer": "halfway",
+    "hint_pt": "(a mitad de camino)",
+    "sentence": "Let's meet each other ___ way."
+   },
+   {
+    "answer": "offer",
+    "hint_pt": "(oferta)",
+    "sentence": "That's our final ___."
+   },
+   {
+    "answer": "deal",
+    "hint_pt": "(trato/acuerdo)",
+    "sentence": "I'm afraid that's a ___ breaker."
+   },
+   {
+    "answer": "flexibility",
+    "hint_pt": "(flexibilidad)",
+    "sentence": "Is there any room for ___?"
+   }
+  ],
+  "summary_pt": "Expresiones para proponer, ceder, discrepar con educación y cerrar acuerdos en el trabajo.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-handshake.png",
+  "cover_prompt": "Two business people shaking hands across a meeting table with documents and coffee cups, warm office lighting",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/business-folder.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/balance-scale.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/raised-hand.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/signing-contract.png"
+  ],
+  "common_mistake": {
+   "right": "We need to reach an agreement by Friday.",
+   "wrong": "We need to arrive to an agreement until Friday.",
+   "why_pt": "Para plazos usa \"by\", no \"until\"; y \"reach an agreement\", no \"arrive\"."
+  }
+ }
+}

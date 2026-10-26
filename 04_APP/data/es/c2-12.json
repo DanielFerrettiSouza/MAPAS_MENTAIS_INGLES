@@ -1,0 +1,185 @@
+{
+ "slug": "c2-12",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Unreliable narrator",
+     "Untrusty teller",
+     "Unfaithful author",
+     "Unsure speaker"
+    ],
+    "question_pt": "¿Qué expresión significa \"narrador no fiable\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Simile",
+     "Oxymoron",
+     "Alliteration",
+     "Allegory"
+    ],
+    "question_pt": "\"Deafening silence\" es un ejemplo de ¿qué figura?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Stream of consciousness",
+     "Litotes",
+     "Dramatic irony",
+     "Assonance"
+    ],
+    "question_pt": "Cuando el público sabe algo que el personaje ignora, hablamos de:",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "📚",
+  "level": "C2",
+  "tip_pt": "\"Metaphor\" afirma una identidad (\"time is a thief\"); \"simile\" compara con \"like\" o \"as\" (\"brave as a lion\").",
+  "branches": [
+   {
+    "emoji": "🔍",
+    "items": [
+     {
+      "en": "An extended metaphor",
+      "pt": "Una metáfora continuada"
+     },
+     {
+      "en": "A strikingly vivid simile",
+      "pt": "Un símil sumamente vívido"
+     },
+     {
+      "en": "A thinly veiled allegory",
+      "pt": "Una alegoría apenas disimulada"
+     },
+     {
+      "en": "An apt analogy",
+      "pt": "Una analogía acertada"
+     }
+    ],
+    "label_en": "Comparison",
+    "label_pt": "Comparación",
+    "illustration_prompt": "A cute hand-drawn magnifying glass over two matching hearts, soft colors, no text"
+   },
+   {
+    "emoji": "🎵",
+    "items": [
+     {
+      "en": "Subtle alliteration",
+      "pt": "Una aliteración sutil"
+     },
+     {
+      "en": "Haunting assonance",
+      "pt": "Una asonancia evocadora"
+     },
+     {
+      "en": "Playful onomatopoeia",
+      "pt": "Una onomatopeya juguetona"
+     },
+     {
+      "en": "Iambic pentameter",
+      "pt": "Pentámetro yámbico"
+     }
+    ],
+    "label_en": "Sound & Rhythm",
+    "label_pt": "Sonido y ritmo",
+    "illustration_prompt": "A cute hand-drawn musical note bouncing over sound waves, soft colors, no text"
+   },
+   {
+    "emoji": "🎭",
+    "items": [
+     {
+      "en": "Dramatic irony",
+      "pt": "Ironía dramática"
+     },
+     {
+      "en": "A bitter paradox",
+      "pt": "Una paradoja amarga"
+     },
+     {
+      "en": "A deliberate oxymoron",
+      "pt": "Un oxímoron deliberado"
+     },
+     {
+      "en": "Understated litotes",
+      "pt": "Una lítote discreta"
+     },
+     {
+      "en": "Wild hyperbole",
+      "pt": "Una hipérbole desmedida"
+     }
+    ],
+    "label_en": "Contrast & Twist",
+    "label_pt": "Contraste e ironía",
+    "illustration_prompt": "A cute hand-drawn pair of theater masks, one smiling and one sad, soft colors, no text"
+   },
+   {
+    "emoji": "🖋️",
+    "items": [
+     {
+      "en": "Heavy-handed foreshadowing",
+      "pt": "Una prefiguración demasiado evidente"
+     },
+     {
+      "en": "An unreliable narrator",
+      "pt": "Un narrador no fiable"
+     },
+     {
+      "en": "Stream of consciousness",
+      "pt": "Flujo de conciencia"
+     },
+     {
+      "en": "A recurring symbol",
+      "pt": "Un símbolo recurrente"
+     },
+     {
+      "en": "Giving inanimate things personification",
+      "pt": "Personificar objetos inanimados"
+     }
+    ],
+    "label_en": "Narrative Craft",
+    "label_pt": "Técnica narrativa",
+    "illustration_prompt": "A cute hand-drawn feather quill writing a winding path with tiny stars, soft colors, no text"
+   }
+  ],
+  "title_en": "Literary Devices",
+  "title_pt": "Figuras retóricas",
+  "exercises": [
+   {
+    "answer": "personification",
+    "hint_pt": "(personificación)",
+    "sentence": "\"The wind whispered\" is a classic example of ___."
+   },
+   {
+    "answer": "hyperbole",
+    "hint_pt": "(hipérbole)",
+    "sentence": "Calling a long wait \"forever\" is pure ___."
+   },
+   {
+    "answer": "symbol",
+    "hint_pt": "(símbolo)",
+    "sentence": "The green light works as a ___ of longing."
+   },
+   {
+    "answer": "foreshadowing",
+    "hint_pt": "(presagiando)",
+    "sentence": "The early storm was clearly ___ the tragedy."
+   }
+  ],
+  "summary_pt": "Recursos literarios que aportan profundidad, ritmo y sentido figurado a textos y discursos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-12/cover.png",
+  "cover_prompt": "A cute hand-drawn open book with swirling stars, a feather quill, and small floating symbols like a heart, moon, and mask rising from its pages, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "The writer uses a simile to describe the sea.",
+   "wrong": "The writer uses a comparation to describe the sea.",
+   "why_pt": "\"Comparation\" no existe; se dice \"comparison\" o, en literatura, \"simile\"."
+  }
+ }
+}

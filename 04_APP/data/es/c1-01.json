@@ -1,0 +1,177 @@
+{
+ "slug": "c1-01",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Never I have felt so alive.",
+     "Never have I felt so alive.",
+     "Never I felt so alive have.",
+     "Never felt I have so alive."
+    ],
+    "question_pt": "¿Qué oración es correcta?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Little I knew",
+     "Little did I know",
+     "Little knew I did",
+     "Little I did know"
+    ],
+    "question_pt": "¿Cómo se dice 'Poco sabía yo' con inversión?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "you should",
+     "should",
+     "do",
+     "you do"
+    ],
+    "question_pt": "Completa: 'Under no circumstances ___ you open that door.'",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🔄",
+  "level": "C1",
+  "tip_pt": "Si empiezas con Never, Rarely, Not only, Little o No sooner, usa auxiliar + sujeto, como en una pregunta: Never have I...",
+  "branches": [
+   {
+    "emoji": "⏳",
+    "items": [
+     {
+      "en": "Never have I felt so alive",
+      "pt": "Nunca me he sentido tan vivo"
+     },
+     {
+      "en": "Rarely do we eat out",
+      "pt": "Rara vez comemos fuera"
+     },
+     {
+      "en": "Seldom does he call me",
+      "pt": "Él rara vez me llama"
+     },
+     {
+      "en": "Hardly ever do they travel",
+      "pt": "Ellos casi nunca viajan"
+     }
+    ],
+    "label_en": "Negative Frequency",
+    "label_pt": "Frecuencia negativa",
+    "illustration_prompt": "A cute hand-drawn hourglass with a small crossed-out circle beside it, pastel colors, no text"
+   },
+   {
+    "emoji": "⏱️",
+    "items": [
+     {
+      "en": "No sooner had I left than",
+      "pt": "Apenas había salido cuando"
+     },
+     {
+      "en": "Hardly had we sat down when",
+      "pt": "Apenas nos habíamos sentado cuando"
+     },
+     {
+      "en": "Only then did I understand",
+      "pt": "Solo entonces lo entendí"
+     },
+     {
+      "en": "Not until later did she know",
+      "pt": "No fue hasta más tarde que ella lo supo"
+     }
+    ],
+    "label_en": "Time Sequence",
+    "label_pt": "Secuencia temporal",
+    "illustration_prompt": "A cute hand-drawn stopwatch with two small footprints in a row, pastel colors, no text"
+   },
+   {
+    "emoji": "➕",
+    "items": [
+     {
+      "en": "Not only is it cheap",
+      "pt": "No solo es barato"
+     },
+     {
+      "en": "Little did I know",
+      "pt": "Poco sabía yo"
+     },
+     {
+      "en": "Only after the meeting did we",
+      "pt": "Solo después de la reunión nosotros"
+     },
+     {
+      "en": "Not once did he apologize",
+      "pt": "Ni una sola vez pidió perdón"
+     }
+    ],
+    "label_en": "Adding Emphasis",
+    "label_pt": "Refuerzo y adición",
+    "illustration_prompt": "A cute hand-drawn plus sign with tiny stars around it, pastel colors, no text"
+   },
+   {
+    "emoji": "🚫",
+    "items": [
+     {
+      "en": "Under no circumstances should you",
+      "pt": "Bajo ninguna circunstancia debe usted"
+     },
+     {
+      "en": "In no way am I responsible",
+      "pt": "De ningún modo soy responsable"
+     },
+     {
+      "en": "On no account do this",
+      "pt": "Por ningún motivo haga esto"
+     },
+     {
+      "en": "At no time was I informed",
+      "pt": "En ningún momento me informaron"
+     }
+    ],
+    "label_en": "Strong Restrictions",
+    "label_pt": "Restricciones fuertes",
+    "illustration_prompt": "A cute hand-drawn closed padlock with a little shield, pastel colors, no text"
+   }
+  ],
+  "title_en": "Inversion for Emphasis",
+  "title_pt": "Inversión para dar énfasis",
+  "exercises": [
+   {
+    "answer": "have",
+    "hint_pt": "(haber - auxiliar)",
+    "sentence": "Never ___ I seen such a beautiful view."
+   },
+   {
+    "answer": "does",
+    "hint_pt": "(auxiliar del presente)",
+    "sentence": "Rarely ___ she complain about work."
+   },
+   {
+    "answer": "than",
+    "hint_pt": "(cuando, tras No sooner)",
+    "sentence": "No sooner had we arrived ___ it started raining."
+   },
+   {
+    "answer": "was",
+    "hint_pt": "(pasado de be)",
+    "sentence": "Not only ___ he late, but he was rude too."
+   }
+  ],
+  "summary_pt": "Los adverbios negativos al inicio de la oración exigen invertir auxiliar y sujeto.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-01/cover.png",
+  "cover_prompt": "A cute hand-drawn illustration of two puzzle pieces swapping places with a curved arrow between them and a small sparkle for emphasis, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "No sooner had I arrived than it rained.",
+   "wrong": "No sooner had I arrived when it rained.",
+   "why_pt": "No sooner va con than, no con when."
+  }
+ }
+}

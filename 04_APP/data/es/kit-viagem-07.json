@@ -1,0 +1,188 @@
+{
+ "slug": "kit-viagem-07",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Can you open the trunk?",
+     "Can you open the box?",
+     "Can you open the door back?",
+     "Can you open the bag?"
+    ],
+    "question_pt": "¿Cómo pides que abran el maletero?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Cambie de camino",
+     "Quédese con el cambio",
+     "Guarde la maleta",
+     "Mantenga la velocidad"
+    ],
+    "question_pt": "¿Qué significa \"Keep the change\"?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "meter",
+     "trunk",
+     "shuttle",
+     "stand"
+    ],
+    "question_pt": "¿Qué palabra significa \"transfer\" del aeropuerto?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "🚕",
+  "level": "A2",
+  "style": "ink",
+  "tip_pt": "Usa \"Could you take me to...?\" para pedir algo con cortesía. \"Take\" es el verbo para llevar a alguien a un lugar.",
+  "pending": [],
+  "branches": [
+   {
+    "emoji": "🚖",
+    "items": [
+     {
+      "en": "Where is the taxi stand?",
+      "pt": "¿Dónde está la parada de taxis?"
+     },
+     {
+      "en": "How much to downtown?",
+      "pt": "¿Cuánto cuesta hasta el centro?"
+     },
+     {
+      "en": "Please turn on the meter.",
+      "pt": "Por favor, encienda el taxímetro."
+     },
+     {
+      "en": "Can I pay by card?",
+      "pt": "¿Puedo pagar con tarjeta?"
+     }
+    ],
+    "label_en": "Taking a Taxi",
+    "label_pt": "Tomar un taxi",
+    "illustration_key": "taxi cab",
+    "illustration_prompt": "A yellow taxi cab parked at a curb with its door open"
+   },
+   {
+    "emoji": "📱",
+    "items": [
+     {
+      "en": "I'm waiting at door five.",
+      "pt": "Estoy esperando en la puerta cinco."
+     },
+     {
+      "en": "Where is the pickup area?",
+      "pt": "¿Dónde está la zona de recogida?"
+     },
+     {
+      "en": "Are you my driver?",
+      "pt": "¿Es usted mi conductor?"
+     },
+     {
+      "en": "What's your name?",
+      "pt": "¿Cómo se llama?"
+     }
+    ],
+    "label_en": "Using Uber",
+    "label_pt": "Usar Uber",
+    "illustration_key": "smartphone car",
+    "illustration_prompt": "A hand holding a smartphone next to a dark sedan car on a city street"
+   },
+   {
+    "emoji": "🚐",
+    "items": [
+     {
+      "en": "I booked an airport shuttle.",
+      "pt": "Reservé un traslado al aeropuerto."
+     },
+     {
+      "en": "Where does the shuttle leave?",
+      "pt": "¿De dónde sale el traslado?"
+     },
+     {
+      "en": "Does it stop at my hotel?",
+      "pt": "¿Para en mi hotel?"
+     },
+     {
+      "en": "What time is the next one?",
+      "pt": "¿A qué hora sale el próximo?"
+     }
+    ],
+    "label_en": "Airport Shuttle",
+    "label_pt": "Traslado al aeropuerto",
+    "illustration_key": "passenger van",
+    "illustration_prompt": "A white passenger van parked in front of an airport entrance"
+   },
+   {
+    "emoji": "🧳",
+    "items": [
+     {
+      "en": "Could you take me to this address?",
+      "pt": "¿Podría llevarme a esta dirección?"
+     },
+     {
+      "en": "Can you open the trunk?",
+      "pt": "¿Puede abrir el maletero?"
+     },
+     {
+      "en": "How long will it take?",
+      "pt": "¿Cuánto tiempo va a tardar?"
+     },
+     {
+      "en": "You can stop here.",
+      "pt": "Puede parar aquí."
+     },
+     {
+      "en": "Keep the change.",
+      "pt": "Quédese con el cambio."
+     }
+    ],
+    "label_en": "During the Ride",
+    "label_pt": "Durante el trayecto",
+    "illustration_key": "car passenger",
+    "illustration_prompt": "A passenger sitting in the back seat of a car with a suitcase beside them"
+   }
+  ],
+  "title_en": "Airport to Hotel",
+  "title_pt": "Del aeropuerto al hotel",
+  "cover_key": "airport taxi",
+  "exercises": [
+   {
+    "answer": "stand",
+    "hint_pt": "(parada)",
+    "sentence": "Where is the taxi ___?"
+   },
+   {
+    "answer": "address",
+    "hint_pt": "(dirección)",
+    "sentence": "Could you take me to this ___?"
+   },
+   {
+    "answer": "shuttle",
+    "hint_pt": "(traslado)",
+    "sentence": "I booked an airport ___."
+   },
+   {
+    "answer": "card",
+    "hint_pt": "(tarjeta)",
+    "sentence": "Can I pay by ___?"
+   }
+  ],
+  "summary_pt": "Frases útiles para tomar un taxi, un Uber o un traslado y llegar a tu hotel.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/airport-taxi.png",
+  "cover_prompt": "A traveler with a rolling suitcase standing next to a yellow taxi outside an airport terminal",
+  "branch_images": [
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/taxi-cab.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/smartphone-car.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/passenger-van.png",
+   "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/ink/car-passenger.png"
+  ],
+  "common_mistake": {
+   "right": "Can I pay by card?",
+   "wrong": "Can I pay with credit?",
+   "why_pt": "\"Credit\" no es la tarjeta; di \"by card\" o \"by credit card\"."
+  }
+ }
+}

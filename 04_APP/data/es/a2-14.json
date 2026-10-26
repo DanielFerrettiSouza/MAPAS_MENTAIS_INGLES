@@ -1,0 +1,185 @@
+{
+ "slug": "a2-14",
+ "level": "A2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "It's windy.",
+     "It's cloudy.",
+     "It's snowing.",
+     "It's sunny."
+    ],
+    "question_pt": "¿Cómo se dice \"Hace viento\" en inglés?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "spring",
+     "winter",
+     "fall",
+     "summer"
+    ],
+    "question_pt": "¿Qué palabra significa \"otoño\" en inglés americano?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "How is the time?",
+     "What's the weather like?",
+     "What time is it?",
+     "Is weather good?"
+    ],
+    "question_pt": "¿Cómo preguntas \"¿Qué tiempo hace?\"?",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🌦️",
+  "level": "A2",
+  "tip_pt": "Usa \"It's\" para describir el tiempo: It's sunny, It's cold. Para la lluvia en este momento, di \"It's raining\".",
+  "branches": [
+   {
+    "emoji": "☀️",
+    "items": [
+     {
+      "en": "It's sunny.",
+      "pt": "Hace sol."
+     },
+     {
+      "en": "It's cloudy.",
+      "pt": "Está nublado."
+     },
+     {
+      "en": "It's windy.",
+      "pt": "Hace viento."
+     },
+     {
+      "en": "It's raining.",
+      "pt": "Está lloviendo."
+     },
+     {
+      "en": "It's snowing.",
+      "pt": "Está nevando."
+     }
+    ],
+    "label_en": "Weather Words",
+    "label_pt": "Tipos de tiempo",
+    "illustration_prompt": "Cute hand-drawn smiling sun next to a small fluffy cloud, simple doodle style, no text"
+   },
+   {
+    "emoji": "🌡️",
+    "items": [
+     {
+      "en": "It's hot today.",
+      "pt": "Hoy hace calor."
+     },
+     {
+      "en": "It's cold outside.",
+      "pt": "Afuera hace frío."
+     },
+     {
+      "en": "It's warm and nice.",
+      "pt": "Está templado y agradable."
+     },
+     {
+      "en": "It's a little cool.",
+      "pt": "Está un poco fresco."
+     }
+    ],
+    "label_en": "Temperature",
+    "label_pt": "Temperatura",
+    "illustration_prompt": "Cute hand-drawn thermometer with a happy face, simple doodle style, no text"
+   },
+   {
+    "emoji": "🍂",
+    "items": [
+     {
+      "en": "spring",
+      "pt": "primavera"
+     },
+     {
+      "en": "summer",
+      "pt": "verano"
+     },
+     {
+      "en": "fall",
+      "pt": "otoño"
+     },
+     {
+      "en": "winter",
+      "pt": "invierno"
+     },
+     {
+      "en": "My favorite season is summer.",
+      "pt": "Mi estación favorita es el verano."
+     }
+    ],
+    "label_en": "The Seasons",
+    "label_pt": "Estaciones del año",
+    "illustration_prompt": "Cute hand-drawn tree showing four branches with flowers, green leaves, orange leaves and snow, doodle style, no text"
+   },
+   {
+    "emoji": "💬",
+    "items": [
+     {
+      "en": "What's the weather like?",
+      "pt": "¿Qué tiempo hace?"
+     },
+     {
+      "en": "Take an umbrella.",
+      "pt": "Llévate un paraguas."
+     },
+     {
+      "en": "It's going to rain.",
+      "pt": "Va a llover."
+     },
+     {
+      "en": "What a beautiful day!",
+      "pt": "¡Qué día tan bonito!"
+     }
+    ],
+    "label_en": "Talking About It",
+    "label_pt": "Hablando del tiempo",
+    "illustration_prompt": "Cute hand-drawn two speech bubbles, one with a cloud and one with a sun icon, doodle style, no text"
+   }
+  ],
+  "title_en": "Weather and Seasons",
+  "title_pt": "Clima y estaciones",
+  "exercises": [
+   {
+    "answer": "raining",
+    "hint_pt": "(lloviendo)",
+    "sentence": "Take an umbrella. It's ___ outside."
+   },
+   {
+    "answer": "fall",
+    "hint_pt": "(otoño)",
+    "sentence": "The leaves fall in the ___."
+   },
+   {
+    "answer": "weather",
+    "hint_pt": "(tiempo)",
+    "sentence": "What's the ___ like today?"
+   },
+   {
+    "answer": "sunny",
+    "hint_pt": "(soleado)",
+    "sentence": "It's ___ and hot at the beach."
+   }
+  ],
+  "summary_pt": "Aprende a hablar del tiempo y de las cuatro estaciones del año.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a2-14/cover.png",
+  "cover_prompt": "A cute hand-drawn circle divided into four parts showing spring flowers, summer sun, fall leaves, and winter snowflakes, soft pastel colors, no text",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "It's very hot today.",
+   "wrong": "It makes very hot today.",
+   "why_pt": "Ojo: \"hace calor\" no es \"makes\"; en inglés se usa \"it's\"."
+  }
+ }
+}

@@ -13,18 +13,29 @@ const SUGGESTIONS = [
   "Verbo to be",
   "Phrasal verbs do dia a dia",
 ];
+const SUGGESTIONS_ES = [
+  "Viaje: aeropuerto y hotel",
+  "Entrevista de trabajo",
+  "Pedir comida en el restaurante",
+  "Verbo to be",
+  "Phrasal verbs del día a día",
+];
 
 export default function Generator({
   credits,
   defaultLevel = "A1",
   defaultGoal,
   autoFocus = false,
+  lang = "pt",
 }: {
   credits: number;
   defaultLevel?: string;
   defaultGoal?: string;
   autoFocus?: boolean;
+  lang?: "pt" | "es";
 }) {
+  const es = lang === "es";
+  const tx = (pt: string, sp: string) => (es ? sp : pt);
   const router = useRouter();
   const params = useSearchParams();
   const [topic, setTopic] = useState(params.get("topic") ?? "");
@@ -44,16 +55,25 @@ export default function Generator({
         body: JSON.stringify({ topic: t, level, goal }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Erro ao gerar o mapa.");
+      if (!res.ok) throw new Error(data.error ?? tx("Erro ao gerar o mapa.", "Error al crear el mapa."));
       trackCustom("MapCreated", { level });
       router.push(`/app/mapa/${data.id}`);
       router.refresh();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Erro ao gerar o mapa.");
+      setError(err instanceof Error ? err.message : tx("Erro ao gerar o mapa.", "Error al crear el mapa."));
       setLoading(false);
     }
   }
 
+  if (credits <= 0 && es) {
+    return (
+      <div className="gen-box" style={{ textAlign: "center" }}>
+        <h3 style={{ marginTop: 0 }}>Ya usaste tus mapas con IA 🎉</h3>
+        <p style={{ color: "var(--muted)" }}>Sigue estudiando con los 120 mapas de la biblioteca y los bonos: no gastan créditos.</p>
+        <Link href="/app/biblioteca" className="primary-btn grad-btn">Ir a la biblioteca</Link>
+      </div>
+    );
+  }
   if (credits <= 0) {
     return (
       <div className="gen-box" style={{ textAlign: "center" }}>
@@ -79,20 +99,20 @@ export default function Generator({
           autoFocus={autoFocus}
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-          placeholder="Sobre o que você quer aprender? Ex.: pedir comida no restaurante"
+          placeholder={tx("Sobre o que você quer aprender? Ex.: pedir comida no restaurante", "¿Qué quieres aprender? Ej.: pedir comida en el restaurante")}
           maxLength={200}
         />
-        <select value={level} onChange={(e) => setLevel(e.target.value)} aria-label="Nível">
+        <select value={level} onChange={(e) => setLevel(e.target.value)} aria-label={tx("Nível", "Nivel")}>
           {LEVELS.map((l) => (
             <option key={l}>{l}</option>
           ))}
         </select>
         <button className="primary-btn grad-btn" disabled={loading || !topic.trim()}>
-          {loading ? "Gerando…" : "✨ Criar mapa"}
+          {loading ? tx("Gerando…", "Creando…") : tx("✨ Criar mapa", "✨ Crear mapa")}
         </button>
       </form>
       <div className="chips" style={{ margin: "14px 0 0" }}>
-        {SUGGESTIONS.map((s) => (
+        {(es ? SUGGESTIONS_ES : SUGGESTIONS).map((s) => (
           <button
             key={s}
             className="chip"
@@ -106,7 +126,7 @@ export default function Generator({
           </button>
         ))}
       </div>
-      {loading && <p className="loading">✨ Criando seu mapa, ilustrações e áudios… (uns 20–40 segundos)</p>}
+      {loading && <p className="loading">✨ {tx("Criando seu mapa, ilustrações e áudios… (uns 20–40 segundos)", "Creando tu mapa, ilustraciones y audios… (unos 20–40 segundos)")}</p>}
       {error && <p className="error">{error}</p>}
     </div>
   );

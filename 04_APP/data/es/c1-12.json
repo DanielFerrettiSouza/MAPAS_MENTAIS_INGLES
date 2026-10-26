@@ -1,0 +1,181 @@
+{
+ "slug": "c1-12",
+ "level": "C1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Furthermore",
+     "The results suggest that",
+     "According to recent studies",
+     "The aim of this study is"
+    ],
+    "question_pt": "¿Qué expresión sirve para matizar una afirmación?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Consequently",
+     "Nevertheless",
+     "In contrast",
+     "Furthermore"
+    ],
+    "question_pt": "¿Cómo se dice \"En cambio\" en inglés académico?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "This paper seeks to examine",
+     "As Smith points out",
+     "It appears that",
+     "To some extent"
+    ],
+    "question_pt": "¿Qué frase presenta el objetivo de un trabajo?",
+    "answer_index": 0
+   }
+  ],
+  "emoji": "📝",
+  "level": "C1",
+  "tip_pt": "Evita las contracciones y los phrasal verbs informales: prefiere \"investigate\" a \"look into\" y \"do not\" a \"don't\".",
+  "branches": [
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "This paper seeks to examine",
+      "pt": "Este artículo busca examinar"
+     },
+     {
+      "en": "The aim of this study is",
+      "pt": "El objetivo de este estudio es"
+     },
+     {
+      "en": "This essay will argue that",
+      "pt": "Este ensayo sostendrá que"
+     },
+     {
+      "en": "It is widely acknowledged that",
+      "pt": "Es ampliamente reconocido que"
+     }
+    ],
+    "label_en": "Introducing Aims",
+    "label_pt": "Presentar objetivos",
+    "illustration_prompt": "A cute hand-drawn target with an arrow in the center, simple doodle style, no text"
+   },
+   {
+    "emoji": "🔗",
+    "items": [
+     {
+      "en": "Furthermore",
+      "pt": "Además"
+     },
+     {
+      "en": "However",
+      "pt": "Sin embargo"
+     },
+     {
+      "en": "Consequently",
+      "pt": "En consecuencia"
+     },
+     {
+      "en": "In contrast",
+      "pt": "En cambio"
+     },
+     {
+      "en": "Nevertheless",
+      "pt": "No obstante"
+     }
+    ],
+    "label_en": "Linking Ideas",
+    "label_pt": "Conectar ideas",
+    "illustration_prompt": "A cute hand-drawn chain of linked rings, simple doodle style, no text"
+   },
+   {
+    "emoji": "🤔",
+    "items": [
+     {
+      "en": "The results suggest that",
+      "pt": "Los resultados sugieren que"
+     },
+     {
+      "en": "This may indicate that",
+      "pt": "Esto podría indicar que"
+     },
+     {
+      "en": "It appears that",
+      "pt": "Parece que"
+     },
+     {
+      "en": "To some extent",
+      "pt": "Hasta cierto punto"
+     }
+    ],
+    "label_en": "Hedging",
+    "label_pt": "Matizar afirmaciones",
+    "illustration_prompt": "A cute hand-drawn balance scale slightly tilted, simple doodle style, no text"
+   },
+   {
+    "emoji": "📚",
+    "items": [
+     {
+      "en": "According to recent studies",
+      "pt": "Según estudios recientes"
+     },
+     {
+      "en": "As Smith points out",
+      "pt": "Como señala Smith"
+     },
+     {
+      "en": "Consistent with previous research",
+      "pt": "En consonancia con investigaciones previas"
+     },
+     {
+      "en": "The data clearly show",
+      "pt": "Los datos muestran claramente"
+     }
+    ],
+    "label_en": "Citing Evidence",
+    "label_pt": "Citar evidencias",
+    "illustration_prompt": "A cute hand-drawn stack of books with a magnifying glass, simple doodle style, no text"
+   }
+  ],
+  "title_en": "Academic Writing",
+  "title_pt": "Redacción académica",
+  "exercises": [
+   {
+    "answer": "consistent",
+    "hint_pt": "(coherentes)",
+    "sentence": "These findings are ___ with previous research."
+   },
+   {
+    "answer": "However",
+    "hint_pt": "(sin embargo)",
+    "sentence": "___, the sample size was relatively small."
+   },
+   {
+    "answer": "suggest",
+    "hint_pt": "(sugieren)",
+    "sentence": "The results ___ that stress affects memory."
+   },
+   {
+    "answer": "seeks",
+    "hint_pt": "(busca)",
+    "sentence": "This paper ___ to examine urban migration."
+   }
+  ],
+  "summary_pt": "Aprende a estructurar argumentos con un lenguaje formal, cohesionado y objetivo en textos académicos.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c1-12/cover.png",
+  "cover_prompt": "A cute hand-drawn open notebook with a fountain pen, stacked books and a small graduation cap, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "This research investigates the impact of social media.",
+   "wrong": "This research investigates the impact of the social media.",
+   "why_pt": "En inglés, los conceptos generales no llevan \"the\"."
+  }
+ }
+}

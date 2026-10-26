@@ -1,0 +1,177 @@
+{
+ "slug": "c2-17",
+ "level": "C2",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "Hacer una pregunta",
+     "Corregir una información",
+     "Mostrar enojo",
+     "Indicar plural"
+    ],
+    "question_pt": "En \"I said TUESDAY, not Thursday\", ¿qué función tiene el énfasis?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "Lemme think about it.",
+     "Gonna think about it.",
+     "Whaddaya think?",
+     "Didja think?"
+    ],
+    "question_pt": "¿Cuál es la forma reducida de \"Let me think about it\"?",
+    "answer_index": 0
+   },
+   {
+    "options": [
+     "Duda real",
+     "Búsqueda de acuerdo",
+     "Orden",
+     "Sorpresa"
+    ],
+    "question_pt": "\"It's freezing, isn't it?\" con tono descendente indica:",
+    "answer_index": 1
+   }
+  ],
+  "emoji": "🎵",
+  "level": "C2",
+  "tip_pt": "Las palabras de contenido llevan acento; las funcionales se reducen. Cambia el acento de la frase para cambiar el foco y la intención.",
+  "branches": [
+   {
+    "emoji": "🎯",
+    "items": [
+     {
+      "en": "I didn't say SHE stole it.",
+      "pt": "Yo no dije que fuera ELLA quien lo robó."
+     },
+     {
+      "en": "I said TUESDAY, not Thursday.",
+      "pt": "Dije MARTES, no jueves."
+     },
+     {
+      "en": "It's MY call, actually.",
+      "pt": "En realidad, la decisión es MÍA."
+     },
+     {
+      "en": "I DID lock the door.",
+      "pt": "Te digo que SÍ cerré la puerta con llave."
+     }
+    ],
+    "label_en": "Contrastive Stress",
+    "label_pt": "Énfasis de contraste",
+    "illustration_prompt": "Simple cute hand-drawn target with an arrow hitting the center, no text"
+   },
+   {
+    "emoji": "🔗",
+    "items": [
+     {
+      "en": "Whaddaya want?",
+      "pt": "¿Qué quieres?"
+     },
+     {
+      "en": "I'm gonna take a break.",
+      "pt": "Voy a tomarme un descanso."
+     },
+     {
+      "en": "Didja get it?",
+      "pt": "¿Lo conseguiste?"
+     },
+     {
+      "en": "Lemme think about it.",
+      "pt": "Déjame pensarlo."
+     }
+    ],
+    "label_en": "Connected Speech",
+    "label_pt": "Habla encadenada",
+    "illustration_prompt": "Cute hand-drawn chain links joined smoothly, soft colors, no text"
+   },
+   {
+    "emoji": "🎭",
+    "items": [
+     {
+      "en": "Well, that's certainly interesting.",
+      "pt": "Bueno, eso es como mínimo curioso."
+     },
+     {
+      "en": "Oh, great. Just great.",
+      "pt": "Ah, genial. Simplemente genial."
+     },
+     {
+      "en": "I mean, it's fine...",
+      "pt": "O sea, está bien..."
+     },
+     {
+      "en": "Really? You think so?",
+      "pt": "¿En serio? ¿Tú crees?"
+     }
+    ],
+    "label_en": "Attitude Tones",
+    "label_pt": "Tonos de actitud",
+    "illustration_prompt": "Cute hand-drawn theater masks, one smiling and one doubtful, no text"
+   },
+   {
+    "emoji": "❓",
+    "items": [
+     {
+      "en": "You're coming, right?",
+      "pt": "Vienes, ¿verdad?"
+     },
+     {
+      "en": "It's freezing, isn't it?",
+      "pt": "Hace un frío tremendo, ¿no?"
+     },
+     {
+      "en": "You haven't told her, have you?",
+      "pt": "No se lo has contado, ¿verdad?"
+     },
+     {
+      "en": "Nice day, huh?",
+      "pt": "Lindo día, ¿no?"
+     }
+    ],
+    "label_en": "Tag Questions",
+    "label_pt": "Preguntas de confirmación",
+    "illustration_prompt": "Cute hand-drawn question mark with a small curved arrow going up and down, no text"
+   }
+  ],
+  "title_en": "Native Intonation & Rhythm",
+  "title_pt": "Entonación y ritmo",
+  "exercises": [
+   {
+    "answer": "take",
+    "hint_pt": "(tomar)",
+    "sentence": "In \"I'm gonna ___ a break,\" 'gonna' is reduced speech."
+   },
+   {
+    "answer": "right",
+    "hint_pt": "(verdad)",
+    "sentence": "A rising tone on \"You're coming, ___?\" signals a real question."
+   },
+   {
+    "answer": "she",
+    "hint_pt": "(ella)",
+    "sentence": "\"I didn't say ___ stole it\" shifts blame to another person."
+   },
+   {
+    "answer": "certainly",
+    "hint_pt": "(ciertamente)",
+    "sentence": "\"Well, that's ___ interesting\" with a fall-rise sounds doubtful."
+   }
+  ],
+  "summary_pt": "El inglés tiene ritmo acentual: las sílabas tónicas marcan el ritmo y el significado.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/c2-17/cover.png",
+  "cover_prompt": "Cute hand-drawn speech bubble with flowing musical waves and bouncing dots of different sizes showing rhythm, soft pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "I didn't say SHE stole it.",
+   "wrong": "I DID NOT SAY SHE STOLE IT.",
+   "why_pt": "Acentuar todo por igual, como en español, borra el foco."
+  }
+ }
+}

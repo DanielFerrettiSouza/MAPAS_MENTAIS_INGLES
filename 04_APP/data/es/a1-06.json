@@ -1,0 +1,181 @@
+{
+ "slug": "a1-06",
+ "level": "A1",
+ "data_es": {
+  "quiz": [
+   {
+    "options": [
+     "grandfather",
+     "grandmother",
+     "aunt",
+     "mother"
+    ],
+    "question_pt": "¿Cómo se dice \"abuela\" en inglés?",
+    "answer_index": 1
+   },
+   {
+    "options": [
+     "parientes",
+     "primos",
+     "padres",
+     "hermanos"
+    ],
+    "question_pt": "¿Qué significa \"parents\"?",
+    "answer_index": 2
+   },
+   {
+    "options": [
+     "older sister",
+     "younger brother",
+     "younger sister",
+     "little aunt"
+    ],
+    "question_pt": "¿Cómo se dice \"hermana menor\"?",
+    "answer_index": 2
+   }
+  ],
+  "emoji": "👨‍👩‍👧‍👦",
+  "level": "A1",
+  "tip_pt": "Usa 's para indicar posesión: my mother's name (el nombre de mi madre). Ojo: parents significa padres, no parientes; parientes se dice relatives.",
+  "branches": [
+   {
+    "emoji": "👫",
+    "items": [
+     {
+      "en": "mother",
+      "pt": "madre"
+     },
+     {
+      "en": "father",
+      "pt": "padre"
+     },
+     {
+      "en": "mom and dad",
+      "pt": "mamá y papá"
+     },
+     {
+      "en": "my parents",
+      "pt": "mis padres"
+     }
+    ],
+    "label_en": "Parents",
+    "label_pt": "Padres",
+    "illustration_prompt": "Cute hand-drawn mother and father holding hands, simple doodle style, no text"
+   },
+   {
+    "emoji": "👧",
+    "items": [
+     {
+      "en": "brother",
+      "pt": "hermano"
+     },
+     {
+      "en": "sister",
+      "pt": "hermana"
+     },
+     {
+      "en": "older brother",
+      "pt": "hermano mayor"
+     },
+     {
+      "en": "younger sister",
+      "pt": "hermana menor"
+     },
+     {
+      "en": "I'm an only child",
+      "pt": "Soy hijo único"
+     }
+    ],
+    "label_en": "Siblings",
+    "label_pt": "Hermanos",
+    "illustration_prompt": "Cute hand-drawn brother and sister smiling side by side, simple doodle style, no text"
+   },
+   {
+    "emoji": "👵",
+    "items": [
+     {
+      "en": "grandmother",
+      "pt": "abuela"
+     },
+     {
+      "en": "grandfather",
+      "pt": "abuelo"
+     },
+     {
+      "en": "grandma and grandpa",
+      "pt": "abuelita y abuelito"
+     },
+     {
+      "en": "my grandparents",
+      "pt": "mis abuelos"
+     }
+    ],
+    "label_en": "Grandparents",
+    "label_pt": "Abuelos",
+    "illustration_prompt": "Cute hand-drawn smiling grandma and grandpa with glasses, simple doodle style, no text"
+   },
+   {
+    "emoji": "🏠",
+    "items": [
+     {
+      "en": "aunt",
+      "pt": "tía"
+     },
+     {
+      "en": "uncle",
+      "pt": "tío"
+     },
+     {
+      "en": "cousin",
+      "pt": "primo / prima"
+     },
+     {
+      "en": "my relatives",
+      "pt": "mis parientes"
+     }
+    ],
+    "label_en": "Relatives",
+    "label_pt": "Parientes",
+    "illustration_prompt": "Cute hand-drawn group of aunt, uncle and cousin waving in front of a small house, simple doodle style, no text"
+   }
+  ],
+  "title_en": "My Family",
+  "title_pt": "Mi familia",
+  "exercises": [
+   {
+    "answer": "mother",
+    "hint_pt": "(madre)",
+    "sentence": "My ___ is a teacher. She is very nice."
+   },
+   {
+    "answer": "brother",
+    "hint_pt": "(hermano)",
+    "sentence": "I have one older ___."
+   },
+   {
+    "answer": "grandparents",
+    "hint_pt": "(abuelos)",
+    "sentence": "My ___ live in Bahia."
+   },
+   {
+    "answer": "cousin",
+    "hint_pt": "(prima)",
+    "sentence": "This is my ___, Ana. She is my aunt's daughter."
+   }
+  ],
+  "summary_pt": "Palabras básicas para hablar de los miembros de tu familia en inglés.",
+  "cover_image": "https://dvmubofaprghekxcisdr.supabase.co/storage/v1/object/public/map-images/library/a1-06/cover.png",
+  "cover_prompt": "A cute hand-drawn happy family of four with grandparents standing together under a big tree, simple pastel colors, no text or letters",
+  "branch_images": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "common_mistake": {
+   "right": "My parents live in Madrid.",
+   "wrong": "My fathers live in Madrid.",
+   "why_pt": "\"Padres\" (papá y mamá) en inglés es parents, no fathers."
+  }
+ }
+}

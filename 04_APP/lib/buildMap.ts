@@ -55,9 +55,9 @@ function wantedImages(map: { cover_key: string; cover_prompt: string; branches: 
 // desenhar (feito depois por finishImages, sem segurar a pessoa esperando).
 export async function buildMap(
   admin: Admin,
-  opts: { topic: string; level: string; goal?: string; illustrate: boolean; imagePath: string; defer?: boolean; notebook?: boolean }
+  opts: { topic: string; level: string; goal?: string; lang?: "pt" | "es"; illustrate: boolean; imagePath: string; defer?: boolean; notebook?: boolean }
 ): Promise<MapWithImages> {
-  const map = await generateMapContent({ topic: opts.topic, level: opts.level, goal: opts.goal });
+  const map = await generateMapContent({ topic: opts.topic, level: opts.level, goal: opts.goal, lang: opts.lang });
   const wanted = wantedImages(map);
   // Caderno (mapas criados pelos alunos): não desenha nada novo, só reaproveita o banco; o resto vira emoji.
   let budget = opts.notebook ? 0 : opts.illustrate ? Infinity : FREE_NEW_IMAGES;
