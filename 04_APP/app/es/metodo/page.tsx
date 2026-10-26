@@ -50,14 +50,14 @@ export default function MetodoEsPage({ searchParams }: { searchParams: { pais?: 
   const CHECKOUT = `/api/stripe/checkout${country ? `?pais=${country.toLowerCase()}` : ""}`;
   return (
     <>
-      <header className="site-nav"><div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "14px 0" }}>
-        <strong>🔊 Mapas Parlantes</strong>
-        <a href="#oferta" className="primary-btn grad-btn" style={{ padding: "8px 16px" }}>Quiero el Método</a>
+      <header className="site-nav"><div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16, width: "100%", padding: "14px 0" }}>
+        <strong style={{ fontSize: 17, whiteSpace: "nowrap" }}>🔊 Mapas Parlantes</strong>
+        <a href="#oferta" className="primary-btn grad-btn" style={{ padding: "8px 14px", fontSize: 14, whiteSpace: "nowrap" }}>Quiero el Método</a>
       </div></header>
       <main>
         <section className="wrap hero">
           <div>
-            <span className="eyebrow">MÉTODO MAPAS FALANTES · DEL A1 AL C2</span>
+            <span className="eyebrow">MÉTODO MAPAS PARLANTES · DEL A1 AL C2</span>
             <h1>120 mapas mentales de inglés <span className="grad-text">que hablan.</span></h1>
             <p className="lead">
               Toca cualquier frase y escucha la pronunciación de un nativo. Un test de nivel te dice por dónde empezar
