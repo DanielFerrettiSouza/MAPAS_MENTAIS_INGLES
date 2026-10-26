@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { stripe, esPriceIds, ES_PRODUCTS, esCountry, esCurrency } from "@/lib/stripe";
+import { getCurrentUser } from "@/lib/supa/server";
 
 export const runtime = "nodejs";
 
 // Abre o checkout do Método em espanhol (com os 3 order bumps como itens opcionais).
 // GET /api/stripe/checkout → redireciona para a página de pagamento do Stripe.
+// ?item=pacote → só o Pacote de 5 mapas (upsell para quem já usou os mapas com IA), com o e-mail da conta.
 export async function GET(req: Request) {
   if (!process.env.STRIPE_SECRET_KEY) return NextResponse.json({ error: "Stripe não configurado" }, { status: 503 });
   const s = stripe();
@@ -16,6 +18,22 @@ export async function GET(req: Request) {
   const url = new URL(req.url);
   // Mesma moeda da página: o Stripe cobra exatamente o valor que a pessoa viu.
   const country = esCountry(url.searchParams.get("pais"), req.headers.get("x-vercel-ip-country"));
+
+  if (url.searchParams.get("item") === "pacote") {
+    const pacote = ES_PRODUCTS.find((p) => p.key === "pacote")!;
+    const email = (await getCurrentUser())?.email ?? url.searchParams.get("email") ?? undefined;
+    const session = await s.checkout.sessions.create({
+      mode: "payment",
+      currency: esCurrency(country),
+      locale: "es",
+      line_items: [{ price: ids[pacote.lookup], quantity: 1 }],
+      customer_email: email || undefined,
+      success_url: `${origin}/app/criar?compro=1`,
+      cancel_url: `${origin}/app/criar`,
+      metadata: { item: "pacote", ip: req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "", ua: req.headers.get("user-agent")?.slice(0, 400) ?? "" },
+    });
+    return NextResponse.redirect(session.url!, 303);
+  }
   const session = await s.checkout.sessions.create({
     mode: "payment",
     currency: esCurrency(country),

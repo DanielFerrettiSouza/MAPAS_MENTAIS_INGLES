@@ -7,7 +7,7 @@ import { getLang, tr } from "@/lib/lang";
 export const dynamic = "force-dynamic";
 
 // Página só para criar mapas (as sugestões do diagnóstico chegam aqui com o tema preenchido).
-export default async function CreatePage() {
+export default async function CreatePage({ searchParams }: { searchParams: { compro?: string } }) {
   const user = (await getCurrentUser())!;
   const profile = await getProfile(user.id);
   const credits = profile?.credits ?? 0;
@@ -22,6 +22,9 @@ export default async function CreatePage() {
       <p className="app-sub">
         {tr(lang, "Digite um assunto (ex.: \"pedir comida no restaurante\", \"phrasal verbs de trabalho\", a letra de uma música) e escolha seu nível.", "Escribe un tema (ej.: \"pedir comida en el restaurante\", \"phrasal verbs de trabajo\", la letra de una canción) y elige tu nivel.")}
       </p>
+      {searchParams.compro === "1" && lang === "es" && (
+        <p className="auth-ok">🎉 ¡Pago confirmado! Tus 5 mapas con IA ya están en tu cuenta (si no ves los créditos, recarga la página en unos segundos).</p>
+      )}
       <Suspense>
         <Generator
           credits={credits}

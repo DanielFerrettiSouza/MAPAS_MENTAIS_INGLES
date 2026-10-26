@@ -32,6 +32,8 @@ export async function POST(req: Request) {
 
   if (event.type === "checkout.session.expired") {
     if (!live) return NextResponse.json({ ok: true, ignored: "teste" });
+    // Pacote avulso (upsell dentro do app) não vira carrinho abandonado do Método.
+    if (session.metadata?.item === "pacote") return NextResponse.json({ ok: true, ignored: "pacote" });
     await trackKlaviyo(email, "MF ES Abandonou checkout", {
       produto: "biblioteca",
       idioma: "es",

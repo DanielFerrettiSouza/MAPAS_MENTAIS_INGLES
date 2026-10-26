@@ -69,8 +69,9 @@ export default function Generator({
     return (
       <div className="gen-box" style={{ textAlign: "center" }}>
         <h3 style={{ marginTop: 0 }}>Ya usaste tus mapas con IA 🎉</h3>
-        <p style={{ color: "var(--muted)" }}>Sigue estudiando con los 120 mapas de la biblioteca y los bonos: no gastan créditos.</p>
-        <Link href="/app/biblioteca" className="primary-btn grad-btn">Ir a la biblioteca</Link>
+        <p style={{ color: "var(--muted)" }}>¿Quieres más mapas sobre los temas que tú elijas? El Paquete de 5 mapas con IA es un pago único y los créditos llegan a tu cuenta apenas pagas.</p>
+        <a href="/api/stripe/checkout?item=pacote" className="primary-btn grad-btn">Quiero 5 mapas más →</a>
+        <p style={{ marginTop: 14 }}><Link href="/app/biblioteca" className="back-link">O sigue con los 120 mapas de la biblioteca (no gastan créditos)</Link></p>
       </div>
     );
   }
