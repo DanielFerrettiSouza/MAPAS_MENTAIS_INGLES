@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import type { User } from "@supabase/supabase-js";
 import type { MapWithImages } from "@/lib/mapSchema";
+import type { MfEvent, MfEventAny } from "@/lib/klaviyo";
 
 // Idioma da interface: espanhol para quem se cadastrou por /es (cookie ou cadastro); senão português.
 export type Lang = "pt" | "es";
@@ -22,3 +23,6 @@ export async function localizedMap(slug: string, map: MapWithImages, lang: Lang)
     return map;
   }
 }
+
+// Eventos do Klaviyo: clientes em espanhol recebem eventos "MF ES …", que só disparam os fluxos em espanhol.
+export const kEvent = (lang: Lang, name: MfEvent): MfEventAny => (lang === "es" ? (name.replace(/^MF /, "MF ES ") as MfEventAny) : name);

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { buildMap, finishImages } from "@/lib/buildMap";
 import { waitUntil } from "@vercel/functions";
 import { createSupabaseAdmin, getCurrentUser } from "@/lib/supa/server";
-import { getLang } from "@/lib/lang";
+import { getLang, kEvent } from "@/lib/lang";
 import type { MapWithImages } from "@/lib/mapSchema";
 
 export const runtime = "nodejs";
@@ -73,11 +73,11 @@ export async function POST(req: Request) {
     }
 
     const left = credits - 1;
-    await trackKlaviyo(user.email, "MF Gerou mapa", { topic, level, mapa_url: `https://www.mapasfalantes.com.br/app/mapa/${id}` }, { mf_creditos: left });
+    await trackKlaviyo(user.email, kEvent(getLang(user), "MF Gerou mapa"), { topic, level, mapa_url: `https://www.mapasfalantes.com.br/app/mapa/${id}` }, { mf_creditos: left });
     if (left <= 0 && (profile?.plan ?? "free") === "free") {
       // Quem comprou o Método recebe a oferta do Essencial (fluxo MF 6), não a sequência de quem não comprou.
       const metodo = !!user.app_metadata?.library;
-      await trackKlaviyo(user.email, metodo ? "MF Acabaram os mapas do Metodo" : "MF Acabaram os mapas gratis", { topic, level });
+      await trackKlaviyo(user.email, kEvent(getLang(user), metodo ? "MF Acabaram os mapas do Metodo" : "MF Acabaram os mapas gratis"), { topic, level });
     }
 
     return NextResponse.json({ id });

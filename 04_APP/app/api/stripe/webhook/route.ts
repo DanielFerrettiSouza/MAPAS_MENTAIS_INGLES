@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 
   if (event.type === "checkout.session.expired") {
     if (!live) return NextResponse.json({ ok: true, ignored: "teste" });
-    await trackKlaviyo(email, "MF Abandonou checkout", {
+    await trackKlaviyo(email, "MF ES Abandonou checkout", {
       produto: "biblioteca",
       idioma: "es",
       checkout_link: session.after_expiration?.recovery?.url ?? "https://www.mapasfalantes.com.br/es/metodo",
@@ -76,7 +76,7 @@ export async function POST(req: Request) {
   });
 
   for (const it of items) {
-    await trackKlaviyo(email, "MF Comprou", { produto: it, idioma: "es", status: "paid" }, it === "biblioteca" ? { mf_biblioteca: true, mf_idioma: "es" } : { mf_idioma: "es" }, kv);
+    await trackKlaviyo(email, "MF ES Comprou", { produto: it, idioma: "es", status: "paid" }, it === "biblioteca" ? { mf_biblioteca: true, mf_idioma: "es" } : { mf_idioma: "es" }, kv);
   }
   return NextResponse.json({ ok: true, items });
 }

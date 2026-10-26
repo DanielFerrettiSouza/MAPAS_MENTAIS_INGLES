@@ -1,3 +1,4 @@
+import { getLang, kEvent } from "@/lib/lang";
 import { NextResponse } from "next/server";
 import { cookies, headers } from "next/headers";
 import { sendCapi } from "@/lib/capi";
@@ -44,7 +45,7 @@ export async function POST(req: Request) {
   // E-mails: cadastro e clique em assinar vão também para o Klaviyo.
   if (user && event === "CompleteRegistration") {
     const quiz = user.user_metadata?.quiz as Record<string, string> | undefined;
-    await trackKlaviyo(user.email, "MF Criou conta", { ...quiz }, {
+    await trackKlaviyo(user.email, kEvent(getLang(user), "MF Criou conta"), { ...quiz }, {
       first_name: user.user_metadata?.full_name ?? user.user_metadata?.name,
       mf_plano: "free",
       mf_nivel: quiz?.level,
@@ -52,7 +53,7 @@ export async function POST(req: Request) {
     });
   }
   if (user && event === "InitiateCheckout") {
-    await trackKlaviyo(user.email, "MF Clicou em assinar", { ...(params ?? {}) });
+    await trackKlaviyo(user.email, kEvent(getLang(user), "MF Clicou em assinar"), { ...(params ?? {}) });
   }
   return NextResponse.json({ ok: true });
 }

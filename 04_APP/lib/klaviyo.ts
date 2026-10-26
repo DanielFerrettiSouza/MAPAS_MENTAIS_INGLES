@@ -11,10 +11,12 @@ export type MfEvent =
   | "MF Comprou"
   | "MF Cancelou"
   | "MF Depoimento";
+// Mesmos eventos para clientes da versão em espanhol (disparam só os fluxos em espanhol).
+export type MfEventAny = MfEvent | `MF ES ${MfEvent extends `MF ${infer R}` ? R : never}`;
 
 export async function trackKlaviyo(
   email: string | null | undefined,
-  metric: MfEvent,
+  metric: MfEventAny,
   properties: Record<string, unknown> = {},
   profile: Record<string, unknown> = {},
   // Dados do perfil (telefone no formato +55..., nome): o telefone é o que o WhatsApp do Klaviyo usa.
