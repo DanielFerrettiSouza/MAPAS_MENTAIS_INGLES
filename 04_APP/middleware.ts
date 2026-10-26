@@ -24,7 +24,8 @@ export async function middleware(req: NextRequest) {
   const { data } = await supabase.auth.getUser();
   if (!data.user && req.nextUrl.pathname.startsWith("/app")) {
     const login = req.nextUrl.clone();
-    login.pathname = "/entrar";
+    // Quem usa a versão em espanhol volta para a tela de entrar em espanhol.
+    login.pathname = req.cookies.get("mf-lang")?.value === "es" ? "/es/entrar" : "/entrar";
     login.search = `?next=${encodeURIComponent(req.nextUrl.pathname + req.nextUrl.search)}`;
     return NextResponse.redirect(login);
   }
