@@ -27,7 +27,11 @@ export async function POST(req: Request) {
   const names = String(cd?.name ?? "").trim().split(/\s+/);
   const kv = { phone_number: cd?.phone ?? null, first_name: names[0] || null };
 
+  // Compras do modo de teste liberam o acesso, mas não avisam a Meta nem o Klaviyo (não sujam anúncios e e-mails).
+  const live = event.livemode;
+
   if (event.type === "checkout.session.expired") {
+    if (!live) return NextResponse.json({ ok: true, ignored: "teste" });
     await trackKlaviyo(email, "MF Abandonou checkout", {
       produto: "biblioteca",
       idioma: "es",
@@ -47,6 +51,7 @@ export async function POST(req: Request) {
   if (!items.length) return NextResponse.json({ ok: true, ignored: "itens desconhecidos" });
 
   await grantPurchase(email, items);
+  if (!live) return NextResponse.json({ ok: true, items, teste: true });
 
   // Meta: 1 compra por pedido, valor em dólar (soma dos preços base; o Stripe cobra na moeda local).
   const usd = products.reduce((n, p) => n + p.cents, 0) / 100;
