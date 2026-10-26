@@ -1,0 +1,6 @@
+.next
+.next-check
+node_modules
+.env.local
+.claude
+*.tsbuildinfo

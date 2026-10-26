@@ -24,8 +24,7 @@ export async function GET(req: Request) {
     optional_items: bumps.map((b) => ({ price: ids[b.lookup], quantity: 1 })),
     customer_creation: "always",
     phone_number_collection: { enabled: true },
-    // Guarda o e-mail mesmo sem pagar (vira carrinho abandonado quando a sessão expira).
-    consent_collection: { promotions: "auto" },
+    // Sessão expirada vira carrinho abandonado (webhook → Klaviyo, com o link de recuperação).
     after_expiration: { recovery: { enabled: true, allow_promotion_codes: false } },
     success_url: `${origin}/es/crear-cuenta?compro=1&session={CHECKOUT_SESSION_ID}`,
     cancel_url: `${origin}/es/metodo${country ? `?pais=${country.toLowerCase()}` : ""}`,
