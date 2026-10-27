@@ -15,7 +15,8 @@ export default function MetaPixel() {
   }, [pathname]);
 
   // Versão em espanhol (páginas /es ou cliente com idioma espanhol) usa o pixel próprio.
-  const es = pathname?.startsWith("/es") || (typeof document !== "undefined" && document.cookie.includes("mf-lang=es"));
+  // O cookie de idioma só vale dentro do app (/app); nas páginas públicas decide o endereço.
+  const es = pathname?.startsWith("/es") || (pathname?.startsWith("/app") && typeof document !== "undefined" && document.cookie.includes("mf-lang=es"));
   const id = es ? META_PIXEL_ID_ES : META_PIXEL_ID;
   if (!id) return null;
   return (
