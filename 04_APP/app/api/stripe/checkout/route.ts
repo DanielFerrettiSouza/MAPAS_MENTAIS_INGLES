@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { stripe, esPriceIds, ES_PRODUCTS, esCountry, esCurrency } from "@/lib/stripe";
 import { getCurrentUser } from "@/lib/supa/server";
+import { sendCapi } from "@/lib/capi";
 
 export const runtime = "nodejs";
 
@@ -53,6 +54,18 @@ export async function GET(req: Request) {
       ua: req.headers.get("user-agent")?.slice(0, 400) ?? "",
       utm: url.search.slice(0, 450),
     },
+  });
+  // Início de checkout para o pixel Mapas Parlantes (o botão da página é um link simples).
+  await sendCapi({
+    es: true,
+    event_name: "InitiateCheckout",
+    event_id: `stripe-ic-${session.id}`,
+    event_source_url: `${origin}/es/metodo`,
+    ip: session.metadata?.ip || null,
+    user_agent: session.metadata?.ua || null,
+    fbp: session.metadata?.fbp || null,
+    fbc: session.metadata?.fbc || null,
+    custom_data: { currency: "USD", value: ES_PRODUCTS[0].cents / 100, content_name: ES_PRODUCTS[0].name },
   });
   return NextResponse.redirect(session.url!, 303);
 }

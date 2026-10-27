@@ -74,6 +74,7 @@ export async function POST(req: Request) {
     state: cd?.address?.state ?? null,
     zip: cd?.address?.postal_code ?? null,
     country: cd?.address?.country?.toLowerCase() ?? null,
+    es: true,
     custom_data: { value: usd, currency: "USD", content_name: products.map((p) => p.name).join(" + "), num_items: products.length, order_id: session.id },
   });
 

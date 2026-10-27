@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { META_PIXEL_ID } from "@/lib/pixel";
+import { META_PIXEL_ID, META_PIXEL_ID_ES } from "@/lib/pixel";
 
 // API de Conversões da Meta: envia, pelo servidor, os mesmos eventos do pixel.
 // O mesmo event_id do navegador faz a Meta contar cada evento uma vez só.
@@ -23,13 +23,16 @@ export type CapiEvent = {
   state?: string | null;
   zip?: string | null;
   country?: string | null;
+  // Versão em espanhol: vai para o pixel Mapas Parlantes, com o token dele (META_CAPI_TOKEN_ES).
+  es?: boolean;
 };
 
 const sha256 = (v: string) => createHash("sha256").update(v.trim().toLowerCase()).digest("hex");
 
 export async function sendCapi(e: CapiEvent) {
-  const token = process.env.META_CAPI_TOKEN;
-  if (!token || !META_PIXEL_ID) return;
+  const token = e.es ? process.env.META_CAPI_TOKEN_ES : process.env.META_CAPI_TOKEN;
+  const pixel = e.es ? META_PIXEL_ID_ES : META_PIXEL_ID;
+  if (!token || !pixel) return;
 
   const user_data: Record<string, unknown> = {};
   if (e.email) user_data.em = [sha256(e.email)];
@@ -66,7 +69,7 @@ export async function sendCapi(e: CapiEvent) {
 
   try {
     const res = await fetch(
-      `https://graph.facebook.com/v21.0/${META_PIXEL_ID}/events?access_token=${encodeURIComponent(token)}`,
+      `https://graph.facebook.com/v21.0/${pixel}/events?access_token=${encodeURIComponent(token)}`,
       { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }
     );
     if (!res.ok) console.error("CAPI:", res.status, await res.text());

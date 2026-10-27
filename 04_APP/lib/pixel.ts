@@ -1,5 +1,7 @@
 // Pixel da Meta (Facebook/Instagram Ads). ID não é secreto.
 export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "1720499595717555";
+// Pixel da versão em espanhol (Mapas Parlantes, conta Cafe y Calle): páginas /es e clientes com idioma espanhol.
+export const META_PIXEL_ID_ES = process.env.NEXT_PUBLIC_META_PIXEL_ID_ES ?? "1649835796743100";
 
 type Fbq = (...args: unknown[]) => void;
 

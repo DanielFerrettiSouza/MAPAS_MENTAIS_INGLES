@@ -32,6 +32,7 @@ export async function POST(req: Request) {
     fbp: c.get("_fbp")?.value,
     fbc: c.get("_fbc")?.value,
     custom_data: params && typeof params === "object" ? params : undefined,
+    es: (typeof url === "string" && url.includes("/es/")) || getLang(user) === "es",
   });
   if (event === "Lead" && quizEmail) {
     const p = (params ?? {}) as Record<string, string>;
