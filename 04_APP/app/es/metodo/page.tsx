@@ -5,6 +5,7 @@ import type { MapWithImages } from "@/lib/mapSchema";
 import sample from "@/data/es/a2-10.json";
 import LevelExplorer from "@/components/LevelExplorer";
 import { headers } from "next/headers";
+import CheckoutLink from "@/components/CheckoutLink";
 import { BONUS } from "@/lib/bonus";
 import { esPriceLabel, esCountry } from "@/lib/stripe";
 
@@ -36,9 +37,11 @@ const SAMPLE_PHRASES = ["Here is my passport.", "I have one bag to check.", "I'd
 function Cta({ big, price, checkout }: { big?: boolean; price?: string; checkout?: string }) {
   return (
     <div className="mt-cta">
-      <a href={big ? checkout : "#oferta"} className="primary-btn grad-btn" style={big ? { fontSize: 19, padding: "18px 34px" } : undefined}>
-        {big ? `Quiero el Método por ${price} →` : "Quiero el Método →"}
-      </a>
+      {big ? (
+        <CheckoutLink href={checkout!} className="primary-btn grad-btn" style={{ fontSize: 19, padding: "18px 34px" }}>{`Quiero el Método por ${price} →`}</CheckoutLink>
+      ) : (
+        <a href="#oferta" className="primary-btn grad-btn">Quiero el Método →</a>
+      )}
       <span className="fine">🔒 Pago único · acceso de por vida · 7 días de garantía</span>
     </div>
   );
@@ -147,7 +150,7 @@ export default function MetodoEsPage({ searchParams }: { searchParams: { pais?: 
                 <span className="mt-or">pago único</span>
                 <span>acceso de por vida</span>
               </div>
-              <a href={CHECKOUT} className="primary-btn grad-btn" style={{ width: "100%", textAlign: "center", display: "block", fontSize: 19, padding: "18px 20px" }}>Quiero el Método por {PRICE} →</a>
+              <CheckoutLink href={CHECKOUT} className="primary-btn grad-btn" style={{ width: "100%", textAlign: "center", display: "block", fontSize: 19, padding: "18px 20px" }}>Quiero el Método por {PRICE} →</CheckoutLink>
               <p className="guarantee-note">🔒 Pago seguro con Stripe · tarjeta</p>
             </div>
             <div className="mt-guarantee">

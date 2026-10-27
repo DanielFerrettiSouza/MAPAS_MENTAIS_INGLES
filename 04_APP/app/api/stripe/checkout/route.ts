@@ -13,7 +13,9 @@ export async function GET(req: Request) {
   if (!process.env.STRIPE_SECRET_KEY) return NextResponse.json({ error: "Stripe não configurado" }, { status: 503 });
   const s = stripe();
   const ids = await esPriceIds(s);
-  const [metodo, ...bumps] = ES_PRODUCTS;
+  // Order bumps: só os kits. O Pacote de 5 mapas é upsell dentro do app, quando os 3 mapas com IA acabam.
+  const [metodo, ...rest] = ES_PRODUCTS;
+  const bumps = rest.filter((p) => p.key !== "pacote");
   const origin = new URL(req.url).origin;
   const c = cookies();
   const url = new URL(req.url);
@@ -59,7 +61,8 @@ export async function GET(req: Request) {
   await sendCapi({
     es: true,
     event_name: "InitiateCheckout",
-    event_id: `stripe-ic-${session.id}`,
+    // Mesmo event_id do pixel do navegador (botão da página), para a Meta contar uma vez só.
+    event_id: url.searchParams.get("eid")?.slice(0, 80) || `stripe-ic-${session.id}`,
     event_source_url: `${origin}/es/metodo`,
     ip: session.metadata?.ip || null,
     user_agent: session.metadata?.ua || null,
