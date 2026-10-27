@@ -3,10 +3,12 @@ import type { User } from "@supabase/supabase-js";
 import type { MapWithImages } from "@/lib/mapSchema";
 import type { MfEvent, MfEventAny } from "@/lib/klaviyo";
 
-// Idioma da interface: espanhol para quem se cadastrou por /es (cookie ou cadastro); senão português.
+// Idioma da interface. Manda o idioma gravado na conta (cadastro por /es ou escolha em Configurações);
+// sem escolha na conta, vale o cookie de onde a pessoa entrou (/es/entrar ou /entrar); padrão português.
 export type Lang = "pt" | "es";
 export function getLang(user?: User | null): Lang {
-  if (user?.user_metadata?.lang === "es") return "es";
+  const saved = user?.user_metadata?.lang;
+  if (saved === "es" || saved === "pt") return saved;
   return cookies().get("mf-lang")?.value === "es" ? "es" : "pt";
 }
 

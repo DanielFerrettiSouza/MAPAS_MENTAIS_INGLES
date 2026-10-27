@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { createSupabaseAdmin, createSupabaseServer, getCurrentUser } from "@/lib/supa/server";
 import { getLang, tr } from "@/lib/lang";
+import { cookies } from "next/headers";
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
@@ -38,6 +39,15 @@ export async function changePassword(_: FormState, form: FormData): Promise<Form
   const { error } = await createSupabaseServer().auth.updateUser({ password });
   if (error) return { error: tr(lang, "Não foi possível trocar a senha. Saia e entre de novo e tente outra vez.", "No se pudo cambiar la contraseña. Sal, entra de nuevo e inténtalo otra vez.") };
   return { ok: tr(lang, "Senha alterada!", "¡Contraseña cambiada!") };
+}
+
+// Idioma do app: fica gravado na conta (vale em qualquer aparelho) e no cookie.
+export async function setLanguage(lang: "pt" | "es") {
+  const user = await getCurrentUser();
+  if (!user || (lang !== "pt" && lang !== "es")) return;
+  await createSupabaseServer().auth.updateUser({ data: { lang } });
+  cookies().set("mf-lang", lang, { path: "/", maxAge: 31536000, sameSite: "lax" });
+  revalidatePath("/app", "layout");
 }
 
 // Nome que sai no topo do material impresso (plano Professor).

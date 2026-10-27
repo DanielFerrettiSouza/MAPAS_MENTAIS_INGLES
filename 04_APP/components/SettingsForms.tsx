@@ -1,7 +1,8 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import { saveTeacherName, changePassword, saveProfile, type FormState } from "@/app/app/configuracoes/actions";
+import { useTransition } from "react";
+import { saveTeacherName, changePassword, saveProfile, setLanguage, type FormState } from "@/app/app/configuracoes/actions";
 
 const LEVELS = [
   ["A1", "A1 · Iniciante"],
@@ -75,5 +76,29 @@ export function PasswordForm({ lang }: L = {}) {
       <Msg s={state} />
       <Submit label={tt(lang, "Trocar senha", "Cambiar contraseña")} lang={lang} />
     </form>
+  );
+}
+
+// Escolha do idioma do app (gravada na conta).
+export function LanguageForm({ lang }: L) {
+  const [pending, start] = useTransition();
+  const opt = (v: "pt" | "es", label: string) => (
+    <button
+      type="button"
+      className={lang === v ? "primary-btn grad-btn" : "secondary-btn"}
+      disabled={pending || lang === v}
+      onClick={() => start(() => setLanguage(v))}
+    >
+      {label}
+    </button>
+  );
+  return (
+    <div className="settings-card">
+      <h3>{tt(lang, "Idioma do app", "Idioma de la app")}</h3>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+        {opt("pt", "🇧🇷 Português")}
+        {opt("es", "🇪🇸 Español")}
+      </div>
+    </div>
   );
 }
