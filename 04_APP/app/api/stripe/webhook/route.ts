@@ -49,7 +49,7 @@ export async function POST(req: Request) {
 
   const lines = await s.checkout.sessions.listLineItems(session.id, { limit: 10 });
   const products = lines.data.map((l) => itemFromLookup(l.price?.lookup_key)).filter((p): p is (typeof ES_PRODUCTS)[number] => !!p);
-  const items = products.map((p) => p.key) as GrantItem[];
+  const items = products.flatMap((p) => p.grants ?? [p.key]) as GrantItem[];
   if (!items.length) return NextResponse.json({ ok: true, ignored: "itens desconhecidos" });
 
   await grantPurchase(email, items);

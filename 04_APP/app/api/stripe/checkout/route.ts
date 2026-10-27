@@ -13,9 +13,10 @@ export async function GET(req: Request) {
   if (!process.env.STRIPE_SECRET_KEY) return NextResponse.json({ error: "Stripe não configurado" }, { status: 503 });
   const s = stripe();
   const ids = await esPriceIds(s);
-  // Order bumps: só os kits. O Pacote de 5 mapas é upsell dentro do app, quando os 3 mapas com IA acabam.
-  const [metodo, ...rest] = ES_PRODUCTS;
-  const bumps = rest.filter((p) => p.key !== "pacote");
+  // Order bump: um item só, o Pack dos 2 kits (o Stripe mostra os bumps em carrossel; um item fica sempre visível).
+  // O Pacote de 5 mapas é upsell dentro do app, quando os 3 mapas com IA acabam.
+  const metodo = ES_PRODUCTS[0];
+  const bumps = ES_PRODUCTS.filter((p) => p.lookup === "mf_es_pack_kits_v1");
   const origin = new URL(req.url).origin;
   const c = cookies();
   const url = new URL(req.url);

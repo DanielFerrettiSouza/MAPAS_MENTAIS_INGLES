@@ -5,12 +5,14 @@ import type { GrantItem } from "@/lib/grant";
 // moeda local (aprovados em 26/10): o Stripe cobra o mesmo valor que a página mostra.
 export const stripe = () => new Stripe(process.env.STRIPE_SECRET_KEY ?? "");
 
-export type EsProduct = { key: GrantItem; lookup: string; name: string; description: string; cents: number; image: string; local: Record<string, number> };
+export type EsProduct = { key: GrantItem; lookup: string; name: string; description: string; cents: number; image: string; local: Record<string, number>; grants?: GrantItem[] };
 
 export const ES_PRODUCTS: EsProduct[] = [
   { key: "biblioteca", lookup: "mf_es_metodo_v2", name: "Método Mapas Parlantes", description: "120 mapas mentales de inglés con audio nativo, del A1 al C2, test de nivel, plan de estudio y bonos. Acceso de por vida.", image: "metodo", cents: 2700, local: { mxn: 49900, cop: 8490000, clp: 26990, pen: 8990, eur: 2490 } },
   { key: "kit-viagem", lookup: "mf_es_kit_viaje_v2", name: "Kit Viaje", description: "20 mapas listos para viajar: aeropuerto, migración, hotel, restaurante, compras y más. Con audio nativo.", image: "kit-viaje", cents: 700, local: { mxn: 12900, cop: 2190000, clp: 6990, pen: 2390, eur: 590 } },
   { key: "kit-trabalho", lookup: "mf_es_kit_trabajo_v2", name: "Kit Trabajo", description: "20 mapas listos para el trabajo: reuniones, llamadas, correos, entrevistas y más. Con audio nativo.", image: "kit-trabajo", cents: 700, local: { mxn: 12900, cop: 2190000, clp: 6990, pen: 2390, eur: 590 } },
+  // Order bump do checkout (27/10): os dois kits num item só, com desconto. Libera os dois kits.
+  { key: "kit-viagem", grants: ["kit-viagem", "kit-trabalho"], lookup: "mf_es_pack_kits_v1", name: "Pack Viaje + Trabajo (40 mapas)", description: "Los 2 kits juntos con descuento: 20 mapas para viajar y 20 para el trabajo, con audio nativo. Acceso de por vida.", image: "pack-kits", cents: 1200, local: { mxn: 21900, cop: 3790000, clp: 11990, pen: 3990, eur: 1090 } },
   { key: "pacote", lookup: "mf_es_paquete5_v2", name: "Paquete 5 mapas con IA", description: "5 mapas nuevos creados con IA sobre los temas que tú elijas, con audio y ejercicios.", image: "paquete", cents: 900, local: { mxn: 16900, cop: 2890000, clp: 8990, pen: 2990, eur: 790 } },
 ];
 
