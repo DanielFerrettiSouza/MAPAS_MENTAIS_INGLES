@@ -144,7 +144,7 @@ export default function MindMapView({ map, preview = false, lang = "pt" }: { map
               ) : (
                 map.emoji && <span className="nb-cover-emoji">{map.emoji}</span>
               )}
-              <strong>{map.title_en}</strong>
+              <strong className={map.title_en.length > 16 ? "nb-long" : undefined}>{map.title_en}</strong>
             </div>
             {/* A descrição fica fora do círculo: assim nunca é cortada, seja qual for o tamanho. */}
             {map.summary_pt && <p className="nb-summary">{map.summary_pt}</p>}

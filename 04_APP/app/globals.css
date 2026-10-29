@@ -868,7 +868,9 @@ html { scroll-behavior: smooth; }
 .nb-circle { padding: 12%; overflow: hidden; }
 /* Sem transform/blend: no download (html-to-image) a imagem escalada saía quadrada e cobria a borda. */
 .nb-circle img { width: 78%; margin-bottom: 4%; }
-.nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); overflow-wrap: anywhere; line-height: 1.2; padding-top: 4px; }
+/* Título do círculo: largura menor que a bola para não encostar na borda; títulos longos quebram em 2 linhas equilibradas. */
+.nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); max-width: 74%; text-wrap: balance; overflow-wrap: normal; line-height: 1.05; padding-top: 4px; }
+.nb-circle strong.nb-long { font-size: clamp(24px, 2.8vw, 30px); }
 .nb-summary { text-align: center; font-size: 16px; line-height: 1.4; color: #44403c; margin: 12px 8px 0; }
 
 /* Audiobooks */
