@@ -880,7 +880,7 @@ html { scroll-behavior: smooth; }
 /* Círculo central: só ilustração + título (a descrição vai logo abaixo, fora do círculo) */
 .nb-circle { padding: 12%; overflow: hidden; }
 /* Sem transform/blend: no download (html-to-image) a imagem escalada saía quadrada e cobria a borda. */
-.nb-circle img { width: 70%; margin-bottom: -6%; } /* as ilustrações têm margem branca própria: o título encosta mais nelas */
+.nb-circle img { width: 70%; margin-bottom: -6%; filter: brightness(1.1); } /* clareia o fundo cinza de algumas ilustrações na tela */ /* as ilustrações têm margem branca própria: o título encosta mais nelas */
 /* Título do círculo: largura menor que a bola para não encostar na borda; títulos longos quebram em 2 linhas equilibradas. */
 .nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); max-width: 74%; text-wrap: balance; overflow-wrap: normal; line-height: 1.05; padding-top: 4px; }
 .nb-circle strong.nb-long { font-size: clamp(24px, 2.8vw, 30px); }

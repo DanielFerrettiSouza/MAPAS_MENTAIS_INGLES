@@ -162,7 +162,18 @@ async function takeIllustrations(node: HTMLElement) {
         const c = document.createElement("canvas");
         c.width = Math.round(bmp.width * k);
         c.height = Math.round(bmp.height * k);
-        c.getContext("2d")!.drawImage(bmp, 0, 0, c.width, c.height);
+        const ictx = c.getContext("2d")!;
+        ictx.drawImage(bmp, 0, 0, c.width, c.height);
+        // Algumas ilustrações vêm com fundo cinza-claro: tons de cinza bem claros viram branco.
+        const d = ictx.getImageData(0, 0, c.width, c.height);
+        for (let i = 0; i < d.data.length; i += 4) {
+          const mn = Math.min(d.data[i], d.data[i + 1], d.data[i + 2]);
+          const mx = Math.max(d.data[i], d.data[i + 1], d.data[i + 2]);
+          if (mx - mn > 18 || mn < 200) continue;
+          const t = Math.min(1, (mn - 200) / 30);
+          for (let k2 = 0; k2 < 3; k2++) d.data[i + k2] += (255 - d.data[i + k2]) * t;
+        }
+        ictx.putImageData(d, 0, 0);
         const savedVis = im.style.visibility;
         // Imagem redonda (círculo central): recorta em círculo no canvas, senão o fundo da
         // ilustração sai como um quadrado (no celular o border-radius do <img> não vale na captura).
