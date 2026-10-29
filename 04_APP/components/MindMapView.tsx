@@ -57,11 +57,18 @@ export default function MindMapView({ map, preview = false, lang = "pt" }: { map
   async function downloadPng() {
     if (!pageRef.current) return;
     const { savePng } = await import("@/lib/savePng"); // carrega o html-to-image só no clique
-    await savePng(pageRef.current, `${map.title_en.replace(/\s+/g, "_")}.png`, {
-      backgroundColor: "#fffdf7",
-      width: 1080,
-      style: { margin: "0", padding: "24px 24px 24px 56px" },
-    });
+    // Download em pé, na proporção de uma folha A4 (1080 × 1527), para imprimir sem sobrar metade da folha.
+    const page = pageRef.current;
+    page.classList.add("nb-a4");
+    try {
+      await savePng(page, `${map.title_en.replace(/\s+/g, "_")}.png`, {
+        backgroundColor: "#fffdf7",
+        width: 1080,
+        style: { margin: "0", padding: "28px 28px 28px 60px", minHeight: "1527px" },
+      });
+    } finally {
+      page.classList.remove("nb-a4");
+    }
   }
 
   const sections = map.branches.slice(0, 4).map((branch, i) => ({

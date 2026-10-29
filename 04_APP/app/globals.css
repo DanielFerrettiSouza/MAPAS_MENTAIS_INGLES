@@ -264,6 +264,13 @@ a { color: inherit; }
   .nb-answers-btn { position: static; margin-top: 8px; }
 }
 
+/* Download do mapa em A4 em pé: círculo no topo, seções 2×2, dica e erro lado a lado, exercício no fim. */
+.nb-page.nb-a4 { display: flex; flex-direction: column; }
+.nb-a4 .nb-grid { flex: 1; grid-template-columns: 1fr 1fr; align-content: space-evenly; gap: 22px; }
+.nb-a4 .nb-col { display: contents; }
+.nb-a4 .nb-circle { order: -2; grid-column: 1 / -1; width: 300px; margin: 0 auto; }
+.nb-a4 .nb-summary { order: -1; grid-column: 1 / -1; margin: 0 80px; }
+.nb-a4 .nb-card { order: 10; }
 
 /* ===== Marca ===== */
 .logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
