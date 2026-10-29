@@ -862,8 +862,9 @@ html { scroll-behavior: smooth; }
 .mt-from { color: var(--text) !important; font-size: 20px !important; font-weight: 600; } .mt-from s { color: var(--muted); }
 /* Círculo central: só ilustração + título (a descrição vai logo abaixo, fora do círculo) */
 .nb-circle { padding: 12%; overflow: hidden; }
-.nb-circle img { width: 68%; transform: scale(1.35); mix-blend-mode: multiply; margin-bottom: 6%; }
-.nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); overflow-wrap: anywhere; }
+/* Sem transform/blend: no download (html-to-image) a imagem escalada saía quadrada e cobria a borda. */
+.nb-circle img { width: 78%; margin-bottom: 4%; }
+.nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); overflow-wrap: anywhere; line-height: 1.2; padding-top: 4px; }
 .nb-summary { text-align: center; font-size: 16px; line-height: 1.4; color: #44403c; margin: 12px 8px 0; }
 
 /* Audiobooks */
