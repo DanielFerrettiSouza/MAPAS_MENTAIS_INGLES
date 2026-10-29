@@ -270,7 +270,7 @@ a { color: inherit; }
 .nb-a4 .nb-col { display: contents; }
 .nb-a4 .nb-circle { order: -2; grid-column: 1 / -1; width: 300px; margin: 0; justify-self: center; }
 /* Com o círculo em largura fixa, as porcentagens internas encolhiam: medidas em px no A4. */
-.nb-a4 .nb-circle img { width: 170px; flex: none; }
+.nb-a4 .nb-circle img { width: 160px; flex: none; margin-bottom: -10px; }
 .nb-a4 .nb-circle strong { width: 220px; max-width: none; font-size: 30px; }
 .nb-a4 .nb-summary { order: -1; grid-column: 1 / -1; margin: 0 80px; }
 .nb-a4 .nb-card { order: 10; }
@@ -877,7 +877,7 @@ html { scroll-behavior: smooth; }
 /* Círculo central: só ilustração + título (a descrição vai logo abaixo, fora do círculo) */
 .nb-circle { padding: 12%; overflow: hidden; }
 /* Sem transform/blend: no download (html-to-image) a imagem escalada saía quadrada e cobria a borda. */
-.nb-circle img { width: 78%; margin-bottom: 4%; }
+.nb-circle img { width: 70%; margin-bottom: -6%; } /* as ilustrações têm margem branca própria: o título encosta mais nelas */
 /* Título do círculo: largura menor que a bola para não encostar na borda; títulos longos quebram em 2 linhas equilibradas. */
 .nb-circle strong { font-size: clamp(26px, 3.2vw, 34px); max-width: 74%; text-wrap: balance; overflow-wrap: normal; line-height: 1.05; padding-top: 4px; }
 .nb-circle strong.nb-long { font-size: clamp(24px, 2.8vw, 30px); }
