@@ -272,7 +272,10 @@ a { color: inherit; }
 /* Com o círculo em largura fixa, as porcentagens internas encolhiam: medidas em px no A4. */
 .nb-a4 .nb-circle img { width: 160px; flex: none; margin-bottom: -10px; }
 .nb-a4 .nb-circle strong { width: 220px; max-width: none; font-size: 30px; }
-.nb-a4 .nb-summary { order: -1; grid-column: 1 / -1; margin: 0 80px; }
+.nb-a4 .nb-summary {
+  order: -1; grid-column: 1 / -1; margin: 0 90px; text-wrap: balance;
+  font-family: var(--nb-amatic, "Amatic SC"), var(--hand); font-size: 38px; font-weight: 700; line-height: 1.1; color: #1e3a8a;
+}
 .nb-a4 .nb-card { order: 10; }
 
 /* ===== Marca ===== */
