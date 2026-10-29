@@ -610,6 +610,27 @@ a { color: inherit; }
 .plan-week ul { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
 .plan-week a { color: var(--text); text-decoration: none; }
 .plan-week small { color: var(--muted); }
+.plan-week .plan-bar { margin-top: 8px; }
+.plan-week-on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.plan-week-done { opacity: .7; }
+.plan-tag { font-style: normal; font-size: 11px; margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--grad); color: #fff; vertical-align: middle; }
+.plan-dash { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 12px; }
+.plan-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; }
+.plan-card p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.plan-card p b { color: var(--text); }
+.plan-ring { display: flex; align-items: center; gap: 16px; }
+.plan-bar { flex: 1; height: 8px; background: var(--border); border-radius: 999px; overflow: hidden; }
+.plan-bar div { height: 100%; background: var(--grad); border-radius: 999px; }
+.plan-levels { display: grid; gap: 8px; margin-top: 10px; }
+.plan-level { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.plan-level span { width: 24px; font-weight: 700; }
+.plan-level small { width: 42px; text-align: right; color: var(--muted); }
+.plan-chart { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; height: 120px; margin-top: 10px; align-items: end; }
+.plan-chart div { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 4px; }
+.plan-chart i { display: block; width: 100%; max-width: 22px; min-height: 3px; background: var(--border); border-radius: 6px 6px 2px 2px; }
+.plan-chart i.on, .plan-chart div:has(em:not(:empty)) i { background: var(--grad); }
+.plan-chart em { font-style: normal; font-size: 11px; color: var(--muted); }
+.plan-chart small { font-size: 10px; color: var(--muted); }
 
 .link-btn { background: none; border: none; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; font-size: 14px; padding: 4px 0; }
 .link-btn:disabled { color: var(--muted); text-decoration: none; cursor: default; }
