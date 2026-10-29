@@ -220,7 +220,9 @@ a { color: inherit; }
 .nb-circle {
   aspect-ratio: 1; border: 3px solid #1e3a8a; border-radius: 999px; background: #fff;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-align: center; padding: 22px; gap: 4px; box-shadow: 0 0 0 6px #eef2ff;
+  text-align: center; padding: 22px; gap: 4px;
+  /* outline em vez de box-shadow: no download pelo celular a sombra saía deslocada */
+  outline: 6px solid #eef2ff;
 }
 .nb-circle img { width: 42%; aspect-ratio: 1; object-fit: cover; border-radius: 999px; }
 .nb-circle strong { font-family: var(--nb-amatic, "Amatic SC"), var(--hand); font-size: 34px; line-height: 1; color: #1e3a8a; }

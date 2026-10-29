@@ -164,7 +164,10 @@ async function takeIllustrations(node: HTMLElement) {
         c.height = Math.round(bmp.height * k);
         c.getContext("2d")!.drawImage(bmp, 0, 0, c.width, c.height);
         const savedVis = im.style.visibility;
-        const it = { el: im as HTMLElement, saved: "", img: c, rect: im.getBoundingClientRect(), round: false, border: 0, cover: 0, restore: () => (im.style.visibility = savedVis) };
+        // Imagem redonda (círculo central): recorta em círculo no canvas, senão o fundo da
+        // ilustração sai como um quadrado (no celular o border-radius do <img> não vale na captura).
+        const r = parseFloat(getComputedStyle(im).borderTopLeftRadius) || 0;
+        const it = { el: im as HTMLElement, saved: "", img: c, rect: im.getBoundingClientRect(), round: r >= im.offsetWidth / 2 - 1, border: 0, cover: 0, restore: () => (im.style.visibility = savedVis) };
         im.style.visibility = "hidden";
         return it;
       } catch {
