@@ -181,7 +181,9 @@ a { color: inherit; }
   font-family: var(--nb-amatic, "Amatic SC"), var(--hand); font-size: 52px; line-height: 1; margin: 0;
   text-transform: uppercase; letter-spacing: 1px; color: #1e3a8a;
 }
-.nb-deco { color: #e11d48; font-size: 36px; }
+.nb-deco { color: #e11d48; font-size: 36px; flex: none; }
+/* Título e os ≈ na mesma linha: no download, o 2º ≈ quebrava e cobria o subtítulo. */
+.nb-title { display: flex; align-items: center; gap: 12px; }
 .nb-subtitle { font-family: var(--nb-caveat, "Caveat"), var(--hand); font-size: 30px; margin: 2px 0 0 4px; color: #e11d48; }
 .nb-badge {
   border: 2px solid #1e3a8a; background: #eef2ff; color: #1e3a8a; border-radius: 10px;

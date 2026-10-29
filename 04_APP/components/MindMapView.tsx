@@ -122,7 +122,8 @@ export default function MindMapView({ map, preview = false, lang = "pt" }: { map
         <header className="nb-header">
           <div>
             <h2 className="nb-title">
-              <span className="nb-deco">≈</span> {map.title_pt}{" "}
+              <span className="nb-deco">≈</span>
+              <span>{map.title_pt}</span>
               <span className="nb-deco">≈</span>
             </h2>
             <p className="nb-subtitle">{map.title_en}</p>
