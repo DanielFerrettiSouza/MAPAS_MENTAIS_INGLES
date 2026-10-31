@@ -53,6 +53,9 @@ export async function POST(req: Request) {
     .join(" ");
   console.log("Kiwify:", { status, email, productName });
   if (!email) return NextResponse.json({ ok: true, ignored: "sem e-mail" });
+  // A conta da Kiwify também vende outros produtos (ex.: "Método Unpuff 21 Dias"): só os
+  // do Mapas Falantes liberam acesso, viram compra na Meta ou entram nos e-mails.
+  if (!/mapas\s+(falantes|parlantes)/i.test(productName)) return NextResponse.json({ ok: true, ignored: "outro produto" });
 
   // Telefone e nome do comprador para o perfil do Klaviyo (o WhatsApp usa o telefone).
   const rawPhone = String(event.Customer?.mobile ?? event.phone ?? event.mobile ?? "").replace(/\D/g, "");
