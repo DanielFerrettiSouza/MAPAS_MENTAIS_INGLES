@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { META_PIXEL_ID, META_PIXEL_ID_ES } from "@/lib/pixel";
+import { createSupabaseAdmin } from "@/lib/supa/server";
 
 // API de Conversões da Meta: envia, pelo servidor, os mesmos eventos do pixel.
 // O mesmo event_id do navegador faz a Meta contar cada evento uma vez só.
@@ -72,8 +73,25 @@ export async function sendCapi(e: CapiEvent) {
       `https://graph.facebook.com/v21.0/${pixel}/events?access_token=${encodeURIComponent(token)}`,
       { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }
     );
-    if (!res.ok) console.error("CAPI:", res.status, await res.text());
+    const answer = await res.text();
+    if (!res.ok) console.error("CAPI:", res.status, answer);
+    await logPurchase(e, res.status, answer);
   } catch (err) {
     console.error("CAPI: falha ao enviar", err);
+    await logPurchase(e, 0, String(err));
   }
+}
+
+// Compras: guarda a resposta da Meta (aceita ou recusada) em map-images/capi-log/,
+// porque o log da Vercel some em 1 hora e uma compra recusada passava despercebida.
+async function logPurchase(e: CapiEvent, status: number, answer: string) {
+  if (e.event_name !== "Purchase") return;
+  await createSupabaseAdmin()
+    .storage.from("map-images")
+    .upload(
+      `capi-log/${Date.now()}-${e.event_id.replace(/[^\w-]/g, "")}.json`,
+      JSON.stringify({ quando: new Date().toISOString(), event_id: e.event_id, valor: e.custom_data?.value, tem_fbc: !!e.fbc, tem_fbp: !!e.fbp, status, resposta: answer.slice(0, 1000) }),
+      { contentType: "application/json" }
+    )
+    .catch(() => null);
 }
