@@ -7,7 +7,7 @@ import { getCurrentUser } from "@/lib/supa/server";
 
 export const runtime = "nodejs";
 
-const ALLOWED = new Set(["Lead", "CompleteRegistration", "InitiateCheckout", "QuizStart", "MapCreated"]);
+const ALLOWED = new Set(["PageView", "Lead", "CompleteRegistration", "InitiateCheckout", "QuizStart", "MapCreated"]);
 
 // Recebe do navegador os eventos do pixel e repassa à API de Conversões.
 export async function POST(req: Request) {

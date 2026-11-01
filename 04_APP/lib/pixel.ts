@@ -18,7 +18,7 @@ function visitor() {
   }
 }
 
-function sendServer(event: string, eventID: string, params?: Record<string, unknown>, email?: string) {
+export function sendServer(event: string, eventID: string, params?: Record<string, unknown>, email?: string) {
   try {
     const { vid, savedEmail } = visitor();
     fetch("/api/track", {
@@ -30,7 +30,7 @@ function sendServer(event: string, eventID: string, params?: Record<string, unkn
   } catch {}
 }
 
-const newId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+export const newId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
 
 // Evento padrão (Lead, CompleteRegistration, InitiateCheckout...).
 // email: quando a pessoa ainda não tem conta mas informou o e-mail (fim do quiz).
