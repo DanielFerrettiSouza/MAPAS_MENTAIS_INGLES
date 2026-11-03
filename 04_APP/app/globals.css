@@ -972,3 +972,6 @@ html { scroll-behavior: smooth; }
 .pl-page .fine { font-size: 17px; }
 .pl-page .mt-sub { font-size: 19px; }
 .pl-page .mt-who p { font-size: 16px; }
+.lib-search { display: flex; align-items: center; gap: 8px; margin-top: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 6px 12px; }
+.lib-search input { flex: 1; border: 0; background: transparent; color: var(--text); font: inherit; font-size: 16px; padding: 8px 0; outline: none; min-width: 0; }
+.lib-search a { font-size: 14px; color: var(--muted, #666); }
